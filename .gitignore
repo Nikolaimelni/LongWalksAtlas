@@ -1,0 +1,20 @@
+node_modules/
+.env
+.DS_Store
+
+# React Router
+/.react-router/
+/build/
+
+# tests
+/test-results/
+/playwright-report/
+/coverage/
+
+# local tooling, kept out of the repo
+.claude/
+.agents/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+AGENTS.md
