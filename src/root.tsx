@@ -7,12 +7,15 @@ import {
 	ScrollRestoration,
 } from "react-router";
 
+import { langDir } from "~/features/i18n/languages";
+import { useLang } from "~/features/i18n/use-lang";
 import type { Route } from "./+types/root";
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+	const lang = useLang();
 	return (
-		<html lang="en">
+		<html lang={lang} dir={langDir(lang)}>
 			<head>
 				<meta charSet="utf-8" />
 				<meta
