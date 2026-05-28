@@ -1,0 +1,51 @@
+export const languages = [
+	{ code: "en", name: "English", dir: "ltr" },
+	{ code: "ru", name: "Русский", dir: "ltr" },
+	{ code: "es", name: "Español", dir: "ltr" },
+	{ code: "fr", name: "Français", dir: "ltr" },
+	{ code: "de", name: "Deutsch", dir: "ltr" },
+	{ code: "it", name: "Italiano", dir: "ltr" },
+	{ code: "pt-PT", name: "Português", dir: "ltr" },
+	{ code: "zh-Hans", name: "简体中文", dir: "ltr" },
+	{ code: "ja", name: "日本語", dir: "ltr" },
+	{ code: "ar", name: "العربية", dir: "rtl" },
+	{ code: "tr", name: "Türkçe", dir: "ltr" },
+] as const;
+
+export type Lang = (typeof languages)[number]["code"];
+
+export const defaultLang: Lang = "en";
+
+export function isLang(value: string | undefined): value is Lang {
+	return languages.some((l) => l.code === value);
+}
+
+export function langDir(lang: Lang): "ltr" | "rtl" {
+	return languages.find((l) => l.code === lang)?.dir ?? "ltr";
+}
+
+function likelySubtags(tag: string): Intl.Locale | undefined {
+	try {
+		return new Intl.Locale(tag).maximize();
+	} catch {
+		return undefined;
+	}
+}
+
+export function pickLang(preferred: readonly string[]): Lang {
+	for (const tag of preferred) {
+		const wanted = likelySubtags(tag);
+		if (!wanted) continue;
+		const match = languages.find((l) => {
+			const ours = new Intl.Locale(l.code).maximize();
+			return ours.language === wanted.language && ours.script === wanted.script;
+		});
+		if (match) return match.code;
+	}
+	return defaultLang;
+}
+
+export function swapLang(pathname: string, lang: Lang): string {
+	const [, , ...rest] = pathname.split("/");
+	return `/${[lang, ...rest].join("/")}`;
+}

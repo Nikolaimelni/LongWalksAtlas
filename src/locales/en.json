@@ -1,0 +1,13 @@
+{
+	"app": {
+		"name": "Long Walks Atlas"
+	},
+	"atlas": {
+		"title": "Map of long-distance walking trails",
+		"loading": "Loading the map…"
+	},
+	"language": {
+		"label": "Language",
+		"choose": "Choose a language"
+	}
+}
