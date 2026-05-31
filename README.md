@@ -16,4 +16,8 @@ pnpm install
 pnpm dev
 ```
 
-`pnpm build` writes a fully static site to `build/client`.
+`pnpm build` writes a fully static site to `build/client`: one prerendered page per
+language (`/en/`, `/ru/`, `/ar/` and so on), plus `/`, which sends the visitor to the
+language their browser asks for. `pnpm e2e` builds, serves the result and runs the
+Playwright checks on a phone viewport and a desktop one (`pnpm exec playwright install
+chromium` once beforehand).
