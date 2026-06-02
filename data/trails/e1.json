@@ -1,0 +1,21 @@
+{
+	"slug": "e1",
+	"name": { "original": "E1" },
+	"type": "e-path",
+	"region": "europe",
+	"start": { "name": "Nordkapp", "coords": [25.7836, 71.1685] },
+	"end": { "name": "Capo Passero", "coords": [15.1497, 36.6886] },
+	"countries": ["NO", "FI", "SE", "DK", "DE", "CH", "IT"],
+	"lengthKm": 7114,
+	"days": null,
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.era-ewv-ferp.org/e-paths/e1/",
+	"sources": [
+		"https://www.era-ewv-ferp.org/e-paths/e1/",
+		"https://www.hiking-europe.eu/en/e1"
+	],
+	"photo": null,
+	"geometry": { "source": "osm", "relationIds": [371743] },
+	"verifiedAt": "2026-10-18"
+}
