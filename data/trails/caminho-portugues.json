@@ -1,0 +1,18 @@
+{
+	"slug": "caminho-portugues",
+	"name": { "original": "Caminho Português" },
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": { "name": "Lisboa", "coords": [-9.1335, 38.7098] },
+	"end": { "name": "Santiago de Compostela", "coords": [-8.5446, 42.8806] },
+	"countries": ["PT", "ES"],
+	"lengthKm": 620,
+	"days": null,
+	"bestSeason": ["apr", "may", "jun", "sep", "oct"],
+	"badges": ["coe-cultural-route"],
+	"officialUrl": "https://www.visitportugal.com/pt-pt/destinos/porto-e-norte/229178",
+	"sources": ["https://en.wikipedia.org/wiki/Portuguese_Way"],
+	"photo": null,
+	"geometry": { "source": "osm", "relationIds": [7684546] },
+	"verifiedAt": "2026-10-18"
+}

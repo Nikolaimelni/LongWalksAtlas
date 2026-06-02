@@ -15,7 +15,8 @@
 		"format": "biome check --write .",
 		"test": "vitest run",
 		"test:watch": "vitest",
-		"e2e": "playwright test"
+		"e2e": "playwright test",
+		"data": "node --env-file-if-exists=.env scripts/build-data.ts"
 	},
 	"dependencies": {
 		"@react-router/node": "^8.4.0",
@@ -26,7 +27,8 @@
 		"react-dom": "^19.3.1",
 		"react-i18next": "^17.1.0",
 		"react-map-gl": "^8.1.3",
-		"react-router": "^8.4.0"
+		"react-router": "^8.4.0",
+		"zod": "^4.6.7"
 	},
 	"devDependencies": {
 		"@babel/core": "^8.0.7",
@@ -37,11 +39,18 @@
 		"@tailwindcss/vite": "^4.3.3",
 		"@testing-library/dom": "^10.4.2",
 		"@testing-library/react": "^16.3.3",
+		"@turf/bbox": "^7.4.0",
+		"@turf/helpers": "^7.4.0",
+		"@turf/length": "^7.4.0",
+		"@turf/simplify": "^7.4.0",
+		"@types/geojson": "^7946.0.16",
 		"@types/node": "^24.19.2",
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
 		"babel-plugin-react-compiler": "^1.0.0",
 		"jsdom": "^30.1.3",
+		"pino": "^10.4.0",
+		"pino-pretty": "^13.2.0",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^5.9.3",
 		"vite": "^8.3.4",

@@ -1,0 +1,18 @@
+{
+	"slug": "lycian-way",
+	"name": { "original": "Likya Yolu" },
+	"type": "coastal",
+	"region": "europe",
+	"start": { "name": "Ölüdeniz", "coords": [29.1155, 36.549] },
+	"end": { "name": "Geyikbayırı", "coords": [30.4625, 36.8795] },
+	"countries": ["TR"],
+	"lengthKm": 760,
+	"days": { "min": 35, "max": 35 },
+	"bestSeason": ["mar", "apr", "may", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://cultureroutesinturkey.com/the-lycian-way/",
+	"sources": ["https://cultureroutesinturkey.com/the-lycian-way/"],
+	"photo": null,
+	"geometry": { "source": "osm", "relationIds": [51855] },
+	"verifiedAt": "2026-10-18"
+}
