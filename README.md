@@ -21,3 +21,12 @@ language (`/en/`, `/ru/`, `/ar/` and so on), plus `/`, which sends the visitor t
 language their browser asks for. `pnpm e2e` builds, serves the result and runs the
 Playwright checks on a phone viewport and a desktop one (`pnpm exec playwright install
 chromium` once beforehand).
+
+Each trail is a hand-written JSON file in `data/trails/`, checked against a Zod schema.
+The line itself comes from the trail's OpenStreetMap relation: `pnpm data` pulls it through
+Overpass, drops variants and side trips, stitches the ways together, simplifies them and
+writes `public/data/` plus `src/generated/trails-index.json`. Those outputs are committed,
+so building the site needs no network. Raw Overpass responses are cached in `data/cache/`
+(not committed); `pnpm data --refresh` downloads them again. The public Overpass servers
+are often overloaded, so `.env` (copy `.env.example`) takes a list of endpoints to rotate
+through. Trail geometry is OSM data, © OpenStreetMap contributors, ODbL.

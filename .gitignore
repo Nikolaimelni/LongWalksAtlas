@@ -2,6 +2,9 @@ node_modules/
 .env
 .DS_Store
 
+# raw Overpass responses; `pnpm data --refresh` downloads them again
+/data/cache/
+
 # React Router
 /.react-router/
 /build/
