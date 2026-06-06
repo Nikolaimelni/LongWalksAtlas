@@ -32,8 +32,8 @@ export type OverpassRelation = z.infer<typeof relation>;
 
 const cacheDir = join(import.meta.dirname, "../../data/cache/osm");
 const userAgent = "long-walks-atlas/0.1 (+https://longwalksatlas.com)";
-const retryable = new Set([429, 502, 503, 504]);
-const maxAttempts = 6;
+const retryable = new Set([429, 500, 502, 503, 504]);
+const maxAttempts = 4;
 
 function relationTreeQuery(id: number): string {
 	return `[out:json][timeout:900];relation(${id});(._;>>;);rel._;out geom;`;

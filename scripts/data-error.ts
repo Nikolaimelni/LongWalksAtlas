@@ -3,7 +3,8 @@ export type DataErrorCode =
 	| "invalid-trail"
 	| "overpass-failed"
 	| "overpass-bad-response"
-	| "empty-geometry";
+	| "empty-geometry"
+	| "incomplete-build";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;
