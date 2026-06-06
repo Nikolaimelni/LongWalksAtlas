@@ -13,6 +13,6 @@
 	"officialUrl": "https://www.visitportugal.com/pt-pt/destinos/porto-e-norte/229178",
 	"sources": ["https://en.wikipedia.org/wiki/Portuguese_Way"],
 	"photo": null,
-	"geometry": { "source": "osm", "relationIds": [7684546] },
+	"geometry": { "source": "osm", "relationIds": [7684546, 12786090] },
 	"verifiedAt": "2026-10-18"
 }

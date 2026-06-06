@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import { parseArgs } from "node:util";
+import type { Position } from "geojson";
 import { z } from "zod";
 import {
 	type TrailFile,
@@ -9,6 +10,7 @@ import {
 } from "../src/features/trails/trail-schema.ts";
 import { buildTrail, type TrailFeature } from "./build-trail.ts";
 import { DataError } from "./data-error.ts";
+import { haversineKm, mainLine } from "./geo/main-line.ts";
 import { mergeLines } from "./geo/merge-lines.ts";
 import { log } from "./log.ts";
 import { collectWays } from "./osm/collect-ways.ts";
@@ -55,6 +57,64 @@ async function readTrails(): Promise<TrailFile[]> {
 	return trails;
 }
 
+function traceLines(trail: TrailFile, segments: Position[][]) {
+	const loop = haversineKm(trail.start.coords, trail.end.coords) < 1;
+	const line = loop
+		? null
+		: mainLine(segments, trail.start.coords, trail.end.coords);
+	if (!loop && !line) {
+		log.warn(
+			{ slug: trail.slug },
+			"no path between the official start and end, drawing every way",
+		);
+	}
+	return line
+		? { lines: [line], mode: "main-line" as const }
+		: { lines: mergeLines(segments), mode: "all-ways" as const };
+}
+
+async function buildOne(trail: TrailFile, refresh: boolean) {
+	const segments = [];
+	for (const id of trail.geometry.relationIds) {
+		const relations = await loadRelationTree(id, { refresh });
+		const { ways, missingRelations } = collectWays(id, relations);
+		if (missingRelations.length > 0) {
+			log.warn(
+				{ slug: trail.slug, missingRelations },
+				"child relations missing from the Overpass response",
+			);
+		}
+		segments.push(...ways.map((w) => w.coords));
+	}
+
+	const { lines, mode } = traceLines(trail, segments);
+	if (lines.length === 0) {
+		throw new DataError(
+			"empty-geometry",
+			`${trail.slug}: no ways in OSM relations ${trail.geometry.relationIds.join(", ")}`,
+		);
+	}
+
+	const built = buildTrail(trail, lines);
+	const osmKm = Math.round(built.osmKm);
+	const gap = trail.lengthKm ? osmKm / trail.lengthKm - 1 : null;
+	const report = {
+		slug: trail.slug,
+		osmKm,
+		officialKm: trail.lengthKm,
+		gap: gap === null ? null : `${Math.round(gap * 100)}%`,
+		ways: segments.length,
+		mode,
+		pieces: lines.length,
+	};
+	if (gap !== null && Math.abs(gap) > lengthWarnRatio) {
+		log.warn(report, "mapped length is far from the official one");
+	} else {
+		log.info(report, "built");
+	}
+	return built;
+}
+
 async function main() {
 	const { values } = parseArgs({
 		options: { refresh: { type: "boolean", default: false } },
@@ -62,52 +122,22 @@ async function main() {
 	const trails = await readTrails();
 	const summaries: TrailSummary[] = [];
 	const atlas: TrailFeature[] = [];
+	const failed: string[] = [];
 	await mkdir(join(publicDir, "trails"), { recursive: true });
 
 	for (const trail of trails) {
-		const segments = [];
-		for (const id of trail.geometry.relationIds) {
-			const relations = await loadRelationTree(id, { refresh: values.refresh });
-			const { ways, missingRelations } = collectWays(id, relations);
-			if (missingRelations.length > 0) {
-				log.warn(
-					{ slug: trail.slug, missingRelations },
-					"child relations missing from the Overpass response",
-				);
-			}
-			segments.push(...ways.map((w) => w.coords));
-		}
-
-		const lines = mergeLines(segments);
-		if (lines.length === 0) {
-			throw new DataError(
-				"empty-geometry",
-				`${trail.slug}: no ways in OSM relations ${trail.geometry.relationIds.join(", ")}`,
+		try {
+			const built = await buildOne(trail, values.refresh);
+			summaries.push(built.summary);
+			atlas.push(built.atlas);
+			await writeFile(
+				join(publicDir, "trails", `${trail.slug}.geojson`),
+				JSON.stringify(built.detail),
 			);
-		}
-
-		const built = buildTrail(trail, lines);
-		summaries.push(built.summary);
-		atlas.push(built.atlas);
-		await writeFile(
-			join(publicDir, "trails", `${trail.slug}.geojson`),
-			JSON.stringify(built.detail),
-		);
-
-		const osmKm = Math.round(built.osmKm);
-		const gap = trail.lengthKm ? osmKm / trail.lengthKm - 1 : null;
-		const report = {
-			slug: trail.slug,
-			osmKm,
-			officialKm: trail.lengthKm,
-			gap: gap === null ? null : `${Math.round(gap * 100)}%`,
-			ways: segments.length,
-			pieces: lines.length,
-		};
-		if (gap !== null && Math.abs(gap) > lengthWarnRatio) {
-			log.warn(report, "mapped length is far from the official one");
-		} else {
-			log.info(report, "built");
+		} catch (error) {
+			if (!(error instanceof DataError)) throw error;
+			log.error({ slug: trail.slug, code: error.code }, error.message);
+			failed.push(trail.slug);
 		}
 	}
 
@@ -119,6 +149,10 @@ async function main() {
 	await mkdir(join(root, "src/generated"), { recursive: true });
 	await writeFile(indexFile, `${JSON.stringify(summaries, null, "\t")}\n`);
 	log.info({ trails: summaries.length }, "wrote atlas, trail files and index");
+
+	if (failed.length > 0) {
+		throw new DataError("incomplete-build", `not built: ${failed.join(", ")}`);
+	}
 }
 
 main().catch((error: unknown) => {
