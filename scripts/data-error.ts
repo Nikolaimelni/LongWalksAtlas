@@ -3,6 +3,7 @@ export type DataErrorCode =
 	| "invalid-trail"
 	| "overpass-failed"
 	| "overpass-bad-response"
+	| "osm-api-failed"
 	| "empty-geometry"
 	| "incomplete-build";
 

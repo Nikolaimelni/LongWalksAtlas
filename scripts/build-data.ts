@@ -14,7 +14,7 @@ import { haversineKm, mainLine } from "./geo/main-line.ts";
 import { mergeLines } from "./geo/merge-lines.ts";
 import { log } from "./log.ts";
 import { collectWays } from "./osm/collect-ways.ts";
-import { loadRelationTree } from "./osm/overpass.ts";
+import { loadRelationTree } from "./osm/relation-tree.ts";
 
 const root = join(import.meta.dirname, "..");
 const trailsDir = join(root, "data/trails");

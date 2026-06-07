@@ -3,7 +3,7 @@ import type { OverpassRelation } from "./overpass.ts";
 
 export type Way = { id: number; coords: Position[] };
 
-const sideRoles = new Set([
+export const sideRoles = new Set([
 	"alternative",
 	"excursion",
 	"approach",
