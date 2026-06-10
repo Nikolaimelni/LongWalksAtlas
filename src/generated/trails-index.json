@@ -1,0 +1,165 @@
+[
+	{
+		"slug": "st-paul-trail",
+		"name": {
+			"original": "Aziz Pavlus Yolu"
+		},
+		"type": "historic",
+		"region": "europe",
+		"countries": [
+			"TR"
+		],
+		"bestSeason": [
+			"apr",
+			"may",
+			"sep",
+			"oct"
+		],
+		"badges": [],
+		"lengthKm": 500,
+		"lengthSource": "official",
+		"days": {
+			"min": 25,
+			"max": 30
+		},
+		"bbox": [
+			30.6952,
+			36.9579,
+			31.2396,
+			38.3502
+		]
+	},
+	{
+		"slug": "caminho-portugues",
+		"name": {
+			"original": "Caminho Português"
+		},
+		"type": "pilgrimage",
+		"region": "europe",
+		"countries": [
+			"PT",
+			"ES"
+		],
+		"bestSeason": [
+			"apr",
+			"may",
+			"jun",
+			"sep",
+			"oct"
+		],
+		"badges": [
+			"coe-cultural-route"
+		],
+		"lengthKm": 620,
+		"lengthSource": "official",
+		"days": {
+			"min": 25,
+			"max": 31
+		},
+		"bbox": [
+			-9.1336,
+			38.7095,
+			-8.3533,
+			42.8801
+		]
+	},
+	{
+		"slug": "e1",
+		"name": {
+			"original": "E1"
+		},
+		"type": "e-path",
+		"region": "europe",
+		"countries": [
+			"NO",
+			"FI",
+			"SE",
+			"DK",
+			"DE",
+			"CH",
+			"IT"
+		],
+		"bestSeason": [
+			"jun",
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 7114,
+		"lengthSource": "official",
+		"days": {
+			"min": 285,
+			"max": 356
+		},
+		"bbox": [
+			7.7471,
+			36.6466,
+			25.7897,
+			71.1693
+		]
+	},
+	{
+		"slug": "lycian-way",
+		"name": {
+			"original": "Likya Yolu"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"countries": [
+			"TR"
+		],
+		"bestSeason": [
+			"mar",
+			"apr",
+			"may",
+			"oct",
+			"nov"
+		],
+		"badges": [],
+		"lengthKm": 760,
+		"lengthSource": "official",
+		"days": {
+			"min": 35,
+			"max": 35
+		},
+		"bbox": [
+			29.1217,
+			36.1484,
+			30.5278,
+			36.8794
+		]
+	},
+	{
+		"slug": "tour-du-mont-blanc",
+		"name": {
+			"original": "Tour du Mont Blanc"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"countries": [
+			"FR",
+			"IT",
+			"CH"
+		],
+		"bestSeason": [
+			"jun",
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 170,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 10
+		},
+		"bbox": [
+			6.7066,
+			45.6965,
+			7.1283,
+			46.0585
+		]
+	}
+]
