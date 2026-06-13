@@ -4,10 +4,29 @@
 	},
 	"atlas": {
 		"title": "Map of long-distance walking trails",
-		"loading": "Loading the map…"
+		"loading": "Loading the map…",
+		"allTrails": "All trails",
+		"pick": "Several trails meet here"
 	},
 	"language": {
 		"label": "Language",
 		"choose": "Choose a language"
+	},
+	"trailType": {
+		"pilgrimage": "Pilgrim way",
+		"historic": "Historic route",
+		"coastal": "Coastal trail",
+		"mountain": "Mountain trail",
+		"e-path": "European long-distance path"
+	},
+	"trail": {
+		"length": "Length",
+		"duration": "On foot",
+		"days_one": "{{count}} day",
+		"days_other": "{{count}} days",
+		"daysRange_one": "{{min}}–{{count}} days",
+		"daysRange_other": "{{min}}–{{count}} days",
+		"more": "More about this trail",
+		"close": "Close"
 	}
 }

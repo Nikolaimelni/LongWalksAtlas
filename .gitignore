@@ -4,6 +4,8 @@ node_modules/
 
 # raw Overpass responses; `pnpm data --refresh` downloads them again
 /data/cache/
+# rebuilt from data/content/ before every dev, build and typecheck run
+/src/generated/content/
 
 # React Router
 /.react-router/

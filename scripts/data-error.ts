@@ -1,6 +1,7 @@
 export type DataErrorCode =
 	| "invalid-env"
 	| "invalid-trail"
+	| "invalid-content"
 	| "overpass-failed"
 	| "overpass-bad-response"
 	| "osm-api-failed"
