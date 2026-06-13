@@ -4,10 +4,33 @@
 	},
 	"atlas": {
 		"title": "Карта пеших путей",
-		"loading": "Загружаем карту…"
+		"loading": "Загружаем карту…",
+		"allTrails": "Все тропы",
+		"pick": "Здесь сходятся несколько троп"
 	},
 	"language": {
 		"label": "Язык",
 		"choose": "Выберите язык"
+	},
+	"trailType": {
+		"pilgrimage": "Паломнический путь",
+		"historic": "Исторический маршрут",
+		"coastal": "Прибрежная тропа",
+		"mountain": "Горная тропа",
+		"e-path": "Европейский маршрут"
+	},
+	"trail": {
+		"length": "Длина",
+		"duration": "Пешком",
+		"days_one": "{{count}} день",
+		"days_few": "{{count}} дня",
+		"days_many": "{{count}} дней",
+		"days_other": "{{count}} дня",
+		"daysRange_one": "{{min}}–{{count}} день",
+		"daysRange_few": "{{min}}–{{count}} дня",
+		"daysRange_many": "{{min}}–{{count}} дней",
+		"daysRange_other": "{{min}}–{{count}} дня",
+		"more": "Подробнее о тропе",
+		"close": "Закрыть"
 	}
 }
