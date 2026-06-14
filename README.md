@@ -30,3 +30,9 @@ so building the site needs no network. Raw Overpass responses are cached in `dat
 (not committed); `pnpm data --refresh` downloads them again. The public Overpass servers
 are often overloaded, so `.env` (copy `.env.example`) takes a list of endpoints to rotate
 through. Trail geometry is OSM data, © OpenStreetMap contributors, ODbL.
+
+The words live next to the data: `data/content/<slug>/<lang>.md`, a title, a one or two
+sentence summary and a `status` (`machine` or `reviewed`) in the frontmatter, the trail's
+story below it. English is required for every trail; any other language that is missing
+falls back to it. `pnpm content` turns them into JSON and HTML under `src/generated/content/`
+(not committed); `dev`, `build` and `typecheck` run it first.
