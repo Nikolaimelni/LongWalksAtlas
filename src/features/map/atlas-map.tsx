@@ -63,7 +63,7 @@ export function AtlasMap({ selected, hovered, onHover, onPick }: Props) {
 				padding: phone
 					? {
 							top: 72,
-							bottom: map.getContainer().clientHeight * 0.45,
+							bottom: map.getContainer().clientHeight * 0.55,
 							left: 24,
 							right: 24,
 						}
