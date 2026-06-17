@@ -1,14 +1,9 @@
-import "maplibre-gl/dist/maplibre-gl.css";
-import { type MapLayerMouseEvent, setWorkerUrl } from "maplibre-gl";
-import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url";
+import type { MapLayerMouseEvent } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
 import { Map as MapLibreMap, type MapRef } from "react-map-gl/maplibre";
 import type { TrailSummary } from "~/features/trails/trail-schema";
+import { styleUrl } from "./map-setup";
 import { TrailLayers, trailHitLayerId, trailSourceId } from "./trail-layers";
-
-setWorkerUrl(workerUrl);
-
-const styleUrl = "https://tiles.openfreemap.org/styles/positron";
 
 const europeBounds: [[number, number], [number, number]] = [
 	[-12, 34],

@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { data, Link, useNavigate, useSearchParams } from "react-router";
+import { alternateLinks } from "~/features/i18n/alternates";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
@@ -9,6 +10,8 @@ import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import trailsIndex from "~/generated/trails-index.json";
+import { prerenderedOnly } from "~/shared/prerendered-only";
+import { absoluteUrl } from "~/shared/site";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
 
@@ -26,10 +29,24 @@ export async function loader({ params }: Route.LoaderArgs) {
 	};
 }
 
+export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
+	prerenderedOnly(serverLoader);
+
 export function meta({ matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
-	const messages = layout?.messages[layout.lang] ?? layout?.messages.en;
-	return [{ title: messages?.app.name }];
+	if (!layout) return [];
+	const app = (layout.messages[layout.lang] ?? layout.messages.en)?.app;
+	return [
+		{ title: app?.name },
+		{ name: "description", content: app?.description },
+		{ property: "og:type", content: "website" },
+		{ property: "og:title", content: app?.name },
+		{ property: "og:description", content: app?.description },
+		{ property: "og:url", content: absoluteUrl(`/${layout.lang}/`) },
+		{ property: "og:locale", content: layout.lang.replace("-", "_") },
+		{ name: "twitter:card", content: "summary" },
+		...alternateLinks(layout.lang, "", "/"),
+	];
 }
 
 function canHover(): boolean {

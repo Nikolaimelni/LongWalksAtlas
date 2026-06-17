@@ -1,6 +1,7 @@
 {
 	"app": {
-		"name": "Long Walks Atlas"
+		"name": "Long Walks Atlas",
+		"description": "A map of long-distance walking trails across Europe: pilgrim ways, historic routes, coastal and mountain paths, with length, days on foot and a link to each official site."
 	},
 	"atlas": {
 		"title": "Map of long-distance walking trails",
@@ -19,6 +20,10 @@
 		"mountain": "Mountain trail",
 		"e-path": "European long-distance path"
 	},
+	"badge": {
+		"coe-cultural-route": "Cultural Route of the Council of Europe",
+		"unesco": "UNESCO World Heritage"
+	},
 	"trail": {
 		"length": "Length",
 		"duration": "On foot",
@@ -27,6 +32,37 @@
 		"daysRange_one": "{{min}}–{{count}} days",
 		"daysRange_other": "{{min}}–{{count}} days",
 		"more": "More about this trail",
-		"close": "Close"
+		"close": "Close",
+		"start": "Starts in",
+		"end": "Ends in",
+		"loop": "Loop from and back to",
+		"countries": "Countries",
+		"season": "Best months",
+		"facts": "At a glance",
+		"story": "About the trail",
+		"officialSite": "Official website",
+		"sources": "Sources",
+		"checked": "Facts checked on {{date}}.",
+		"lengthFromMap": "Length measured on the OpenStreetMap line; no official figure checked yet.",
+		"osm": "Trail line © OpenStreetMap contributors, ODbL.",
+		"showOnMap": "Show on the map",
+		"backToAtlas": "All trails",
+		"notReviewed": "This text has not been reviewed by a person yet.",
+		"fallback": "There is no translation yet, so this text is in English.",
+		"mapLoading": "Loading the map…"
+	},
+	"faq": {
+		"title": "Questions walkers ask",
+		"lengthQ": "How long is the {{title}}?",
+		"lengthA": "The {{title}} is {{km}} long.",
+		"daysQ": "How many days does it take to walk the {{title}}?",
+		"daysA": "Most walkers take {{days}} for the whole route.",
+		"whereQ": "Where does the {{title}} start and end?",
+		"whereA": "It starts in {{start}} and ends in {{end}}.",
+		"whereLoopA": "It is a loop that starts and ends in {{start}}.",
+		"whenQ": "When is the best time to walk the {{title}}?",
+		"whenA": "The best months are {{months}}.",
+		"officialQ": "Where is the official information about the {{title}}?",
+		"officialA": "On the official website, {{url}}."
 	}
 }

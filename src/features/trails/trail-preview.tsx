@@ -4,6 +4,7 @@ import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
 import type { TrailSummary } from "./trail-schema";
 import { trailColors } from "./trail-style";
+import { useTrailFormat } from "./use-trail-format";
 
 type Props = {
 	trail: TrailSummary;
@@ -15,17 +16,8 @@ type Props = {
 export function TrailPreview({ trail, content, variant, onClose }: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
+	const format = useTrailFormat();
 	const color = trailColors[trail.type];
-	const regions = new Intl.DisplayNames([lang], { type: "region" });
-	const km = new Intl.NumberFormat(lang, {
-		style: "unit",
-		unit: "kilometer",
-		maximumFractionDigits: 0,
-	});
-	const days =
-		trail.days.min === trail.days.max
-			? t("trail.days", { count: trail.days.max })
-			: t("trail.daysRange", { count: trail.days.max, min: trail.days.min });
 
 	return (
 		<article className="flex flex-col gap-3">
@@ -58,7 +50,7 @@ export function TrailPreview({ trail, content, variant, onClose }: Props) {
 					</p>
 				)}
 				<p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
-					{trail.countries.map((c) => regions.of(c) ?? c).join(", ")}
+					{format.countries(trail.countries)}
 				</p>
 			</div>
 			{content && (
@@ -76,11 +68,11 @@ export function TrailPreview({ trail, content, variant, onClose }: Props) {
 			<dl className="flex gap-6 text-sm">
 				<div>
 					<dt className="text-stone-500">{t("trail.length")}</dt>
-					<dd className="font-semibold">{km.format(trail.lengthKm)}</dd>
+					<dd className="font-semibold">{format.km(trail.lengthKm)}</dd>
 				</div>
 				<div>
 					<dt className="text-stone-500">{t("trail.duration")}</dt>
-					<dd className="font-semibold">{days}</dd>
+					<dd className="font-semibold">{format.days(trail.days)}</dd>
 				</div>
 			</dl>
 			{variant === "sheet" && (

@@ -1,6 +1,28 @@
 import { Link, redirect } from "react-router";
 import { languages, pickLang } from "~/features/i18n/languages";
 import { readStoredLang } from "~/features/i18n/stored-lang";
+import en from "~/locales/en.json";
+import { absoluteUrl } from "~/shared/site";
+
+export function meta() {
+	return [
+		{ title: en.app.name },
+		{ name: "description", content: en.app.description },
+		{ tagName: "link", rel: "canonical", href: absoluteUrl("/") },
+		...languages.map(({ code }) => ({
+			tagName: "link",
+			rel: "alternate",
+			hrefLang: code,
+			href: absoluteUrl(`/${code}/`),
+		})),
+		{
+			tagName: "link",
+			rel: "alternate",
+			hrefLang: "x-default",
+			href: absoluteUrl("/"),
+		},
+	];
+}
 
 export function clientLoader() {
 	const stored = readStoredLang();
