@@ -1,0 +1,7 @@
+# Search engines and AI assistants (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot,
+# Google-Extended and the rest) are all welcome: the point of the site is to be found
+# and quoted.
+User-agent: *
+Allow: /
+
+Sitemap: https://longwalksatlas.com/sitemap.xml
