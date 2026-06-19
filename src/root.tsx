@@ -39,12 +39,19 @@ export default function App() {
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
-	const notFound = isRouteErrorResponse(error) && error.status === 404;
+	const crashed =
+		error instanceof Error ||
+		(isRouteErrorResponse(error) && error.status >= 500);
 	return (
 		<main className="mx-auto max-w-prose p-4 pt-16">
 			<h1 className="text-2xl font-semibold">
-				{notFound ? "Page not found" : "Something went wrong"}
+				{crashed ? "Something went wrong" : "Page not found"}
 			</h1>
+			<p className="mt-4">
+				<a href="/" className="underline">
+					Go to the map of all trails
+				</a>
+			</p>
 			{import.meta.env.DEV && error instanceof Error && (
 				<pre className="mt-4 overflow-x-auto text-sm">{error.stack}</pre>
 			)}

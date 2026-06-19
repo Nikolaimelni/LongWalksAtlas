@@ -8,8 +8,8 @@
 	},
 	"scripts": {
 		"dev": "node scripts/build-content.ts && react-router dev",
-		"build": "node scripts/build-content.ts && react-router build",
-		"preview": "vite preview --outDir build/client",
+		"build": "node scripts/build-content.ts && react-router build && node scripts/add-404-page.ts",
+		"preview": "node scripts/serve-static.ts",
 		"typecheck": "node scripts/build-content.ts && react-router typegen && tsc",
 		"content": "node scripts/build-content.ts",
 		"lint": "biome check .",
