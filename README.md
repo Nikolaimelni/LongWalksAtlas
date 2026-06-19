@@ -16,11 +16,19 @@ pnpm install
 pnpm dev
 ```
 
-`pnpm build` writes a fully static site to `build/client`: one prerendered page per
-language (`/en/`, `/ru/`, `/ar/` and so on), plus `/`, which sends the visitor to the
-language their browser asks for. `pnpm e2e` builds, serves the result and runs the
-Playwright checks on a phone viewport and a desktop one (`pnpm exec playwright install
-chromium` once beforehand).
+`pnpm build` writes a fully static site to `build/client`: the atlas and every trail page
+prerendered in each of the 11 languages (`/en/`, `/ru/trail/lycian-way/` and so on), `/`,
+which sends the visitor to the language their browser asks for, plus `sitemap.xml`,
+`llms.txt` and a `404.html`. Search engines and AI assistants are the main way people
+will find the site, so each page carries its canonical URL, hreflang links to its ten
+translations and schema.org JSON-LD, and the facts are on the page as text, not only on
+the map.
+
+`pnpm preview` serves `build/client` the way the host will: files as they are, `/en`
+redirected to `/en/`, and `404.html` with a real 404 for anything else (`vite preview`
+would answer unknown paths with the home page). `pnpm e2e` builds, serves through it and
+runs the Playwright checks on a phone viewport and a desktop one (`pnpm exec playwright
+install chromium` once beforehand).
 
 Each trail is a hand-written JSON file in `data/trails/`, checked against a Zod schema.
 The line itself comes from the trail's OpenStreetMap relation: `pnpm data` pulls it through

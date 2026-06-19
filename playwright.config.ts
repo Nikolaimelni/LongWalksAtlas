@@ -15,7 +15,7 @@ export default defineConfig({
 		{ name: "desktop", use: { ...devices["Desktop Chrome"] } },
 	],
 	webServer: {
-		command: `pnpm build && pnpm preview --port ${port} --strictPort`,
+		command: `pnpm build && node scripts/serve-static.ts --port ${port}`,
 		port,
 		reuseExistingServer: !process.env.CI,
 	},
