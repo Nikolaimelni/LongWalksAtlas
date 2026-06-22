@@ -58,9 +58,7 @@ export const trailFileSchema = z
 		sources: z.array(z.url()).min(1),
 		photo: z
 			.strictObject({
-				commons: z.string().startsWith("File:"),
-				author: z.string().min(1),
-				license: z.string().min(1),
+				commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
 			})
 			.nullable(),
 		geometry: z.strictObject({
@@ -98,4 +96,15 @@ export type TrailSummary = Pick<
 	lengthSource: "official" | "osm";
 	days: DayRange;
 	bbox: [west: number, south: number, east: number, north: number];
+};
+
+export type TrailPhoto = {
+	file: string;
+	author: string;
+	license: string;
+	licenseUrl: string | null;
+	sourceUrl: string;
+	width: number;
+	height: number;
+	src: { small: string; large: string };
 };

@@ -15,7 +15,7 @@
 		"https://www.era-ewv-ferp.org/e-paths/e1/",
 		"https://www.hiking-europe.eu/en/e1"
 	],
-	"photo": null,
+	"photo": { "commons": "File:2020-01-01 115054 Bad Münder Deister E1.jpg" },
 	"geometry": { "source": "osm", "relationIds": [371743] },
 	"verifiedAt": "2026-10-18"
 }

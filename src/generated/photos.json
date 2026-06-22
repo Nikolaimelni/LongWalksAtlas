@@ -1,0 +1,54 @@
+{
+	"caminho-portugues": {
+		"file": "File:Caminho Português Impressions 01.jpg",
+		"author": "Jacobeo",
+		"license": "CC BY-SA 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Caminho_Portugu%C3%AAs_Impressions_01.jpg",
+		"width": 1280,
+		"height": 960,
+		"src": {
+			"small": "/photos/caminho-portugues-32501fe80b-640.webp",
+			"large": "/photos/caminho-portugues-32501fe80b-1280.webp"
+		}
+	},
+	"e1": {
+		"file": "File:2020-01-01 115054 Bad Münder Deister E1.jpg",
+		"author": "Tim Rademacher",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-01-01_115054_Bad_M%C3%BCnder_Deister_E1.jpg",
+		"width": 1280,
+		"height": 852,
+		"src": {
+			"small": "/photos/e1-8f16bdc489-640.webp",
+			"large": "/photos/e1-8f16bdc489-1280.webp"
+		}
+	},
+	"lycian-way": {
+		"file": "File:View from the lycian way near Kirme 2021-11-05-1.jpg",
+		"author": "Alexey Komarov",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_lycian_way_near_Kirme_2021-11-05-1.jpg",
+		"width": 1280,
+		"height": 853,
+		"src": {
+			"small": "/photos/lycian-way-328a8fa623-640.webp",
+			"large": "/photos/lycian-way-328a8fa623-1280.webp"
+		}
+	},
+	"tour-du-mont-blanc": {
+		"file": "File:Trail and Massif du Mont-Blanc.jpg",
+		"author": "Tiia Monto",
+		"license": "CC BY-SA 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Trail_and_Massif_du_Mont-Blanc.jpg",
+		"width": 1280,
+		"height": 852,
+		"src": {
+			"small": "/photos/tour-du-mont-blanc-42a11bee22-640.webp",
+			"large": "/photos/tour-du-mont-blanc-42a11bee22-1280.webp"
+		}
+	}
+}

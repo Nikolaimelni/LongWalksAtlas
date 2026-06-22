@@ -12,7 +12,9 @@
 	"badges": [],
 	"officialUrl": "https://cultureroutesinturkey.com/the-lycian-way/",
 	"sources": ["https://cultureroutesinturkey.com/the-lycian-way/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:View from the lycian way near Kirme 2021-11-05-1.jpg"
+	},
 	"geometry": { "source": "osm", "relationIds": [51855] },
 	"verifiedAt": "2026-10-18"
 }
