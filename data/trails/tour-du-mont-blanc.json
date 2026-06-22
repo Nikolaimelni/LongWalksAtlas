@@ -14,7 +14,7 @@
 	"sources": [
 		"https://www.autourdumontblanc.com/itineraires/tous-les-itineraires/tour-du-mont-blanc"
 	],
-	"photo": null,
+	"photo": { "commons": "File:Trail and Massif du Mont-Blanc.jpg" },
 	"geometry": { "source": "osm", "relationIds": [124456] },
 	"verifiedAt": "2026-10-18"
 }

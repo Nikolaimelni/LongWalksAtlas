@@ -6,7 +6,10 @@ export type DataErrorCode =
 	| "overpass-bad-response"
 	| "osm-api-failed"
 	| "empty-geometry"
-	| "incomplete-build";
+	| "incomplete-build"
+	| "commons-failed"
+	| "photo-not-found"
+	| "photo-license";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;

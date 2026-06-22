@@ -39,6 +39,12 @@ so building the site needs no network. Raw Overpass responses are cached in `dat
 are often overloaded, so `.env` (copy `.env.example`) takes a list of endpoints to rotate
 through. Trail geometry is OSM data, © OpenStreetMap contributors, ODbL.
 
+A trail's photo is named by its Wikimedia Commons file in the trail JSON, nothing else.
+`pnpm photos` asks Commons for the author and licence (refusing NC and ND files), so the
+credit printed under the photo always matches the file page, then writes 640 and 1280 px
+WebP copies to `public/photos/` and the credits to `src/generated/photos.json`. Both are
+committed, like the geometry.
+
 The words live next to the data: `data/content/<slug>/<lang>.md`, a title, a one or two
 sentence summary and a `status` (`machine` or `reviewed`) in the frontmatter, the trail's
 story below it. English is required for every trail; any other language that is missing

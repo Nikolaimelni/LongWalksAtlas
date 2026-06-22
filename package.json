@@ -17,7 +17,8 @@
 		"test": "vitest run",
 		"test:watch": "vitest",
 		"e2e": "playwright test",
-		"data": "node --env-file-if-exists=.env scripts/build-data.ts"
+		"data": "node --env-file-if-exists=.env scripts/build-data.ts",
+		"photos": "node scripts/build-photos.ts"
 	},
 	"dependencies": {
 		"@react-router/node": "^8.4.0",
@@ -53,6 +54,7 @@
 		"marked": "^18.1.1",
 		"pino": "^10.4.0",
 		"pino-pretty": "^13.2.0",
+		"sharp": "^0.35.5",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^5.9.3",
 		"vite": "^8.3.4",
