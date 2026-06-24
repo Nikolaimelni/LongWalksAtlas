@@ -5,13 +5,16 @@ import { alternateLinks } from "~/features/i18n/alternates";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
+import { TrailImage } from "~/features/trails/trail-image";
 import { serializeJsonLd, trailJsonLd } from "~/features/trails/trail-json-ld";
 import {
+	type TrailPhoto,
 	type TrailSummary,
 	trailFileSchema,
 } from "~/features/trails/trail-schema";
 import { trailColors } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
+import photos from "~/generated/photos.json";
 import trailsIndex from "~/generated/trails-index.json";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
@@ -40,7 +43,10 @@ export async function loader({ params }: Route.LoaderArgs) {
 	if (!content) throw data("No text for this trail", { status: 404 });
 	const body = await loadContentBody(lang, summary.slug);
 
-	return { summary, file, content, body };
+	// why: written by scripts/build-photos.ts from Zod-validated Commons responses.
+	const photo = (photos as Record<string, TrailPhoto>)[summary.slug] ?? null;
+
+	return { summary, file, content, body, photo };
 }
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
@@ -50,8 +56,16 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
 	if (!loaderData || !layout) return [];
 	const app = (layout.messages[layout.lang] ?? layout.messages.en)?.app.name;
-	const { content, summary } = loaderData;
+	const { content, summary, photo } = loaderData;
 	const url = absoluteUrl(`/${layout.lang}/trail/${summary.slug}/`);
+	const image = photo
+		? [
+				{ property: "og:image", content: absoluteUrl(photo.src.large) },
+				{ property: "og:image:width", content: String(photo.width) },
+				{ property: "og:image:height", content: String(photo.height) },
+				{ name: "twitter:card", content: "summary_large_image" },
+			]
+		: [{ name: "twitter:card", content: "summary" }];
 	return [
 		{ title: `${content.title} · ${app}` },
 		{ name: "description", content: content.summary },
@@ -61,13 +75,13 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		{ property: "og:url", content: url },
 		{ property: "og:site_name", content: app },
 		{ property: "og:locale", content: layout.lang.replace("-", "_") },
-		{ name: "twitter:card", content: "summary" },
+		...image,
 		...alternateLinks(layout.lang, `trail/${params.slug}/`),
 	];
 }
 
 export default function Trail({ loaderData }: Route.ComponentProps) {
-	const { summary, file, content, body } = loaderData;
+	const { summary, file, content, body, photo } = loaderData;
 	const { t } = useTranslation();
 	const lang = useLang();
 	const hydrated = useHydrated();
@@ -144,12 +158,13 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 			</nav>
 
 			<header className="mt-2">
-				<div
+				<TrailImage
+					photo={photo}
+					color={color}
+					alt={t("trail.photoAlt", { title: content.title })}
 					className="aspect-[16/9] w-full rounded-2xl"
-					style={{
-						background: `linear-gradient(135deg, ${color}, ${color}66)`,
-					}}
-					role="presentation"
+					sizes="(min-width: 672px) 640px, 100vw"
+					eager
 				/>
 				<p className="mt-4 flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">
 					<span
