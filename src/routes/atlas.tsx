@@ -8,7 +8,8 @@ import { useLang } from "~/features/i18n/use-lang";
 import type { HoverInfo } from "~/features/map/atlas-map";
 import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
-import type { TrailSummary } from "~/features/trails/trail-schema";
+import type { TrailPhoto, TrailSummary } from "~/features/trails/trail-schema";
+import photos from "~/generated/photos.json";
 import trailsIndex from "~/generated/trails-index.json";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
@@ -25,6 +26,8 @@ export async function loader({ params }: Route.LoaderArgs) {
 		// why: written by scripts/build-data.ts from Zod-validated trail files; JSON imports
 		// widen string unions, so the type has to be restated here.
 		trails: trailsIndex as TrailSummary[],
+		// why: written by scripts/build-photos.ts from Zod-validated Commons responses.
+		photos: photos as Record<string, TrailPhoto>,
 		content: await loadContentIndex(params.lang),
 	};
 }
@@ -141,6 +144,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 						<TrailPreview
 							trail={hoverTrails[0]}
 							content={loaderData.content[hoverTrails[0].slug]}
+							photo={loaderData.photos[hoverTrails[0].slug] ?? null}
 							variant="hover"
 						/>
 					) : (
@@ -180,6 +184,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 							<TrailPreview
 								trail={selected}
 								content={loaderData.content[selected.slug]}
+								photo={loaderData.photos[selected.slug] ?? null}
 								variant="sheet"
 								onClose={() => select(null)}
 							/>

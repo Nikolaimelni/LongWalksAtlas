@@ -2,18 +2,26 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
-import type { TrailSummary } from "./trail-schema";
+import { TrailImage } from "./trail-image";
+import type { TrailPhoto, TrailSummary } from "./trail-schema";
 import { trailColors } from "./trail-style";
 import { useTrailFormat } from "./use-trail-format";
 
 type Props = {
 	trail: TrailSummary;
 	content: TrailContent | undefined;
+	photo: TrailPhoto | null;
 	variant: "sheet" | "hover";
 	onClose?: () => void;
 };
 
-export function TrailPreview({ trail, content, variant, onClose }: Props) {
+export function TrailPreview({
+	trail,
+	content,
+	photo,
+	variant,
+	onClose,
+}: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
@@ -21,14 +29,21 @@ export function TrailPreview({ trail, content, variant, onClose }: Props) {
 
 	return (
 		<article className="flex flex-col gap-3">
-			<div
+			<TrailImage
+				photo={photo}
+				color={color}
+				alt={t("trail.photoAlt", {
+					title: content?.title ?? trail.name.original,
+				})}
 				className={
 					variant === "sheet"
 						? "aspect-[5/2] w-full rounded-xl md:aspect-[16/9]"
 						: "aspect-[2/1] w-full rounded-lg"
 				}
-				style={{ background: `linear-gradient(135deg, ${color}, ${color}66)` }}
-				role="presentation"
+				sizes={
+					variant === "sheet" ? "(min-width: 768px) 384px, 100vw" : "256px"
+				}
+				eager
 			/>
 			<div>
 				<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">

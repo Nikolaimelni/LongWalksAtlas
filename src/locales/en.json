@@ -49,7 +49,9 @@
 		"backToAtlas": "All trails",
 		"notReviewed": "This text has not been reviewed by a person yet.",
 		"fallback": "There is no translation yet, so this text is in English.",
-		"mapLoading": "Loading the map…"
+		"mapLoading": "Loading the map…",
+		"photoBy": "Photo:",
+		"photoAlt": "On the {{title}}"
 	},
 	"faq": {
 		"title": "Questions walkers ask",
