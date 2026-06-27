@@ -38,6 +38,8 @@ export function buildTrail(trail: TrailFile, lines: Position[][]) {
 		name: trail.name,
 		type: trail.type,
 		region: trail.region,
+		start: trail.start,
+		end: trail.end,
 		countries: trail.countries,
 		bestSeason: trail.bestSeason,
 		badges: trail.badges,
