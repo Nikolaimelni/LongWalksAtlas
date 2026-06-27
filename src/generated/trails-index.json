@@ -6,6 +6,20 @@
 		},
 		"type": "historic",
 		"region": "europe",
+		"start": {
+			"name": "Perge",
+			"coords": [
+				30.8538,
+				36.9614
+			]
+		},
+		"end": {
+			"name": "Yalvaç",
+			"coords": [
+				31.1905,
+				38.3065
+			]
+		},
 		"countries": [
 			"TR"
 		],
@@ -36,6 +50,20 @@
 		},
 		"type": "pilgrimage",
 		"region": "europe",
+		"start": {
+			"name": "Lisboa",
+			"coords": [
+				-9.1335,
+				38.7098
+			]
+		},
+		"end": {
+			"name": "Santiago de Compostela",
+			"coords": [
+				-8.5446,
+				42.8806
+			]
+		},
 		"countries": [
 			"PT",
 			"ES"
@@ -70,6 +98,20 @@
 		},
 		"type": "e-path",
 		"region": "europe",
+		"start": {
+			"name": "Nordkapp",
+			"coords": [
+				25.7836,
+				71.1685
+			]
+		},
+		"end": {
+			"name": "Capo Passero",
+			"coords": [
+				15.1497,
+				36.6886
+			]
+		},
 		"countries": [
 			"NO",
 			"FI",
@@ -106,6 +148,20 @@
 		},
 		"type": "coastal",
 		"region": "europe",
+		"start": {
+			"name": "Ölüdeniz",
+			"coords": [
+				29.1155,
+				36.549
+			]
+		},
+		"end": {
+			"name": "Geyikbayırı",
+			"coords": [
+				30.4625,
+				36.8795
+			]
+		},
 		"countries": [
 			"TR"
 		],
@@ -137,6 +193,20 @@
 		},
 		"type": "mountain",
 		"region": "europe",
+		"start": {
+			"name": "Les Houches",
+			"coords": [
+				6.7957,
+				45.8907
+			]
+		},
+		"end": {
+			"name": "Les Houches",
+			"coords": [
+				6.7957,
+				45.8907
+			]
+		},
 		"countries": [
 			"FR",
 			"IT",

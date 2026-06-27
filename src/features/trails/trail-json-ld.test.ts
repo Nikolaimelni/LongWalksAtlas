@@ -26,6 +26,8 @@ const summary: TrailSummary = {
 	name: file.name,
 	type: file.type,
 	region: file.region,
+	start: file.start,
+	end: file.end,
 	countries: file.countries,
 	bestSeason: file.bestSeason,
 	badges: file.badges,

@@ -90,7 +90,15 @@ export type DayRange = NonNullable<TrailFile["days"]>;
 
 export type TrailSummary = Pick<
 	TrailFile,
-	"slug" | "name" | "type" | "region" | "countries" | "bestSeason" | "badges"
+	| "slug"
+	| "name"
+	| "type"
+	| "region"
+	| "start"
+	| "end"
+	| "countries"
+	| "bestSeason"
+	| "badges"
 > & {
 	lengthKm: number;
 	lengthSource: "official" | "osm";
