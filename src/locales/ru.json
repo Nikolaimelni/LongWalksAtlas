@@ -6,8 +6,31 @@
 	"atlas": {
 		"title": "Карта пеших путей",
 		"loading": "Загружаем карту…",
-		"allTrails": "Все тропы",
 		"pick": "Здесь сходятся несколько троп"
+	},
+	"filters": {
+		"list": "Тропы",
+		"search": "Поиск троп",
+		"searchPlaceholder": "Тропа, место или страна",
+		"count_one": "{{count}} тропа",
+		"count_few": "{{count}} тропы",
+		"count_many": "{{count}} троп",
+		"count_other": "{{count}} тропы",
+		"types": "Тип",
+		"country": "Страна",
+		"anyCountry": "Любая",
+		"length": "Длина",
+		"anyLength": "Любая",
+		"under": "До {{value}}",
+		"over": "Больше {{value}}",
+		"duration": "Пешком",
+		"anyDuration": "Любая",
+		"week": "До недели",
+		"fortnight": "1–2 недели",
+		"month": "От 2 недель до месяца",
+		"more": "Больше месяца",
+		"reset": "Сбросить",
+		"none": "Ни одна тропа не подходит. Попробуйте убрать фильтр."
 	},
 	"language": {
 		"label": "Язык",

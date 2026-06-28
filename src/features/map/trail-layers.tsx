@@ -44,9 +44,14 @@ function width(base: number): ExpressionSpecification {
 
 type Props = {
 	dimmed: boolean;
+	visible: string[] | null;
 };
 
-export function TrailLayers({ dimmed }: Props) {
+export function TrailLayers({ dimmed, visible }: Props) {
+	const only = (base: ExpressionSpecification): ExpressionSpecification =>
+		visible
+			? ["all", base, ["in", ["get", "slug"], ["literal", visible]]]
+			: base;
 	const opacity: ExpressionSpecification = [
 		"case",
 		active,
@@ -72,14 +77,14 @@ export function TrailLayers({ dimmed }: Props) {
 			<Layer
 				id="trails-solid"
 				type="line"
-				filter={["!=", ["get", "type"], "e-path"]}
+				filter={only(["!=", ["get", "type"], "e-path"])}
 				layout={layout}
 				paint={{ ...paint, "line-width": width(2) }}
 			/>
 			<Layer
 				id="trails-e-path"
 				type="line"
-				filter={["==", ["get", "type"], "e-path"]}
+				filter={only(["==", ["get", "type"], "e-path"])}
 				layout={{ ...layout, "line-cap": "butt" }}
 				paint={{
 					...paint,
@@ -90,6 +95,7 @@ export function TrailLayers({ dimmed }: Props) {
 			<Layer
 				id={trailHitLayerId}
 				type="line"
+				filter={only(["boolean", true])}
 				layout={layout}
 				paint={{ "line-color": "#000000", "line-opacity": 0, "line-width": 24 }}
 			/>

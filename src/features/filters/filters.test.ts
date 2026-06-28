@@ -3,6 +3,7 @@ import type { TrailSummary } from "~/features/trails/trail-schema";
 import {
 	applyFilters,
 	countActive,
+	type Filters,
 	parseFilters,
 	writeFilters,
 } from "./filters";
@@ -31,7 +32,12 @@ function trail(
 	};
 }
 
-const none = { types: [], country: null, length: null, days: null };
+const none: Omit<Filters, "q"> = {
+	types: [],
+	country: null,
+	length: null,
+	days: null,
+};
 
 describe("parseFilters", () => {
 	it("reads a full set of filters", () => {

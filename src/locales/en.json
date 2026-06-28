@@ -6,8 +6,29 @@
 	"atlas": {
 		"title": "Map of long-distance walking trails",
 		"loading": "Loading the map…",
-		"allTrails": "All trails",
 		"pick": "Several trails meet here"
+	},
+	"filters": {
+		"list": "Trails",
+		"search": "Search trails",
+		"searchPlaceholder": "Trail, place or country",
+		"count_one": "{{count}} trail",
+		"count_other": "{{count}} trails",
+		"types": "Type",
+		"country": "Country",
+		"anyCountry": "Any",
+		"length": "Length",
+		"anyLength": "Any",
+		"under": "Under {{value}}",
+		"over": "Over {{value}}",
+		"duration": "On foot",
+		"anyDuration": "Any",
+		"week": "Up to a week",
+		"fortnight": "1–2 weeks",
+		"month": "2 weeks to a month",
+		"more": "Over a month",
+		"reset": "Clear all",
+		"none": "No trail matches. Try clearing a filter."
 	},
 	"language": {
 		"label": "Language",

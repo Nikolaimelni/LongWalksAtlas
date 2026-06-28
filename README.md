@@ -24,6 +24,11 @@ will find the site, so each page carries its canonical URL, hreflang links to it
 translations and schema.org JSON-LD, and the facts are on the page as text, not only on
 the map.
 
+On the atlas, search (fuzzy and accent-blind, so "oludeniz" finds Ölüdeniz) and the
+filters for type, country, length and days live in the query string, so a filtered view
+is a link you can send. The trail list is part of the prerendered page; on a phone it
+folds into a bar under the map.
+
 `pnpm preview` serves `build/client` the way the host will: files as they are, `/en`
 redirected to `/en/`, and `404.html` with a real 404 for anything else (`vite preview`
 would answer unknown paths with the home page). `pnpm e2e` builds, serves through it and
