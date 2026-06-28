@@ -25,7 +25,7 @@ const search = createSearch([
 	},
 ]);
 
-const found = (q: string) => [...(search(q) ?? [])];
+const found = (q: string) => search(q) ?? [];
 
 describe("createSearch", () => {
 	it("finds a trail by its translated or original name", () => {

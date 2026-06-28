@@ -1,6 +1,15 @@
 import { lazy, Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { data, Link, useNavigate, useSearchParams } from "react-router";
+import { data, useNavigate, useSearchParams } from "react-router";
+import {
+	applyFilters,
+	countActive,
+	type Filters,
+	parseFilters,
+	writeFilters,
+} from "~/features/filters/filters";
+import { createSearch } from "~/features/filters/search";
+import { TrailPanel } from "~/features/filters/trail-panel";
 import { alternateLinks } from "~/features/i18n/alternates";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
@@ -11,6 +20,7 @@ import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailPhoto, TrailSummary } from "~/features/trails/trail-schema";
 import photos from "~/generated/photos.json";
 import trailsIndex from "~/generated/trails-index.json";
+import { canHover } from "~/shared/can-hover";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
 import { useHydrated } from "~/shared/use-hydrated";
@@ -52,38 +62,62 @@ export function meta({ matches }: Route.MetaArgs) {
 	];
 }
 
-function canHover(): boolean {
-	return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-}
+const noFilters: Filters = {
+	q: "",
+	types: [],
+	country: null,
+	length: null,
+	days: null,
+};
 
 export default function Atlas({ loaderData }: Route.ComponentProps) {
+	const { trails, content, photos } = loaderData;
 	const { t } = useTranslation();
 	const lang = useLang();
 	const navigate = useNavigate();
 	const hydrated = useHydrated();
 	const [params, setParams] = useSearchParams();
 	const [hovered, setHovered] = useState<HoverInfo | null>(null);
+	const [listHover, setListHover] = useState<string | null>(null);
 	const [choices, setChoices] = useState<string[]>([]);
 
-	const bySlug = new Map(loaderData.trails.map((tr) => [tr.slug, tr]));
+	const titleOf = (trail: TrailSummary) =>
+		content[trail.slug]?.title ?? trail.name.original;
+	const pageOf = (slug: string) => `/${lang}/trail/${slug}/`;
+	const bySlug = new Map(trails.map((tr) => [tr.slug, tr]));
+
 	const selected = hydrated
 		? (bySlug.get(params.get("trail") ?? "") ?? null)
 		: null;
-	const pageOf = (slug: string) => `/${lang}/trail/${slug}/`;
-	const titleOf = (trail: TrailSummary) =>
-		loaderData.content[trail.slug]?.title ?? trail.name.original;
+	const filters = hydrated ? parseFilters(params) : noFilters;
+
+	const regions = new Intl.DisplayNames([lang], { type: "region" });
+	const search = createSearch(
+		trails.map((tr) => ({
+			slug: tr.slug,
+			title: titleOf(tr),
+			original: tr.name.original,
+			places: [tr.start.name, tr.end.name],
+			countries: tr.countries.map((c) => regions.of(c) ?? c),
+		})),
+	);
+	const filtered = applyFilters(trails, filters);
+	const ranked = search(filters.q);
+	const results = ranked
+		? ranked.flatMap((slug) => filtered.find((tr) => tr.slug === slug) ?? [])
+		: [...filtered].sort((a, b) => titleOf(a).localeCompare(titleOf(b), lang));
+	const narrowed = countActive(filters) > 0 || filters.q.trim() !== "";
+
+	function update(next: URLSearchParams) {
+		setParams(next, { replace: true, preventScrollReset: true });
+	}
 
 	function select(slug: string | null) {
 		setChoices([]);
-		setParams(
-			(prev) => {
-				const next = new URLSearchParams(prev);
-				if (slug) next.set("trail", slug);
-				else next.delete("trail");
-				return next;
-			},
-			{ replace: true, preventScrollReset: true },
-		);
+		const next = new URLSearchParams(params);
+		if (slug) next.set("trail", slug);
+		else next.delete("trail");
+		update(next);
 	}
 
 	function pick(slugs: string[]) {
@@ -97,6 +131,15 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 		select(only);
 	}
 
+	const highlighted =
+		hovered?.slugs ??
+		(listHover ? [listHover] : selected ? [selected.slug] : []);
+	const hoverTrails = (hovered?.slugs ?? []).flatMap(
+		(s) => bySlug.get(s) ?? [],
+	);
+	const choiceTrails = choices.flatMap((s) => bySlug.get(s) ?? []);
+	const sheetOpen = selected !== null || choiceTrails.length > 0;
+
 	const placeholder = (
 		<div
 			className="absolute inset-0 grid place-items-center bg-stone-100 text-sm text-stone-500 dark:bg-stone-900"
@@ -105,19 +148,16 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			{t("atlas.loading")}
 		</div>
 	);
-	const hoverTrails = (hovered?.slugs ?? []).flatMap(
-		(s) => bySlug.get(s) ?? [],
-	);
-	const choiceTrails = choices.flatMap((s) => bySlug.get(s) ?? []);
 
 	return (
-		<main className="relative h-dvh overflow-hidden">
+		<main className="relative h-dvh overflow-hidden [&_.maplibregl-ctrl-bottom-right]:bottom-[calc(4.5rem+env(safe-area-inset-bottom))] md:[&_.maplibregl-ctrl-bottom-right]:bottom-0">
 			<h1 className="sr-only">{t("atlas.title")}</h1>
 			{hydrated ? (
 				<Suspense fallback={placeholder}>
 					<AtlasMap
-						selected={selected}
-						hovered={hovered}
+						focus={selected}
+						highlighted={highlighted}
+						visible={narrowed ? results.map((tr) => tr.slug) : null}
 						onHover={setHovered}
 						onPick={pick}
 					/>
@@ -135,16 +175,28 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 				</div>
 			</header>
 
+			<div className={sheetOpen ? "hidden md:contents" : "contents"}>
+				<TrailPanel
+					trails={results}
+					allTrails={trails}
+					filters={filters}
+					titleOf={titleOf}
+					onChange={(next) => update(writeFilters(params, next))}
+					onHoverTrail={setListHover}
+					onSelect={select}
+				/>
+			</div>
+
 			{hoverTrails[0] && !selected && (
 				<div
-					className="pointer-events-none absolute z-10 w-64 rounded-xl bg-white p-3 shadow-xl dark:bg-stone-900"
+					className="pointer-events-none absolute z-20 w-64 rounded-xl bg-white p-3 shadow-xl dark:bg-stone-900"
 					style={{ left: (hovered?.x ?? 0) + 16, top: (hovered?.y ?? 0) + 16 }}
 				>
 					{hoverTrails.length === 1 ? (
 						<TrailPreview
 							trail={hoverTrails[0]}
-							content={loaderData.content[hoverTrails[0].slug]}
-							photo={loaderData.photos[hoverTrails[0].slug] ?? null}
+							content={content[hoverTrails[0].slug]}
+							photo={photos[hoverTrails[0].slug] ?? null}
 							variant="hover"
 						/>
 					) : (
@@ -157,10 +209,10 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 				</div>
 			)}
 
-			{(selected || choiceTrails.length > 0) && (
+			{sheetOpen && (
 				<section
 					aria-label={selected ? titleOf(selected) : t("atlas.pick")}
-					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl md:inset-x-auto md:start-4 md:bottom-4 md:w-96 md:rounded-2xl dark:bg-stone-900"
+					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl md:inset-x-auto md:start-[26rem] md:bottom-4 md:w-96 md:rounded-2xl dark:bg-stone-900"
 				>
 					{choiceTrails.length > 0 ? (
 						<>
@@ -183,8 +235,8 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 						selected && (
 							<TrailPreview
 								trail={selected}
-								content={loaderData.content[selected.slug]}
-								photo={loaderData.photos[selected.slug] ?? null}
+								content={content[selected.slug]}
+								photo={photos[selected.slug] ?? null}
 								variant="sheet"
 								onClose={() => select(null)}
 							/>
@@ -192,17 +244,6 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 					)}
 				</section>
 			)}
-
-			<nav aria-label={t("atlas.allTrails")} className="sr-only">
-				<h2>{t("atlas.allTrails")}</h2>
-				<ul>
-					{loaderData.trails.map((tr) => (
-						<li key={tr.slug}>
-							<Link to={pageOf(tr.slug)}>{titleOf(tr)}</Link>
-						</li>
-					))}
-				</ul>
-			</nav>
 		</main>
 	);
 }

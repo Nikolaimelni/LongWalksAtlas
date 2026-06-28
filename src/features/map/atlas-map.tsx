@@ -13,8 +13,9 @@ const europeBounds: [[number, number], [number, number]] = [
 export type HoverInfo = { slugs: string[]; x: number; y: number };
 
 type Props = {
-	selected: TrailSummary | null;
-	hovered: HoverInfo | null;
+	focus: TrailSummary | null;
+	highlighted: string[];
+	visible: string[] | null;
 	onHover: (info: HoverInfo | null) => void;
 	onPick: (slugs: string[]) => void;
 };
@@ -24,10 +25,16 @@ function slugsAt(event: MapLayerMouseEvent): string[] {
 	return [...new Set(slugs)];
 }
 
-export function AtlasMap({ selected, hovered, onHover, onPick }: Props) {
+export function AtlasMap({
+	focus,
+	highlighted,
+	visible,
+	onHover,
+	onPick,
+}: Props) {
 	const mapRef = useRef<MapRef>(null);
 	const [loaded, setLoaded] = useState(false);
-	const highlighted = hovered?.slugs ?? (selected ? [selected.slug] : []);
+	const [pointer, setPointer] = useState(false);
 	const highlightKey = highlighted.join(",");
 
 	useEffect(() => {
@@ -46,9 +53,10 @@ export function AtlasMap({ selected, hovered, onHover, onPick }: Props) {
 
 	useEffect(() => {
 		const map = mapRef.current?.getMap();
-		if (!map || !loaded || !selected) return;
-		const [west, south, east, north] = selected.bbox;
-		const phone = map.getContainer().clientWidth < 768;
+		if (!map || !loaded || !focus) return;
+		const [west, south, east, north] = focus.bbox;
+		const { clientWidth, clientHeight } = map.getContainer();
+		const phone = clientWidth < 768;
 		map.fitBounds(
 			[
 				[west, south],
@@ -56,18 +64,18 @@ export function AtlasMap({ selected, hovered, onHover, onPick }: Props) {
 			],
 			{
 				padding: phone
-					? {
+					? { top: 72, bottom: clientHeight * 0.55, left: 24, right: 24 }
+					: {
 							top: 72,
-							bottom: map.getContainer().clientHeight * 0.55,
-							left: 24,
-							right: 24,
-						}
-					: { top: 72, bottom: 48, left: 420, right: 48 },
+							bottom: 48,
+							left: Math.min(816, clientWidth / 2),
+							right: 48,
+						},
 				maxZoom: 11,
 				duration: 800,
 			},
 		);
-	}, [selected, loaded]);
+	}, [focus, loaded]);
 
 	return (
 		<MapLibreMap
@@ -82,20 +90,24 @@ export function AtlasMap({ selected, hovered, onHover, onPick }: Props) {
 			touchPitch={false}
 			attributionControl={{ compact: true }}
 			interactiveLayerIds={[trailHitLayerId]}
-			cursor={hovered ? "pointer" : "grab"}
+			cursor={pointer ? "pointer" : "grab"}
 			onLoad={() => setLoaded(true)}
 			onMouseMove={(event) => {
 				const slugs = slugsAt(event);
+				setPointer(slugs.length > 0);
 				onHover(
 					slugs.length > 0
 						? { slugs, x: event.point.x, y: event.point.y }
 						: null,
 				);
 			}}
-			onMouseLeave={() => onHover(null)}
+			onMouseLeave={() => {
+				setPointer(false);
+				onHover(null);
+			}}
 			onClick={(event) => onPick(slugsAt(event))}
 		>
-			<TrailLayers dimmed={highlighted.length > 0} />
+			<TrailLayers dimmed={highlighted.length > 0} visible={visible} />
 		</MapLibreMap>
 	);
 }
