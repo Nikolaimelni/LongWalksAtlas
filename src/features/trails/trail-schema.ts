@@ -64,6 +64,7 @@ export const trailFileSchema = z
 		geometry: z.strictObject({
 			source: z.literal("osm"),
 			relationIds: z.array(z.int().positive()).min(1),
+			mode: z.enum(["main-line", "all-ways"]).optional(),
 		}),
 		verifiedAt: z.iso.date(),
 	})
