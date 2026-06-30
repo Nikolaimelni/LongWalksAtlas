@@ -23,10 +23,11 @@ const lengthWarnRatio = 0.15;
 
 function traceLines(trail: TrailFile, segments: Position[][]) {
 	const loop = haversineKm(trail.start.coords, trail.end.coords) < 1;
-	const line = loop
-		? null
-		: mainLine(segments, trail.start.coords, trail.end.coords);
-	if (!loop && !line) {
+	const wanted = !loop && trail.geometry.mode !== "all-ways";
+	const line = wanted
+		? mainLine(segments, trail.start.coords, trail.end.coords)
+		: null;
+	if (wanted && !line) {
 		log.warn(
 			{ slug: trail.slug },
 			"no path between the official start and end, drawing every way",
