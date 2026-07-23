@@ -55,7 +55,7 @@ export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
 export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
 	if (!loaderData || !layout) return [];
-	const app = (layout.messages[layout.lang] ?? layout.messages.en)?.app.name;
+	const app = layout.messages.app.name;
 	const { content, summary, photo } = loaderData;
 	const url = absoluteUrl(`/${layout.lang}/trail/${summary.slug}/`);
 	const image = photo

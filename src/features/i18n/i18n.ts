@@ -1,7 +1,7 @@
 import { createInstance, type i18n } from "i18next";
 import { initReactI18next } from "react-i18next";
-import { defaultLang, type Lang } from "./languages";
-import type { LoadedMessages, Messages } from "./messages";
+import type { Lang } from "./languages";
+import type { Messages } from "./messages";
 
 declare module "i18next" {
 	interface CustomTypeOptions {
@@ -11,21 +11,15 @@ declare module "i18next" {
 
 const instances = new Map<Lang, i18n>();
 
-export function getI18n(lang: Lang, messages: LoadedMessages): i18n {
+export function getI18n(lang: Lang, messages: Messages): i18n {
 	const cached = instances.get(lang);
 	if (cached) return cached;
 
 	const instance = createInstance();
-	const resources = Object.fromEntries(
-		Object.entries(messages).map(([code, translation]) => [
-			code,
-			{ translation },
-		]),
-	);
 	void instance.use(initReactI18next).init({
 		lng: lang,
-		fallbackLng: defaultLang,
-		resources,
+		fallbackLng: false,
+		resources: { [lang]: { translation: messages } },
 		initAsync: false,
 		interpolation: { escapeValue: false },
 	});
