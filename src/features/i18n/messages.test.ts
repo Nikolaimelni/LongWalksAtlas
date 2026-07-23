@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import { mergeMessages } from "./messages";
 
 const dir = join(import.meta.dirname, "../../locales");
 
@@ -19,6 +20,33 @@ function keys(value: unknown, prefix = ""): string[] {
 function read(file: string): unknown {
 	return JSON.parse(readFileSync(join(dir, file), "utf8"));
 }
+
+describe("mergeMessages", () => {
+	it("lays a translation over English, keeping what it lacks", () => {
+		expect(
+			mergeMessages(
+				{ app: { name: "Atlas", description: "A map" }, close: "Close" },
+				{ app: { name: "Атлас" } },
+			),
+		).toEqual({
+			app: { name: "Атлас", description: "A map" },
+			close: "Close",
+		});
+	});
+
+	it("keeps a language's own plural forms beside the English ones", () => {
+		expect(
+			mergeMessages(
+				{ days_one: "{{count}} day", days_other: "{{count}} days" },
+				{ days_one: "{{count}} день", days_few: "{{count}} дня" },
+			),
+		).toEqual({
+			days_one: "{{count}} день",
+			days_few: "{{count}} дня",
+			days_other: "{{count}} days",
+		});
+	});
+});
 
 describe("locale files", () => {
 	const reference = keys(read("en.json")).sort();

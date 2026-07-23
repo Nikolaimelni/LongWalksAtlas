@@ -48,7 +48,7 @@ export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
 export function meta({ matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
 	if (!layout) return [];
-	const app = (layout.messages[layout.lang] ?? layout.messages.en)?.app;
+	const app = layout.messages.app;
 	return [
 		{ title: app?.name },
 		{ name: "description", content: app?.description },
