@@ -1,0 +1,16 @@
+# Cloudflare reads this file and serves these headers; it is not published as a page.
+
+# Bundles and photos carry a content hash in their names, so a new version is a new URL.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/photos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Trail lines keep their names between builds; an hour is plenty for data that changes
+# when someone runs `pnpm data`.
+/data/*
+  Cache-Control: public, max-age=3600
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
