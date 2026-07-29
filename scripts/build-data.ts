@@ -10,6 +10,7 @@ import { buildTrail, type TrailFeature } from "./build-trail.ts";
 import { DataError } from "./data-error.ts";
 import { haversineKm, mainLine } from "./geo/main-line.ts";
 import { mergeLines } from "./geo/merge-lines.ts";
+import { findNeighbours } from "./geo/neighbours.ts";
 import { log } from "./log.ts";
 import { collectWays } from "./osm/collect-ways.ts";
 import { loadRelationTree } from "./osm/relation-tree.ts";
@@ -87,6 +88,7 @@ async function main() {
 	const trails = await readTrails();
 	const summaries: TrailSummary[] = [];
 	const atlas: TrailFeature[] = [];
+	const details: TrailFeature[] = [];
 	const failed: string[] = [];
 	await mkdir(join(publicDir, "trails"), { recursive: true });
 
@@ -95,6 +97,7 @@ async function main() {
 			const built = await buildOne(trail, values.refresh);
 			summaries.push(built.summary);
 			atlas.push(built.atlas);
+			details.push(built.detail);
 			await writeFile(
 				join(publicDir, "trails", `${trail.slug}.geojson`),
 				JSON.stringify(built.detail),
@@ -104,6 +107,17 @@ async function main() {
 			log.error({ slug: trail.slug, code: error.code }, error.message);
 			failed.push(trail.slug);
 		}
+	}
+
+	const neighbours = findNeighbours(
+		summaries.map((s, i) => ({
+			slug: s.slug,
+			bbox: s.bbox,
+			lines: details[i]?.geometry.coordinates ?? [],
+		})),
+	);
+	for (const summary of summaries) {
+		Object.assign(summary, neighbours.get(summary.slug));
 	}
 
 	summaries.sort((a, b) => a.name.original.localeCompare(b.name.original));
