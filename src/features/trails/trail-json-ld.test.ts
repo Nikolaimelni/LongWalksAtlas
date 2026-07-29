@@ -35,6 +35,8 @@ const summary: TrailSummary = {
 	lengthSource: "official",
 	days: { min: 35, max: 35 },
 	bbox: [29.1, 36.2, 30.5, 36.9],
+	crosses: [],
+	nearby: [],
 };
 
 const ld = trailJsonLd({

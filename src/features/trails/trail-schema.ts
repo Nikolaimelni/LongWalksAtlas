@@ -105,6 +105,8 @@ export type TrailSummary = Pick<
 	lengthSource: "official" | "osm";
 	days: DayRange;
 	bbox: [west: number, south: number, east: number, north: number];
+	crosses: string[];
+	nearby: string[];
 };
 
 export type TrailPhoto = {

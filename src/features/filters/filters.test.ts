@@ -28,6 +28,8 @@ function trail(
 		lengthSource: "official",
 		days: { min: 12, max: 15 },
 		bbox: [0, 0, 1, 1],
+		crosses: [],
+		nearby: [],
 		...overrides,
 	};
 }

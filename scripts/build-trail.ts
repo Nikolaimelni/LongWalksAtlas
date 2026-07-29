@@ -47,6 +47,8 @@ export function buildTrail(trail: TrailFile, lines: Position[][]) {
 		lengthSource: trail.lengthKm === null ? "osm" : "official",
 		days: trail.days ?? estimateDays(lengthKm),
 		bbox: [round(west, 4), round(south, 4), round(east, 4), round(north, 4)],
+		crosses: [],
+		nearby: [],
 	};
 
 	return {
