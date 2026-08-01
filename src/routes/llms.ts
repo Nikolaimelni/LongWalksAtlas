@@ -1,5 +1,5 @@
 import { loadContentIndex } from "~/features/trails/content";
-import trailsIndex from "~/generated/trails-index.json";
+import { trailsIndex } from "~/features/trails/trails-index";
 import en from "~/locales/en.json";
 import { absoluteUrl } from "~/shared/site";
 

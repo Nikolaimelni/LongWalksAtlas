@@ -7,15 +7,10 @@ import { useLang } from "~/features/i18n/use-lang";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
 import { TrailImage } from "~/features/trails/trail-image";
 import { serializeJsonLd, trailJsonLd } from "~/features/trails/trail-json-ld";
-import {
-	type TrailPhoto,
-	type TrailSummary,
-	trailFileSchema,
-} from "~/features/trails/trail-schema";
+import { trailFileSchema } from "~/features/trails/trail-schema";
 import { trailColors } from "~/features/trails/trail-style";
+import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
-import photos from "~/generated/photos.json";
-import trailsIndex from "~/generated/trails-index.json";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
 import { useHydrated } from "~/shared/use-hydrated";
@@ -32,21 +27,38 @@ const trailFiles = import.meta.glob<unknown>("../../data/trails/*.json", {
 export async function loader({ params }: Route.LoaderArgs) {
 	const { lang, slug } = params;
 	if (!isLang(lang)) throw data("Unknown language", { status: 404 });
-	// why: see the atlas loader; the index is generated from validated files.
-	const summary = (trailsIndex as TrailSummary[]).find((t) => t.slug === slug);
+	const summary = trailsIndex.find((t) => t.slug === slug);
 	if (!summary) throw data("Unknown trail", { status: 404 });
 
 	const file = trailFileSchema.parse(
 		await trailFiles[`../../data/trails/${summary.slug}.json`]?.(),
 	);
-	const content = (await loadContentIndex(lang))[summary.slug];
+	const contentIndex = await loadContentIndex(lang);
+	const content = contentIndex[summary.slug];
 	if (!content) throw data("No text for this trail", { status: 404 });
 	const body = await loadContentBody(lang, summary.slug);
 
-	// why: written by scripts/build-photos.ts from Zod-validated Commons responses.
-	const photo = (photos as Record<string, TrailPhoto>)[summary.slug] ?? null;
+	const photo = photos[summary.slug] ?? null;
 
-	return { summary, file, content, body, photo };
+	const neighbour = (slug: string) => {
+		const other = trailsIndex.find((t) => t.slug === slug);
+		return other
+			? [
+					{
+						slug,
+						type: other.type,
+						lengthKm: other.lengthKm,
+						title: contentIndex[slug]?.title ?? other.name.original,
+					},
+				]
+			: [];
+	};
+	const related = {
+		crosses: summary.crosses.flatMap(neighbour),
+		nearby: summary.nearby.flatMap(neighbour),
+	};
+
+	return { summary, file, content, body, photo, related };
 }
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
@@ -81,7 +93,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 }
 
 export default function Trail({ loaderData }: Route.ComponentProps) {
-	const { summary, file, content, body, photo } = loaderData;
+	const { summary, file, content, body, photo, related } = loaderData;
 	const { t } = useTranslation();
 	const lang = useLang();
 	const hydrated = useHydrated();
@@ -285,6 +297,39 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				{t("trail.officialSite")}
 				<span aria-hidden="true"> {"↗︎"}</span>
 			</a>
+
+			{(["crosses", "nearby"] as const).map(
+				(kind) =>
+					related[kind].length > 0 && (
+						<section key={kind} aria-labelledby={kind} className="mt-10">
+							<h2 id={kind} className="text-xl font-semibold">
+								{t(`trail.${kind}`)}
+							</h2>
+							<ul className="mt-3 flex flex-col gap-2">
+								{related[kind].map((other) => (
+									<li key={other.slug}>
+										<Link
+											to={`/${lang}/trail/${other.slug}/`}
+											className="flex items-center gap-3 rounded-xl border border-stone-200 px-4 py-3 hover:bg-stone-50 dark:border-stone-800 dark:hover:bg-stone-900"
+										>
+											<span
+												className="inline-block h-8 w-1 shrink-0 rounded-full"
+												style={{ background: trailColors[other.type] }}
+											/>
+											<span>
+												<span className="block font-medium">{other.title}</span>
+												<span className="block text-sm text-stone-500">
+													{t(`trailType.${other.type}`)} ·{" "}
+													{format.km(other.lengthKm)}
+												</span>
+											</span>
+										</Link>
+									</li>
+								))}
+							</ul>
+						</section>
+					),
+			)}
 
 			<section aria-labelledby="faq" className="mt-10">
 				<h2 id="faq" className="text-xl font-semibold">
