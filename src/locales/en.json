@@ -71,6 +71,8 @@
 		"notReviewed": "This text has not been reviewed by a person yet.",
 		"fallback": "There is no translation yet, so this text is in English.",
 		"mapLoading": "Loading the map…",
+		"crosses": "Trails it meets",
+		"nearby": "Nearby trails",
 		"photoBy": "Photo:",
 		"photoAlt": "On the {{title}}"
 	},

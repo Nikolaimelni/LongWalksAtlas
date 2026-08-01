@@ -19,6 +19,11 @@ test("a trail page carries the facts, the story and the official link", async ({
 		page.getByText("Сколько дней идти маршрут «Ликийская тропа»?"),
 	).toBeVisible();
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+	await expect(
+		page
+			.getByRole("region", { name: "Тропы рядом" })
+			.getByRole("link", { name: /Путь Святого Павла/ }),
+	).toHaveAttribute("href", "/ru/trail/st-paul-trail/");
 });
 
 test("a trail page is described for search engines", async ({ page }) => {

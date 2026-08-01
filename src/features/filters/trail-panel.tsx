@@ -18,7 +18,7 @@ type Props = {
 	allTrails: TrailSummary[];
 	filters: Filters;
 	titleOf: (trail: TrailSummary) => string;
-	onChange: (filters: Filters) => void;
+	onChange: (change: (current: Filters) => Filters) => void;
 	onHoverTrail: (slug: string | null) => void;
 	onSelect: (slug: string) => void;
 };
@@ -71,7 +71,8 @@ export function TrailPanel({
 						type="search"
 						value={filters.q}
 						onChange={(e) => {
-							onChange({ ...filters, q: e.target.value });
+							const q = e.target.value;
+							onChange((f) => ({ ...f, q }));
 							setOpen(true);
 						}}
 						placeholder={t("filters.searchPlaceholder")}
@@ -108,12 +109,12 @@ export function TrailPanel({
 									type="button"
 									aria-pressed={pressed}
 									onClick={() =>
-										onChange({
-											...filters,
-											types: pressed
-												? filters.types.filter((x) => x !== type)
-												: [...filters.types, type],
-										})
+										onChange((f) => ({
+											...f,
+											types: f.types.includes(type)
+												? f.types.filter((x) => x !== type)
+												: [...f.types, type],
+										}))
 									}
 									className={`flex h-9 items-center gap-2 rounded-full border px-3 text-sm ${
 										pressed
@@ -137,9 +138,10 @@ export function TrailPanel({
 						{t("filters.country")}
 						<select
 							value={filters.country ?? ""}
-							onChange={(e) =>
-								onChange({ ...filters, country: e.target.value || null })
-							}
+							onChange={(e) => {
+								const country = e.target.value || null;
+								onChange((f) => ({ ...f, country }));
+							}}
 							className={`mt-1 ${selectClass}`}
 						>
 							<option value="">{t("filters.anyCountry")}</option>
@@ -154,13 +156,11 @@ export function TrailPanel({
 						{t("filters.length")}
 						<select
 							value={filters.length ?? ""}
-							onChange={(e) =>
-								onChange({
-									...filters,
-									length:
-										(e.target.value as keyof typeof lengthBuckets) || null,
-								})
-							}
+							onChange={(e) => {
+								const length =
+									(e.target.value as keyof typeof lengthBuckets) || null;
+								onChange((f) => ({ ...f, length }));
+							}}
 							className={`mt-1 ${selectClass}`}
 						>
 							<option value="">{t("filters.anyLength")}</option>
@@ -175,12 +175,11 @@ export function TrailPanel({
 						{t("filters.duration")}
 						<select
 							value={filters.days ?? ""}
-							onChange={(e) =>
-								onChange({
-									...filters,
-									days: (e.target.value as keyof typeof dayBuckets) || null,
-								})
-							}
+							onChange={(e) => {
+								const days =
+									(e.target.value as keyof typeof dayBuckets) || null;
+								onChange((f) => ({ ...f, days }));
+							}}
 							className={`mt-1 ${selectClass}`}
 						>
 							<option value="">{t("filters.anyDuration")}</option>
@@ -203,13 +202,13 @@ export function TrailPanel({
 						<button
 							type="button"
 							onClick={() =>
-								onChange({
+								onChange(() => ({
 									q: "",
 									types: [],
 									country: null,
 									length: null,
 									days: null,
-								})
+								}))
 							}
 							className="text-stone-600 underline dark:text-stone-400"
 						>

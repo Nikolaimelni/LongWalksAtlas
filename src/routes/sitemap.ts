@@ -1,5 +1,5 @@
 import { languages } from "~/features/i18n/languages";
-import trailsIndex from "~/generated/trails-index.json";
+import { trailsIndex } from "~/features/trails/trails-index";
 import { absoluteUrl } from "~/shared/site";
 
 export function loader() {

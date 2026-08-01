@@ -17,11 +17,11 @@ import { useLang } from "~/features/i18n/use-lang";
 import type { HoverInfo } from "~/features/map/atlas-map";
 import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
-import type { TrailPhoto, TrailSummary } from "~/features/trails/trail-schema";
-import photos from "~/generated/photos.json";
-import trailsIndex from "~/generated/trails-index.json";
+import type { TrailSummary } from "~/features/trails/trail-schema";
+import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { canHover } from "~/shared/can-hover";
 import { prerenderedOnly } from "~/shared/prerendered-only";
+import { revalidateOnPathChange } from "~/shared/same-path";
 import { absoluteUrl } from "~/shared/site";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
@@ -33,17 +33,16 @@ const AtlasMap = lazy(() =>
 export async function loader({ params }: Route.LoaderArgs) {
 	if (!isLang(params.lang)) throw data("Unknown language", { status: 404 });
 	return {
-		// why: written by scripts/build-data.ts from Zod-validated trail files; JSON imports
-		// widen string unions, so the type has to be restated here.
-		trails: trailsIndex as TrailSummary[],
-		// why: written by scripts/build-photos.ts from Zod-validated Commons responses.
-		photos: photos as Record<string, TrailPhoto>,
+		trails: trailsIndex,
+		photos,
 		content: await loadContentIndex(params.lang),
 	};
 }
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
 	prerenderedOnly(serverLoader);
+
+export const shouldRevalidate = revalidateOnPathChange;
 
 export function meta({ matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
@@ -181,7 +180,15 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 					allTrails={trails}
 					filters={filters}
 					titleOf={titleOf}
-					onChange={(next) => update(writeFilters(params, next))}
+					onChange={(change) =>
+						setParams(
+							(prev) => writeFilters(prev, change(parseFilters(prev))),
+							{
+								replace: true,
+								preventScrollReset: true,
+							},
+						)
+					}
 					onHoverTrail={setListHover}
 					onSelect={select}
 				/>

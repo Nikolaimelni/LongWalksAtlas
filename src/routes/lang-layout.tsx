@@ -4,6 +4,7 @@ import { getI18n } from "~/features/i18n/i18n";
 import { isLang } from "~/features/i18n/languages";
 import { loadMessages } from "~/features/i18n/messages";
 import { prerenderedOnly } from "~/shared/prerendered-only";
+import { revalidateOnPathChange } from "~/shared/same-path";
 import type { Route } from "./+types/lang-layout";
 
 export async function loader({ params }: Route.LoaderArgs) {
@@ -13,6 +14,8 @@ export async function loader({ params }: Route.LoaderArgs) {
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
 	prerenderedOnly(serverLoader);
+
+export const shouldRevalidate = revalidateOnPathChange;
 
 export default function LangLayout({ loaderData }: Route.ComponentProps) {
 	return (
