@@ -18,7 +18,8 @@
 		"test:watch": "vitest",
 		"e2e": "playwright test",
 		"data": "node --env-file-if-exists=.env scripts/build-data.ts",
-		"photos": "node scripts/build-photos.ts"
+		"photos": "node scripts/build-photos.ts",
+		"translate": "node --env-file-if-exists=.env scripts/translate.ts"
 	},
 	"dependencies": {
 		"@react-router/node": "^8.4.0",
