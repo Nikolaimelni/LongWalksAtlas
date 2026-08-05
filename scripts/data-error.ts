@@ -9,7 +9,9 @@ export type DataErrorCode =
 	| "incomplete-build"
 	| "commons-failed"
 	| "photo-not-found"
-	| "photo-license";
+	| "photo-license"
+	| "missing-key"
+	| "translate-failed";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;

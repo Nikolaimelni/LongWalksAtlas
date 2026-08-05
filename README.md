@@ -55,3 +55,12 @@ sentence summary and a `status` (`machine` or `reviewed`) in the frontmatter, th
 story below it. English is required for every trail; any other language that is missing
 falls back to it. `pnpm content` turns them into JSON and HTML under `src/generated/content/`
 (not committed); `dev`, `build` and `typecheck` run it first.
+
+`pnpm translate` fills the gaps with DeepL (`DEEPL_API_KEY` in `.env`; `--dry-run` shows
+what would be sent without one). Interface strings keep their `{{placeholders}}`, and
+plural forms are built per language from CLDR rules: each form is translated from a
+phrase with a number that falls into it (22 дня, 25 дней), then the number goes back to
+`{{count}}`. Trail texts are only written where a language has no file yet, marked
+`status: machine`, and a reviewed file is never touched. Until it has run, the other
+nine languages show English under their own URLs, which is fine for development and
+not something to publish.

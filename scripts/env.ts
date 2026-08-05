@@ -15,6 +15,7 @@ const schema = z.object({
 		)
 		.pipe(z.array(z.url()).min(1)),
 	LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+	DEEPL_API_KEY: z.string().min(1).optional(),
 });
 
 const parsed = schema.safeParse(process.env);
