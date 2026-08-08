@@ -1,3 +1,4 @@
+import { publishedLanguages } from "~/features/i18n/published";
 import { loadContentIndex } from "~/features/trails/content";
 import { trailsIndex } from "~/features/trails/trails-index";
 import en from "~/locales/en.json";
@@ -13,11 +14,16 @@ export async function loader() {
 		})
 		.join("\n");
 
+	const names = new Intl.DisplayNames(["en"], { type: "language" });
+	const offered = new Intl.ListFormat("en").format(
+		publishedLanguages.map(({ code }) => `${names.of(code)} (/${code}/)`),
+	);
+
 	const body = `# ${en.app.name}
 
 > ${en.app.description}
 
-Every trail page gives the length, days on foot, start and end, countries, best months, the official website and the sources the facts were checked against. Pages exist in English, Russian, Spanish, French, German, Italian, Portuguese, Chinese, Japanese, Arabic and Turkish; swap /en/ in a URL for another language code.
+Every trail page gives the length, days on foot, start and end, countries, best months, the official website and the sources the facts were checked against. Pages exist in ${offered}; swap the language segment of a URL to change language.
 
 ## Trails
 

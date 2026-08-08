@@ -1,5 +1,6 @@
 import { Link, redirect } from "react-router";
-import { languages, pickLang } from "~/features/i18n/languages";
+import { pickLang } from "~/features/i18n/languages";
+import { publishedLanguages } from "~/features/i18n/published";
 import { readStoredLang } from "~/features/i18n/stored-lang";
 import en from "~/locales/en.json";
 import { absoluteUrl } from "~/shared/site";
@@ -9,7 +10,7 @@ export function meta() {
 		{ title: en.app.name },
 		{ name: "description", content: en.app.description },
 		{ tagName: "link", rel: "canonical", href: absoluteUrl("/") },
-		...languages.map(({ code }) => ({
+		...publishedLanguages.map(({ code }) => ({
 			tagName: "link",
 			rel: "alternate",
 			hrefLang: code,
@@ -26,7 +27,11 @@ export function meta() {
 
 export function clientLoader() {
 	const stored = readStoredLang();
-	throw redirect(`/${stored ?? pickLang(navigator.languages)}/`);
+	const lang =
+		stored && publishedLanguages.some((l) => l.code === stored)
+			? stored
+			: pickLang(navigator.languages, publishedLanguages);
+	throw redirect(`/${lang}/`);
 }
 clientLoader.hydrate = true as const;
 
@@ -43,7 +48,7 @@ function LanguageList() {
 		<main className="mx-auto max-w-sm p-6 pt-16">
 			<h1 className="text-2xl font-semibold">Long Walks Atlas</h1>
 			<ul className="mt-6 grid grid-cols-2 gap-2">
-				{languages.map((l) => (
+				{publishedLanguages.map((l) => (
 					<li key={l.code}>
 						<Link
 							to={`/${l.code}/`}

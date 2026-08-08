@@ -32,11 +32,14 @@ function likelySubtags(tag: string): Intl.Locale | undefined {
 	}
 }
 
-export function pickLang(preferred: readonly string[]): Lang {
+export function pickLang(
+	preferred: readonly string[],
+	available: readonly { code: Lang }[] = languages,
+): Lang {
 	for (const tag of preferred) {
 		const wanted = likelySubtags(tag);
 		if (!wanted) continue;
-		const match = languages.find((l) => {
+		const match = available.find((l) => {
 			const ours = new Intl.Locale(l.code).maximize();
 			return ours.language === wanted.language && ours.script === wanted.script;
 		});

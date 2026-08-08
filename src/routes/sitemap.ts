@@ -1,4 +1,4 @@
-import { languages } from "~/features/i18n/languages";
+import { publishedLanguages as languages } from "~/features/i18n/published";
 import { trailsIndex } from "~/features/trails/trails-index";
 import { absoluteUrl } from "~/shared/site";
 

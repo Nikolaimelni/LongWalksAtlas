@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { data, Link } from "react-router";
 import { alternateLinks } from "~/features/i18n/alternates";
+import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
@@ -161,12 +162,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					<span aria-hidden="true">← </span>
 					{t("trail.backToAtlas")}
 				</Link>
-				<Link
-					to={`/${lang}/?trail=${summary.slug}`}
-					className="rounded-full px-3 py-2 font-medium hover:bg-stone-100 dark:hover:bg-stone-800"
-				>
-					{t("trail.showOnMap")}
-				</Link>
+				<LanguageSwitcher />
 			</nav>
 
 			<header className="mt-2">
@@ -272,6 +268,12 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						</Suspense>
 					) : null}
 				</div>
+				<Link
+					to={`/${lang}/?trail=${summary.slug}`}
+					className="mt-2 inline-block text-sm font-medium underline"
+				>
+					{t("trail.showOnMap")}
+				</Link>
 			</section>
 
 			{body && (

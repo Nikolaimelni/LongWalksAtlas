@@ -1,6 +1,7 @@
 import type { MetaDescriptor } from "react-router";
 import { absoluteUrl } from "~/shared/site";
-import { type Lang, languages } from "./languages";
+import type { Lang } from "./languages";
+import { publishedLanguages } from "./published";
 
 export function alternateLinks(
 	lang: Lang,
@@ -13,7 +14,7 @@ export function alternateLinks(
 			rel: "canonical",
 			href: absoluteUrl(`/${lang}/${rest}`),
 		},
-		...languages.map(({ code }) => ({
+		...publishedLanguages.map(({ code }) => ({
 			tagName: "link",
 			rel: "alternate",
 			hrefLang: code,

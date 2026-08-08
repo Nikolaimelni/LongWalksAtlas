@@ -47,13 +47,26 @@ test("the prerendered atlas links to every trail page", async ({ request }) => {
 test("switching language keeps the page and remembers the choice", async ({
 	page,
 }) => {
-	await page.goto("/en/");
+	await page.goto("/en/trail/e1/");
 	await page
 		.getByRole("combobox", { name: "Language" })
-		.selectOption("العربية");
-	await expect(page).toHaveURL(/\/ar\/$/);
-	await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+		.selectOption("Русский");
+	await expect(page).toHaveURL(/\/ru\/trail\/e1\/$/);
+	await expect(page.locator("html")).toHaveAttribute("lang", "ru");
 
 	await page.goto("/");
-	await expect(page).toHaveURL(/\/ar\/$/);
+	await expect(page).toHaveURL(/\/ru\/$/);
+});
+
+test("a language without interface strings is not published", async ({
+	page,
+	request,
+}) => {
+	expect((await request.get("/de/")).status()).toBe(404);
+	expect(await (await request.get("/sitemap.xml")).text()).not.toContain(
+		"/de/",
+	);
+	await page.goto("/en/");
+	await expect(page.locator('link[hreflang="de"]')).toHaveCount(0);
+	await expect(page.locator('link[hreflang="ru"]')).toHaveCount(1);
 });

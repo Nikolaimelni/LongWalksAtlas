@@ -25,6 +25,12 @@ describe("pickLang", () => {
 		expect(pickLang(["not a tag", "tr-TR"])).toBe("tr");
 	});
 
+	it("only picks from the languages on offer", () => {
+		const offered = [{ code: "en" as const }, { code: "ru" as const }];
+		expect(pickLang(["de-DE", "ru"], offered)).toBe("ru");
+		expect(pickLang(["de-DE"], offered)).toBe("en");
+	});
+
 	it("falls back to English", () => {
 		expect(pickLang([])).toBe("en");
 		expect(pickLang(["sr-Latn-RS"])).toBe("en");
