@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
-import { isLang, languages, swapLang } from "./languages";
+import { isLang, swapLang } from "./languages";
+import { publishedLanguages } from "./published";
 import { storeLang } from "./stored-lang";
 import { useLang } from "./use-lang";
 
@@ -25,7 +26,7 @@ export function LanguageSwitcher() {
 				onChange={handleChange}
 				className="h-10 appearance-none rounded-full bg-white/90 ps-4 pe-4 text-sm shadow-md backdrop-blur focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 dark:bg-stone-900/90 dark:focus-visible:outline-stone-100"
 			>
-				{languages.map((l) => (
+				{publishedLanguages.map((l) => (
 					<option key={l.code} value={l.code} lang={l.code}>
 						{l.name}
 					</option>

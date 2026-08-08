@@ -17,10 +17,10 @@ pnpm dev
 ```
 
 `pnpm build` writes a fully static site to `build/client`: the atlas and every trail page
-prerendered in each of the 11 languages (`/en/`, `/ru/trail/lycian-way/` and so on), `/`,
+prerendered in each published language (`/en/`, `/ru/trail/lycian-way/` and so on), `/`,
 which sends the visitor to the language their browser asks for, plus `sitemap.xml`,
 `llms.txt` and a `404.html`. Search engines and AI assistants are the main way people
-will find the site, so each page carries its canonical URL, hreflang links to its ten
+will find the site, so each page carries its canonical URL, hreflang links to its
 translations and schema.org JSON-LD, and the facts are on the page as text, not only on
 the map.
 
@@ -61,6 +61,7 @@ what would be sent without one). Interface strings keep their `{{placeholders}}`
 plural forms are built per language from CLDR rules: each form is translated from a
 phrase with a number that falls into it (22 дня, 25 дней), then the number goes back to
 `{{count}}`. Trail texts are only written where a language has no file yet, marked
-`status: machine`, and a reviewed file is never touched. Until it has run, the other
-nine languages show English under their own URLs, which is fine for development and
-not something to publish.
+`status: machine`, and a reviewed file is never touched. A language only goes on the
+site, with its pages, sitemap entries, hreflang links and a place in the switcher, once
+`src/locales/<lang>.json` exists; English pages under a German URL would read as
+duplicates to a search engine. Today that means English and Russian.

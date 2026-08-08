@@ -1,6 +1,10 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import type { Config } from "@react-router/dev/config";
-import { languages } from "./src/features/i18n/languages";
+import { languages as all } from "./src/features/i18n/languages";
+
+const languages = all.filter(({ code }) =>
+	existsSync(new URL(`./src/locales/${code}.json`, import.meta.url)),
+);
 
 const trails: { slug: string }[] = JSON.parse(
 	readFileSync(

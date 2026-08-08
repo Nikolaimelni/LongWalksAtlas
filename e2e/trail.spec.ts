@@ -32,7 +32,7 @@ test("a trail page is described for search engines", async ({ page }) => {
 		"href",
 		"https://longwalksatlas.com/en/trail/tour-du-mont-blanc/",
 	);
-	await expect(page.locator('link[rel="alternate"]')).toHaveCount(12);
+	await expect(page.locator('link[rel="alternate"]')).toHaveCount(3);
 	const ld = JSON.parse(
 		(await page.locator('script[type="application/ld+json"]').textContent()) ??
 			"{}",
@@ -46,7 +46,7 @@ test("a trail page is described for search engines", async ({ page }) => {
 test("sitemap, robots.txt and llms.txt are published", async ({ request }) => {
 	const sitemap = await (await request.get("/sitemap.xml")).text();
 	expect(sitemap).toContain(
-		"<loc>https://longwalksatlas.com/ja/trail/e1/</loc>",
+		"<loc>https://longwalksatlas.com/ru/trail/e1/</loc>",
 	);
 	expect(await (await request.get("/robots.txt")).text()).toContain(
 		"Sitemap: https://longwalksatlas.com/sitemap.xml",
