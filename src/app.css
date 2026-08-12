@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
+@theme {
+	--font-sans: "Noto Sans Variable", ui-sans-serif, system-ui, sans-serif;
+	--font-serif: "Noto Serif Variable", ui-serif, Georgia, serif;
+}
+
+:lang(zh-Hans) {
+	--font-sans:
+		"Noto Sans Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+		"Noto Sans CJK SC", sans-serif;
+	--font-serif:
+		"Noto Serif Variable", "Songti SC", "SimSun", "Noto Serif CJK SC", serif;
+}
+:lang(ja) {
+	--font-sans:
+		"Noto Sans Variable", "Hiragino Sans", "Yu Gothic", Meiryo,
+		"Noto Sans CJK JP", sans-serif;
+	--font-serif:
+		"Noto Serif Variable", "Hiragino Mincho ProN", "Yu Mincho",
+		"Noto Serif CJK JP", serif;
+}
+:lang(ar) {
+	--font-sans:
+		"Noto Sans Variable", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma,
+		sans-serif;
+	--font-serif: "Noto Serif Variable", "Noto Naskh Arabic", "Geeza Pro", serif;
+}
+
 html,
 body {
-	@apply bg-white text-stone-900 dark:bg-stone-950 dark:text-stone-100;
+	@apply bg-white font-sans text-stone-900 dark:bg-stone-950 dark:text-stone-100;
 
 	@media (prefers-color-scheme: dark) {
 		color-scheme: dark;

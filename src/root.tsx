@@ -7,6 +7,10 @@ import {
 	ScrollRestoration,
 } from "react-router";
 
+import "@fontsource-variable/noto-sans";
+import "@fontsource-variable/noto-serif";
+import sansCyrillic from "@fontsource-variable/noto-sans/files/noto-sans-cyrillic-wght-normal.woff2?url";
+import sansLatin from "@fontsource-variable/noto-sans/files/noto-sans-latin-wght-normal.woff2?url";
 import { langDir } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import type { Route } from "./+types/root";
@@ -14,6 +18,7 @@ import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	const lang = useLang();
+	const preload = lang === "ru" ? [sansLatin, sansCyrillic] : [sansLatin];
 	return (
 		<html lang={lang} dir={langDir(lang)}>
 			<head>
@@ -22,6 +27,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1, viewport-fit=cover"
 				/>
+				{preload.map((href) => (
+					<link
+						key={href}
+						rel="preload"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+						href={href}
+					/>
+				))}
 				<Meta />
 				<Links />
 			</head>

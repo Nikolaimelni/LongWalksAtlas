@@ -53,7 +53,7 @@ export function TrailPreview({
 					/>
 					{t(`trailType.${trail.type}`)}
 				</p>
-				<h2 className="mt-1 text-lg leading-snug font-semibold">
+				<h2 className="mt-1 font-serif text-lg leading-snug font-semibold">
 					{content?.title ?? trail.name.original}
 				</h2>
 				{content && content.title !== trail.name.original && (
