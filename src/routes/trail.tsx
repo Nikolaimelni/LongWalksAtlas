@@ -181,7 +181,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					/>
 					{t(`trailType.${summary.type}`)}
 				</p>
-				<h1 className="mt-1 text-3xl leading-tight font-semibold">
+				<h1 className="mt-1 font-serif text-3xl leading-tight font-semibold">
 					{content.title}
 				</h1>
 				{content.title !== file.name.original && (
@@ -205,7 +205,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 			</header>
 
 			<section aria-labelledby="facts" className="mt-8">
-				<h2 id="facts" className="text-xl font-semibold">
+				<h2 id="facts" className="font-serif text-xl font-semibold">
 					{t("trail.facts")}
 				</h2>
 				<dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-4 text-sm sm:grid-cols-3">
@@ -278,7 +278,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 
 			{body && (
 				<section aria-labelledby="story" className="mt-8">
-					<h2 id="story" className="text-xl font-semibold">
+					<h2 id="story" className="font-serif text-xl font-semibold">
 						{t("trail.story")}
 					</h2>
 					<div
@@ -304,7 +304,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				(kind) =>
 					related[kind].length > 0 && (
 						<section key={kind} aria-labelledby={kind} className="mt-10">
-							<h2 id={kind} className="text-xl font-semibold">
+							<h2 id={kind} className="font-serif text-xl font-semibold">
 								{t(`trail.${kind}`)}
 							</h2>
 							<ul className="mt-3 flex flex-col gap-2">
@@ -334,7 +334,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 			)}
 
 			<section aria-labelledby="faq" className="mt-10">
-				<h2 id="faq" className="text-xl font-semibold">
+				<h2 id="faq" className="font-serif text-xl font-semibold">
 					{t("faq.title")}
 				</h2>
 				<dl className="mt-3 flex flex-col gap-4">

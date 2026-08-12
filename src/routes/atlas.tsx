@@ -166,7 +166,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			)}
 
 			<header className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
-				<p className="pointer-events-auto rounded-full bg-white/90 px-4 py-2 text-sm font-semibold shadow-md backdrop-blur dark:bg-stone-900/90">
+				<p className="pointer-events-auto rounded-full bg-white/90 px-4 py-2 font-serif text-sm font-semibold shadow-md backdrop-blur dark:bg-stone-900/90">
 					{t("app.name")}
 				</p>
 				<div className="pointer-events-auto">
