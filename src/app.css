@@ -27,6 +27,19 @@
 	--font-serif: "Noto Serif Variable", "Noto Naskh Arabic", "Geeza Pro", serif;
 }
 
+::view-transition-group(trail-photo) {
+	animation-duration: 350ms;
+	animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none;
+	}
+}
+
 html,
 body {
 	@apply bg-white font-sans text-stone-900 dark:bg-stone-950 dark:text-stone-100;

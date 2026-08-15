@@ -94,7 +94,7 @@ export function TrailPanel({
 
 			<div
 				id="trail-panel-body"
-				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 md:flex`}
+				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none md:flex`}
 			>
 				<fieldset>
 					<legend className="mb-2 text-xs font-medium text-stone-500">
@@ -227,6 +227,7 @@ export function TrailPanel({
 							<li key={trail.slug}>
 								<Link
 									to={`/${lang}/trail/${trail.slug}/`}
+									viewTransition
 									onClick={(e) => {
 										if (canHover()) return;
 										e.preventDefault();

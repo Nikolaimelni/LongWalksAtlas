@@ -157,6 +157,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 			<nav className="flex items-center justify-between gap-2 py-2 text-sm">
 				<Link
 					to={`/${lang}/`}
+					viewTransition
 					className="rounded-full px-3 py-2 font-medium hover:bg-stone-100 dark:hover:bg-stone-800"
 				>
 					<span aria-hidden="true">← </span>
@@ -173,6 +174,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					className="aspect-[16/9] w-full rounded-2xl"
 					sizes="(min-width: 672px) 640px, 100vw"
 					eager
+					morph
 				/>
 				<p className="mt-4 flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">
 					<span
@@ -270,6 +272,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				</div>
 				<Link
 					to={`/${lang}/?trail=${summary.slug}`}
+					viewTransition
 					className="mt-2 inline-block text-sm font-medium underline"
 				>
 					{t("trail.showOnMap")}
@@ -312,6 +315,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 									<li key={other.slug}>
 										<Link
 											to={`/${lang}/trail/${other.slug}/`}
+											viewTransition
 											className="flex items-center gap-3 rounded-xl border border-stone-200 px-4 py-3 hover:bg-stone-50 dark:border-stone-800 dark:hover:bg-stone-900"
 										>
 											<span

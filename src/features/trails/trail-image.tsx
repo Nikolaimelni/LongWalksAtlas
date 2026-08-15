@@ -8,6 +8,7 @@ type Props = {
 	className: string;
 	sizes: string;
 	eager?: boolean;
+	morph?: boolean;
 };
 
 export function TrailImage({
@@ -17,13 +18,18 @@ export function TrailImage({
 	className,
 	sizes,
 	eager,
+	morph,
 }: Props) {
 	const { t } = useTranslation();
+	const viewTransitionName = morph ? "trail-photo" : undefined;
 	if (!photo) {
 		return (
 			<div
 				className={className}
-				style={{ background: `linear-gradient(135deg, ${color}, ${color}66)` }}
+				style={{
+					background: `linear-gradient(135deg, ${color}, ${color}66)`,
+					viewTransitionName,
+				}}
 				role="presentation"
 			/>
 		);
@@ -40,7 +46,7 @@ export function TrailImage({
 				loading={eager ? "eager" : "lazy"}
 				decoding="async"
 				className={`${className} object-cover`}
-				style={{ background: color }}
+				style={{ background: color, viewTransitionName }}
 			/>
 			<figcaption className="mt-1 truncate text-[11px] text-stone-500">
 				{t("trail.photoBy")}{" "}

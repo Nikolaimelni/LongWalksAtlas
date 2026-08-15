@@ -124,7 +124,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 		if (slugs.length > 1) return setChoices(slugs);
 		if (!only) return select(null);
 		if (canHover() || selected?.slug === only) {
-			void navigate(pageOf(only));
+			void navigate(pageOf(only), { viewTransition: true });
 			return;
 		}
 		select(only);
@@ -196,7 +196,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 			{hoverTrails[0] && !selected && (
 				<div
-					className="pointer-events-none absolute z-20 w-64 rounded-xl bg-white p-3 shadow-xl dark:bg-stone-900"
+					className="pointer-events-none absolute z-20 w-64 rounded-xl bg-white p-3 shadow-xl transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none dark:bg-stone-900"
 					style={{ left: (hovered?.x ?? 0) + 16, top: (hovered?.y ?? 0) + 16 }}
 				>
 					{hoverTrails.length === 1 ? (
@@ -219,7 +219,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			{sheetOpen && (
 				<section
 					aria-label={selected ? titleOf(selected) : t("atlas.pick")}
-					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl md:inset-x-auto md:start-[26rem] md:bottom-4 md:w-96 md:rounded-2xl dark:bg-stone-900"
+					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl transition-[translate,opacity] duration-300 ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:w-96 md:rounded-2xl md:starting:translate-y-4 md:starting:opacity-0 dark:bg-stone-900"
 				>
 					{choiceTrails.length > 0 ? (
 						<>
