@@ -44,6 +44,7 @@ export function TrailPreview({
 					variant === "sheet" ? "(min-width: 768px) 384px, 100vw" : "256px"
 				}
 				eager
+				morph={variant === "sheet"}
 			/>
 			<div>
 				<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">
@@ -94,6 +95,7 @@ export function TrailPreview({
 				<div className="flex items-center gap-2">
 					<Link
 						to={`/${lang}/trail/${trail.slug}/`}
+						viewTransition
 						className="flex-1 rounded-full bg-stone-900 px-4 py-3 text-center text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 dark:bg-stone-100 dark:text-stone-900"
 					>
 						{t("trail.more")}
