@@ -11,7 +11,8 @@ export type DataErrorCode =
 	| "photo-not-found"
 	| "photo-license"
 	| "missing-key"
-	| "translate-failed";
+	| "translate-failed"
+	| "og-failed";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;
