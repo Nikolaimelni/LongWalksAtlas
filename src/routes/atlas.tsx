@@ -23,6 +23,7 @@ import { canHover } from "~/shared/can-hover";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { revalidateOnPathChange } from "~/shared/same-path";
 import { absoluteUrl } from "~/shared/site";
+import { atlasCardMeta } from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
 
@@ -56,7 +57,7 @@ export function meta({ matches }: Route.MetaArgs) {
 		{ property: "og:description", content: app?.description },
 		{ property: "og:url", content: absoluteUrl(`/${layout.lang}/`) },
 		{ property: "og:locale", content: layout.lang.replace("-", "_") },
-		{ name: "twitter:card", content: "summary" },
+		...atlasCardMeta(layout.lang),
 		...alternateLinks(layout.lang, "", "/"),
 	];
 }

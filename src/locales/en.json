@@ -3,6 +3,9 @@
 		"name": "Long Walks Atlas",
 		"description": "A map of long-distance walking trails across Europe: pilgrim ways, historic routes, coastal and mountain paths, with length, days on foot and a link to each official site."
 	},
+	"og": {
+		"tagline": "Pilgrim ways, historic routes, coastal and mountain trails across Europe, on one map."
+	},
 	"atlas": {
 		"title": "Map of long-distance walking trails",
 		"loading": "Loading the map…",

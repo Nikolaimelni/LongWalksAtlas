@@ -29,6 +29,11 @@ filters for type, country, length and days live in the query string, so a filter
 is a link you can send. The trail list is part of the prerendered page; on a phone it
 folds into a bar under the map.
 
+A shared link to the atlas shows a card made from the real map: `pnpm og` builds the site,
+photographs `/<lang>/og-card/` (a 1200 × 630 page kept out of search) for each published
+language with Playwright, and writes the JPEGs to `public/og/`, committed. A trail page
+uses its photo, or the atlas card while it has none.
+
 `pnpm preview` serves `build/client` the way the host will: files as they are, `/en`
 redirected to `/en/`, and `404.html` with a real 404 for anything else (`vite preview`
 would answer unknown paths with the home page). `pnpm e2e` builds, serves through it and

@@ -22,6 +22,7 @@ export default {
 		"/llms.txt",
 		...languages.flatMap(({ code }) => [
 			`/${code}/`,
+			`/${code}/og-card/`,
 			...trails.map((t) => `/${code}/trail/${t.slug}/`),
 		]),
 	],

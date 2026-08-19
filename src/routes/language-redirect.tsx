@@ -4,12 +4,14 @@ import { publishedLanguages } from "~/features/i18n/published";
 import { readStoredLang } from "~/features/i18n/stored-lang";
 import en from "~/locales/en.json";
 import { absoluteUrl } from "~/shared/site";
+import { atlasCardMeta } from "~/shared/social-cards";
 
 export function meta() {
 	return [
 		{ title: en.app.name },
 		{ name: "description", content: en.app.description },
 		{ tagName: "link", rel: "canonical", href: absoluteUrl("/") },
+		...atlasCardMeta("en"),
 		...publishedLanguages.map(({ code }) => ({
 			tagName: "link",
 			rel: "alternate",

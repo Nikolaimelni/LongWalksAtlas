@@ -43,6 +43,29 @@ test("a trail page is described for search engines", async ({ page }) => {
 	});
 });
 
+test("the atlas has a large social card, the card page stays out of search", async ({
+	page,
+	request,
+}) => {
+	await page.goto("/ru/");
+	await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+		"content",
+		/^https:\/\/longwalksatlas\.com\/og\/atlas-ru-[0-9a-f]{8}\.jpg$/,
+	);
+	await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+		"content",
+		"summary_large_image",
+	);
+	await page.goto("/ru/og-card/");
+	await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+		"content",
+		"noindex",
+	);
+	expect(await (await request.get("/sitemap.xml")).text()).not.toContain(
+		"og-card",
+	);
+});
+
 test("sitemap, robots.txt and llms.txt are published", async ({ request }) => {
 	const sitemap = await (await request.get("/sitemap.xml")).text();
 	expect(sitemap).toContain(

@@ -14,6 +14,7 @@ import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
+import { atlasCardMeta } from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/trail";
 
@@ -78,7 +79,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 				{ property: "og:image:height", content: String(photo.height) },
 				{ name: "twitter:card", content: "summary_large_image" },
 			]
-		: [{ name: "twitter:card", content: "summary" }];
+		: atlasCardMeta(layout.lang);
 	return [
 		{ title: `${content.title} · ${app}` },
 		{ name: "description", content: content.summary },
