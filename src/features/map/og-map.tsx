@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Map as MapLibreMap } from "react-map-gl/maplibre";
-import { styleUrl } from "./map-setup";
+import { trailPalettes } from "~/features/trails/trail-style";
+import { mapStyles } from "./map-setup";
 import { TrailLayers } from "./trail-layers";
 
 export function OgMap() {
@@ -17,13 +18,18 @@ export function OgMap() {
 						padding: { top: 24, bottom: 24, left: 380, right: 24 },
 					},
 				}}
-				mapStyle={styleUrl}
+				mapStyle={mapStyles.light}
 				style={{ position: "absolute", inset: 0 }}
 				interactive={false}
 				attributionControl={false}
 				onIdle={() => setReady(true)}
 			>
-				<TrailLayers dimmed={false} visible={null} weight={2.5} />
+				<TrailLayers
+					dimmed={false}
+					visible={null}
+					weight={2.5}
+					palette={trailPalettes.light}
+				/>
 			</MapLibreMap>
 		</div>
 	);

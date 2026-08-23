@@ -3,7 +3,7 @@ import type {
 	LineLayerSpecification,
 } from "maplibre-gl";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { trailColors } from "~/features/trails/trail-style";
+import type { TrailPalette } from "~/features/trails/trail-style";
 
 export const trailSourceId = "trails";
 export const trailHitLayerId = "trails-hit";
@@ -14,21 +14,23 @@ const active: ExpressionSpecification = [
 	false,
 ];
 
-const color: ExpressionSpecification = [
-	"match",
-	["get", "type"],
-	"pilgrimage",
-	trailColors.pilgrimage,
-	"historic",
-	trailColors.historic,
-	"coastal",
-	trailColors.coastal,
-	"mountain",
-	trailColors.mountain,
-	"e-path",
-	trailColors["e-path"],
-	"#777777",
-];
+function colorBy(palette: TrailPalette): ExpressionSpecification {
+	return [
+		"match",
+		["get", "type"],
+		"pilgrimage",
+		palette.pilgrimage,
+		"historic",
+		palette.historic,
+		"coastal",
+		palette.coastal,
+		"mountain",
+		palette.mountain,
+		"e-path",
+		palette["e-path"],
+		"#777777",
+	];
+}
 
 function width(base: number): ExpressionSpecification {
 	return [
@@ -46,9 +48,11 @@ type Props = {
 	dimmed: boolean;
 	visible: string[] | null;
 	weight?: number;
+	palette: TrailPalette;
 };
 
-export function TrailLayers({ dimmed, visible, weight = 1 }: Props) {
+export function TrailLayers({ dimmed, visible, weight = 1, palette }: Props) {
+	const color = colorBy(palette);
 	const only = (base: ExpressionSpecification): ExpressionSpecification =>
 		visible
 			? ["all", base, ["in", ["get", "slug"], ["literal", visible]]]

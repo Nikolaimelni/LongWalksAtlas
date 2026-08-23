@@ -27,6 +27,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1, viewport-fit=cover"
 				/>
+				<meta name="color-scheme" content="light dark" />
+				<meta
+					name="theme-color"
+					content="#ffffff"
+					media="(prefers-color-scheme: light)"
+				/>
+				<meta
+					name="theme-color"
+					content="#0c0a09"
+					media="(prefers-color-scheme: dark)"
+				/>
 				{preload.map((href) => (
 					<link
 						key={href}

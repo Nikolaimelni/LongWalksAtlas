@@ -9,8 +9,8 @@ import { loadContentBody, loadContentIndex } from "~/features/trails/content";
 import { TrailImage } from "~/features/trails/trail-image";
 import { serializeJsonLd, trailJsonLd } from "~/features/trails/trail-json-ld";
 import { trailFileSchema } from "~/features/trails/trail-schema";
-import { trailColors } from "~/features/trails/trail-style";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
+import { useTrailColors } from "~/features/trails/use-trail-colors";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
@@ -100,7 +100,8 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 	const lang = useLang();
 	const hydrated = useHydrated();
 	const format = useTrailFormat();
-	const color = trailColors[summary.type];
+	const colors = useTrailColors();
+	const color = colors[summary.type];
 	const loop =
 		file.start.coords[0] === file.end.coords[0] &&
 		file.start.coords[1] === file.end.coords[1];
@@ -321,7 +322,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 										>
 											<span
 												className="inline-block h-8 w-1 shrink-0 rounded-full"
-												style={{ background: trailColors[other.type] }}
+												style={{ background: colors[other.type] }}
 											/>
 											<span>
 												<span className="block font-medium">{other.title}</span>

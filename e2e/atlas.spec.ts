@@ -10,6 +10,17 @@ test.describe("with a Russian browser", () => {
 	});
 });
 
+test.describe("on a device set to dark", () => {
+	test.use({ colorScheme: "dark" });
+
+	test("the atlas loads the dark basemap", async ({ page }) => {
+		const style = page.waitForRequest(/tiles\.openfreemap\.org\/styles\/dark$/);
+		await page.goto("/en/");
+		await style;
+		await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+	});
+});
+
 test("the atlas draws a map", async ({ page }) => {
 	await page.goto("/en/");
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
