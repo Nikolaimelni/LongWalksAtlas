@@ -24,6 +24,11 @@ will find the site, so each page carries its canonical URL, hreflang links to it
 translations and schema.org JSON-LD, and the facts are on the page as text, not only on
 the map.
 
+The site follows the device's light or dark setting, basemap included (OpenFreeMap's
+positron and dark styles). Each theme has its own set of trail colours, and a test holds
+every colour to 3:1 contrast against both the land and the water of its basemap; the
+first light palette failed that for the pilgrim ways and nobody had noticed.
+
 On the atlas, search (fuzzy and accent-blind, so "oludeniz" finds Ölüdeniz) and the
 filters for type, country, length and days live in the query string, so a filtered view
 is a link you can send. The trail list is part of the prerendered page; on a phone it

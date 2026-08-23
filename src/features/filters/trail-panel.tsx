@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
 import { type TrailSummary, trailTypes } from "~/features/trails/trail-schema";
-import { trailColors } from "~/features/trails/trail-style";
+import { useTrailColors } from "~/features/trails/use-trail-colors";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
 import {
@@ -38,6 +38,7 @@ export function TrailPanel({
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
+	const colors = useTrailColors();
 	const [open, setOpen] = useState(false);
 
 	const regions = new Intl.DisplayNames([lang], { type: "region" });
@@ -124,7 +125,7 @@ export function TrailPanel({
 								>
 									<span
 										className="inline-block size-2.5 rounded-full"
-										style={{ background: trailColors[type] }}
+										style={{ background: colors[type] }}
 									/>
 									{t(`trailType.${type}`)}
 								</button>
@@ -242,7 +243,7 @@ export function TrailPanel({
 								>
 									<span
 										className="mt-1.5 inline-block h-3 w-1 shrink-0 rounded-full"
-										style={{ background: trailColors[trail.type] }}
+										style={{ background: colors[trail.type] }}
 									/>
 									<span className="min-w-0">
 										<span className="block font-medium">{titleOf(trail)}</span>

@@ -4,7 +4,7 @@ import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
 import { TrailImage } from "./trail-image";
 import type { TrailPhoto, TrailSummary } from "./trail-schema";
-import { trailColors } from "./trail-style";
+import { useTrailColors } from "./use-trail-colors";
 import { useTrailFormat } from "./use-trail-format";
 
 type Props = {
@@ -25,7 +25,7 @@ export function TrailPreview({
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
-	const color = trailColors[trail.type];
+	const color = useTrailColors()[trail.type];
 
 	return (
 		<article className="flex flex-col gap-3">
