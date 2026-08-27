@@ -23,8 +23,10 @@ type Props = {
 	onSelect: (slug: string) => void;
 };
 
+const rowClass = "flex items-center gap-3 text-sm";
+const labelClass = "w-24 shrink-0 text-stone-500";
 const selectClass =
-	"h-10 w-full rounded-lg border border-stone-300 bg-white px-2 text-sm dark:border-stone-700 dark:bg-stone-900";
+	"h-10 min-w-0 flex-1 rounded-lg border border-stone-300 bg-white px-2 text-sm dark:border-stone-700 dark:bg-stone-900";
 
 export function TrailPanel({
 	trails,
@@ -86,12 +88,27 @@ export function TrailPanel({
 					aria-expanded={open}
 					aria-controls="trail-panel-body"
 					onClick={() => setOpen(!open)}
-					className="h-11 shrink-0 rounded-full bg-stone-900 px-4 text-sm font-semibold text-white md:hidden dark:bg-stone-100 dark:text-stone-900"
+					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-stone-900 px-4 text-sm font-semibold text-white md:hidden dark:bg-stone-100 dark:text-stone-900"
 				>
 					{t("filters.count", { count: trails.length })}
-					{active > 0 && ` · ${active}`}
+					{active > 0 && (
+						<>
+							<span
+								aria-hidden="true"
+								className="grid size-5 place-items-center rounded-full bg-white text-xs text-stone-900 dark:bg-stone-900 dark:text-stone-100"
+							>
+								{active}
+							</span>
+							<span className="sr-only">
+								{t("filters.active", { count: active })}
+							</span>
+						</>
+					)}
 				</button>
 			</div>
+			<p className="-mt-1 px-4 pb-2 text-[11px] leading-snug text-stone-500">
+				{t("disclaimer.short")}
+			</p>
 
 			<div
 				id="trail-panel-body"
@@ -101,7 +118,7 @@ export function TrailPanel({
 					<legend className="mb-2 text-xs font-medium text-stone-500">
 						{t("filters.types")}
 					</legend>
-					<div className="flex flex-wrap gap-2">
+					<div className="-mx-3 flex gap-2 overflow-x-auto px-3 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
 						{trailTypes.map((type) => {
 							const pressed = filters.types.includes(type);
 							return (
@@ -117,7 +134,7 @@ export function TrailPanel({
 												: [...f.types, type],
 										}))
 									}
-									className={`flex h-9 items-center gap-2 rounded-full border px-3 text-sm ${
+									className={`flex h-9 shrink-0 items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap ${
 										pressed
 											? "border-stone-900 bg-stone-900 text-white dark:border-stone-100 dark:bg-stone-100 dark:text-stone-900"
 											: "border-stone-300 dark:border-stone-700"
@@ -134,16 +151,16 @@ export function TrailPanel({
 					</div>
 				</fieldset>
 
-				<div className="mt-3 grid grid-cols-3 gap-2">
-					<label className="text-xs font-medium text-stone-500">
-						{t("filters.country")}
+				<div className="mt-3 flex flex-col gap-2">
+					<label className={rowClass}>
+						<span className={labelClass}>{t("filters.country")}</span>
 						<select
 							value={filters.country ?? ""}
 							onChange={(e) => {
 								const country = e.target.value || null;
 								onChange((f) => ({ ...f, country }));
 							}}
-							className={`mt-1 ${selectClass}`}
+							className={selectClass}
 						>
 							<option value="">{t("filters.anyCountry")}</option>
 							{countries.map((c) => (
@@ -153,8 +170,8 @@ export function TrailPanel({
 							))}
 						</select>
 					</label>
-					<label className="text-xs font-medium text-stone-500">
-						{t("filters.length")}
+					<label className={rowClass}>
+						<span className={labelClass}>{t("filters.length")}</span>
 						<select
 							value={filters.length ?? ""}
 							onChange={(e) => {
@@ -162,7 +179,7 @@ export function TrailPanel({
 									(e.target.value as keyof typeof lengthBuckets) || null;
 								onChange((f) => ({ ...f, length }));
 							}}
-							className={`mt-1 ${selectClass}`}
+							className={selectClass}
 						>
 							<option value="">{t("filters.anyLength")}</option>
 							{Object.keys(lengthBuckets).map((key) => (
@@ -172,8 +189,8 @@ export function TrailPanel({
 							))}
 						</select>
 					</label>
-					<label className="text-xs font-medium text-stone-500">
-						{t("filters.duration")}
+					<label className={rowClass}>
+						<span className={labelClass}>{t("filters.duration")}</span>
 						<select
 							value={filters.days ?? ""}
 							onChange={(e) => {
@@ -181,7 +198,7 @@ export function TrailPanel({
 									(e.target.value as keyof typeof dayBuckets) || null;
 								onChange((f) => ({ ...f, days }));
 							}}
-							className={`mt-1 ${selectClass}`}
+							className={selectClass}
 						>
 							<option value="">{t("filters.anyDuration")}</option>
 							{(Object.keys(dayBuckets) as (keyof typeof dayBuckets)[]).map(

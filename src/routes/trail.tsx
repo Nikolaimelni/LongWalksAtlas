@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { data, Link } from "react-router";
 import { alternateLinks } from "~/features/i18n/alternates";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
@@ -106,6 +106,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 		file.start.coords[0] === file.end.coords[0] &&
 		file.start.coords[1] === file.end.coords[1];
 	const vars = { title: content.title };
+	const officialHost = new URL(file.officialUrl).hostname.replace(/^www\./, "");
 	const regions = new Intl.DisplayNames([lang], { type: "region" });
 	const checkedOn = new Intl.DateTimeFormat(lang, { dateStyle: "long" }).format(
 		new Date(file.verifiedAt),
@@ -138,9 +139,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 			: []),
 		{
 			question: t("faq.officialQ", vars),
-			answer: t("faq.officialA", {
-				url: new URL(file.officialUrl).hostname.replace(/^www\./, ""),
-			}),
+			answer: t("faq.officialA", { url: officialHost }),
 		},
 	];
 
@@ -272,6 +271,23 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						</Suspense>
 					) : null}
 				</div>
+				<p className="mt-3 rounded-xl bg-stone-100 p-3 text-sm leading-relaxed text-stone-700 dark:bg-stone-900 dark:text-stone-300">
+					<Trans
+						i18nKey="disclaimer.trail"
+						values={{ site: officialHost }}
+						components={{
+							link: (
+								// biome-ignore lint/a11y/useAnchorContent: Trans fills the link with the site's name
+								<a
+									href={file.officialUrl}
+									target="_blank"
+									rel="noopener"
+									className="font-medium underline"
+								/>
+							),
+						}}
+					/>
+				</p>
 				<Link
 					to={`/${lang}/?trail=${summary.slug}`}
 					viewTransition

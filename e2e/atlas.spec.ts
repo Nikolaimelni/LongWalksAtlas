@@ -21,9 +21,12 @@ test.describe("on a device set to dark", () => {
 	});
 });
 
-test("the atlas draws a map", async ({ page }) => {
+test("the atlas draws a map and says the lines are schematic", async ({
+	page,
+}) => {
 	await page.goto("/en/");
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+	await expect(page.getByText("Lines on the map are schematic")).toBeVisible();
 });
 
 test("a trail in the URL opens its preview, and closing it clears the URL", async ({

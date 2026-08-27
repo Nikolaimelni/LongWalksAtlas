@@ -92,6 +92,11 @@ export function TrailPreview({
 				</div>
 			</dl>
 			{variant === "sheet" && (
+				<p className="text-xs leading-snug text-stone-500">
+					{t("disclaimer.short")}
+				</p>
+			)}
+			{variant === "sheet" && (
 				<div className="flex items-center gap-2">
 					<Link
 						to={`/${lang}/trail/${trail.slug}/`}

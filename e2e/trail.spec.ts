@@ -19,6 +19,13 @@ test("a trail page carries the facts, the story and the official link", async ({
 		page.getByText("Сколько дней идти маршрут «Ликийская тропа»?"),
 	).toBeVisible();
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+	await expect(page.getByText("Линия на карте схематична")).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "cultureroutesinturkey.com" }),
+	).toHaveAttribute(
+		"href",
+		"https://cultureroutesinturkey.com/the-lycian-way/",
+	);
 	await expect(
 		page
 			.getByRole("region", { name: "Тропы рядом" })
