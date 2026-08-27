@@ -15,6 +15,7 @@ import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import type { HoverInfo } from "~/features/map/atlas-map";
+import { hoverPlacement } from "~/features/map/hover-placement";
 import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
@@ -150,7 +151,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	);
 
 	return (
-		<main className="relative h-dvh overflow-hidden [&_.maplibregl-ctrl-bottom-right]:bottom-[calc(4.5rem+env(safe-area-inset-bottom))] md:[&_.maplibregl-ctrl-bottom-right]:bottom-0">
+		<main className="relative h-dvh overflow-hidden [&_.maplibregl-ctrl-bottom-right]:bottom-[calc(6rem+env(safe-area-inset-bottom))] md:[&_.maplibregl-ctrl-bottom-right]:bottom-0">
 			<h1 className="sr-only">{t("atlas.title")}</h1>
 			{hydrated ? (
 				<Suspense fallback={placeholder}>
@@ -197,8 +198,11 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 			{hoverTrails[0] && !selected && (
 				<div
-					className="pointer-events-none absolute z-20 w-64 rounded-xl bg-white p-3 shadow-xl transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none dark:bg-stone-900"
-					style={{ left: (hovered?.x ?? 0) + 16, top: (hovered?.y ?? 0) + 16 }}
+					className="pointer-events-none absolute z-20 w-64 overflow-hidden rounded-xl bg-white p-3 shadow-xl transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none dark:bg-stone-900"
+					style={hoverPlacement(hovered?.x ?? 0, hovered?.y ?? 0, {
+						width: window.innerWidth,
+						height: window.innerHeight,
+					})}
 				>
 					{hoverTrails.length === 1 ? (
 						<TrailPreview

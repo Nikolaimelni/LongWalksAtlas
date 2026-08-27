@@ -3,6 +3,10 @@
 		"name": "Long Walks Atlas",
 		"description": "A map of long-distance walking trails across Europe: pilgrim ways, historic routes, coastal and mountain paths, with length, days on foot and a link to each official site."
 	},
+	"disclaimer": {
+		"short": "Lines on the map are schematic. For the exact route, see each trail's official website.",
+		"trail": "The line on the map is schematic and may differ from the waymarked trail. For the exact route, its stages and current changes, see the official website: <link>{{site}}</link>."
+	},
 	"og": {
 		"tagline": "Pilgrim ways, historic routes, coastal and mountain trails across Europe, on one map."
 	},
@@ -14,7 +18,7 @@
 	"filters": {
 		"list": "Trails",
 		"search": "Search trails",
-		"searchPlaceholder": "Trail, place or country",
+		"searchPlaceholder": "Trail or place",
 		"count_one": "{{count}} trail",
 		"count_other": "{{count}} trails",
 		"types": "Type",
@@ -28,9 +32,11 @@
 		"anyDuration": "Any",
 		"week": "Up to a week",
 		"fortnight": "1–2 weeks",
-		"month": "2 weeks to a month",
+		"month": "2–4 weeks",
 		"more": "Over a month",
 		"reset": "Clear all",
+		"active_one": "{{count}} filter on",
+		"active_other": "{{count}} filters on",
 		"none": "No trail matches. Try clearing a filter."
 	},
 	"language": {
