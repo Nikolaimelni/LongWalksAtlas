@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import { Map as MapLibreMap } from "react-map-gl/maplibre";
 import { trailPalettes } from "~/features/trails/trail-style";
-import { mapStyles } from "./map-setup";
+import { loadMapStyle } from "./map-style";
 import { TrailLayers } from "./trail-layers";
 
 export function OgMap() {
 	const [ready, setReady] = useState(false);
+	const mapStyle = use(loadMapStyle("light"));
 	return (
 		<div className="absolute inset-0" data-ready={ready || undefined}>
 			<MapLibreMap
@@ -18,7 +19,7 @@ export function OgMap() {
 						padding: { top: 24, bottom: 24, left: 380, right: 24 },
 					},
 				}}
-				mapStyle={mapStyles.light}
+				mapStyle={mapStyle}
 				style={{ position: "absolute", inset: 0 }}
 				interactive={false}
 				attributionControl={false}

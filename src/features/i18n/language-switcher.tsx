@@ -24,7 +24,7 @@ export function LanguageSwitcher() {
 			<select
 				value={lang}
 				onChange={handleChange}
-				className="h-10 appearance-none rounded-full bg-white/90 ps-4 pe-4 text-sm shadow-md backdrop-blur focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 dark:bg-stone-900/90 dark:focus-visible:outline-stone-100"
+				className="h-10 appearance-none rounded-full bg-surface/90 ps-4 pe-4 text-sm shadow-float backdrop-blur focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
 			>
 				{publishedLanguages.map((l) => (
 					<option key={l.code} value={l.code} lang={l.code}>

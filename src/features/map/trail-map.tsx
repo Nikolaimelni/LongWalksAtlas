@@ -1,3 +1,4 @@
+import { use } from "react";
 import {
 	Layer,
 	Map as MapLibreMap,
@@ -7,7 +8,7 @@ import {
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
 import { useColorScheme } from "~/shared/use-color-scheme";
-import { mapStyles } from "./map-setup";
+import { loadMapStyle } from "./map-style";
 
 type Props = {
 	trail: TrailSummary;
@@ -19,6 +20,7 @@ type Props = {
 
 export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
 	const scheme = useColorScheme();
+	const mapStyle = use(loadMapStyle(scheme));
 	const [west, south, east, north] = trail.bbox;
 	const loop = start[0] === end[0] && start[1] === end[1];
 
@@ -31,7 +33,7 @@ export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
 				],
 				fitBoundsOptions: { padding: 32 },
 			}}
-			mapStyle={mapStyles[scheme]}
+			mapStyle={mapStyle}
 			style={{ position: "absolute", inset: 0 }}
 			cooperativeGestures
 			dragRotate={false}
@@ -55,7 +57,7 @@ export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
 			</Source>
 			<Marker longitude={start[0]} latitude={start[1]}>
 				<span
-					className="block size-4 rounded-full border-[3px] border-stone-900 bg-white"
+					className="block size-4 rounded-full border-[3px] border-brand bg-surface"
 					role="img"
 					aria-label={startLabel}
 				/>
@@ -63,7 +65,7 @@ export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
 			{!loop && (
 				<Marker longitude={end[0]} latitude={end[1]}>
 					<span
-						className="block size-4 rounded-full border-[3px] border-white bg-stone-900 dark:border-stone-900 dark:bg-stone-100"
+						className="block size-4 rounded-full border-[3px] border-white bg-brand"
 						role="img"
 						aria-label={endLabel}
 					/>

@@ -21,6 +21,7 @@ import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { canHover } from "~/shared/can-hover";
+import { LogoMark } from "~/shared/logo-mark";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { revalidateOnPathChange } from "~/shared/same-path";
 import { absoluteUrl } from "~/shared/site";
@@ -143,7 +144,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 	const placeholder = (
 		<div
-			className="absolute inset-0 grid place-items-center bg-stone-100 text-sm text-stone-500 dark:bg-stone-900"
+			className="absolute inset-0 grid place-items-center bg-soft text-sm text-muted"
 			aria-busy="true"
 		>
 			{t("atlas.loading")}
@@ -168,7 +169,8 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			)}
 
 			<header className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
-				<p className="pointer-events-auto rounded-full bg-white/90 px-4 py-2 font-serif text-sm font-semibold shadow-md backdrop-blur dark:bg-stone-900/90">
+				<p className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/90 py-2 ps-2.5 pe-4 font-serif text-sm font-semibold shadow-float backdrop-blur">
+					<LogoMark className="size-6 text-brand" />
 					{t("app.name")}
 				</p>
 				<div className="pointer-events-auto">
@@ -198,7 +200,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 			{hoverTrails[0] && !selected && (
 				<div
-					className="pointer-events-none absolute z-20 w-64 overflow-hidden rounded-xl bg-white p-3 shadow-xl transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none dark:bg-stone-900"
+					className="pointer-events-none absolute z-20 w-64 overflow-hidden rounded-xl bg-surface p-3 shadow-float transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none"
 					style={hoverPlacement(hovered?.x ?? 0, hovered?.y ?? 0, {
 						width: window.innerWidth,
 						height: window.innerHeight,
@@ -224,7 +226,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			{sheetOpen && (
 				<section
 					aria-label={selected ? titleOf(selected) : t("atlas.pick")}
-					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl transition-[translate,opacity] duration-300 ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:w-96 md:rounded-2xl md:starting:translate-y-4 md:starting:opacity-0 dark:bg-stone-900"
+					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-surface p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-float transition-[translate,opacity] duration-300 ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:max-h-[calc(100dvh-6rem)] md:w-96 md:rounded-2xl md:starting:translate-y-4 md:starting:opacity-0"
 				>
 					{choiceTrails.length > 0 ? (
 						<>
@@ -235,7 +237,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 										<button
 											type="button"
 											onClick={() => select(tr.slug)}
-											className="w-full rounded-lg px-3 py-3 text-start hover:bg-stone-100 dark:hover:bg-stone-800"
+											className="w-full rounded-lg px-3 py-3 text-start hover:bg-soft"
 										>
 											{titleOf(tr)}
 										</button>

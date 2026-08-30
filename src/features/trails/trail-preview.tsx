@@ -47,7 +47,7 @@ export function TrailPreview({
 				morph={variant === "sheet"}
 			/>
 			<div>
-				<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">
+				<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
 					<span
 						className="inline-block size-2.5 rounded-full"
 						style={{ background: color }}
@@ -59,13 +59,13 @@ export function TrailPreview({
 				</h2>
 				{content && content.title !== trail.name.original && (
 					<p
-						className="text-sm text-stone-500 italic"
+						className="text-sm text-muted italic"
 						lang={trail.countries[0]?.toLowerCase()}
 					>
 						{trail.name.original}
 					</p>
 				)}
-				<p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+				<p className="mt-1 text-sm text-muted">
 					{format.countries(trail.countries)}
 				</p>
 			</div>
@@ -83,16 +83,16 @@ export function TrailPreview({
 			)}
 			<dl className="flex gap-6 text-sm">
 				<div>
-					<dt className="text-stone-500">{t("trail.length")}</dt>
+					<dt className="text-muted">{t("trail.length")}</dt>
 					<dd className="font-semibold">{format.km(trail.lengthKm)}</dd>
 				</div>
 				<div>
-					<dt className="text-stone-500">{t("trail.duration")}</dt>
+					<dt className="text-muted">{t("trail.duration")}</dt>
 					<dd className="font-semibold">{format.days(trail.days)}</dd>
 				</div>
 			</dl>
 			{variant === "sheet" && (
-				<p className="text-xs leading-snug text-stone-500">
+				<p className="text-xs leading-snug text-muted">
 					{t("disclaimer.short")}
 				</p>
 			)}
@@ -101,7 +101,7 @@ export function TrailPreview({
 					<Link
 						to={`/${lang}/trail/${trail.slug}/`}
 						viewTransition
-						className="flex-1 rounded-full bg-stone-900 px-4 py-3 text-center text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 dark:bg-stone-100 dark:text-stone-900"
+						className="flex-1 rounded-full bg-brand px-4 py-3 text-center text-sm font-semibold text-on-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
 					>
 						{t("trail.more")}
 					</Link>
@@ -109,7 +109,7 @@ export function TrailPreview({
 						<button
 							type="button"
 							onClick={onClose}
-							className="grid size-11 place-items-center rounded-full bg-stone-100 text-xl focus-visible:outline-2 focus-visible:outline-stone-900 dark:bg-stone-800"
+							className="grid size-11 place-items-center rounded-full bg-soft text-xl focus-visible:outline-2 focus-visible:outline-brand"
 							aria-label={t("trail.close")}
 						>
 							<span aria-hidden="true">×</span>

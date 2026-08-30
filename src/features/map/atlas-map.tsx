@@ -1,10 +1,10 @@
 import type { MapLayerMouseEvent } from "maplibre-gl";
-import { useEffect, useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { Map as MapLibreMap, type MapRef } from "react-map-gl/maplibre";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
 import { useColorScheme } from "~/shared/use-color-scheme";
-import { mapStyles } from "./map-setup";
+import { loadMapStyle } from "./map-style";
 import { TrailLayers, trailHitLayerId, trailSourceId } from "./trail-layers";
 
 const europeBounds: [[number, number], [number, number]] = [
@@ -36,6 +36,7 @@ export function AtlasMap({
 }: Props) {
 	const mapRef = useRef<MapRef>(null);
 	const scheme = useColorScheme();
+	const mapStyle = use(loadMapStyle(scheme));
 	const [loaded, setLoaded] = useState(false);
 	const [pointer, setPointer] = useState(false);
 	const highlightKey = highlighted.join(",");
@@ -87,7 +88,7 @@ export function AtlasMap({
 				bounds: europeBounds,
 				fitBoundsOptions: { padding: 16 },
 			}}
-			mapStyle={mapStyles[scheme]}
+			mapStyle={mapStyle}
 			style={{ position: "absolute", inset: 0 }}
 			dragRotate={false}
 			touchPitch={false}

@@ -21,6 +21,6 @@ export const trailPalettes = {
 } as const satisfies Record<Scheme, TrailPalette>;
 
 export const basemapColors = {
-	light: { land: "#f2f3f0", water: "#c2c8ca" },
-	dark: { land: "#0c0c0c", water: "#1b1b1d" },
-} as const satisfies Record<Scheme, { land: string; water: string }>;
+	light: { land: "#f6f1e6", water: "#bcd9e6", woods: "#d9e6cc" },
+	dark: { land: "#151b22", water: "#0e1d2a", woods: "#18241f" },
+} as const satisfies Record<Scheme, Record<"land" | "water" | "woods", string>>;
