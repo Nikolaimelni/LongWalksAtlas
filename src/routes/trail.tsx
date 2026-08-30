@@ -159,7 +159,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				<Link
 					to={`/${lang}/`}
 					viewTransition
-					className="rounded-full px-3 py-2 font-medium hover:bg-stone-100 dark:hover:bg-stone-800"
+					className="rounded-full px-3 py-2 font-medium hover:bg-soft"
 				>
 					<span aria-hidden="true">← </span>
 					{t("trail.backToAtlas")}
@@ -177,7 +177,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					eager
 					morph
 				/>
-				<p className="mt-4 flex items-center gap-2 text-xs font-medium tracking-wide text-stone-600 uppercase dark:text-stone-400">
+				<p className="mt-4 flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
 					<span
 						className="inline-block size-2.5 rounded-full"
 						style={{ background: color }}
@@ -188,14 +188,14 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					{content.title}
 				</h1>
 				{content.title !== file.name.original && (
-					<p className="mt-1 text-stone-500 italic">{file.name.original}</p>
+					<p className="mt-1 text-muted italic">{file.name.original}</p>
 				)}
 				{file.badges.length > 0 && (
 					<ul className="mt-3 flex flex-wrap gap-2">
 						{file.badges.map((badge) => (
 							<li
 								key={badge}
-								className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium dark:bg-stone-800"
+								className="rounded-full bg-soft px-3 py-1 text-xs font-medium"
 							>
 								{t(`badge.${badge}`)}
 							</li>
@@ -214,49 +214,49 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				<dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-4 text-sm sm:grid-cols-3">
 					{loop ? (
 						<div className="col-span-2 sm:col-span-1">
-							<dt className="text-stone-500">{t("trail.loop")}</dt>
+							<dt className="text-muted">{t("trail.loop")}</dt>
 							<dd className="font-semibold">{file.start.name}</dd>
 						</div>
 					) : (
 						<>
 							<div>
-								<dt className="text-stone-500">{t("trail.start")}</dt>
+								<dt className="text-muted">{t("trail.start")}</dt>
 								<dd className="font-semibold">{file.start.name}</dd>
 							</div>
 							<div>
-								<dt className="text-stone-500">{t("trail.end")}</dt>
+								<dt className="text-muted">{t("trail.end")}</dt>
 								<dd className="font-semibold">{file.end.name}</dd>
 							</div>
 						</>
 					)}
 					<div>
-						<dt className="text-stone-500">{t("trail.length")}</dt>
+						<dt className="text-muted">{t("trail.length")}</dt>
 						<dd className="font-semibold">{format.km(summary.lengthKm)}</dd>
 					</div>
 					<div>
-						<dt className="text-stone-500">{t("trail.duration")}</dt>
+						<dt className="text-muted">{t("trail.duration")}</dt>
 						<dd className="font-semibold">{format.days(summary.days)}</dd>
 					</div>
 					<div>
-						<dt className="text-stone-500">{t("trail.countries")}</dt>
+						<dt className="text-muted">{t("trail.countries")}</dt>
 						<dd className="font-semibold">
 							{format.countries(summary.countries)}
 						</dd>
 					</div>
 					{summary.bestSeason.length > 0 && (
 						<div>
-							<dt className="text-stone-500">{t("trail.season")}</dt>
+							<dt className="text-muted">{t("trail.season")}</dt>
 							<dd className="font-semibold">
 								{format.months(summary.bestSeason)}
 							</dd>
 						</div>
 					)}
 				</dl>
-				<div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-2xl bg-stone-100 dark:bg-stone-900">
+				<div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-2xl bg-soft">
 					{hydrated ? (
 						<Suspense
 							fallback={
-								<p className="grid h-full place-items-center text-sm text-stone-500">
+								<p className="grid h-full place-items-center text-sm text-muted">
 									{t("trail.mapLoading")}
 								</p>
 							}
@@ -271,7 +271,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						</Suspense>
 					) : null}
 				</div>
-				<p className="mt-3 rounded-xl bg-stone-100 p-3 text-sm leading-relaxed text-stone-700 dark:bg-stone-900 dark:text-stone-300">
+				<p className="mt-3 rounded-xl bg-soft p-3 text-sm leading-relaxed text-ink">
 					<Trans
 						i18nKey="disclaimer.trail"
 						values={{ site: officialHost }}
@@ -315,7 +315,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				href={file.officialUrl}
 				target="_blank"
 				rel="noopener"
-				className="mt-6 block rounded-full bg-stone-900 px-4 py-3 text-center font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900 dark:bg-stone-100 dark:text-stone-900"
+				className="mt-6 block rounded-full bg-brand px-4 py-3 text-center font-semibold text-on-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
 			>
 				{t("trail.officialSite")}
 				<span aria-hidden="true"> {"↗︎"}</span>
@@ -334,7 +334,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 										<Link
 											to={`/${lang}/trail/${other.slug}/`}
 											viewTransition
-											className="flex items-center gap-3 rounded-xl border border-stone-200 px-4 py-3 hover:bg-stone-50 dark:border-stone-800 dark:hover:bg-stone-900"
+											className="flex items-center gap-3 rounded-xl border border-line px-4 py-3 hover:bg-soft"
 										>
 											<span
 												className="inline-block h-8 w-1 shrink-0 rounded-full"
@@ -342,7 +342,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 											/>
 											<span>
 												<span className="block font-medium">{other.title}</span>
-												<span className="block text-sm text-stone-500">
+												<span className="block text-sm text-muted">
 													{t(`trailType.${other.type}`)} ·{" "}
 													{format.km(other.lengthKm)}
 												</span>
@@ -363,21 +363,17 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					{faq.map(({ question, answer }) => (
 						<div key={question}>
 							<dt className="font-semibold">{question}</dt>
-							<dd className="mt-1 text-stone-700 dark:text-stone-300">
-								{answer}
-							</dd>
+							<dd className="mt-1 text-ink">{answer}</dd>
 						</div>
 					))}
 				</dl>
 			</section>
 
-			<footer className="mt-10 border-t border-stone-200 pt-4 text-sm text-stone-500 dark:border-stone-800">
+			<footer className="mt-10 border-t border-line pt-4 text-sm text-muted">
 				{content.lang !== lang && <p>{t("trail.fallback")}</p>}
 				{content.status === "machine" && <p>{t("trail.notReviewed")}</p>}
 				{summary.lengthSource === "osm" && <p>{t("trail.lengthFromMap")}</p>}
-				<h2 className="mt-3 font-semibold text-stone-700 dark:text-stone-300">
-					{t("trail.sources")}
-				</h2>
+				<h2 className="mt-3 font-semibold text-ink">{t("trail.sources")}</h2>
 				<ul className="mt-1 flex flex-col gap-1 break-all">
 					{file.sources.map((source) => (
 						<li key={source}>

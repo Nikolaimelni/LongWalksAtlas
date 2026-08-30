@@ -48,7 +48,7 @@ export function TrailImage({
 				className={`${className} object-cover`}
 				style={{ background: color, viewTransitionName }}
 			/>
-			<figcaption className="mt-1 truncate text-[11px] text-stone-500">
+			<figcaption className="mt-1 truncate text-[11px] text-muted">
 				{t("trail.photoBy")}{" "}
 				<a href={photo.sourceUrl} rel="noopener" className="underline">
 					{photo.author}

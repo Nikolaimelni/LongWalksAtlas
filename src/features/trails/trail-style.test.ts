@@ -16,11 +16,12 @@ function contrast(a: string, b: string): number {
 
 describe("trail colours", () => {
 	for (const scheme of ["light", "dark"] as Scheme[]) {
-		const { land, water } = basemapColors[scheme];
+		const { land, water, woods } = basemapColors[scheme];
 		for (const [type, colour] of Object.entries(trailPalettes[scheme])) {
-			it(`${scheme} ${type} stands out from land and water by 3:1`, () => {
+			it(`${scheme} ${type} stands out from land, water and woods by 3:1`, () => {
 				expect(contrast(colour, land)).toBeGreaterThanOrEqual(3);
 				expect(contrast(colour, water)).toBeGreaterThanOrEqual(3);
+				expect(contrast(colour, woods)).toBeGreaterThanOrEqual(3);
 			});
 		}
 	}

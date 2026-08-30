@@ -24,9 +24,9 @@ type Props = {
 };
 
 const rowClass = "flex items-center gap-3 text-sm";
-const labelClass = "w-24 shrink-0 text-stone-500";
+const labelClass = "w-24 shrink-0 text-muted";
 const selectClass =
-	"h-10 min-w-0 flex-1 rounded-lg border border-stone-300 bg-white px-2 text-sm dark:border-stone-700 dark:bg-stone-900";
+	"h-10 min-w-0 flex-1 rounded-lg border border-line bg-surface px-2 text-sm";
 
 export function TrailPanel({
 	trails,
@@ -65,11 +65,31 @@ export function TrailPanel({
 	return (
 		<section
 			aria-label={t("filters.list")}
-			className="absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-white pb-[env(safe-area-inset-bottom)] shadow-2xl md:inset-x-auto md:top-20 md:start-4 md:bottom-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0 dark:bg-stone-900"
+			className="absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-4 md:bottom-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0"
 		>
 			<div className="flex items-center gap-2 p-3">
-				<label className="flex-1">
+				<label className="relative flex-1">
 					<span className="sr-only">{t("filters.search")}</span>
+					<svg
+						viewBox="0 0 24 24"
+						aria-hidden="true"
+						className="pointer-events-none absolute start-3.5 top-1/2 size-5 -translate-y-1/2 text-muted"
+					>
+						<circle
+							cx="11"
+							cy="11"
+							r="6.5"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="2"
+						/>
+						<path
+							d="m16 16 4 4"
+							stroke="currentColor"
+							strokeWidth="2"
+							strokeLinecap="round"
+						/>
+					</svg>
 					<input
 						type="search"
 						value={filters.q}
@@ -80,7 +100,7 @@ export function TrailPanel({
 						}}
 						placeholder={t("filters.searchPlaceholder")}
 						enterKeyHint="search"
-						className="h-11 w-full rounded-full bg-stone-100 ps-4 pe-4 text-base dark:bg-stone-800"
+						className="h-11 w-full rounded-full border border-line bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] placeholder:text-muted focus:border-brand focus:outline-2 focus:outline-brand/30"
 					/>
 				</label>
 				<button
@@ -88,14 +108,14 @@ export function TrailPanel({
 					aria-expanded={open}
 					aria-controls="trail-panel-body"
 					onClick={() => setOpen(!open)}
-					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-stone-900 px-4 text-sm font-semibold text-white md:hidden dark:bg-stone-100 dark:text-stone-900"
+					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-brand px-4 text-sm font-semibold text-on-brand md:hidden"
 				>
 					{t("filters.count", { count: trails.length })}
 					{active > 0 && (
 						<>
 							<span
 								aria-hidden="true"
-								className="grid size-5 place-items-center rounded-full bg-white text-xs text-stone-900 dark:bg-stone-900 dark:text-stone-100"
+								className="grid size-5 place-items-center rounded-full bg-surface text-xs text-ink"
 							>
 								{active}
 							</span>
@@ -106,7 +126,7 @@ export function TrailPanel({
 					)}
 				</button>
 			</div>
-			<p className="-mt-1 px-4 pb-2 text-[11px] leading-snug text-stone-500">
+			<p className="-mt-1 px-4 pb-2 text-[11px] leading-snug text-muted">
 				{t("disclaimer.short")}
 			</p>
 
@@ -115,7 +135,7 @@ export function TrailPanel({
 				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none md:flex`}
 			>
 				<fieldset>
-					<legend className="mb-2 text-xs font-medium text-stone-500">
+					<legend className="mb-2 text-xs font-medium text-muted">
 						{t("filters.types")}
 					</legend>
 					<div className="-mx-3 flex gap-2 overflow-x-auto px-3 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
@@ -135,10 +155,16 @@ export function TrailPanel({
 										}))
 									}
 									className={`flex h-9 shrink-0 items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap ${
-										pressed
-											? "border-stone-900 bg-stone-900 text-white dark:border-stone-100 dark:bg-stone-100 dark:text-stone-900"
-											: "border-stone-300 dark:border-stone-700"
+										pressed ? "font-medium" : "border-line"
 									}`}
+									style={
+										pressed
+											? {
+													background: `${colors[type]}26`,
+													borderColor: colors[type],
+												}
+											: undefined
+									}
 								>
 									<span
 										className="inline-block size-2.5 rounded-full"
@@ -228,7 +254,7 @@ export function TrailPanel({
 									days: null,
 								}))
 							}
-							className="text-stone-600 underline dark:text-stone-400"
+							className="text-muted underline"
 						>
 							{t("filters.reset")}
 						</button>
@@ -236,9 +262,7 @@ export function TrailPanel({
 				</div>
 
 				{trails.length === 0 ? (
-					<p className="mt-4 text-sm text-stone-600 dark:text-stone-400">
-						{t("filters.none")}
-					</p>
+					<p className="mt-4 text-sm text-muted">{t("filters.none")}</p>
 				) : (
 					<ul className="mt-2 flex flex-col">
 						{trails.map((trail) => (
@@ -256,7 +280,7 @@ export function TrailPanel({
 									onMouseLeave={() => onHoverTrail(null)}
 									onFocus={() => onHoverTrail(trail.slug)}
 									onBlur={() => onHoverTrail(null)}
-									className="flex items-start gap-3 rounded-lg px-2 py-2.5 hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-stone-900 dark:hover:bg-stone-800"
+									className="flex items-start gap-3 rounded-lg px-2 py-2.5 hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
 								>
 									<span
 										className="mt-1.5 inline-block h-3 w-1 shrink-0 rounded-full"
@@ -264,7 +288,7 @@ export function TrailPanel({
 									/>
 									<span className="min-w-0">
 										<span className="block font-medium">{titleOf(trail)}</span>
-										<span className="block truncate text-xs text-stone-500">
+										<span className="block truncate text-xs text-muted">
 											{format.countries(trail.countries)} ·{" "}
 											{format.km(trail.lengthKm)} · {format.days(trail.days)}
 										</span>

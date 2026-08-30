@@ -3,6 +3,32 @@
 @theme {
 	--font-sans: "Noto Sans Variable", ui-sans-serif, system-ui, sans-serif;
 	--font-serif: "Noto Serif Variable", ui-serif, Georgia, serif;
+
+	--color-canvas: #f7f3ea;
+	--color-surface: #fffdf8;
+	--color-soft: #f0e9da;
+	--color-line: #e4dac6;
+	--color-ink: #2b251d;
+	--color-muted: #776b5a;
+	--color-brand: #1d6b57;
+	--color-brand-strong: #155445;
+	--color-on-brand: #ffffff;
+	--shadow-float: 0 8px 28px -8px rgb(60 45 20 / 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-canvas: #11161c;
+		--color-surface: #1a2028;
+		--color-soft: #232b35;
+		--color-line: #2e3743;
+		--color-ink: #ece6da;
+		--color-muted: #a69d8e;
+		--color-brand: #5cc2a5;
+		--color-brand-strong: #7fd3ba;
+		--color-on-brand: #0b1a15;
+		--shadow-float: 0 8px 28px -8px rgb(0 0 0 / 0.6);
+	}
 }
 
 :lang(zh-Hans) {
@@ -42,7 +68,7 @@
 
 html,
 body {
-	@apply bg-white font-sans text-stone-900 dark:bg-stone-950 dark:text-stone-100;
+	@apply bg-canvas font-sans text-ink;
 
 	@media (prefers-color-scheme: dark) {
 		color-scheme: dark;
