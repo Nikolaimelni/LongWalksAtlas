@@ -64,7 +64,9 @@ The words live next to the data: `data/content/<slug>/<lang>.md`, a title, a one
 sentence summary and a `status` (`machine` or `reviewed`) in the frontmatter, the trail's
 story below it. English is required for every trail; any other language that is missing
 falls back to it. `pnpm content` turns them into JSON and HTML under `src/generated/content/`
-(not committed); `dev`, `build` and `typecheck` run it first.
+(not committed); `dev`, `build` and `typecheck` run it first. That HTML goes into the page
+as it is, so a tag outside a short list (paragraphs, emphasis, lists, h3 and h4, links) or
+a link that is not http, https or mailto stops the build, DeepL's output included.
 
 `pnpm translate` fills the gaps with DeepL (`DEEPL_API_KEY` in `.env`; `--dry-run` shows
 what would be sent without one). Interface strings keep their `{{placeholders}}`, and
