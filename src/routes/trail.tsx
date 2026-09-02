@@ -305,7 +305,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					<div
 						className="mt-3 leading-relaxed [&_a]:underline [&_p]:mb-4"
 						lang={content.lang}
-						// biome-ignore lint/security/noDangerouslySetInnerHtml: built by scripts/build-content.ts from markdown in this repository; nothing a visitor types reaches it
+						// biome-ignore lint/security/noDangerouslySetInnerHtml: scripts/build-content.ts holds every story to a short list of tags and link schemes and fails the build on anything else
 						dangerouslySetInnerHTML={{ __html: body }}
 					/>
 				</section>

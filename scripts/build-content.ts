@@ -16,6 +16,7 @@ import {
 } from "../src/features/trails/content-schema.ts";
 import { DataError } from "./data-error.ts";
 import { log } from "./log.ts";
+import { parseStoryHtml } from "./story-html.ts";
 
 const root = join(import.meta.dirname, "..");
 const trailsDir = join(root, "data/trails");
@@ -41,7 +42,9 @@ async function parseFile(file: string): Promise<Parsed | string> {
 	}
 	const meta = contentFrontmatterSchema.safeParse(raw);
 	if (!meta.success) return z.prettifyError(meta.error);
-	return { meta: meta.data, html: await marked.parse(body.trim()) };
+	const story = parseStoryHtml(await marked.parse(body.trim()));
+	if (story.problems.length > 0) return story.problems.join("\n");
+	return { meta: meta.data, html: story.html };
 }
 
 async function main() {
