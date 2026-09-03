@@ -18,6 +18,16 @@ const indexFile = join(root, "src/generated/photos.json");
 const sourceWidth = 1280;
 const widths = { small: 640, large: 1280 } as const;
 
+const pageUrl = z.url({
+	protocol: /^https$/,
+	hostname: /^commons\.wikimedia\.org$/,
+});
+const thumbUrl = z.url({
+	protocol: /^https$/,
+	hostname: /^(upload|thumb)\.wikimedia\.org$/,
+});
+const licenseUrl = z.url({ protocol: /^https?$/ });
+
 const infoSchema = z.object({
 	query: z.object({
 		pages: z.array(
@@ -27,8 +37,8 @@ const infoSchema = z.object({
 				imageinfo: z
 					.array(
 						z.object({
-							thumburl: z.url(),
-							descriptionurl: z.url(),
+							thumburl: thumbUrl,
+							descriptionurl: pageUrl,
 							extmetadata: z.record(
 								z.string(),
 								z.object({ value: z.unknown() }),
@@ -41,7 +51,13 @@ const infoSchema = z.object({
 	}),
 });
 
-type Info = { thumbUrl: string; pageUrl: string; meta: Record<string, string> };
+const cachedInfoSchema = z.object({
+	thumbUrl,
+	pageUrl,
+	meta: z.record(z.string(), z.string()),
+});
+
+type Info = z.infer<typeof cachedInfoSchema>;
 
 export function plainText(html: string): string {
 	return html
@@ -101,7 +117,12 @@ async function fetchInfo(file: string): Promise<Info> {
 
 async function cachedInfo(file: string, hash: string): Promise<Info> {
 	const path = join(cacheDir, `${hash}.json`);
-	if (existsSync(path)) return JSON.parse(await readFile(path, "utf8")) as Info;
+	if (existsSync(path)) {
+		const cached = cachedInfoSchema.safeParse(
+			JSON.parse(await readFile(path, "utf8")),
+		);
+		if (cached.success) return cached.data;
+	}
 	const info = await fetchInfo(file);
 	await writeFile(path, JSON.stringify(info));
 	return info;
@@ -139,6 +160,13 @@ async function main() {
 				`${file}: licence "${license}" cannot be used`,
 			);
 		}
+		const licenseLink = info.meta.LicenseUrl || null;
+		if (licenseLink && !licenseUrl.safeParse(licenseLink).success) {
+			throw new DataError(
+				"photo-license",
+				`${file}: licence link "${licenseLink}" is not a web address`,
+			);
+		}
 		const image = await cachedImage(info.thumbUrl, hash);
 
 		const names = {
@@ -160,7 +188,7 @@ async function main() {
 			file,
 			author: plainText(info.meta.Artist ?? "") || "Wikimedia Commons",
 			license,
-			licenseUrl: info.meta.LicenseUrl || null,
+			licenseUrl: licenseLink,
 			sourceUrl: info.pageUrl,
 			width: large.width,
 			height: large.height,

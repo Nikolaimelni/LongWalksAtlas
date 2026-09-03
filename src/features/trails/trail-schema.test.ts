@@ -59,6 +59,15 @@ describe("trailFileSchema", () => {
 		expect(issuesFor({ ...valid, countries: ["fr"] })).toEqual(["countries.0"]);
 	});
 
+	it("takes only web addresses as sources", () => {
+		expect(
+			issuesFor({
+				...valid,
+				sources: ["http://example.com/", "javascript:alert(1)", "data:,x"],
+			}),
+		).toEqual(["sources.1", "sources.2"]);
+	});
+
 	it("needs at least one OSM relation", () => {
 		expect(
 			issuesFor({ ...valid, geometry: { source: "osm", relationIds: [] } }),
