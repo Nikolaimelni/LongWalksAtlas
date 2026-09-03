@@ -55,7 +55,7 @@ export const trailFileSchema = z
 		bestSeason: z.array(z.enum(months)),
 		badges: z.array(z.enum(["coe-cultural-route", "unesco"])),
 		officialUrl: z.url({ protocol: /^https$/ }),
-		sources: z.array(z.url()).min(1),
+		sources: z.array(z.url({ protocol: /^https?$/ })).min(1),
 		photo: z
 			.strictObject({
 				commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
