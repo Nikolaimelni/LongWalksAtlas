@@ -24,6 +24,13 @@ will find the site, so each page carries its canonical URL, hreflang links to it
 translations and schema.org JSON-LD, and the facts are on the page as text, not only on
 the map.
 
+After the build, `scripts/add-csp.ts` gives every page a Content-Security-Policy `<meta>`.
+React Router writes several inline scripts into each prerendered page, different on every
+page, so the policy lists their hashes rather than allowing inline script wholesale;
+`public/_headers` adds `frame-ancestors`, which a meta tag cannot carry, and HSTS. The
+only other origin the browser may talk to is OpenFreeMap. `pnpm dev` runs without the
+policy, so a page that breaks it shows up in `pnpm preview` and the e2e run, not in dev.
+
 The site follows the device's light or dark setting, basemap included (OpenFreeMap's
 positron and dark styles). Each theme has its own set of trail colours, and a test holds
 every colour to 3:1 contrast against both the land and the water of its basemap; the

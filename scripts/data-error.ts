@@ -12,7 +12,8 @@ export type DataErrorCode =
 	| "photo-license"
 	| "missing-key"
 	| "translate-failed"
-	| "og-failed";
+	| "og-failed"
+	| "csp-failed";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;
