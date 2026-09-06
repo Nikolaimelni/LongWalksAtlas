@@ -11,6 +11,11 @@
 /data/*
   Cache-Control: public, max-age=3600
 
+# Each page carries the rest of its Content-Security-Policy in a <meta>, with the hashes of
+# its own inline scripts (scripts/add-csp.ts). A meta cannot set frame-ancestors.
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: frame-ancestors 'none'
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
