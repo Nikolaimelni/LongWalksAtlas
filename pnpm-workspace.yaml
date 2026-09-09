@@ -1,0 +1,3 @@
+# A new release waits a day before pnpm will install it: hijacked npm versions are usually
+# caught and pulled within hours.
+minimumReleaseAge: 1440
