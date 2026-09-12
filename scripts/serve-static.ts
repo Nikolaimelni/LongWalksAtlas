@@ -38,19 +38,26 @@ function send(
 
 createServer((req, res) => {
 	const url = new URL(req.url ?? "/", "http://localhost");
-	const path = normalize(decodeURIComponent(url.pathname));
-	const file = join(root, path);
+	const pathname = `/${url.pathname.replace(/^\/+/, "")}`;
+	let decoded: string;
+	try {
+		decoded = decodeURIComponent(pathname);
+	} catch {
+		res.writeHead(400);
+		return res.end();
+	}
+	const file = join(root, normalize(decoded));
 	if (!file.startsWith(root)) return send(res, join(root, "404.html"), 404);
 
 	if (isFile(file)) return send(res, file);
 	if (isFile(join(file, "index.html"))) {
-		if (url.pathname.endsWith("/")) return send(res, join(file, "index.html"));
-		res.writeHead(308, { Location: `${url.pathname}/${url.search}` });
+		if (pathname.endsWith("/")) return send(res, join(file, "index.html"));
+		res.writeHead(308, { Location: `${pathname}/${url.search}` });
 		return res.end();
 	}
 	send(res, join(root, "404.html"), 404);
-}).listen(Number(values.port), () => {
+}).listen(Number(values.port), "127.0.0.1", () => {
 	process.stdout.write(
-		`serving build/client on http://localhost:${values.port}\n`,
+		`serving build/client on http://127.0.0.1:${values.port}\n`,
 	);
 });
