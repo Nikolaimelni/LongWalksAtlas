@@ -38,6 +38,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					content="#0c0a09"
 					media="(prefers-color-scheme: dark)"
 				/>
+				<link rel="icon" href="/favicon.ico" sizes="48x48" />
+				<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 				{preload.map((href) => (
 					<link
 						key={href}
