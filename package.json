@@ -19,6 +19,7 @@
 		"e2e": "playwright test",
 		"data": "node --env-file-if-exists=.env scripts/build-data.ts",
 		"photos": "node scripts/build-photos.ts",
+		"icons": "node scripts/build-icons.ts",
 		"translate": "node --env-file-if-exists=.env scripts/translate.ts",
 		"og": "pnpm build && node scripts/build-og.ts"
 	},

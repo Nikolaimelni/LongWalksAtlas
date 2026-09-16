@@ -44,7 +44,8 @@ folds into a bar under the map.
 A shared link to the atlas shows a card made from the real map: `pnpm og` builds the site,
 photographs `/<lang>/og-card/` (a 1200 × 630 page kept out of search) for each published
 language with Playwright, and writes the JPEGs to `public/og/`, committed. A trail page
-uses its photo, or the atlas card while it has none.
+uses its photo, or the atlas card while it has none. The favicon and the touch icon are
+the logo mark on a brand-coloured disc, written by `pnpm icons` and committed too.
 
 `pnpm preview` serves `build/client` the way the host will: files as they are, `/en`
 redirected to `/en/`, and `404.html` with a real 404 for anything else (`vite preview`
