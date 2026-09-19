@@ -1,6 +1,6 @@
 import type { MetaDescriptor } from "react-router";
 import { absoluteUrl } from "~/shared/site";
-import type { Lang } from "./languages";
+import { type Lang, ogLocale } from "./languages";
 import { publishedLanguages } from "./published";
 
 export function alternateLinks(
@@ -26,5 +26,17 @@ export function alternateLinks(
 			hrefLang: "x-default",
 			href: absoluteUrl(xDefault),
 		},
+	];
+}
+
+export function localeMeta(lang: Lang): MetaDescriptor[] {
+	return [
+		{ property: "og:locale", content: ogLocale(lang) },
+		...publishedLanguages
+			.filter(({ code }) => code !== lang)
+			.map(({ code }) => ({
+				property: "og:locale:alternate",
+				content: ogLocale(code),
+			})),
 	];
 }

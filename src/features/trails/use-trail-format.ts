@@ -1,4 +1,6 @@
+import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
+import type { Lang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import type { DayRange, TrailFile } from "./trail-schema";
 
@@ -17,9 +19,10 @@ const monthIndex = {
 	dec: 11,
 } as const satisfies Record<TrailFile["bestSeason"][number], number>;
 
-export function useTrailFormat() {
-	const { t } = useTranslation();
-	const lang = useLang();
+export type TrailFormat = ReturnType<typeof trailFormat>;
+
+// Also called from route meta functions, which run outside React and have no hooks.
+export function trailFormat(t: TFunction, lang: Lang) {
 	const regions = new Intl.DisplayNames([lang], { type: "region" });
 	const list = new Intl.ListFormat(lang, { type: "conjunction" });
 	const kmFormat = new Intl.NumberFormat(lang, {
@@ -35,6 +38,7 @@ export function useTrailFormat() {
 			min === max
 				? t("trail.days", { count: max })
 				: t("trail.daysRange", { count: max, min }),
+		country: (code: string) => regions.of(code) ?? code,
 		countries: (codes: readonly string[]) =>
 			list.format(codes.map((c) => regions.of(c) ?? c)),
 		months: (codes: readonly TrailFile["bestSeason"][number][]) =>
@@ -44,4 +48,9 @@ export function useTrailFormat() {
 				),
 			),
 	};
+}
+
+export function useTrailFormat(): TrailFormat {
+	const { t } = useTranslation();
+	return trailFormat(t, useLang());
 }

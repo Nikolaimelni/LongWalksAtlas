@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isLang, pickLang, swapLang } from "./languages";
+import { isLang, ogLocale, pickLang, swapLang } from "./languages";
 
 describe("pickLang", () => {
 	it("takes an exact match", () => {
@@ -52,5 +52,14 @@ describe("swapLang", () => {
 		);
 		expect(swapLang("/en", "ar")).toBe("/ar");
 		expect(swapLang("/en/", "ja")).toBe("/ja/");
+	});
+});
+
+describe("ogLocale", () => {
+	it("adds the likely territory", () => {
+		expect(ogLocale("en")).toBe("en_US");
+		expect(ogLocale("ru")).toBe("ru_RU");
+		expect(ogLocale("pt-PT")).toBe("pt_PT");
+		expect(ogLocale("zh-Hans")).toBe("zh_CN");
 	});
 });
