@@ -1,7 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { data, Link } from "react-router";
-import { alternateLinks } from "~/features/i18n/alternates";
+import { alternateLinks, localeMeta } from "~/features/i18n/alternates";
+import { getI18n } from "~/features/i18n/i18n";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
@@ -11,7 +12,10 @@ import { serializeJsonLd, trailJsonLd } from "~/features/trails/trail-json-ld";
 import { trailFileSchema } from "~/features/trails/trail-schema";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { useTrailColors } from "~/features/trails/use-trail-colors";
-import { useTrailFormat } from "~/features/trails/use-trail-format";
+import {
+	trailFormat,
+	useTrailFormat,
+} from "~/features/trails/use-trail-format";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
 import { atlasCardMeta } from "~/shared/social-cards";
@@ -71,6 +75,16 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 	if (!loaderData || !layout) return [];
 	const app = layout.messages.app.name;
 	const { content, summary, photo } = loaderData;
+	const t = getI18n(layout.lang, layout.messages).getFixedT(layout.lang);
+	const format = trailFormat(t, layout.lang);
+	const facts = {
+		km: format.km(summary.lengthKm),
+		days: format.days(summary.days),
+	};
+	const description = t("seo.trailDescription", {
+		summary: content.summary,
+		...facts,
+	});
 	const url = absoluteUrl(`/${layout.lang}/trail/${summary.slug}/`);
 	const image = photo
 		? [
@@ -81,14 +95,16 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 			]
 		: atlasCardMeta(layout.lang);
 	return [
-		{ title: `${content.title} · ${app}` },
-		{ name: "description", content: content.summary },
+		{
+			title: `${t("seo.trailTitle", { title: content.title, ...facts })} · ${app}`,
+		},
+		{ name: "description", content: description },
 		{ property: "og:type", content: "article" },
 		{ property: "og:title", content: content.title },
-		{ property: "og:description", content: content.summary },
+		{ property: "og:description", content: description },
 		{ property: "og:url", content: url },
 		{ property: "og:site_name", content: app },
-		{ property: "og:locale", content: layout.lang.replace("-", "_") },
+		...localeMeta(layout.lang),
 		...image,
 		...alternateLinks(layout.lang, `trail/${params.slug}/`),
 	];
@@ -133,6 +149,16 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						question: t("faq.whenQ", vars),
 						answer: t("faq.whenA", {
 							months: format.months(summary.bestSeason),
+						}),
+					},
+				]
+			: []),
+		...(summary.countries.length > 1
+			? [
+					{
+						question: t("faq.countriesQ", vars),
+						answer: t("faq.countriesA", {
+							countries: format.countries(summary.countries),
 						}),
 					},
 				]

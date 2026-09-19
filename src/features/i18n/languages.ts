@@ -52,3 +52,9 @@ export function swapLang(pathname: string, lang: Lang): string {
 	const [, , ...rest] = pathname.split("/");
 	return `/${[lang, ...rest].join("/")}`;
 }
+
+// Open Graph wants language_TERRITORY; the likely region is as good a guess as any.
+export function ogLocale(lang: Lang): string {
+	const { language, region } = new Intl.Locale(lang).maximize();
+	return `${language}_${region}`;
+}

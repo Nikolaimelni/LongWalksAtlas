@@ -10,7 +10,7 @@ import {
 } from "~/features/filters/filters";
 import { createSearch } from "~/features/filters/search";
 import { TrailPanel } from "~/features/filters/trail-panel";
-import { alternateLinks } from "~/features/i18n/alternates";
+import { alternateLinks, localeMeta } from "~/features/i18n/alternates";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
@@ -50,15 +50,16 @@ export const shouldRevalidate = revalidateOnPathChange;
 export function meta({ matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
 	if (!layout) return [];
-	const app = layout.messages.app;
+	const { app, atlas } = layout.messages;
 	return [
-		{ title: app?.name },
-		{ name: "description", content: app?.description },
+		{ title: `${atlas.title} · ${app.name}` },
+		{ name: "description", content: app.description },
 		{ property: "og:type", content: "website" },
-		{ property: "og:title", content: app?.name },
-		{ property: "og:description", content: app?.description },
+		{ property: "og:title", content: app.name },
+		{ property: "og:description", content: app.description },
 		{ property: "og:url", content: absoluteUrl(`/${layout.lang}/`) },
-		{ property: "og:locale", content: layout.lang.replace("-", "_") },
+		{ property: "og:site_name", content: app.name },
+		...localeMeta(layout.lang),
 		...atlasCardMeta(layout.lang),
 		...alternateLinks(layout.lang, "", "/"),
 	];

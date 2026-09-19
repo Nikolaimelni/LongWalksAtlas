@@ -11,7 +11,7 @@
 		"tagline": "Pilgrim ways, historic routes, coastal and mountain trails across Europe, on one map."
 	},
 	"atlas": {
-		"title": "Map of long-distance walking trails",
+		"title": "Europe's long-distance hiking trails on a map",
 		"loading": "Loading the map…",
 		"pick": "Several trails meet here"
 	},
@@ -96,7 +96,13 @@
 		"whereLoopA": "It is a loop that starts and ends in {{start}}.",
 		"whenQ": "When is the best time to walk the {{title}}?",
 		"whenA": "The best months are {{months}}.",
+		"countriesQ": "Which countries does the {{title}} pass through?",
+		"countriesA": "It passes through {{countries}}.",
 		"officialQ": "Where is the official information about the {{title}}?",
 		"officialA": "On the official website, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: route map, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} on foot."
 	}
 }
