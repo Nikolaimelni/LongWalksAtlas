@@ -13,6 +13,7 @@
 	"officialUrl": "https://goturkiye.com/walking/paul-trail",
 	"sources": ["https://goturkiye.com/walking/paul-trail"],
 	"photo": null,
+	"wikidata": "Q2799201",
 	"geometry": { "source": "osm", "relationIds": [569620] },
 	"verifiedAt": "2026-10-18"
 }

@@ -8,7 +8,7 @@ import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
 import { TrailImage } from "~/features/trails/trail-image";
-import { serializeJsonLd, trailJsonLd } from "~/features/trails/trail-json-ld";
+import { trailJsonLd } from "~/features/trails/trail-json-ld";
 import { trailFileSchema } from "~/features/trails/trail-schema";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { useTrailColors } from "~/features/trails/use-trail-colors";
@@ -16,6 +16,7 @@ import {
 	trailFormat,
 	useTrailFormat,
 } from "~/features/trails/use-trail-format";
+import { JsonLd } from "~/shared/json-ld";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
 import { atlasCardMeta } from "~/shared/social-cards";
@@ -173,8 +174,11 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 		summary,
 		file,
 		content,
+		lang,
 		url: absoluteUrl(`/${lang}/trail/${summary.slug}/`),
-		atlas: { name: t("app.name"), url: absoluteUrl(`/${lang}/`) },
+		site: { name: t("app.name"), url: absoluteUrl(`/${lang}/`) },
+		parents: [],
+		image: photo ? absoluteUrl(photo.src.large) : null,
 		countryNames: summary.countries.map((c) => regions.of(c) ?? c),
 		faq,
 	});
@@ -413,11 +417,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 				<p>{t("trail.osm")}</p>
 			</footer>
 
-			<script
-				type="application/ld+json"
-				// biome-ignore lint/security/noDangerouslySetInnerHtml: serializeJsonLd escapes "<", so no string in the data can end this tag
-				dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
-			/>
+			<JsonLd graph={jsonLd} />
 		</main>
 	);
 }

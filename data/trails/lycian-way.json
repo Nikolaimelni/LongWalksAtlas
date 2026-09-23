@@ -15,6 +15,7 @@
 	"photo": {
 		"commons": "File:View from the lycian way near Kirme 2021-11-05-1.jpg"
 	},
+	"wikidata": "Q1731039",
 	"geometry": { "source": "osm", "relationIds": [51855], "mode": "all-ways" },
 	"verifiedAt": "2026-10-18"
 }

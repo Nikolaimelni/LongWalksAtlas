@@ -54,6 +54,9 @@ runs the Playwright checks on a phone viewport and a desktop one (`pnpm exec pla
 install chromium` once beforehand).
 
 Each trail is a hand-written JSON file in `data/trails/`, checked against a Zod schema.
+Its `wikidata` id goes into the page's JSON-LD as `sameAs`, which tells a search engine
+the page is about an entity it already knows; the OSM relation's own `wikidata` tag is
+usually the right one, as long as it belongs to the whole route and not to a section.
 The line itself comes from the trail's OpenStreetMap relation: `pnpm data` pulls it through
 Overpass, drops variants and side trips, stitches the ways together, simplifies them and
 writes `public/data/` plus `src/generated/trails-index.json`. Those outputs are committed,

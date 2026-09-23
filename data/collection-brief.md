@@ -42,6 +42,7 @@
 | `osm.relationIds`* | массив чисел | ID отношений OSM. Если маршрут разбит на части, все части по порядку |
 | `osm.notes` | строка или `null` | Что известно о линии: неполная, есть варианты, в отношении лишние ветки |
 | `photo` | `{ "commons": "File:....jpg" }` или `null` | Файл с Wikimedia Commons, снятый на этом маршруте, горизонтальный, лицензия CC BY, CC BY-SA, CC0 или public domain (не NC и не ND) |
+| `wikidata` | `Q…` или `null` | Элемент маршрута на Wikidata, например `Q1731039` у Ликийской тропы. Часто стоит в теге `wikidata` отношения OSM; проверь, что это весь маршрут, а не его участок |
 | `summaryEn`* | 1–2 предложения, до 300 знаков | Что это за маршрут, откуда и куда. Своими словами |
 | `storyEn`* | 2–4 абзаца, Markdown | История и характер маршрута. Своими словами, без копирования источников; ссылки в тексте допустимы |
 | `confidence`* | `high`, `medium`, `low` | Насколько уверен в цифрах и линии |
@@ -89,6 +90,7 @@
       "sources": ["https://www.westhighlandway.org/"],
       "osm": { "relationIds": [0], "notes": null },
       "photo": { "commons": "File:Example.jpg" },
+      "wikidata": "Q123456",
       "summaryEn": "One or two sentences in your own words.",
       "storyEn": "Two to four paragraphs in your own words.",
       "confidence": "high",

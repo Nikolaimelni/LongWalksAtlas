@@ -21,6 +21,7 @@ import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { canHover } from "~/shared/can-hover";
+import { itemListNode, JsonLd, websiteNode } from "~/shared/json-ld";
 import { LogoMark } from "~/shared/logo-mark";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { revalidateOnPathChange } from "~/shared/same-path";
@@ -110,6 +111,28 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 		? ranked.flatMap((slug) => filtered.find((tr) => tr.slug === slug) ?? [])
 		: [...filtered].sort((a, b) => titleOf(a).localeCompare(titleOf(b), lang));
 	const narrowed = countActive(filters) > 0 || filters.q.trim() !== "";
+
+	const home = absoluteUrl(`/${lang}/`);
+	const jsonLd = [
+		websiteNode(home, t("app.name"), lang),
+		{
+			"@type": "CollectionPage",
+			"@id": home,
+			url: home,
+			name: t("atlas.title"),
+			description: t("app.description"),
+			inLanguage: lang,
+			isPartOf: { "@id": `${home}#website` },
+			mainEntity: itemListNode(
+				[...trails]
+					.sort((a, b) => titleOf(a).localeCompare(titleOf(b), lang))
+					.map((tr) => ({
+						name: titleOf(tr),
+						url: absoluteUrl(pageOf(tr.slug)),
+					})),
+			),
+		},
+	];
 
 	function update(next: URLSearchParams) {
 		setParams(next, { replace: true, preventScrollReset: true });
@@ -259,6 +282,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 					)}
 				</section>
 			)}
+			<JsonLd graph={jsonLd} />
 		</main>
 	);
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { serializeJsonLd, trailJsonLd } from "./trail-json-ld";
+import { trailJsonLd } from "./trail-json-ld";
 import type { TrailFile, TrailSummary } from "./trail-schema";
 
 const file: TrailFile = {
@@ -17,6 +17,7 @@ const file: TrailFile = {
 	officialUrl: "https://cultureroutesinturkey.com/the-lycian-way/",
 	sources: ["https://cultureroutesinturkey.com/the-lycian-way/"],
 	photo: null,
+	wikidata: "Q1731039",
 	geometry: { source: "osm", relationIds: [51855] },
 	verifiedAt: "2026-10-18",
 };
@@ -48,37 +49,42 @@ const ld = trailJsonLd({
 		status: "machine",
 		lang: "en",
 	},
+	lang: "en",
 	url: "https://longwalksatlas.com/en/trail/lycian-way/",
-	atlas: { name: "Long Walks Atlas", url: "https://longwalksatlas.com/en/" },
+	site: { name: "Long Walks Atlas", url: "https://longwalksatlas.com/en/" },
+	parents: [],
+	image: null,
 	countryNames: ["Türkiye"],
 	faq: [{ question: "How long is it?", answer: "760 km." }],
-}) as { "@graph": Record<string, unknown>[] };
+});
 
 describe("trailJsonLd", () => {
 	it("describes the trail with its original name and official site", () => {
-		const trail = ld["@graph"][0];
-		expect(trail).toMatchObject({
+		expect(ld[0]).toMatchObject({
 			"@type": "TouristAttraction",
 			name: "Lycian Way",
 			alternateName: "Likya Yolu",
-			sameAs: ["https://cultureroutesinturkey.com/the-lycian-way/"],
+			sameAs: [
+				"https://cultureroutesinturkey.com/the-lycian-way/",
+				"https://www.wikidata.org/wiki/Q1731039",
+			],
 			geo: { latitude: 36.549, longitude: 29.1155 },
 		});
 	});
 
-	it("puts the atlas above the trail in the breadcrumb", () => {
-		expect(ld["@graph"][1]).toMatchObject({
-			itemListElement: [{ position: 1 }, { position: 2, name: "Lycian Way" }],
+	it("marks the page as part of its language's site, dated by the fact check", () => {
+		expect(ld[2]).toMatchObject({
+			"@type": "FAQPage",
+			"@id": "https://longwalksatlas.com/en/trail/lycian-way/",
+			inLanguage: "en",
+			isPartOf: { "@id": "https://longwalksatlas.com/en/#website" },
+			dateModified: "2026-10-18",
 		});
 	});
-});
 
-describe("serializeJsonLd", () => {
-	it("cannot be used to close the script tag", () => {
-		const out = serializeJsonLd({ text: "</script><script>alert(1)</script>" });
-		expect(out).not.toContain("</script>");
-		expect(JSON.parse(out)).toEqual({
-			text: "</script><script>alert(1)</script>",
+	it("puts the atlas above the trail in the breadcrumb", () => {
+		expect(ld[1]).toMatchObject({
+			itemListElement: [{ position: 1 }, { position: 2, name: "Lycian Way" }],
 		});
 	});
 });

@@ -61,6 +61,10 @@ export const trailFileSchema = z
 				commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
 			})
 			.nullable(),
+		wikidata: z
+			.string()
+			.regex(/^Q[1-9][0-9]*$/)
+			.nullable(),
 		geometry: z.strictObject({
 			source: z.literal("osm"),
 			relationIds: z.array(z.int().positive()).min(1),
