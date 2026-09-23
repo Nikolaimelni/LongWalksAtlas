@@ -3,6 +3,7 @@ import { pickLang } from "~/features/i18n/languages";
 import { publishedLanguages } from "~/features/i18n/published";
 import { readStoredLang } from "~/features/i18n/stored-lang";
 import en from "~/locales/en.json";
+import { JsonLd, websiteNode } from "~/shared/json-ld";
 import { absoluteUrl } from "~/shared/site";
 import { atlasCardMeta } from "~/shared/social-cards";
 
@@ -63,6 +64,7 @@ function LanguageList() {
 					</li>
 				))}
 			</ul>
+			<JsonLd graph={[websiteNode(absoluteUrl("/"), en.app.name, "en")]} />
 		</main>
 	);
 }

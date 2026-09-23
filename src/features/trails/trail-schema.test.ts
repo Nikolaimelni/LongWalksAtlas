@@ -16,6 +16,7 @@ const valid = {
 	officialUrl: "https://www.autourdumontblanc.com/",
 	sources: ["https://www.autourdumontblanc.com/"],
 	photo: null,
+	wikidata: null,
 	geometry: { source: "osm", relationIds: [124456] },
 	verifiedAt: "2026-10-18",
 };

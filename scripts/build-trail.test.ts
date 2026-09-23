@@ -17,6 +17,7 @@ const trail: TrailFile = {
 	officialUrl: "https://example.org/",
 	sources: ["https://example.org/"],
 	photo: null,
+	wikidata: null,
 	geometry: { source: "osm", relationIds: [1] },
 	verifiedAt: "2026-10-18",
 };
