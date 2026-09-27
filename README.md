@@ -87,4 +87,11 @@ phrase with a number that falls into it (22 дня, 25 дней), then the numbe
 `status: machine`, and a reviewed file is never touched. A language only goes on the
 site, with its pages, sitemap entries, hreflang links and a place in the switcher, once
 `src/locales/<lang>.json` exists; English pages under a German URL would read as
-duplicates to a search engine. Today that means English and Russian.
+duplicates to a search engine. Today that means English and Russian. The same goes for a
+single trail: while its text falls back to English, its page in that language is marked
+`noindex` and left out of the sitemap and of the other versions' hreflang links.
+
+The sitemap dates each trail page by its `verifiedAt`, and the atlas by the newest of
+them. `robots.txt` carries a `Clean-param` line for Yandex, which does not follow
+canonical links as reliably as Google does, so the query strings of the atlas do not turn
+into thousands of copies of it.

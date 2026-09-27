@@ -1,20 +1,51 @@
-import { publishedLanguages as languages } from "~/features/i18n/published";
+import type { Lang } from "~/features/i18n/languages";
+import { publishedLanguages } from "~/features/i18n/published";
+import { textLanguages } from "~/features/trails/text-languages";
+import { loadTrailFile } from "~/features/trails/trail-files";
 import { trailsIndex } from "~/features/trails/trails-index";
 import { absoluteUrl } from "~/shared/site";
 
-export function loader() {
-	const pages = ["", ...trailsIndex.map((t) => `trail/${t.slug}/`)];
-	const urls = pages.flatMap((rest) => {
+type Page = {
+	rest: string;
+	langs: readonly Lang[];
+	xDefault: string;
+	// The day the facts were checked: the change a reader would care about.
+	lastmod: string;
+};
+
+export async function loader() {
+	const trails = await Promise.all(
+		trailsIndex.map(
+			async (t): Promise<Page> => ({
+				rest: `trail/${t.slug}/`,
+				langs: await textLanguages(t.slug),
+				xDefault: `/en/trail/${t.slug}/`,
+				lastmod: (await loadTrailFile(t.slug)).verifiedAt,
+			}),
+		),
+	);
+	const atlas: Page = {
+		rest: "",
+		langs: publishedLanguages.map(({ code }) => code),
+		xDefault: "/",
+		lastmod:
+			trails
+				.map((t) => t.lastmod)
+				.sort()
+				.at(-1) ?? "",
+	};
+
+	const urls = [atlas, ...trails].flatMap((page) => {
 		const alternates = [
-			...languages.map(
-				({ code }) =>
-					`<xhtml:link rel="alternate" hreflang="${code}" href="${absoluteUrl(`/${code}/${rest}`)}"/>`,
+			...page.langs.map(
+				(code) =>
+					`<xhtml:link rel="alternate" hreflang="${code}" href="${absoluteUrl(`/${code}/${page.rest}`)}"/>`,
 			),
-			`<xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl(rest ? `/en/${rest}` : "/")}"/>`,
+			`<xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl(page.xDefault)}"/>`,
 		].join("");
-		return languages.map(
-			({ code }) =>
-				`<url><loc>${absoluteUrl(`/${code}/${rest}`)}</loc>${alternates}</url>`,
+		return page.langs.map(
+			(code) =>
+				`<url><loc>${absoluteUrl(`/${code}/${page.rest}`)}</loc><lastmod>${page.lastmod}</lastmod>${alternates}</url>`,
 		);
 	});
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>

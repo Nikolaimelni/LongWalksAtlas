@@ -3,10 +3,18 @@ import { absoluteUrl } from "~/shared/site";
 import { type Lang, ogLocale } from "./languages";
 import { publishedLanguages } from "./published";
 
+type Options = {
+	xDefault?: string;
+	langs?: readonly Lang[];
+};
+
 export function alternateLinks(
 	lang: Lang,
 	rest: string,
-	xDefault = `/en/${rest}`,
+	{
+		xDefault = `/en/${rest}`,
+		langs = publishedLanguages.map(({ code }) => code),
+	}: Options = {},
 ): MetaDescriptor[] {
 	return [
 		{
@@ -14,7 +22,7 @@ export function alternateLinks(
 			rel: "canonical",
 			href: absoluteUrl(`/${lang}/${rest}`),
 		},
-		...publishedLanguages.map(({ code }) => ({
+		...langs.map((code) => ({
 			tagName: "link",
 			rel: "alternate",
 			hrefLang: code,

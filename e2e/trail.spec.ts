@@ -78,6 +78,7 @@ test("sitemap, robots.txt and llms.txt are published", async ({ request }) => {
 	expect(sitemap).toContain(
 		"<loc>https://longwalksatlas.com/ru/trail/e1/</loc>",
 	);
+	expect(sitemap).toMatch(/<lastmod>d{4}-d{2}-d{2}</lastmod>/);
 	expect(await (await request.get("/robots.txt")).text()).toContain(
 		"Sitemap: https://longwalksatlas.com/sitemap.xml",
 	);
