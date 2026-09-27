@@ -62,7 +62,7 @@ export function meta({ matches }: Route.MetaArgs) {
 		{ property: "og:site_name", content: app.name },
 		...localeMeta(layout.lang),
 		...atlasCardMeta(layout.lang),
-		...alternateLinks(layout.lang, "", "/"),
+		...alternateLinks(layout.lang, "", { xDefault: "/" }),
 	];
 }
 

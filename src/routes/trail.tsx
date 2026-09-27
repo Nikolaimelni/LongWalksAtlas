@@ -7,9 +7,10 @@ import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
+import { textLanguages } from "~/features/trails/text-languages";
+import { loadTrailFile } from "~/features/trails/trail-files";
 import { TrailImage } from "~/features/trails/trail-image";
 import { trailJsonLd } from "~/features/trails/trail-json-ld";
-import { trailFileSchema } from "~/features/trails/trail-schema";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { useTrailColors } from "~/features/trails/use-trail-colors";
 import {
@@ -27,19 +28,13 @@ const TrailMap = lazy(() =>
 	import("~/features/map/trail-map").then((m) => ({ default: m.TrailMap })),
 );
 
-const trailFiles = import.meta.glob<unknown>("../../data/trails/*.json", {
-	import: "default",
-});
-
 export async function loader({ params }: Route.LoaderArgs) {
 	const { lang, slug } = params;
 	if (!isLang(lang)) throw data("Unknown language", { status: 404 });
 	const summary = trailsIndex.find((t) => t.slug === slug);
 	if (!summary) throw data("Unknown trail", { status: 404 });
 
-	const file = trailFileSchema.parse(
-		await trailFiles[`../../data/trails/${summary.slug}.json`]?.(),
-	);
+	const file = await loadTrailFile(summary.slug);
 	const contentIndex = await loadContentIndex(lang);
 	const content = contentIndex[summary.slug];
 	if (!content) throw data("No text for this trail", { status: 404 });
@@ -65,7 +60,15 @@ export async function loader({ params }: Route.LoaderArgs) {
 		nearby: summary.nearby.flatMap(neighbour),
 	};
 
-	return { summary, file, content, body, photo, related };
+	return {
+		summary,
+		file,
+		content,
+		body,
+		photo,
+		related,
+		languages: await textLanguages(summary.slug),
+	};
 }
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
@@ -75,7 +78,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 	const layout = matches[1]?.loaderData;
 	if (!loaderData || !layout) return [];
 	const app = layout.messages.app.name;
-	const { content, summary, photo } = loaderData;
+	const { content, summary, photo, languages } = loaderData;
 	const t = getI18n(layout.lang, layout.messages).getFixedT(layout.lang);
 	const format = trailFormat(t, layout.lang);
 	const facts = {
@@ -107,7 +110,12 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		{ property: "og:site_name", content: app },
 		...localeMeta(layout.lang),
 		...image,
-		...alternateLinks(layout.lang, `trail/${params.slug}/`),
+		...(languages.includes(layout.lang)
+			? []
+			: [{ name: "robots", content: "noindex" }]),
+		...alternateLinks(layout.lang, `trail/${params.slug}/`, {
+			langs: languages,
+		}),
 	];
 }
 
