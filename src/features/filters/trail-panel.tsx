@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
+import { HubLinks } from "~/features/hubs/hub-links";
+import { listHubs } from "~/features/hubs/hubs";
 import { useLang } from "~/features/i18n/use-lang";
 import { type TrailSummary, trailTypes } from "~/features/trails/trail-schema";
 import { useTrailColors } from "~/features/trails/use-trail-colors";
@@ -239,7 +241,7 @@ export function TrailPanel({
 				</div>
 
 				<div className="mt-4 flex items-center justify-between text-sm">
-					<h2 className="font-semibold">
+					<h2 id="trail-count" className="font-semibold">
 						{t("filters.count", { count: trails.length })}
 					</h2>
 					{(active > 0 || filters.q) && (
@@ -264,7 +266,7 @@ export function TrailPanel({
 				{trails.length === 0 ? (
 					<p className="mt-4 text-sm text-muted">{t("filters.none")}</p>
 				) : (
-					<ul className="mt-2 flex flex-col">
+					<ul aria-labelledby="trail-count" className="mt-2 flex flex-col">
 						{trails.map((trail) => (
 							<li key={trail.slug}>
 								<Link
@@ -298,6 +300,13 @@ export function TrailPanel({
 						))}
 					</ul>
 				)}
+				<HubLinks
+					hubs={listHubs(allTrails)}
+					className="mt-4 border-t border-line px-2 pt-3"
+				/>
+				<p className="mt-4 px-2 text-xs leading-relaxed text-muted">
+					{t("app.description")}
+				</p>
 			</div>
 		</section>
 	);

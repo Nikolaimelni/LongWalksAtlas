@@ -7,6 +7,7 @@ export default [
 	route(":lang", "routes/lang-layout.tsx", [
 		index("routes/atlas.tsx"),
 		route("trail/:slug", "routes/trail.tsx"),
+		route(":kind/:key", "routes/hub.tsx"),
 		route("og-card", "routes/og-card.tsx"),
 	]),
 ] satisfies RouteConfig;

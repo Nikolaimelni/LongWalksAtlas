@@ -1,7 +1,10 @@
 import { expect, type Page, test } from "@playwright/test";
 
 const list = (page: Page) =>
-	page.getByRole("region", { name: "Тропы" }).getByRole("listitem");
+	page
+		.getByRole("region", { name: "Тропы" })
+		.getByRole("list", { name: /\d+ троп/ })
+		.getByRole("listitem");
 
 async function openPanel(page: Page) {
 	const toggle = page.getByRole("button", { name: /\d+ троп/ });

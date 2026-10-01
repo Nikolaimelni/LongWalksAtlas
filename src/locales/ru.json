@@ -54,6 +54,13 @@
 		"mountain": "Горная тропа",
 		"e-path": "Европейский маршрут"
 	},
+	"trailTypePlural": {
+		"pilgrimage": "Паломнические пути",
+		"historic": "Исторические маршруты",
+		"coastal": "Прибрежные тропы",
+		"mountain": "Горные тропы",
+		"e-path": "Европейские маршруты"
+	},
 	"badge": {
 		"coe-cultural-route": "Культурный маршрут Совета Европы",
 		"unesco": "Всемирное наследие ЮНЕСКО"
@@ -112,5 +119,22 @@
 	"seo": {
 		"trailTitle": "{{title}}: карта маршрута, {{km}}, {{days}}",
 		"trailDescription": "{{summary}} {{km}}, {{days}} пешком."
+	},
+	"hub": {
+		"countryTitle": "{{country}}: многодневные пешие маршруты",
+		"typeTitle": "{{types}} на карте",
+		"countryIntro_one": "На атласе {{count}} маршрут по этой стране, длиной {{shortest}}.",
+		"countryIntro_few": "На атласе {{count}} маршрута по этой стране, от {{shortest}} до {{longest}}.",
+		"countryIntro_many": "На атласе {{count}} маршрутов по этой стране, от {{shortest}} до {{longest}}.",
+		"countryIntro_other": "На атласе {{count}} маршрута по этой стране, от {{shortest}} до {{longest}}.",
+		"typeIntro_one": "На атласе {{count}} маршрут этого типа ({{countries}}), длиной {{shortest}}.",
+		"typeIntro_few": "На атласе {{count}} маршрута этого типа ({{countries}}), от {{shortest}} до {{longest}}.",
+		"typeIntro_many": "На атласе {{count}} маршрутов этого типа ({{countries}}), от {{shortest}} до {{longest}}.",
+		"typeIntro_other": "На атласе {{count}} маршрута этого типа ({{countries}}), от {{shortest}} до {{longest}}.",
+		"each": "У каждого указаны длина, дни пути, лучшие месяцы и ссылка на официальный сайт.",
+		"showOnMap": "Показать их на карте",
+		"browse": "Обзор маршрутов",
+		"byCountry": "По странам",
+		"byType": "По типам"
 	}
 }

@@ -1,6 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { data, Link } from "react-router";
+import { CountryList } from "~/features/hubs/country-list";
+import { hubTitle } from "~/features/hubs/hub-meta";
+import { type Hub, hasHub, hubPath } from "~/features/hubs/hubs";
 import { alternateLinks, localeMeta } from "~/features/i18n/alternates";
 import { getI18n } from "~/features/i18n/i18n";
 import { LanguageSwitcher } from "~/features/i18n/language-switcher";
@@ -20,7 +23,7 @@ import {
 import { JsonLd } from "~/shared/json-ld";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
-import { atlasCardMeta } from "~/shared/social-cards";
+import { atlasCardMeta, photoCardMeta } from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/trail";
 
@@ -90,14 +93,6 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		...facts,
 	});
 	const url = absoluteUrl(`/${layout.lang}/trail/${summary.slug}/`);
-	const image = photo
-		? [
-				{ property: "og:image", content: absoluteUrl(photo.src.large) },
-				{ property: "og:image:width", content: String(photo.width) },
-				{ property: "og:image:height", content: String(photo.height) },
-				{ name: "twitter:card", content: "summary_large_image" },
-			]
-		: atlasCardMeta(layout.lang);
 	return [
 		{
 			title: `${t("seo.trailTitle", { title: content.title, ...facts })} · ${app}`,
@@ -109,7 +104,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		{ property: "og:url", content: url },
 		{ property: "og:site_name", content: app },
 		...localeMeta(layout.lang),
-		...image,
+		...(photo ? photoCardMeta(photo) : atlasCardMeta(layout.lang)),
 		...(languages.includes(layout.lang)
 			? []
 			: [{ name: "robots", content: "noindex" }]),
@@ -136,6 +131,10 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 	const checkedOn = new Intl.DateTimeFormat(lang, { dateStyle: "long" }).format(
 		new Date(file.verifiedAt),
 	);
+	const typeHub: Hub = { kind: "type", type: summary.type };
+	const typePage = hasHub(typeHub, trailsIndex)
+		? { name: hubTitle(t, lang, typeHub), path: `/${lang}/${hubPath(typeHub)}` }
+		: null;
 
 	const faq = [
 		{
@@ -185,7 +184,9 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 		lang,
 		url: absoluteUrl(`/${lang}/trail/${summary.slug}/`),
 		site: { name: t("app.name"), url: absoluteUrl(`/${lang}/`) },
-		parents: [],
+		parents: typePage
+			? [{ name: typePage.name, url: absoluteUrl(typePage.path) }]
+			: [],
 		image: photo ? absoluteUrl(photo.src.large) : null,
 		countryNames: summary.countries.map((c) => regions.of(c) ?? c),
 		faq,
@@ -220,7 +221,13 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						className="inline-block size-2.5 rounded-full"
 						style={{ background: color }}
 					/>
-					{t(`trailType.${summary.type}`)}
+					{typePage ? (
+						<Link to={typePage.path} viewTransition className="hover:underline">
+							{t(`trailType.${summary.type}`)}
+						</Link>
+					) : (
+						t(`trailType.${summary.type}`)
+					)}
 				</p>
 				<h1 className="mt-1 font-serif text-3xl leading-tight font-semibold">
 					{content.title}
@@ -278,7 +285,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					<div>
 						<dt className="text-muted">{t("trail.countries")}</dt>
 						<dd className="font-semibold">
-							{format.countries(summary.countries)}
+							<CountryList codes={summary.countries} />
 						</dd>
 					</div>
 					{summary.bestSeason.length > 0 && (
