@@ -50,6 +50,13 @@
 		"mountain": "Mountain trail",
 		"e-path": "European long-distance path"
 	},
+	"trailTypePlural": {
+		"pilgrimage": "Pilgrim ways",
+		"historic": "Historic routes",
+		"coastal": "Coastal trails",
+		"mountain": "Mountain trails",
+		"e-path": "European long-distance paths"
+	},
 	"badge": {
 		"coe-cultural-route": "Cultural Route of the Council of Europe",
 		"unesco": "UNESCO World Heritage"
@@ -104,5 +111,18 @@
 	"seo": {
 		"trailTitle": "{{title}}: route map, {{km}}, {{days}}",
 		"trailDescription": "{{summary}} {{km}}, {{days}} on foot."
+	},
+	"hub": {
+		"countryTitle": "Long-distance hiking trails in {{country}}",
+		"typeTitle": "{{types}} on the map",
+		"countryIntro_one": "The atlas has {{count}} trail that crosses {{country}}, {{shortest}} long.",
+		"countryIntro_other": "The atlas has {{count}} trails that cross {{country}}, from {{shortest}} to {{longest}}.",
+		"typeIntro_one": "The atlas has {{count}} trail of this kind, in {{countries}}, {{shortest}} long.",
+		"typeIntro_other": "The atlas has {{count}} trails of this kind, across {{countries}}, from {{shortest}} to {{longest}}.",
+		"each": "Each comes with its length, days on foot, best months and a link to the official site.",
+		"showOnMap": "Show them on the map",
+		"browse": "Browse trails",
+		"byCountry": "By country",
+		"byType": "By type"
 	}
 }

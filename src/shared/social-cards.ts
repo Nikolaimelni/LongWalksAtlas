@@ -1,4 +1,5 @@
 import type { MetaDescriptor } from "react-router";
+import type { TrailPhoto } from "~/features/trails/trail-schema";
 import cards from "~/generated/og.json";
 import { absoluteUrl } from "./site";
 
@@ -14,6 +15,15 @@ export function atlasCardMeta(lang: string): MetaDescriptor[] {
 		{ property: "og:image", content: absoluteUrl(card.src) },
 		{ property: "og:image:width", content: String(card.width) },
 		{ property: "og:image:height", content: String(card.height) },
+		{ name: "twitter:card", content: "summary_large_image" },
+	];
+}
+
+export function photoCardMeta(photo: TrailPhoto): MetaDescriptor[] {
+	return [
+		{ property: "og:image", content: absoluteUrl(photo.src.large) },
+		{ property: "og:image:width", content: String(photo.width) },
+		{ property: "og:image:height", content: String(photo.height) },
 		{ name: "twitter:card", content: "summary_large_image" },
 	];
 }

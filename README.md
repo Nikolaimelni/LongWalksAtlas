@@ -16,8 +16,9 @@ pnpm install
 pnpm dev
 ```
 
-`pnpm build` writes a fully static site to `build/client`: the atlas and every trail page
-prerendered in each published language (`/en/`, `/ru/trail/lycian-way/` and so on), `/`,
+`pnpm build` writes a fully static site to `build/client`: the atlas, every trail page and
+the country and type pages, prerendered in each published language (`/en/`,
+`/ru/trail/lycian-way/`, `/ru/country/tr/` and so on), `/`,
 which sends the visitor to the language their browser asks for, plus `sitemap.xml`,
 `llms.txt` and a `404.html`. Search engines and AI assistants are the main way people
 will find the site, so each page carries its canonical URL, hreflang links to its
@@ -40,6 +41,17 @@ On the atlas, search (fuzzy and accent-blind, so "oludeniz" finds Ölüdeniz) an
 filters for type, country, length and days live in the query string, so a filtered view
 is a link you can send. The trail list is part of the prerendered page; on a phone it
 folds into a bar under the map.
+
+A filtered view is not a page for search engines (its canonical is the plain atlas), so
+the queries people actually type, "hiking trails in Turkey" or "pilgrim ways", get pages
+of their own: `/<lang>/country/tr/` and `/<lang>/type/pilgrimage/` list their trails
+with photo, facts and summary. Nobody writes them. One appears as soon as a second trail
+shares the country or the type (`minTrailsPerHub` in `src/features/hubs/hubs.ts`), since
+a page holding one trail would only repeat that trail's own; today that is Italy,
+Switzerland and Türkiye. Trail pages link their type and countries to these pages and the
+atlas panel lists them under the trails. Both kinds share a single `:kind/:key` route,
+because with `ssr: false` React Router refuses a route with a loader and no prerendered
+page, and no type has its second trail yet.
 
 A shared link to the atlas shows a card made from the real map: `pnpm og` builds the site,
 photographs `/<lang>/og-card/` (a 1200 × 630 page kept out of search) for each published
