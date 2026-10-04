@@ -35,7 +35,17 @@ const place = z.strictObject({
 
 const regionBounds = {
 	europe: { west: -32, south: 27, east: 45, north: 72 },
+	"middle-east-caucasus": { west: 25, south: 12, east: 63, north: 45 },
+	asia: { west: 60, south: -11, east: 150, north: 56 },
+	africa: { west: -26, south: -36, east: 52, north: 38 },
+	americas: { west: -170, south: -56, east: -34, north: 72 },
+	oceania: { west: 110, south: -48, east: 180, north: 0 },
 } as const;
+
+const regions = Object.keys(regionBounds) as [
+	keyof typeof regionBounds,
+	...(keyof typeof regionBounds)[],
+];
 
 const dayRange = z
 	.strictObject({ min: z.int().positive(), max: z.int().positive() })
@@ -46,7 +56,7 @@ export const trailFileSchema = z
 		slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
 		name: z.strictObject({ original: z.string().min(1) }),
 		type: z.enum(trailTypes),
-		region: z.enum(["europe"]),
+		region: z.enum(regions),
 		start: place,
 		end: place,
 		countries: z.array(z.string().regex(/^[A-Z]{2}$/)).min(1),

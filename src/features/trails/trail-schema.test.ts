@@ -50,6 +50,16 @@ describe("trailFileSchema", () => {
 		expect(issuesFor({ ...valid, start: swapped })).toEqual(["start.coords"]);
 	});
 
+	it("checks coordinates against the trail's own region", () => {
+		const bluff = { name: "Bluff", coords: [168.3627, -46.6141] };
+		const kiwi = { ...valid, start: bluff, end: bluff, countries: ["NZ"] };
+		expect(issuesFor({ ...kiwi, region: "oceania" })).toEqual([]);
+		expect(issuesFor({ ...kiwi, region: "europe" })).toEqual([
+			"start.coords",
+			"end.coords",
+		]);
+	});
+
 	it("wants slugs in kebab case", () => {
 		expect(issuesFor({ ...valid, slug: "Tour_du_Mont_Blanc" })).toEqual([
 			"slug",
