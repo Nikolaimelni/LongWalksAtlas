@@ -23,3 +23,6 @@ CLAUDE.md
 CLAUDE.local.md
 .mcp.json
 AGENTS.md
+
+# external collection runs, reviewed before anything moves into data/trails/
+/data/import/
