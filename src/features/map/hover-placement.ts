@@ -1,24 +1,29 @@
 export type Placement = {
 	left: number;
 	top: number;
-	transform: string;
 	maxHeight: number;
 };
+
+type Size = { width: number; height: number };
 
 const gap = 16;
 const margin = 8;
 
+// The card sits beside the pointer, never over it, and slides up or down to stay on
+// screen.
 export function hoverPlacement(
 	x: number,
 	y: number,
-	viewport: { width: number; height: number },
+	card: Size,
+	viewport: Size,
 ): Placement {
-	const toLeft = x > viewport.width / 2;
-	const above = y > viewport.height / 2;
-	return {
-		left: x + (toLeft ? -gap : gap),
-		top: y + (above ? -gap : gap),
-		transform: `translate(${toLeft ? "-100%" : "0"}, ${above ? "-100%" : "0"})`,
-		maxHeight: (above ? y : viewport.height - y) - gap - margin,
-	};
+	const maxHeight = viewport.height - 2 * margin;
+	const height = Math.min(card.height, maxHeight);
+	const fitsRight = x + gap + card.width <= viewport.width - margin;
+	const left = fitsRight ? x + gap : Math.max(margin, x - gap - card.width);
+	const top = Math.min(
+		Math.max(margin, y - height / 2),
+		viewport.height - margin - height,
+	);
+	return { left, top, maxHeight };
 }

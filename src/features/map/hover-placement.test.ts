@@ -2,28 +2,35 @@ import { describe, expect, it } from "vitest";
 import { hoverPlacement } from "./hover-placement";
 
 const screen = { width: 1280, height: 800 };
+const card = { width: 256, height: 420 };
 
 describe("hoverPlacement", () => {
-	it("opens down and to the right near the top-left corner", () => {
-		expect(hoverPlacement(100, 100, screen)).toEqual({
-			left: 116,
-			top: 116,
-			transform: "translate(0, 0)",
-			maxHeight: 676,
+	it("opens to the right, centred on the pointer, when there is room", () => {
+		expect(hoverPlacement(400, 400, card, screen)).toEqual({
+			left: 416,
+			top: 190,
+			maxHeight: 784,
 		});
 	});
 
-	it("opens up and to the left near the bottom-right corner", () => {
-		expect(hoverPlacement(1250, 780, screen)).toEqual({
-			left: 1234,
-			top: 764,
-			transform: "translate(-100%, -100%)",
-			maxHeight: 756,
-		});
+	it("flips to the left near the right edge", () => {
+		expect(hoverPlacement(1200, 400, card, screen).left).toBe(928);
 	});
 
-	it("caps the height by the room left in a short window", () => {
-		const short = { width: 1280, height: 600 };
-		expect(hoverPlacement(640, 290, short).maxHeight).toBe(286);
+	it("slides up instead of running off the bottom", () => {
+		const { top } = hoverPlacement(660, 640, card, screen);
+		expect(top + card.height).toBe(792);
+	});
+
+	it("slides down instead of running off the top", () => {
+		expect(hoverPlacement(660, 30, card, screen).top).toBe(8);
+	});
+
+	it("caps a card taller than the window and pins it to the top", () => {
+		const short = { width: 1280, height: 400 };
+		expect(hoverPlacement(660, 300, card, short)).toMatchObject({
+			top: 8,
+			maxHeight: 384,
+		});
 	});
 });

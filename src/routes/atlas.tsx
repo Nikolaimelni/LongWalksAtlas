@@ -27,6 +27,7 @@ import { prerenderedOnly } from "~/shared/prerendered-only";
 import { revalidateOnPathChange } from "~/shared/same-path";
 import { absoluteUrl } from "~/shared/site";
 import { atlasCardMeta } from "~/shared/social-cards";
+import { useElementSize } from "~/shared/use-element-size";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
 
@@ -84,6 +85,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const [hovered, setHovered] = useState<HoverInfo | null>(null);
 	const [listHover, setListHover] = useState<string | null>(null);
 	const [choices, setChoices] = useState<string[]>([]);
+	const [cardRef, cardSize] = useElementSize<HTMLDivElement>();
 
 	const titleOf = (trail: TrailSummary) =>
 		content[trail.slug]?.title ?? trail.name.original;
@@ -224,8 +226,9 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 			{hoverTrails[0] && !selected && (
 				<div
+					ref={cardRef}
 					className="pointer-events-none absolute z-20 w-64 overflow-hidden rounded-xl bg-surface p-3 shadow-float transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none"
-					style={hoverPlacement(hovered?.x ?? 0, hovered?.y ?? 0, {
+					style={hoverPlacement(hovered?.x ?? 0, hovered?.y ?? 0, cardSize, {
 						width: window.innerWidth,
 						height: window.innerHeight,
 					})}
