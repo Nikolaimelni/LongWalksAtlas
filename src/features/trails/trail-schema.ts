@@ -131,5 +131,6 @@ export type TrailPhoto = {
 	sourceUrl: string;
 	width: number;
 	height: number;
+	smallWidth: number;
 	src: { small: string; large: string };
 };

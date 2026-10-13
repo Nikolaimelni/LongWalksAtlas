@@ -38,7 +38,7 @@ export function TrailImage({
 		<figure>
 			<img
 				src={photo.src.small}
-				srcSet={`${photo.src.small} 640w, ${photo.src.large} 1280w`}
+				srcSet={`${photo.src.small} ${photo.smallWidth}w, ${photo.src.large} ${photo.width}w`}
 				sizes={sizes}
 				width={photo.width}
 				height={photo.height}
