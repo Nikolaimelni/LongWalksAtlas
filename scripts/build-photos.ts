@@ -175,11 +175,11 @@ async function main() {
 		};
 		await sharp(image)
 			.resize({ width: widths.small, withoutEnlargement: true })
-			.webp({ quality: 72 })
+			.webp({ quality: 65, effort: 6 })
 			.toFile(join(outDir, names.small));
 		const large = await sharp(image)
 			.resize({ width: widths.large, withoutEnlargement: true })
-			.webp({ quality: 72 })
+			.webp({ quality: 65, effort: 6 })
 			.toFile(join(outDir, names.large));
 		keep.add(names.small);
 		keep.add(names.large);
