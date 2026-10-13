@@ -16,7 +16,11 @@ const outDir = join(root, "public/photos");
 const indexFile = join(root, "src/generated/photos.json");
 
 const sourceWidth = 1280;
-const widths = { small: 640, large: 1280 } as const;
+// Boxes rather than widths, so a portrait photo is not 1700 px tall.
+const boxes = {
+	small: { width: 640, height: 480 },
+	large: { width: 1280, height: 960 },
+} as const;
 
 const pageUrl = z.url({
 	protocol: /^https$/,
@@ -170,15 +174,15 @@ async function main() {
 		const image = await cachedImage(info.thumbUrl, hash);
 
 		const names = {
-			small: `${trail.slug}-${hash}-${widths.small}.webp`,
-			large: `${trail.slug}-${hash}-${widths.large}.webp`,
+			small: `${trail.slug}-${hash}-${boxes.small.width}.webp`,
+			large: `${trail.slug}-${hash}-${boxes.large.width}.webp`,
 		};
-		await sharp(image)
-			.resize({ width: widths.small, withoutEnlargement: true })
+		const small = await sharp(image)
+			.resize({ ...boxes.small, fit: "inside", withoutEnlargement: true })
 			.webp({ quality: 65, effort: 6 })
 			.toFile(join(outDir, names.small));
 		const large = await sharp(image)
-			.resize({ width: widths.large, withoutEnlargement: true })
+			.resize({ ...boxes.large, fit: "inside", withoutEnlargement: true })
 			.webp({ quality: 65, effort: 6 })
 			.toFile(join(outDir, names.large));
 		keep.add(names.small);
@@ -191,6 +195,7 @@ async function main() {
 			licenseUrl: licenseLink,
 			sourceUrl: info.pageUrl,
 			width: large.width,
+			smallWidth: small.width,
 			height: large.height,
 			src: { small: `/photos/${names.small}`, large: `/photos/${names.large}` },
 		};
