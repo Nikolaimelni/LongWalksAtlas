@@ -18,7 +18,7 @@ describe("pickLang", () => {
 	});
 
 	it("walks the list in order", () => {
-		expect(pickLang(["nl-NL", "de-AT", "fr"])).toBe("de");
+		expect(pickLang(["cs-CZ", "de-AT", "fr"])).toBe("de");
 	});
 
 	it("skips malformed tags", () => {
@@ -61,5 +61,6 @@ describe("ogLocale", () => {
 		expect(ogLocale("ru")).toBe("ru_RU");
 		expect(ogLocale("pt-PT")).toBe("pt_PT");
 		expect(ogLocale("zh-Hans")).toBe("zh_CN");
+		expect(ogLocale("uk")).toBe("uk_UA");
 	});
 });
