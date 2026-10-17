@@ -27,8 +27,31 @@ type Props = {
 
 const rowClass = "flex items-center gap-3 text-sm";
 const labelClass = "w-24 shrink-0 text-muted";
+// The list keeps the system font: Windows draws a native popup more reliably with it.
 const selectClass =
-	"h-10 min-w-0 flex-1 rounded-lg border border-line bg-surface px-2 text-sm";
+	"h-10 w-full cursor-pointer appearance-none rounded-lg border border-line bg-surface ps-3 pe-9 text-sm transition-colors hover:border-muted/50 hover:bg-soft/60 focus-visible:border-brand focus-visible:outline-2 focus-visible:outline-brand/30 [&_option]:font-[system-ui]";
+
+function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
+	return (
+		<span className="relative flex min-w-0 flex-1">
+			<select {...props} className={selectClass} />
+			<svg
+				aria-hidden="true"
+				viewBox="0 0 20 20"
+				className="pointer-events-none absolute end-2.5 top-1/2 size-5 -translate-y-1/2 text-muted"
+			>
+				<path
+					d="m6 8 4 4 4-4"
+					fill="none"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+			</svg>
+		</span>
+	);
+}
 
 export function TrailPanel({
 	trails,
@@ -102,7 +125,7 @@ export function TrailPanel({
 						}}
 						placeholder={t("filters.searchPlaceholder")}
 						enterKeyHint="search"
-						className="h-11 w-full rounded-full border border-line bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] placeholder:text-muted focus:border-brand focus:outline-2 focus:outline-brand/30"
+						className="h-11 w-full rounded-full border border-line bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] transition-colors placeholder:text-muted hover:border-muted/50 focus:border-brand focus:outline-2 focus:outline-brand/30"
 					/>
 				</label>
 				<button
@@ -156,8 +179,10 @@ export function TrailPanel({
 												: [...f.types, type],
 										}))
 									}
-									className={`flex h-9 shrink-0 items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap ${
-										pressed ? "font-medium" : "border-line"
+									className={`flex h-9 shrink-0 cursor-pointer items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors ${
+										pressed
+											? "font-medium"
+											: "border-line hover:border-muted/50 hover:bg-soft"
 									}`}
 									style={
 										pressed
@@ -182,13 +207,12 @@ export function TrailPanel({
 				<div className="mt-3 flex flex-col gap-2">
 					<label className={rowClass}>
 						<span className={labelClass}>{t("filters.country")}</span>
-						<select
+						<SelectBox
 							value={filters.country ?? ""}
 							onChange={(e) => {
 								const country = e.target.value || null;
 								onChange((f) => ({ ...f, country }));
 							}}
-							className={selectClass}
 						>
 							<option value="">{t("filters.anyCountry")}</option>
 							{countries.map((c) => (
@@ -196,18 +220,17 @@ export function TrailPanel({
 									{c.name}
 								</option>
 							))}
-						</select>
+						</SelectBox>
 					</label>
 					<label className={rowClass}>
 						<span className={labelClass}>{t("filters.length")}</span>
-						<select
+						<SelectBox
 							value={filters.length ?? ""}
 							onChange={(e) => {
 								const length =
 									(e.target.value as keyof typeof lengthBuckets) || null;
 								onChange((f) => ({ ...f, length }));
 							}}
-							className={selectClass}
 						>
 							<option value="">{t("filters.anyLength")}</option>
 							{Object.keys(lengthBuckets).map((key) => (
@@ -215,18 +238,17 @@ export function TrailPanel({
 									{lengthLabel(key as keyof typeof lengthBuckets)}
 								</option>
 							))}
-						</select>
+						</SelectBox>
 					</label>
 					<label className={rowClass}>
 						<span className={labelClass}>{t("filters.duration")}</span>
-						<select
+						<SelectBox
 							value={filters.days ?? ""}
 							onChange={(e) => {
 								const days =
 									(e.target.value as keyof typeof dayBuckets) || null;
 								onChange((f) => ({ ...f, days }));
 							}}
-							className={selectClass}
 						>
 							<option value="">{t("filters.anyDuration")}</option>
 							{(Object.keys(dayBuckets) as (keyof typeof dayBuckets)[]).map(
@@ -236,7 +258,7 @@ export function TrailPanel({
 									</option>
 								),
 							)}
-						</select>
+						</SelectBox>
 					</label>
 				</div>
 
