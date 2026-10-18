@@ -1,0 +1,33 @@
+{
+	"slug": "peaks-of-the-balkans",
+	"name": {
+		"original": "Peaks of the Balkans"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Theth",
+		"coords": [19.7667, 42.4]
+	},
+	"end": {
+		"name": "Theth",
+		"coords": [19.7667, 42.4]
+	},
+	"countries": ["AL", "ME", "XK"],
+	"lengthKm": 192,
+	"days": {
+		"min": 10,
+		"max": 12
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.peaksofthebalkans.com/The-Trail",
+	"sources": ["https://www.peaksofthebalkans.com/The-Trail"],
+	"photo": null,
+	"wikidata": "Q19298341",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [4726204]
+	},
+	"verifiedAt": "2026-10-18"
+}

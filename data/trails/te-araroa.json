@@ -1,0 +1,30 @@
+{
+	"slug": "te-araroa",
+	"name": {
+		"original": "Te Araroa"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Cape Reinga",
+		"coords": [172.6797, -34.4214]
+	},
+	"end": {
+		"name": "Stirling Point, Bluff",
+		"coords": [168.3627, -46.6141]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 3000,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.teararoa.org.nz/the-trail/",
+	"sources": ["https://www.teararoa.org.nz/the-trail/"],
+	"photo": null,
+	"wikidata": "Q4242105",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8518624, 8518626]
+	},
+	"verifiedAt": "2026-10-18"
+}

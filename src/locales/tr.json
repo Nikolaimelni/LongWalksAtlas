@@ -1,0 +1,128 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Dünya çapındaki uzun mesafeli yürüyüş parkurlarının haritası: hac yolları, tarihi güzergâhlar, sahil ve dağ yolları; uzunlukları, yürüyüş süresi (gün cinsinden) ve her birinin resmi web sitesine bağlantı."
+	},
+	"disclaimer": {
+		"short": "Haritadaki çizgiler şematiktir. Kesin güzergâh için her bir parkurun resmi web sitesine bakınız.",
+		"trail": "Haritadaki çizgi şematik olup, işaretli patikadan farklılık gösterebilir. Kesin güzergâh, etapları ve güncel değişiklikler için lütfen resmi web <link>{{site}}</link>sine bakınız."
+	},
+	"og": {
+		"tagline": "Dünyanın dört bir yanındaki hacı yolları, tarihi güzergâhlar, sahil ve dağ yürüyüş yolları, tek bir haritada."
+	},
+	"atlas": {
+		"title": "Harita üzerinde dünyanın uzun mesafeli yürüyüş parkurları",
+		"loading": "Harita yükleniyor…",
+		"pick": "Burada birkaç patika birleşiyor"
+	},
+	"filters": {
+		"list": "Yürüyüş parkurları",
+		"search": "Arama izleri",
+		"searchPlaceholder": "Yol mu, yoksa yer mi?",
+		"count_one": "{{count}} parkur",
+		"count_other": "{{count}} parkur",
+		"types": "Tür",
+		"country": "Ülke",
+		"anyCountry": "Herhangi bir",
+		"length": "Uzunluk",
+		"anyLength": "Herhangi bir",
+		"under": "{{value}}'ın altında",
+		"over": "{{value}}'ın üzerinde",
+		"duration": "Yürüyerek",
+		"anyDuration": "Herhangi bir",
+		"week": "En fazla bir hafta",
+		"fortnight": "1–2 hafta",
+		"month": "2–4 hafta",
+		"more": "Bir aydan fazla",
+		"reset": "Tümünü temizle",
+		"active_one": "{{count}} filtre açık",
+		"active_other": "{{count}} filtre açık",
+		"none": "Eşleşen arama sonucu bulunamadı. Bir filtreyi kaldırmayı deneyin."
+	},
+	"language": {
+		"label": "Dil",
+		"choose": "Bir dil seçin"
+	},
+	"trailType": {
+		"pilgrimage": "Hac Yolu",
+		"historic": "Tarihi güzergâh",
+		"coastal": "Kıyı yürüyüş yolu",
+		"mountain": "Dağ patikası",
+		"e-path": "Avrupa uzun mesafe yürüyüş yolu"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Hac yolları",
+		"historic": "Tarihi güzergâhlar",
+		"coastal": "Kıyı yürüyüş yolları",
+		"mountain": "Dağ yürüyüş yolları",
+		"e-path": "Avrupa uzun mesafe yürüyüş yolları"
+	},
+	"badge": {
+		"coe-cultural-route": "Avrupa Konseyi Kültür Rotası",
+		"unesco": "UNESCO Dünya Mirası"
+	},
+	"trail": {
+		"length": "Uzunluk",
+		"duration": "Yürüyerek",
+		"days_one": "{{count}} gün",
+		"days_other": "{{count}} gün",
+		"daysRange_one": "{{min}} – {{count}} gün",
+		"daysRange_other": "{{min}} – {{count}} gün",
+		"more": "Bu parkur hakkında daha fazla bilgi",
+		"close": "Kapat",
+		"start": "Başlangıç:",
+		"end": "Şu kadar sonra sona eriyor",
+		"loop": "Şuradan başlayıp şuraya geri dönen döngü",
+		"countries": "Ülkeler",
+		"season": "En iyi aylar",
+		"facts": "Bir bakışta",
+		"story": "Yürüyüş parkuru hakkında",
+		"officialSite": "Resmi web sitesi",
+		"sources": "Kaynaklar",
+		"checked": "{{date}} tarihinde doğrulanmış bilgiler.",
+		"lengthFromMap": "Uzunluk, OpenStreetMap üzerindeki çizgi üzerinden ölçülmüştür; henüz resmi bir rakam doğrulanmamıştır.",
+		"osm": "Yürüyüş yolu © OpenStreetMap katkıcıları, ODbL.",
+		"showOnMap": "Haritada göster",
+		"backToAtlas": "Tüm parkurlar",
+		"notReviewed": "Bu metin henüz bir kişi tarafından incelenmemiştir.",
+		"fallback": "Henüz bir çeviri bulunmadığından, bu metin İngilizce'dir.",
+		"mapLoading": "Harita yükleniyor…",
+		"crosses": "Kesiştiği patikalar",
+		"nearby": "Yakındaki yürüyüş parkurları",
+		"photoBy": "Fotoğraf:",
+		"photoAlt": "{{title}} hakkında"
+	},
+	"faq": {
+		"title": "Yürüyüşçülerin sorduğu sorular",
+		"lengthQ": "{{title}} ne kadar uzun?",
+		"lengthA": "{{title}}’in uzunluğu {{km}}’dir.",
+		"daysQ": "{{title}}’i yürüyerek tamamlamak kaç gün sürer?",
+		"daysA": "Çoğu yürüyüşçü, tüm güzergâhı tamamlamak için birkaç {{days}} sürer.",
+		"whereQ": "{{title}} nerede başlıyor ve nerede bitiyor?",
+		"whereA": "{{start}} ile başlar ve {{end}} ile biter.",
+		"whereLoopA": "Bu, {{start}} noktasında başlayan ve biten bir döngüdür.",
+		"whenQ": "{{title}}’i gezmek için en uygun zaman ne zamandır?",
+		"whenA": "En iyi aylar, {{months}}’dur.",
+		"countriesQ": "{{title}} hangi ülkelerden geçiyor?",
+		"countriesA": "{{countries}}'den geçer.",
+		"officialQ": "{{title}} ile ilgili resmi bilgiler nerede bulunabilir?",
+		"officialA": "Resmi web sitesinde, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: güzergâh haritası, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} yürüyüş."
+	},
+	"hub": {
+		"countryTitle": "{{country}}’deki uzun mesafeli yürüyüş parkurları",
+		"typeTitle": "haritadaki {{types}}",
+		"countryIntro_one": "Atlas’ta, {{country}}’yi boydan boya geçen {{count}} adet yürüyüş parkuru bulunmaktadır; bu parkurun uzunluğu {{shortest}}’dur.",
+		"countryIntro_other": "Atlas, {{country}}’yi boydan boya geçen, en {{shortest}}inden en {{longest}}ine kadar {{count}} yürüyüş parkuru içermektedir.",
+		"typeIntro_one": "Atlas’ta bu türden {{count}} adet yürüyüş parkuru bulunmaktadır; bu parkur, {{countries}}’de yer almaktadır ve {{shortest}} uzunluğundadır.",
+		"typeIntro_other": "Atlas, farklı ü{{countries}}de bulunan bu türden {{count}} yürüyüş parkurunu, en {{shortest}}den en {{longest}}ye doğru sıralamaktadır.",
+		"each": "Her birinin süresi, yürüyüş süresi, en uygun aylar ve resmi siteye bir bağlantı yer almaktadır.",
+		"showOnMap": "Haritada göster",
+		"browse": "Yürüyüş parkurlarına göz atın",
+		"byCountry": "Ülkeye göre",
+		"byType": "Türüne göre"
+	}
+}

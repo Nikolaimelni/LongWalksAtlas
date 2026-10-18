@@ -1,0 +1,30 @@
+{
+	"slug": "offas-dyke-path",
+	"name": {
+		"original": "Offa's Dyke Path"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Sedbury Cliffs (Chepstow)",
+		"coords": [-2.675, 51.642]
+	},
+	"end": {
+		"name": "Prestatyn",
+		"coords": [-3.405, 53.331]
+	},
+	"countries": ["GB"],
+	"lengthKm": 285,
+	"days": null,
+	"bestSeason": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/",
+	"sources": ["https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/"],
+	"photo": null,
+	"wikidata": "Q745914",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9649]
+	},
+	"verifiedAt": "2026-10-18"
+}

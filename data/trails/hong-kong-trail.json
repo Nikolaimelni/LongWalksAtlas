@@ -1,0 +1,32 @@
+{
+	"slug": "hong-kong-trail",
+	"name": {
+		"original": "港島徑"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "The Peak",
+		"coords": [114.1501, 22.2711]
+	},
+	"end": {
+		"name": "Big Wave Bay",
+		"coords": [114.2495, 22.2443]
+	},
+	"countries": ["HK"],
+	"lengthKm": 50,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.afcd.gov.hk/english/aboutus/abt_adv/files/WP-CMPB-10-2025(Eng).pdf",
+	"sources": [
+		"https://www.afcd.gov.hk/english/aboutus/abt_adv/files/WP-CMPB-10-2025(Eng).pdf"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2919237]
+	},
+	"verifiedAt": "2026-10-18"
+}

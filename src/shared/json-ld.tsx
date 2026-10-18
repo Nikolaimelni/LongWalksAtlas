@@ -2,7 +2,7 @@ export type JsonLdNode = Record<string, unknown>;
 
 type Link = { name: string; url: string };
 
-// Each language edition is its own WebSite: "Атлас троп" at /ru/, "Long Walks Atlas" at
+// Each language edition is its own WebSite, all named "Long Walks Atlas": at /ru/, at
 // /en/ and at /, which is the one Google reads for the site name.
 export function websiteNode(
 	home: string,

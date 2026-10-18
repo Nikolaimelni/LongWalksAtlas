@@ -1,0 +1,32 @@
+{
+	"slug": "rennsteig",
+	"name": {
+		"original": "Rennsteig"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Hörschel (Eisenach)",
+		"coords": [10.2276, 51.0079]
+	},
+	"end": {
+		"name": "Blankenstein",
+		"coords": [11.6996, 50.4005]
+	},
+	"countries": ["DE"],
+	"lengthKm": 170,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.thueringer-wald.com/en/rennsteig",
+	"sources": ["https://www.thueringer-wald.com/en/rennsteig"],
+	"photo": {
+		"commons": "File:Rennsteig Wegmarkierung R auf Baumstamm.jpg"
+	},
+	"wikidata": "Q139056",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [398874]
+	},
+	"verifiedAt": "2026-10-18"
+}

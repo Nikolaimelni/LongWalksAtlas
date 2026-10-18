@@ -1,0 +1,37 @@
+{
+	"slug": "cape-to-cape-track",
+	"name": {
+		"original": "Cape to Cape Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Cape Naturaliste Lighthouse",
+		"coords": [115.0039, -33.5303]
+	},
+	"end": {
+		"name": "Cape Leeuwin Lighthouse",
+		"coords": [115.1358, -34.3742]
+	},
+	"countries": ["AU"],
+	"lengthKm": 135,
+	"days": {
+		"min": 5,
+		"max": 7
+	},
+	"bestSeason": ["sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://www.westernaustralia.com/au/things-to-do/hikes-and-trails/cape-to-cape-track",
+	"sources": [
+		"https://www.westernaustralia.com/au/things-to-do/hikes-and-trails/cape-to-cape-track"
+	],
+	"photo": {
+		"commons": "File:2016 Margaret River Australia. Cape to Cape track. Frank Mouritz Bridge.jpg"
+	},
+	"wikidata": "Q5035210",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [401769]
+	},
+	"verifiedAt": "2026-10-18"
+}

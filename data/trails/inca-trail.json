@@ -1,0 +1,35 @@
+{
+	"slug": "inca-trail",
+	"name": {
+		"original": "Camino Inca a Machu Picchu"
+	},
+	"type": "historic",
+	"region": "americas",
+	"start": {
+		"name": "Km 82, Piscacucho",
+		"coords": [-72.3825, -13.2149]
+	},
+	"end": {
+		"name": "Machu Picchu (Sun Gate to the citadel)",
+		"coords": [-72.545, -13.1643]
+	},
+	"countries": ["PE"],
+	"lengthKm": 38,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.machupicchu.gob.pe/",
+	"sources": ["https://www.machupicchu.gob.pe/"],
+	"photo": {
+		"commons": "File:Inca Trail Phuyupatamarka.jpg"
+	},
+	"wikidata": "Q6014019",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [15703494]
+	},
+	"verifiedAt": "2026-10-18"
+}

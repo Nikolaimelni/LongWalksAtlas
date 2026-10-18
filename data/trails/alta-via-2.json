@@ -1,0 +1,35 @@
+{
+	"slug": "alta-via-2",
+	"name": {
+		"original": "Alta Via delle Dolomiti n. 2"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Brixen (Bressanone)",
+		"coords": [11.6826, 46.6972]
+	},
+	"end": {
+		"name": "Feltre",
+		"coords": [11.8834, 46.0355]
+	},
+	"countries": ["IT"],
+	"lengthKm": 180,
+	"days": {
+		"min": 13,
+		"max": 13
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.dolomiti.it/en/itineraries/alpine-paths-of-the-dolomites/alpine-path-of-the-dolomites-no-2",
+	"sources": [
+		"https://www.dolomiti.it/en/itineraries/alpine-paths-of-the-dolomites/alpine-path-of-the-dolomites-no-2"
+	],
+	"photo": null,
+	"wikidata": "Q123376517",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [404914]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,134 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Un mapa de rutas de senderismo de larga distancia por todo el mundo: caminos de peregrinación, rutas históricas, senderos costeros y de montaña, con la longitud, los días de recorrido a pie y un enlace a cada página web oficial."
+	},
+	"disclaimer": {
+		"short": "Las líneas del mapa son esquemáticas. Para conocer el recorrido exacto, consulta la página web oficial de cada ruta.",
+		"trail": "La línea que aparece en el mapa es esquemática y puede diferir del sendero señalizado. Para conocer el recorrido exacto, sus etapas y los cambios actuales, consulta la página web oficial: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Caminos de peregrinación, rutas históricas, senderos costeros y de montaña de todo el mundo, en un solo mapa."
+	},
+	"atlas": {
+		"title": "Rutas de senderismo de larga distancia de todo el mundo en un mapa",
+		"loading": "Cargando el mapa…",
+		"pick": "Aquí confluyen varias rutas de senderismo"
+	},
+	"filters": {
+		"list": "Senderos",
+		"search": "Rastros de búsqueda",
+		"searchPlaceholder": "Sendero o lugar",
+		"count_one": "{{count}} ruta",
+		"count_many": "{{count}} ruta",
+		"count_other": "{{count}} rutas",
+		"types": "Tipo",
+		"country": "País",
+		"anyCountry": "Cualquiera",
+		"length": "Longitud",
+		"anyLength": "Cualquiera",
+		"under": "In{{value}}",
+		"over": "{{value}}o excesivo",
+		"duration": "A pie",
+		"anyDuration": "Cualquiera",
+		"week": "Hasta una semana",
+		"fortnight": "1-2 semanas",
+		"month": "2 a 4 semanas",
+		"more": "Más de un mes",
+		"reset": "Borrar todo",
+		"active_one": "{{count}} filtro activado",
+		"active_many": "{{count}} filtro activado",
+		"active_other": "{{count}} filtros activados",
+		"none": "No se han encontrado resultados. Intenta eliminar algún filtro."
+	},
+	"language": {
+		"label": "Idioma",
+		"choose": "Elige un idioma"
+	},
+	"trailType": {
+		"pilgrimage": "Camino de peregrinación",
+		"historic": "Ruta histórica",
+		"coastal": "Ruta costera",
+		"mountain": "Sendero de montaña",
+		"e-path": "Ruta europea de larga distancia"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Rutas de peregrinación",
+		"historic": "Rutas históricas",
+		"coastal": "Rutas costeras",
+		"mountain": "Senderos de montaña",
+		"e-path": "Rutas europeas de larga distancia"
+	},
+	"badge": {
+		"coe-cultural-route": "Ruta cultural del Consejo de Europa",
+		"unesco": "Patrimonio Mundial de la UNESCO"
+	},
+	"trail": {
+		"length": "Longitud",
+		"duration": "A pie",
+		"days_one": "{{count}} día",
+		"days_many": "{{count}} día",
+		"days_other": "{{count}} días",
+		"daysRange_one": "{{min}}–{{count}} días",
+		"daysRange_many": "{{min}}–{{count}} días",
+		"daysRange_other": "{{min}} – {{count}} días",
+		"more": "Más información sobre esta ruta",
+		"close": "Cerrar",
+		"start": "Comienza en",
+		"end": "Finaliza en",
+		"loop": "Recorrido de ida y vuelta desde y hasta",
+		"countries": "Países",
+		"season": "Los mejores meses",
+		"facts": "De un vistazo",
+		"story": "Acerca de la ruta",
+		"officialSite": "Página web oficial",
+		"sources": "Fuentes",
+		"checked": "Datos verificados en la {{date}}.",
+		"lengthFromMap": "Longitud medida según la línea de OpenStreetMap; aún no se ha comprobado la cifra oficial.",
+		"osm": "Trayectoria del recorrido © Colaboradores de OpenStreetMap, ODbL.",
+		"showOnMap": "Mostrar en el mapa",
+		"backToAtlas": "Todas las rutas",
+		"notReviewed": "Este texto aún no ha sido revisado por nadie.",
+		"fallback": "Aún no hay traducción, por lo que este texto está en inglés.",
+		"mapLoading": "Cargando el mapa…",
+		"crosses": "Senderos con los que se cruza",
+		"nearby": "Senderos cercanos",
+		"photoBy": "Foto:",
+		"photoAlt": "Sobre el e{{title}}"
+	},
+	"faq": {
+		"title": "Preguntas que suelen hacer los senderistas",
+		"lengthQ": "¿Cuánto mide el e{{title}}?",
+		"lengthA": "El e{{title}} tiene una longitud de {{km}}.",
+		"daysQ": "¿Cuántos días se tarda en recorrer el «{{title}}» a pie?",
+		"daysA": "La mayoría de los senderistas tardan v{{days}} en recorrer todo el itinerario.",
+		"whereQ": "¿Dónde empieza y dónde acaba el e{{title}}?",
+		"whereA": "Empieza en «{{start}}» y termina en «{{end}}».",
+		"whereLoopA": "Es un bucle que empieza y termina en «{{start}}».",
+		"whenQ": "¿Cuál es el mejor momento para hacer la «{{title}}»?",
+		"whenA": "Los mejores meses son los {{months}}.",
+		"countriesQ": "¿Por qué países pasa el e{{title}}?",
+		"countriesA": "Atraviesa v{{countries}}es.",
+		"officialQ": "¿Dónde se puede consultar la información oficial sobre el e{{title}}?",
+		"officialA": "En la página web oficial, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: mapa de la ruta, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} a pie."
+	},
+	"hub": {
+		"countryTitle": "Rutas de senderismo de larga distancia en el {{country}}",
+		"typeTitle": "{{types}} en el mapa",
+		"countryIntro_one": "El atlas incluye {{count}} rutas que recorren todo el pa{{country}}, ordenadas de la {{shortest}} a la {{longest}}.",
+		"countryIntro_many": "El atlas incluye {{count}} rutas que recorren todo el pa{{country}}, ordenadas de la {{shortest}} a la {{longest}}.",
+		"countryIntro_other": "El atlas incluye {{count}} rutas que recorren todo el pa{{country}}, ordenadas de la {{shortest}} a la {{longest}}.",
+		"typeIntro_one": "El atlas recoge {{count}} rutas de este tipo, repartidas por di{{countries}}, ordenadas de la má{{shortest}} a la má{{longest}}.",
+		"typeIntro_many": "El atlas recoge {{count}} rutas de este tipo, repartidas por di{{countries}}, ordenadas de la má{{shortest}} a la má{{longest}}.",
+		"typeIntro_other": "El atlas recoge {{count}} rutas de este tipo, repartidas por di{{countries}}, ordenadas de la má{{shortest}} a la má{{longest}}.",
+		"each": "Cada una incluye su duración, los días de caminata, los mejores meses para realizarla y un enlace a la página web oficial.",
+		"showOnMap": "Muéstralos en el mapa",
+		"browse": "Explorar rutas",
+		"byCountry": "Por país",
+		"byType": "Por tipo"
+	}
+}

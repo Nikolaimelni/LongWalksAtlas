@@ -1,0 +1,128 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Eine Karte mit Fernwanderwegen rund um die Welt: Pilgerwege, historische Routen, Küsten- und Bergwege, mit Angaben zu Länge, Dauer der Wanderung in Tagen und einem Link zur jeweiligen offiziellen Website."
+	},
+	"disclaimer": {
+		"short": "Die Linien auf der Karte sind schematisch dargestellt. Die genaue Route finden Sie auf der offiziellen Website des jeweiligen Wanderwegs.",
+		"trail": "Die Linie auf der Karte ist schematisch dargestellt und kann vom markierten Wanderweg abweichen. Die genaue Route, ihre Etappen und aktuelle Änderungen finden Sie auf der offiziellen Website: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Pilgerwege, historische Routen, Küsten- und Bergwanderwege rund um die Welt – alles auf einer Karte."
+	},
+	"atlas": {
+		"title": "Fernwanderwege der Welt auf einer Karte",
+		"loading": "Die Karte wird geladen…",
+		"pick": "Hier treffen mehrere Wanderwege aufeinander"
+	},
+	"filters": {
+		"list": "Wanderwege",
+		"search": "Suchpfade",
+		"searchPlaceholder": "Wanderweg oder Ort",
+		"count_one": "{{count}} Wanderweg",
+		"count_other": "{{count}} Wanderwege",
+		"types": "Typ",
+		"country": "Land",
+		"anyCountry": "Beliebige",
+		"length": "Länge",
+		"anyLength": "Beliebige",
+		"under": "Unter{{value}}",
+		"over": "Über{{value}}",
+		"duration": "Zu Fuß",
+		"anyDuration": "Beliebige",
+		"week": "Bis zu einer Woche",
+		"fortnight": "1–2 Wochen",
+		"month": "2–4 Wochen",
+		"more": "Mehr als einen Monat",
+		"reset": "Alle löschen",
+		"active_one": "{{count}} Filter aktiviert",
+		"active_other": "{{count}} Filter aktiviert",
+		"none": "Es wurden keine Treffer gefunden. Versuchen Sie, einen Filter zu deaktivieren."
+	},
+	"language": {
+		"label": "Sprache",
+		"choose": "Wählen Sie eine Sprache aus"
+	},
+	"trailType": {
+		"pilgrimage": "Pilgerweg",
+		"historic": "Historische Route",
+		"coastal": "Küstenwanderweg",
+		"mountain": "Bergwanderweg",
+		"e-path": "Europäischer Fernwanderweg"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Pilgerwege",
+		"historic": "Historische Routen",
+		"coastal": "Küstenwanderwege",
+		"mountain": "Bergwanderwege",
+		"e-path": "Europäische Fernwanderwege"
+	},
+	"badge": {
+		"coe-cultural-route": "Kulturroute des Europarats",
+		"unesco": "UNESCO-Weltkulturerbe"
+	},
+	"trail": {
+		"length": "Länge",
+		"duration": "Zu Fuß",
+		"days_one": "{{count}} Tag",
+		"days_other": "{{count}} Tage",
+		"daysRange_one": "{{min}}–{{count}} Tage",
+		"daysRange_other": "{{min}}–{{count}} Tage",
+		"more": "Mehr über diesen Wanderweg",
+		"close": "Schließen",
+		"start": "Beginnt in",
+		"end": "Endet in",
+		"loop": "Runde von … bis … und zurück",
+		"countries": "Länder",
+		"season": "Die besten Monate",
+		"facts": "Auf einen Blick",
+		"story": "Über den Wanderweg",
+		"officialSite": "Offizielle Website",
+		"sources": "Quellen",
+		"checked": "Die Fakten wurden am {{date}} überprüft.",
+		"lengthFromMap": "Länge gemessen anhand der Linie in OpenStreetMap; noch keine offiziellen Angaben überprüft.",
+		"osm": "Wanderweg © OpenStreetMap-Mitwirkende, ODbL.",
+		"showOnMap": "Auf der Karte anzeigen",
+		"backToAtlas": "Alle Wanderwege",
+		"notReviewed": "Dieser Text wurde noch nicht von einer Person überprüft.",
+		"fallback": "Es gibt noch keine Übersetzung, daher ist dieser Text auf Englisch.",
+		"mapLoading": "Die Karte wird geladen…",
+		"crosses": "Wanderwege, an die er grenzt",
+		"nearby": "Wanderwege in der Umgebung",
+		"photoBy": "Foto:",
+		"photoAlt": "Zum {{title}}"
+	},
+	"faq": {
+		"title": "Fragen, die Wanderer stellen",
+		"lengthQ": "Wie lang ist der {{title}}?",
+		"lengthA": "Die {{title}} ist {{km}} lang.",
+		"daysQ": "Wie viele Tage braucht man, um die „{{title}}“-Route zu Fuß zurückzulegen?",
+		"daysA": "Die meisten Wanderer benötigen für die gesamte Strecke mehrere {{days}}.",
+		"whereQ": "Wo beginnt und wo endet der {{title}}?",
+		"whereA": "Es beginnt bei „{{start}}“ und endet bei „{{end}}“.",
+		"whereLoopA": "Es handelt sich um eine Schleife, die bei „{{start}}“ beginnt und dort endet.",
+		"whenQ": "Wann ist der beste Zeitpunkt, um den „{{title}}“ zu laufen?",
+		"whenA": "Die besten Monate sind die {{months}}.",
+		"countriesQ": "Durch welche Länder verläuft der „{{title}}“?",
+		"countriesA": "Sie führt durch verschiedene {{countries}}.",
+		"officialQ": "Wo finde ich die offiziellen Informationen zu diesem {{title}}n?",
+		"officialA": "Auf der offiziellen Website unter {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: Routenkarte, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} zu Fuß."
+	},
+	"hub": {
+		"countryTitle": "Fernwanderwege auf dem Land ({{country}})",
+		"typeTitle": "{{types}} auf der Karte",
+		"countryIntro_one": "Der Atlas enthält {{count}} Wanderwege, die durch das Land führen{{country}}, sortiert vom {{shortest}}n bis zum {{longest}}n.",
+		"countryIntro_other": "Der Atlas enthält {{count}} Wanderwege, die durch das Land führen{{country}}, sortiert vom {{shortest}}n bis zum {{longest}}n.",
+		"typeIntro_one": "Der Atlas enthält {{count}} Wanderwege dieser Art in verschiedenen Ländern{{countries}}, sortiert vom {{shortest}}n bis zum {{longest}}n.",
+		"typeIntro_other": "Der Atlas enthält {{count}} Wanderwege dieser Art in verschiedenen Ländern{{countries}}, sortiert vom {{shortest}}n bis zum {{longest}}n.",
+		"each": "Zu jeder Route gibt es Angaben zur Länge, zur Dauer der Wanderung, zu den besten Monaten sowie einen Link zur offiziellen Website.",
+		"showOnMap": "Auf der Karte anzeigen",
+		"browse": "Wanderwege durchsuchen",
+		"byCountry": "Nach Land",
+		"byType": "Nach Typ"
+	}
+}

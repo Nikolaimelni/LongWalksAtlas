@@ -1,0 +1,30 @@
+{
+	"slug": "kilimanjaro-machame-route",
+	"name": {
+		"original": "Machame Route"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Machame Gate",
+		"coords": [37.239, -3.1737]
+	},
+	"end": {
+		"name": "Mweka Gate",
+		"coords": [37.3412, -3.2197]
+	},
+	"countries": ["TZ"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
+	"sources": ["https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8737224, 8737225]
+	},
+	"verifiedAt": "2026-10-18"
+}

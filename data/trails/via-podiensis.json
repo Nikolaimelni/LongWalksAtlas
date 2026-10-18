@@ -1,0 +1,36 @@
+{
+	"slug": "via-podiensis",
+	"name": {
+		"original": "Via Podiensis (Chemin du Puy)"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Le Puy-en-Velay",
+		"coords": [3.8847, 45.0444]
+	},
+	"end": {
+		"name": "Saint-Jean-Pied-de-Port",
+		"coords": [-1.2356, 43.165]
+	},
+	"countries": ["FR"],
+	"lengthKm": 755,
+	"days": {
+		"min": 32,
+		"max": 32
+	},
+	"bestSeason": ["mar", "apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.chemins-compostelle.com/",
+	"sources": [
+		"https://www.chemins-compostelle.com/voie/voie-du-puy-en-velay/",
+		"https://whc.unesco.org/en/list/868"
+	],
+	"photo": null,
+	"wikidata": "Q996686",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [138227]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,134 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Une carte des sentiers de randonnée longue distance à travers le monde : chemins de pèlerinage, itinéraires historiques, sentiers côtiers et de montagne, avec indication de la longueur, du nombre de jours de marche et un lien vers chaque site officiel."
+	},
+	"disclaimer": {
+		"short": "Les tracés indiqués sur la carte sont schématiques. Pour connaître l'itinéraire exact, consultez le site officiel de chaque sentier.",
+		"trail": "La ligne indiquée sur la carte est schématique et peut différer du parcours balisé. Pour connaître l'itinéraire exact, ses étapes et les modifications en cours, consultez le site officiel : <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Chemins de pèlerinage, itinéraires historiques, sentiers côtiers et de montagne du monde entier, le tout sur une seule carte."
+	},
+	"atlas": {
+		"title": "Les sentiers de grande randonnée du monde sur une carte",
+		"loading": "Chargement de la carte…",
+		"pick": "Plusieurs sentiers se croisent à cet endroit"
+	},
+	"filters": {
+		"list": "Sentiers",
+		"search": "Pistes de recherche",
+		"searchPlaceholder": "Sentier ou lieu",
+		"count_one": "{{count}} sentier",
+		"count_many": "{{count}} sentier",
+		"count_other": "{{count}} sentiers",
+		"types": "Type",
+		"country": "Pays",
+		"anyCountry": "N'importe quel",
+		"length": "Longueur",
+		"anyLength": "N'importe quel",
+		"under": "Sous-{{value}}",
+		"over": "Sur{{value}}",
+		"duration": "À pied",
+		"anyDuration": "N'importe quel",
+		"week": "Jusqu'à une semaine",
+		"fortnight": "1 à 2 semaines",
+		"month": "2 à 4 semaines",
+		"more": "Plus d'un mois",
+		"reset": "Tout effacer",
+		"active_one": "{{count}} filtres activés",
+		"active_many": "{{count}} filtres activés",
+		"active_other": "{{count}} filtres activés",
+		"none": "Aucun résultat correspondant. Essayez de désactiver un filtre."
+	},
+	"language": {
+		"label": "Langue",
+		"choose": "Choisissez une langue"
+	},
+	"trailType": {
+		"pilgrimage": "Chemin de pèlerinage",
+		"historic": "Itinéraire historique",
+		"coastal": "Sentier côtier",
+		"mountain": "Sentier de montagne",
+		"e-path": "Sentier européen de grande randonnée"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Chemins de pèlerinage",
+		"historic": "Itinéraires historiques",
+		"coastal": "Sentiers côtiers",
+		"mountain": "Sentiers de montagne",
+		"e-path": "Sentiers européens de grande randonnée"
+	},
+	"badge": {
+		"coe-cultural-route": "Itinéraire culturel du Conseil de l'Europe",
+		"unesco": "Patrimoine mondial de l'UNESCO"
+	},
+	"trail": {
+		"length": "Longueur",
+		"duration": "À pied",
+		"days_one": "{{count}} jour",
+		"days_many": "{{count}} jour",
+		"days_other": "{{count}} jours",
+		"daysRange_one": "{{min}} à {{count}} jours",
+		"daysRange_many": "{{min}} à {{count}} jours",
+		"daysRange_other": "{{min}} à {{count}} jours",
+		"more": "En savoir plus sur ce parcours",
+		"close": "Fermer",
+		"start": "Commence dans",
+		"end": "Se termine dans",
+		"loop": "Boucle aller-retour entre",
+		"countries": "Pays",
+		"season": "Les meilleurs mois",
+		"facts": "En bref",
+		"story": "À propos du sentier",
+		"officialSite": "Site officiel",
+		"sources": "Sources",
+		"checked": "Informations vérifiées à cette {{date}}.",
+		"lengthFromMap": "Longueur mesurée à partir du tracé sur OpenStreetMap ; aucun chiffre officiel n'a encore été vérifié.",
+		"osm": "Tracé du sentier © Contributeurs d'OpenStreetMap, ODbL.",
+		"showOnMap": "Afficher sur la carte",
+		"backToAtlas": "Tous les sentiers",
+		"notReviewed": "Ce texte n'a pas encore été relu par quelqu'un.",
+		"fallback": "Il n'y a pas encore de traduction, ce texte est donc en anglais.",
+		"mapLoading": "Chargement de la carte…",
+		"crosses": "Sentiers qu'il croise",
+		"nearby": "Sentiers à proximité",
+		"photoBy": "Photo :",
+		"photoAlt": "À propos du {{title}}"
+	},
+	"faq": {
+		"title": "Questions posées par les randonneurs",
+		"lengthQ": "Quelle est la longueur du {{title}} ?",
+		"lengthA": "Le «{{title}}» mesure {{km}} de long.",
+		"daysQ": "Combien de jours faut-il pour parcourir ce {{title}} à pied ?",
+		"daysA": "La plupart des randonneurs mettent plusieurs {{days}} pour parcourir l'intégralité du parcours.",
+		"whereQ": "Où commence et où finit le «{{title}}» ?",
+		"whereA": "Ça starte par « {{start}} » et se termine par « {{end}} ».",
+		"whereLoopA": "Il s'agit d'une boucle qui commence et se termine à « {{start}} ».",
+		"whenQ": "Quel est le meilleur moment pour faire valoir ses droi{{title}}s ?",
+		"whenA": "Les meilleurs months sont les {{months}}.",
+		"countriesQ": "Par quels pays passe le «{{title}}» ?",
+		"countriesA": "Il traverse plusieurs {{countries}}.",
+		"officialQ": "Où puis-je trouver les informations officielles concernant ce {{title}} ?",
+		"officialA": "Sur le site officiel, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}} : carte de l'itinéraire, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} de marche."
+	},
+	"hub": {
+		"countryTitle": "Sentiers de grande randonnée à la {{country}}",
+		"typeTitle": "les {{types}}s sur la carte",
+		"countryIntro_one": "Cet atlas répertorie {{count}} sentiers de randonnée à travers le{{country}}, classés du {{shortest}} au {{longest}}.",
+		"countryIntro_many": "Cet atlas répertorie {{count}} sentiers de randonnée à travers le{{country}}, classés du {{shortest}} au {{longest}}.",
+		"countryIntro_other": "Cet atlas répertorie {{count}} sentiers de randonnée à travers le{{country}}, classés du {{shortest}} au {{longest}}.",
+		"typeIntro_one": "L'atlas répertorie {{count}} sentiers de ce type, répartis dans différents{{countries}}, classés du plus {{shortest}} au plus {{longest}}.",
+		"typeIntro_many": "L'atlas répertorie {{count}} sentiers de ce type, répartis dans différents{{countries}}, classés du plus {{shortest}} au plus {{longest}}.",
+		"typeIntro_other": "L'atlas répertorie {{count}} sentiers de ce type, répartis dans différents{{countries}}, classés du plus {{shortest}} au plus {{longest}}.",
+		"each": "Chacune est accompagnée d'informations sur sa longueur, le nombre de jours de marche, les meilleurs mois pour la parcourir et d'un lien vers le site officiel.",
+		"showOnMap": "Les afficher sur la carte",
+		"browse": "Découvrir les sentiers",
+		"byCountry": "Par pays",
+		"byType": "Par type"
+	}
+}

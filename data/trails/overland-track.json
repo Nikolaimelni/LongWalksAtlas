@@ -1,0 +1,35 @@
+{
+	"slug": "overland-track",
+	"name": {
+		"original": "Overland Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Ronny Creek (Cradle Mountain)",
+		"coords": [145.9359, -41.6462]
+	},
+	"end": {
+		"name": "Lake St Clair",
+		"coords": [146.1667, -42.0667]
+	},
+	"countries": ["AU"],
+	"lengthKm": 65,
+	"days": {
+		"min": 6,
+		"max": 6
+	},
+	"bestSeason": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+	"badges": [],
+	"officialUrl": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track",
+	"sources": [
+		"https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track"
+	],
+	"photo": null,
+	"wikidata": "Q491216",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1673569]
+	},
+	"verifiedAt": "2026-10-18"
+}

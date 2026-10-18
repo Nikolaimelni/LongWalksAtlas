@@ -1,0 +1,37 @@
+{
+	"slug": "gr20",
+	"name": {
+		"original": "GR 20"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Calenzana",
+		"coords": [8.8558, 42.5086]
+	},
+	"end": {
+		"name": "Conca",
+		"coords": [9.3339, 41.7358]
+	},
+	"countries": ["FR"],
+	"lengthKm": 180,
+	"days": {
+		"min": 16,
+		"max": 16
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Sports-inspiration/Hiking-and-the-mountains",
+	"sources": [
+		"https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Sports-inspiration/Hiking-and-the-mountains"
+	],
+	"photo": {
+		"commons": "File:GR20 Calenzana.jpg"
+	},
+	"wikidata": "Q262374",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [101692]
+	},
+	"verifiedAt": "2026-10-18"
+}

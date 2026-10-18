@@ -1,17 +1,17 @@
 {
 	"app": {
 		"name": "Long Walks Atlas",
-		"description": "A map of long-distance walking trails across Europe: pilgrim ways, historic routes, coastal and mountain paths, with length, days on foot and a link to each official site."
+		"description": "A map of long-distance walking trails around the world: pilgrim ways, historic routes, coastal and mountain paths, with length, days on foot and a link to each official site."
 	},
 	"disclaimer": {
 		"short": "Lines on the map are schematic. For the exact route, see each trail's official website.",
 		"trail": "The line on the map is schematic and may differ from the waymarked trail. For the exact route, its stages and current changes, see the official website: <link>{{site}}</link>."
 	},
 	"og": {
-		"tagline": "Pilgrim ways, historic routes, coastal and mountain trails across Europe, on one map."
+		"tagline": "Pilgrim ways, historic routes, coastal and mountain trails around the world, on one map."
 	},
 	"atlas": {
-		"title": "Europe's long-distance hiking trails on a map",
+		"title": "Long-distance hiking trails of the world on a map",
 		"loading": "Loading the map…",
 		"pick": "Several trails meet here"
 	},

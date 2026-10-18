@@ -1,0 +1,38 @@
+{
+	"slug": "tongariro-northern-circuit",
+	"name": {
+		"original": "Tongariro Northern Circuit"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Whakapapa Village",
+		"coords": [175.539, -39.201]
+	},
+	"end": {
+		"name": "Whakapapa Village",
+		"coords": [175.539, -39.201]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 43,
+	"days": {
+		"min": 3,
+		"max": 4
+	},
+	"bestSeason": ["nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/",
+		"https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+	],
+	"photo": {
+		"commons": "File:Tongariro Northern Circuit, New Zealand (4).JPG"
+	},
+	"wikidata": "Q1258134",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [173345]
+	},
+	"verifiedAt": "2026-10-18"
+}

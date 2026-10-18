@@ -1,0 +1,32 @@
+{
+	"slug": "pacific-crest-trail",
+	"name": {
+		"original": "Pacific Crest Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Campo, California",
+		"coords": [-116.4681, 32.6064]
+	},
+	"end": {
+		"name": "Manning Park, British Columbia",
+		"coords": [-120.7833, 49.0667]
+	},
+	"countries": ["US", "CA"],
+	"lengthKm": 4265,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.pcta.org/",
+	"sources": ["https://www.pcta.org/discover-the-trail/"],
+	"photo": {
+		"commons": "File:Ritter Range Pacific Crest Trail.jpg"
+	},
+	"wikidata": "Q2003736",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1225378]
+	},
+	"verifiedAt": "2026-10-18"
+}

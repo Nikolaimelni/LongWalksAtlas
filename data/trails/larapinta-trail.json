@@ -1,0 +1,32 @@
+{
+	"slug": "larapinta-trail",
+	"name": {
+		"original": "Larapinta Trail"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Alice Springs Telegraph Station",
+		"coords": [133.888, -23.672]
+	},
+	"end": {
+		"name": "Mount Sonder",
+		"coords": [132.6, -23.5833]
+	},
+	"countries": ["AU"],
+	"lengthKm": 230,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/plan-larapinta-trail-walk",
+	"sources": [
+		"https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/plan-larapinta-trail-walk"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3066363]
+	},
+	"verifiedAt": "2026-10-18"
+}

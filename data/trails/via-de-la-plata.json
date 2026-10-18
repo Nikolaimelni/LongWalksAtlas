@@ -1,0 +1,30 @@
+{
+	"slug": "via-de-la-plata",
+	"name": {
+		"original": "Vía de la Plata"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Seville Cathedral",
+		"coords": [-5.994, 37.3855]
+	},
+	"end": {
+		"name": "Astorga",
+		"coords": [-6.0551, 42.4518]
+	},
+	"countries": ["ES"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.spain.info/en/route/silver-route/",
+	"sources": ["https://www.spain.info/en/route/silver-route/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [241329]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,32 @@
+{
+	"slug": "camino-fisterra-muxia",
+	"name": {
+		"original": "Camiño de Fisterra e Muxía"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Santiago de Compostela Cathedral",
+		"coords": [-8.5444, 42.8806]
+	},
+	"end": {
+		"name": "Muxía",
+		"coords": [-9.2181, 43.1047]
+	},
+	"countries": ["ES"],
+	"lengthKm": 118.8,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.caminodesantiago.gal/en/make-plans/the-ways/the-fisterra-and-muxia-way",
+	"sources": [
+		"https://www.caminodesantiago.gal/en/make-plans/the-ways/the-fisterra-and-muxia-way"
+	],
+	"photo": null,
+	"wikidata": "Q31281727",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [385098]
+	},
+	"verifiedAt": "2026-10-18"
+}

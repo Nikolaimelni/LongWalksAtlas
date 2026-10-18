@@ -1,0 +1,33 @@
+{
+	"slug": "jordan-trail",
+	"name": {
+		"original": "Masar al-Urdun"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Umm Qais",
+		"coords": [35.6875, 32.6542]
+	},
+	"end": {
+		"name": "Aqaba (South Beach)",
+		"coords": [35.0178, 29.4421]
+	},
+	"countries": ["JO"],
+	"lengthKm": 675,
+	"days": {
+		"min": 35,
+		"max": 35
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.jordantrail.org/",
+	"sources": ["https://www.jordantrail.org/discover-the-jordan-trail/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19065729]
+	},
+	"verifiedAt": "2026-10-18"
+}

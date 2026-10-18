@@ -1,0 +1,32 @@
+{
+	"slug": "nakasendo",
+	"name": {
+		"original": "中山道"
+	},
+	"type": "historic",
+	"region": "asia",
+	"start": {
+		"name": "Kyoto",
+		"coords": [135.7681, 35.0116]
+	},
+	"end": {
+		"name": "Nihonbashi, Tokyo",
+		"coords": [139.7744, 35.6839]
+	},
+	"countries": ["JP"],
+	"lengthKm": 534,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.japan.travel/en/ph/special-features/nakasendo-trail/",
+	"sources": [
+		"https://www.japan.travel/en/ph/special-features/nakasendo-trail/"
+	],
+	"photo": null,
+	"wikidata": "Q1154479",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [54496]
+	},
+	"verifiedAt": "2026-10-18"
+}

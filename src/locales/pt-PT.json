@@ -1,0 +1,134 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Um mapa de percursos pedestres de longa distância em todo o mundo: caminhos de peregrinação, percursos históricos, trilhos costeiros e de montanha, com indicação da distância, do número de dias de caminhada e um link para cada site oficial."
+	},
+	"disclaimer": {
+		"short": "As linhas no mapa são esquemáticas. Para conhecer o percurso exato, consulte o site oficial de cada trilho.",
+		"trail": "A linha no mapa é esquemática e pode diferir do percurso sinalizado. Para conhecer o percurso exato, as suas etapas e as alterações atuais, consulte o site oficial: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Caminhos de peregrinação, percursos históricos, trilhos costeiros e de montanha de todo o mundo, num único mapa."
+	},
+	"atlas": {
+		"title": "Percursos de caminhada de longa distância do mundo num mapa",
+		"loading": "A carregar o mapa…",
+		"pick": "Várias trilhas cruzam-se aqui"
+	},
+	"filters": {
+		"list": "Percursos",
+		"search": "Percursos de exploração",
+		"searchPlaceholder": "Trilho ou local",
+		"count_one": "{{count}} trilho",
+		"count_many": "{{count}} trilho",
+		"count_other": "{{count}} percursos",
+		"types": "Tipo",
+		"country": "País",
+		"anyCountry": "Qualquer",
+		"length": "Comprimento",
+		"anyLength": "Qualquer",
+		"under": "Sub{{value}}",
+		"over": "{{value}} excessivo",
+		"duration": "A pé",
+		"anyDuration": "Qualquer",
+		"week": "Até uma semana",
+		"fortnight": "1 a 2 semanas",
+		"month": "2 a 4 semanas",
+		"more": "Mais de um mês",
+		"reset": "Limpar tudo",
+		"active_one": "{{count}} filtro ativado",
+		"active_many": "{{count}} filtro ativado",
+		"active_other": "{{count}} filtros ativados",
+		"none": "Não foram encontradas correspondências. Tente desativar um filtro."
+	},
+	"language": {
+		"label": "Língua",
+		"choose": "Escolha um idioma"
+	},
+	"trailType": {
+		"pilgrimage": "Caminho de peregrinação",
+		"historic": "Percurso histórico",
+		"coastal": "Trilho costeiro",
+		"mountain": "Trilho de montanha",
+		"e-path": "Percurso europeu de longa distância"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Caminhos de peregrinação",
+		"historic": "Rotas históricas",
+		"coastal": "Trilhos costeiros",
+		"mountain": "Trilhos de montanha",
+		"e-path": "Percursos europeus de longa distância"
+	},
+	"badge": {
+		"coe-cultural-route": "Rota Cultural do Conselho da Europa",
+		"unesco": "Património Mundial da UNESCO"
+	},
+	"trail": {
+		"length": "Comprimento",
+		"duration": "A pé",
+		"days_one": "{{count}} dia",
+		"days_many": "{{count}} dia",
+		"days_other": "{{count}} dias",
+		"daysRange_one": "{{min}} – {{count}} dia",
+		"daysRange_many": "{{min}} – {{count}} dia",
+		"daysRange_other": "{{min}} – {{count}} dias",
+		"more": "Mais informações sobre este percurso",
+		"close": "Fechar",
+		"start": "Começa em",
+		"end": "Termina em",
+		"loop": "Percurso de ida e volta entre",
+		"countries": "Países",
+		"season": "Melhores meses",
+		"facts": "Em resumo",
+		"story": "Sobre o percurso",
+		"officialSite": "Site oficial",
+		"sources": "Fontes",
+		"checked": "Factos verificados na {{date}}.",
+		"lengthFromMap": "Comprimento medido com base na linha do OpenStreetMap; ainda não foi verificado nenhum valor oficial.",
+		"osm": "Trajeto © Colaboradores do OpenStreetMap, ODbL.",
+		"showOnMap": "Mostrar no mapa",
+		"backToAtlas": "Todos os percursos",
+		"notReviewed": "Este texto ainda não foi revisto por ninguém.",
+		"fallback": "Ainda não existe tradução, pelo que este texto está em inglês.",
+		"mapLoading": "A carregar o mapa…",
+		"crosses": "Percursos com os quais se cruza",
+		"nearby": "Trilhos nas proximidades",
+		"photoBy": "Foto:",
+		"photoAlt": "Sobre o {{title}}"
+	},
+	"faq": {
+		"title": "Perguntas que os caminhantes fazem",
+		"lengthQ": "Qual é a extensão do {{title}}?",
+		"lengthA": "O e{{title}} tem {{km}} de comprimento.",
+		"daysQ": "Quantos dias demora a percorrer a «{{title}}» a pé?",
+		"daysA": "A maioria dos caminhantes demora vá{{days}} a percorrer todo o percurso.",
+		"whereQ": "Onde começa e onde termina o «{{title}}»?",
+		"whereA": "Começa em «{{start}}» e termina em «{{end}}».",
+		"whereLoopA": "É um ciclo que começa e termina em «{{start}}».",
+		"whenQ": "Qual é a melhor altura para registar o {{title}}?",
+		"whenA": "Os melhores meses são os {{months}}.",
+		"countriesQ": "Por que países passa o «{{title}}»?",
+		"countriesA": "Atravessa vários e{{countries}}.",
+		"officialQ": "Onde se encontram as informações oficiais sobre o «{{title}}»?",
+		"officialA": "No site oficial, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}m: mapa do percurso, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} a pé."
+	},
+	"hub": {
+		"countryTitle": "Percursos de caminhada de longa distância no {{country}}",
+		"typeTitle": "{{types}} no mapa",
+		"countryIntro_one": "O atlas tem {{count}} trilho que atravessa o pa{{country}}, sendo este o {{shortest}}.",
+		"countryIntro_many": "O atlas tem {{count}} trilho que atravessa o pa{{country}}, sendo este o {{shortest}}.",
+		"countryIntro_other": "O atlas inclui {{count}} percursos que atravessam o pa{{country}}, do {{shortest}} ao {{longest}}.",
+		"typeIntro_one": "O atlas tem {{count}} trilho deste tipo, em {{countries}}, sendo este o {{shortest}}.",
+		"typeIntro_many": "O atlas tem {{count}} trilho deste tipo, em {{countries}}, sendo este o {{shortest}}.",
+		"typeIntro_other": "O atlas inclui {{count}} percursos deste tipo, em vários e{{countries}}, ordenados do {{shortest}} ao {{longest}}.",
+		"each": "Cada um inclui a duração, os dias de caminhada, os melhores meses e um link para o site oficial.",
+		"showOnMap": "Mostrá-los no mapa",
+		"browse": "Explorar percursos",
+		"byCountry": "Por país",
+		"byType": "Por tipo"
+	}
+}

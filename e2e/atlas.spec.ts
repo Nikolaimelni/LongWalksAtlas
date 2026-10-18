@@ -6,7 +6,7 @@ test.describe("with a Russian browser", () => {
 	test("/ sends the visitor to their language", async ({ page }) => {
 		await page.goto("/");
 		await expect(page).toHaveURL(/\/ru\/$/);
-		await expect(page.getByText("Атлас троп")).toBeVisible();
+		await expect(page.getByText("Long Walks Atlas")).toBeVisible();
 	});
 });
 

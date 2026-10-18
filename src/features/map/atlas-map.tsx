@@ -7,9 +7,9 @@ import { useColorScheme } from "~/shared/use-color-scheme";
 import { loadMapStyle } from "./map-style";
 import { TrailLayers, trailHitLayerId, trailSourceId } from "./trail-layers";
 
-const europeBounds: [[number, number], [number, number]] = [
-	[-12, 34],
-	[45, 71],
+const worldBounds: [[number, number], [number, number]] = [
+	[-150, -50],
+	[175, 70],
 ];
 
 export type HoverInfo = { slugs: string[]; x: number; y: number };
@@ -85,7 +85,7 @@ export function AtlasMap({
 		<MapLibreMap
 			ref={mapRef}
 			initialViewState={{
-				bounds: europeBounds,
+				bounds: worldBounds,
 				fitBoundsOptions: { padding: 16 },
 			}}
 			mapStyle={mapStyle}

@@ -1,0 +1,33 @@
+{
+	"slug": "tsitsikamma-hiking-trail",
+	"name": {
+		"original": "Tsitsikamma Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Nature's Valley",
+		"coords": [23.5592, -33.9806]
+	},
+	"end": {
+		"name": "Storms River village",
+		"coords": [23.9301, -33.9667]
+	},
+	"countries": ["ZA"],
+	"lengthKm": 62.3,
+	"days": {
+		"min": 6,
+		"max": 6
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://visiteasterncape.co.za/?p=18885",
+	"sources": ["https://visiteasterncape.co.za/?p=18885"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1383550]
+	},
+	"verifiedAt": "2026-10-18"
+}

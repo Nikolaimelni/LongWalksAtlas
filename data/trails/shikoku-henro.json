@@ -1,0 +1,30 @@
+{
+	"slug": "shikoku-henro",
+	"name": {
+		"original": "四国遍路"
+	},
+	"type": "pilgrimage",
+	"region": "asia",
+	"start": {
+		"name": "Ryōzen-ji, temple 1 (Naruto)",
+		"coords": [134.5028, 34.1594]
+	},
+	"end": {
+		"name": "Ōkubo-ji",
+		"coords": [134.2067, 34.1914]
+	},
+	"countries": ["JP"],
+	"lengthKm": 1200,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://shikokuhenro.jp/en/about-en/",
+	"sources": ["https://shikokuhenro.jp/en/about-en/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13653655]
+	},
+	"verifiedAt": "2026-10-18"
+}

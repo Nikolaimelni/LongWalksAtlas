@@ -1,0 +1,34 @@
+{
+	"slug": "camino-ingles",
+	"name": {
+		"original": "Camino Inglés"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Ferrol",
+		"coords": [-8.2328, 43.4844]
+	},
+	"end": {
+		"name": "Santiago de Compostela Cathedral",
+		"coords": [-8.5444, 42.8806]
+	},
+	"countries": ["ES"],
+	"lengthKm": 112.4,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.caminodesantiago.gal/en/make-plans/the-ways/english-way",
+	"sources": [
+		"https://www.caminodesantiago.gal/en/make-plans/the-ways/english-way"
+	],
+	"photo": {
+		"commons": "File:Coruña, igrexa de Santiago 03-15c.JPG"
+	},
+	"wikidata": "Q5795426",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1102966]
+	},
+	"verifiedAt": "2026-10-18"
+}

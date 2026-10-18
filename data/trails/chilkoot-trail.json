@@ -1,0 +1,32 @@
+{
+	"slug": "chilkoot-trail",
+	"name": {
+		"original": "Chilkoot Trail"
+	},
+	"type": "historic",
+	"region": "americas",
+	"start": {
+		"name": "Dyea",
+		"coords": [-135.36, 59.5044]
+	},
+	"end": {
+		"name": "Bennett",
+		"coords": [-135, 59.85]
+	},
+	"countries": ["US", "CA"],
+	"lengthKm": 53,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.nps.gov/klgo/planyourvisit/chilkoottrail.htm",
+	"sources": ["https://www.nps.gov/klgo/planyourvisit/chilkoottrail.htm"],
+	"photo": {
+		"commons": "File:ChilkootTrailMeltOff.jpg"
+	},
+	"wikidata": "Q3389258",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1225005]
+	},
+	"verifiedAt": "2026-10-18"
+}

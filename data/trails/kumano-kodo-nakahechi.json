@@ -1,0 +1,32 @@
+{
+	"slug": "kumano-kodo-nakahechi",
+	"name": {
+		"original": "熊野古道 中辺路"
+	},
+	"type": "pilgrimage",
+	"region": "asia",
+	"start": {
+		"name": "Takijiri-oji (Tanabe)",
+		"coords": [135.5038, 33.7753]
+	},
+	"end": {
+		"name": "Kumano Hongu Taisha",
+		"coords": [135.7739, 33.84]
+	},
+	"countries": ["JP"],
+	"lengthKm": 36,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.tb-kumano.jp/en/kumano-kodo/nakahechi/",
+	"sources": ["https://www.tb-kumano.jp/en/kumano-kodo/nakahechi/"],
+	"photo": {
+		"commons": "File:Daimonzaka25 2048.jpg"
+	},
+	"wikidata": "Q30074932",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17094646]
+	},
+	"verifiedAt": "2026-10-18"
+}

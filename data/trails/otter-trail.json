@@ -1,0 +1,37 @@
+{
+	"slug": "otter-trail",
+	"name": {
+		"original": "Otter Trail"
+	},
+	"type": "coastal",
+	"region": "africa",
+	"start": {
+		"name": "Storms River Mouth",
+		"coords": [23.8689, -34.0113]
+	},
+	"end": {
+		"name": "Nature's Valley",
+		"coords": [23.5592, -33.9806]
+	},
+	"countries": ["ZA"],
+	"lengthKm": 45,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.sanparks.org/parks/garden-route/what-to-do/activities/otter-trail",
+	"sources": [
+		"https://www.sanparks.org/parks/garden-route/what-to-do/activities/otter-trail"
+	],
+	"photo": {
+		"commons": "File:Otter Trail03.jpg"
+	},
+	"wikidata": "Q7109422",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1383551]
+	},
+	"verifiedAt": "2026-10-18"
+}

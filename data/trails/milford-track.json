@@ -1,0 +1,36 @@
+{
+	"slug": "milford-track",
+	"name": {
+		"original": "Milford Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Glade Wharf (Lake Te Anau)",
+		"coords": [167.9302, -44.9321]
+	},
+	"end": {
+		"name": "Sandfly Point (Milford Sound)",
+		"coords": [167.9025, -44.6836]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 53.5,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": ["nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/",
+		"https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+	],
+	"photo": null,
+	"wikidata": "Q673819",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1385121]
+	},
+	"verifiedAt": "2026-10-18"
+}

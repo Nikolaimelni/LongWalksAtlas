@@ -1,0 +1,30 @@
+{
+	"slug": "long-trail",
+	"name": {
+		"original": "Long Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Massachusetts state line",
+		"coords": [-73.1555, 42.7438]
+	},
+	"end": {
+		"name": "Canadian border (Journey's End)",
+		"coords": [-72.4882, 45.0087]
+	},
+	"countries": ["US"],
+	"lengthKm": 438,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.greenmountainclub.org/the-long-trail/",
+	"sources": ["https://www.greenmountainclub.org/the-long-trail/"],
+	"photo": null,
+	"wikidata": "Q6673311",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [391736]
+	},
+	"verifiedAt": "2026-10-18"
+}

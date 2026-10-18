@@ -1,0 +1,32 @@
+{
+	"slug": "gr11",
+	"name": {
+		"original": "GR 11 - Senda Pirenaica"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Cap de Higuer (Hondarribia)",
+		"coords": [-1.796, 43.39]
+	},
+	"end": {
+		"name": "Cap de Creus",
+		"coords": [3.3219, 42.3192]
+	},
+	"countries": ["ES"],
+	"lengthKm": 800,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.senderosgr.es/es/gr-11-ruta-transpirenaica/",
+	"sources": ["https://www.senderosgr.es/es/gr-11-ruta-transpirenaica/"],
+	"photo": {
+		"commons": "File:Portella de Baiau.jpg"
+	},
+	"wikidata": "Q3176636",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8865914]
+	},
+	"verifiedAt": "2026-10-18"
+}

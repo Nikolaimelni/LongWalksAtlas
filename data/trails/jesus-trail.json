@@ -1,0 +1,32 @@
+{
+	"slug": "jesus-trail",
+	"name": {
+		"original": "Shvil Yeshu"
+	},
+	"type": "pilgrimage",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Nazareth",
+		"coords": [35.3033, 32.7019]
+	},
+	"end": {
+		"name": "Capernaum",
+		"coords": [35.575, 32.8811]
+	},
+	"countries": ["IL"],
+	"lengthKm": 65,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://jesustrail.com/",
+	"sources": ["https://jesustrail.com/about-the-jesus-trail/"],
+	"photo": {
+		"commons": "File:Walking the Jesus Trail.JPG"
+	},
+	"wikidata": "Q1149449",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [364191]
+	},
+	"verifiedAt": "2026-10-18"
+}

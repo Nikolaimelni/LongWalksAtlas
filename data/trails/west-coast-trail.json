@@ -1,0 +1,35 @@
+{
+	"slug": "west-coast-trail",
+	"name": {
+		"original": "West Coast Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Pachena Bay",
+		"coords": [-125.1295, 48.777]
+	},
+	"end": {
+		"name": "Gordon River (Port Renfrew)",
+		"coords": [-124.4167, 48.55]
+	},
+	"countries": ["CA"],
+	"lengthKm": 75,
+	"days": {
+		"min": 6,
+		"max": 8
+	},
+	"bestSeason": ["may", "jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/sco-wct",
+	"sources": ["https://parks.canada.ca/pn-np/bc/pacificrim/activ/sco-wct"],
+	"photo": {
+		"commons": "File:WestCoastTrailCost2.jpg"
+	},
+	"wikidata": "Q3434548",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [6955341]
+	},
+	"verifiedAt": "2026-10-18"
+}

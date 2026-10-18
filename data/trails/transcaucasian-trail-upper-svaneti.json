@@ -1,0 +1,33 @@
+{
+	"slug": "transcaucasian-trail-upper-svaneti",
+	"name": {
+		"original": "Transcaucasian Trail - Upper Svaneti"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Chuberi (Nenskra valley)",
+		"coords": [42.7297, 43.0456]
+	},
+	"end": {
+		"name": "Ushguli",
+		"coords": [43.0115, 42.9152]
+	},
+	"countries": ["GE"],
+	"lengthKm": 140,
+	"days": {
+		"min": 7,
+		"max": 9
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://transcaucasiantrail.org/en/hike/upper-svaneti-georgia/",
+	"sources": ["https://transcaucasiantrail.org/en/hike/upper-svaneti-georgia/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16118590]
+	},
+	"verifiedAt": "2026-10-18"
+}

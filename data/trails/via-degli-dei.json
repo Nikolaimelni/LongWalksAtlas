@@ -1,0 +1,35 @@
+{
+	"slug": "via-degli-dei",
+	"name": {
+		"original": "Via degli Dei"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Piazza Maggiore, Bologna",
+		"coords": [11.3427, 44.4938]
+	},
+	"end": {
+		"name": "Piazza della Signoria, Florence",
+		"coords": [11.2556, 43.7697]
+	},
+	"countries": ["IT"],
+	"lengthKm": 130,
+	"days": {
+		"min": 5,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://en.viadeglidei.it/",
+	"sources": ["https://en.viadeglidei.it/"],
+	"photo": {
+		"commons": "File:Via degli Dei, Casalecchio di Reno, Sentiero dei Bregoli 04.jpg"
+	},
+	"wikidata": "Q4010784",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [222322]
+	},
+	"verifiedAt": "2026-10-18"
+}

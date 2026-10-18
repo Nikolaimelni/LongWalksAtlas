@@ -1,0 +1,140 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Mapa długodystansowych szlaków pieszych na całym świecie: szlaki pielgrzymkowe, trasy historyczne, ścieżki nadmorskie i górskie wraz z informacjami o długości, liczbie dni marszu oraz linkiem do oficjalnej strony internetowej każdego z nich."
+	},
+	"disclaimer": {
+		"short": "Linie na mapie mają charakter schematyczny. Dokładny przebieg trasy można sprawdzić na oficjalnej stronie internetowej danego szlaku.",
+		"trail": "Linia na mapie ma charakter schematyczny i może różnić się od oznakowanego szlaku. Dokładny przebieg trasy, jej etapy oraz aktualne zmiany można znaleźć na oficjalnej stronie internetowej: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Szlaki pielgrzymkowe, trasy historyczne, szlaki nadmorskie i górskie z całego świata – wszystko na jednej mapie."
+	},
+	"atlas": {
+		"title": "Światowe szlaki turystyczne długodystansowe na mapie",
+		"loading": "Ładowanie mapy…",
+		"pick": "W tym miejscu krzyżuje się kilka szlaków"
+	},
+	"filters": {
+		"list": "Szlaki",
+		"search": "Szlaki turystyczne",
+		"searchPlaceholder": "Szlak czy miejsce",
+		"count_one": "{{count}} szlak",
+		"count_few": "{{count}} trasy",
+		"count_many": "{{count}} szlaków",
+		"count_other": "{{count}} trasy",
+		"types": "Typ",
+		"country": "Kraj",
+		"anyCountry": "Każdy",
+		"length": "Długość",
+		"anyLength": "Każdy",
+		"under": "Niższa {{value}}",
+		"over": "Nad{{value}}",
+		"duration": "Pieszo",
+		"anyDuration": "Każdy",
+		"week": "Do tygodnia",
+		"fortnight": "1–2 tygodnie",
+		"month": "2–4 tygodnie",
+		"more": "Ponad miesiąc",
+		"reset": "Wyczyść wszystko",
+		"active_one": "Włączony {{count}} filtr",
+		"active_few": "Włączono {{count}} filtry",
+		"active_many": "Włączono {{count}} filtrów",
+		"active_other": "Włączono {{count}} filtry",
+		"none": "Nie znaleziono wyników. Spróbuj wyczyścić filtr."
+	},
+	"language": {
+		"label": "Język",
+		"choose": "Wybierz język"
+	},
+	"trailType": {
+		"pilgrimage": "Szlak pielgrzymkowy",
+		"historic": "Trasa historyczna",
+		"coastal": "Szlak nadmorski",
+		"mountain": "Szlak górski",
+		"e-path": "Europejski szlak długodystansowy"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Szlaki pielgrzymkowe",
+		"historic": "Szlaki historyczne",
+		"coastal": "Szlaki nadmorskie",
+		"mountain": "Szlaki górskie",
+		"e-path": "Europejskie szlaki długodystansowe"
+	},
+	"badge": {
+		"coe-cultural-route": "Szlak kulturowy Rady Europy",
+		"unesco": "Światowe dziedzictwo UNESCO"
+	},
+	"trail": {
+		"length": "Długość",
+		"duration": "Pieszo",
+		"days_one": "{{count}} dzień",
+		"days_few": "{{count}} dni",
+		"days_many": "{{count}} dni",
+		"days_other": "{{count}} dni",
+		"daysRange_one": "od {{min}} do {{count}} dnia",
+		"daysRange_few": "od {{min}} do {{count}} dni",
+		"daysRange_many": "od {{min}} do {{count}} dni",
+		"daysRange_other": "od {{min}} do {{count}} dni",
+		"more": "Więcej informacji o tej trasie",
+		"close": "Zamknij",
+		"start": "Zaczyna się za",
+		"end": "Kończy się za",
+		"loop": "Pętla od i z powrotem do",
+		"countries": "Kraje",
+		"season": "Najlepsze miesiące",
+		"facts": "W skrócie",
+		"story": "O szlaku",
+		"officialSite": "Oficjalna strona internetowa",
+		"sources": "Źródła",
+		"checked": "Fakty zweryfikowano w {{date}}.",
+		"lengthFromMap": "Długość zmierzona na podstawie linii w serwisie OpenStreetMap; nie sprawdzono jeszcze oficjalnych danych.",
+		"osm": "Trasa © autorzy OpenStreetMap, ODbL.",
+		"showOnMap": "Pokaż na mapie",
+		"backToAtlas": "Wszystkie szlaki",
+		"notReviewed": "Ten tekst nie został jeszcze sprawdzony przez żadną osobę.",
+		"fallback": "Nie ma jeszcze tłumaczenia, więc tekst ten jest w języku angielskim.",
+		"mapLoading": "Ładowanie mapy…",
+		"crosses": "Szlaki, z którymi się krzyżuje",
+		"nearby": "Szlaki w okolicy",
+		"photoBy": "Zdjęcie:",
+		"photoAlt": "O {{title}}"
+	},
+	"faq": {
+		"title": "Pytania zadawane przez spacerowiczów",
+		"lengthQ": "Jak długi jest ten {{title}}?",
+		"lengthA": "{{title}} ma długość {{km}}.",
+		"daysQ": "Ile dni zajmuje przejście trasy opisanej w „{{title}}”?",
+		"daysA": "Większość turystów pokonuje całą trasę w ciągu kilku {{days}}.",
+		"whereQ": "Gdzie zaczyna się i kończy {{title}}?",
+		"whereA": "Zaczyna się od „{{start}}”, a kończy na „{{end}}”.",
+		"whereLoopA": "Jest to pętla, która zaczyna się i kończy w punkcie {{start}}.",
+		"whenQ": "Kiedy najlepiej jest przejść trasę „{{title}}”?",
+		"whenA": "Najlepsze miesiące to właśnie te {{months}}.",
+		"countriesQ": "Przez które kraje przebiega ta trasa ({{title}})?",
+		"countriesA": "Przebiega przez różne {{countries}}.",
+		"officialQ": "Gdzie można znaleźć oficjalne informacje na temat tego {{title}}'u?",
+		"officialA": "Na oficjalnej stronie internetowej, pod adresem {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: mapa trasy, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} wędrówki."
+	},
+	"hub": {
+		"countryTitle": "Długodystansowe szlaki turystyczne w{{country}}",
+		"typeTitle": "{{types}} na mapie",
+		"countryIntro_one": "W atlasie znajduje się {{count}} szlak, który przecina cały {{country}}, a jego długość jest {{shortest}}a.",
+		"countryIntro_few": "W atlasie znajduje się {{count}} szlaków, które przecinają cały kraj{{country}}, od {{shortest}} do {{longest}}.",
+		"countryIntro_many": "W atlasie znajduje się {{count}} szlaków biegowych, które przecinają kraj{{country}}, od {{shortest}} do {{longest}}.",
+		"countryIntro_other": "W atlasie znajduje się {{count}} szlaków, które przecinają cały kraj{{country}}, od {{shortest}} do {{longest}}.",
+		"typeIntro_one": "W atlasie znajduje się {{count}} szlak tego rodzaju, w {{countries}}, o {{shortest}}ej długości.",
+		"typeIntro_few": "W atlasie znajduje się {{count}} tras tego rodzaju, rozciągających się przez różne {{countries}}, uporządkowanych od {{shortest}}j do {{longest}}j.",
+		"typeIntro_many": "W atlasie znajduje się {{count}} tego rodzaju szlaków w różnych {{countries}}, uporządkowanych od {{shortest}}go do {{longest}}go.",
+		"typeIntro_other": "W atlasie znajduje się {{count}} tras tego rodzaju, rozciągających się przez różne {{countries}}, uporządkowanych od {{shortest}}j do {{longest}}j.",
+		"each": "Każda z nich zawiera informacje o długości trasy, liczbie dni wędrówki, najlepszych miesiącach oraz link do oficjalnej strony.",
+		"showOnMap": "Pokaż je na mapie",
+		"browse": "Przeglądaj trasy",
+		"byCountry": "Według kraju",
+		"byType": "Według typu"
+	}
+}

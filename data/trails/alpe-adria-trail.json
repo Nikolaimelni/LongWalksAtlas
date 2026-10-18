@@ -1,0 +1,30 @@
+{
+	"slug": "alpe-adria-trail",
+	"name": {
+		"original": "Alpe-Adria-Trail"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Heiligenblut (Grossglockner)",
+		"coords": [12.8369, 47.0414]
+	},
+	"end": {
+		"name": "Muggia",
+		"coords": [13.7667, 45.6]
+	},
+	"countries": ["AT", "SI", "IT"],
+	"lengthKm": 750,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.alpe-adria-trail.com/en/the-trail/",
+	"sources": ["https://www.alpe-adria-trail.com/en/the-trail/"],
+	"photo": null,
+	"wikidata": "Q15782535",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3176522]
+	},
+	"verifiedAt": "2026-10-18"
+}

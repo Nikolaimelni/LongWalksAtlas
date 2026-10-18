@@ -1,0 +1,35 @@
+{
+	"slug": "st-olavsleden",
+	"name": {
+		"original": "Pilgrimsleden - St. Olavsleden"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Selånger",
+		"coords": [17.205, 62.408]
+	},
+	"end": {
+		"name": "Nidaros Cathedral, Trondheim",
+		"coords": [10.3962, 63.4267]
+	},
+	"countries": ["SE", "NO"],
+	"lengthKm": 580,
+	"days": {
+		"min": 30,
+		"max": 32
+	},
+	"bestSeason": ["jun", "jul", "aug"],
+	"badges": [],
+	"officialUrl": "https://pilegrimsleden.no/en/trails/st-olavsleden",
+	"sources": ["https://pilegrimsleden.no/en/trails/st-olavsleden"],
+	"photo": {
+		"commons": "File:Alsen.StOlavsLeden.JPG"
+	},
+	"wikidata": "Q18448597",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10524322]
+	},
+	"verifiedAt": "2026-10-18"
+}

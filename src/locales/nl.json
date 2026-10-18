@@ -1,0 +1,128 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Een kaart met langeafstandswandelroutes over de hele wereld: pelgrimsroutes, historische routes, kust- en bergpaden, met vermelding van de lengte, het aantal wandeldagen en een link naar de betreffende officiële website."
+	},
+	"disclaimer": {
+		"short": "De lijnen op de kaart zijn schematisch weergegeven. Raadpleeg de officiële website van de betreffende route voor de exacte route.",
+		"trail": "De lijn op de kaart is schematisch weergegeven en kan afwijken van het gemarkeerde pad. Zie de officiële website voor de exacte route, de etappes en actuele wijzigingen: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Bedevaartsroutes, historische routes, kust- en bergpaden over de hele wereld, allemaal op één kaart."
+	},
+	"atlas": {
+		"title": "Langeafstandswandelroutes van de wereld op een kaart",
+		"loading": "De kaart wordt geladen…",
+		"pick": "Hier komen verschillende wandelpaden samen"
+	},
+	"filters": {
+		"list": "Wandelroutes",
+		"search": "Zoekpaden",
+		"searchPlaceholder": "Route of plaats",
+		"count_one": "{{count}} wandelroute",
+		"count_other": "{{count}} wandelroutes",
+		"types": "Type",
+		"country": "Land",
+		"anyCountry": "Elke",
+		"length": "Lengte",
+		"anyLength": "Elke",
+		"under": "Onder{{value}}",
+		"over": "Over{{value}}",
+		"duration": "Te voet",
+		"anyDuration": "Elke",
+		"week": "Tot een week",
+		"fortnight": "1–2 weken",
+		"month": "2–4 weken",
+		"more": "Ruim een maand",
+		"reset": "Alles wissen",
+		"active_one": "{{count}} filter ingeschakeld",
+		"active_other": "{{count}} filters ingeschakeld",
+		"none": "Er zijn geen resultaten gevonden. Probeer een filter uit te schakelen."
+	},
+	"language": {
+		"label": "Taal",
+		"choose": "Kies een taal"
+	},
+	"trailType": {
+		"pilgrimage": "Pelgrimsroute",
+		"historic": "Historische route",
+		"coastal": "Kustroute",
+		"mountain": "Bergpad",
+		"e-path": "Europese langeafstandsroute"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Bedevaartsroutes",
+		"historic": "Historische routes",
+		"coastal": "Kustroutes",
+		"mountain": "Bergpaden",
+		"e-path": "Europese langeafstandsroutes"
+	},
+	"badge": {
+		"coe-cultural-route": "Cultuurroute van de Raad van Europa",
+		"unesco": "UNESCO-werelderfgoed"
+	},
+	"trail": {
+		"length": "Lengte",
+		"duration": "Te voet",
+		"days_one": "{{count}} dag",
+		"days_other": "{{count}} dagen",
+		"daysRange_one": "{{min}}-{{count}} dagen",
+		"daysRange_other": "{{min}} tot {{count}} dagen",
+		"more": "Meer informatie over deze route",
+		"close": "Sluiten",
+		"start": "Begint over",
+		"end": "Eindigt over",
+		"loop": "Rondje van en terug naar",
+		"countries": "Landen",
+		"season": "Beste maanden",
+		"facts": "In één oogopslag",
+		"story": "Over de route",
+		"officialSite": "Officiële website",
+		"sources": "Bronnen",
+		"checked": "Feiten gecontroleerd op {{date}}.",
+		"lengthFromMap": "Lengte gemeten aan de hand van de lijn op OpenStreetMap; er is nog geen officieel cijfer gecontroleerd.",
+		"osm": "Trail-lijn © OpenStreetMap-bijdragers, ODbL.",
+		"showOnMap": "Op de kaart weergeven",
+		"backToAtlas": "Alle wandelroutes",
+		"notReviewed": "Deze tekst is nog niet door iemand nagekeken.",
+		"fallback": "Er is nog geen vertaling beschikbaar, dus deze tekst is in het Engels.",
+		"mapLoading": "De kaart wordt geladen…",
+		"crosses": "Paden die het kruist",
+		"nearby": "Wandelpaden in de buurt",
+		"photoBy": "Foto:",
+		"photoAlt": "Over de {{title}}"
+	},
+	"faq": {
+		"title": "Vragen die wandelaars stellen",
+		"lengthQ": "Hoe lang is de {{title}}?",
+		"lengthA": "De {{title}} is {{km}} lang.",
+		"daysQ": "Hoeveel dagen duurt het om de route van de „{{title}}” te lopen?",
+		"daysA": "De meeste wandelaars doen er me{{days}} over om de hele route af te leggen.",
+		"whereQ": "Waar begint en eindigt de {{title}}?",
+		"whereA": "Het begint bij ‘{{start}}’ en eindigt bij ‘{{end}}’.",
+		"whereLoopA": "Het is een lus die begint en eindigt bij {{start}}.",
+		"whenQ": "Wanneer is het beste moment om de tit{{title}} te verdedigen?",
+		"whenA": "De beste maanden zijn {{months}}.",
+		"countriesQ": "Door welke landen loopt de ge{{title}}?",
+		"countriesA": "Het loopt door verschillende {{countries}}.",
+		"officialQ": "Waar vind ik de officiële informatie over de {{title}}?",
+		"officialA": "Op de officiële website, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}n: routekaart, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} te voet."
+	},
+	"hub": {
+		"countryTitle": "Langeafstandswandelroutes in het {{country}}",
+		"typeTitle": "{{types}} op de kaart",
+		"countryIntro_one": "De atlas bevat {{count}} wandelroute die het hele land doorkruist{{country}}, {{shortest}} lang.",
+		"countryIntro_other": "De atlas bevat {{count}} wandelroutes die door het hele land lo{{country}}en, van de {{shortest}} tot de {{longest}}.",
+		"typeIntro_one": "De atlas bevat {{count}} route van dit type, in {{countries}}, met de {{shortest}}e lengte.",
+		"typeIntro_other": "De atlas bevat {{count}} van dit soort routes, verspreid over verschillende {{countries}}, gerangschikt van de {{shortest}} tot de {{longest}}.",
+		"each": "Bij elk staat de lengte, het aantal wandeldagen, de beste maanden en een link naar de officiële website vermeld.",
+		"showOnMap": "Geef ze weer op de kaart",
+		"browse": "Bekijk wandelroutes",
+		"byCountry": "Per land",
+		"byType": "Per type"
+	}
+}

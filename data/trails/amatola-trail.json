@@ -1,0 +1,35 @@
+{
+	"slug": "amatola-trail",
+	"name": {
+		"original": "Amatola Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Maden Dam",
+		"coords": [27.2984, -32.7398]
+	},
+	"end": {
+		"name": "Hogsback",
+		"coords": [26.9354, -32.5933]
+	},
+	"countries": ["ZA"],
+	"lengthKm": 100,
+	"days": {
+		"min": 6,
+		"max": 6
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://amatolatrails.co.za",
+	"sources": [
+		"https://visiteasterncape.co.za/iconic-eastern-cape-hiking-trails/"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10777063]
+	},
+	"verifiedAt": "2026-10-18"
+}

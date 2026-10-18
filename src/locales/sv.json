@@ -1,0 +1,128 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "En karta över långdistansvandringsleder runt om i världen: pilgrimsleder, historiska rutter, kust- och bergsstigar, med uppgifter om längd, antal vandringsdagar och en länk till respektive officiell webbplats."
+	},
+	"disclaimer": {
+		"short": "Linjerna på kartan är schematiska. För den exakta rutten, se respektive vandringsleds officiella webbplats.",
+		"trail": "Linjen på kartan är schematisk och kan avvika från den markerade leden. För den exakta rutten, dess etapper och aktuella ändringar, se den officiella webbsiten: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Pilgrimsleder, historiska rutter, kust- och bergsstigar runt om i världen – samlade på en karta."
+	},
+	"atlas": {
+		"title": "Världens långdistansvandringsleder på en karta",
+		"loading": "Laddar kartan…",
+		"pick": "Här möts flera vandringsleder"
+	},
+	"filters": {
+		"list": "Vandringsleder",
+		"search": "Sökstigar",
+		"searchPlaceholder": "Stig eller plats",
+		"count_one": "{{count}} vandringsled",
+		"count_other": "{{count}} vandringsleder",
+		"types": "Typ",
+		"country": "Land",
+		"anyCountry": "Vilken som helst",
+		"length": "Längd",
+		"anyLength": "Vilken som helst",
+		"under": "Under{{value}}",
+		"over": "Över{{value}}",
+		"duration": "Till fots",
+		"anyDuration": "Vilken som helst",
+		"week": "Upp till en vecka",
+		"fortnight": "1–2 veckor",
+		"month": "2–4 veckor",
+		"more": "Över en månad",
+		"reset": "Rensa allt",
+		"active_one": "{{count}} filter aktiverat",
+		"active_other": "{{count}} filter aktiverade",
+		"none": "Inga träffar hittades. Försök ta bort ett filter."
+	},
+	"language": {
+		"label": "Språk",
+		"choose": "Välj språk"
+	},
+	"trailType": {
+		"pilgrimage": "Pilgrimsleden",
+		"historic": "Historisk rutt",
+		"coastal": "Kustled",
+		"mountain": "Bergsstig",
+		"e-path": "Europeisk långdistansled"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Pilgrimsleder",
+		"historic": "Historiska rutter",
+		"coastal": "Kuststigar",
+		"mountain": "Bergsstigar",
+		"e-path": "Europeiska långdistansleder"
+	},
+	"badge": {
+		"coe-cultural-route": "Europarådets kulturväg",
+		"unesco": "UNESCO:s världsarvslista"
+	},
+	"trail": {
+		"length": "Längd",
+		"duration": "Till fots",
+		"days_one": "{{count}} dag",
+		"days_other": "{{count}} dagar",
+		"daysRange_one": "{{min}}–{{count}} dagar",
+		"daysRange_other": "{{min}}–{{count}} dagar",
+		"more": "Mer om denna vandringsled",
+		"close": "Stäng",
+		"start": "Börjar om",
+		"end": "Slutar om",
+		"loop": "Slinga från och tillbaka till",
+		"countries": "Länder",
+		"season": "De bästa månaderna",
+		"facts": "Översikt",
+		"story": "Om vandringsleden",
+		"officialSite": "Officiell webbplats",
+		"sources": "Källor",
+		"checked": "Fakta kontrollerade den {{date}}n.",
+		"lengthFromMap": "Längden är uppmätt utifrån linjen på OpenStreetMap; inga officiella siffror har ännu kontrollerats.",
+		"osm": "Vandringsled © OpenStreetMap-bidragare, ODbL.",
+		"showOnMap": "Visa på kartan",
+		"backToAtlas": "Alla vandringsleder",
+		"notReviewed": "Den här texten har ännu inte granskats av någon.",
+		"fallback": "Det finns ingen översättning ännu, så texten är på engelska.",
+		"mapLoading": "Laddar kartan…",
+		"crosses": "Vandringsleder som den korsar",
+		"nearby": "Vandringsleder i närheten",
+		"photoBy": "Foto:",
+		"photoAlt": "Om {{title}}n"
+	},
+	"faq": {
+		"title": "Frågor som vandrare ställer",
+		"lengthQ": "Hur lång är {{title}}n?",
+		"lengthA": "{{title}}n är {{km}} lång.",
+		"daysQ": "Hur många dagar tar det att vandra längs ”{{title}}”?",
+		"daysA": "De flesta vandrare tar flera {{days}} på att gå hela sträckan.",
+		"whereQ": "Var börjar och slutar {{title}}n?",
+		"whereA": "Det börjar vid ”{{start}}” och slutar vid ”{{end}}”.",
+		"whereLoopA": "Det är en slinga som börjar och slutar vid {{start}}.",
+		"whenQ": "När är det bästa tillfället att registrera ägar{{title}}n?",
+		"whenA": "De bästa månaderna är {{months}}.",
+		"countriesQ": "Vilka länder passerar {{title}}n genom?",
+		"countriesA": "Den går genom flera {{countries}}.",
+		"officialQ": "Var finns den officiella informationen om {{title}}n?",
+		"officialA": "På den officiella webbplatsen, {{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}n: ruttskarta, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} till fots."
+	},
+	"hub": {
+		"countryTitle": "Långdistansvandringsleder på {{country}}t",
+		"typeTitle": "{{types}} på kartan",
+		"countryIntro_one": "Atlasen innehåller {{count}} vandringsled som sträcker sig tvärs över he{{country}}n, den {{shortest}}a.",
+		"countryIntro_other": "Atlasen innehåller {{count}} vandringsleder som sträcker sig över hela l{{country}}n, från de {{shortest}} till de {{longest}}.",
+		"typeIntro_one": "Atlasen innehåller {{count}} vandringsled av detta slag, i olika {{countries}}, den {{shortest}}a.",
+		"typeIntro_other": "Atlasen innehåller {{count}} vandringsleder av detta slag, i olika l{{countries}}, ordnade från den {{shortest}} till den {{longest}}.",
+		"each": "För varje vandring anges längd, antal vandringsdagar, bästa månader och en länk till den officiella webbplatsen.",
+		"showOnMap": "Visa dem på kartan",
+		"browse": "Utforska vandringsleder",
+		"byCountry": "Per land",
+		"byType": "Efter typ"
+	}
+}
