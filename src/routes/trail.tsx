@@ -23,7 +23,11 @@ import {
 import { JsonLd } from "~/shared/json-ld";
 import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
-import { atlasCardMeta, photoCardMeta } from "~/shared/social-cards";
+import {
+	atlasCardMeta,
+	photoCardMeta,
+	trailCardMeta,
+} from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/trail";
 
@@ -104,7 +108,8 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		{ property: "og:url", content: url },
 		{ property: "og:site_name", content: app },
 		...localeMeta(layout.lang),
-		...(photo ? photoCardMeta(photo) : atlasCardMeta(layout.lang)),
+		...(trailCardMeta(summary.slug, layout.lang) ??
+			(photo ? photoCardMeta(photo) : atlasCardMeta(layout.lang))),
 		...(languages.includes(layout.lang)
 			? []
 			: [{ name: "robots", content: "noindex" }]),

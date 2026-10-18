@@ -18,4 +18,11 @@ export default defineConfig({
 	build: {
 		chunkSizeWarningLimit: 1200,
 	},
+	// Only the prerender step runs vite preview (`pnpm preview` is serve-static.ts). On
+	// "localhost" it listens on ::1 alone, and once a couple of thousand pages have gone
+	// through, a connect to ::1 sometimes takes longer than Node's 250 ms happy-eyeballs
+	// window; the fallback to 127.0.0.1 is refused and the build dies on a random page.
+	preview: {
+		host: "127.0.0.1",
+	},
 });

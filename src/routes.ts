@@ -9,5 +9,6 @@ export default [
 		route("trail/:slug", "routes/trail.tsx"),
 		route(":kind/:key", "routes/hub.tsx"),
 		route("og-card", "routes/og-card.tsx"),
+		route("og-card/trail/:slug", "routes/og-trail-card.tsx"),
 	]),
 ] satisfies RouteConfig;
