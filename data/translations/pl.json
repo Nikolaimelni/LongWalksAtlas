@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Szlak wzdłuż wybrzeża Abela Tasmana",
+		"summary": "Trwająca od trzech do pięciu dni wycieczka wzdłuż wybrzeża, prowadząca przez złote plaże i busz w Parku Narodowym Abela Tasmana, z Mārahau do Wainui.",
+		"html": "<p>Taksówki wodne pozwalają turystom skrócić lub wydłużyć trasę oraz przekraczać ujścia rzek podczas odpływu.</p>\n<p>DOC podaje, że trasa w jedną stronę ma 60 km. Podaje również, że największy ruch na szlaku panuje od października do kwietnia, a można po nim wędrować przez cały rok.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Szlak Alpe-Adria",
+		"summary": "Długodystansowy szlak prowadzący od podnóża Grossglocknera w Austrii przez słoweńskie Alpy Julijskie aż do wybrzeża Adriatyku w pobliżu Triestu.",
+		"html": "<p>Szlak Alpe-Adria-Trail przecina Alpy od lodowców aż do morza, prowadząc wzdłuż jezior Karyntii, słoweńskiej doliny rzeki Soča i płaskowyżu krasowego, a następnie schodząc w dół do Muggia. Podzielony jest na 43 etapy przeznaczone do pokonywania pieszo z miejscowości do miejscowości.</p>\n<p>Oficjalna strona podaje długość około 750 km, natomiast relacja w OSM wskazuje 690 km, więc długości zależą od wariantów trasy.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "Klasyczna trasa wysokogórska przez Dolomity, prowadząca od jeziora Lago di Braies do Belluno, z noclegami w schroniskach każdego dnia i dwunastoma etapami.",
+		"html": "<p>Szlak Alta Via 1 łączy jezioro Pragser Wildsee z Cinque Torri, masywem Civetta i doliną Piave, przebiegając przez wysokie przełęcze i ściany skalne, które obecnie znajdują się na liście UNESCO. Plan etapów trasy opiera się na schroniskach górskich, które działają w sezonie letnim.</p>\n<p>Portal turystyczny Dolomitów podaje, że trasa ma około 125 km, składa się z dwunastu etapów, a sezon trwa od końca czerwca do końca września.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "Dłuższa i bardziej wymagająca trasa, będąca odpowiednikiem Alta Via 1, biegnąca od Brixen w Południowym Tyrolu przez pasmo Odle, Marmoladę i Pale di San Martino aż do Feltre.",
+		"html": "<p>Trasa biegnie z północy na południe przez zachodnią i środkową część Dolomitów, wykorzystując schroniska oraz niektóre odcinki przypominające via ferratę. Przebiega obok lodowca Marmolady, najwyższego szczytu tego pasma, oraz płaskowyżu Pale di San Martino.</p>\n<p>Portal Dolomites podaje, że trasa ma około 180 km, składa się z trzynastu etapów dziennych, a sezon trwa od końca czerwca do końca września.</p>"
+	},
+	"amatola-trail": {
+		"title": "Szlak turystyczny Amatola",
+		"summary": "Sześciodniowa trasa o długości około 100 km w górach Amathole w prowincji Eastern Cape, prowadząca od przedmieść Qonce do Hogsback.",
+		"html": "<p>Szlak Amatola przebiega przez lasy rodzime, górskie strumienie i grzbiety, a wzdłuż niego znajdują się schroniska. Na stronie internetowej poświęconej turystyce w prowincji Eastern Cape szlak ten wymieniony jest wśród kultowych szlaków turystycznych tej prowincji.</p>\n<p>Szlak przebiega przez góry Amathole, zielony pas rozciągający się za wybrzeżem Prowincji Przylądkowej Wschodniej. Na stronie turystycznej prowincji figuruje on jako jeden z kultowych szlaków turystycznych regionu.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Szlak Annapurna Circuit",
+		"summary": "Klasyczna himalajska wyprawa wokół masywu Annapurna przez przełęcz Thorong La, z Besisahar do Nayapul.",
+		"html": "<p>Trasa przebiega przez różne strefy klimatyczne – od subtropikalnych dolin po wysokogórską pustynię Manang i przełęcz Thorong La na wysokości 5 400 m.</p>\n<p>Nepalska Rada Turystyki podaje, że wędrówka trwa trzy tygodnie lub dłużej, i zaleca okres od marca do maja oraz od września do listopada.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Szlak Appalachów",
+		"summary": "Najsłynniejszy szlak długodystansowy w Stanach Zjednoczonych biegnie na odcinku około 2 200 mil wzdłuż grzbietów Appalachów, od góry Springer w stanie Georgia do góry Katahdin w stanie Maine, przecinając 14 stanów.",
+		"html": "<p>Szlak Appalachów jest zarządzany przez organizację Appalachian Trail Conservancy oraz Służbę Parków Narodowych. Większość osób pokonujących szlak w całości wyrusza z Georgii na północ między końcem lutego a początkiem kwietnia, a pokonanie trasy zajmuje im około sześciu miesięcy.</p>\n<p>Według danych ATC w 2026 r. długość szlaku wynosiła 2 197,9 mil, czyli około 3 537 km; długość ta ulega niewielkim zmianom w miarę zmiany przebiegu trasy.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Szlak Bibbulmun",
+		"summary": "Długodystansowy szlak o długości około 1 000 km, biegnący przez lasy i wzdłuż wybrzeża południowo-zachodniej części Australii Zachodniej, między Kalamundą w pobliżu Perth a Albany.",
+		"html": "<p>Szlak jest oznakowany żółtym trójkątem z wizerunkiem tęczowego węża, a schroniska znajdują się w odległości mniej więcej jednego dnia marszu od siebie. Wędrowcy mogą poruszać się w dowolnym kierunku.</p>\n<p>Fundacja Bibbulmun Track podaje, że przejście trasy od początku do końca zajmuje około sześciu do ośmiu tygodni i zaleca wybieranie się na wędrówkę w chłodniejszych miesiącach, od kwietnia do początku listopada.</p>"
+	},
+	"bruce-trail": {
+		"title": "Szlak Bruce’a",
+		"summary": "Najstarszy i najdłuższy oznakowany szlak turystyczny w Kanadzie biegnie wzdłuż skarpy Niagara na odcinku ponad 900 km, od Niagary do Tobermory na Półwyspie Bruce’a.",
+		"html": "<p>Organizacja Bruce Trail Conservancy opisuje główny szlak o długości ponad 900 km oraz około 400 km szlaków pobocznych, które łącznie tworzą trasę o długości 1 300 km. Szlak przebiega wzdłuż klifów, jaskiń, lasów i małych miasteczek między jeziorem Ontario a zatoką Georgian Bay.</p>\n<p>Organizacja ta szacuje, że pokonanie głównego szlaku od początku do końca zajmuje około 30 dni.</p>"
+	},
+	"caminho-portugues": {
+		"title": "Droga Portugalska",
+		"summary": "Szlak pielgrzymkowy z Lizbony przez Coimbrę i Porto do katedry w Santiago de Compostela.",
+		"html": "<p>Od średniowiecza pielgrzymi wędrują na północ z Lizbony do Santiago. Większość z nich wyrusza z Porto, położonego nieco ponad 240 km od Santiago; cała trasa z Lizbony wynosi około 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "Nadmorska trasa pielgrzymkowa biegnąca od baskijskiego miasta granicznego Irún wzdłuż Zatoki Biskajskiej, przez Kantabrię, Asturię i Galicję, aż do Santiago.",
+		"html": "<p>Szlak Północny biegnie wzdłuż wybrzeża Kantabrii, zamieniając otwarte równiny Mesety na plaże, klify, rybackie miasteczka oraz krótkie, strome podjazdy między dolinami rzek. We wczesnym średniowieczu korzystali z niego pielgrzymi, którzy chcieli ominąć kontrolowane przez muzułmanów tereny na południu, a obecnie jest on spokojniejszy niż Camino Francés.</p>\n<p>Hiszpańska izba turystyczna podaje długość około 825 km (800 km w sekcji FAQ) i około 35 etapów. W Galicji oficjalna strona internetowa poświęcona pielgrzymom opisuje ostatni odcinek trasy z Ribadeo do Santiago.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "Szlak Fisterra–Muxía",
+		"summary": "Galicyjski odcinek Szlaku św. Jakuba, biegnący od katedry do przylądka Fisterra nad Atlantykiem oraz do miasta-sanktuarium Muxía.",
+		"html": "<p>Z Santiago szlak biegnie na zachód w kierunku Costa da Morte, a jego dwoma końcowymi punktami docelowymi są Fisterra (przylądek, który niegdyś uważano za koniec znanego świata) i Muxía. Niektórzy pielgrzymi idą najpierw do Fisterry, a potem do Muxíi, albo odwrotnie.</p>\n<p>Galicyjska strona internetowa poświęcona pielgrzymkom podaje, że długość trasy Fisterra–Muxía wynosi 118,8 km, a trasy Muxía–Fisterra – 119,9 km.</p>"
+	},
+	"camino-frances": {
+		"title": "Camino Francés",
+		"summary": "Najpopularniejsza z dróg do Santiago przebiega przez Pireneje w Roncesvalles, a następnie biegnie na zachód przez północną Hiszpanię, przez Pampelunę, Burgos i León, aż do grobu św. Jakuba.",
+		"html": "<p>Pielgrzymi przemierzają tę trasę od średniowiecza, a miasta położone wzdłuż niej wciąż noszą ślady tego ruchu: szpitale, mosty, klasztory i kościoły zbudowane z myślą o podróżnych. Wielu wędrowców rozpoczyna swoją wędrówkę w Saint-Jean-Pied-de-Port, pierwszego dnia pokonuje Pireneje, a następnie wkracza na rozległy płaskowyż Meseta, leżący przed zielonymi wzgórzami Galicji.</p>\n<p>Camino Francés jest częścią wpisanej na listę UNESCO Trasy do Santiago de Compostela. Hiszpańska izba turystyczna podaje długość około 930 km i z grubsza 32 etapy, licząc od Somportu lub Roncesvalles, i zaleca wędrówkę wiosną oraz we wrześniu i październiku.</p>"
+	},
+	"camino-ingles": {
+		"title": "Camino Inglés",
+		"summary": "Krótka galicyjska trasa pielgrzymkowa prowadząca z portu morskiego w Ferrol do Santiago, z której w przeszłości korzystali pielgrzymi przybywający drogą morską z północnej Europy.",
+		"html": "<p>Nazwa „English Way” pochodzi od pielgrzymów z Wysp Brytyjskich i północnej Europy, którzy przybywali do Ferrol i A Coruña. Oficjalna strona galicyjskiego szlaku pielgrzymkowego podaje, że odległość z Ferrol wynosi 112,4 km, a z A Coruña – 72,8 km. Aby otrzymać certyfikat, pielgrzymi muszą pokonać pieszo co najmniej 100 km, co sprawia, że trasa z Ferrol jest najczęściej wybierana.</p>\n<p>Jest ona krótsza niż inne galicyjskie trasy i stanowi praktyczny wybór dla osób, które mają do dyspozycji tylko tydzień lub mniej. Ponieważ trasa rozpoczynająca się w Ferrol ma ponad 100 km, pielgrzym może mimo to uzyskać certyfikat w Santiago.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Camino Primitivo",
+		"summary": "Najstarsza trasa szlaku św. Jakuba, która podobno przebiega śladami podróży króla Alfonsa II z IX wieku, prowadzi z Oviedo przez Góry Kantabryjskie do Santiago.",
+		"html": "<p>Szlak Primitivo to krótka, pagórkowata trasa przebiegająca przez Asturię i Galicję, przekraczająca przełęcz na trasie Hospitales i łącząca się z Camino Francés w Melide na ostatnich dniach wędrówki. Jest spokojniejsza niż Camino Francés i charakteryzuje się stromymi podjazdami.</p>\n<p>Hiszpańska organizacja turystyczna podaje długość około 325 km i około 14 etapów; galicyjska strona internetowa poświęcona pielgrzymkom opisuje oddzielnie odcinek przebiegający przez Galicję.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Szlak „Cape to Cape”",
+		"summary": "Trasa spacerowa wzdłuż wybrzeża o długości około 135 km, biegnąca wzdłuż klifów i plaż między latarniami morskimi na przylądku Naturaliste a przylądkiem Leeuwin w południowo-zachodniej części Australii Zachodniej.",
+		"html": "<p>Szlak prowadzi obok jaskiń wapiennych, miejsc do surfowania, polnych kwiatów i punktów obserwacyjnych wielorybów. Organizacja Tourism Western Australia podaje, że pokonanie trasy zajmuje od pięciu do siedmiu dni, a sezon kwitnienia polnych kwiatów przypada na wiosnę; wieloryby można obserwować od września do grudnia.</p>\n<p>Stanowa strona turystyczna zaleca przeznaczyć na tę trasę od pięciu do siedmiu dni i wspomina o wiosennych kwiatach polnych na cyplach. Wieloryby przepływają obok przylądków mniej więcej od września do grudnia.</p>"
+	},
+	"carian-trail": {
+		"title": "Szlak Carian",
+		"summary": "Długi szlak prowadzący przez starożytną Karię w południowo-zachodniej Turcji, od wybrzeża w pobliżu Marmaris do ruin położonych w głębi lądu w okolicy Alindy.",
+		"html": "<p>Szlak Karyjski łączy półwyspy Bozburun i Datça, zatokę Gökova oraz głębię Karii, przebiegając obok starożytnych ruin, dawnych dróg karawanowych i ścieżek dla mułów.</p>\n<p>Na stronie internetowej szlaku podano długość około 850 km podzieloną na cztery główne odcinki; stowarzyszenie „Szlaki Kultury” podaje długość 800 km.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "Szlak Chilkoot",
+		"summary": "Historyczny szlak z czasów gorączki złota, biegnący z Dyea na Alasce przez przełęcz Chilkoot do jeziora Bennett w Kolumbii Brytyjskiej, o długości 33 mil.",
+		"html": "<p>W latach 1897–98 poszukiwacze złota przewozili przez przełęcz tony zapasów w drodze do Klondike. Obecnie szlak jest zarządzany wspólnie przez Służbę Parków Narodowych Stanów Zjednoczonych (NPS) oraz Parks Canada i jest otwarty w sezonie letnim.</p>\n<p>NPS podaje długość 33 mil.</p>"
+	},
+	"colorado-trail": {
+		"title": "Szlak Kolorado",
+		"summary": "Szlak o długości 567 mil biegnący przez Góry Skaliste w stanie Kolorado, od obrzeży Denver w Waterton Canyon do Durango, w większości na wysokości powyżej 3 000 m.",
+		"html": "<p>Szlak przebiega przez osiem pasm górskich i sześć obszarów dzikiej przyrody, z opcjonalnymi trasami Collegiate West i East. Fundacja Colorado Trail podaje, że szlak biegnie od Denver do Durango.</p>\n<p>Przejście całego szlaku zajmuje zazwyczaj od czterech do sześciu tygodni.</p>"
+	},
+	"e1": {
+		"title": "E1 – europejski szlak długodystansowy",
+		"summary": "Europejski szlak długodystansowy biegnący z północy na południe, od Nordkapp w Norwegii przez Skandynawię, Danię, Niemcy i Szwajcarię aż do Capo Passero na Sycylii.",
+		"html": "<p>Szlak E1 łączy krajowe i regionalne trasy pod jednym oznakowaniem. W latach 2010. jego południowy odcinek został przedłużony przez Włochy aż do Sycylii, a niektóre fragmenty włoskiego odcinka są nadal oznakowywane.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Szlak turystyczny w kanionie rzeki Fish",
+		"summary": "90-kilometrowa wędrówka przez kanion rzeki Fish w południowej Namibii, z Hobas do Ai-Ais.",
+		"html": "<p>Trasa biegnie dnem kanionu i prowadzi przez zakręty rzeki, pola piaskowe i głazowe.</p>\n<p>Namibia Wildlife Resorts podaje, że szlak zaczyna się w Hobas i ma długość 90 km.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Szlak Rybaków",
+		"summary": "Oznakowany szlak nadmorski na południowo-zachodnim krańcu Portugalii, biegnący od Porto Covo w regionie Alentejo do Lagos w regionie Algarve, wzdłuż klifów, wydm i ścieżek rybackich.",
+		"html": "<p>Szlak biegnie starymi ścieżkami rybackimi przez piaski i klify w Parku Przyrodniczym Południowo-Zachodniego Alentejo i Wybrzeża Vicentine. Jest podzielony na 13 jednodniowych etapów, dzięki czemu można go pokonywać, zatrzymując się w hotelach lub pensjonatach zamiast na kempingach.</p>\n<p>Stowarzyszenie Rota Vicentina podaje, że szlak najlepiej pokonywać w okresie od września do czerwca, unikając najgorętszych miesięcy letnich.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "Hiszpańska strona trasy przez Pireneje – długi górski szlak prowadzący od Cabo de Higuer nad Atlantykiem do Cap de Creus nad Morzem Śródziemnym.",
+		"html": "<p>Szlak GR11 biegnie wzdłuż południowych zboczy Pirenejów przez Kraj Basków, Nawarrę, Aragonię i Katalonię, kilkakrotnie przekraczając główny łańcuch górski i przebiegając w pobliżu granicy z Francją. Hiszpańska federacja alpinistyczna podzieliła go na 46 etapów oraz prolog.</p>\n<p>Federacja podaje, że trasa ma ponad 800 km długości. Zazwyczaj pokonuje się ją odcinkami; pełne przejście zajmuje znacznie ponad miesiąc ze względu na ciągłe podejścia między dolinami.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "GR20 to wymagający szlak wysokogórski, który przecina Korsykę od Calenzany na północnym zachodzie do Conca na południowym wschodzie, biegnąc wzdłuż granitowego grzbietu wyspy.",
+		"html": "<p>Szlak biegnie wzdłuż centralnego grzbietu Korsyki, a na trasie znajdują się odcinki wymagające wspinaczki po skałach, łańcuchy na stromych fragmentach oraz schroniska zarządzane przez park regionalny. Ze względu na trudny teren i zmienne warunki pogodowe szlak ten jest często opisywany jako jedna z najtrudniejszych długodystansowych tras w Europie, mimo że poszczególne etapy są krótkie.</p>\n<p>Oficjalna strona turystyczna Korsyki podaje, że trasa ma 180 km i pokonuje się ją w ciągu 16 dni, po około siedem godzin dziennie, a warunki są dobre od czerwca do połowy października. Trasa dzieli się na trudniejszą północną część i nieco łagodniejszą południową.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Szlak Great Ocean Walk",
+		"summary": "Wycieczka wzdłuż wybrzeża stanu Wiktoria, z Apollo Bay do Dwunastu Apostołów, obejmująca ponad 100 km plaż, klifów i lasów deszczowych; zazwyczaj pokonuje się ją w ciągu ośmiu dni.",
+		"html": "<p>Szlak Great Ocean Walk biegnie wzdłuż wybrzeża Parku Narodowego Great Otway i Parku Narodowego Port Campbell i zazwyczaj pokonuje się go ze wschodu na zachód. Organizatorzy podają, że trasa ma „ponad 100 km” i zajmuje osiem dni.</p>\n<p>Wędrowcy zazwyczaj nocują na kempingach lub w schroniskach położonych wzdłuż trasy, a wędrówkę kończą w pobliżu Dwunastu Apostołów. Trasę tę najczęściej pokonuje się ze wschodu na zachód, zgodnie z zaleceniem władz.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "Szlak Muru Hadriana",
+		"summary": "Szlak krajowy biegnący wzdłuż rzymskiej granicy między Wallsend nad rzeką Tyne a Bowness-on-Solway, prowadzący obok fortów, zamków milowych i urwisk Whin Sill.",
+		"html": "<p>Trasa przebiega przez północną Anglię z jednego wybrzeża na drugie, głównie wzdłuż lub w pobliżu linii muru z II wieku. Środkowy odcinek, prowadzący przez urwiska Whin Sill, oferuje najlepiej zachowane pozostałości, a fortece takie jak Housesteads i Vindolanda znajdują się w niewielkiej odległości od szlaku.</p>\n<p>Organizacja National Trails podaje długość trasy wynoszącą 84 mile i zaleca doświadczonym wędrowcom pokonanie jej w ciągu sześciu do siedmiu dni, wskazując okres od maja do października jako najlepszy sezon. Na stronie tej organizacji w opisie szlaku wspomniano również o Carlisle, jednak ścieżka i relacja w OSM kończą się w Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Szlak Heysena",
+		"summary": "Szlak „Long Walk” w Australii Południowej biegnie na odcinku około 1 200 km od Cape Jervis przez Półwysep Fleurieu, region Barossa i pasmo górskie Flinders Ranges aż do wąwozu Parachilna.",
+		"html": "<p>Szlak Heysen Trail jest budowany i utrzymywany przez stowarzyszenie „Friends of the Heysen Trail” i przebiega przez tereny rolnicze, winnice oraz pasmo górskie Flinders Ranges. W sezonie zagrożenia pożarowego szlak jest zamknięty.</p>\n<p>Stowarzyszenie podaje, że szlak ma długość 1 200 km, a jego pokonanie zajmuje około 60 dni.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Szlak Hongkongu",
+		"summary": "Trasa o długości 50 km biegnąca przez wyspę Hongkong od szczytu Victoria Peak do zatoki Big Wave Bay, otwarta w 1985 roku i podzielona na 8 odcinków.",
+		"html": "<p>Szlak Hongkongu jest jednym z czterech szlaków długodystansowych zarządzanych przez Departament Rolnictwa, Rybołówstwa i Ochrony Przyrody i przebiega przez pięć parków krajobrazowych. Podzielony jest na 8 odcinków.</p>\n<p>Osiem odcinków można połączyć w jedną długą całodniową wędrówkę lub krótsze trasy, a szlak rozpoczyna się w najbardziej znanym punkcie widokowym w mieście. Został otwarty w kwietniu 1985 roku.</p>"
+	},
+	"inca-trail": {
+		"title": "Szlak Inków do Machu Picchu",
+		"summary": "Klasyczna wyprawa szlakiem Inków przez Andy do Machu Picchu – czterodniowa wędrówka, której końcowym punktem jest Brama Słońca i ruiny.",
+		"html": "<p>Szlak biegnie śladami inkaskich ścieżek i schodów przez las mglisty, mijając ruiny takie jak Wiñay Wayna, aż do Machu Picchu. Wstęp jest ograniczony ze względu na konieczność posiadania zezwolenia.</p>\n<p>Relacja w OSM podaje długość 38 km oraz operatora z peruwiańskiego Ministerstwa Kultury.</p>"
+	},
+	"jesus-trail": {
+		"title": "Szlak Jezusa",
+		"summary": "Szlak pielgrzymkowy i turystyczny o długości około 65 km w Galilei, prowadzący z Nazaretu do Kafarnaum nad Jeziorem Galilejskim.",
+		"html": "<p>Szlak Jezusa przebiega trasami związanymi z działalnością Jezusa, prowadząc przez Kanę, Rogi Hattin i górę Arbel. Stanowi połączenie pielgrzymki chrześcijańskiej i wędrówki na łonie natury, a pokonanie go zajmuje zazwyczaj od trzech do czterech dni.</p>\n<p>Na stronie internetowej szlaku podano długość 65 km.</p>"
+	},
+	"john-muir-trail": {
+		"title": "Szlak Johna Muira",
+		"summary": "Szlak wysokogórski w Sierra Nevada o długości około 211 mil, prowadzący z Doliny Yosemite przez przełęcze położone powyżej 3 500 m aż do szczytu Mount Whitney.",
+		"html": "<p>Szlak Johna Muira biegnie grzbietem gór Sierra Nevada przez parki narodowe Yosemite, Kings Canyon i Sequoia. Służba Parków Narodowych podaje, że ma on długość 211 mil i wymaga uzyskania zezwoleń.</p>\n<p>Większość turystów potrzebuje na pokonanie trasy od dwóch do trzech tygodni i zabiera ze sobą zapasy żywności na długie odcinki, na których nie ma możliwości uzupełnienia zapasów.</p>"
+	},
+	"jordan-trail": {
+		"title": "Szlak Jordana",
+		"summary": "Szlak o długości 675 km, biegnący od Umm Qais na północy Jordanii przez Dana i Petrę do Akaby nad Morzem Czerwonym; pokonuje się go zazwyczaj w około 35 dni.",
+		"html": "<p>Szlak Jordan Trail przebiega przez Jordanię od rzymskich ruin w Umm Qais, przez góry Rowu Jordanu, wyżyny nad Morzem Martwym, Dana, Petrę i Wadi Rum, aż do Morza Czerwonego. Łączy on lokalne wioski ze społecznościami beduińskimi.</p>\n<p>Stowarzyszenie Jordan Trail podaje, że trasa ma długość 675 km i pokonanie jej w całości zajmuje około 35 dni.</p>"
+	},
+	"juliana-trail": {
+		"title": "Szlak Juliany",
+		"summary": "Okrężna trasa długodystansowa wokół Alp Julijskich w Słowenii, składająca się z 16 etapów, które omijają główne szczyty i biegną wzdłuż rzek Soča i Sava.",
+		"html": "<p>Szlak Juliana łączy doliny, przełęcze, lasy i wioski w okolicy Parku Narodowego Triglav, nie wymagając przy tym wspinaczki na szczyty. Jest on oznakowany i podzielony na 16 etapów, z których każdy ma około 17,5 km.</p>\n<p>Strona turystyczna Doliny Sočy podaje długość głównego szlaku obwodowego na 270 km, z opcjonalnymi przedłużeniami o długości 42 km i 60 km, a sezon trwa od końca marca do końca października.</p>"
+	},
+	"kepler-track": {
+		"title": "Szlak Keplera",
+		"summary": "Okrężna trasa Great Walk o długości 60 km, która rozpoczyna się w pobliżu Te Anau, prowadzi w górę ponad granicę zalesienia wzdłuż grzbietu Gór Kepler, a następnie wraca wzdłuż jeziora Te Anau i rzeki Waiau.",
+		"html": "<p>Szlak Kepler Track to trzy- lub czterodniowa trasa pętlowa z trzema schroniskami, widokami na góry powyżej granicy lasu oraz lasami przypominającymi fiordy.</p>\n<p>Strona porównawcza Departamentu Ochrony Środowiska podaje długość trasy wynoszącą 60 km oraz czas przejścia wynoszący od trzech do czterech dni. Sezon na trasy Great Walks rozpoczyna się pod koniec października.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "Trasa wokół półwyspu Iveragh w hrabstwie Kerry, rozpoczynająca się i kończąca w Killarney, prowadząca przez góry, torfowiska i nadmorskie wioski, takie jak Cahersiveen i Sneem.",
+		"html": "<p>Szlak Kerry Way łączy w sobie spokojne drogi, stare ścieżki i górskie szlaki biegnące między pasmem Macgillycuddy’s Reeks a wybrzeżem Atlantyku. Około jedna trzecia trasy przebiega lokalnymi drogami.</p>\n<p>Krajowy rejestr szlaków Sport Ireland podaje długość 232,1 km i czas pokonania wynoszący dziewięć dni; w bazie OSM długość trasy wynosi 214 km, więc dokładne dane różnią się w zależności od wybranego wariantu trasy w hrabstwie Kerry.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimandżaro – trasa Machame",
+		"summary": "Jedna z głównych tras prowadzących na Kilimandżaro, rozpoczynająca się przy bramie Machame i obejmująca noclegi w obozach namiotowych.",
+		"html": "<p>Trasa Machame jest jedną z tras na Kilimandżaro i obejmuje obozy namiotowe prowadzone przez licencjonowanych operatorów. Tanzania National Parks wymienia Machame jako jedną z głównych bram wejściowych, a zejście odbywa się przez bramę Mweka.</p>\n<p>Tanzania National Parks zaznacza, że na trasie Marangu korzysta się z schronisk, podczas gdy na pozostałych trasach, w tym na trasie Machame, korzysta się z obozów namiotowych. Zejście odbywa się przez bramę Mweka.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo – Kohechi",
+		"summary": "Trudna górska trasa pielgrzymkowa o długości około 72 km, łącząca buddyjskie centrum Kōyasan ze świątynią Kumano Hongu Taisha na półwyspie Kii w Japonii.",
+		"html": "<p>Szlak Kohechi przebiega przez trzy przełęcze położone powyżej 1 000 m n.p.m. i łączy świętą górę Kōyasan ze świątyniami Kumano, co czyni go najbardziej stromą i najspokojniejszą trasą spośród szlaków Kumano Kodo. Na stronie turystycznej opisano go jako trasę prowadzącą przez odległe wioski i stare kamienne ścieżki.</p>\n<p>Źródłem, z którego korzystamy, jest artykuł turystyczny podający długość trasy wynoszącą 72 km; nie podaje on jednak liczby dni ani pory roku.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo – Nakahechi",
+		"summary": "Główna trasa pielgrzymkowa Kumano Kodo na japońskim półwyspie Kii, prowadząca z Takijiri do świątyni Kumano Hongu Taisha, którą zazwyczaj pokonuje się w ciągu dwóch do czterech dni.",
+		"html": "<p>Nakahechi była główną drogą, którą cesarze i zwykli ludzie udawali się do trzech świątyń Kumano; przebiegała przez zalesione przełęcze, przy których znajdowały się małe świątynie postojowe (oji). Trasa ta stanowi część wpisanego na listę UNESCO kompleksu „Święte miejsca i szlaki pielgrzymkowe w paśmie górskim Kii”.</p>\n<p>Na stronie stowarzyszenia turystycznego w Tanabe, którą otworzyliśmy, nie podano długości trasy ani sezonu; informacja o długości 36 km pochodzi z tagu OSM.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "Słynny szwedzki szlak arktyczny, prowadzący od schroniska do schroniska, rozciąga się na długości około 450 km od Abisko, położonego powyżej koła podbiegunowego, do Hemavan na południu, przebiegając przez góry i doliny Laponii.",
+		"html": "<p>Szlak Kungsleden jest zarządzany przez Szwedzkie Stowarzyszenie Turystyczne, które dba o schroniska, mosty i przewozy łodzią. Najbardziej znany jest jego północny odcinek, biegnący od Abisko przez przełęcz Tjäktja do Nikkaluokta, gdzie wędrowcy przemierzają otwartą tundrę i alpejskie doliny u podnóża najwyższych szwedzkich gór.</p>\n<p>Strona STF podaje długość trasy Abisko–Hemavan jako 450 km, podczas gdy suma długości poszczególnych odcinków jest większa, a OSM podaje 440 km, więc dokładna liczba zależy od tego, jak liczy się trasy poboczne i skróty łodzią.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Szlak Larapinta",
+		"summary": "Szlak pustynny w paśmie West MacDonnell Ranges w środkowej Australii, prowadzący od stacji telegraficznej w Alice Springs do szczytu góry Mount Sonder, podzielony na dwanaście odcinków.",
+		"html": "<p>Szlak Larapinta biegnie grzbietami pasma West MacDonnell Ranges, prowadząc przez wąwozy i wodopoje. Na stronie rządowej podano, że ma on ponad 230 km długości i jest podzielony na 12 odcinków, z których każdy zajmuje od jednego do dwóch dni.</p>\n<p>Inne źródła podają długość 223 km; szlak ten pokonuje się zazwyczaj w chłodniejszych miesiącach.</p>"
+	},
+	"laugavegur": {
+		"title": "Szlak Laugavegur",
+		"summary": "Najpopularniejsza trasa trekkingowa na Islandii przebiega przez południowe wyżyny i pokonuje się ją w około cztery dni – od ryolitowych gorących źródeł w Landmannalaugar do zielonych dolin Þórsmörk.",
+		"html": "<p>Szlak prowadzi obok dymiących kominów, pól czarnego obsydianu, śnieżnych płaskowyżów i lodowcowych rzek, by zakończyć się w dolinie porośniętej zaroślami brzozowymi, położonej pomiędzy trzema lodowcami. Schroniska wzdłuż trasy są prowadzone przez Islandzkie Stowarzyszenie Turystyczne, a szlak jest przechodni wyłącznie latem.</p>\n<p>Na stronie stowarzyszenia podano długość trasy wynoszącą od 54 do 56 km w zależności od tabeli odcinków oraz czas przejścia wynoszący cztery dni, a szlak jest otwarty od około 25 czerwca do 15 września.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "Szlak górski w Libanie",
+		"summary": "Szlak o długości 470 km biegnący wzdłuż libańskich gór, od Andaket na północy do Marjayoun na południu, przebiegający przez ponad 75 miast i wsi.",
+		"html": "<p>Stowarzyszenie Lebanon Mountain Trail podaje, że szlak przebiega na wysokości od 600 do 2000 m n.p.m. i jest oznakowany białymi oraz fioletowymi znakami. Prowadzi przez lasy cedrowe, klasztory i wioski, a wzdłuż trasy znajdują się pensjonaty.</p>\n<p>Lokalne pensjonaty i projekty społeczne położone wzdłuż trasy stanowią główny cel szlaku od momentu jego utworzenia. Wędrowcy podążają za białymi i fioletowymi znakami przez górskie wioski z północy na południe.</p>"
+	},
+	"long-trail": {
+		"title": "Długi Szlak",
+		"summary": "Najstarszy w Ameryce szlak turystyczny do długodystansowych wędrówek biegnie wzdłuż Gór Zielonych na odcinku 272 mil, od granicy stanu Massachusetts aż do granicy z Kanadą.",
+		"html": "<p>Szlak Long Trail został wytyczony na początku XX wieku przez klub Green Mountain Club, a później stał się inspiracją dla szlaku Appalachian Trail, z którym pokrywa się na pierwszych 100 milach.</p>\n<p>Klub podaje, że szlak biegnie przez grzbiet górski w stanie Vermont na odcinku 272 mil, a pokonanie go w całości zajmuje kilka tygodni.</p>"
+	},
+	"lycian-way": {
+		"title": "Szlak Licyjski",
+		"summary": "Oznakowany szlak turystyczny wzdłuż wybrzeża starożytnej Licyi w południowej Turcji, biegnący od Ölüdeniz w pobliżu Fethiye do Geyikbayırı w pobliżu Antalyi.",
+		"html": "<p>Szlak ten, wytyczony i oznakowany w 1999 roku, łączy dawne ścieżki dla mułów i rzymskie drogi, prowadząc obok grobowców i teatrów miast licyjskich, a długie odcinki trasy biegną wysoko nad morzem.</p>"
+	},
+	"maclehose-trail": {
+		"title": "Szlak MacLehose’a",
+		"summary": "Najdłuższy szlak turystyczny w Hongkongu, liczący około 100 km i podzielony na 10 odcinków, biegnący od East Dam w Sai Kung do Tuen Mun.",
+		"html": "<p>Szlak MacLehose przebiega przez Nowe Terytoria, prowadząc przez parki krajobrazowe, plaże i góry, mijając wybrzeże Sai Kung, Sha Tin i Tai Mo Shan. Jest to szlak zarządzany przez rząd oraz trasa Oxfam Trailwalker.</p>\n<p>Hong Kong Tourism Board podaje, że szlak ma około 100 km i dzieli się na 10 odcinków.</p>"
+	},
+	"milford-track": {
+		"title": "Szlak Milford Track",
+		"summary": "Najsłynniejszy szlak turystyczny w Nowej Zelandii przebiega przez region Fiordland w ciągu czterech dni – od przystani Glade Wharf nad jeziorem Te Anau, przez przełęcz McKinnon, aż do punktu Sandfly Point nad zatoką Milford Sound.",
+		"html": "<p>Szlak Milford Track biegnie wzdłuż dolin Clinton i Arthur, prowadzi w górę przez przełęcz Mackinnon Pass, a następnie schodzi wzdłuż rzeki Arthur, mijając wodospad Sutherland Falls – jeden z najwyższych wodospadów w Nowej Zelandii. Wędrowcy muszą rezerwować miejsca w schroniskach z wyprzedzeniem i poruszać się wyłącznie w jednym kierunku.</p>\n<p>Departament Ochrony Środowiska podaje, że trasa ma długość 53,5 km i zajmuje trzy noce oraz cztery dni, a sezon na szlaki Great Walks trwa od 1 listopada do 30 kwietnia.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "Stara droga między Kioto a Edo (Tokio), o długości około 534 km i obejmująca 69 miast pocztowych, częściowo zachowana jako szlak turystyczny w Magome i Tsumago.",
+		"html": "<p>Nakasendo była jedną z pięciu dróg okresu Edo i łączyła Kioto z Edo przez góry. Odcinki takie jak trasa Magome–Tsumago w dolinie Kiso są dobrze zachowane.</p>\n<p>Japońska Narodowa Organizacja Turystyczna podaje, że trasa ma około 534 km długości i obejmuje 69 miast pocztowych.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Szlak turystyczny Naukluft",
+		"summary": "Trasa okrężna w górach Naukluft w Namibii, dostępna w wersji 4-dniowej i 8-dniowej.",
+		"html": "<p>Szlak Naukluft to trasa okrężna w górach Naukluft. Namibia Wildlife Resorts oferuje wersje 4-dniową i 8-dniową.</p>\n<p>Namibia Wildlife Resorts organizuje wyprawy na ten szlak ze swojego obozu w Naukluft. Dłuższa, 8-dniowa trasa prowadzi przez wysokie płaskowyże, natomiast krótsza wersja jest przeznaczona dla turystów dysponujących mniejszą ilością czasu.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Szlak Offa's Dyke",
+		"summary": "Szlak krajowy biegnący wzdłuż granicy między Anglią a Walią, który przebiega wzdłuż linii wału z VIII wieku, od ujścia rzeki Severn w pobliżu Chepstow aż do północnego wybrzeża w Prestatyn.",
+		"html": "<p>Szlak przebiega fragmentami wału przypisywanego królowi Offie z Mercji i łączy dolinę rzeki Wye, Góry Czarne, wzgórza Shropshire oraz pasmo Clwydian. Wielokrotnie przekracza granicę, więc wędrowcy niemal codziennie przemieszczają się między angielskimi a walijskimi wioskami.</p>\n<p>Strona internetowa National Trail podaje długość trasy wynoszącą 177 mil, informuje, że trasę można pokonywać przez cały rok, ale najczęściej robi się to między kwietniem a październikiem, oraz sugeruje, że na jej pokonanie należy przeznaczyć około dwóch tygodni lub więcej. Punktem wyjścia jest miasto Chepstow, położone w pobliżu klifów Sedbury.</p>"
+	},
+	"otter-trail": {
+		"title": "Szlak Wydry",
+		"summary": "Pierwszy i najbardziej znany szlak turystyczny w stylu „slackpacking” w RPA biegnie wzdłuż wybrzeża Tsitsikamma na odcinku 45 km między Storms River Mouth a Nature’s Valley i pokonuje się go w ciągu pięciu dni.",
+		"html": "<p>Szlak Otter Trail to dostępny wyłącznie po wcześniejszej rezerwacji szlak nadmorski w Parku Narodowym Garden Route, na którym znajdują się schroniska na noclegi oraz przeprawy przez rzeki uzależnione od pływów.</p>\n<p>SANParks opisuje tę trasę jako 45 km do pokonania w ciągu pięciu dni i czterech nocy.</p>"
+	},
+	"overland-track": {
+		"title": "Szlak Overland Track",
+		"summary": "Klasyczna sześciodniowa trasa alpejska na Tasmanii, prowadząca z Ronny Creek przy Cradle Mountain do jeziora St Clair.",
+		"html": "<p>Szlak Overland Track biegnie wzdłuż jezior i równin porośniętych trawą guzikową, a kończy się nad najgłębszym słodkowodnym jeziorem Australii; w sezonie głównym wymagana jest rezerwacja i uiszczenie opłaty.</p>\n<p>Służba Parków i Dzikiej Przyrody podaje, że trasa ma 65 km w jedną stronę i zajmuje sześć dni, a sezon rezerwacji trwa od 1 października do 31 maja.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Szlak Pacific Crest Trail",
+		"summary": "Krajowy szlak turystyczny biegnący wzdłuż pasm górskich w Kalifornii, Oregonie i stanie Waszyngton, od granicy z Meksykiem w miejscowości Campo do parku Manning w Kanadzie, o długości około 4 265 km.",
+		"html": "<p>Szlak PCT przebiega przez pasmo Sierra Nevada i Kaskad, prowadząc przez pustynie, wysokie przełęcze, zaśnieżone tereny i krajobrazy wulkaniczne. Stowarzyszenie Pacific Crest Trail Association podaje, że jego długość wynosi 2 650 mil.</p>\n<p>Przejście całego szlaku zajmuje zazwyczaj około pięciu miesięcy, a planowanie trasy w dużej mierze zależy od warunków śniegowych i zagrożenia pożarowego.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "Szlak „Szczyty Bałkanów”",
+		"summary": "Trasa transgraniczna przez Przeklęte Góry w Albanii, Kosowie i Czarnogórze, łącząca wioski z pensjonatami, takie jak Theth, Valbona, Plav i Peja.",
+		"html": "<p>Szlak powstał po wojnach z lat 90. jako wspólny projekt mający na celu zacieśnienie współpracy między trzema krajami. Trasa przebiega po pasterskich ścieżkach, prowadzi przez przełęcze na wysokości ponad 2 000 m n.p.m. i zakłada noclegi w wiejskich pensjonatach, dzięki czemu wędrowcom nie jest potrzebny namiot.</p>\n<p>Na stronie internetowej projektu podano trasę o długości 192 km podzieloną na 10 etapów (10–12 dni) oraz opisano trasę pętlową; zazwyczaj rozpoczyna się ją w Theth, Plav lub Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Szlak Pennine Way",
+		"summary": "Pierwszy angielski szlak turystyczny „National Trail” biegnie wzdłuż wzgórz Penninów od Edale w Peak District do Kirk Yetholm, tuż za granicą ze Szkocją.",
+		"html": "<p>Trasa przebiega przez wrzosowiska z piaskowca, wapienne doliny oraz wysokie wzgórza Yorkshire Dales i Północnych Penninów, a następnie biegnie wzdłuż Muru Hadriana, po czym wznosi się w kierunku wzgórz Cheviot. Torfowiska i odsłonięte grzbiety sprawiają, że w złych warunkach pogodowych pokonanie tej trasy stanowi wyzwanie nawigacyjne.</p>\n<p>Organizacja National Trails podaje długość trasy wynoszącą 268 mil oraz czas pokonania od sześciu do 22 dni, a jako zalecany okres na wędrówkę wskazuje okres od kwietnia do początku października.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "Szlak grzbietowy przez Las Turyński, biegnący od Hörschel nad rzeką Werra do Blankensteinu nad rzeką Saale, od dawna wykorzystywany jako szlak graniczny.",
+		"html": "<p>Szlak Rennsteig biegnie grzbietem Lasu Turyńskiego i Gór Łupkowych i jest jednym z najstarszych i najbardziej znanych szlaków turystycznych w Niemczech. Jest oznakowany białą literą „R” na zielonym tle.</p>\n<p>Regionalna organizacja turystyczna podaje długość około 170 km, z trasami składającymi się z czterech, sześciu lub ośmiu etapów, a za początek trasy uznaje miejscowość Hörschel, a za koniec – Blankenstein.</p>"
+	},
+	"routeburn-track": {
+		"title": "Szlak Routeburn",
+		"summary": "Wysokoalpejska trasa Great Walk trwająca od dwóch do czterech dni, prowadząca między schroniskiem Routeburn Shelter w pobliżu Glenorchy a punktem The Divide przy drodze do Milford, z przejściem przez przełęcz Harris Saddle.",
+		"html": "<p>Szlak łączy parki narodowe Mount Aspiring i Fiordland, oferując widoki na alpejskie jeziora, las bukowy i dolinę Hollyford. Można go pokonać w obu kierunkach.</p>\n<p>Departament Ochrony Środowiska podaje, że trasa ma długość 32 km i zajmuje od dwóch do czterech dni, a sezon na wędrówki w ramach programu „Great Walk” trwa od 1 listopada do 30 kwietnia.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Środkowy szlak w paśmie Rwenzori",
+		"summary": "Siedmiodniowa trasa po górach Rwenzori w Ugandzie, rozpoczynająca się w Mihunga, z noclegami w schroniskach i widokami na lodowce.",
+		"html": "<p>Szlak Central Circuit to wysokogórska trasa trekkingowa w Parku Narodowym Gór Rwenzori, zarządzana przez Ugandyjską Agencję Ochrony Przyrody (Uganda Wildlife Authority).</p>\n<p>Uganda Wildlife Authority oferuje tę trasę jako siedmiodniową wyprawę z przewodnikami i noclegami w schroniskach. Na stronie podano styczeń, czerwiec i lipiec jako najlepsze miesiące na tę wyprawę.</p>"
+	},
+	"shikoku-henro": {
+		"title": "Pielgrzymka po Shikoku",
+		"summary": "Pielgrzymka po 88 świątyniach na wyspie Shikoku, o długości około 1 200 km, związana z mnichiem Kūkai.",
+		"html": "<p>Szlak Shikoku Henro to najbardziej znana pętla pielgrzymkowa w Japonii, pokonywana zgodnie z ruchem wskazówek zegara, zaczynając od świątyni nr 1 w Ryōzen-ji. Stowarzyszenie pielgrzymów podaje, że trasa ma około 1 200 km. Wielu pielgrzymów pokonuje ją etapami.</p>\n<p>Ponieważ trasa przebiega wzdłuż całego wybrzeża wyspy i przez góry, wielu pielgrzymów pokonuje ją w kilku etapach. Tradycyjnym strojem pielgrzyma jest biała szata i laska, ale obecnie nie są one obowiązkowe dla osób pokonujących tę trasę.</p>"
+	},
+	"south-downs-way": {
+		"title": "Szlak South Downs Way",
+		"summary": "Szlak krajowy biegnący wzdłuż kredowego grzbietu South Downs, od Winchesteru do klifów nadmorskich w Eastbourne.",
+		"html": "<p>Szlak biegnie grzbietem wzgórz South Downs, przez lasy i otwarte kredowe łąki, a kończy się w Beachy Head i przy klifach Seven Sisters.</p>\n<p>Organizacja National Trails podaje, że trasa ma długość 100 mil, a jej pokonanie zajmuje od ośmiu do dziewięciu dni; można ją pokonywać o każdej porze roku, choć największy ruch panuje od maja do września.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "Szlak Wybrzeża Południowo-Zachodniego",
+		"summary": "Najdłuższy brytyjski szlak turystyczny „National Trail” biegnie wzdłuż południowo-zachodniego wybrzeża Anglii od Minehead, przez Kornwalię, aż do Poole, a jego trasa obejmuje ponad 1 000 km klifów, zatoczek i portów.",
+		"html": "<p>Szlak biegnie wzdłuż wybrzeża przez Exmoor, północny Devon i Kornwalię, okrąża Land’s End, a następnie kieruje się z powrotem na wschód wzdłuż Kanału La Manche do hrabstwa Dorset. Na trasie występują liczne krótkie podjazdy i zjazdy przy przekraczaniu ujść rzek oraz na cyplach, przez co tempo marszu jest wolniejsze, niż sugerowałaby to sama odległość.</p>\n<p>Organizacja National Trails podaje długość 630 mil i szacuje, że pokonanie trasy zajmuje około 30 dni marszu dla szybkiego wędrowca lub siedem do ośmiu tygodni w spokojnym tempie; zalecane są wiosna i późne lato.</p>"
+	},
+	"st-olavsleden": {
+		"title": "Szlak św. Olafa",
+		"summary": "Szlak pielgrzymkowy z Selånger na szwedzkim wybrzeżu Bałtyku przez góry skandynawskie do katedry w Nidaros, przebiegający trasą przypisywaną królowi Olafowi z 1030 roku.",
+		"html": "<p>Trasa przebiega przez Szwecję i Norwegię, przez lasy, nad jeziorami i w górach, a po drodze mija się pola uprawne i miasteczka. W pobliżu Munkeby w Norwegii rozgałęzia się na trasę zewnętrzną wzdłuż fiordu Trondheim oraz trasę wewnętrzną prowadzącą przez lasy.</p>\n<p>Norweskie centrum pielgrzymkowe podaje długość trasy wynoszącą 580 km, 29 etapów dziennych (30–32 dni z uwzględnieniem dni odpoczynku) i zaleca pokonywanie trasy w okresie od 1 czerwca do 1 września.</p>"
+	},
+	"st-paul-trail": {
+		"title": "Szlak św. Pawła",
+		"summary": "Oznakowana trasa prowadząca z Perge koło Antalyi na północ przez góry Taurus do Yalvaç, starożytnej Antiochii w Pisidii.",
+		"html": "<p>Szlak przebiega częściowo trasą, którą, jak się uważa, apostoł Paweł pokonał podczas swojej pierwszej podróży przez Azję Mniejszą, wznosząc się od wybrzeża Morza Śródziemnego w kierunku jezior położonych w głębi lądu.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "Krajowy szlak Nowej Zelandii rozciąga się na długości około 3 000 km od przylądka Reinga na dalekiej północy do Bluff na południowym krańcu kraju.",
+		"html": "<p>Szlak przebiega przez plaże, lasy, krajobrazy wulkaniczne i pasma górskie na obu wyspach, a trasa prowadzi różnymi ścieżkami, drogami oraz przez rzeki i morze.</p>\n<p>Organizacja Trail Trust podaje, że całkowita długość szlaku wynosi 3 000 km. Pokonanie całej trasy zajmuje miesiące.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Północna trasa Tongariro",
+		"summary": "Trzy- lub czterodniowa trasa wulkaniczna wokół gór Ngauruhoe i Tongariro na Wyspie Północnej w Nowej Zelandii.",
+		"html": "<p>Trasa przebiega przez płaskowyż wulkaniczny Tongariro, mijając Czerwony Krater, Jeziora Szmaragdowe i Jezioro Niebieskie.</p>\n<p>DOC podaje, że pełna trasa ma 43 km i zajmuje od trzech do czterech dni; na stronie poświęconej szlakowi opisano obecnie krótszą wersję o długości 35,5 km ze względu na zmianę trasy.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Wyprawa wokół Mont Blanc",
+		"summary": "Trasa wokół masywu Mont Blanc, przebiegająca przez Francję, Włochy i Szwajcarię, której klasyczny początek i koniec znajduje się w Les Houches.",
+		"html": "<p>Trasa przebiega przez szereg wysokich przełęczy między dolinami Chamonix, Courmayeur i Champex, a noclegi odbywają się w schroniskach górskich i wiejskich gospodach położonych wzdłuż trasy.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Szlak Trans Bhutan",
+		"summary": "Odrestaurowany bhutański krajowy szlak pielgrzymkowy i handlowy o długości około 403 km, biegnący od Haa na zachodzie do Trashigang na wschodzie.",
+		"html": "<p>Szlak Trans Bhutan Trail był średniowiecznym szlakiem handlowym i pielgrzymkowym. Został ponownie otwarty w 2022 roku dla pieszych i rowerzystów. Pełna trasa wyznaczona przez organizację zajmuje 36 dni.</p>\n<p>Ponownie otwarta trasa jest zarządzana przez organizację non-profit i ma ustalony, 36-dniowy plan podróży od początku do końca. Krótsze odcinki można pokonywać jako samodzielne wycieczki, rozpoczynające się w głównych miastach.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Szlak Transkaukazki: Górna Swanetia",
+		"summary": "140-kilometrowy odcinek wysokogórski Szlaku Transkaukaskiego przebiegający przez gruzińską Swaneti, od Chuberi w dolinie Nenskra do Ushguli, jednej z najwyżej położonych wsi w Europie.",
+		"html": "<p>Trasa wędrówkowa w Górnej Swanetii prowadzi przez wioski z kamiennymi wieżami obronnymi, przez przełęcze i obok lodowców Wielkiego Kaukazu. Organizatorem trasy jest Stowarzyszenie Transcaucasian Trail, organizacja non-profit zajmująca się budową ciągłego szlaku przez Kaukaz.</p>\n<p>Stowarzyszenie podaje, że trasa ma 140 km i zajmuje 7–9 dni.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Szlak turystyczny Tsitsikamma",
+		"summary": "Sześciodniowy szlak turystyczny prowadzący przez lasy rodzime i fynbos w rezerwacie Tsitsikamma, od Nature’s Valley do Storms River, z schroniskami w każdym miejscu noclegowym.",
+		"html": "<p>Szlak prowadzi przez wąwozy rzeczne i obok ogromnych drzew z gatunku yellowwood; można go również pokonać w krótszych wariantach. Istnieje możliwość skorzystania z usług tragarzy.</p>\n<p>Strona turystyczna prowincji Eastern Cape podaje długość trasy wynoszącą 62,3 km i czas pokonania wynoszący sześć dni.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Vía de la Plata",
+		"summary": "Szlak pielgrzymkowy biegnący z północy na południe, z Sewilli przez Estremadurę i Kastylię; jest to hiszpański Camino, który przebiega wzdłuż starej rzymskiej drogi Via de la Plata.",
+		"html": "<p>Szlak Vía de la Plata biegnie trasą rzymskiej drogi łączącej Méridę z Astorgą. Pielgrzymi z Andaluzji pokonują tę trasę w ciągu około miesiąca, kierując się do Astorgi, gdzie łączy się ona z Camino Francés, lub kontynuują wędrówkę przez Galicję odgałęzieniem Sanabrés.</p>\n<p>Hiszpańska izba turystyczna podaje, że trasa ma długość od 800 do 900 km i składa się z około 32 etapów pieszych (49 dla rowerzystów), a na jej pokonanie zaleca się przeznaczyć co najmniej siedem dni.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Via degli Dei",
+		"summary": "Szlak przez Apeniny, prowadzący z Bolonii do Florencji, który częściowo przebiega rzymskimi i średniowiecznymi drogami i który zazwyczaj pokonuje się w ciągu pięciu do siedmiu dni.",
+		"html": "<p>Szlak Via degli Dei łączy oba miasta, prowadząc przez zalesione grzbiety, stare drogi i górskie wioski, z noclegami w pensjonatach. Nazwa nawiązuje do górskich nazw miejscowych związanych ze starożytnymi bogami, takich jak Monte Adone i Monte Venere.</p>\n<p>Strona stowarzyszenia podaje długość trasy wynoszącą 130 km i czas przejścia od pięciu do siedmiu dni; tag OSM wskazuje 117 km.</p>"
+	},
+	"via-francigena": {
+		"title": "Via Francigena",
+		"summary": "Długa droga pielgrzymkowa między Canterbury a Rzymem, rozciągająca się na południe aż do Santa Maria di Leuca w Apulii, przebiega trasą opisaną przez arcybiskupa Sigerica około roku 990.",
+		"html": "<p>Sigeric udał się do Rzymu, aby odebrać swoje pallium, a w drodze powrotnej spisał 79 przystanków. Lista ta stanowi historyczny zarys trasy Via Francigena, która przebiega przez Anglię, Francję, Szwajcarię i Włochy, a przy przełęczy Wielkiego Świętego Bernarda łączy się z Alpami.</p>\n<p>W 1994 roku Rada Europy nadała jej status Szlaku Kulturowego. W 2019 roku Stowarzyszenie Via Francigena przedłużyło trasę z Rzymu na południe do Santa Maria di Leuca, gdzie włoscy pielgrzymi tradycyjnie wsiadali na statki płynące do Ziemi Świętej.</p>"
+	},
+	"via-podiensis": {
+		"title": "Via Podiensis",
+		"summary": "Najbardziej znana francuska trasa pielgrzymkowa do Santiago zaczyna się w Le Puy-en-Velay i przebiega przez Masyw Centralny, Aubrac oraz południowy zachód, by dotrzeć do podnóża Pirenejów w Saint-Jean-Pied-de-Port.",
+		"html": "<p>Le Puy było jednym z czterech klasycznych punktów wyjścia we Francji wymienionych w średniowiecznym przewodniku pielgrzymkowym, a trasa ta to ciąg romańskich kościołów, wiosek położonych na granitowych płaskowyżach oraz wysokogórskich pastwisk. Najbardziej znanymi atrakcjami są płaskowyż Aubrac oraz dolina rzeki Lot w okolicy Conques.</p>\n<p>Francuskie stowarzyszenie pielgrzymów szacuje, że droga do Saint-Jean-Pied-de-Port wynosi około 755 km i zajmuje 32 dni, a wędrówkę można odbywać od marca do października. Siedem odcinków szlaku Chemin du Puy wchodzi w skład wpisanego na listę UNESCO obiektu „Szlaki do Santiago de Compostela we Francji”.</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "Szlak W w Torres del Paine",
+		"summary": "Pięciodniowa wyprawa piesza w patagońskim Parku Narodowym Torres del Paine wzdłuż trzech dolin ułożonych w kształt litery W: lodowca Grey, Doliny Francuskiej i podnóża Wież.",
+		"html": "<p>Szlak W łączy szczyty Torres, Dolinę Francuską i lodowiec Grey, a na trasie znajdują się schroniska i miejsca biwakowe w parku.</p>\n<p>Chilijska izba turystyczna podaje, że trasa ma około 70 km i zajmuje pięć dni, a sezon turystyczny trwa od wiosny do lata.</p>"
+	},
+	"west-coast-trail": {
+		"title": "Szlak West Coast Trail",
+		"summary": "Trudny szlak nadmorski na zachodnim wybrzeżu Wyspy Vancouver, obejmujący 75 km plaż, drabinek i lasu deszczowego między zatoką Pachena a rzeką Gordon.",
+		"html": "<p>Szlak ten pierwotnie służył jako droga ratunkowa dla rozbitków, a obecnie stanowi wymagającą trasę turystyczną w rezerwacie Parku Narodowego Pacific Rim. Turysta musi dokonać rezerwacji i wziąć udział w spotkaniu informacyjnym; szlak jest otwarty wyłącznie w sezonie letnim.</p>\n<p>Według Parks Canada pokonanie trasy zajmuje od sześciu do ośmiu dni; szlak jest otwarty od 1 maja do 30 września.</p>"
+	},
+	"west-highland-way": {
+		"title": "Szlak West Highland Way",
+		"summary": "Najbardziej znany szlak długodystansowy w Szkocji łączy przedmieścia Glasgow z Fort William, przebiegając w drodze do Highlands przez Loch Lomond, Rannoch Moor i Glen Coe.",
+		"html": "<p>Trasa rozpoczyna się w miasteczku satelickim Milngavie i stopniowo przechodzi z przedmieść w tereny leśne, a następnie pnie się w górę wzdłuż wschodniego brzegu jeziora Loch Lomond. Na północ od Tyndrum przebiega przez otwarte torfowiska i skaliste tereny Rannoch Moor, po czym schodzi w dół przez wielką dolinę Glen Coe.</p>\n<p>Ostatni odcinek prowadzi pod górę „Devil’s Staircase” oraz starymi drogami wojskowymi, a kończy się w Fort William u podnóża Ben Nevis. Większość wędrowców pokonuje tę trasę w sześć lub siedem dni; oficjalna strona internetowa podaje, że maj jest najpopularniejszym miesiącem, a szlak można pokonywać przez cały rok, choć latem uciążliwe są komary.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "Najstarszy szlak długodystansowy w Schwarzwaldzie, biegnący z Pforzheim wzdłuż zachodniej grani pasma aż do Bazylei.",
+		"html": "<p>Szlak Westweg biegnie grzbietem północnej i środkowej części Schwarzwaldu, mijając szczyty Hornisgrinde, Feldberg i Belchen, a kończy się w szwajcarskim mieście granicznym Bazylei. Od 1900 roku szlak jest utrzymywany przez Klub Schwarzwaldu, który oznacza go również czerwonym rombem.</p>\n<p>Izba Turystyczna Schwarzwaldu podaje, że trasa zachodnia ma około 285 km i składa się z 12 etapów, a wariant wschodni, który rozgałęzia się przy Titisee, ma 13 etapów.</p>"
+	},
+	"wicklow-way": {
+		"title": "Szlak Wicklow Way",
+		"summary": "Najstarszy oznakowany szlak w Irlandii przebiega przez Góry Wicklow, od przedmieść Dublina do miejscowości Clonegal w hrabstwie Carlow.",
+		"html": "<p>Trasa biegnie leśnymi drogami i ścieżkami bagiennymi przez Glendalough, przez podnóża góry Lugnaquilla i przez wyżyny Wicklow. W opisie szlaku mowa jest o siedmiu dniach lub więcej, w zależności od tempa.</p>\n<p>Na stronie internetowej szlaku podano, że odległość między Marlay Park a Clonegal wynosi 127 km.</p>"
+	},
+	"wilson-trail": {
+		"title": "Szlak Wilsona",
+		"summary": "Szlak o długości 78 km biegnący przez Hongkong, od Stanley na Wyspie Hongkongu do Nam Chung w Nowych Terytoriach, podzielony na 10 odcinków.",
+		"html": "<p>Szlak Wilsona biegnie od południowego wybrzeża wyspy Hongkong, przez Skałę Lwa i okolice Tai Po, aż do północno-wschodniej części Nowych Terytoriów.</p>\n<p>Izba Turystyki podaje długość 78 km i 10 odcinków.</p>"
+	}
+}

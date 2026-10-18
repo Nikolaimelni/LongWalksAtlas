@@ -25,6 +25,15 @@ const responseSchema = z.object({
 	translations: z.array(z.object({ text: z.string() })),
 });
 
+// The free plan answers 429 when requests come too fast; it clears in seconds.
+async function withRetry(send: () => Promise<Response>): Promise<Response> {
+	for (let attempt = 1; ; attempt++) {
+		const response = await send();
+		if (response.status !== 429 || attempt === 5) return response;
+		await new Promise((resolve) => setTimeout(resolve, 2000 * 2 ** attempt));
+	}
+}
+
 export function deeplTranslator(key: string): Translator {
 	const host = key.endsWith(":fx")
 		? "https://api-free.deepl.com"
@@ -33,21 +42,23 @@ export function deeplTranslator(key: string): Translator {
 		const out: string[] = [];
 		for (let i = 0; i < texts.length; i += 50) {
 			const batch = texts.slice(i, i + 50);
-			const response = await fetch(`${host}/v2/translate`, {
-				method: "POST",
-				headers: {
-					Authorization: `DeepL-Auth-Key ${key}`,
-					"Content-Type": "application/json",
-					"User-Agent": userAgent,
-				},
-				body: JSON.stringify({
-					text: batch,
-					source_lang: "EN",
-					target_lang: targets[lang],
-					tag_handling: kind === "html" ? "html" : "xml",
-					ignore_tags: ["ph"],
+			const response = await withRetry(() =>
+				fetch(`${host}/v2/translate`, {
+					method: "POST",
+					headers: {
+						Authorization: `DeepL-Auth-Key ${key}`,
+						"Content-Type": "application/json",
+						"User-Agent": userAgent,
+					},
+					body: JSON.stringify({
+						text: batch,
+						source_lang: "EN",
+						target_lang: targets[lang],
+						tag_handling: kind === "html" ? "html" : "xml",
+						ignore_tags: ["ph"],
+					}),
 				}),
-			});
+			);
 			if (!response.ok) {
 				throw new DataError(
 					"translate-failed",

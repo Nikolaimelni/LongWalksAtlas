@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Abel Tasman Coast Track",
+		"summary": "En tre till fem dagar lång kustvandring genom gyllene stränder och buskmark i Abel Tasman National Park, från Mārahau till Wainui.",
+		"html": "<p>Med vattentaxibåtar kan vandrare förkorta eller förlänga sin vandring och ta sig över flodmynningar vid lågvatten.</p>\n<p>DOC anger 60 km enkel väg. De uppger att leden är som mest trafikerad från oktober till april och kan vandras året runt.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Alpe-Adria-leden",
+		"summary": "En långdistansled som sträcker sig från foten av Grossglockner i Österrike genom Sloveniens Juliska Alper till Adriatiska kusten nära Trieste.",
+		"html": "<p>Alpe-Adria-Trail sträcker sig över Alperna från glaciärerna till havet och passerar Kärntens sjöar, den slovenska Soča-dalen och Karst-platån innan den sluttar ner mot Muggia. Leden är uppdelad i 43 etapper för vandring från by till by.</p>\n<p>Den officiella webbplatsen anger en sträcka på cirka 750 km, medan OSM-relationen anger 690 km, så längden beror på vilken ruttvariant man väljer.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "Den klassiska höghöjdsleden genom Dolomiterna från Lago di Braies till Belluno, med stugor varje dag och tolv etapper.",
+		"html": "<p>Alta Via 1 förbinder Pragser Wildsee med Cinque Torri, Civetta-gruppen och Piave-dalen och passerar höga bergspass och klippväggar som numera är upptagna på UNESCO:s världsarvslista. Etappplanen är utformad med utgångspunkt från fjällstugor som är öppna under sommaren.</p>\n<p>Turismportalen för Dolomiterna anger en sträcka på cirka 125 km, tolv etapper och en säsong från slutet av juni till slutet av september.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "En längre och mer krävande variant av Alta Via 1, som sträcker sig från Brixen i Sydtyrolen genom Odle, Marmolada och Pale di San Martino till Feltre.",
+		"html": "<p>Rutten sträcker sig från norr till söder genom de västra och centrala Dolomiterna och passerar stugor samt några via ferrata-liknande sträckor. Den går förbi glaciären på Marmolada, bergskedjans högsta topp, och platån Pale di San Martino.</p>\n<p>Dolomitportalen anger en sträcka på cirka 180 km, tretton dagsetapper och en säsong från slutet av juni till slutet av september.</p>"
+	},
+	"amatola-trail": {
+		"title": "Amatola-vandringsleden",
+		"summary": "En sex dagar lång vandring på cirka 100 km i Amathole-bergen i Östra Kapprovinsen, från utkanten av Qonce till Hogsback.",
+		"html": "<p>Amatola Trail går genom urskog, längs bergsbäckar och över bergskammar och längs vägen finns stugor. På Eastern Capes turistwebbplats räknas den till en av provinsens mest ikoniska vandringsleder.</p>\n<p>Leden går genom Amathole-bergen, det gröna bältet bakom Eastern Capes kust. Den listas på provinsens turistwebbplats som en av regionens mest ikoniska vandringsleder.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Annapurna-rundvandringen",
+		"summary": "En klassisk vandring i Himalaya runt Annapurna-massivet genom Thorong La-passet, från Besisahar till Nayapul.",
+		"html": "<p>Rutten går genom olika klimatzoner, från subtropiska dalar till högöknen i Manang och Thorong La-passet på 5 400 m.</p>\n<p>Nepals turistbyrå uppger att vandringen tar tre veckor eller längre och rekommenderar perioderna mars–maj och september–november.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Appalachian Trail",
+		"summary": "USA:s mest kända långdistansvandringsled sträcker sig cirka 2 200 miles längs Appalachernas bergskammar, från Springer Mountain i Georgia till Katahdin i Maine, och passerar genom 14 delstater.",
+		"html": "<p>Appalachian Trail förvaltas av Appalachian Trail Conservancy och National Park Service. De flesta som vandrar hela leden går norrut från Georgia mellan slutet av februari och början av april, och det tar dem ungefär sex månader.</p>\n<p>Enligt ATC var leden 2 197,9 miles lång år 2026, vilket motsvarar cirka 3 537 km; längden varierar något i takt med att sträckningen ändras.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Bibbulmun-leden",
+		"summary": "En långdistansled på cirka 1 000 km genom skogarna och längs kusten i sydvästra Västra Australien, mellan Kalamunda nära Perth och Albany.",
+		"html": "<p>Leden är markerad med en gul triangel som föreställer en regnbågsorm, och det finns stugor med ungefär en dags vandring mellan varandra. Vandrare kan gå i båda riktningarna.</p>\n<p>Bibbulmun Track Foundation uppger att en vandring från början till slut tar cirka sex till åtta veckor och rekommenderar de svalare månaderna från april till början av november.</p>"
+	},
+	"bruce-trail": {
+		"title": "Bruce Trail",
+		"summary": "Kanadas äldsta och längsta markerade vandringsled följer Niagara-branten i mer än 900 km, från Niagara till Tobermory på Brucehalvön.",
+		"html": "<p>Bruce Trail Conservancy beskriver en huvudled på över 900 km samt cirka 400 km sidovägar, vilket tillsammans utgör 1 300 km. Leden passerar klippor, grottor, skogar och småorter mellan Ontariosjön och Georgian Bay.</p>\n<p>Organisationen rekommenderar att man avsätter cirka 30 dagar för att vandra huvudleden från början till slut.</p>"
+	},
+	"caminho-portugues": {
+		"title": "Den portugisiska vägen",
+		"summary": "Pilgrimsvägen från Lissabon via Coimbra och Porto till katedralen i Santiago de Compostela.",
+		"html": "<p>Sedan medeltiden har pilgrimer vandrat norrut från Lissabon till Santiago. De flesta startar i Porto, drygt 240 km från Santiago; hela sträckan från Lissabon är cirka 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "En pilgrimsväg längs kusten från den baskiska gränsstaden Irún, längs Biscayabukten och genom Kantabrien, Asturien och Galicien till Santiago.",
+		"html": "<p>Den norra vägen följer den kantabriska kusten och byter ut Mesetas öppna slätter mot stränder, klippor, fiskebyar och korta, branta stigningar mellan floddalar. Den användes av pilgrimer som under tidig medeltid ville undvika det muslimskt kontrollerade södra Spanien, och idag är den lugnare än Camino Francés.</p>\n<p>Spaniens turistbyrå anger en sträcka på cirka 825 km (800 km i sina vanliga frågor) och cirka 35 etapper. I Galicien beskriver den officiella pilgrimswebbplatsen den sista sträckan från Ribadeo till Santiago.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "Fisterra–Muxía-leden",
+		"summary": "En galicisk förlängning av Camino de Santiago från katedralen till Atlantkusten vid Fisterra och helgedomsstaden Muxía.",
+		"html": "<p>Från Santiago går leden västerut mot Costa da Morte, med Fisterra (udden som en gång ansågs vara slutet på den kända världen) och Muxía som de två slutmålen. Vissa pilgrimer vandrar till Fisterra och fortsätter sedan till Muxía, eller tvärtom.</p>\n<p>Den galiciska pilgrimswebbplatsen anger 118,8 km för sträckan Fisterra–Muxía och 119,9 km för sträckan Muxía–Fisterra.</p>"
+	},
+	"camino-frances": {
+		"title": "Camino Francés",
+		"summary": "Den mest populära av vägarna till Santiago går över Pyrenéerna vid Roncesvalles och sträcker sig västerut genom norra Spanien, via Pamplona, Burgos och León, till Sankt Jakobs grav.",
+		"html": "<p>Pilgrimer har vandrat längs denna rutt sedan medeltiden, och städerna längs vägen bär fortfarande spår av den tidens resande: sjukhus, broar, kloster och kyrkor som uppfördes för resenärerna. Många vandrare startar i Saint-Jean-Pied-de-Port, tar sig över Pyrenéerna den första dagen och kommer sedan ut på den långa Meseta-platån innan de når Galiciens gröna kullar.</p>\n<p>Camino Francés ingår i UNESCO:s världsarvslista för Santiago de Compostela-leden. Spaniens turistbyrå anger sträckan till cirka 930 km och ungefär 32 etapper räknat från Somport eller Roncesvalles och rekommenderar våren samt september–oktober.</p>"
+	},
+	"camino-ingles": {
+		"title": "Engelska vägen",
+		"summary": "En kort galicisk pilgrimsväg från hamnstaden Ferrol till Santiago, som historiskt sett använts av pilgrimer som anlände sjövägen från norra Europa.",
+		"html": "<p>”The English Way” har fått sitt namn efter pilgrimer från de brittiska öarna och norra Europa som landsteg i Ferrol och A Coruña. Den officiella galiciska pilgrimswebbplatsen anger sträckan till 112,4 km från Ferrol och 72,8 km från A Coruña. Pilgrimer måste vandra minst 100 km till fots för att få pilgrimsintyget, vilket gör Ferrol-rutten till det vanligaste valet.</p>\n<p>Den är kortare än de andra galiciska rutterna och är därför ett praktiskt val för personer som bara har en vecka eller mindre på sig. Eftersom startpunkten i Ferrol ger mer än 100 km kan vandraren ändå erhålla pilgrimsintyget i Santiago.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Camino Primitivo",
+		"summary": "Den äldsta jakobitiska vägen, som sägs följa kung Alfonso II:s färd under 800-talet, sträcker sig från Oviedo över de kantabriska bergen till Santiago.",
+		"html": "<p>Primitivo är en kort, kuperad väg genom Asturien och Galicien, som passerar bergspasset längs Hospitales-rutten och ansluter till Camino Francés vid Melide under de sista dagarna. Den är lugnare än Francés och har branta stigningar.</p>\n<p>Spaniens turistbyrå anger en sträcka på cirka 325 km och cirka 14 etapper; den galiciska pilgrimswebbplatsen beskriver den galiciska delen separat.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Cape to Cape-leden",
+		"summary": "En kustvandring på cirka 135 km längs klippor och stränder mellan fyrarna vid Cape Naturaliste och Cape Leeuwin i sydvästra Västra Australien.",
+		"html": "<p>Leden passerar kalkstensgrottor, surfstränder, vildblommor och utsiktsplatser för valskådning. Enligt Tourism Western Australia tar vandringen fem till sju dagar, och vildblomssäsongen infaller på våren; valar kan ses från september till december.</p>\n<p>Delstatens turistwebbplats rekommenderar att man avsätter fem till sju dagar och nämner vårens vildblommor på uddarna. Valarna passerar uddarna ungefär från september till december.</p>"
+	},
+	"carian-trail": {
+		"title": "Carian-leden",
+		"summary": "En lång vandringsled genom det forntida Karien i sydvästra Turkiet, från kusten nära Marmaris till ruinerna i inlandet kring Alinda.",
+		"html": "<p>Carian Trail förbinder halvöarna Bozburun och Datça, Gökova-bukten och det inre Karien och passerar antika ruiner, gamla karavanvägar och mulstigar.</p>\n<p>Leden har en egen webbplats där längden anges till cirka 850 km fördelat på fyra huvudavsnitt; föreningen Culture Routes uppger att den är 800 km lång.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "Chilkoot-leden",
+		"summary": "En historisk guldrushrutt från Dyea i Alaska över Chilkoot Pass till Lake Bennett i British Columbia, 33 miles lång.",
+		"html": "<p>Åren 1897–98 bar guldletare tonvis med förnödenheter över passet på väg till Klondike. Idag förvaltas leden gemensamt av US National Park Service och Parks Canada och är öppen under sommaren.</p>\n<p>NPS anger längden till 33 miles.</p>"
+	},
+	"colorado-trail": {
+		"title": "Colorado Trail",
+		"summary": "En vandringsled på 567 miles genom Colorado Rockies, från utkanten av Denver vid Waterton Canyon till Durango, till största delen på över 3 000 m.",
+		"html": "<p>Leden passerar genom åtta bergskedjor och sex vildmarksområden, med valmöjligheten att välja mellan sträckningarna Collegiate West och Collegiate East. Colorado Trail Foundation uppger att leden sträcker sig från Denver till Durango.</p>\n<p>Att vandra hela leden tar vanligtvis fyra till sex veckor.</p>"
+	},
+	"e1": {
+		"title": "E1 – Europeisk långdistansled",
+		"summary": "Den nord-sydliga europeiska långvandringsleden, från Nordkap i Norge genom Skandinavien, Danmark, Tyskland och Schweiz till Capo Passero på Sicilien.",
+		"html": "<p>E1 sammanför nationella och regionala vandringsleder under en gemensam vägmarkering. Dess södra ände förlängdes under 2010-talet genom Italien till Sicilien, och delar av den italienska sträckan håller fortfarande på att skyltas.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Vandringsleden vid Fish River Canyon",
+		"summary": "En 90 km lång vandring genom Fish River Canyon i södra Namibia, från Hobas till Ai-Ais.",
+		"html": "<p>Rutten går längs kanjonens botten och passerar flodkrökar, sand- och stenblockfält.</p>\n<p>Namibia Wildlife Resorts uppger att leden börjar i Hobas och är 90 km lång.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Fiskarnas vandringsled",
+		"summary": "En markerad kuststig på Portugals sydvästra spets, från Porto Covo i Alentejo till Lagos i Algarve, längs klippor, sanddyner och fiskarnas stigar.",
+		"html": "<p>Leden följer gamla fiskarstigar över sand och klippor i naturparken Sydvästra Alentejo och Vicentinas kust. Den är uppdelad i 13 dagsetapper, vilket gör att man kan vandra den med övernattning på hotell eller pensionat istället för att campa.</p>\n<p>Föreningen Rota Vicentina rekommenderar att leden vandras mellan september och juni, för att undvika de hetaste sommarmånaderna.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "Den spanska sidan av Pyrenéerna, en lång bergsled som sträcker sig från Cabo de Higuer vid Atlanten till Cap de Creus vid Medelhavet.",
+		"html": "<p>GR11 följer Pyrenéernas södra sluttningar genom Baskien, Navarra, Aragonien och Katalonien, korsar huvudkedjan flera gånger och håller sig nära den franska gränsen. Den är indelad i 46 etapper av det spanska bergsklättringsförbundet, plus en prolog.</p>\n<p>Förbundet anger att den är längre än 800 km. Den vandras oftast i etapper; en fullständig genomvandring tar långt över en månad på grund av de ständiga stigningarna mellan dalarna.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "GR20 är en krävande högfjällsväg som sträcker sig tvärs över Korsika, från Calenzana i nordväst till Conca i sydöst, längs öns granitryggrad.",
+		"html": "<p>Leden följer Korsikas centrala bergskam, med klättring över klippor, kedjor på branta sträckor och vindskydd som sköts av regionalparken. Den beskrivs ofta som en av Europas svåraste långvandringsleder på grund av den ojämna terrängen och det omväxlande vädret, även om etapperna är korta.</p>\n<p>Korsikas officiella turistwebbplats anger 180 km fördelat på 16 dagar à cirka sju timmar vardera, med goda förhållanden från juni till mitten av oktober. Rutten är uppdelad i en svårare norra halva och en något lättare södra del.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Great Ocean Walk",
+		"summary": "En kustvandring i Victoria från Apollo Bay till De tolv apostlarna, över 100 km med stränder, klippor och regnskog, som vanligtvis tillryggaläggs på åtta dagar.",
+		"html": "<p>Great Ocean Walk följer kusten längs Great Otway National Park och Port Campbell National Park och vandras vanligtvis från öst till väst. Myndigheten anger ”mer än 100 km” och åtta dagar.</p>\n<p>Vandrare övernattar oftast på campingplatser eller i stugor längs vägen och avslutar vandringen nära Twelve Apostles. Rutten vandras oftast från öst till väst, precis som myndigheten rekommenderar.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "Hadrianus mur-leden",
+		"summary": "En nationell vandringsled längs den romerska gränsen mellan Wallsend on the Tyne och Bowness-on-Solway, som passerar fort, milslott och klipporna vid Whin Sill.",
+		"html": "<p>Rutten sträcker sig tvärs över norra England från kust till kust, till största delen längs eller nära den mur som byggdes under 200-talet. Den centrala delen över Whin Sill-klipporna erbjuder de bäst bevarade lämningarna, med fästningar som Housesteads och Vindolanda en kort bit från stigen.</p>\n<p>National Trails anger sträckan till 84 miles och rekommenderar sex till sju dagar för erfarna vandrare, med maj till oktober som den bästa säsongen. På deras sida nämns även Carlisle i beskrivningen av leden, men stigen och OSM-relationen slutar vid Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Heysen Trail",
+		"summary": "South Australias långvandringsled sträcker sig cirka 1 200 km från Cape Jervis genom Fleurieu-halvön, Barossa och Flinders Ranges till Parachilna Gorge.",
+		"html": "<p>Heysen Trail anläggs och underhålls av föreningen Friends of the Heysen Trail och sträcker sig genom jordbruksmark, vingårdar och Flinders Ranges. Leden är stängd under brandfarlig säsong.</p>\n<p>Föreningen uppger att leden är 1 200 km lång och tar cirka 60 dagar att vandra.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Hong Kong Trail",
+		"summary": "En 50 km lång vandringsled tvärs över Hongkongön, från Victoria Peak till Big Wave Bay, som invigdes 1985 och består av åtta etapper.",
+		"html": "<p>Hong Kong Trail är en av de fyra långdistanslederna som förvaltas av avdelningen för jordbruk, fiske och naturvård och sträcker sig genom fem naturparker. Den är uppdelad i åtta etapper.</p>\n<p>De åtta etapperna kan kombineras till en lång dagsvandring eller till kortare vandringar, och leden börjar vid stadens mest kända utsiktsplats. Den invigdes i april 1985.</p>"
+	},
+	"inca-trail": {
+		"title": "Inka-leden till Machu Picchu",
+		"summary": "Den klassiska vandringen längs inka-vägen över Anderna till Machu Picchu, en fyra dagars vandring som avslutas vid Solporten och ruinerna.",
+		"html": "<p>Leden följer inkafolkets stigar och trappor genom molnskogen, förbi ruiner som Wiñay Wayna, ända fram till Machu Picchu. Tillträde kräver tillstånd.</p>\n<p>OSM-relationen anger 38 km och en ansvarig vid det peruanska kulturministeriet.</p>"
+	},
+	"jesus-trail": {
+		"title": "Jesusleden",
+		"summary": "En pilgrims- och vandringsled på cirka 65 km i Galiléen, från Nasaret till Kafarnaum vid Genesaretsjön.",
+		"html": "<p>Jesusleden följer stigar med anknytning till Jesu verksamhet genom Kana, Hattins horn och berget Arbel. Den är en blandning av kristen pilgrimsvandring och naturvandring och tar vanligtvis tre till fyra dagar att genomföra.</p>\n<p>På vandringsledens webbplats anges längden till 65 km.</p>"
+	},
+	"john-muir-trail": {
+		"title": "John Muir Trail",
+		"summary": "En höghöjdsled i Sierra Nevada på cirka 211 miles från Yosemite Valley över bergspass på över 3 500 m till toppen av Mount Whitney.",
+		"html": "<p>John Muir Trail följer Sierra Nevadas bergskam genom nationalparkerna Yosemite, Kings Canyon och Sequoia. National Park Service uppger att leden är 211 miles lång och att tillstånd krävs.</p>\n<p>De flesta vandrare behöver två till tre veckor och bär med sig mat för långa sträckor utan möjlighet till påfyllning.</p>"
+	},
+	"jordan-trail": {
+		"title": "Jordan Trail",
+		"summary": "En vandringsled på 675 km från Umm Qais i norra Jordanien genom Dana och Petra till Aqaba vid Röda havet, som vanligtvis tillryggaläggs på cirka 35 dagar.",
+		"html": "<p>Jordan Trail sträcker sig genom Jordanien från de romerska ruinerna i Umm Qais över Jordan Rift-bergen, höglandet vid Döda havet, Dana, Petra och Wadi Rum till Röda havet. Den förbinder lokala byar med beduinsamhällen.</p>\n<p>Föreningen Jordan Trail uppger att leden är 675 km lång och tar cirka 35 dagar att vandra i sträck.</p>"
+	},
+	"juliana-trail": {
+		"title": "Juliana-leden",
+		"summary": "En rundvandring runt Juliska Alperna i Slovenien, bestående av 16 etapper som går förbi de viktigaste topparna och följer floderna Soča och Sava.",
+		"html": "<p>Juliana-leden förbinder dalar, bergspass, skogar och byar runt Triglavs nationalpark utan att man behöver bestiga några toppar. Den är skyltad och indelad i 16 etapper på cirka 17,5 km vardera.</p>\n<p>Turistwebbplatsen för Soča-dalen anger att huvudrundan är 270 km lång, med valfria förlängningar på 42 km och 60 km, och att säsongen sträcker sig från slutet av mars till slutet av oktober.</p>"
+	},
+	"kepler-track": {
+		"title": "Kepler-leden",
+		"summary": "En 60 km lång rundvandring som börjar nära Te Anau, går upp över buskgränsen längs Kepler Mountains bergskam och återvänder längs Te Anau-sjön och Waiau-floden.",
+		"html": "<p>Kepler Track är en rundvandring på tre till fyra dagar med tre stugor, utsikt över bergen ovanför trädgränsen och skogar som påminner om fjordlandskap.</p>\n<p>Enligt jämförelsesidan från Department of Conservation är sträckan 60 km och tar tre till fyra dagar. Säsongen för Great Walks börjar i slutet av oktober.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "En rundtur runt Iveragh-halvön i grevskapet Kerry, med start och mål i Killarney, genom berg, mossar och kustbyar som Cahersiveen och Sneem.",
+		"html": "<p>Kerry Way kombinerar lugna vägar, gamla stigar och bergsstigar mellan Macgillycuddy’s Reeks och Atlantkusten. Cirka en tredjedel av sträckan går längs lokala vägar.</p>\n<p>Sport Irelands nationella vandringsledsregister anger 232,1 km och nio dagar; i OSM-databasen anges sträckan till 214 km, så de exakta siffrorna varierar beroende på vilken variant av Kerry-rutten man väljer.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimanjaro – Machame-leden",
+		"summary": "En av de viktigaste vandringslederna uppför Kilimanjaro, som börjar vid Machame Gate och där man övernattar i tältläger.",
+		"html": "<p>Machame-leden är en av lederna på Kilimanjaro och utnyttjar tältläger som drivs av licensierade arrangörer. Tanzania National Parks anger Machame som en av de viktigaste ingångarna, med nedstigning via Mweka.</p>\n<p>Tanzania National Parks påpekar att Marangu-leden använder stugor medan de andra lederna, däribland Machame, använder tältläger. Nedstigningen sker via Mweka-porten.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo – Kohechi",
+		"summary": "En krävande pilgrimsled i bergen på cirka 72 km mellan det buddhistiska centret Kōyasan och helgedomen Kumano Hongu Taisha på Kii-halvön i Japan.",
+		"html": "<p>Kohechi-leden passerar tre bergspass på över 1 000 m och förbinder det heliga berget Kōyasan med Kumano-helgedomarna, vilket gör den till den brantaste och lugnaste av Kumano Kodo-lederna. På turistwebbplatsen beskrivs den som en led som går genom avlägset belägna byar och längs gamla stenstigar.</p>\n<p>Källan som används här är en turistartikel som anger 72 km; den anger varken antal dagar eller säsong.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo – Nakahechi",
+		"summary": "Den huvudsakliga pilgrimsleden Kumano Kodo på Japans Kii-halvö, från Takijiri till helgedomen Kumano Hongu Taisha, tar vanligtvis två till fyra dagar att vandra.",
+		"html": "<p>Nakahechi var huvudvägen för kejsare och vanligt folk på väg till de tre Kumano-helgedomarna och sträcker sig över skogsklädda bergspass med små vägstationshelgedomar (oji). Rutten ingår i det av UNESCO listade området ”Heliga platser och pilgrimsleder i Kii-bergskedjan”.</p>\n<p>På den sida från Tanabes turistförening som vi öppnade angavs varken längd eller säsong; uppgiften om 36 km kommer från OSM-taggen.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "Sveriges berömda arktiska vandringsled från stuga till stuga sträcker sig cirka 450 km från Abisko ovanför polcirkeln till Hemavan i söder, genom Lapplands berg och dalar.",
+		"html": "<p>Kungsleden drivs av Svenska Turistföreningen, som sköter underhållet av stugor, broar och båttransporter. Den mest kända sträckan är den norra delen, från Abisko genom Tjäktja-passet till Nikkaluokta, där vandrare tar sig genom öppen tundra och alpina dalar vid foten av Sveriges högsta berg.</p>\n<p>På STF:s sida anges sträckan Abisko–Hemavan till 450 km, medan summan av sträckornas längder är större och OSM anger 440 km, så den exakta siffran beror på hur avstickare och båtförkortningar räknas.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Larapinta-leden",
+		"summary": "En ökenled i West MacDonnell Ranges i centrala Australien, från Alice Springs Telegraph Station till toppen av Mount Sonder, uppdelad i tolv etapper.",
+		"html": "<p>Larapinta följer bergskammarna i West MacDonnell Ranges genom raviner och vattenhål. Enligt myndigheternas webbplats är leden över 230 km lång och uppdelad i 12 etapper på vardera en till två dagar.</p>\n<p>Andra källor anger 223 km; leden vandras vanligtvis under de svalare månaderna.</p>"
+	},
+	"laugavegur": {
+		"title": "Laugavegur-leden",
+		"summary": "Islands mest populära vandringsled sträcker sig genom det södra höglandet på ungefär fyra dagar, från rhyolit-varmkällorna i Landmannalaugar till de gröna dalarna i Þórsmörk.",
+		"html": "<p>Leden passerar ångande sprickor, svarta obsidianfält, snöfält och glaciärfloder innan den mynnar ut i en dal med björkbuskar mellan tre glaciärer. Stugorna längs vägen drivs av den isländska vandringsföreningen, och leden är endast framkomlig under sommaren.</p>\n<p>På föreningens webbplats anges sträckan till 54–56 km beroende på vilken etapp man väljer, och vandringen tar fyra dagar. Leden är öppen från omkring den 25 juni till den 15 september.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "Lebanon Mountain Trail",
+		"summary": "En 470 km lång vandringsled längs Libanons berg, från Andaket i norr till Marjayoun i söder, som passerar mer än 75 städer och byar.",
+		"html": "<p>Enligt Lebanon Mountain Trail Association sträcker sig leden mellan 600 och 2 000 meter över havet och är markerad med vita och lila markeringar. Den passerar genom cederskogar, kloster och byar och utnyttjar pensionat längs vägen.</p>\n<p>Lokala pensionat och samhällsprojekt längs vägen har varit ett huvudsyfte med leden sedan den anlades. Vandrare följer vita och lila markeringar genom bergsbyar från norr till söder.</p>"
+	},
+	"long-trail": {
+		"title": "Långvandringsleden",
+		"summary": "USA:s äldsta långdistansvandringsled sträcker sig längs Green Mountains i 272 miles, från gränsen till Massachusetts till den kanadensiska gränsen.",
+		"html": "<p>Long Trail anlades i början av 1900-talet av Green Mountain Club och kom senare att inspirera till Appalachian Trail, med vilken den delar de första 100 miles.</p>\n<p>Enligt klubben sträcker sig leden 272 miles över Vermonts bergskam och en genomvandring tar några veckor.</p>"
+	},
+	"lycian-way": {
+		"title": "Lycian Way",
+		"summary": "En markerad vandringsled längs kusten i det forna Lykien i södra Turkiet, från Ölüdeniz nära Fethiye till Geyikbayırı nära Antalya.",
+		"html": "<p>Leden, som anlades och markerades 1999, förbinder gamla mulstigar och romerska vägar förbi gravarna och teatrarna i de lykiska städerna, med långa sträckor högt ovanför havet.</p>"
+	},
+	"maclehose-trail": {
+		"title": "MacLehose-leden",
+		"summary": "Hongkongs längsta vandringsled, cirka 100 km fördelat på 10 etapper från East Dam i Sai Kung till Tuen Mun.",
+		"html": "<p>MacLehose Trail sträcker sig genom New Territories via naturparker, stränder och berg, och passerar Sai Kung-kusten, Sha Tin och Tai Mo Shan. Det är en vandringsled som förvaltas av myndigheterna och utgör rutten för Oxfam Trailwalker.</p>\n<p>Hongkongs turistbyrå anger att den är cirka 100 km lång och uppdelad i 10 etapper.</p>"
+	},
+	"milford-track": {
+		"title": "Milford Track",
+		"summary": "Nya Zeelands mest kända vandringsled sträcker sig genom Fiordland under fyra dagar, från Glade Wharf vid sjön Te Anau, över McKinnon Pass, till Sandfly Point vid Milford Sound.",
+		"html": "<p>Milford Track följer Clinton- och Arthur-dalarna, går upp över Mackinnon Pass och ned längs Arthur River förbi Sutherland Falls, ett av Nya Zeelands högsta vattenfall. Vandrare måste boka stugor i förväg och vandra endast i en riktning.</p>\n<p>Enligt Department of Conservation är sträckan 53,5 km lång och tar tre nätter och fyra dagar att vandra. Säsongen för Great Walks löper från 1 november till 30 april.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "Den gamla landsvägen mellan Kyoto och Edo (Tokyo), cirka 534 km lång med 69 poststäder, är delvis bevarad som vandringsled i Magome och Tsumago.",
+		"html": "<p>Nakasendo var en av de fem vägarna under Edo-perioden och förband Kyoto och Edo genom bergen. Sträckor som vägen mellan Magome och Tsumago i Kiso-dalen är välbevarade.</p>\n<p>Enligt Japans nationella turistorganisation är vägen cirka 534 km lång och har 69 poststäder.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Naukluft-vandringsleden",
+		"summary": "En rundvandring i Naukluftbergen i Namibia, som finns i både en 4-dagars- och en 8-dagarsversion.",
+		"html": "<p>Naukluft-leden är en rundvandring i Naukluftbergen. Namibia Wildlife Resorts erbjuder både 4-dagars- och 8-dagarsvarianter.</p>\n<p>Namibia Wildlife Resorts anordnar vandringen med utgångspunkt från sitt läger i Naukluft. Den längre 8-dagarsvarianten går över högplatån, medan den kortare varianten är avsedd för vandrare med mindre tid till förfogande.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Offas vallväg",
+		"summary": "En nationell vandringsled längs gränsen mellan England och Wales som följer sträckningen av en jordvall från 700-talet, från Severns flodmynning nära Chepstow till nordkusten vid Prestatyn.",
+		"html": "<p>Leden följer delar av den vall som tillskrivs kung Offa av Mercia och förbinder Wye-dalen, Black Mountains, Shropshires kullar och Clwydian Range. Den korsar gränsen flera gånger, vilket innebär att vandrare nästan dagligen rör sig mellan engelska och walesiska byar.</p>\n<p>På National Trails webbplats anges sträckan till 177 miles. Där står det att leden kan vandras året runt men att den oftast vandras mellan april och oktober, och man rekommenderar att man avsätter cirka två veckor eller mer. Startpunkten är staden Chepstow, nära Sedbury Cliffs.</p>"
+	},
+	"otter-trail": {
+		"title": "Otter Trail",
+		"summary": "Sydafrikas första och mest kända vandringsled i slackpacking-stil sträcker sig längs Tsitsikamma-kusten i 45 km mellan Storms River Mouth och Nature’s Valley och tar fem dagar att vandra.",
+		"html": "<p>Otter Trail är en kustled i Garden Route National Park som endast är tillgänglig efter bokning, med stugor vid övernattningsplatserna och flodövergångar som är beroende av tidvattnet.</p>\n<p>SANParks beskriver den som en vandring på 45 km fördelad på fem dagar och fyra nätter.</p>"
+	},
+	"overland-track": {
+		"title": "Overland Track",
+		"summary": "Tasmaniens klassiska sexdagars vandring i alperna, från Ronny Creek vid Cradle Mountain till Lake St Clair.",
+		"html": "<p>Overland Track går förbi sjöar och slätter med knappgräs och slutar vid Australiens djupaste sötvattenssjö. Under högsäsongen krävs bokning och en avgift.</p>\n<p>Parks and Wildlife Service anger att sträckan är 65 km enkel väg och tar sex dagar, och uppger att bokningssäsongen löper från 1 oktober till 31 maj.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Pacific Crest Trail",
+		"summary": "En nationell naturskön vandringsled längs bergen i Kalifornien, Oregon och Washington, från den mexikanska gränsen vid Campo till Manning Park i Kanada, cirka 4 265 km.",
+		"html": "<p>PCT sträcker sig genom Sierra Nevada och Cascade Range och passerar öknar, höga bergspass, snö och vulkanlandskap. Pacific Crest Trail Association anger att leden är 2 650 miles lång.</p>\n<p>Att vandra hela leden tar vanligtvis cirka fem månader, och snö- och brandförhållandena är avgörande för planeringen.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "Vandringsleden ”Peaks of the Balkans”",
+		"summary": "En gränsöverskridande rundtur genom de Förbannade bergen i Albanien, Kosovo och Montenegro, som förbinder byar med gästhus såsom Theth, Valbona, Plav och Peja.",
+		"html": "<p>Leden anlades efter 1990-talets krig som ett gemensamt projekt för att främja samarbetet mellan tre länder. Den följer herdestigar, passerar bergspass på över 2 000 m och inkluderar övernattningar på bypensionat, vilket innebär att vandrare inte behöver tält.</p>\n<p>På projektets webbplats anges en sträcka på 192 km fördelad på 10 etapper (10–12 dagar) och beskrivs som en rundvandring; starten tas vanligtvis i Theth, Plav eller Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Pennine Way",
+		"summary": "Englands första nationella vandringsled sträcker sig längs Pennine-bergen från Edale i Peak District till Kirk Yetholm, precis på andra sidan den skotska gränsen.",
+		"html": "<p>Rutten går genom grusstenshedar, kalkstensdalar och de höga fjällen i Yorkshire Dales och North Pennines, för att sedan följa Hadrianus mur innan den stiger upp i Cheviot Hills. Torvmarker och utsatta bergskammar gör det svårt att hitta rätt vid dåligt väder.</p>\n<p>National Trails anger en sträcka på 268 miles och en vandringstid på mellan sex och 22 dagar, med april till början av oktober som rekommenderad vandringstid.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "En stig längs bergskammen genom Thüringer Wald, från Hörschel vid floden Werra till Blankenstein vid floden Saale, som länge använts som gränsstig.",
+		"html": "<p>Rennsteig följer bergskammen i Thüringer Wald och Thüringer Schiefergebirge och är en av Tysklands äldsta och mest kända vandringsleder. Den är skyltad med ett vitt R på grön bakgrund.</p>\n<p>Den regionala turistorganisationen anger en sträcka på cirka 170 km, med rutter på fyra, sex eller åtta etapper, och markerar startpunkten i Hörschel och slutpunkten i Blankenstein.</p>"
+	},
+	"routeburn-track": {
+		"title": "Routeburn Track",
+		"summary": "En högalpin vandringsled på två till fyra dagar mellan Routeburn Shelter nära Glenorchy och The Divide längs Milford-vägen, med passage över Harris Saddle.",
+		"html": "<p>Leden förbinder nationalparkerna Mount Aspiring och Fiordland och erbjuder utsikt över alpina sjöar, bokskogar och Hollyforddalen. Den kan vandras i båda riktningarna.</p>\n<p>Department of Conservation anger att sträckan är 32 km lång och tar två till fyra dagar att vandra, och uppger att säsongen för Great Walk sträcker sig från 1 november till 30 april.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Rwenzori Central Circuit",
+		"summary": "En sjudagars rundvandring i Rwenzori-bergen i Uganda med start i Mihunga, med fjällstugor och utsikt över glaciärer.",
+		"html": "<p>Central Circuit är en höghöjdsvandring i Rwenzori Mountains National Park, som drivs av Uganda Wildlife Authority.</p>\n<p>Uganda Wildlife Authority erbjuder vandringen som en sju dagars tur med guider och övernattning i stugor. På sidan anges januari, juni och juli som de bästa månaderna.</p>"
+	},
+	"shikoku-henro": {
+		"title": "Pilgrimsfärden till Shikoku",
+		"summary": "En rundvandring till 88 tempel runt ön Shikoku, cirka 1 200 km, med anknytning till munken Kūkai.",
+		"html": "<p>Shikoku Henro är den mest kända cirkulära pilgrimsvandringen i Japan, som vandras medurs med start vid tempel 1 vid Ryōzen-ji. Pilgrimsföreningen anger sträckan till cirka 1 200 km. Många pilgrimer vandrar sträckan i etapper.</p>\n<p>Eftersom rundvandringen går längs hela öns kust och genom bergen gör många pilgrimer den under flera resor. Vita pilgrimskläder och en vandringsstav är traditionella, men de är inte obligatoriska för dagens vandrare.</p>"
+	},
+	"south-downs-way": {
+		"title": "South Downs Way",
+		"summary": "En nationell vandringsled längs South Downs kalkstensås från Winchester till havsklipporna vid Eastbourne.",
+		"html": "<p>Leden följer South Downs-bergskammen genom skog och öppna kalkgräsmarker och slutar vid Beachy Head och Seven Sisters.</p>\n<p>National Trails anger att sträckan är 100 miles lång, tar åtta till nio dagar att vandra och kan vandras när som helst på året; de mest besökta månaderna är maj till september.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "Sydvästkustleden",
+		"summary": "Storbritanniens längsta nationella vandringsled sträcker sig längs den sydvästra engelska kusten från Minehead runt Cornwall till Poole och omfattar mer än 1 000 km med klippor, vikar och hamnar.",
+		"html": "<p>Leden slingrar sig längs kusten genom Exmoor, norra Devon och Cornwall, går runt Land’s End och fortsätter sedan tillbaka österut längs Engelska kanalen till Dorset. Den består av en rad korta upp- och nedförsbackar vid flodmynningar och uddar, vilket gör att man tar sig fram långsammare än vad avståndet antyder.</p>\n<p>National Trails anger sträckan till 630 miles och uppger att rutten tar cirka 30 vandringsdagar för en snabb vandrare eller sju till åtta veckor i lugn takt; våren och sensommaren rekommenderas.</p>"
+	},
+	"st-olavsleden": {
+		"title": "Sankt Olavsleden",
+		"summary": "En pilgrimsled från Selånger vid den svenska Östersjökusten över de skandinaviska fjällen till Nidarosdomen, som följer den väg som tillskrivs kung Olav år 1030.",
+		"html": "<p>Leden går genom Sverige och Norge, genom skog, förbi sjöar och över berg, med jordbruksmark och orter längs vägen. Nära Munkeby i Norge delar den sig i en yttre led längs Trondheimsfjorden och en inre led genom skogarna.</p>\n<p>Det norska pilgrimscentret anger 580 km, 29 dagsetapper (30 till 32 dagar med vilodagar) och rekommenderar att man vandrar mellan den 1 juni och den 1 september.</p>"
+	},
+	"st-paul-trail": {
+		"title": "St Paul-leden",
+		"summary": "En markerad vandringsled från Perge nära Antalya norrut genom Taurusbergen till Yalvaç, det antika Antiochia i Pisidien.",
+		"html": "<p>Leden följer delvis den väg som aposteln Paulus tros ha tagit under sin första resa genom Mindre Asien, där den slingrar sig upp från Medelhavskusten till sjöarna i inlandet.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "Nya Zeelands nationella vandringsled sträcker sig cirka 3 000 km från Cape Reinga längst i norr till Bluff vid sydspetsen.",
+		"html": "<p>Leden går genom stränder, skogar, vulkanlandskap och bergskedjor på båda öarna och består av en blandning av stigar, vägar samt flod- och havsövergångar.</p>\n<p>Enligt vandringsföreningen är den totala längden 3 000 km. En genomvandring tar flera månader.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Tongariro Northern Circuit",
+		"summary": "En tre till fyra dagar lång vandringsrunda längs vulkanerna Ngauruhoe och Tongariro på Nya Zeelands Nordö.",
+		"html": "<p>Leden går över Tongariro-vulkanplatån, förbi Red Crater, Emerald Lakes och Blue Lake.</p>\n<p>DOC anger att hela rundvandringen är 43 km lång och tar tre till fyra dagar; på deras vandringssida beskrivs för närvarande en kortare version på 35,5 km på grund av en ändring av rutten.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Tour du Mont Blanc",
+		"summary": "En rundtur runt Mont Blanc-massivet genom Frankrike, Italien och Schweiz, som vanligtvis börjar och slutar i Les Houches.",
+		"html": "<p>Rutten går över en rad höga bergspass mellan dalarna i Chamonix, Courmayeur och Champex, och man övernattar i fjällstugor och byvärdshus längs vägen.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Trans Bhutan Trail",
+		"summary": "Bhutans restaurerade nationella pilgrims- och handelsväg, som sträcker sig cirka 403 km från Haa i väster till Trashigang i öster.",
+		"html": "<p>Trans Bhutan Trail var en medeltida handels- och pilgrimsled. Den återöppnades 2022 för vandring och cykling. Organisationens resplan från start till mål tar 36 dagar.</p>\n<p>Den återöppnade leden drivs av en ideell organisation med en fast resplan på 36 dagar från start till mål. Kortare sträckor kan vandras som fristående turer med utgångspunkt från de större städerna.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Transkaukasiska leden: Övre Svaneti",
+		"summary": "En 140 km lång högfjällssträcka längs Transkaukasiska leden genom Svaneti i Georgien, från Chuberi i Nenskra-dalen till Ushguli, en av Europas högst belägna byar.",
+		"html": "<p>Vandringen genom Övre Svanetien går genom byar med försvars torn i sten, över bergspass och förbi glaciärer i Stora Kaukasus. Den anordnas av Transcaucasian Trail Association, en ideell organisation som håller på att anlägga en sammanhängande vandringsled tvärs över Kaukasus.</p>\n<p>Föreningen anger att vandringen är 140 km lång och tar 7–9 dagar.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Tsitsikamma-vandringsleden",
+		"summary": "En sex dagar lång bergsvandringsled genom urskog och fynbos i Tsitsikamma, från Nature’s Valley till Storms River, med stugor vid varje övernattningsplats.",
+		"html": "<p>Leden går förbi flodraviner och enorma gulträdsskogar och kan även vandras i kortare etapper. Det finns möjlighet att anlita bärare.</p>\n<p>Turistwebbplatsen för Östra Kapprovinsen anger 62,3 km fördelat på sex dagar.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Vía de la Plata",
+		"summary": "En pilgrimsväg som sträcker sig från norr till söder, från Sevilla genom Extremadura och Kastilien; det är den spanska Camino som följer den gamla romerska vägen Via de la Plata.",
+		"html": "<p>Vía de la Plata följer den romerska vägen som förband Mérida och Astorga. Pilgrimer från Andalusien vandrar längs den i ungefär en månad till Astorga, där den ansluter till Camino Francés, eller fortsätter genom Galicien längs Sanabrés-grenen.</p>\n<p>Spaniens turistbyrå uppger att rutten är 800 till 900 km lång, med cirka 32 vandringsetapper (49 för cyklister), och rekommenderar minst sju dagar.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Via degli Dei",
+		"summary": "En vandringsled över Apenninerna från Bologna till Florens som delvis följer romerska och medeltida vägar och som vanligtvis vandras på fem till sju dagar.",
+		"html": "<p>Via degli Dei förbinder de två städerna genom skogsklädda bergskammar, längs gamla vägar och genom bergsbyar, med övernattningar på pensionat. Namnet hänvisar till bergsnamn som härstammar från forntida gudar, såsom Monte Adone och Monte Venere.</p>\n<p>Föreningens webbplats anger 130 km och en vandring på fem till sju dagar; OSM-taggen visar 117 km.</p>"
+	},
+	"via-francigena": {
+		"title": "Via Francigena",
+		"summary": "Den långa pilgrimsvägen mellan Canterbury och Rom, som sträcker sig söderut till Santa Maria di Leuca i Apulien, följer den resa som ärkebiskop Sigeric beskrev omkring år 990.",
+		"html": "<p>Sigeric reste till Rom för att ta emot sitt pallium och antecknade de 79 etapperna på sin återresa. Denna lista utgör den historiska grunden för Via Francigena, som sträcker sig genom England, Frankrike, Schweiz och Italien och ansluter till Alperna vid Stora St. Bernhards-passet.</p>\n<p>Europarådet certifierade den som kulturväg 1994. År 2019 utvidgade föreningen Via Francigena rutten från Rom söderut till Santa Maria di Leuca, där italienska pilgrimer traditionellt gick ombord på fartygen till det heliga landet.</p>"
+	},
+	"via-podiensis": {
+		"title": "Via Podiensis",
+		"summary": "Den mest kända franska vandringsleden till Santiago börjar i Le Puy-en-Velay och går genom Massif Central, Aubrac och sydvästra Frankrike för att slutligen nå foten av Pyrenéerna i Saint-Jean-Pied-de-Port.",
+		"html": "<p>Le Puy var en av de fyra klassiska utgångspunkterna i Frankrike som nämns i den medeltida pilgrimsguiden, och vandringsleden där består av en rad romanska kyrkor, byar på granitplatåer och högt belägna betesmarker. Aubrac-platån och Lot-dalen runt Conques är de mest kända höjdpunkterna.</p>\n<p>Den franska pilgrimsföreningen uppskattar sträckan till Saint-Jean-Pied-de-Port till cirka 755 km och 32 dagar, och vandringen är möjlig från mars till oktober. Sju etapper av Chemin du Puy ingår i UNESCO-världsarvet ”Vägarna till Santiago de Compostela i Frankrike”.</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "Torres del Paine W-vandringen",
+		"summary": "En femdagars vandring i nationalparken Torres del Paine i Patagonien längs tre dalar som bildar ett W: Grey-glaciären, den franska dalen och foten av Torres del Paine.",
+		"html": "<p>W-leden förbinder Torres, Valle Francés och Grey-glaciären, med fjällstugor och lägerplatser i parken.</p>\n<p>Chiles turistbyrå anger att sträckan är cirka 70 km lång och tar fem dagar att vandra, och betecknar våren och sommaren som vandringssäsong.</p>"
+	},
+	"west-coast-trail": {
+		"title": "West Coast Trail",
+		"summary": "En kuperad kustled på Vancouver Islands västkust, 75 km med stränder, stegar och regnskog mellan Pachena Bay och Gordon River.",
+		"html": "<p>Leden var ursprungligen en räddningsled för överlevande efter skeppsbrott och är idag en krävande vandring i Pacific Rim National Park Reserve. Vandrare måste boka plats och delta i en orientering, och leden är endast öppen under sommaren.</p>\n<p>Enligt Parks Canada tar vandringen sex till åtta dagar och är öppen från den 1 maj till den 30 september.</p>"
+	},
+	"west-highland-way": {
+		"title": "West Highland Way",
+		"summary": "Skottlands mest kända långdistansvandringsled sträcker sig från utkanten av Glasgow till Fort William och passerar Loch Lomond, Rannoch Moor och Glen Coe på vägen in i Högländerna.",
+		"html": "<p>Leden börjar i pendlarstaden Milngavie och övergår gradvis från förortsmiljö till skogsmark, för att sedan stiga längs Loch Lomonds östra strand. Norr om Tyndrum korsar den Rannoch Moors öppna torv- och klippmarker innan den sluttar ner genom den stora dalen Glen Coe.</p>\n<p>Den sista sträckan går via stigningen Devil’s Staircase och gamla militärvägar och slutar i Fort William vid foten av Ben Nevis. De flesta vandrare tar sex eller sju dagar på sig; enligt den officiella webbplatsen är maj den mest populära månaden och leden kan vandras året runt, men myggorna kan vara besvärliga på sommaren.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "Den äldsta långdistansleden i Schwarzwald, från Pforzheim längs bergskedjans västra ås till Basel.",
+		"html": "<p>Westweg följer bergskammen i norra och mellersta Schwarzwald, passerar Hornisgrinde, Feldberg och Belchen och slutar vid den schweiziska gränsstaden Basel. Sedan 1900 har leden underhållits av Schwarzwaldklubben, som även markerar den med en röd romb.</p>\n<p>Schwarzwalds turistbyrå anger en sträcka på cirka 285 km fördelat på 12 etapper längs den västra rutten och 13 etapper längs den östra varianten, som delar sig vid Titisee.</p>"
+	},
+	"wicklow-way": {
+		"title": "Wicklow Way",
+		"summary": "Irlands äldsta markerade vandringsled sträcker sig över Wicklow-bergen, från Dublins förorter till byn Clonegal i Carlow.",
+		"html": "<p>Rutten går längs skogsvägar och stigar genom mossmarker genom Glendalough, över Lugnaquillas utlöpare och genom Wicklows högland. I beskrivningen av leden anges att vandringen tar sju dagar eller mer, beroende på tempo.</p>\n<p>På vandringsledens webbplats anges sträckan mellan Marlay Park och Clonegal till 127 km.</p>"
+	},
+	"wilson-trail": {
+		"title": "Wilson Trail",
+		"summary": "En 78 km lång vandringsled som sträcker sig tvärs över Hongkong, från Stanley på Hongkongön till Nam Chung i New Territories, uppdelad i 10 etapper.",
+		"html": "<p>Wilson Trail sträcker sig från Hong Kong-öns sydkust genom Lion Rock och Tai Po-området till nordöstra New Territories.</p>\n<p>Turistbyrån anger att leden är 78 km lång och består av 10 etapper.</p>"
+	}
+}

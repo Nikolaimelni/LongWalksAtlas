@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Sentier de la côte d'Abel Tasman",
+		"summary": "Une randonnée côtière de trois à cinq jours à travers les plages dorées et la brousse du parc national d'Abel Tasman, de Mārahau à Wainui.",
+		"html": "<p>Les bateaux-taxis permettent aux randonneurs de raccourcir ou d&#x27;allonger leur parcours et de traverser les estuaires à marée basse.</p>\n<p>Le DOC indique une distance de 60 km aller simple. Il précise que le sentier est le plus fréquenté d&#x27;octobre à avril et qu&#x27;il est praticable toute l&#x27;année.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Sentier Alpe-Adria",
+		"summary": "Un sentier de grande randonnée qui part du pied du Grossglockner, en Autriche, traverse les Alpes juliennes en Slovénie et mène jusqu'à la côte adriatique, près de Trieste.",
+		"html": "<p>L&#x27;Alpe-Adria-Trail traverse les Alpes, des glaciers jusqu&#x27;à la mer, en passant par les lacs de Carinthie, la vallée slovène de la Soča et le plateau karstique, avant de descendre vers Muggia. Il est divisé en 43 étapes de randonnée de village en village.</p>\n<p>Le site officiel indique une longueur d&#x27;environ 750 km, tandis que la relation OSM fait état de 690 km ; la longueur dépend donc des variantes d&#x27;itinéraire.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "Le grand circuit classique à haute altitude à travers les Dolomites, du lac de Braies à Belluno, avec des refuges chaque jour et douze étapes.",
+		"html": "<p>L&#x27;Alta Via 1 relie le lac Pragser Wildsee aux Cinque Torri, au massif de la Civetta et à la vallée du Piave, en traversant des cols de haute montagne et des parois rocheuses désormais classées au patrimoine mondial de l&#x27;UNESCO. Son itinéraire est organisé autour de refuges de montagne, ouverts en été.</p>\n<p>Le portail touristique des Dolomites indique un parcours d’environ 125 km, douze étapes et une saison s’étendant de fin juin à fin septembre.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "Un itinéraire plus long et plus accidenté que l'Alta Via 1, qui part de Brixen, dans le Tyrol du Sud, et traverse les Odle, la Marmolada et les Pale di San Martino pour rejoindre Feltre.",
+		"html": "<p>Le parcours s&#x27;étend du nord au sud à travers les Dolomites occidentales et centrales, en empruntant des refuges et quelques passages de type via ferrata. Il passe par le glacier de la Marmolada, le plus haut sommet du massif, et par le plateau des Pale di San Martino.</p>\n<p>Le portail des Dolomites indique un parcours d&#x27;environ 180 km, treize étapes journalières et une saison s&#x27;étendant de fin juin à fin septembre.</p>"
+	},
+	"amatola-trail": {
+		"title": "Sentier de randonnée d'Amatola",
+		"summary": "Un circuit de six jours d'environ 100 km dans les montagnes d'Amathole, dans la province du Cap-Oriental, allant de la périphérie de Qonce à Hogsback.",
+		"html": "<p>Le sentier de l&#x27;Amatola traverse une forêt indigène, longe des ruisseaux de montagne et des crêtes, et passe par des refuges. Le site web touristique du Cap-Oriental le classe parmi les sentiers de randonnée emblématiques de la province.</p>\n<p>Le sentier traverse les montagnes Amathole, la ceinture verte qui s&#x27;étend derrière la côte du Cap-Oriental. Il est répertorié sur le site touristique provincial comme l&#x27;un des sentiers de randonnée emblématiques de la région.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Circuit de l'Annapurna",
+		"summary": "Un trek himalayen classique autour du massif de l'Annapurna, passant par le col de Thorong La, de Besisahar à Nayapul.",
+		"html": "<p>Le circuit traverse différentes zones climatiques, depuis les vallées subtropicales jusqu&#x27;au haut désert de Manang et au col de Thorong La, à 5 400 m d&#x27;altitude.</p>\n<p>L&#x27;Office du tourisme du Népal indique que ce trek dure trois semaines ou plus et recommande les périodes de mars à mai et de septembre à novembre.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Sentier des Appalaches",
+		"summary": "Le sentier de grande randonnée le plus célèbre des États-Unis s'étend sur environ 2 200 miles le long des crêtes des Appalaches, depuis le mont Springer en Géorgie jusqu'au mont Katahdin dans le Maine, traversant 14 États.",
+		"html": "<p>L&#x27;Appalachian Trail est géré par l&#x27;Appalachian Trail Conservancy et le National Park Service. La plupart des randonneurs qui parcourent le sentier dans son intégralité partent de Géorgie en direction du nord entre fin février et début avril, et mettent environ six mois pour le parcourir.</p>\n<p>Selon l&#x27;ATC, le sentier mesurait 2 197,9 miles en 2026, soit environ 3 537 km ; sa longueur varie légèrement au fur et à mesure que son tracé est modifié.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Sentier Bibbulmun",
+		"summary": "Un sentier de grande randonnée d'environ 1 000 km qui traverse les forêts et le littoral du sud-ouest de l'Australie-Occidentale, entre Kalamunda, près de Perth, et Albany.",
+		"html": "<p>Le sentier est balisé par un triangle jaune représentant un serpent arc-en-ciel et comporte des refuges situés à environ une journée de marche les uns des autres. Les randonneurs peuvent emprunter le sentier dans les deux sens.</p>\n<p>Selon la Fondation Bibbulmun Track, une randonnée d&#x27;un bout à l&#x27;autre dure environ six à huit semaines et il est recommandé de la faire pendant les mois les plus frais, d&#x27;avril à début novembre.</p>"
+	},
+	"bruce-trail": {
+		"title": "Sentier Bruce",
+		"summary": "Le plus ancien et le plus long sentier balisé du Canada longe l'escarpement du Niagara sur plus de 900 km, de Niagara à Tobermory, sur la péninsule Bruce.",
+		"html": "<p>L&#x27;association Bruce Trail Conservancy décrit un sentier principal de plus de 900 km, auquel s&#x27;ajoutent environ 400 km de sentiers secondaires, pour un total de 1 300 km. Il longe des falaises, des grottes, des forêts et de petites villes entre le lac Ontario et la baie Georgienne.</p>\n<p>L&#x27;association recommande de prévoir environ 30 jours pour parcourir le sentier principal de bout en bout.</p>"
+	},
+	"caminho-portugues": {
+		"title": "La voie portugaise",
+		"summary": "Le chemin de pèlerinage qui part de Lisbonne, passe par Coimbra et Porto, pour aboutir à la cathédrale de Saint-Jacques-de-Compostelle.",
+		"html": "<p>Depuis le Moyen Âge, les pèlerins marchent vers le nord, de Lisbonne à Saint-Jacques-de-Compostelle. La plupart partent de Porto, situé à un peu plus de 240 km de Saint-Jacques-de-Compostelle ; le parcours complet depuis Lisbonne s&#x27;étend sur environ 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "Un chemin de pèlerinage côtier partant de la ville frontalière basque d'Irún, longeant le golfe de Gascogne et traversant la Cantabrie, les Asturies et la Galice jusqu'à Saint-Jacques-de-Compostelle.",
+		"html": "<p>Le Chemin du Nord longe la côte cantabrique, troquant les plaines ouvertes de la Meseta contre des plages, des falaises, des villages de pêcheurs et de courtes montées raides entre les vallées fluviales. Il était emprunté au début du Moyen Âge par les pèlerins qui souhaitaient éviter le sud, alors sous domination musulmane, et il est aujourd’hui moins fréquenté que le Chemin français.</p>\n<p>L&#x27;office du tourisme espagnol indique une longueur d&#x27;environ 825 km (800 km dans sa FAQ) et environ 35 étapes. En Galice, le site officiel des pèlerins décrit le dernier tronçon, de Ribadeo à Saint-Jacques-de-Compostelle.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "Chemin Fisterra-Muxía",
+		"summary": "Un prolongement galicien du Chemin de Saint-Jacques, qui relie la cathédrale au cap de Fisterra, sur la côte atlantique, et à la ville sanctuaire de Muxía.",
+		"html": "<p>Depuis Saint-Jacques-de-Compostelle, le chemin se dirige vers l&#x27;ouest jusqu&#x27;à la Costa da Morte, avec Fisterra (le cap autrefois considéré comme le bout du monde connu) et Muxía comme deux destinations finales. Certains pèlerins marchent jusqu&#x27;à Fisterra, puis continuent vers Muxía, ou inversement.</p>\n<p>Le site web des pèlerins galiciens indique une distance de 118,8 km pour la variante Fisterra-Muxía et de 119,9 km pour la variante Muxía-Fisterra.</p>"
+	},
+	"camino-frances": {
+		"title": "Chemin français",
+		"summary": "Le chemin le plus fréquenté vers Saint-Jacques-de-Compostelle traverse les Pyrénées à Roncevaux et s'étend vers l'ouest à travers le nord de l'Espagne, en passant par Pampelune, Burgos et León, jusqu'au tombeau de saint Jacques.",
+		"html": "<p>Les pèlerins empruntent cet itinéraire depuis le Moyen Âge, et les villes qui le bordent portent encore les traces de ce va-et-vient : hôpitaux, ponts, monastères et églises construits pour les voyageurs. De nombreux randonneurs partent de Saint-Jean-Pied-de-Port, franchissent les Pyrénées le premier jour, puis s&#x27;engagent sur le long plateau de la Meseta avant d&#x27;atteindre les collines verdoyantes de la Galice.</p>\n<p>Le Camino Francés fait partie de l&#x27;inscription à l&#x27;UNESCO de la Route de Saint-Jacques-de-Compostelle. L&#x27;office du tourisme espagnol estime son parcours à environ 930 km et compte environ 32 étapes lorsqu&#x27;on le mesure à partir de Somport ou de Roncevaux, et recommande de le parcourir au printemps et en septembre-octobre.</p>"
+	},
+	"camino-ingles": {
+		"title": "Camino Inglés",
+		"summary": "Un court chemin de pèlerinage galicien reliant le port naval de Ferrol à Saint-Jacques-de-Compostelle, emprunté autrefois par les pèlerins arrivant par la mer depuis le nord de l'Europe.",
+		"html": "<p>Le « Chemin anglais » tire son nom des pèlerins originaires des îles britanniques et d&#x27;Europe du Nord qui débarquaient à Ferrol et à La Corogne. Le site officiel galicien dédié au pèlerinage indique une distance de 112,4 km depuis Ferrol et de 72,8 km depuis La Corogne. Les pèlerins doivent parcourir au moins 100 km à pied pour obtenir le certificat, ce qui fait de l&#x27;itinéraire de Ferrol le choix le plus courant.</p>\n<p>Plus court que les autres itinéraires galiciens, c’est un choix pratique pour les personnes qui ne disposent que d’une semaine, voire moins. Comme le départ de Ferrol offre un parcours de plus de 100 km, cette randonnée permet tout de même d’obtenir le certificat de pèlerin à Saint-Jacques-de-Compostelle.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Chemin primitif",
+		"summary": "Le plus ancien chemin jacobéen, qui suivrait le parcours emprunté par le roi Alphonse II au IXe siècle, part d'Oviedo et traverse les monts Cantabriques jusqu'à Saint-Jacques-de-Compostelle.",
+		"html": "<p>Le Primitivo est un itinéraire court et vallonné qui traverse les Asturies et la Galice, franchit le col de la route des Hospitales et rejoint le Camino Francés à Melide pour les derniers jours. Il est moins fréquenté que le Francés et comporte des montées raides.</p>\n<p>L&#x27;office du tourisme espagnol indique une longueur d&#x27;environ 325 km et environ 14 étapes ; le site web des pèlerins galiciens décrit la partie galicienne séparément.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Sentier « Cape to Cape »",
+		"summary": "Une randonnée côtière d'environ 135 km le long des falaises et des plages, entre les phares du cap Naturaliste et du cap Leeuwin, dans le sud-ouest de l'Australie-Occidentale.",
+		"html": "<p>Le parcours longe des grottes calcaires, des spots de surf, des champs de fleurs sauvages et des points d&#x27;observation des baleines. Selon Tourism Western Australia, il faut compter entre cinq et sept jours pour le parcourir ; la saison des fleurs sauvages a lieu au printemps, tandis que les baleines sont visibles de septembre à décembre.</p>\n<p>Le site touristique de l&#x27;État recommande de prévoir cinq à sept jours et mentionne les fleurs sauvages printanières sur les promontoires. Les baleines passent au large des caps de septembre à décembre environ.</p>"
+	},
+	"carian-trail": {
+		"title": "Sentier de Carian",
+		"summary": "Un long sentier traversant l'ancienne Carie, dans le sud-ouest de la Turquie, depuis la côte près de Marmaris jusqu'aux ruines situées à l'intérieur des terres, aux alentours d'Alinda.",
+		"html": "<p>Le sentier de Carie relie les péninsules de Bozburun et de Datça, la baie de Gökova et l&#x27;intérieur de la Carie, et traverse d&#x27;anciennes ruines, d&#x27;anciennes routes caravanières et des sentiers muletiers.</p>\n<p>Le site web du sentier indique une longueur d&#x27;environ 850 km répartis en quatre sections principales ; l&#x27;association « Culture Routes » fait état de 800 km.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "La piste de Chilkoot",
+		"summary": "Une route historique de la ruée vers l'or reliant Dyea, en Alaska, au lac Bennett, en Colombie-Britannique, en passant par le col Chilkoot, sur une longueur de 33 miles.",
+		"html": "<p>En 1897-1898, des prospecteurs ont transporté des tonnes de provisions par le col pour se rendre au Klondike. Aujourd&#x27;hui, ce sentier est géré conjointement par le Service des parcs nationaux des États-Unis et Parcs Canada, et il est ouvert en été.</p>\n<p>Le NPS indique une longueur de 33 miles.</p>"
+	},
+	"colorado-trail": {
+		"title": "Le Colorado Trail",
+		"summary": "Un sentier de 567 miles traversant les Rocheuses du Colorado, depuis les abords de Denver, au niveau de Waterton Canyon, jusqu’à Durango, se situant principalement à plus de 3 000 m d’altitude.",
+		"html": "<p>Le sentier traverse huit chaînes de montagnes et six zones sauvages, avec la possibilité de choisir entre les itinéraires « Collegiate West » et « Collegiate East ». Selon la Colorado Trail Foundation, il relie Denver à Durango.</p>\n<p>La randonnée en continu dure généralement entre quatre et six semaines.</p>"
+	},
+	"e1": {
+		"title": "E1 : sentier européen de grande randonnée",
+		"summary": "Le sentier européen de grande randonnée nord-sud, qui part du Cap Nord en Norvège et traverse la Scandinavie, le Danemark, l'Allemagne et la Suisse pour rejoindre Capo Passero en Sicile.",
+		"html": "<p>Le sentier E1 relie des sentiers nationaux et régionaux sous un même balisage. Son extrémité sud a été prolongée à travers l&#x27;Italie jusqu&#x27;en Sicile dans les années 2010, et certaines parties du tronçon italien sont encore en cours de balisage.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Sentier de randonnée du canyon de la Fish River",
+		"summary": "Une randonnée de 90 km à travers le canyon de la Fish River, dans le sud de la Namibie, de Hobas à Ai-Ais.",
+		"html": "<p>Le parcours longe le fond du canyon et traverse des méandres de la rivière, des zones de sable et des champs de rochers.</p>\n<p>Selon Namibia Wildlife Resorts, le sentier part de Hobas et s&#x27;étend sur 90 km.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Le sentier des pêcheurs",
+		"summary": "Un sentier côtier balisé à la pointe sud-ouest du Portugal, qui relie Porto Covo, dans l'Alentejo, à Lagos, en Algarve, en longeant les falaises, les dunes et les chemins de pêcheurs.",
+		"html": "<p>Le sentier suit d&#x27;anciens chemins de pêcheurs qui traversent le sable et les falaises du Parc naturel du sud-ouest de l&#x27;Alentejo et de la côte vicentine. Il est divisé en 13 étapes journalières, ce qui permet de le parcourir en séjournant dans des hôtels ou des chambres d&#x27;hôtes plutôt qu&#x27;en camping.</p>\n<p>Selon l&#x27;association Rota Vicentina, la période idéale pour parcourir ce sentier s&#x27;étend de septembre à juin, ce qui permet d&#x27;éviter les mois d&#x27;été les plus chauds.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "Le versant espagnol de la traversée des Pyrénées, un long sentier de montagne reliant le Cabo de Higuer, sur la côte atlantique, au Cap de Creus, sur la Méditerranée.",
+		"html": "<p>Le GR11 longe les versants sud des Pyrénées à travers le Pays basque, la Navarre, l&#x27;Aragon et la Catalogne, en traversant plusieurs fois la chaîne principale et en restant proche de la frontière française. Il est divisé en 46 étapes par la Fédération espagnole d&#x27;alpinisme, auxquelles s&#x27;ajoute un prologue.</p>\n<p>La fédération indique qu’il s’étend sur plus de 800 km. Il est généralement parcouru par tronçons ; une traversée complète prend bien plus d’un mois en raison des montées régulières entre les vallées.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "Le GR20 est un sentier de haute montagne exigeant qui traverse la Corse de Calenzana, au nord-ouest, à Conca, au sud-est, en longeant la dorsale granitique de l'île.",
+		"html": "<p>Le sentier suit la crête centrale de la Corse, avec des passages rocheux à franchir, des chaînes sur les sections escarpées et des refuges gérés par le parc régional. Il est souvent décrit comme l’un des sentiers de grande randonnée les plus difficiles d’Europe en raison du terrain accidenté et des conditions météorologiques variables, même si les étapes sont courtes.</p>\n<p>Le site touristique officiel de la Corse indique un parcours de 180 km répartis sur 16 jours, à raison d&#x27;environ sept heures par jour, les conditions étant favorables de juin à mi-octobre. L&#x27;itinéraire se divise en une partie nord plus difficile et une partie sud un peu plus facile.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Great Ocean Walk",
+		"summary": "Une randonnée côtière dans l'État de Victoria, d'Apollo Bay aux Douze Apôtres, qui s'étend sur plus de 100 km de plages, de falaises et de forêt tropicale, et qui se parcourt généralement en huit jours.",
+		"html": "<p>Le Great Ocean Walk longe la côte du parc national de Great Otway et du parc national de Port Campbell ; il se parcourt généralement d&#x27;est en ouest. Les autorités indiquent une distance de « plus de 100 km » et une durée de huit jours.</p>\n<p>Les randonneurs séjournent généralement dans des campings ou des gîtes le long du parcours et terminent leur périple près des Douze Apôtres. Le parcours est le plus souvent effectué d&#x27;est en ouest, comme le recommande l&#x27;organisme responsable.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "Le sentier du mur d'Hadrien",
+		"summary": "Un sentier national longeant la frontière romaine entre Wallsend-on-Tyne et Bowness-on-Solway, passant par des forts, des milecastles et les falaises du Whin Sill.",
+		"html": "<p>L&#x27;itinéraire traverse le nord de l&#x27;Angleterre d&#x27;un bout à l&#x27;autre, principalement le long ou à proximité du tracé du mur datant du IIe siècle. La partie centrale, qui passe par les falaises de Whin Sill, présente les vestiges les mieux conservés, avec des forts tels que Housesteads et Vindolanda situés à proximité du sentier.</p>\n<p>National Trails indique une longueur de 84 miles et recommande six à sept jours pour les randonneurs expérimentés, la meilleure saison s&#x27;étendant de mai à octobre. Sa page mentionne également Carlisle dans la description du sentier, mais le parcours et la relation OSM s&#x27;achèvent à Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Sentier Heysen",
+		"summary": "Le « Long Walk » d'Australie-Méridionale s'étend sur environ 1 200 km, depuis le cap Jervis jusqu'à la gorge de Parachilna, en passant par la péninsule de Fleurieu, la région de Barossa et les Flinders Ranges.",
+		"html": "<p>Le sentier Heysen Trail est aménagé et entretenu par l&#x27;association « Friends of the Heysen Trail » et traverse des terres agricoles, des vignobles et les Flinders Ranges. Il est fermé pendant la saison des risques d&#x27;incendie.</p>\n<p>Selon l&#x27;association, le sentier s&#x27;étend sur 1 200 km et sa parcouru en environ 60 jours.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Sentier de Hong Kong",
+		"summary": "Un sentier de 50 km traversant l'île de Hong Kong, du Victoria Peak à Big Wave Bay, inauguré en 1985 et divisé en 8 tronçons.",
+		"html": "<p>Le Hong Kong Trail est l&#x27;un des quatre sentiers de grande randonnée gérés par le Département de l&#x27;agriculture, de la pêche et de la conservation ; il traverse cinq parcs naturels. Il est divisé en huit tronçons.</p>\n<p>Ces huit sections peuvent être enchaînées pour former une longue randonnée d&#x27;une journée ou des promenades plus courtes, et le sentier débute au point de vue le plus célèbre de la ville. Il a été inauguré en avril 1985.</p>"
+	},
+	"inca-trail": {
+		"title": "Le Chemin des Incas vers le Machu Picchu",
+		"summary": "Le trek classique sur la route inca à travers les Andes jusqu'au Machu Picchu, une randonnée de quatre jours qui s'achève à la Porte du Soleil et aux ruines.",
+		"html": "<p>Le sentier suit des chemins et des escaliers incas à travers la forêt de nuages, en passant par des ruines telles que Wiñay Wayna, jusqu’au Machu Picchu. L’accès est soumis à un permis.</p>\n<p>La relation OSM indique une longueur de 38 km et mentionne un gestionnaire au sein du ministère péruvien de la Culture.</p>"
+	},
+	"jesus-trail": {
+		"title": "Le sentier de Jésus",
+		"summary": "Un itinéraire de pèlerinage et de randonnée d'environ 65 km en Galilée, reliant Nazareth à Capharnaüm, au bord de la mer de Galilée.",
+		"html": "<p>Le « Jesus Trail » suit des sentiers liés au ministère de Jésus, passant par Cana, les Cornes de Hattin et le mont Arbel. Il s&#x27;agit d&#x27;un mélange de pèlerinage chrétien et de randonnée dans la nature, qui se parcourt généralement en trois à quatre jours.</p>\n<p>Le site web du sentier indique une longueur de 65 km.</p>"
+	},
+	"john-muir-trail": {
+		"title": "Sentier John Muir",
+		"summary": "Un sentier de haute altitude dans la Sierra Nevada, long d'environ 211 miles, qui part de la vallée de Yosemite et passe par des cols situés à plus de 3 500 m d'altitude pour rejoindre le sommet du mont Whitney.",
+		"html": "<p>Le sentier John Muir suit la crête de la Sierra Nevada à travers les parcs nationaux de Yosemite, Kings Canyon et Sequoia. Le Service des parcs nationaux indique qu&#x27;il s&#x27;étend sur 211 miles et précise qu&#x27;un permis est obligatoire.</p>\n<p>La plupart des randonneurs prévoient deux à trois semaines et emportent des provisions pour de longues étapes sans possibilité de ravitaillement.</p>"
+	},
+	"jordan-trail": {
+		"title": "Sentier de Jordanie",
+		"summary": "Un sentier de 675 km partant d'Umm Qais, au nord de la Jordanie, et traversant Dana et Pétra pour rejoindre Aqaba, au bord de la mer Rouge ; ce parcours est généralement effectué en environ 35 jours.",
+		"html": "<p>Le Jordan Trail traverse la Jordanie depuis les ruines romaines d&#x27;Umm Qais, en passant par les montagnes du Rift jordanien, les hauts plateaux de la mer Morte, Dana, Pétra et le Wadi Rum, jusqu&#x27;à la mer Rouge. Il relie les villages locaux aux communautés bédouines.</p>\n<p>L&#x27;association Jordan Trail indique une longueur de 675 km et environ 35 jours de randonnée ininterrompue.</p>"
+	},
+	"juliana-trail": {
+		"title": "Sentier Juliana",
+		"summary": "Un circuit de grande randonnée autour des Alpes juliennes en Slovénie, composé de 16 étapes qui contournent les principaux sommets et longent les rivières Soča et Sava.",
+		"html": "<p>Le sentier Juliana relie les vallées, les cols, les forêts et les villages aux alentours du parc national du Triglav sans nécessiter l&#x27;ascension d&#x27;aucun sommet. Il est balisé et divisé en 16 étapes d&#x27;environ 17,5 km chacune.</p>\n<p>Le site touristique de la vallée de la Soča indique une longueur de 270 km pour le circuit principal, avec des prolongements optionnels de 42 km et 60 km, et une saison s&#x27;étendant de fin mars à fin octobre.</p>"
+	},
+	"kepler-track": {
+		"title": "Parcours Kepler",
+		"summary": "Un grand circuit de randonnée de 60 km qui part des environs de Te Anau, grimpe au-dessus de la limite de la végétation le long de la crête des montagnes Kepler et revient en longeant le lac Te Anau et la rivière Waiau.",
+		"html": "<p>Le Kepler Track est un circuit de trois à quatre jours comprenant trois refuges, offrant des vues sur les montagnes au-dessus de la limite forestière et traversant des forêts aux allures de fjords.</p>\n<p>La page comparative du Département de la conservation indique une longueur de 60 km et une durée de trois à quatre jours. La saison des Great Walks commence fin octobre.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "Un circuit autour de la péninsule d'Iveragh, dans le comté de Kerry, qui commence et se termine à Killarney, et traverse des montagnes, des tourbières et des villages côtiers tels que Cahersiveen et Sneem.",
+		"html": "<p>Le Kerry Way mêle routes tranquilles, anciens sentiers et chemins de montagne entre les Macgillycuddy&#x27;s Reeks et la côte atlantique. Environ un tiers du parcours emprunte des routes locales.</p>\n<p>Le registre national des sentiers de Sport Ireland indique une longueur de 232,1 km et une durée de neuf jours ; la relation OSM fait état de 214 km, les chiffres exacts varient donc en fonction de la variante choisie pour le parcours dans le Kerry.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimandjaro - Itinéraire de Machame",
+		"summary": "L'un des principaux itinéraires d'ascension du Kilimandjaro, qui part de la porte de Machame et prévoit des camps de tentes.",
+		"html": "<p>Le circuit de Machame est l&#x27;un des itinéraires du Kilimandjaro et passe par des camps de tentes gérés par des opérateurs agréés. L&#x27;Office des parcs nationaux de Tanzanie considère Machame comme l&#x27;un des principaux points d&#x27;accès, la descente s&#x27;effectuant par Mweka.</p>\n<p>L&#x27;Office des parcs nationaux de Tanzanie précise que l&#x27;itinéraire de Marangu fait appel à des refuges, tandis que les autres itinéraires, y compris celui de Machame, utilisent des camps de tentes. La descente s&#x27;effectue par le portail de Mweka.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo - Kohechi",
+		"summary": "Un chemin de pèlerinage de montagne exigeant, long d'environ 72 km, reliant le centre bouddhiste de Kōyasan au sanctuaire de Kumano Hongu Taisha, sur la péninsule de Kii, au Japon.",
+		"html": "<p>Le Kohechi traverse trois cols situés à plus de 1 000 m d&#x27;altitude et relie la montagne sacrée de Kōyasan aux sanctuaires de Kumano, ce qui en fait le plus escarpé et le plus tranquille des itinéraires du Kumano Kodo. Le site touristique le décrit comme un parcours traversant des villages isolés et d&#x27;anciens sentiers de pierre.</p>\n<p>La source utilisée ici est un article touristique qui indique une longueur de 72 km ; il ne précise ni la durée en jours ni la saison.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo - Nakahechi",
+		"summary": "Le principal itinéraire de pèlerinage du Kumano Kodo, situé dans la péninsule de Kii au Japon, qui relie Takijiri au sanctuaire de Kumano Hongu Taisha, se parcourt généralement en deux à quatre jours.",
+		"html": "<p>La Nakahechi était la route principale empruntée par les empereurs et les roturiers pour se rendre aux trois sanctuaires de Kumano ; elle traverse des cols boisés parsemés de petits sanctuaires de halte (oji). Cet itinéraire fait partie des « Sites sacrés et chemins de pèlerinage de la chaîne montagneuse de Kii », inscrits au patrimoine mondial de l’UNESCO.</p>\n<p>La page de l&#x27;association touristique de Tanabe que nous avons consultée ne mentionnait ni la longueur ni la saison ; la distance de 36 km provient de la balise OSM.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "Le célèbre circuit suédois « de refuge en refuge » dans l'Arctique s'étend sur environ 450 km, d'Abisko, au-delà du cercle polaire arctique, jusqu'à Hemavan, au sud, en traversant les montagnes et les vallées de la Laponie.",
+		"html": "<p>Le Kungsleden est géré par l&#x27;Association suédoise du tourisme, qui assure l&#x27;entretien des refuges, des ponts et des liaisons par bateau. Son tronçon le plus connu est celui du nord, qui va d&#x27;Abisko à Nikkaluokta en passant par le col de Tjäktja, où les randonneurs traversent la toundra et des vallées alpines au pied des plus hautes montagnes de Suède.</p>\n<p>La page de la STF indique une distance de 450 km entre Abisko et Hemavan, alors que la somme des longueurs des différents tronçons est supérieure et qu&#x27;OSM indique 440 km ; le chiffre exact dépend donc de la manière dont sont comptabilisés les détours et les raccourcis en bateau.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Sentier de Larapinta",
+		"summary": "Un sentier dans le désert des West MacDonnell Ranges, en Australie centrale, reliant la station télégraphique d'Alice Springs au sommet du mont Sonder, en douze étapes.",
+		"html": "<p>Le sentier Larapinta suit les crêtes des West MacDonnell Ranges à travers des gorges et des points d&#x27;eau. Selon le site officiel, il s&#x27;étend sur plus de 230 km et est divisé en 12 étapes d&#x27;une à deux journées chacune.</p>\n<p>D&#x27;autres sources mentionnent 223 km ; ce sentier se parcourt généralement pendant les mois les plus frais.</p>"
+	},
+	"laugavegur": {
+		"title": "Sentier de Laugavegur",
+		"summary": "Le trek le plus populaire d'Islande traverse les hauts plateaux du sud en environ quatre jours, depuis les sources chaudes de rhyolite de Landmannalaugar jusqu'aux vallées verdoyantes de Þórsmörk.",
+		"html": "<p>Le sentier longe des geysers fumants, des champs d&#x27;obsidienne noire, des névés et des rivières glaciaires avant de déboucher dans une vallée couverte de bosquets de bouleaux, nichée entre trois glaciers. Les refuges situés le long du parcours sont gérés par l&#x27;Association islandaise de randonnée, et le sentier n&#x27;est praticable qu&#x27;en été.</p>\n<p>Le site de l&#x27;association indique une longueur de 54 à 56 km selon le tableau des étapes et une durée de quatre jours, le sentier étant ouvert du 25 juin au 15 septembre environ.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "Sentier de montagne du Liban",
+		"summary": "Un sentier de 470 km qui longe les montagnes du Liban, d'Andaket au nord à Marjayoun au sud, en passant par plus de 75 villes et villages.",
+		"html": "<p>Selon l&#x27;Association du sentier de montagne du Liban, le parcours s&#x27;étend entre 600 et 2 000 m d&#x27;altitude et est balisé par des marques blanches et violettes. Il traverse des forêts de cèdres, des monastères et des villages, et fait étape dans des gîtes.</p>\n<p>La mise en valeur des gîtes locaux et des projets communautaires le long du parcours constitue l&#x27;un des principaux objectifs du sentier depuis sa création. Les randonneurs suivent les balises blanches et violettes à travers les villages de montagne, du nord au sud.</p>"
+	},
+	"long-trail": {
+		"title": "Long Trail",
+		"summary": "Le plus ancien sentier de randonnée de longue distance des États-Unis longe les Green Mountains sur 272 miles, de la frontière du Massachusetts à la frontière canadienne.",
+		"html": "<p>Le Long Trail a été aménagé au début du XXe siècle par le Green Mountain Club et a par la suite inspiré l&#x27;Appalachian Trail, avec lequel il partage les 100 premiers miles.</p>\n<p>Selon le club, le sentier s&#x27;étend sur 272 miles à travers la crête du Vermont et sa traversée complète nécessite plusieurs semaines.</p>"
+	},
+	"lycian-way": {
+		"title": "La Route de Lycie",
+		"summary": "Un sentier balisé longeant la côte de l'ancienne Lycie, dans le sud de la Turquie, depuis Ölüdeniz, près de Fethiye, jusqu'à Geyikbayırı, près d'Antalya.",
+		"html": "<p>Aménagé et balisé en 1999, ce sentier relie d&#x27;anciens chemins muletiers et des voies romaines, longeant les tombes et les théâtres des cités lyciennes, avec de longs tronçons surplombant la mer.</p>"
+	},
+	"maclehose-trail": {
+		"title": "Sentier MacLehose",
+		"summary": "Le plus long sentier de randonnée de Hong Kong, long d'environ 100 km et divisé en 10 tronçons, qui relie East Dam, à Sai Kung, à Tuen Mun.",
+		"html": "<p>Le sentier MacLehose traverse les Nouveaux Territoires en passant par des parcs naturels, des plages et des montagnes, longeant la côte de Sai Kung, Sha Tin et le Tai Mo Shan. Il s&#x27;agit d&#x27;un sentier géré par les pouvoirs publics et du parcours de l&#x27;Oxfam Trailwalker.</p>\n<p>L&#x27;Office du tourisme de Hong Kong indique une longueur d&#x27;environ 100 km répartis en 10 sections.</p>"
+	},
+	"milford-track": {
+		"title": "Sentier de Milford",
+		"summary": "Le « Great Walk » le plus célèbre de Nouvelle-Zélande traverse le Fiordland en quatre jours, depuis Glade Wharf, au bord du lac Te Anau, en passant par le col de McKinnon, jusqu’à Sandfly Point, dans le Milford Sound.",
+		"html": "<p>Le Milford Track longe les vallées de Clinton et d’Arthur, franchit le col de Mackinnon et redescend le long de la rivière Arthur en passant par les chutes de Sutherland, l’une des plus hautes chutes d’eau de Nouvelle-Zélande. Les randonneurs doivent réserver leur gîte à l’avance et ne peuvent parcourir le sentier que dans un seul sens.</p>\n<p>Le Département de la conservation indique une longueur de 53,5 km, trois nuits et quatre jours, la saison des « Great Walks » s&#x27;étendant du 1er novembre au 30 avril.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "L'ancienne route reliant Kyoto à Edo (Tokyo), longue d'environ 534 km et comptant 69 villes relais, est en partie préservée sous forme de sentier de randonnée à Magome et à Tsumago.",
+		"html": "<p>La Nakasendo était l&#x27;une des cinq routes de l&#x27;époque d&#x27;Edo et reliait Kyoto à Edo à travers les montagnes. Certains tronçons, comme le sentier Magome-Tsumago dans la vallée de Kiso, sont bien préservés.</p>\n<p>L&#x27;Office national du tourisme japonais indique une longueur d&#x27;environ 534 km et 69 villes-étapes.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Sentier de randonnée de Naukluft",
+		"summary": "Un circuit dans les montagnes du Naukluft, en Namibie, proposé en deux versions : 4 jours et 8 jours.",
+		"html": "<p>Le circuit de Naukluft est un circuit en boucle dans les montagnes de Naukluft. Namibia Wildlife Resorts propose des versions de 4 et 8 jours.</p>\n<p>Namibia Wildlife Resorts organise ce circuit au départ de son camp de Naukluft. La version la plus longue, de 8 jours, traverse le haut plateau, tandis que la version plus courte est destinée aux randonneurs disposant de moins de temps.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Le sentier de l'Offa's Dyke",
+		"summary": "Un sentier national longeant la frontière entre l'Angleterre et le Pays de Galles, qui suit le tracé d'un rempart en terre datant du VIIIe siècle, depuis l'estuaire de la Severn, près de Chepstow, jusqu'à la côte nord, à Prestatyn.",
+		"html": "<p>Le sentier emprunte des tronçons de la digue attribuée au roi Offa de Mercie et relie la vallée de la Wye, les Black Mountains, les collines du Shropshire et la chaîne des Clwydian. Il traverse la frontière à plusieurs reprises, ce qui permet aux randonneurs de passer presque quotidiennement d’un village anglais à un village gallois.</p>\n<p>Le site web du National Trail indique une longueur de 177 miles, précise que l&#x27;itinéraire est praticable toute l&#x27;année mais qu&#x27;il est principalement parcouru entre avril et octobre, et recommande de prévoir environ deux semaines, voire plus. Le point de départ se situe dans la ville de Chepstow, près des falaises de Sedbury.</p>"
+	},
+	"otter-trail": {
+		"title": "Sentier des loutres",
+		"summary": "Le premier et le plus célèbre sentier de randonnée de type « slackpacking » d'Afrique du Sud longe la côte de Tsitsikamma sur 45 km, entre Storms River Mouth et Nature's Valley, et se parcourt en cinq jours.",
+		"html": "<p>L&#x27;Otter Trail est un sentier côtier du parc national de la Garden Route, accessible uniquement sur réservation, qui comporte des refuges aux étapes de nuit et des traversées de rivières dont le franchissement dépend des marées.</p>\n<p>SANParks le décrit comme un parcours de 45 km à parcourir en cinq jours et quatre nuits.</p>"
+	},
+	"overland-track": {
+		"title": "Sentier Overland Track",
+		"summary": "Le grand circuit alpin de six jours en Tasmanie, de Ronny Creek, près de Cradle Mountain, au lac St Clair.",
+		"html": "<p>L&#x27;Overland Track longe des lacs et des plaines couvertes de « button-grass » et débouche sur le lac d&#x27;eau douce le plus profond d&#x27;Australie ; il est nécessaire de réserver et de s&#x27;acquitter d&#x27;un droit d&#x27;accès pendant la haute saison.</p>\n<p>Le Service des parcs et de la faune indique que le parcours fait 65 km aller simple et dure six jours, et précise que la période de réservation s&#x27;étend du 1er octobre au 31 mai.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Pacific Crest Trail",
+		"summary": "Un itinéraire panoramique national longeant les montagnes de Californie, de l'Oregon et de l'État de Washington, depuis la frontière mexicaine à Campo jusqu'au parc Manning au Canada, soit environ 4 265 km.",
+		"html": "<p>Le PCT traverse la Sierra Nevada et la chaîne des Cascades, passant par des déserts, des cols de haute altitude, des paysages enneigés et des reliefs volcaniques. La Pacific Crest Trail Association estime sa longueur à 2 650 miles.</p>\n<p>La traversée complète dure généralement environ cinq mois, et la planification dépend principalement des conditions d&#x27;enneigement et des risques d&#x27;incendie.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "Le sentier des sommets des Balkans",
+		"summary": "Un circuit transfrontalier à travers les Montagnes Maudites d'Albanie, du Kosovo et du Monténégro, reliant des villages dotés de chambres d'hôtes tels que Theth, Valbona, Plav et Peja.",
+		"html": "<p>Ce sentier a été créé après les guerres des années 1990 dans le cadre d’un projet commun visant à encourager la coopération entre trois pays. Il emprunte des sentiers de bergers, franchit des cols à plus de 2 000 m d’altitude et prévoit des nuitées dans des gîtes de village ; les randonneurs n’ont donc pas besoin de tente.</p>\n<p>Le site web du projet indique un parcours de 192 km en 10 étapes (10 à 12 jours) et décrit un circuit en boucle ; le départ se fait généralement à Theth, Plav ou Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Le sentier des Pennines",
+		"summary": "Le premier sentier national d'Angleterre longe les collines des Pennines, depuis Edale, dans le Peak District, jusqu'à Kirk Yetholm, juste de l'autre côté de la frontière écossaise.",
+		"html": "<p>L&#x27;itinéraire traverse des landes de grès, des vallées calcaires et les hautes collines des Yorkshire Dales et des Pennines du Nord, puis longe le mur d&#x27;Hadrien avant de s&#x27;élever vers les collines de Cheviot. Les tourbières et les crêtes exposées en font un parcours difficile à suivre par mauvais temps.</p>\n<p>Selon National Trails, le parcours s&#x27;étend sur 268 miles et peut être parcouru en six à 22 jours ; la période recommandée pour la randonnée s&#x27;étend d&#x27;avril à début octobre.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "Un sentier de crête traversant la Forêt de Thuringe, de Hörschel, sur la Werra, à Blankenstein, sur la Saale, qui a longtemps servi de chemin de démarcation.",
+		"html": "<p>Le Rennsteig suit la crête de la Forêt de Thuringe et des Montagnes d&#x27;ardoise de Thuringe ; c&#x27;est l&#x27;un des itinéraires de randonnée les plus anciens et les plus connus d&#x27;Allemagne. Il est balisé d&#x27;un « R » blanc sur fond vert.</p>\n<p>L&#x27;office régional du tourisme indique une longueur d&#x27;environ 170 km, avec des itinéraires en quatre, six ou huit étapes, et situe le départ à Hörschel et l&#x27;arrivée à Blankenstein.</p>"
+	},
+	"routeburn-track": {
+		"title": "Sentier de Routeburn",
+		"summary": "Une grande randonnée de haute montagne de deux à quatre jours entre le refuge de Routeburn, près de Glenorchy, et The Divide, sur la route de Milford, en passant par le col de Harris.",
+		"html": "<p>Ce sentier relie les parcs nationaux du Mont Aspiring et du Fiordland, offrant des vues sur des lacs alpins, des forêts de hêtres et la vallée de Hollyford. Il peut être parcouru dans les deux sens.</p>\n<p>Le Département de la conservation indique une longueur de 32 km et une durée de deux à quatre jours, et précise que la saison de la « Great Walk » s&#x27;étend du 1er novembre au 30 avril.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Circuit central du Rwenzori",
+		"summary": "Un circuit de sept jours dans les montagnes du Rwenzori, en Ouganda, au départ de Mihunga, avec des refuges et des vues sur les glaciers.",
+		"html": "<p>Le Circuit central est un circuit de randonnée en haute altitude situé dans le parc national des montagnes du Rwenzori, géré par l&#x27;Autorité ougandaise de la faune sauvage.</p>\n<p>L&#x27;Uganda Wildlife Authority propose ce circuit sous la forme d&#x27;un trek de sept jours avec des guides et des refuges. La page indique que janvier, juin et juillet sont les meilleurs mois pour le parcourir.</p>"
+	},
+	"shikoku-henro": {
+		"title": "Pèlerinage de Shikoku",
+		"summary": "Un pèlerinage circulaire de 88 temples autour de l'île de Shikoku, d'environ 1 200 km, lié au moine Kūkai.",
+		"html": "<p>Le Shikoku Henro est le pèlerinage circulaire le plus connu du Japon ; il s&#x27;effectue dans le sens des aiguilles d&#x27;une montre, en partant du temple n° 1, le Ryōzen-ji. L&#x27;association des pèlerins estime sa longueur à environ 1 200 km. De nombreux pèlerins le parcourent par étapes.</p>\n<p>Comme le circuit longe l&#x27;ensemble du littoral et traverse les montagnes de l&#x27;île, de nombreux pèlerins le parcourent en plusieurs étapes. Le port d&#x27;une tenue blanche de pèlerin et d&#x27;un bâton est une tradition, mais ce n&#x27;est plus obligatoire pour les randonneurs d&#x27;aujourd&#x27;hui.</p>"
+	},
+	"south-downs-way": {
+		"title": "Le sentier des South Downs",
+		"summary": "Un sentier national longeant la crête crayeuse des South Downs, de Winchester aux falaises d'Eastbourne.",
+		"html": "<p>Le sentier suit la crête des South Downs à travers des bois et des prairies calcaires, pour aboutir à Beachy Head et aux Seven Sisters.</p>\n<p>Selon National Trails, le parcours fait 100 miles, dure huit à neuf jours et peut être parcouru à tout moment de l&#x27;année ; la haute saison s&#x27;étend de mai à septembre.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "Sentier de la côte sud-ouest",
+		"summary": "Le plus long sentier national britannique longe la côte sud-ouest de l'Angleterre, de Minehead à Poole en passant par les Cornouailles, et s'étend sur plus de 1 000 km de falaises, de criques et de ports.",
+		"html": "<p>Le sentier longe la côte à travers l&#x27;Exmoor, le nord du Devon et les Cornouailles, contourne Land&#x27;s End, puis revient vers l&#x27;est le long de la Manche jusqu&#x27;au Dorset. Il comporte une succession de courtes montées et descentes aux passages d&#x27;estuaires et aux caps, ce qui ralentit la progression par rapport à ce que la distance laisserait supposer.</p>\n<p>Selon National Trails, le parcours s&#x27;étend sur 630 miles et prend environ 30 jours de marche pour un marcheur rapide, ou sept à huit semaines à un rythme tranquille ; le printemps et la fin de l&#x27;été sont recommandés.</p>"
+	},
+	"st-olavsleden": {
+		"title": "Le Chemin de Saint-Olav",
+		"summary": "Un itinéraire de pèlerinage partant de Selånger, sur la côte baltique suédoise, et traversant les montagnes scandinaves jusqu'à la cathédrale de Nidaros, en suivant le chemin que l'on attribue au roi Olav en 1030.",
+		"html": "<p>L&#x27;itinéraire traverse la Suède et la Norvège, passant par des forêts, des lacs et des montagnes, avec des terres agricoles et des villes en chemin. Près de Munkeby, en Norvège, il se divise en deux parcours : un parcours extérieur longeant le fjord de Trondheim et un parcours intérieur traversant les forêts.</p>\n<p>Le centre de pèlerinage norvégien indique une distance de 580 km, répartis en 29 étapes journalières (30 à 32 jours, jours de repos compris), et recommande d&#x27;effectuer le parcours entre le 1er juin et le 1er septembre.</p>"
+	},
+	"st-paul-trail": {
+		"title": "Sentier de Saint-Paul",
+		"summary": "Un itinéraire balisé partant de Perge, près d'Antalya, et menant vers le nord à travers les monts Taurus jusqu'à Yalvaç, l'ancienne Antioche de Pisidie.",
+		"html": "<p>Le sentier suit, en partie, la route que l&#x27;apôtre Paul aurait empruntée lors de son premier voyage à travers l&#x27;Asie Mineure, remontant de la côte méditerranéenne vers les lacs de l&#x27;intérieur des terres.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "Le sentier national néo-zélandais s'étend sur environ 3 000 km, du cap Reinga, à l'extrême nord, jusqu'à Bluff, à la pointe sud.",
+		"html": "<p>Le sentier traverse des plages, des forêts, des paysages volcaniques et des chaînes de montagnes sur les deux îles, et emprunte à la fois des sentiers, des routes, ainsi que des traversées de rivières et de la mer.</p>\n<p>L&#x27;association gestionnaire du sentier en indique une longueur totale de 3 000 km. Une randonnée de bout en bout prend plusieurs mois.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Circuit nord du Tongariro",
+		"summary": "Un circuit volcanique de trois à quatre jours autour du mont Ngauruhoe et du mont Tongariro, sur l'île du Nord de la Nouvelle-Zélande.",
+		"html": "<p>Le circuit traverse le plateau volcanique de Tongariro, en passant par le Red Crater, les Emerald Lakes et le Blue Lake.</p>\n<p>Le DOC estime la longueur totale du circuit à 43 km et sa durée à trois ou quatre jours ; sa page consacrée au sentier décrit actuellement une version plus courte de 35,5 km en raison d&#x27;un changement d&#x27;itinéraire.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Tour du Mont Blanc",
+		"summary": "Un circuit autour du massif du Mont-Blanc traversant la France, l'Italie et la Suisse, qui commence et se termine généralement aux Houches.",
+		"html": "<p>L&#x27;itinéraire traverse une succession de cols de haute montagne entre les vallées de Chamonix, Courmayeur et Champex, avec des nuitées dans des refuges de montagne et des auberges de village tout au long du parcours.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Sentier « Trans Bhutan »",
+		"summary": "La route nationale de pèlerinage et de commerce du Bhoutan, remise en état, qui s'étend sur environ 403 km, de Haa, à l'ouest, à Trashigang, à l'est.",
+		"html": "<p>Le Trans Bhutan Trail était une route médiévale de commerce et de pèlerinage. Il a été rouvert en 2022 pour la randonnée et le vélo. L&#x27;itinéraire complet proposé par l&#x27;association s&#x27;étend sur 36 jours.</p>\n<p>La gestion de cet itinéraire réouvert est assurée par une association à but non lucratif, qui propose un parcours complet de 36 jours. Des tronçons plus courts peuvent être parcourus à pied dans le cadre de randonnées autonomes au départ des principales villes.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Sentier transcaucasien : Haute Svanétie",
+		"summary": "Un tronçon de 140 km en haute montagne du sentier transcaucasien traversant la région géorgienne de Svanétie, de Chuberi, dans la vallée de la Nenskra, à Ushguli, l'un des villages les plus hauts d'Europe.",
+		"html": "<p>Le circuit de randonnée de la Haute-Svanétie traverse des villages dotés de tours de défense en pierre, franchit des cols et longe les glaciers du Grand Caucase. Il est géré par l’Association du Sentier transcaucasien, une association à but non lucratif qui s’attache à créer un sentier continu à travers le Caucase.</p>\n<p>L&#x27;association prévoit un parcours de 140 km, à parcourir en 7 à 9 jours.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Sentier de randonnée de Tsitsikamma",
+		"summary": "Un circuit de randonnée en montagne de six jours à travers la forêt indigène et le fynbos du Tsitsikamma, de Nature's Valley à Storms River, avec des refuges à chaque étape.",
+		"html": "<p>Le sentier traverse des gorges fluviales et passe au milieu d&#x27;immenses arbres de bois jaune ; il est également possible de le parcourir en versions plus courtes. Un service de portage est proposé en option.</p>\n<p>Le site touristique du Cap-Oriental indique un parcours de 62,3 km sur six jours.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Route de l'Argent",
+		"summary": "Une route de pèlerinage nord-sud partant de Séville et traversant l'Estrémadure et la Castille ; il s'agit du « Camino » espagnol qui suit l'ancienne voie romaine, la Via de la Plata.",
+		"html": "<p>La Vía de la Plata suit la voie romaine qui reliait Mérida à Astorga. Les pèlerins venus d&#x27;Andalousie la parcourent à pied pendant environ un mois jusqu&#x27;à Astorga, où elle rejoint le Camino Francés, ou continuent à travers la Galice en empruntant la branche de Sanabrés.</p>\n<p>Selon l&#x27;office du tourisme espagnol, cet itinéraire s&#x27;étend sur 800 à 900 km, comporte environ 32 étapes à pied (49 pour les cyclistes) et nécessite au minimum sept jours.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Via degli Dei",
+		"summary": "Un itinéraire traversant les Apennins, de Bologne à Florence, qui suit en partie des voies romaines et médiévales et qui se parcourt généralement en cinq à sept jours.",
+		"html": "<p>La Via degli Dei relie les deux villes à travers des crêtes boisées, d&#x27;anciennes routes et des villages de montagne, avec des nuitées dans des gîtes. Son nom fait référence à des toponymes de montagne évoquant des dieux antiques, tels que le Monte Adone et le Monte Venere.</p>\n<p>Le site de l&#x27;association indique une distance de 130 km et une durée de marche de cinq à sept jours ; le tag OSM indique quant à lui 117 km.</p>"
+	},
+	"via-francigena": {
+		"title": "Via Francigena",
+		"summary": "Le long chemin de pèlerinage reliant Canterbury à Rome, qui s'étendait vers le sud jusqu'à Santa Maria di Leuca, dans les Pouilles, suit l'itinéraire décrit par l'archevêque Sigeric vers l'an 990.",
+		"html": "<p>Sigeric s&#x27;est rendu à Rome pour recevoir son pallium et a répertorié les 79 étapes de son voyage de retour. Cette liste constitue le tracé historique de la Via Francigena, qui traverse l&#x27;Angleterre, la France, la Suisse et l&#x27;Italie avant de rejoindre les Alpes au col du Grand-Saint-Bernard.</p>\n<p>Le Conseil de l&#x27;Europe l&#x27;a certifiée « Itinéraire culturel » en 1994. En 2019, l&#x27;Association de la Via Francigena a prolongé l&#x27;itinéraire depuis Rome vers le sud jusqu&#x27;à Santa Maria di Leuca, où les pèlerins italiens embarquaient traditionnellement pour la Terre Sainte.</p>"
+	},
+	"via-podiensis": {
+		"title": "Via Podiensis",
+		"summary": "Le chemin français le plus connu vers Saint-Jacques-de-Compostelle part du Puy-en-Velay et traverse le Massif central, l'Aubrac et le sud-ouest pour rejoindre les contreforts des Pyrénées à Saint-Jean-Pied-de-Port.",
+		"html": "<p>Le Puy était l&#x27;un des quatre points de départ classiques en France mentionnés dans le guide de pèlerinage médiéval, et son parcours est une succession d&#x27;églises romanes, de villages perchés sur des plateaux de granit et d&#x27;alpages. Le plateau de l&#x27;Aubrac et la vallée du Lot autour de Conques constituent les sites les plus connus.</p>\n<p>L&#x27;association française des pèlerins estime la distance jusqu&#x27;à Saint-Jean-Pied-de-Port à environ 755 km et la durée du parcours à 32 jours ; la randonnée est praticable de mars à octobre. Sept tronçons du Chemin du Puy font partie du site classé par l&#x27;UNESCO « Les chemins de Saint-Jacques-de-Compostelle en France ».</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "Circuit W du Torres del Paine",
+		"summary": "Une randonnée de cinq jours dans le parc national des Torres del Paine, en Patagonie, à travers trois vallées formant un W : le glacier Grey, la Vallée des Français et le pied des Torres.",
+		"html": "<p>Le circuit « W » relie les Torres, la Vallée Française et le glacier Grey, avec des refuges et des emplacements de camping dans le parc.</p>\n<p>L&#x27;office du tourisme chilien estime la distance à environ 70 km et la durée à cinq jours, et considère le printemps et l&#x27;été comme la saison idéale pour cette randonnée.</p>"
+	},
+	"west-coast-trail": {
+		"title": "Sentier de la Côte-Ouest",
+		"summary": "Un sentier côtier accidenté sur la côte ouest de l'île de Vancouver, avec 75 km de plages, d'échelles et de forêt tropicale entre la baie de Pachena et la rivière Gordon.",
+		"html": "<p>À l&#x27;origine, ce sentier servait de voie d&#x27;évacuation aux naufragés ; il constitue aujourd&#x27;hui une randonnée exigeante au sein de la réserve de parc national Pacific Rim. Les randonneurs doivent réserver leur place et assister à une séance d&#x27;information ; le sentier n&#x27;est ouvert qu&#x27;en été.</p>\n<p>Selon Parcs Canada, il faut compter entre six et huit jours pour le parcourir ; il ouvre le 1er mai et ferme le 30 septembre.</p>"
+	},
+	"west-highland-way": {
+		"title": "West Highland Way",
+		"summary": "Le sentier de grande randonnée le plus célèbre d'Écosse relie la périphérie de Glasgow à Fort William, en passant par le Loch Lomond, la lande de Rannoch et Glen Coe avant de s'enfoncer dans les Highlands.",
+		"html": "<p>Le parcours débute dans la ville-dortoir de Milngavie et laisse progressivement la place aux banlieues pour s&#x27;enfoncer dans les bois, avant de grimper le long de la rive est du Loch Lomond. Au nord de Tyndrum, il traverse les étendues de tourbières et de rochers de Rannoch Moor, puis descend à travers le grand vallon de Glen Coe.</p>\n<p>La dernière partie emprunte la montée de Devil&#x27;s Staircase et d&#x27;anciennes routes militaires, pour s&#x27;achever à Fort William, au pied du Ben Nevis. La plupart des randonneurs mettent six ou sept jours ; le site officiel indique que le mois de mai est le plus prisé et précise que le sentier est praticable toute l&#x27;année, les moucherons pouvant toutefois constituer une nuisance en été.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "Le plus ancien sentier de grande randonnée de la Forêt-Noire, qui part de Pforzheim et longe la crête ouest du massif jusqu'à Bâle.",
+		"html": "<p>Le Westweg suit la crête de la Forêt-Noire septentrionale et centrale, en passant par le Hornisgrinde, le Feldberg et le Belchen, pour aboutir à Bâle, ville frontalière avec la Suisse. Depuis 1900, il est entretenu par le Club de la Forêt-Noire, qui le balise également à l&#x27;aide d&#x27;un losange rouge.</p>\n<p>L&#x27;office du tourisme de la Forêt-Noire indique une longueur d&#x27;environ 285 km répartis en 12 étapes sur le parcours ouest et en 13 étapes sur la variante est, qui bifurque à Titisee.</p>"
+	},
+	"wicklow-way": {
+		"title": "Le Wicklow Way",
+		"summary": "Le plus ancien sentier balisé d'Irlande traverse les montagnes de Wicklow, depuis la banlieue de Dublin jusqu'au village de Clonegal, dans le comté de Carlow.",
+		"html": "<p>Le parcours suit des chemins forestiers et des sentiers de tourbières à travers Glendalough, passe par les contreforts de Lugnaquilla et traverse les hautes terres du comté de Wicklow. La description du parcours indique une durée de sept jours ou plus, selon le rythme de chacun.</p>\n<p>Le site web du sentier indique une distance de 127 km entre Marlay Park et Clonegal.</p>"
+	},
+	"wilson-trail": {
+		"title": "Sentier Wilson",
+		"summary": "Un parcours de 78 km traversant Hong Kong, de Stanley, sur l'île de Hong Kong, à Nam Chung, dans les Nouveaux Territoires, divisé en 10 étapes.",
+		"html": "<p>Le sentier Wilson part de la côte sud de l&#x27;île de Hong Kong, passe par Lion Rock et la région de Tai Po, pour rejoindre le nord-est des Nouveaux Territoires.</p>\n<p>L&#x27;office du tourisme indique une longueur de 78 km et 10 sections.</p>"
+	}
+}

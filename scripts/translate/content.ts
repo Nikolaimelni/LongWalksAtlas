@@ -1,11 +1,12 @@
 import { existsSync } from "node:fs";
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { marked } from "marked";
-import { parse as parseYaml, stringify } from "yaml";
+import { parse as parseYaml } from "yaml";
 import type { Lang } from "../../src/features/i18n/languages.ts";
 import { contentFrontmatterSchema } from "../../src/features/trails/content-schema.ts";
 import { splitFrontmatter } from "../build-content.ts";
+import { readTranslations, type Translation } from "../translations.ts";
 import type { Translator } from "./ui.ts";
 
 const contentDir = join(import.meta.dirname, "../../data/content");
@@ -13,25 +14,22 @@ const contentDir = join(import.meta.dirname, "../../data/content");
 export type ContentJob = {
 	slug: string;
 	lang: Exclude<Lang, "en">;
-	path: string;
 };
 
+// A trail with its own <lang>.md is left alone: that file is a person's text. Otherwise
+// it is translated once, or again with --force.
 export async function planContent(
 	slugs: readonly string[],
 	langs: readonly Exclude<Lang, "en">[],
 	force: boolean,
 ): Promise<ContentJob[]> {
 	const jobs: ContentJob[] = [];
-	for (const slug of slugs) {
-		for (const lang of langs) {
-			const path = join(contentDir, slug, `${lang}.md`);
-			if (existsSync(path)) {
-				if (!force) continue;
-				const { yaml } = splitFrontmatter(await readFile(path, "utf8"));
-				const meta = contentFrontmatterSchema.safeParse(parseYaml(yaml));
-				if (meta.success && meta.data.status === "reviewed") continue;
-			}
-			jobs.push({ slug, lang, path });
+	for (const lang of langs) {
+		const done = await readTranslations(lang);
+		for (const slug of slugs) {
+			if (existsSync(join(contentDir, slug, `${lang}.md`))) continue;
+			if (done[slug] && !force) continue;
+			jobs.push({ slug, lang });
 		}
 	}
 	return jobs;
@@ -52,7 +50,7 @@ export async function readEnglish(slug: string) {
 export async function translateContent(
 	job: ContentJob,
 	translate: Translator,
-): Promise<void> {
+): Promise<Translation> {
 	const en = await readEnglish(job.slug);
 	const [title = "", summary = ""] = await translate(
 		[en.title, en.summary],
@@ -62,8 +60,7 @@ export async function translateContent(
 	const [html = ""] = en.html
 		? await translate([en.html], job.lang, "html")
 		: [""];
-	const front = stringify({ title, summary, status: "machine" });
-	await writeFile(job.path, `---\n${front}---\n\n${html.trim()}\n`);
+	return { title, summary, html: html.trim() };
 }
 
 export function characters(en: {

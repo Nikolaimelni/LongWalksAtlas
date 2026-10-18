@@ -19,6 +19,11 @@ import {
 } from "./translate/content.ts";
 import { deeplTranslator } from "./translate/deepl.ts";
 import { planUi, type Tree, translateUi } from "./translate/ui.ts";
+import {
+	readTranslations,
+	type Translations,
+	writeTranslations,
+} from "./translations.ts";
 
 const localesDir = join(import.meta.dirname, "../src/locales");
 
@@ -80,13 +85,19 @@ async function main() {
 
 	if (values.only !== "ui") {
 		const slugs = (await readTrails()).map((t) => t.slug);
+		const written = new Map<Lang, Translations>();
 		for (const job of await planContent(slugs, langs, values.force)) {
 			const chars = characters(await readEnglish(job.slug));
 			if (!translate) {
 				log.info({ slug: job.slug, lang: job.lang, chars }, "trail text");
 				continue;
 			}
-			await translateContent(job, translate);
+			const entries =
+				written.get(job.lang) ?? (await readTranslations(job.lang));
+			entries[job.slug] = await translateContent(job, translate);
+			written.set(job.lang, entries);
+			// Written after every trail, so a run cut short keeps what it paid for.
+			await writeTranslations(job.lang, entries);
 			log.info(
 				{ slug: job.slug, lang: job.lang, chars },
 				"trail text translated",
