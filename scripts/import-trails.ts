@@ -10,9 +10,9 @@ import {
 import { DataError } from "./data-error.ts";
 import { log } from "./log.ts";
 
-// Turns a collection run (data/collection-brief.md) into trail files and English
-// texts. The run itself and the reviewer's corrections live in data/import/, which
-// is not committed; what comes out of here is.
+// Turns a collection run into trail files and English texts. The run, its brief and
+// the reviewer's corrections live in data/import/, which is not committed; what comes
+// out of here is.
 
 const root = join(import.meta.dirname, "..");
 const importDir = join(root, "data/import");

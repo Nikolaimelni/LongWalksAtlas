@@ -3,7 +3,6 @@
 //   build command:  pnpm exec playwright install chromium && pnpm build:deploy
 //   deploy command: npx wrangler deploy
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "long-walks-atlas",
 	"compatibility_date": "2026-10-01",
 	"assets": {

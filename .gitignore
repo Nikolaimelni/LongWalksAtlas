@@ -16,16 +16,8 @@ node_modules/
 /playwright-report/
 /coverage/
 
-# local tooling, kept out of the repo
-.claude/
-.agents/
-CLAUDE.md
-CLAUDE.local.md
-.mcp.json
-AGENTS.md
+# wrangler dev
+/.wrangler/
 
 # external collection runs, reviewed before anything moves into data/trails/
 /data/import/
-
-# social cards are shot into build/client/og/ by `pnpm build:deploy`
-/src/generated/og.json
