@@ -1,7 +1,7 @@
 ---
 title: "Bibbulmun Track"
 summary: "A long-distance trail of about 1,000 km through the forests and coast of south-west Western Australia between Kalamunda near Perth and Albany."
-status: machine
+status: reviewed
 ---
 
 The track is waymarked with a yellow triangle showing a rainbow serpent and has huts about a day apart. Walkers can go in either direction.

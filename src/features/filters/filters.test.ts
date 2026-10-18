@@ -26,6 +26,7 @@ function trail(
 		badges: [],
 		lengthKm: 300,
 		lengthSource: "official",
+		daysSource: "official",
 		days: { min: 12, max: 15 },
 		bbox: [0, 0, 1, 1],
 		crosses: [],
@@ -36,6 +37,7 @@ function trail(
 
 const none: Omit<Filters, "q"> = {
 	types: [],
+	region: null,
 	country: null,
 	length: null,
 	days: null,
@@ -45,11 +47,14 @@ describe("parseFilters", () => {
 	it("reads a full set of filters", () => {
 		expect(
 			parseFilters(
-				params("q=lyc&type=coastal,mountain&country=TR&length=long&days=month"),
+				params(
+					"q=lyc&type=coastal,mountain&region=europe&country=TR&length=long&days=month",
+				),
 			),
 		).toEqual({
 			q: "lyc",
 			types: ["coastal", "mountain"],
+			region: "europe",
 			country: "TR",
 			length: "long",
 			days: "month",
@@ -58,10 +63,13 @@ describe("parseFilters", () => {
 
 	it("drops what it does not understand instead of failing", () => {
 		expect(
-			parseFilters(params("type=coastal,volcano&country=turkey&length=huge")),
+			parseFilters(
+				params("type=coastal,volcano&region=mars&country=turkey&length=huge"),
+			),
 		).toEqual({
 			q: "",
 			types: ["coastal"],
+			region: null,
 			country: null,
 			length: null,
 			days: null,
@@ -87,6 +95,7 @@ describe("writeFilters", () => {
 		const filters = {
 			q: "via",
 			types: ["pilgrimage" as const],
+			region: "europe" as const,
 			country: "IT",
 			length: "epic" as const,
 			days: "more" as const,
@@ -125,6 +134,13 @@ describe("applyFilters", () => {
 		]);
 	});
 
+	it("matches a region", () => {
+		const world = [...trails, trail("kepler", { region: "oceania" })];
+		expect(
+			applyFilters(world, { ...none, region: "oceania" }).map((t) => t.slug),
+		).toEqual(["kepler"]);
+	});
+
 	it("matches a country anywhere on the route", () => {
 		expect(slugs({ ...none, country: "IT" })).toEqual(["alps", "e1"]);
 	});
@@ -136,6 +152,18 @@ describe("applyFilters", () => {
 
 	it("treats a bucket's upper edge as open-ended for the last one", () => {
 		expect(slugs({ ...none, length: "epic" })).toEqual(["e1"]);
+	});
+
+	it("puts a trail on a shared edge in the upper length bucket only", () => {
+		const edges = [
+			trail("at-500", { lengthKm: 500 }),
+			trail("at-1000", { lengthKm: 1000 }),
+		];
+		const bucket = (length: (typeof none)["length"]) =>
+			applyFilters(edges, { ...none, length }).map((t) => t.slug);
+		expect(bucket("medium")).toEqual([]);
+		expect(bucket("long")).toEqual(["at-500"]);
+		expect(bucket("epic")).toEqual(["at-1000"]);
 	});
 
 	it("combines filters with AND", () => {
@@ -151,10 +179,11 @@ describe("countActive", () => {
 			countActive({
 				q: "x",
 				types: ["coastal", "mountain"],
+				region: "europe",
 				country: "TR",
 				length: null,
 				days: "week",
 			}),
-		).toBe(4);
+		).toBe(5);
 	});
 });

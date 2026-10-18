@@ -22,11 +22,12 @@
 	"sources": [
 		"https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/plan-larapinta-trail-walk"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Larapinta Trail, West MacDonnell National Park, August 2008 05.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3066363]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -52,6 +52,22 @@ describe("mainLine", () => {
 		]);
 	});
 
+	it("hops over the same small gap in Lapland, where longitude is narrow", () => {
+		// 0.01° of longitude at 67° N is about 430 m: inside the 500 m bridge.
+		const first: Position[] = [
+			[15, 67],
+			[15.04, 67],
+		];
+		const second: Position[] = [
+			[15.05, 67],
+			[15.09, 67],
+		];
+		expect(mainLine([first, second], [15, 67], [15.09, 67])).toEqual([
+			...first,
+			...second,
+		]);
+	});
+
 	it("gives up on a gap too wide to be a mapping slip", () => {
 		expect(
 			mainLine(

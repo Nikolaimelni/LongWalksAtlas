@@ -34,11 +34,12 @@
 	"badges": [],
 	"officialUrl": "https://rotavicentina.com/en/fishermens-trail/",
 	"sources": ["https://rotavicentina.com/en/fishermens-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Cruz Beach, Fishermen's Trail, Vila Nova de Milfontes Portugal julesvernex2.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [20810829]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -14,7 +14,7 @@
 		"content": "node scripts/build-content.ts",
 		"lint": "biome check .",
 		"format": "biome check --write .",
-		"test": "vitest run",
+		"test": "node scripts/build-content.ts && vitest run",
 		"test:watch": "vitest",
 		"e2e": "playwright test",
 		"data": "node --env-file-if-exists=.env scripts/build-data.ts",

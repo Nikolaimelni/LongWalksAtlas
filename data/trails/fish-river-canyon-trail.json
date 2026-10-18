@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.nwr.com.na/resorts/hobas-lodge/",
 	"sources": ["https://www.nwr.com.na/resorts/hobas-lodge/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Fish River Short cut.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9517875]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

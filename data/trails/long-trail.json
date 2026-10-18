@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.greenmountainclub.org/the-long-trail/",
 	"sources": ["https://www.greenmountainclub.org/the-long-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:2017-09-11 12 52 30 View south-southwest from the Long Trail just north of its junction with the Halfway House Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont.jpg"
+	},
 	"wikidata": "Q6673311",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [391736]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

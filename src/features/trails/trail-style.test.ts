@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { basemapColors, type Scheme, trailPalettes } from "./trail-style";
+import { basemapColors } from "~/features/map/basemap-colors";
+import { type Scheme, trailPalettes } from "./trail-style";
 
 function luminance(hex: string): number {
 	const [r = 0, g = 0, b = 0] = (hex.slice(1).match(/\w\w/g) ?? []).map((h) => {

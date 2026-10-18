@@ -1,6 +1,5 @@
 import type { Lang } from "~/features/i18n/languages";
 import { loadContentIndex } from "~/features/trails/content";
-import { lastChecked } from "~/features/trails/trail-files";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
 import { type Hub, listHubs, trailsIn } from "./hubs";
 
@@ -24,7 +23,6 @@ export async function loadHub(hub: Hub, lang: Lang) {
 		hub,
 		trails,
 		hubs: listHubs(trailsIndex),
-		checked: await lastChecked(trails.map((tr) => tr.summary.slug)),
 	};
 }
 

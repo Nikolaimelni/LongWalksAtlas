@@ -4,7 +4,10 @@ import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
 import { z } from "zod";
-import type { TrailPhoto } from "../src/features/trails/trail-schema.ts";
+import {
+	type TrailPhoto,
+	trailPhotoSchema,
+} from "../src/features/trails/trail-schema.ts";
 import { DataError } from "./data-error.ts";
 import { log } from "./log.ts";
 import { userAgent } from "./osm/overpass.ts";
@@ -208,7 +211,9 @@ async function main() {
 	for (const name of await readdir(outDir)) {
 		if (!keep.has(name)) await rm(join(outDir, name));
 	}
-	await writeFile(indexFile, `${JSON.stringify(photos, null, "\t")}\n`);
+	// photos.json is imported unparsed, so this is its only check.
+	const index = z.record(z.string(), trailPhotoSchema).parse(photos);
+	await writeFile(indexFile, `${JSON.stringify(index, null, "\t")}\n`);
 	log.info({ photos: Object.keys(photos).length }, "wrote photos");
 }
 

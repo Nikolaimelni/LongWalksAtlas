@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://www.sportireland.ie/outdoors/walking/trails/kerry-way",
 	"sources": ["https://www.sportireland.ie/redirect/trail/19"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Kw oberes tal.jpg"
+	},
 	"wikidata": "Q1739608",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [183744]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

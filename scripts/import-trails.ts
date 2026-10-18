@@ -42,7 +42,6 @@ const collectedSchema = z.object({
 			osm: z.object({ relationIds: z.array(z.number()) }),
 			summaryEn: z.string(),
 			storyEn: z.string(),
-			checkedAt: z.string(),
 		}),
 	),
 });
@@ -87,7 +86,6 @@ function toTrailFile(trail: Collected, fix: Fix): unknown {
 			source: "osm",
 			relationIds: fix.relationIds ?? trail.osm.relationIds,
 		},
-		verifiedAt: trail.checkedAt,
 	};
 }
 
@@ -113,47 +111,55 @@ async function readJson<T>(file: string, schema: z.ZodType<T>): Promise<T> {
 	return parsed.data;
 }
 
-const { values } = parseArgs({
-	options: { skip: { type: "string", default: "" } },
-});
-const skip = new Set(values.skip.split(",").filter(Boolean));
+async function main() {
+	const { values } = parseArgs({
+		options: { skip: { type: "string", default: "" } },
+	});
+	const skip = new Set(values.skip.split(",").filter(Boolean));
 
-const { trails } = await readJson(
-	join(importDir, "trails.json"),
-	collectedSchema,
-);
-const fixesFile = join(importDir, "fixes.json");
-const fixes = existsSync(fixesFile)
-	? await readJson(fixesFile, fixesSchema)
-	: {};
+	const { trails } = await readJson(
+		join(importDir, "trails.json"),
+		collectedSchema,
+	);
+	const fixesFile = join(importDir, "fixes.json");
+	const fixes = existsSync(fixesFile)
+		? await readJson(fixesFile, fixesSchema)
+		: {};
 
-const ready: { trail: Collected; file: TrailFile }[] = [];
-const problems: string[] = [];
-for (const trail of trails) {
-	if (skip.has(trail.slug)) continue;
-	if (existsSync(join(root, "data/trails", `${trail.slug}.json`))) {
-		log.info({ slug: trail.slug }, "already in data/trails, left as it is");
-		continue;
+	const ready: { trail: Collected; file: TrailFile }[] = [];
+	const problems: string[] = [];
+	for (const trail of trails) {
+		if (skip.has(trail.slug)) continue;
+		if (existsSync(join(root, "data/trails", `${trail.slug}.json`))) {
+			log.info({ slug: trail.slug }, "already in data/trails, left as it is");
+			continue;
+		}
+		const parsed = trailFileSchema.safeParse(
+			toTrailFile(trail, fixes[trail.slug] ?? {}),
+		);
+		if (parsed.success) ready.push({ trail, file: parsed.data });
+		else problems.push(`${trail.slug}\n${z.prettifyError(parsed.error)}`);
 	}
-	const parsed = trailFileSchema.safeParse(
-		toTrailFile(trail, fixes[trail.slug] ?? {}),
-	);
-	if (parsed.success) ready.push({ trail, file: parsed.data });
-	else problems.push(`${trail.slug}\n${z.prettifyError(parsed.error)}`);
+
+	// Nothing is written while any trail fails, so a rerun after a fix starts clean.
+	if (problems.length > 0) {
+		throw new DataError("invalid-trail", problems.join("\n\n"));
+	}
+
+	for (const { trail, file } of ready) {
+		await writeFile(
+			join(root, "data/trails", `${trail.slug}.json`),
+			`${JSON.stringify(file, null, "\t")}\n`,
+		);
+		const contentDir = join(root, "data/content", trail.slug);
+		await mkdir(contentDir, { recursive: true });
+		await writeFile(join(contentDir, "en.md"), toMarkdown(trail));
+	}
+	log.info({ written: ready.length }, "imported");
 }
 
-// Nothing is written while any trail fails, so a rerun after a fix starts clean.
-if (problems.length > 0) {
-	throw new DataError("invalid-trail", problems.join("\n\n"));
-}
-
-for (const { trail, file } of ready) {
-	await writeFile(
-		join(root, "data/trails", `${trail.slug}.json`),
-		`${JSON.stringify(file, null, "\t")}\n`,
-	);
-	const contentDir = join(root, "data/content", trail.slug);
-	await mkdir(contentDir, { recursive: true });
-	await writeFile(join(contentDir, "en.md"), toMarkdown(trail));
-}
-log.info({ written: ready.length }, "imported");
+main().catch((error: unknown) => {
+	if (!(error instanceof DataError)) throw error;
+	log.error({ code: error.code }, error.message);
+	process.exitCode = 1;
+});

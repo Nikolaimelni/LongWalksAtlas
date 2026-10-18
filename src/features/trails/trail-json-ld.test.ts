@@ -19,7 +19,6 @@ const file: TrailFile = {
 	photo: null,
 	wikidata: "Q1731039",
 	geometry: { source: "osm", relationIds: [51855] },
-	verifiedAt: "2026-10-18",
 };
 
 const summary: TrailSummary = {
@@ -34,13 +33,14 @@ const summary: TrailSummary = {
 	badges: file.badges,
 	lengthKm: 760,
 	lengthSource: "official",
+	daysSource: "official",
 	days: { min: 35, max: 35 },
 	bbox: [29.1, 36.2, 30.5, 36.9],
 	crosses: [],
 	nearby: [],
 };
 
-const ld = trailJsonLd({
+const args = {
 	summary,
 	file,
 	content: {
@@ -55,8 +55,9 @@ const ld = trailJsonLd({
 	parents: [],
 	image: null,
 	countryNames: ["Türkiye"],
-	faq: [{ question: "How long is it?", answer: "760 km." }],
-});
+} satisfies Parameters<typeof trailJsonLd>[0];
+
+const ld = trailJsonLd(args);
 
 describe("trailJsonLd", () => {
 	it("describes the trail with its original name and official site", () => {
@@ -64,22 +65,29 @@ describe("trailJsonLd", () => {
 			"@type": "TouristAttraction",
 			name: "Lycian Way",
 			alternateName: "Likya Yolu",
-			sameAs: [
-				"https://cultureroutesinturkey.com/the-lycian-way/",
-				"https://www.wikidata.org/wiki/Q1731039",
-			],
+			url: "https://cultureroutesinturkey.com/the-lycian-way/",
+			sameAs: ["https://www.wikidata.org/wiki/Q1731039"],
 			geo: { latitude: 36.549, longitude: 29.1155 },
 		});
 	});
 
-	it("marks the page as part of its language's site, dated by the fact check", () => {
+	it("marks the page as part of its language's site", () => {
 		expect(ld[2]).toMatchObject({
-			"@type": "FAQPage",
+			"@type": "WebPage",
 			"@id": "https://longwalksatlas.com/en/trail/lycian-way/",
 			inLanguage: "en",
 			isPartOf: { "@id": "https://longwalksatlas.com/en/#website" },
-			dateModified: "2026-10-18",
 		});
+	});
+
+	it("gives days on foot only when a source gives them", () => {
+		const names = (input: typeof summary) => {
+			const [trail] = trailJsonLd({ ...args, summary: input });
+			const props = trail?.additionalProperty as { name: string }[] | undefined;
+			return props?.map((p) => p.name);
+		};
+		expect(names(summary)).toEqual(["length", "days on foot"]);
+		expect(names({ ...summary, daysSource: "estimate" })).toEqual(["length"]);
 	});
 
 	it("puts the atlas above the trail in the breadcrumb", () => {

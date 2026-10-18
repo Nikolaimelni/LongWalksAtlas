@@ -4,13 +4,18 @@ import { Link } from "react-router";
 import { HubLinks } from "~/features/hubs/hub-links";
 import { listHubs } from "~/features/hubs/hubs";
 import { useLang } from "~/features/i18n/use-lang";
-import { type TrailSummary, trailTypes } from "~/features/trails/trail-schema";
-import { useTrailColors } from "~/features/trails/use-trail-colors";
+import {
+	type TrailSummary,
+	trailRegions,
+	trailTypes,
+} from "~/features/trails/trail-schema";
+import { trailColor, trailTint } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
 import {
 	countActive,
 	dayBuckets,
+	emptyFilters,
 	type Filters,
 	lengthBuckets,
 } from "./filters";
@@ -29,7 +34,7 @@ const rowClass = "flex items-center gap-3 text-sm";
 const labelClass = "w-24 shrink-0 text-muted";
 // The list keeps the system font: Windows draws a native popup more reliably with it.
 const selectClass =
-	"h-10 w-full cursor-pointer appearance-none rounded-lg border border-line bg-surface ps-3 pe-9 text-sm transition-colors hover:border-muted/50 hover:bg-soft/60 focus-visible:border-brand focus-visible:outline-2 focus-visible:outline-brand/30 [&_option]:font-[system-ui]";
+	"h-11 w-full cursor-pointer appearance-none rounded-lg border border-field bg-surface md:h-10 ps-3 pe-9 text-sm transition-colors hover:border-muted/50 hover:bg-soft/60 focus-visible:border-brand focus-visible:outline-2 focus-visible:outline-brand/30 [&_option]:font-[system-ui]";
 
 function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 	return (
@@ -65,12 +70,19 @@ export function TrailPanel({
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
-	const colors = useTrailColors();
 	const [open, setOpen] = useState(false);
 
-	const regions = new Intl.DisplayNames([lang], { type: "region" });
-	const countries = [...new Set(allTrails.flatMap((tr) => tr.countries))]
-		.map((code) => ({ code, name: regions.of(code) ?? code }))
+	const regions = trailRegions.filter((region) =>
+		allTrails.some((tr) => tr.region === region),
+	);
+	const countriesOf = (region: Filters["region"]) =>
+		new Set(
+			allTrails
+				.filter((tr) => !region || tr.region === region)
+				.flatMap((tr) => tr.countries),
+		);
+	const countries = [...countriesOf(filters.region)]
+		.map((code) => ({ code, name: format.country(code) }))
 		.sort((a, b) => a.name.localeCompare(b.name, lang));
 	const kmRange = new Intl.NumberFormat(lang, {
 		style: "unit",
@@ -125,7 +137,7 @@ export function TrailPanel({
 						}}
 						placeholder={t("filters.searchPlaceholder")}
 						enterKeyHint="search"
-						className="h-11 w-full rounded-full border border-line bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] transition-colors placeholder:text-muted hover:border-muted/50 focus:border-brand focus:outline-2 focus:outline-brand/30"
+						className="h-11 w-full rounded-full border border-field bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] transition-colors placeholder:text-muted hover:border-muted/50 focus:border-brand focus:outline-2 focus:outline-brand/30"
 					/>
 				</label>
 				<button
@@ -136,6 +148,7 @@ export function TrailPanel({
 					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-brand px-4 text-sm font-semibold text-on-brand md:hidden"
 				>
 					{t("filters.count", { count: trails.length })}
+					<span className="sr-only">, {t("filters.show")}</span>
 					{active > 0 && (
 						<>
 							<span
@@ -151,7 +164,7 @@ export function TrailPanel({
 					)}
 				</button>
 			</div>
-			<p className="-mt-1 px-4 pb-2 text-[11px] leading-snug text-muted">
+			<p className="-mt-1 px-4 pb-2 text-xs leading-snug text-muted">
 				{t("disclaimer.short")}
 			</p>
 
@@ -179,7 +192,7 @@ export function TrailPanel({
 												: [...f.types, type],
 										}))
 									}
-									className={`flex h-9 shrink-0 cursor-pointer items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors ${
+									className={`flex h-11 shrink-0 cursor-pointer md:h-9 items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors ${
 										pressed
 											? "font-medium"
 											: "border-line hover:border-muted/50 hover:bg-soft"
@@ -187,15 +200,15 @@ export function TrailPanel({
 									style={
 										pressed
 											? {
-													background: `${colors[type]}26`,
-													borderColor: colors[type],
+													background: trailTint(type, 15),
+													borderColor: trailColor(type),
 												}
 											: undefined
 									}
 								>
 									<span
 										className="inline-block size-2.5 rounded-full"
-										style={{ background: colors[type] }}
+										style={{ background: trailColor(type) }}
 									/>
 									{t(`trailType.${type}`)}
 								</button>
@@ -205,6 +218,31 @@ export function TrailPanel({
 				</fieldset>
 
 				<div className="mt-3 flex flex-col gap-2">
+					<label className={rowClass}>
+						<span className={labelClass}>{t("filters.region")}</span>
+						<SelectBox
+							value={filters.region ?? ""}
+							onChange={(e) => {
+								const region =
+									(e.target.value as NonNullable<Filters["region"]>) || null;
+								onChange((f) => ({
+									...f,
+									region,
+									country:
+										f.country && countriesOf(region).has(f.country)
+											? f.country
+											: null,
+								}));
+							}}
+						>
+							<option value="">{t("filters.anyRegion")}</option>
+							{regions.map((region) => (
+								<option key={region} value={region}>
+									{t(`region.${region}`)}
+								</option>
+							))}
+						</SelectBox>
+					</label>
 					<label className={rowClass}>
 						<span className={labelClass}>{t("filters.country")}</span>
 						<SelectBox
@@ -266,19 +304,14 @@ export function TrailPanel({
 					<h2 id="trail-count" className="font-semibold">
 						{t("filters.count", { count: trails.length })}
 					</h2>
+					<p role="status" className="sr-only">
+						{t("filters.count", { count: trails.length })}
+					</p>
 					{(active > 0 || filters.q) && (
 						<button
 							type="button"
-							onClick={() =>
-								onChange(() => ({
-									q: "",
-									types: [],
-									country: null,
-									length: null,
-									days: null,
-								}))
-							}
-							className="text-muted underline"
+							onClick={() => onChange(() => emptyFilters)}
+							className="-my-2 rounded-lg px-2 py-2 text-muted underline hover:bg-soft"
 						>
 							{t("filters.reset")}
 						</button>
@@ -308,13 +341,13 @@ export function TrailPanel({
 								>
 									<span
 										className="mt-1.5 inline-block h-3 w-1 shrink-0 rounded-full"
-										style={{ background: colors[trail.type] }}
+										style={{ background: trailColor(trail.type) }}
 									/>
 									<span className="min-w-0">
 										<span className="block font-medium">{titleOf(trail)}</span>
 										<span className="block truncate text-xs text-muted">
 											{format.countries(trail.countries)} ·{" "}
-											{format.km(trail.lengthKm)} · {format.days(trail.days)}
+											{format.km(trail.lengthKm)} · {format.daysOf(trail)}
 										</span>
 									</span>
 								</Link>

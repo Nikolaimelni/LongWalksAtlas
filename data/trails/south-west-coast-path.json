@@ -25,11 +25,12 @@
 	"sources": [
 		"https://www.nationaltrail.co.uk/en_GB/trails/south-west-coast-path/trail-information/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Pendour Cove July 2026 02.jpg"
+	},
 	"wikidata": "Q1631281",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2376086]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

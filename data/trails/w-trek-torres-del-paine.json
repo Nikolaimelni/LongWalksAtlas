@@ -25,11 +25,12 @@
 	"sources": [
 		"https://chile.travel/en/itineraries/torres-del-paine-w-trek-the-definitive-guide/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Cerro Paine Grande, glaciar, río y valle del Francés, Cordillera Paine, Magallanes, Chile.jpg"
+	},
 	"wikidata": "Q106577165",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2203617]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -1,10 +1,12 @@
 import { lazy, Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { data, useNavigate, useSearchParams } from "react-router";
+import { HoverCard } from "~/features/atlas/hover-card";
+import { TrailSheet } from "~/features/atlas/trail-sheet";
 import {
 	applyFilters,
 	countActive,
-	type Filters,
+	emptyFilters,
 	parseFilters,
 	writeFilters,
 } from "~/features/filters/filters";
@@ -15,11 +17,13 @@ import { LanguageSwitcher } from "~/features/i18n/language-switcher";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import type { HoverInfo } from "~/features/map/atlas-map";
-import { hoverPlacement } from "~/features/map/hover-placement";
+import { MapBoundary } from "~/features/map/map-boundary";
 import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
+import { trailColor } from "~/features/trails/trail-style";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
+import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
 import { itemListNode, JsonLd, websiteNode } from "~/shared/json-ld";
 import { LogoMark } from "~/shared/logo-mark";
@@ -27,7 +31,6 @@ import { prerenderedOnly } from "~/shared/prerendered-only";
 import { revalidateOnPathChange } from "~/shared/same-path";
 import { absoluteUrl } from "~/shared/site";
 import { atlasCardMeta } from "~/shared/social-cards";
-import { useElementSize } from "~/shared/use-element-size";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
 
@@ -67,14 +70,6 @@ export function meta({ matches }: Route.MetaArgs) {
 	];
 }
 
-const noFilters: Filters = {
-	q: "",
-	types: [],
-	country: null,
-	length: null,
-	days: null,
-};
-
 export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const { trails, content, photos } = loaderData;
 	const { t } = useTranslation();
@@ -85,7 +80,6 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const [hovered, setHovered] = useState<HoverInfo | null>(null);
 	const [listHover, setListHover] = useState<string | null>(null);
 	const [choices, setChoices] = useState<string[]>([]);
-	const [cardRef, cardSize] = useElementSize<HTMLDivElement>();
 
 	const titleOf = (trail: TrailSummary) =>
 		content[trail.slug]?.title ?? trail.name.original;
@@ -95,16 +89,16 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const selected = hydrated
 		? (bySlug.get(params.get("trail") ?? "") ?? null)
 		: null;
-	const filters = hydrated ? parseFilters(params) : noFilters;
+	const filters = hydrated ? parseFilters(params) : emptyFilters;
 
-	const regions = new Intl.DisplayNames([lang], { type: "region" });
+	const format = useTrailFormat();
 	const search = createSearch(
 		trails.map((tr) => ({
 			slug: tr.slug,
 			title: titleOf(tr),
 			original: tr.name.original,
 			places: [tr.start.name, tr.end.name],
-			countries: tr.countries.map((c) => regions.of(c) ?? c),
+			countries: tr.countries.map(format.country),
 		})),
 	);
 	const filtered = applyFilters(trails, filters);
@@ -170,26 +164,36 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 	const placeholder = (
 		<div
-			className="absolute inset-0 grid place-items-center bg-soft text-sm text-muted"
+			className="absolute inset-0 z-10 grid place-items-center bg-canvas text-sm text-muted"
 			aria-busy="true"
 		>
-			{t("atlas.loading")}
+			<span className="motion-safe:animate-pulse">{t("atlas.loading")}</span>
 		</div>
+	);
+
+	const mapFailed = (
+		<p className="absolute inset-0 z-10 grid place-items-center bg-canvas px-6 text-center text-sm text-muted">
+			{t("atlas.mapFailed")}
+		</p>
 	);
 
 	return (
 		<main className="relative h-dvh overflow-hidden [&_.maplibregl-ctrl-bottom-right]:bottom-[calc(6rem+env(safe-area-inset-bottom))] md:[&_.maplibregl-ctrl-bottom-right]:bottom-0">
 			<h1 className="sr-only">{t("atlas.title")}</h1>
 			{hydrated ? (
-				<Suspense fallback={placeholder}>
-					<AtlasMap
-						focus={selected}
-						highlighted={highlighted}
-						visible={narrowed ? results.map((tr) => tr.slug) : null}
-						onHover={setHovered}
-						onPick={pick}
-					/>
-				</Suspense>
+				<MapBoundary fallback={mapFailed}>
+					<Suspense fallback={placeholder}>
+						<AtlasMap
+							trails={trails}
+							focus={selected}
+							highlighted={highlighted}
+							visible={narrowed ? results.map((tr) => tr.slug) : null}
+							loading={placeholder}
+							onHover={setHovered}
+							onPick={pick}
+						/>
+					</Suspense>
+				</MapBoundary>
 			) : (
 				placeholder
 			)}
@@ -224,36 +228,21 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 				/>
 			</div>
 
-			{hoverTrails[0] && !selected && (
-				<div
-					ref={cardRef}
-					className="pointer-events-none absolute z-20 w-64 overflow-hidden rounded-xl bg-surface p-3 shadow-float transition-opacity duration-150 starting:opacity-0 motion-reduce:transition-none"
-					style={hoverPlacement(hovered?.x ?? 0, hovered?.y ?? 0, cardSize, {
-						width: window.innerWidth,
-						height: window.innerHeight,
-					})}
-				>
-					{hoverTrails.length === 1 ? (
-						<TrailPreview
-							trail={hoverTrails[0]}
-							content={content[hoverTrails[0].slug]}
-							photo={photos[hoverTrails[0].slug] ?? null}
-							variant="hover"
-						/>
-					) : (
-						<ul className="flex flex-col gap-1 text-sm font-medium">
-							{hoverTrails.map((tr) => (
-								<li key={tr.slug}>{titleOf(tr)}</li>
-							))}
-						</ul>
-					)}
-				</div>
+			{hovered && !selected && (
+				<HoverCard
+					x={hovered.x}
+					y={hovered.y}
+					trails={hoverTrails}
+					content={content}
+					photos={photos}
+					titleOf={titleOf}
+				/>
 			)}
 
 			{sheetOpen && (
-				<section
-					aria-label={selected ? titleOf(selected) : t("atlas.pick")}
-					className="absolute inset-x-0 bottom-0 z-20 max-h-[70dvh] overflow-y-auto rounded-t-2xl bg-surface p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-float transition-[translate,opacity] duration-300 ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:max-h-[calc(100dvh-6rem)] md:w-96 md:rounded-2xl md:starting:translate-y-4 md:starting:opacity-0"
+				<TrailSheet
+					label={selected ? titleOf(selected) : t("atlas.pick")}
+					onClose={() => select(null)}
 				>
 					{choiceTrails.length > 0 ? (
 						<>
@@ -264,8 +253,12 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 										<button
 											type="button"
 											onClick={() => select(tr.slug)}
-											className="w-full rounded-lg px-3 py-3 text-start hover:bg-soft"
+											className="flex w-full items-center gap-3 rounded-lg px-3 py-3 text-start hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
 										>
+											<span
+												className="size-2.5 shrink-0 rounded-full"
+												style={{ background: trailColor(tr.type) }}
+											/>
 											{titleOf(tr)}
 										</button>
 									</li>
@@ -283,7 +276,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 							/>
 						)
 					)}
-				</section>
+				</TrailSheet>
 			)}
 			<JsonLd graph={jsonLd} />
 		</main>

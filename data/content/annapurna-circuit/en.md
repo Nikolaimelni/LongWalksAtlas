@@ -1,7 +1,7 @@
 ---
 title: "Annapurna Circuit"
 summary: "A classic Himalayan trek around the Annapurna massif through the Thorong La pass, from Besisahar to Nayapul."
-status: machine
+status: reviewed
 ---
 
 The circuit crosses climate zones from subtropical valleys to the high desert of Manang and the 5,400 m Thorong La pass.

@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { data } from "react-router";
 import { isLang } from "~/features/i18n/languages";
 import { loadContentIndex } from "~/features/trails/content";
+import { trailColor, trailTint } from "~/features/trails/trail-style";
 import { photos, trailsIndex } from "~/features/trails/trails-index";
-import { useTrailColors } from "~/features/trails/use-trail-colors";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { LogoMark } from "~/shared/logo-mark";
 import { prerenderedOnly } from "~/shared/prerendered-only";
@@ -33,7 +33,7 @@ export default function OgTrailCard({ loaderData }: Route.ComponentProps) {
 	const { summary, title, photo } = loaderData;
 	const { t } = useTranslation();
 	const format = useTrailFormat();
-	const color = useTrailColors()[summary.type];
+	const color = trailColor(summary.type);
 	return (
 		<main className="relative h-[630px] w-[1200px] overflow-hidden bg-canvas">
 			{photo ? (
@@ -46,7 +46,7 @@ export default function OgTrailCard({ loaderData }: Route.ComponentProps) {
 				<div
 					className="absolute inset-0"
 					style={{
-						background: `linear-gradient(135deg, ${color}, ${color}66)`,
+						background: `linear-gradient(135deg, ${color}, ${trailTint(summary.type, 40)})`,
 					}}
 				/>
 			)}
@@ -72,7 +72,7 @@ export default function OgTrailCard({ loaderData }: Route.ComponentProps) {
 						</p>
 					)}
 					<p className="mt-6 text-3xl font-semibold text-brand">
-						{format.km(summary.lengthKm)} · {format.days(summary.days)}
+						{format.km(summary.lengthKm)} · {format.daysOf(summary)}
 					</p>
 					<p className="mt-2 line-clamp-2 text-xl text-ink">
 						{format.countries(summary.countries)}

@@ -4,7 +4,7 @@ import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
 import { TrailImage } from "./trail-image";
 import type { TrailPhoto, TrailSummary } from "./trail-schema";
-import { useTrailColors } from "./use-trail-colors";
+import { trailColor } from "./trail-style";
 import { useTrailFormat } from "./use-trail-format";
 
 type Props = {
@@ -25,7 +25,7 @@ export function TrailPreview({
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
-	const color = useTrailColors()[trail.type];
+	const color = trailColor(trail.type);
 
 	return (
 		<article className="flex flex-col gap-3">
@@ -58,12 +58,7 @@ export function TrailPreview({
 					{content?.title ?? trail.name.original}
 				</h2>
 				{content && content.title !== trail.name.original && (
-					<p
-						className="text-sm text-muted italic"
-						lang={trail.countries[0]?.toLowerCase()}
-					>
-						{trail.name.original}
-					</p>
+					<p className="text-sm text-muted italic">{trail.name.original}</p>
 				)}
 				<p className="mt-1 text-sm text-muted">
 					{format.countries(trail.countries)}
@@ -88,14 +83,9 @@ export function TrailPreview({
 				</div>
 				<div>
 					<dt className="text-muted">{t("trail.duration")}</dt>
-					<dd className="font-semibold">{format.days(trail.days)}</dd>
+					<dd className="font-semibold">{format.daysOf(trail)}</dd>
 				</div>
 			</dl>
-			{variant === "sheet" && (
-				<p className="text-xs leading-snug text-muted">
-					{t("disclaimer.short")}
-				</p>
-			)}
 			{variant === "sheet" && (
 				<div className="flex items-center gap-2">
 					<Link

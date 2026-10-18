@@ -1,9 +1,10 @@
+import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
-import { LanguageSwitcher } from "~/features/i18n/language-switcher";
+import { Link, useNavigate } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
+import { MapBoundary } from "~/features/map/map-boundary";
 import { TrailImage } from "~/features/trails/trail-image";
-import { useTrailColors } from "~/features/trails/use-trail-colors";
+import { trailColor } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import {
 	breadcrumbNode,
@@ -12,10 +13,17 @@ import {
 	websiteNode,
 } from "~/shared/json-ld";
 import { absoluteUrl } from "~/shared/site";
+import { SiteFooter } from "~/shared/site-footer";
+import { SiteNav } from "~/shared/site-nav";
+import { useHydrated } from "~/shared/use-hydrated";
 import type { HubData } from "./hub-data";
 import { HubLinks } from "./hub-links";
 import { hubIntro, hubTitle } from "./hub-meta";
 import { hubPath } from "./hubs";
+
+const HubMap = lazy(() =>
+	import("~/features/map/hub-map").then((m) => ({ default: m.HubMap })),
+);
 
 type Props = { data: HubData };
 
@@ -24,7 +32,8 @@ export function HubPage({ data }: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
-	const colors = useTrailColors();
+	const navigate = useNavigate();
+	const hydrated = useHydrated();
 
 	const title = hubTitle(t, lang, hub);
 	const intro = hubIntro(
@@ -41,6 +50,21 @@ export function HubPage({ data }: Props) {
 			? `/${lang}/?country=${hub.code}`
 			: `/${lang}/?type=${hub.type}`;
 
+	const mapLoading = (
+		<p
+			className="absolute inset-0 z-10 grid place-items-center bg-soft text-sm text-ink/70"
+			aria-busy="true"
+		>
+			<span className="motion-safe:animate-pulse">{t("trail.mapLoading")}</span>
+		</p>
+	);
+
+	const mapFailed = (
+		<p className="absolute inset-0 z-10 grid place-items-center bg-soft px-6 text-center text-sm text-muted">
+			{t("atlas.mapFailed")}
+		</p>
+	);
+
 	const home = absoluteUrl(`/${lang}/`);
 	const url = absoluteUrl(`/${lang}/${hubPath(hub)}`);
 	const jsonLd = [
@@ -53,7 +77,6 @@ export function HubPage({ data }: Props) {
 			inLanguage: lang,
 			isPartOf: { "@id": `${home}#website` },
 			breadcrumb: { "@id": `${url}#breadcrumb` },
-			dateModified: data.checked,
 			mainEntity: itemListNode(
 				trails.map((tr) => ({
 					name: titleOf(tr),
@@ -69,18 +92,8 @@ export function HubPage({ data }: Props) {
 	];
 
 	return (
-		<main className="mx-auto max-w-2xl px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-16">
-			<nav className="flex items-center justify-between gap-2 py-2 text-sm">
-				<Link
-					to={`/${lang}/`}
-					viewTransition
-					className="rounded-full px-3 py-2 font-medium hover:bg-soft"
-				>
-					<span aria-hidden="true">← </span>
-					{t("trail.backToAtlas")}
-				</Link>
-				<LanguageSwitcher />
-			</nav>
+		<main className="mx-auto max-w-3xl px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-10">
+			<SiteNav />
 
 			<header className="mt-4">
 				<h1 className="font-serif text-3xl leading-tight font-semibold">
@@ -98,6 +111,24 @@ export function HubPage({ data }: Props) {
 				</Link>
 			</header>
 
+			<div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl bg-soft">
+				{hydrated ? (
+					<MapBoundary fallback={mapFailed}>
+						<Suspense fallback={mapLoading}>
+							<HubMap
+								trails={trails.map((tr) => tr.summary)}
+								loading={mapLoading}
+								onPick={(slug) =>
+									void navigate(pageOf(slug), { viewTransition: true })
+								}
+							/>
+						</Suspense>
+					</MapBoundary>
+				) : (
+					mapLoading
+				)}
+			</div>
+
 			<ul className="mt-8 flex flex-col gap-6">
 				{trails.map((tr) => (
 					<li key={tr.summary.slug}>
@@ -105,7 +136,7 @@ export function HubPage({ data }: Props) {
 							<div className="w-28 shrink-0 sm:w-40">
 								<TrailImage
 									photo={tr.photo}
-									color={colors[tr.summary.type]}
+									color={trailColor(tr.summary.type)}
 									alt={t("trail.photoAlt", { title: titleOf(tr) })}
 									className="aspect-[4/3] w-full rounded-xl"
 									sizes="(min-width: 640px) 160px, 112px"
@@ -115,7 +146,7 @@ export function HubPage({ data }: Props) {
 								<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
 									<span
 										className="inline-block size-2.5 shrink-0 rounded-full"
-										style={{ background: colors[tr.summary.type] }}
+										style={{ background: trailColor(tr.summary.type) }}
 									/>
 									{t(`trailType.${tr.summary.type}`)}
 								</p>
@@ -130,8 +161,7 @@ export function HubPage({ data }: Props) {
 								</h2>
 								<p className="mt-1 text-sm text-muted">
 									{format.countries(tr.summary.countries)} ·{" "}
-									{format.km(tr.summary.lengthKm)} ·{" "}
-									{format.days(tr.summary.days)}
+									{format.km(tr.summary.lengthKm)} · {format.daysOf(tr.summary)}
 								</p>
 								{tr.content && (
 									<p
@@ -152,6 +182,7 @@ export function HubPage({ data }: Props) {
 				current={hub}
 				className="mt-10 border-t border-line pt-4"
 			/>
+			<SiteFooter />
 			<JsonLd graph={jsonLd} />
 		</main>
 	);

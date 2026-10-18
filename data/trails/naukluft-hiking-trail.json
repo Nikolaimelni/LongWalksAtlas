@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://www.nwr.com.na/resorts/naukluft-camp/",
 	"sources": ["https://www.nwr.com.na/resorts/naukluft-camp/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Naukluft Mountains (4).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [112708]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

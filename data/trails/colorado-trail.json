@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://coloradotrail.org/trail/",
 	"sources": ["https://coloradotrail.org/trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:View from Colorado Trail, overlooking South Park, near Kenosha Pass.jpg"
+	},
 	"wikidata": "Q5148975",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3445384]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -1,7 +1,7 @@
 ---
 title: "Fish River Canyon Hiking Trail"
 summary: "A 90 km canyon hike through the Fish River Canyon in southern Namibia from Hobas to Ai-Ais."
-status: machine
+status: reviewed
 ---
 
 The route goes along the canyon floor and crosses river bends, sand and boulder fields.

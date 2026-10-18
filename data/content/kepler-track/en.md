@@ -1,7 +1,7 @@
 ---
 title: "Kepler Track"
 summary: "A circular Great Walk of 60 km that starts near Te Anau, climbs above the bush line along the Kepler Mountains ridge and returns along Lake Te Anau and the Waiau River."
-status: machine
+status: reviewed
 ---
 
 The Kepler Track is a three to four-day loop with three huts, mountain views above the tree line and fiord-style forests.

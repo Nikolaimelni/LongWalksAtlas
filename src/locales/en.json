@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Long-distance hiking trails of the world on a map",
 		"loading": "Loading the map…",
-		"pick": "Several trails meet here"
+		"pick": "Several trails meet here",
+		"pickHint": "Click to choose one",
+		"mapFailed": "The map could not be shown on this device."
 	},
 	"filters": {
 		"list": "Trails",
@@ -37,7 +39,10 @@
 		"reset": "Clear all",
 		"active_one": "{{count}} filter on",
 		"active_other": "{{count}} filters on",
-		"none": "No trail matches. Try clearing a filter."
+		"none": "No trail matches. Try clearing a filter.",
+		"show": "show the list and filters",
+		"region": "Region",
+		"anyRegion": "Any"
 	},
 	"language": {
 		"label": "Language",
@@ -79,34 +84,15 @@
 		"story": "About the trail",
 		"officialSite": "Official website",
 		"sources": "Sources",
-		"checked": "Facts checked on {{date}}.",
 		"lengthFromMap": "Length measured on the OpenStreetMap line; no official figure checked yet.",
-		"osm": "Trail line © OpenStreetMap contributors, ODbL.",
 		"showOnMap": "Show on the map",
-		"backToAtlas": "All trails",
-		"notReviewed": "This text has not been reviewed by a person yet.",
 		"fallback": "There is no translation yet, so this text is in English.",
 		"mapLoading": "Loading the map…",
 		"crosses": "Trails it meets",
 		"nearby": "Nearby trails",
 		"photoBy": "Photo:",
-		"photoAlt": "On the {{title}}"
-	},
-	"faq": {
-		"title": "Questions walkers ask",
-		"lengthQ": "How long is the {{title}}?",
-		"lengthA": "The {{title}} is {{km}} long.",
-		"daysQ": "How many days does it take to walk the {{title}}?",
-		"daysA": "Most walkers take {{days}} for the whole route.",
-		"whereQ": "Where does the {{title}} start and end?",
-		"whereA": "It starts in {{start}} and ends in {{end}}.",
-		"whereLoopA": "It is a loop that starts and ends in {{start}}.",
-		"whenQ": "When is the best time to walk the {{title}}?",
-		"whenA": "The best months are {{months}}.",
-		"countriesQ": "Which countries does the {{title}} pass through?",
-		"countriesA": "It passes through {{countries}}.",
-		"officialQ": "Where is the official information about the {{title}}?",
-		"officialA": "On the official website, {{url}}."
+		"photoAlt": "On the {{title}}",
+		"daysEstimated": "No source gives the days on foot, so they are worked out from the length at {{pace}} a day."
 	},
 	"seo": {
 		"trailTitle": "{{title}}: route map, {{km}}, {{days}}",
@@ -124,5 +110,23 @@
 		"browse": "Browse trails",
 		"byCountry": "By country",
 		"byType": "By type"
+	},
+	"error": {
+		"notFound": "This trail ends here",
+		"crashed": "Something went wrong",
+		"home": "Back to the map",
+		"notFoundText": "There is no page at this address. The link may be old, or the address may have a typo.",
+		"crashedText": "The page could not be shown. Try again in a moment."
+	},
+	"site": {
+		"credits": "Trail lines © OpenStreetMap contributors, ODbL. Basemap by OpenFreeMap. Photos from Wikimedia Commons, each credited where it is shown."
+	},
+	"region": {
+		"europe": "Europe",
+		"middle-east-caucasus": "Middle East and Caucasus",
+		"asia": "Asia",
+		"africa": "Africa",
+		"americas": "Americas",
+		"oceania": "Oceania"
 	}
 }

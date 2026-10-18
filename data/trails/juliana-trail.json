@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.soca-valley.com/en/summer/hiking/juliana-trail/",
 	"sources": ["https://www.soca-valley.com/en/summer/hiking/juliana-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Bohinjsko jezero panorama.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [11724854]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

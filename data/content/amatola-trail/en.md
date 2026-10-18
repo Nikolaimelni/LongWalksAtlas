@@ -1,7 +1,7 @@
 ---
 title: "Amatola Hiking Trail"
 summary: "A six-day trail of about 100 km in the Amathole Mountains of the Eastern Cape, from the outskirts of Qonce to Hogsback."
-status: machine
+status: reviewed
 ---
 
 The Amatola Trail crosses indigenous forest, mountain streams and ridges and uses huts. The Eastern Cape tourism website lists it among the iconic hiking trails of the province.

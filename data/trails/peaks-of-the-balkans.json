@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://www.peaksofthebalkans.com/The-Trail",
 	"sources": ["https://www.peaksofthebalkans.com/The-Trail"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Peaks of the Balkans - 243 (27114589989).jpg"
+	},
 	"wikidata": "Q19298341",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [4726204]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

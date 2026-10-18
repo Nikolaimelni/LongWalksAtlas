@@ -15,7 +15,6 @@ type Input = {
 	parents: Link[];
 	image: string | null;
 	countryNames: string[];
-	faq: { question: string; answer: string }[];
 };
 
 export function trailJsonLd(input: Input): JsonLdNode[] {
@@ -30,14 +29,12 @@ export function trailJsonLd(input: Input): JsonLdNode[] {
 				? { alternateName: file.name.original }
 				: {}),
 			description: content.summary,
-			url,
+			// The trail's own site; this page is the WebPage below, which is about it.
+			url: file.officialUrl,
 			// Wikidata ties the page to the entity search engines already know.
-			sameAs: [
-				file.officialUrl,
-				...(file.wikidata
-					? [`https://www.wikidata.org/wiki/${file.wikidata}`]
-					: []),
-			],
+			...(file.wikidata
+				? { sameAs: [`https://www.wikidata.org/wiki/${file.wikidata}`] }
+				: {}),
 			...(image ? { image } : {}),
 			isAccessibleForFree: true,
 			publicAccess: true,
@@ -53,12 +50,17 @@ export function trailJsonLd(input: Input): JsonLdNode[] {
 					value: summary.lengthKm,
 					unitCode: "KMT",
 				},
-				{
-					"@type": "PropertyValue",
-					name: "days on foot",
-					minValue: summary.days.min,
-					maxValue: summary.days.max,
-				},
+				// An estimate from the length is said on the page, but it is not a fact.
+				...(summary.daysSource === "official"
+					? [
+							{
+								"@type": "PropertyValue",
+								name: "days on foot",
+								minValue: summary.days.min,
+								maxValue: summary.days.max,
+							},
+						]
+					: []),
 			],
 		},
 		breadcrumbNode(`${url}#breadcrumb`, [
@@ -67,8 +69,7 @@ export function trailJsonLd(input: Input): JsonLdNode[] {
 			{ name: content.title, url },
 		]),
 		{
-			// A WebPage subtype: the page itself, which answers the questions it lists.
-			"@type": "FAQPage",
+			"@type": "WebPage",
 			"@id": url,
 			url,
 			name: content.title,
@@ -78,12 +79,6 @@ export function trailJsonLd(input: Input): JsonLdNode[] {
 			about: { "@id": `${url}#trail` },
 			breadcrumb: { "@id": `${url}#breadcrumb` },
 			...(image ? { primaryImageOfPage: image } : {}),
-			dateModified: file.verifiedAt,
-			mainEntity: input.faq.map(({ question, answer }) => ({
-				"@type": "Question",
-				name: question,
-				acceptedAnswer: { "@type": "Answer", text: answer },
-			})),
 		},
 		websiteNode(site.url, site.name, lang),
 	];

@@ -8,7 +8,6 @@ import {
 	defaultLang,
 	isLang,
 	type Lang,
-	languages,
 } from "../src/features/i18n/languages.ts";
 import {
 	contentFrontmatterSchema,
@@ -16,6 +15,8 @@ import {
 } from "../src/features/trails/content-schema.ts";
 import { DataError } from "./data-error.ts";
 import { log } from "./log.ts";
+import { publishedLanguages as languages } from "./published-languages.ts";
+import { readTrails } from "./read-trails.ts";
 import { parseStoryHtml } from "./story-html.ts";
 import { readTranslations, type Translations } from "./translations.ts";
 
@@ -46,6 +47,30 @@ async function parseFile(file: string): Promise<Parsed | string> {
 	const story = parseStoryHtml(await marked.parse(body.trim()));
 	if (story.problems.length > 0) return story.problems.join("\n");
 	return { meta: meta.data, html: story.html };
+}
+
+// Country names are worked out here, once, and not by Intl in the page: Node and the
+// browser ship different ICU data, and a name that differs between the prerendered HTML
+// and the first client render ("Hong Kong SAR China" against "Hong Kong") breaks
+// hydration. For Hong Kong the short form is also the one people use.
+const shortNames = new Set(["HK"]);
+
+function regionNames(codes: readonly string[]) {
+	return Object.fromEntries(
+		languages.map(({ code: lang }) => {
+			const long = new Intl.DisplayNames([lang], { type: "region" });
+			const short = new Intl.DisplayNames([lang], {
+				type: "region",
+				style: "short",
+			});
+			return [
+				lang,
+				Object.fromEntries(
+					codes.map((c) => [c, (shortNames.has(c) ? short : long).of(c) ?? c]),
+				),
+			];
+		}),
+	);
 }
 
 async function main() {
@@ -112,6 +137,13 @@ async function main() {
 		}
 		await writeFile(join(outDir, `${code}.json`), JSON.stringify(index));
 	}
+	const countries = [
+		...new Set((await readTrails()).flatMap((t) => t.countries)),
+	];
+	await writeFile(
+		join(outDir, "regions.json"),
+		JSON.stringify(regionNames(countries.sort())),
+	);
 	log.info(
 		{ trails: parsed.size, languages: languages.length },
 		"wrote content",

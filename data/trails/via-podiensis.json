@@ -26,11 +26,12 @@
 		"https://www.chemins-compostelle.com/voie/voie-du-puy-en-velay/",
 		"https://whc.unesco.org/en/list/868"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Castle of Estaing 22.jpg"
+	},
 	"wikidata": "Q996686",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [138227]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

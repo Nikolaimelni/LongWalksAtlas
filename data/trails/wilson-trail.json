@@ -22,11 +22,12 @@
 	"sources": [
 		"https://www.discoverhongkong.com/eng/place-to-go/travel.guide-wilson-trail.html"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Ping Fung Shan as observed from Wong Leng.jpg"
+	},
 	"wikidata": "Q8023239",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3938721]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

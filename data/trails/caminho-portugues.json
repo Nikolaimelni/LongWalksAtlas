@@ -14,6 +14,5 @@
 	"sources": ["https://en.wikipedia.org/wiki/Portuguese_Way"],
 	"photo": { "commons": "File:Caminho Português Impressions 01.jpg" },
 	"wikidata": "Q1029533",
-	"geometry": { "source": "osm", "relationIds": [7684546, 12786090] },
-	"verifiedAt": "2026-10-18"
+	"geometry": { "source": "osm", "relationIds": [7684546, 12786090] }
 }

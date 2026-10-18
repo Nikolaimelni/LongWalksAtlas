@@ -1,7 +1,7 @@
 ---
 title: "West Highland Way"
 summary: "Scotland's best-known long-distance footpath links the edge of Glasgow with Fort William, passing Loch Lomond, Rannoch Moor and Glen Coe on the way into the Highlands."
-status: machine
+status: reviewed
 ---
 
 The route begins in the commuter town of Milngavie and gradually trades suburbs for woodland, then climbs along the eastern shore of Loch Lomond. North of Tyndrum it crosses the open peat and rock of Rannoch Moor before dropping through the great glen of Glen Coe.

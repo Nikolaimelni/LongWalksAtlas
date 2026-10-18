@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/pennine-way/",
 	"sources": ["https://nationaltrail.co.uk/en_GB/?p=44659"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Pennine Way Great Shunner Fell North.jpg"
+	},
 	"wikidata": "Q1478622",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [4080347]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

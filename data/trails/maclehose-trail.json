@@ -22,11 +22,12 @@
 	"sources": [
 		"https://publish-dev.discoverhongkong.com/eng/things-to-do/great-outdoor/maclehose-trail-stages-1-and-2.html"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:20260308 High Island Reservoir (130147).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1281208]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

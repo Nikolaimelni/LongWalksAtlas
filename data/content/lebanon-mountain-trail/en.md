@@ -1,7 +1,7 @@
 ---
 title: "Lebanon Mountain Trail"
 summary: "A 470 km trail along Lebanon's mountains from Andaket in the north to Marjayoun in the south, passing more than 75 towns and villages."
-status: machine
+status: reviewed
 ---
 
 The trail runs between 600 and 2,000 m and is marked with white and purple blazes. It passes cedar forests, monasteries and villages and uses guesthouses.

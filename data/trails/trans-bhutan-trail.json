@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://transbhutantrail.com/",
 	"sources": ["https://transbhutantrail.com/itineraries/end-to-end-trek/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Jakar - Autsho, Thrumshing La pass (15223611104).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [13359866]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

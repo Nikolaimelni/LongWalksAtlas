@@ -1,4 +1,5 @@
 import { expect, type Page, test } from "@playwright/test";
+import { countOf, trails } from "./trail-data";
 
 const list = (page: Page) =>
 	page
@@ -14,7 +15,7 @@ async function openPanel(page: Page) {
 test("search narrows the list and lands in the URL", async ({ page }) => {
 	await page.goto("/ru/");
 	await openPanel(page);
-	await expect(list(page)).toHaveCount(5);
+	await expect(list(page)).toHaveCount(trails.length);
 
 	await page.getByRole("searchbox", { name: "Поиск троп" }).fill("oludeniz");
 	await expect(list(page)).toHaveCount(1);
@@ -26,23 +27,29 @@ test("type chips and the country filter combine", async ({ page }) => {
 	await page.goto("/ru/");
 	await openPanel(page);
 
-	await page.getByRole("button", { name: "Горная тропа" }).click();
+	await page.getByRole("button", { name: "Паломнический путь" }).click();
 	await expect(
-		page.getByRole("button", { name: "Горная тропа" }),
+		page.getByRole("button", { name: "Паломнический путь" }),
 	).toHaveAttribute("aria-pressed", "true");
-	await expect(list(page)).toHaveText([/Тур вокруг Монблана/]);
+	await expect(list(page)).toHaveCount(countOf((t) => t.type === "pilgrimage"));
+
+	await page.getByLabel("Страна").selectOption("ES");
+	await expect(list(page)).toHaveCount(
+		countOf((t) => t.type === "pilgrimage" && t.countries.includes("ES")),
+	);
+	await expect(page).toHaveURL(/type=pilgrimage/);
+	await expect(page).toHaveURL(/country=ES/);
 
 	await page.getByRole("button", { name: "Сбросить" }).click();
-	await page.getByLabel("Страна").selectOption("TR");
-	await expect(list(page)).toHaveCount(2);
-	await expect(page).toHaveURL(/country=TR/);
-	await expect(page).not.toHaveURL(/type=/);
+	await expect(list(page)).toHaveCount(trails.length);
+	await expect(page).not.toHaveURL(/type=|country=/);
 });
 
 test("a filtered link opens with the filters applied", async ({ page }) => {
 	await page.goto("/ru/?type=e-path");
 	await openPanel(page);
-	await expect(list(page)).toHaveText([/Европейский маршрут E1/]);
+	await expect(list(page)).toHaveCount(countOf((t) => t.type === "e-path"));
+	await expect(list(page).first()).toHaveText(/E1/);
 });
 
 test.describe("on a phone", () => {

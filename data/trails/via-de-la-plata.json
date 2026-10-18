@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.spain.info/en/route/silver-route/",
 	"sources": ["https://www.spain.info/en/route/silver-route/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Arco romano de Cáparra, senda al Arco.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [241329]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

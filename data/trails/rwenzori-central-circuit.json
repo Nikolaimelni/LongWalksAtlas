@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://ugandawildlife.org/tours/rwenzori-mountains",
 	"sources": ["https://ugandawildlife.org/tours/rwenzori-mountains"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Ruwenzori Lake Kitandara.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8386254]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

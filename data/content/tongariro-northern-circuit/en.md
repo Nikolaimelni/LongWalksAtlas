@@ -1,7 +1,7 @@
 ---
 title: "Tongariro Northern Circuit"
 summary: "A volcanic loop of three to four days around Mount Ngauruhoe and Mount Tongariro in New Zealand's North Island."
-status: machine
+status: reviewed
 ---
 
 The circuit crosses the Tongariro volcanic plateau, past Red Crater, Emerald Lakes and Blue Lake.

@@ -1,7 +1,7 @@
 ---
 title: "Great Ocean Walk"
 summary: "A coastal walk in Victoria from Apollo Bay to the Twelve Apostles, over 100 km of beaches, cliffs and rainforest, usually walked in eight days."
-status: machine
+status: reviewed
 ---
 
 The Great Ocean Walk follows the coast of the Great Otway National Park and Port Campbell National Park and is usually done east to west. The authority gives 'more than 100 km' and eight days.

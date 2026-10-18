@@ -26,11 +26,12 @@
 		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/",
 		"https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Milford Track Clinton River 3.jpg"
+	},
 	"wikidata": "Q673819",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1385121]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "I percorsi escursionistici a lunga distanza di tutto il mondo su una mappa",
 		"loading": "Caricamento della mappa in corso…",
-		"pick": "Qui si incrociano diversi sentieri"
+		"pick": "Qui si incrociano diversi sentieri",
+		"pickHint": "Fai clic per sceglierne uno",
+		"mapFailed": "Non è stato possibile mostrare la mappa su questo dispositivo."
 	},
 	"filters": {
 		"list": "Sentieri",
@@ -39,7 +41,10 @@
 		"active_one": "{{count}} filtro attivato",
 		"active_many": "{{count}} filtro attivato",
 		"active_other": "{{count}} filtri attivati",
-		"none": "Nessun risultato corrispondente. Prova a deselezionare un filtro."
+		"none": "Nessun risultato corrispondente. Prova a deselezionare un filtro.",
+		"show": "mostra elenco e filtri",
+		"region": "Regione",
+		"anyRegion": "Qualsiasi"
 	},
 	"language": {
 		"label": "Lingua",
@@ -83,34 +88,15 @@
 		"story": "Informazioni sul percorso",
 		"officialSite": "Sito web ufficiale",
 		"sources": "Fonti",
-		"checked": "Fatti verificati alla {{date}} indicata.",
 		"lengthFromMap": "Lunghezza misurata sulla linea di OpenStreetMap; non è stato ancora verificato alcun dato ufficiale.",
-		"osm": "Percorso © Collaboratori di OpenStreetMap, ODbL.",
 		"showOnMap": "Mostra sulla mappa",
-		"backToAtlas": "Tutti i sentieri",
-		"notReviewed": "Questo testo non è ancora stato revisionato da nessuno.",
 		"fallback": "Non c'è ancora una traduzione, quindi questo testo è in inglese.",
 		"mapLoading": "Caricamento della mappa in corso…",
 		"crosses": "Sentieri che incrocia",
 		"nearby": "Sentieri nelle vicinanze",
 		"photoBy": "Foto:",
-		"photoAlt": "Sul{{title}}"
-	},
-	"faq": {
-		"title": "Domande poste dagli escursionisti",
-		"lengthQ": "Quanto è lungo il{{title}}?",
-		"lengthA": "Il{{title}}e è lungo {{km}}.",
-		"daysQ": "Quanti giorni ci vogliono per percorrere a piedi il percorso del “{{title}}”?",
-		"daysA": "La maggior parte degli escursionisti impiega {{days}} per percorrere l'intero itinerario.",
-		"whereQ": "Dove inizia e dove finisce il{{title}}?",
-		"whereA": "Inizia con “{{start}}” e finisce con “{{end}}”.",
-		"whereLoopA": "È un ciclo che inizia e finisce in “{{start}}”.",
-		"whenQ": "Qual è il momento migliore per fare il giro del “{{title}}”?",
-		"whenA": "I mesi migliori sono i {{months}}.",
-		"countriesQ": "Da quali paesi passa il{{title}}?",
-		"countriesA": "Attraversa diversi {{countries}}.",
-		"officialQ": "Dove si trovano le informazioni ufficiali sul{{title}}?",
-		"officialA": "Sul sito web ufficiale, all’{{url}}."
+		"photoAlt": "Sul{{title}}",
+		"daysEstimated": "Nessuna fonte indica i giorni a piedi, quindi sono calcolati dalla lunghezza, a {{pace}} al giorno."
 	},
 	"seo": {
 		"trailTitle": "{{title}}: mappa del percorso, {{km}}, {{days}}",
@@ -130,5 +116,23 @@
 		"browse": "Esplora i sentieri",
 		"byCountry": "Per paese",
 		"byType": "Per tipo"
+	},
+	"error": {
+		"notFound": "Il sentiero finisce qui",
+		"crashed": "Qualcosa è andato storto",
+		"home": "Torna alla mappa",
+		"notFoundText": "A questo indirizzo non c'è nessuna pagina. Il link potrebbe essere vecchio o l'indirizzo contenere un errore di battitura.",
+		"crashedText": "Non è stato possibile mostrare la pagina. Riprova tra un momento."
+	},
+	"site": {
+		"credits": "Tracciati dei sentieri © contributori di OpenStreetMap, ODbL. Mappa di base: OpenFreeMap. Foto da Wikimedia Commons, con autore e licenza sotto ciascuna."
+	},
+	"region": {
+		"europe": "Europa",
+		"middle-east-caucasus": "Medio Oriente e Caucaso",
+		"asia": "Asia",
+		"africa": "Africa",
+		"americas": "Americhe",
+		"oceania": "Oceania"
 	}
 }
