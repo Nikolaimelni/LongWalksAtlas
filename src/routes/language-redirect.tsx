@@ -1,6 +1,7 @@
 import { Link, redirect } from "react-router";
 import { pickLang } from "~/features/i18n/languages";
 import { publishedLanguages } from "~/features/i18n/published";
+import { redirectScript } from "~/features/i18n/redirect-script";
 import { readStoredLang } from "~/features/i18n/stored-lang";
 import en from "~/locales/en.json";
 import { JsonLd, websiteNode } from "~/shared/json-ld";
@@ -38,8 +39,22 @@ export function clientLoader() {
 }
 clientLoader.hydrate = true as const;
 
+// The prerendered "/" sends visitors on before anything paints. The list stays for
+// readers without JavaScript; crawlers find every language through hreflang anyway.
 export function HydrateFallback() {
-	return <LanguageList />;
+	const codes = publishedLanguages.map((l) => l.code);
+	return (
+		<>
+			<script
+				// biome-ignore lint/security/noDangerouslySetInnerHtml: the only data is our own language codes, written through JSON.stringify
+				dangerouslySetInnerHTML={{ __html: redirectScript(codes) }}
+			/>
+			<noscript>
+				<LanguageList />
+			</noscript>
+			<JsonLd graph={[websiteNode(absoluteUrl("/"), en.app.name, "en")]} />
+		</>
+	);
 }
 
 export default function LanguagePicker() {
@@ -64,7 +79,6 @@ function LanguageList() {
 					</li>
 				))}
 			</ul>
-			<JsonLd graph={[websiteNode(absoluteUrl("/"), en.app.name, "en")]} />
 		</main>
 	);
 }
