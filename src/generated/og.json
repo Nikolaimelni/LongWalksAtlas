@@ -1,12 +1,15 @@
 {
-	"en": {
-		"src": "/og/atlas-en-8f6a81c8.jpg",
-		"width": 1200,
-		"height": 630
+	"atlas": {
+		"en": {
+			"src": "/og/atlas-en-8f6a81c8.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"ru": {
+			"src": "/og/atlas-ru-c0fce9b1.jpg",
+			"width": 1200,
+			"height": 630
+		}
 	},
-	"ru": {
-		"src": "/og/atlas-ru-c0fce9b1.jpg",
-		"width": 1200,
-		"height": 630
-	}
+	"trails": {}
 }
