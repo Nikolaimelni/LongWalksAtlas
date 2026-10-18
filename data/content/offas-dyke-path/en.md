@@ -6,4 +6,4 @@ status: reviewed
 
 The path uses stretches of the dyke attributed to King Offa of Mercia and links the Wye Valley, the Black Mountains, the Shropshire hills and the Clwydian Range. It crosses the border many times, so walkers move between English and Welsh villages almost daily.
 
-The National Trail website gives 177 miles, says the route can be walked all year but is mostly done between April and October, and suggests about two weeks or more. The coordinates for the start are the town of Chepstow, close to Sedbury Cliffs.
+The path can be walked all year, though most people go between April and October and take two weeks or more. The official start is a stone marker on Sedbury Cliffs above the Severn, a short walk from Chepstow.

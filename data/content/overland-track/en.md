@@ -4,6 +4,6 @@ summary: "Tasmania's classic six-day alpine walk from Ronny Creek at Cradle Moun
 status: reviewed
 ---
 
-The Overland Track passes lakes, button-grass plains and ends at Australia's deepest freshwater lake, and requires booking and a fee in the main season.
+The Overland Track crosses Cradle Mountain-Lake St Clair National Park, part of the Tasmanian Wilderness World Heritage Area. It passes glacial lakes, button-grass plains and forest of myrtle beech and pencil pine, and ends at Lake St Clair, Australia's deepest freshwater lake. Side trips lead to the summit of Mount Ossa, Tasmania's highest peak, and to waterfalls off the main path. The weather changes fast, and snow can fall in any month.
 
-The Parks and Wildlife Service gives 65 km one way and six days, and says the booking season runs from 1 October to 31 May.
+During the booking season, from 1 October to 31 May, walkers need a pass and a fee and must walk from north to south.

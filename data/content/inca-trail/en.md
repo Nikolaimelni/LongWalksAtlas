@@ -4,6 +4,6 @@ summary: "The classic Inca road trek over the Andes to Machu Picchu, a four-day 
 status: reviewed
 ---
 
-The trail follows Inca paths and stairways through cloud forest, past ruins such as Wiñay Wayna, to Machu Picchu. Entry is limited by permit.
+The trail follows Inca paths and stone stairways from the Urubamba valley at Km 82, through cloud forest and past ruins such as Runkurakay, Sayacmarca and Wiñay Wayna, to Machu Picchu. The hardest day crosses Warmiwañusca, Dead Woman's Pass, at about 4,200 m. On the last morning walkers reach Inti Punku, the Sun Gate, with the first view down onto the citadel.
 
-The OSM relation records 38 km and an operator in the Peruvian Ministry of Culture.
+Entry is limited by a daily permit quota, hikers must go with a licensed operator, and the trail closes every February for maintenance. Peru's Ministry of Culture manages the route.

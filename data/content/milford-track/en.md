@@ -1,6 +1,6 @@
 ---
 title: "Milford Track"
-summary: "New Zealand's most famous Great Walk crosses Fiordland over four days from Glade Wharf on Lake Te Anau, over the McKinnon Pass, to Sandfly Point on Milford Sound."
+summary: "New Zealand's most famous Great Walk crosses Fiordland over four days from Glade Wharf on Lake Te Anau, over the Mackinnon Pass, to Sandfly Point on Milford Sound."
 status: reviewed
 ---
 

@@ -4,6 +4,6 @@ summary: "A six-day mountain hiking trail through indigenous forest and fynbos i
 status: reviewed
 ---
 
-The trail passes river gorges and huge yellowwood trees and can also be walked in shorter versions. Optional porterage is available.
+The trail is the inland counterpart of the Otter Trail: it climbs from the coast at Nature's Valley into the Tsitsikamma Mountains and follows their slopes east to Storms River village. It passes river gorges, huge yellowwood trees and open fynbos with views down to the sea, and can also be walked in shorter versions.
 
-The Eastern Cape tourism site gives 62.3 km over six days.
+Optional porterage is available, so hikers can walk with only a day pack.

@@ -6,4 +6,4 @@ status: reviewed
 
 The Kohechi crosses three passes above 1,000 m and links the sacred mountain of Kōyasan with the Kumano shrines, making it the steepest and quietest of the Kumano Kodo routes. It passes remote villages and follows old stone paths.
 
-The source used here is a tourism article that gives 72 km; it does not state days or season.
+Many walkers begin with a night in a temple lodging on Kōyasan. Villages are few and far apart, so most people take four days, book small family inns ahead and send heavy bags on by courier. The passes can be under snow in winter.

@@ -4,6 +4,6 @@ summary: "Ireland's oldest waymarked trail crosses the Wicklow Mountains from th
 status: reviewed
 ---
 
-The route follows forest roads and bog paths through Glendalough, over Lugnaquilla's foothills and across the Wicklow uplands. The trail description speaks of seven days or more depending on pace.
+The idea came from the walker and writer J. B. Malone, and the route opened in 1980 as the first of Ireland's waymarked ways. It follows forest roads and bog paths through Glendalough, with its early medieval monastic site, over Lugnaquilla's foothills and across the Wicklow uplands, then drops into quieter farmland in the south.
 
-The trail website gives 127 km between Marlay Park and Clonegal.
+Boardwalks protect the bog on the higher ground, but parts can still be wet and exposed in bad weather. Most walkers take seven days or more.
