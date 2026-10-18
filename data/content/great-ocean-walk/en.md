@@ -4,6 +4,6 @@ summary: "A coastal walk in Victoria from Apollo Bay to the Twelve Apostles, ove
 status: reviewed
 ---
 
-The Great Ocean Walk follows the coast of the Great Otway National Park and Port Campbell National Park and is usually done east to west. The authority gives 'more than 100 km' and eight days.
+The Great Ocean Walk follows the coast of the Great Otway National Park and Port Campbell National Park and is usually done east to west. It runs through tall eucalypt forest and fern gullies, along beaches that are only passable at low tide and over high cliff tops, and passes the Cape Otway Lightstation, the oldest surviving lighthouse on mainland Australia. Koalas are often seen in the trees near the cape.
 
-Hikers usually stay in campsites or lodges along the way and finish near the Twelve Apostles. The route is most often walked from east to west, as the authority suggests.
+Hikers stay in walk-in campsites that have to be booked, or in lodges off the trail with transfers. The walk finishes at the lookout over the Twelve Apostles.

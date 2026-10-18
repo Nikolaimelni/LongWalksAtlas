@@ -6,4 +6,4 @@ status: reviewed
 
 The trail runs between 600 and 2,000 m and is marked with white and purple blazes. It passes cedar forests, monasteries and villages and uses guesthouses.
 
-Local guesthouses and community projects along the way have been a main aim of the trail since it was set up. Hikers follow white and purple blazes through mountain villages from north to south.
+Along the way it goes through the Qadisha Valley, with its rock-cut monasteries, and the Chouf cedar reserve in the south. Supporting village guesthouses and local projects has been one of the trail's aims since it was set up, and most people walk it in sections rather than end to end.

@@ -4,6 +4,6 @@ summary: "A five-day trek in Patagonia's Torres del Paine National Park along th
 status: reviewed
 ---
 
-The W trek links the Torres, Valle Francés and Grey Glacier, with refugios and campsites in the park.
+The W trek links the Torres, Valle Francés and Grey Glacier, with refugios and campsites in the park. One arm climbs to the lake at the foot of the three granite towers, the middle one runs up the French Valley between hanging glaciers and the dark-capped Cuernos, and the third follows Lago Grey to the glacier front. Paths along the shore of Lago Nordenskjöld connect them.
 
-Chile's tourism board gives about 70 km and five days and calls spring and summer the walking season.
+The Patagonian wind is the main hazard, with gusts strong enough to knock walkers off their feet, and the weather can change several times a day. Beds in refugios and campsites have to be booked before entering the park. The walking season is the southern spring and summer.

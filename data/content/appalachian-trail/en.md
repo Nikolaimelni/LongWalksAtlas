@@ -4,6 +4,6 @@ summary: "The United States' most famous long-distance footpath runs about 2,200
 status: reviewed
 ---
 
-The Appalachian Trail is managed by the Appalachian Trail Conservancy and the National Park Service. Most thru-hikers go north from Georgia between late February and early April and take about six months.
+The idea came from the forester Benton MacKaye in 1921, and volunteer clubs finished the footpath in 1937; it is still marked with white blazes and largely maintained by volunteers. The trail is managed by the Appalachian Trail Conservancy and the National Park Service. Most thru-hikers go north from Georgia between late February and early April and take about six months.
 
 Sections are rerouted now and then, so the length shifts a little from year to year.

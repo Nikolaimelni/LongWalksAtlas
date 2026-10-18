@@ -6,4 +6,4 @@ status: reviewed
 
 The English Way takes its name from pilgrims from the British Isles and northern Europe who landed at Ferrol and A Coruña. From Ferrol it is 112.4 km to Santiago, from A Coruña only 72.8 km. Pilgrims need to cover at least 100 km on foot to receive the certificate, which makes the Ferrol route the usual choice.
 
-Shorter than the other Galician approaches, it is a practical choice for people who have only a week or less. Because the Ferrol start gives more than 100 km, the walk can still earn the pilgrim certificate in Santiago.
+From Ferrol the path follows the shores of the rías through Pontedeume and Betanzos, two medieval towns on the water, then turns inland over wooded hills where the climbs are short but steady. The branch from A Coruña joins it at Hospital de Bruma. Shorter than the other Galician approaches, the whole walk fits into five or six days, which suits people who have only a week.

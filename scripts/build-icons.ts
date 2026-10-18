@@ -3,16 +3,16 @@ import { join } from "node:path";
 import sharp from "sharp";
 import { log } from "./log.ts";
 
-// The logo mark from src/shared/logo-mark.tsx on a solid brand disc, so it reads on a
-// light tab bar, a dark one and in the search results list alike.
-const brand = "#1d6b57";
-const mark = `<path d="M5 17.5c2.6-.6 3.2-4.6 6-5.4s3.6 1.8 6.6-4.2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 3.4"/><circle cx="17.8" cy="7.2" r="2.2" fill="#fff"/>`;
+// A plainer src/shared/logo-mark.tsx: one line and one pin on a folded map, because the
+// full logo turns to noise at 16 px.
+const brand = "#155445";
+const map = `<path d="m4.5 9 7.5-2.5 8 2.5 7.5-2.5v17L20 26l-8-2.5-7.5 2.5Z" fill="#fbf5e6"/><path d="m12 6.5 8 2.5v17l-8-2.5Z" fill="#e6dbc3"/><path d="M8 22c2-3 4.5-1.5 7-4s3.5-3 6-3" fill="none" stroke="#1d6b57" stroke-width="2" stroke-linecap="round"/><path d="M21.5 18.2c-1.2-1.6-3.2-3.5-3.2-5.6a3.2 3.2 0 0 1 6.4 0c0 2.1-2 4-3.2 5.6Z" fill="#e5533d"/><circle cx="21.5" cy="12.6" r="1.2" fill="#fbf5e6"/>`;
 
-const round = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Long Walks Atlas</title><circle cx="12" cy="12" r="12" fill="${brand}"/>${mark}</svg>\n`;
+const rounded = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>Long Walks Atlas</title><rect width="32" height="32" rx="7" fill="${brand}"/>${map}</svg>\n`;
 
 // iOS rounds the corners itself and fills transparency with black, so the touch icon is
-// a full square with the mark inset.
-const square = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 32 32"><rect x="-4" y="-4" width="32" height="32" fill="${brand}"/>${mark}</svg>`;
+// a full square with the map inset.
+const square = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 36 36"><rect x="-2" y="-2" width="36" height="36" fill="${brand}"/>${map}</svg>`;
 
 const publicDir = join(import.meta.dirname, "../public");
 
@@ -32,7 +32,7 @@ function pngToIco(png: Buffer, size: number): Buffer {
 }
 
 // Google wants a favicon whose side is a multiple of 48 px.
-const ico = await sharp(Buffer.from(round), { density: 300 })
+const ico = await sharp(Buffer.from(rounded), { density: 300 })
 	.resize(48, 48)
 	.png()
 	.toBuffer();
@@ -41,7 +41,7 @@ const touch = await sharp(Buffer.from(square), { density: 600 })
 	.png()
 	.toBuffer();
 
-await writeFile(join(publicDir, "favicon.svg"), round);
+await writeFile(join(publicDir, "favicon.svg"), rounded);
 await writeFile(join(publicDir, "favicon.ico"), pngToIco(ico, 48));
 await writeFile(join(publicDir, "apple-touch-icon.png"), touch);
 log.info("wrote favicon.svg, favicon.ico and apple-touch-icon.png");
