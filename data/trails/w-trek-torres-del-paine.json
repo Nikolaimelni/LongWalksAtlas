@@ -1,0 +1,35 @@
+{
+	"slug": "w-trek-torres-del-paine",
+	"name": {
+		"original": "Circuito W - Torres del Paine"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Hotel Las Torres",
+		"coords": [-72.8739, -50.9736]
+	},
+	"end": {
+		"name": "Refugio Grey",
+		"coords": [-73.1838, -51.0002]
+	},
+	"countries": ["CL"],
+	"lengthKm": 70,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://chile.travel/en/itineraries/torres-del-paine-w-trek-the-definitive-guide/",
+	"sources": [
+		"https://chile.travel/en/itineraries/torres-del-paine-w-trek-the-definitive-guide/"
+	],
+	"photo": null,
+	"wikidata": "Q106577165",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2203617]
+	},
+	"verifiedAt": "2026-10-18"
+}

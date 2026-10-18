@@ -1,0 +1,33 @@
+{
+	"slug": "trans-bhutan-trail",
+	"name": {
+		"original": "Trans Bhutan Trail"
+	},
+	"type": "historic",
+	"region": "asia",
+	"start": {
+		"name": "Haa",
+		"coords": [89.285, 27.3825]
+	},
+	"end": {
+		"name": "Trashigang",
+		"coords": [91.5528, 27.3326]
+	},
+	"countries": ["BT"],
+	"lengthKm": 403,
+	"days": {
+		"min": 36,
+		"max": 36
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://transbhutantrail.com/",
+	"sources": ["https://transbhutantrail.com/itineraries/end-to-end-trek/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13359866]
+	},
+	"verifiedAt": "2026-10-18"
+}

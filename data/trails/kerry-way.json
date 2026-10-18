@@ -1,0 +1,33 @@
+{
+	"slug": "kerry-way",
+	"name": {
+		"original": "Slí Uíbh Ráthaigh"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Killarney",
+		"coords": [-9.5072, 52.0588]
+	},
+	"end": {
+		"name": "Killarney",
+		"coords": [-9.5072, 52.0588]
+	},
+	"countries": ["IE"],
+	"lengthKm": 232.1,
+	"days": {
+		"min": 9,
+		"max": 9
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.sportireland.ie/outdoors/walking/trails/kerry-way",
+	"sources": ["https://www.sportireland.ie/redirect/trail/19"],
+	"photo": null,
+	"wikidata": "Q1739608",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [183744]
+	},
+	"verifiedAt": "2026-10-18"
+}

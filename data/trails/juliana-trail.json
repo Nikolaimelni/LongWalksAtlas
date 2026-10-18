@@ -1,0 +1,30 @@
+{
+	"slug": "juliana-trail",
+	"name": {
+		"original": "Juliana Trail"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Kranjska Gora",
+		"coords": [13.7871, 46.4854]
+	},
+	"end": {
+		"name": "Kranjska Gora",
+		"coords": [13.7871, 46.4854]
+	},
+	"countries": ["SI"],
+	"lengthKm": 270,
+	"days": null,
+	"bestSeason": ["mar", "apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.soca-valley.com/en/summer/hiking/juliana-trail/",
+	"sources": ["https://www.soca-valley.com/en/summer/hiking/juliana-trail/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11724854]
+	},
+	"verifiedAt": "2026-10-18"
+}

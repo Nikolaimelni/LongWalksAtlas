@@ -1,0 +1,34 @@
+{
+	"slug": "westweg",
+	"name": {
+		"original": "Westweg"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Pforzheim",
+		"coords": [8.705, 48.895]
+	},
+	"end": {
+		"name": "Basel",
+		"coords": [7.5878, 47.5581]
+	},
+	"countries": ["DE", "CH"],
+	"lengthKm": 285,
+	"days": null,
+	"bestSeason": ["jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.schwarzwald-tourismus.info/erleben/wandern/fernwandern/westweg",
+	"sources": [
+		"https://www.schwarzwald-tourismus.info/erleben/wandern/fernwandern/westweg"
+	],
+	"photo": {
+		"commons": "File:Schliffkopf Aussicht Süd.jpg"
+	},
+	"wikidata": "Q2565728",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [62900]
+	},
+	"verifiedAt": "2026-10-18"
+}

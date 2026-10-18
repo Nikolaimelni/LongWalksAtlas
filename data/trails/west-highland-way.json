@@ -1,0 +1,36 @@
+{
+	"slug": "west-highland-way",
+	"name": {
+		"original": "West Highland Way"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Milngavie",
+		"coords": [-4.3137, 55.9421]
+	},
+	"end": {
+		"name": "Fort William",
+		"coords": [-5.1052, 56.8198]
+	},
+	"countries": ["GB"],
+	"lengthKm": 154,
+	"days": {
+		"min": 6,
+		"max": 7
+	},
+	"bestSeason": ["apr", "may", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.westhighlandway.org/",
+	"sources": [
+		"https://www.westhighlandway.org/the-route/",
+		"https://www.westhighlandway.org/getting-started/frequently-asked-questions/"
+	],
+	"photo": null,
+	"wikidata": "Q965998",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16287]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,134 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Una mappa dei percorsi escursionistici a lunga distanza in tutto il mondo: vie di pellegrinaggio, itinerari storici, sentieri costieri e di montagna, con indicazione della lunghezza, dei giorni di cammino e un link al sito ufficiale di ciascuno."
+	},
+	"disclaimer": {
+		"short": "Le linee riportate sulla mappa sono schematiche. Per il percorso esatto, consultare il sito web ufficiale di ciascun sentiero.",
+		"trail": "La linea riportata sulla mappa è schematica e potrebbe differire dal percorso segnalato. Per conoscere il percorso esatto, le sue tappe e le modifiche attuali, consultare il site ufficiale: <link>{{site}}</link>."
+	},
+	"og": {
+		"tagline": "Itinerari di pellegrinaggio, percorsi storici, sentieri costieri e di montagna in tutto il mondo, tutti riuniti in un’unica mappa."
+	},
+	"atlas": {
+		"title": "I percorsi escursionistici a lunga distanza di tutto il mondo su una mappa",
+		"loading": "Caricamento della mappa in corso…",
+		"pick": "Qui si incrociano diversi sentieri"
+	},
+	"filters": {
+		"list": "Sentieri",
+		"search": "Percorsi di ricerca",
+		"searchPlaceholder": "Sentiero o luogo",
+		"count_one": "{{count}} sentiero",
+		"count_many": "{{count}} sentiero",
+		"count_other": "{{count}} percorsi",
+		"types": "Tipo",
+		"country": "Paese",
+		"anyCountry": "Qualsiasi",
+		"length": "Lunghezza",
+		"anyLength": "Qualsiasi",
+		"under": "Sotto{{value}}",
+		"over": "Sopra{{value}}",
+		"duration": "A piedi",
+		"anyDuration": "Qualsiasi",
+		"week": "Fino a una settimana",
+		"fortnight": "1–2 settimane",
+		"month": "2–4 settimane",
+		"more": "Da oltre un mese",
+		"reset": "Cancella tutto",
+		"active_one": "{{count}} filtro attivato",
+		"active_many": "{{count}} filtro attivato",
+		"active_other": "{{count}} filtri attivati",
+		"none": "Nessun risultato corrispondente. Prova a deselezionare un filtro."
+	},
+	"language": {
+		"label": "Lingua",
+		"choose": "Scegli una lingua"
+	},
+	"trailType": {
+		"pilgrimage": "Cammino dei pellegrini",
+		"historic": "Percorso storico",
+		"coastal": "Sentiero costiero",
+		"mountain": "Sentiero di montagna",
+		"e-path": "Sentiero europeo a lunga percorrenza"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Itinerari di pellegrinaggio",
+		"historic": "Itinerari storici",
+		"coastal": "Sentieri costieri",
+		"mountain": "Sentieri di montagna",
+		"e-path": "Sentieri europei a lunga percorrenza"
+	},
+	"badge": {
+		"coe-cultural-route": "Itinerario culturale del Consiglio d’Europa",
+		"unesco": "Patrimonio mondiale dell'UNESCO"
+	},
+	"trail": {
+		"length": "Lunghezza",
+		"duration": "A piedi",
+		"days_one": "{{count}} giorno",
+		"days_many": "{{count}} giorno",
+		"days_other": "{{count}} giorni",
+		"daysRange_one": "da {{min}} a {{count}} giorno",
+		"daysRange_many": "da {{min}} a {{count}} giorno",
+		"daysRange_other": "da {{min}} a {{count}} giorni",
+		"more": "Maggiori informazioni su questo percorso",
+		"close": "Chiudi",
+		"start": "Inizia tra",
+		"end": "Scade tra",
+		"loop": "Percorso ad anello con partenza e ritorno a",
+		"countries": "Paesi",
+		"season": "I mesi migliori",
+		"facts": "In sintesi",
+		"story": "Informazioni sul percorso",
+		"officialSite": "Sito web ufficiale",
+		"sources": "Fonti",
+		"checked": "Fatti verificati alla {{date}} indicata.",
+		"lengthFromMap": "Lunghezza misurata sulla linea di OpenStreetMap; non è stato ancora verificato alcun dato ufficiale.",
+		"osm": "Percorso © Collaboratori di OpenStreetMap, ODbL.",
+		"showOnMap": "Mostra sulla mappa",
+		"backToAtlas": "Tutti i sentieri",
+		"notReviewed": "Questo testo non è ancora stato revisionato da nessuno.",
+		"fallback": "Non c'è ancora una traduzione, quindi questo testo è in inglese.",
+		"mapLoading": "Caricamento della mappa in corso…",
+		"crosses": "Sentieri che incrocia",
+		"nearby": "Sentieri nelle vicinanze",
+		"photoBy": "Foto:",
+		"photoAlt": "Sul{{title}}"
+	},
+	"faq": {
+		"title": "Domande poste dagli escursionisti",
+		"lengthQ": "Quanto è lungo il{{title}}?",
+		"lengthA": "Il{{title}}e è lungo {{km}}.",
+		"daysQ": "Quanti giorni ci vogliono per percorrere a piedi il percorso del “{{title}}”?",
+		"daysA": "La maggior parte degli escursionisti impiega {{days}} per percorrere l'intero itinerario.",
+		"whereQ": "Dove inizia e dove finisce il{{title}}?",
+		"whereA": "Inizia con “{{start}}” e finisce con “{{end}}”.",
+		"whereLoopA": "È un ciclo che inizia e finisce in “{{start}}”.",
+		"whenQ": "Qual è il momento migliore per fare il giro del “{{title}}”?",
+		"whenA": "I mesi migliori sono i {{months}}.",
+		"countriesQ": "Da quali paesi passa il{{title}}?",
+		"countriesA": "Attraversa diversi {{countries}}.",
+		"officialQ": "Dove si trovano le informazioni ufficiali sul{{title}}?",
+		"officialA": "Sul sito web ufficiale, all’{{url}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: mappa del percorso, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} a piedi."
+	},
+	"hub": {
+		"countryTitle": "Percorsi escursionistici a lunga percorrenza in {{country}}",
+		"typeTitle": "{{types}} sulla mappa",
+		"countryIntro_one": "L'atlante contiene {{count}} percorsi che attraversano il{{country}}, dal{{shortest}} al{{longest}}.",
+		"countryIntro_many": "L'atlante contiene {{count}} percorsi che attraversano il{{country}}, dal{{shortest}} al{{longest}}.",
+		"countryIntro_other": "L'atlante contiene {{count}} percorsi che attraversano il{{country}}, dal{{shortest}} al{{longest}}.",
+		"typeIntro_one": "L'atlante riporta {{count}} percorso di questo tipo, tra i {{countries}}, il più {{shortest}}.",
+		"typeIntro_many": "L'atlante riporta {{count}} percorso di questo tipo, tra i {{countries}}, il più {{shortest}}.",
+		"typeIntro_other": "L'atlante contiene {{count}} percorsi di questo tipo, in diversi{{countries}}, ordinati dal{{shortest}} al{{longest}}.",
+		"each": "Per ciascuno sono indicati la durata, i giorni di cammino, i mesi migliori e un link al sito ufficiale.",
+		"showOnMap": "Mostrali sulla mappa",
+		"browse": "Esplora i sentieri",
+		"byCountry": "Per paese",
+		"byType": "Per tipo"
+	}
+}

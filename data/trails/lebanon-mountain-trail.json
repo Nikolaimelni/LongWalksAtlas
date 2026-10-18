@@ -1,0 +1,30 @@
+{
+	"slug": "lebanon-mountain-trail",
+	"name": {
+		"original": "Darb Jabal Lubnan"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Andaket",
+		"coords": [36.305, 34.5867]
+	},
+	"end": {
+		"name": "Marjayoun",
+		"coords": [35.5897, 33.3619]
+	},
+	"countries": ["LB"],
+	"lengthKm": 470,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.lebanontrail.org/",
+	"sources": ["https://www.lebanontrail.org/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [15574869]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,37 @@
+{
+	"slug": "bibbulmun-track",
+	"name": {
+		"original": "Bibbulmun Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Kalamunda",
+		"coords": [116.058, -31.974]
+	},
+	"end": {
+		"name": "Albany",
+		"coords": [117.8814, -35.0228]
+	},
+	"countries": ["AU"],
+	"lengthKm": 1000,
+	"days": {
+		"min": 42,
+		"max": 56
+	},
+	"bestSeason": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.bibbulmuntrack.org.au/",
+	"sources": [
+		"https://www.bibbulmuntrack.org.au/the-track/frequently-asked-questions/"
+	],
+	"photo": {
+		"commons": "File:Southern terminus of Bibbulmun Track in Alison Hartman Gardens with Albany Public Library in the background, April 2022 03.jpg"
+	},
+	"wikidata": "Q4902980",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [400098]
+	},
+	"verifiedAt": "2026-10-18"
+}

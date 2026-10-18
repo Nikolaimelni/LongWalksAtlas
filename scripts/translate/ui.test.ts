@@ -32,6 +32,11 @@ describe("planUi", () => {
 		);
 	});
 
+	it("never sends the site name", () => {
+		const keys = planUi(en, {}, "ru").map((j) => [...j.path, j.key].join("."));
+		expect(keys).not.toContain("app.name");
+	});
+
 	it("needs a single form for a language without plurals", () => {
 		const keys = planUi(en, {}, "ja").map((j) => j.key);
 		expect(keys.filter((k) => k.startsWith("days"))).toEqual(["days_other"]);
@@ -39,7 +44,7 @@ describe("planUi", () => {
 });
 
 describe("translateUi", () => {
-	it("keeps existing strings, fills the gaps and restores placeholders", async () => {
+	it("keeps existing strings but the site name, fills the gaps and restores placeholders", async () => {
 		const { tree, borrowed } = await translateUi(
 			en,
 			{ app: { name: "Атлас троп" }, stale: "gone" },
@@ -47,7 +52,7 @@ describe("translateUi", () => {
 			fake,
 		);
 		expect(tree).toEqual({
-			app: { name: "Атлас троп", close: "[ru] Close" },
+			app: { name: "Long Walks Atlas", close: "[ru] Close" },
 			trail: {
 				days_one: "[ru] {{count}} day",
 				days_few: "[ru] {{count}} days",

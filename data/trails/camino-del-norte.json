@@ -1,0 +1,36 @@
+{
+	"slug": "camino-del-norte",
+	"name": {
+		"original": "Camino del Norte"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Irún",
+		"coords": [-1.7888, 43.3378]
+	},
+	"end": {
+		"name": "Arzúa (joins the Camino Francés)",
+		"coords": [-8.1636, 42.9273]
+	},
+	"countries": ["ES"],
+	"lengthKm": 825,
+	"days": null,
+	"bestSeason": ["apr", "may", "sep", "oct"],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.spain.info/en/camino-santiago/northern-way-camino-coast/",
+	"sources": [
+		"https://www.spain.info/en/camino-santiago/northern-way-camino-coast/",
+		"https://www.caminodesantiago.gal/en/make-plans/the-ways/northern-way",
+		"https://whc.unesco.org/en/list/669"
+	],
+	"photo": {
+		"commons": "File:Camino del Norte entre Cerdigo e Islares.jpg"
+	},
+	"wikidata": "Q829469",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19001007]
+	},
+	"verifiedAt": "2026-10-18"
+}

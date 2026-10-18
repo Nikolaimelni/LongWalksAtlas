@@ -1,0 +1,35 @@
+{
+	"slug": "south-west-coast-path",
+	"name": {
+		"original": "South West Coast Path"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Minehead",
+		"coords": [-3.481, 51.204]
+	},
+	"end": {
+		"name": "South Haven Point (Poole Harbour)",
+		"coords": [-1.9488, 50.683]
+	},
+	"countries": ["GB"],
+	"lengthKm": 1014,
+	"days": {
+		"min": 30,
+		"max": 56
+	},
+	"bestSeason": ["apr", "may", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.southwestcoastpath.org.uk/",
+	"sources": [
+		"https://www.nationaltrail.co.uk/en_GB/trails/south-west-coast-path/trail-information/"
+	],
+	"photo": null,
+	"wikidata": "Q1631281",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2376086]
+	},
+	"verifiedAt": "2026-10-18"
+}

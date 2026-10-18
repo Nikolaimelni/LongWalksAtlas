@@ -1,0 +1,37 @@
+{
+	"slug": "great-ocean-walk",
+	"name": {
+		"original": "Great Ocean Walk"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Apollo Bay",
+		"coords": [143.65, -38.75]
+	},
+	"end": {
+		"name": "Twelve Apostles",
+		"coords": [143.1, -38.6667]
+	},
+	"countries": ["AU"],
+	"lengthKm": 100,
+	"days": {
+		"min": 8,
+		"max": 8
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Great-Otway-National-Park/Great-Ocean-Walk",
+	"sources": [
+		"https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Great-Otway-National-Park/Great-Ocean-Walk"
+	],
+	"photo": {
+		"commons": "File:The Twelve Apostles Victoria Australia 2006.JPG"
+	},
+	"wikidata": "Q1488476",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1951913]
+	},
+	"verifiedAt": "2026-10-18"
+}

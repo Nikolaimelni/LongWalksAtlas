@@ -1,0 +1,30 @@
+{
+	"slug": "via-francigena",
+	"name": {
+		"original": "Via Francigena"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Canterbury Cathedral",
+		"coords": [1.0831, 51.2797]
+	},
+	"end": {
+		"name": "Santa Maria di Leuca",
+		"coords": [18.3569, 39.801]
+	},
+	"countries": ["GB", "FR", "CH", "IT"],
+	"lengthKm": 3200,
+	"days": null,
+	"bestSeason": [],
+	"badges": ["coe-cultural-route"],
+	"officialUrl": "https://www.coe.int/web/cultural-routes/the-via-francigena",
+	"sources": ["https://www.coe.int/web/cultural-routes/the-via-francigena"],
+	"photo": null,
+	"wikidata": "Q542830",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11860709]
+	},
+	"verifiedAt": "2026-10-18"
+}

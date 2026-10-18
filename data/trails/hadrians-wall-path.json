@@ -1,0 +1,35 @@
+{
+	"slug": "hadrians-wall-path",
+	"name": {
+		"original": "Hadrian's Wall Path"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Wallsend",
+		"coords": [-1.534, 54.991]
+	},
+	"end": {
+		"name": "Bowness-on-Solway",
+		"coords": [-3.216, 54.95]
+	},
+	"countries": ["GB"],
+	"lengthKm": 135,
+	"days": {
+		"min": 6,
+		"max": 7
+	},
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/",
+	"sources": [
+		"https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/trail-information/"
+	],
+	"photo": null,
+	"wikidata": "Q1567583",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [38791]
+	},
+	"verifiedAt": "2026-10-18"
+}

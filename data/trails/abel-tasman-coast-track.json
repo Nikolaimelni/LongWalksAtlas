@@ -1,0 +1,38 @@
+{
+	"slug": "abel-tasman-coast-track",
+	"name": {
+		"original": "Abel Tasman Coast Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Mārahau",
+		"coords": [173.0089, -41.0078]
+	},
+	"end": {
+		"name": "Wainui Bay",
+		"coords": [172.9357, -40.7988]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 60,
+	"days": {
+		"min": 3,
+		"max": 5
+	},
+	"bestSeason": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/",
+		"https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+	],
+	"photo": {
+		"commons": "File:Rock stacks in Anapai Bay.jpg"
+	},
+	"wikidata": "Q318501",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5987159]
+	},
+	"verifiedAt": "2026-10-18"
+}

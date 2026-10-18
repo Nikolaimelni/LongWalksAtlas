@@ -1,0 +1,32 @@
+{
+	"slug": "kungsleden",
+	"name": {
+		"original": "Kungsleden"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Abisko",
+		"coords": [18.8167, 68.35]
+	},
+	"end": {
+		"name": "Hemavan",
+		"coords": [15.0833, 65.8333]
+	},
+	"countries": ["SE"],
+	"lengthKm": 450,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.svenskaturistforeningen.se/guider-tips/omraden/kungsleden/",
+	"sources": [
+		"https://www.svenskaturistforeningen.se/guider-tips/omraden/kungsleden/"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1657661]
+	},
+	"verifiedAt": "2026-10-18"
+}

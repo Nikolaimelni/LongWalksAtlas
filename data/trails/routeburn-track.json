@@ -1,0 +1,38 @@
+{
+	"slug": "routeburn-track",
+	"name": {
+		"original": "Routeburn Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Routeburn Shelter",
+		"coords": [168.2787, -44.7188]
+	},
+	"end": {
+		"name": "The Divide",
+		"coords": [168.1177, -44.8248]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 32,
+	"days": {
+		"min": 2,
+		"max": 4
+	},
+	"bestSeason": ["nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/",
+		"https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/"
+	],
+	"photo": {
+		"commons": "File:MackenzieHut.jpg"
+	},
+	"wikidata": "Q2170592",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1385139]
+	},
+	"verifiedAt": "2026-10-18"
+}

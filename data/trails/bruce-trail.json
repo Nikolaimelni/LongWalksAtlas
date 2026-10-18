@@ -1,0 +1,35 @@
+{
+	"slug": "bruce-trail",
+	"name": {
+		"original": "Bruce Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Queenston (Niagara)",
+		"coords": [-79.0544, 43.1642]
+	},
+	"end": {
+		"name": "Tobermory",
+		"coords": [-81.6667, 45.25]
+	},
+	"countries": ["CA"],
+	"lengthKm": 900,
+	"days": {
+		"min": 30,
+		"max": 30
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://brucetrail.org/",
+	"sources": ["https://brucetrail.org/explore-the-trail/"],
+	"photo": {
+		"commons": "File:Dundas Peak.JPG"
+	},
+	"wikidata": "Q991831",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5583286]
+	},
+	"verifiedAt": "2026-10-18"
+}

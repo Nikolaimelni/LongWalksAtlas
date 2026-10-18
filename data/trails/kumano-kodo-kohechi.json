@@ -1,0 +1,30 @@
+{
+	"slug": "kumano-kodo-kohechi",
+	"name": {
+		"original": "熊野古道 小辺路"
+	},
+	"type": "pilgrimage",
+	"region": "asia",
+	"start": {
+		"name": "Kōyasan",
+		"coords": [135.5864, 34.2125]
+	},
+	"end": {
+		"name": "Kumano Hongu Taisha",
+		"coords": [135.7739, 33.84]
+	},
+	"countries": ["JP"],
+	"lengthKm": 72,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.tb-kumano.jp/en/kumano-kodo/",
+	"sources": ["https://en.japantravel.com/view/the-kohechi-pilgrimage-route"],
+	"photo": null,
+	"wikidata": "Q11463835",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17131166]
+	},
+	"verifiedAt": "2026-10-18"
+}

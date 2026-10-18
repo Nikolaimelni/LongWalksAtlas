@@ -1,0 +1,44 @@
+{
+	"slug": "fishermens-trail",
+	"name": {
+		"original": "Rota Vicentina - Trilho dos Pescadores"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Porto Covo",
+		"coords": [-8.792, 37.852]
+	},
+	"end": {
+		"name": "Lagos",
+		"coords": [-8.6728, 37.1028]
+	},
+	"countries": ["PT"],
+	"lengthKm": 226.5,
+	"days": {
+		"min": 13,
+		"max": 13
+	},
+	"bestSeason": [
+		"sep",
+		"oct",
+		"nov",
+		"dec",
+		"jan",
+		"feb",
+		"mar",
+		"apr",
+		"may",
+		"jun"
+	],
+	"badges": [],
+	"officialUrl": "https://rotavicentina.com/en/fishermens-trail/",
+	"sources": ["https://rotavicentina.com/en/fishermens-trail/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [20810829]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,32 @@
+{
+	"slug": "annapurna-circuit",
+	"name": {
+		"original": "Annapurna Circuit"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Besisahar",
+		"coords": [84.3775, 28.2311]
+	},
+	"end": {
+		"name": "Nayapul",
+		"coords": [83.7678, 28.2965]
+	},
+	"countries": ["NP"],
+	"lengthKm": 250,
+	"days": null,
+	"bestSeason": ["mar", "apr", "may", "sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://trade.ntb.gov.np/tourist-destination/annapurna-region/",
+	"sources": ["https://trade.ntb.gov.np/tourist-destination/annapurna-region/"],
+	"photo": {
+		"commons": "File:Thorong La 2, Himalaya, Nepal.jpg"
+	},
+	"wikidata": "Q381683",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1187310]
+	},
+	"verifiedAt": "2026-10-18"
+}

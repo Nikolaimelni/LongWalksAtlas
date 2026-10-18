@@ -1,0 +1,35 @@
+{
+	"slug": "south-downs-way",
+	"name": {
+		"original": "South Downs Way"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Winchester",
+		"coords": [-1.308, 51.0632]
+	},
+	"end": {
+		"name": "Eastbourne",
+		"coords": [0.28, 50.77]
+	},
+	"countries": ["GB"],
+	"lengthKm": 160,
+	"days": {
+		"min": 8,
+		"max": 9
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/",
+	"sources": [
+		"https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/trail-information/"
+	],
+	"photo": null,
+	"wikidata": "Q1382726",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [77976]
+	},
+	"verifiedAt": "2026-10-18"
+}

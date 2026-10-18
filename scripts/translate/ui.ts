@@ -24,6 +24,9 @@ type Job = {
 
 const pluralSuffix = /_(zero|one|two|few|many|other)$/;
 
+// The site name is a brand: every language shows it in English.
+const keepEnglish = new Set(["app.name"]);
+
 export function planUi(
 	en: Tree,
 	existing: Tree,
@@ -48,6 +51,7 @@ export function planUi(
 		}
 		const base = key.replace(pluralSuffix, "");
 		if (base === key) {
+			if (keepEnglish.has([...path, key].join("."))) continue;
 			if (typeof have !== "string") {
 				jobs.push({ path, key, text: protect(value), sample: null });
 			}
@@ -117,8 +121,11 @@ export async function translateUi(
 			const base = key.replace(pluralSuffix, "");
 			if (base === key) {
 				const own = have[key];
-				out[key] =
-					typeof own === "string" ? own : (found.get(at.join(".")) ?? value);
+				out[key] = keepEnglish.has(at.join("."))
+					? value
+					: typeof own === "string"
+						? own
+						: (found.get(at.join(".")) ?? value);
 				continue;
 			}
 			if (seen.has(base)) continue;

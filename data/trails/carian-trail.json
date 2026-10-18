@@ -1,0 +1,33 @@
+{
+	"slug": "carian-trail",
+	"name": {
+		"original": "Karia Yolu"
+	},
+	"type": "coastal",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "İçmeler (Marmaris)",
+		"coords": [28.2167, 36.8083]
+	},
+	"end": {
+		"name": "Karpuzlu",
+		"coords": [27.8344, 37.5592]
+	},
+	"countries": ["TR"],
+	"lengthKm": 850,
+	"days": null,
+	"bestSeason": ["apr", "may"],
+	"badges": [],
+	"officialUrl": "https://kariayolu.com/",
+	"sources": [
+		"https://kariayolu.com/",
+		"https://cultureroutesinturkey.com/carian-trail/"
+	],
+	"photo": null,
+	"wikidata": "Q19617495",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7235931]
+	},
+	"verifiedAt": "2026-10-18"
+}

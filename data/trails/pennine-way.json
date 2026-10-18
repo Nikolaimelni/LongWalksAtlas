@@ -1,0 +1,33 @@
+{
+	"slug": "pennine-way",
+	"name": {
+		"original": "Pennine Way"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Edale",
+		"coords": [-1.816, 53.366]
+	},
+	"end": {
+		"name": "Kirk Yetholm",
+		"coords": [-2.2754, 55.5471]
+	},
+	"countries": ["GB"],
+	"lengthKm": 431,
+	"days": {
+		"min": 6,
+		"max": 22
+	},
+	"bestSeason": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/pennine-way/",
+	"sources": ["https://nationaltrail.co.uk/en_GB/?p=44659"],
+	"photo": null,
+	"wikidata": "Q1478622",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [4080347]
+	},
+	"verifiedAt": "2026-10-18"
+}

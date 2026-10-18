@@ -1,0 +1,37 @@
+{
+	"slug": "alta-via-1",
+	"name": {
+		"original": "Alta Via delle Dolomiti n. 1"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Lago di Braies",
+		"coords": [12.0844, 46.6947]
+	},
+	"end": {
+		"name": "Belluno",
+		"coords": [12.2167, 46.1403]
+	},
+	"countries": ["IT"],
+	"lengthKm": 125,
+	"days": {
+		"min": 12,
+		"max": 12
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.dolomiti.it/en/itineraries/alpine-paths-of-the-dolomites/alpine-path-of-the-dolomites-no-1",
+	"sources": [
+		"https://www.dolomiti.it/en/itineraries/alpine-paths-of-the-dolomites/alpine-path-of-the-dolomites-no-1"
+	],
+	"photo": {
+		"commons": "File:Tofana CinqueTorri 20170725.jpg"
+	},
+	"wikidata": "Q1236280",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [177743]
+	},
+	"verifiedAt": "2026-10-18"
+}

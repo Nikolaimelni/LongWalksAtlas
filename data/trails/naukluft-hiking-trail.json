@@ -1,0 +1,33 @@
+{
+	"slug": "naukluft-hiking-trail",
+	"name": {
+		"original": "Naukluft Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Naukluft Mountains",
+		"coords": [16.1667, -24.1667]
+	},
+	"end": {
+		"name": "Naukluft Mountains",
+		"coords": [16.1667, -24.1667]
+	},
+	"countries": ["NA"],
+	"lengthKm": null,
+	"days": {
+		"min": 4,
+		"max": 8
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.nwr.com.na/resorts/naukluft-camp/",
+	"sources": ["https://www.nwr.com.na/resorts/naukluft-camp/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [112708]
+	},
+	"verifiedAt": "2026-10-18"
+}

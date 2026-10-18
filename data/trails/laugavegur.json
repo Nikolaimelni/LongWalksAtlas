@@ -1,0 +1,35 @@
+{
+	"slug": "laugavegur",
+	"name": {
+		"original": "Laugavegurinn"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Landmannalaugar",
+		"coords": [-19.067, 63.983]
+	},
+	"end": {
+		"name": "Þórsmörk",
+		"coords": [-19.4826, 63.6807]
+	},
+	"countries": ["IS"],
+	"lengthKm": 54,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.fi.is/en/hiking-trails/trails/laugavegur",
+	"sources": ["https://www.fi.is/en/hiking-trails/trails/laugavegur"],
+	"photo": {
+		"commons": "File:Is09103-Na zboczu Brennisteinsdala.jpg"
+	},
+	"wikidata": "Q151268",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1225037]
+	},
+	"verifiedAt": "2026-10-18"
+}

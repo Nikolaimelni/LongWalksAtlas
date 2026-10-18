@@ -1,0 +1,34 @@
+{
+	"slug": "appalachian-trail",
+	"name": {
+		"original": "Appalachian Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Springer Mountain",
+		"coords": [-84.1935, 34.6266]
+	},
+	"end": {
+		"name": "Mount Katahdin",
+		"coords": [-68.9213, 45.9044]
+	},
+	"countries": ["US"],
+	"lengthKm": 3537,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://appalachiantrail.org/",
+	"sources": [
+		"https://appalachiantrail.org/experience/hike-the-trail/at-basics/"
+	],
+	"photo": {
+		"commons": "File:AT - Franconia Ridge.JPG"
+	},
+	"wikidata": "Q620648",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [156553]
+	},
+	"verifiedAt": "2026-10-18"
+}

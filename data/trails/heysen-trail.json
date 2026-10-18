@@ -1,0 +1,33 @@
+{
+	"slug": "heysen-trail",
+	"name": {
+		"original": "Heysen Trail"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Cape Jervis",
+		"coords": [138.1, -35.6]
+	},
+	"end": {
+		"name": "Parachilna Gorge",
+		"coords": [138.5138, -31.1306]
+	},
+	"countries": ["AU"],
+	"lengthKm": 1200,
+	"days": {
+		"min": 60,
+		"max": 60
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://heysentrail.asn.au/",
+	"sources": ["https://heysentrail.asn.au/walking-the-heysen-trail/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [124080]
+	},
+	"verifiedAt": "2026-10-18"
+}

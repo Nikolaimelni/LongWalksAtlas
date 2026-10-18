@@ -1,0 +1,35 @@
+{
+	"slug": "camino-primitivo",
+	"name": {
+		"original": "Camino Primitivo"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Oviedo",
+		"coords": [-5.845, 43.36]
+	},
+	"end": {
+		"name": "Melide (joins the Camino Francés)",
+		"coords": [-8.015, 42.9144]
+	},
+	"countries": ["ES"],
+	"lengthKm": 325,
+	"days": null,
+	"bestSeason": ["apr", "may", "sep", "oct"],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.spain.info/en/camino-santiago/primitive-way-camino-santiago/",
+	"sources": [
+		"https://www.spain.info/en/camino-santiago/primitive-way-camino-santiago/",
+		"https://whc.unesco.org/en/list/669"
+	],
+	"photo": {
+		"commons": "File:Berducedo1.jpg"
+	},
+	"wikidata": "Q929491",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19298101]
+	},
+	"verifiedAt": "2026-10-18"
+}

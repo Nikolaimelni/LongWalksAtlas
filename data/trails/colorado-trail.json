@@ -1,0 +1,30 @@
+{
+	"slug": "colorado-trail",
+	"name": {
+		"original": "Colorado Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Waterton Canyon trailhead",
+		"coords": [-105.0937, 39.491]
+	},
+	"end": {
+		"name": "Junction Creek trailhead, Durango",
+		"coords": [-107.9031, 37.3314]
+	},
+	"countries": ["US"],
+	"lengthKm": 912,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://coloradotrail.org/trail/",
+	"sources": ["https://coloradotrail.org/trail/"],
+	"photo": null,
+	"wikidata": "Q5148975",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3445384]
+	},
+	"verifiedAt": "2026-10-18"
+}

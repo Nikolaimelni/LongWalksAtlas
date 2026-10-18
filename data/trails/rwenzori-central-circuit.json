@@ -1,0 +1,33 @@
+{
+	"slug": "rwenzori-central-circuit",
+	"name": {
+		"original": "Rwenzori Central Circuit"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Nyakalengija",
+		"coords": [30.0432, 0.3422]
+	},
+	"end": {
+		"name": "Nyakalengija",
+		"coords": [30.0432, 0.3422]
+	},
+	"countries": ["UG"],
+	"lengthKm": null,
+	"days": {
+		"min": 7,
+		"max": 7
+	},
+	"bestSeason": ["jan", "jun", "jul"],
+	"badges": [],
+	"officialUrl": "https://ugandawildlife.org/tours/rwenzori-mountains",
+	"sources": ["https://ugandawildlife.org/tours/rwenzori-mountains"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8386254]
+	},
+	"verifiedAt": "2026-10-18"
+}

@@ -1,0 +1,30 @@
+{
+	"slug": "fish-river-canyon-trail",
+	"name": {
+		"original": "Fish River Canyon Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Hobas viewpoint",
+		"coords": [17.5976, -27.5893]
+	},
+	"end": {
+		"name": "Ai-Ais",
+		"coords": [17.4833, -27.9286]
+	},
+	"countries": ["NA"],
+	"lengthKm": 90,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.nwr.com.na/resorts/hobas-lodge/",
+	"sources": ["https://www.nwr.com.na/resorts/hobas-lodge/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9517875]
+	},
+	"verifiedAt": "2026-10-18"
+}

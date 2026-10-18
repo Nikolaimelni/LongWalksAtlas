@@ -1,0 +1,30 @@
+{
+	"slug": "wicklow-way",
+	"name": {
+		"original": "Slí Cualann"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Marlay Park, Dublin",
+		"coords": [-6.2689, 53.2733]
+	},
+	"end": {
+		"name": "Clonegal",
+		"coords": [-6.6453, 52.6906]
+	},
+	"countries": ["IE"],
+	"lengthKm": 127,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.wicklowway.com/",
+	"sources": ["https://www.wicklowway.com/trail-description/"],
+	"photo": null,
+	"wikidata": "Q389539",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2740]
+	},
+	"verifiedAt": "2026-10-18"
+}

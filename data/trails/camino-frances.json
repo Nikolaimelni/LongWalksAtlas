@@ -1,0 +1,33 @@
+{
+	"slug": "camino-frances",
+	"name": {
+		"original": "Camino Francés"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Saint-Jean-Pied-de-Port",
+		"coords": [-1.2356, 43.165]
+	},
+	"end": {
+		"name": "Santiago de Compostela Cathedral",
+		"coords": [-8.5444, 42.8806]
+	},
+	"countries": ["FR", "ES"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": ["apr", "may", "sep", "oct"],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.spain.info/en/camino-santiago/french-way-camino-santiago/",
+	"sources": [
+		"https://www.spain.info/en/camino-santiago/french-way-camino-santiago/",
+		"https://whc.unesco.org/en/list/669"
+	],
+	"photo": null,
+	"wikidata": "Q1029584",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2163573]
+	},
+	"verifiedAt": "2026-10-18"
+}

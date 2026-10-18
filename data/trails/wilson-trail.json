@@ -1,0 +1,32 @@
+{
+	"slug": "wilson-trail",
+	"name": {
+		"original": "衛奕信徑"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Stanley Gap Road",
+		"coords": [114.2093, 22.2249]
+	},
+	"end": {
+		"name": "Nam Chung",
+		"coords": [114.2093, 22.5231]
+	},
+	"countries": ["HK"],
+	"lengthKm": 78,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-wilson-trail.html",
+	"sources": [
+		"https://www.discoverhongkong.com/eng/place-to-go/travel.guide-wilson-trail.html"
+	],
+	"photo": null,
+	"wikidata": "Q8023239",
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3938721]
+	},
+	"verifiedAt": "2026-10-18"
+}
