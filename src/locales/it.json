@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Le linee riportate sulla mappa sono schematiche. Per il percorso esatto, consultare il sito web ufficiale di ciascun sentiero.",
-		"trail": "La linea riportata sulla mappa è schematica e potrebbe differire dal percorso segnalato. Per conoscere il percorso esatto, le sue tappe e le modifiche attuali, consultare il site ufficiale: <link>{{site}}</link>."
+		"trail": "La linea riportata sulla mappa è schematica e potrebbe differire dal percorso segnalato. Per conoscere il percorso esatto, le sue tappe e le modifiche attuali, consultare il site ufficiale: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Itinerari di pellegrinaggio, percorsi storici, sentieri costieri e di montagna in tutto il mondo, tutti riuniti in un’unica mappa."
@@ -125,7 +125,9 @@
 		"crashedText": "Non è stato possibile mostrare la pagina. Riprova tra un momento."
 	},
 	"site": {
-		"credits": "Tracciati dei sentieri © contributori di OpenStreetMap, ODbL. Mappa di base: OpenFreeMap. Foto da Wikimedia Commons, con autore e licenza sotto ciascuna."
+		"credits": "Tracciati dei sentieri © contributori di OpenStreetMap, ODbL. Mappa di base: OpenFreeMap. Foto da Wikimedia Commons, con autore e licenza sotto ciascuna.",
+		"growing": "Sentieri nell'atlante finora: {{count}}. Se ne aggiungono altri man mano che vengono verificati.",
+		"suggest": "Conosci un lungo cammino che manca? Scrivi a <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

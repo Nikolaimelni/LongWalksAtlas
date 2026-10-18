@@ -24,7 +24,6 @@ export default {
 			...languages.flatMap(({ code }) => [
 				`/${code}/`,
 				`/${code}/og-card/`,
-				...trails.map((t) => `/${code}/og-card/trail/${t.slug}/`),
 				...trails.map((t) => `/${code}/trail/${t.slug}/`),
 				...listHubs(trails).map((hub) => `/${code}/${hubPath(hub)}`),
 			]),

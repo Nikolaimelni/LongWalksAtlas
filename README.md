@@ -1,53 +1,46 @@
 # Long Walks Atlas
 
-A map of long-distance walking trails: pilgrim ways, historic routes, coastal and
-mountain paths. Tap a line for a photo and a short note, open the trail's page for the
-story, the facts and a link to the official site. A reference, not a planner: no stages,
-no beds, no GPS tracks.
+**[longwalksatlas.com](https://longwalksatlas.com)**
 
-The site is fully static and built to be found through search engines and AI
-assistants, so every trail, country and trail type gets its own prerendered page in
-each language, with JSON-LD, hreflang and the facts as plain text.
+A world map of long-distance walking trails, from the Camino de Santiago to Te Araroa.
+Tap a line for a photo and a short note, or open the trail's page for the full story
+and a link to the official site.
+
+It's a reference. There are no stages, huts or GPS tracks.
+
+## Running it
+
+Node 24 and pnpm.
 
 ```sh
 pnpm install
 pnpm dev
 ```
 
-Node 24 and pnpm. `pnpm build` writes the site to `build/client`, `pnpm e2e` builds it and
-runs Playwright against it.
+| Command             | What it does                                           |
+| ------------------- | ------------------------------------------------------ |
+| `pnpm build`        | Static site in `build/client`                          |
+| `pnpm e2e`          | Builds, then runs the Playwright tests                 |
+| `pnpm data`         | Fetches trail lines from OpenStreetMap (slow)          |
+| `pnpm photos`       | Fetches photos and credits from Wikimedia Commons      |
+| `pnpm translate`    | Fills missing translations with DeepL (key in `.env`)  |
+| `pnpm build:deploy` | The build plus social cards, what Cloudflare runs      |
 
-## Where the data comes from
+## How it works
 
-- `data/trails/<slug>.json`: one file per trail, checked by a Zod schema.
-- `pnpm data`: pulls each trail's line from its OpenStreetMap relation and writes
-  `public/data/`. Slow, since Overpass is often overloaded; the output is committed so a
-  build needs no network.
-- `pnpm photos`: Wikimedia Commons file named in the trail JSON, credit and licence read
-  from Commons, NC and ND refused.
-- `data/content/<slug>/en.md`: the English text of each trail, read and marked
-  `reviewed`. A `<lang>.md` next to it is a person's translation and always wins.
-- `data/translations/<lang>.json`: machine translations from `pnpm translate` (DeepL, key
-  in `.env`), one file per language.
+Every page is prerendered, one per trail per language, so search engines and AI
+assistants get the text without running JavaScript.
 
-Where no source gives the days on foot, they are worked out from the length at 20 to 25
-km a day, shown with "≈" and a note saying so, and left out of the JSON-LD.
+A trail is a JSON file in `data/trails/` plus its English text in
+`data/content/<slug>/en.md`. Machine translations sit in `data/translations/`, one file
+per language. Map lines and photos are downloaded once and committed, so the build
+needs no network.
 
-`pnpm og` builds the site and photographs the social card of the atlas in each
-language. `pnpm og --trails` also makes one card per trail and language, close to a
-thousand JPEGs, so they are not made by default; a trail page without one uses its photo.
+Most of the 78 trails were collected by an AI research agent and then checked by
+hand. A quarter of them had a start or end a few kilometres off the trail, enough to
+break the line on the map.
 
-Most trails came from a research run by another agent (`data/collection-brief.md`),
-then checked by hand and brought in with `scripts/import-trails.ts`. A quarter of them
-had a start or end several kilometres off the OSM line, which quietly breaks the line.
+## Licence
 
-## Known issues
-
-- Lines are schematic. Where the OSM relation is incomplete (Lebanon Mountain Trail,
-  Juliana Trail) the line is too.
-- Five trails from the research run are left out: no usable OSM relation yet.
-- Every non-English text is a machine translation nobody has read.
-- Days on foot are an estimate for about half the trails, and for a climb like
-  Kilimanjaro the estimate from the length is far too short.
-
-Trail geometry © OpenStreetMap contributors, ODbL.
+Code is MIT. Trail texts are CC BY 4.0. Trail lines are © OpenStreetMap contributors,
+ODbL. Each photo keeps its Wikimedia Commons licence and is credited on the page.

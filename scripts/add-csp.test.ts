@@ -31,8 +31,8 @@ describe("addCsp", () => {
 	it("allows each inline script by its hash, Cyrillic included", () => {
 		expect(policy).toBe(
 			cspPolicy([]).replace(
-				"script-src 'self'",
-				`script-src 'self' ${sha('window.ctx = {"title":"Ликийская тропа"};')} ${sha('import "/assets/root.js";')}`,
+				"script-src 'self' https://static.cloudflareinsights.com",
+				`script-src 'self' https://static.cloudflareinsights.com ${sha('window.ctx = {"title":"Ликийская тропа"};')} ${sha('import "/assets/root.js";')}`,
 			),
 		);
 	});

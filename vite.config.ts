@@ -25,4 +25,10 @@ export default defineConfig({
 	preview: {
 		host: "127.0.0.1",
 	},
+	// During that same preview React Router starts a child Vite server that watches the
+	// whole project with this setting. It does not know build/ is the output, so it put
+	// a watcher on every folder the prerender wrote and stalled the server for minutes.
+	server: {
+		watch: { ignored: ["**/build/**", "**/data/cache/**"] },
+	},
 });

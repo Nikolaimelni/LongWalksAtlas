@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Linjerna på kartan är schematiska. För den exakta rutten, se respektive vandringsleds officiella webbplats.",
-		"trail": "Linjen på kartan är schematisk och kan avvika från den markerade leden. För den exakta rutten, dess etapper och aktuella ändringar, se den officiella webbsiten: <link>{{site}}</link>."
+		"trail": "Linjen på kartan är schematisk och kan avvika från den markerade leden. För den exakta rutten, dess etapper och aktuella ändringar, se den officiella webbsiten: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Pilgrimsleder, historiska rutter, kust- och bergsstigar runt om i världen – samlade på en karta."
@@ -119,7 +119,9 @@
 		"crashedText": "Sidan kunde inte visas. Försök igen om en stund."
 	},
 	"site": {
-		"credits": "Ledernas linjer © OpenStreetMaps bidragsgivare, ODbL. Bakgrundskarta: OpenFreeMap. Foton från Wikimedia Commons, med upphovsperson och licens vid varje bild."
+		"credits": "Ledernas linjer © OpenStreetMaps bidragsgivare, ODbL. Bakgrundskarta: OpenFreeMap. Foton från Wikimedia Commons, med upphovsperson och licens vid varje bild.",
+		"growing": "Leder i atlasen hittills: {{count}}. Nya läggs till när de har kontrollerats.",
+		"suggest": "Känner du till en vandringsled som saknas här? Skriv till <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

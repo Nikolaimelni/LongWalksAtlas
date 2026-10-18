@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Linie na mapie mają charakter schematyczny. Dokładny przebieg trasy można sprawdzić na oficjalnej stronie internetowej danego szlaku.",
-		"trail": "Linia na mapie ma charakter schematyczny i może różnić się od oznakowanego szlaku. Dokładny przebieg trasy, jej etapy oraz aktualne zmiany można znaleźć na oficjalnej stronie internetowej: <link>{{site}}</link>."
+		"trail": "Linia na mapie ma charakter schematyczny i może różnić się od oznakowanego szlaku. Dokładny przebieg trasy, jej etapy oraz aktualne zmiany można znaleźć na oficjalnej stronie internetowej: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Szlaki pielgrzymkowe, trasy historyczne, szlaki nadmorskie i górskie z całego świata – wszystko na jednej mapie."
@@ -131,7 +131,9 @@
 		"crashedText": "Nie udało się wyświetlić strony. Spróbuj ponownie za chwilę."
 	},
 	"site": {
-		"credits": "Przebieg szlaków © współtwórcy OpenStreetMap, ODbL. Mapa podkładowa: OpenFreeMap. Zdjęcia z Wikimedia Commons, autor i licencja podane pod każdym."
+		"credits": "Przebieg szlaków © współtwórcy OpenStreetMap, ODbL. Mapa podkładowa: OpenFreeMap. Zdjęcia z Wikimedia Commons, autor i licencja podane pod każdym.",
+		"growing": "Szlaków w atlasie: {{count}}. Kolejne dodajemy, gdy tylko je sprawdzimy.",
+		"suggest": "Znasz długi szlak, którego tu brakuje? Napisz na <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

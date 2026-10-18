@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "As linhas no mapa são esquemáticas. Para conhecer o percurso exato, consulte o site oficial de cada trilho.",
-		"trail": "A linha no mapa é esquemática e pode diferir do percurso sinalizado. Para conhecer o percurso exato, as suas etapas e as alterações atuais, consulte o site oficial: <link>{{site}}</link>."
+		"trail": "A linha no mapa é esquemática e pode diferir do percurso sinalizado. Para conhecer o percurso exato, as suas etapas e as alterações atuais, consulte o site oficial: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Caminhos de peregrinação, percursos históricos, trilhos costeiros e de montanha de todo o mundo, num único mapa."
@@ -125,7 +125,9 @@
 		"crashedText": "Não foi possível mostrar a página. Tente novamente daqui a pouco."
 	},
 	"site": {
-		"credits": "Traçados dos percursos © contribuidores do OpenStreetMap, ODbL. Mapa de base: OpenFreeMap. Fotografias do Wikimedia Commons, com autor e licença em cada uma."
+		"credits": "Traçados dos percursos © contribuidores do OpenStreetMap, ODbL. Mapa de base: OpenFreeMap. Fotografias do Wikimedia Commons, com autor e licença em cada uma.",
+		"growing": "Trilhos no atlas até agora: {{count}}. Juntam-se novos à medida que são verificados.",
+		"suggest": "Conhece um percurso de longa distância que falte aqui? Escreva para <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

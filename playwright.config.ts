@@ -18,5 +18,7 @@ export default defineConfig({
 		command: `pnpm build && node scripts/serve-static.ts --port ${port}`,
 		port,
 		reuseExistingServer: !process.env.CI,
+		// The build prerenders over a thousand pages before the server can start.
+		timeout: 5 * 60_000,
 	},
 });

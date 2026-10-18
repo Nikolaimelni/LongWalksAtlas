@@ -1,0 +1,17 @@
+// A Worker with static assets only: every page is prerendered, so there is no server
+// code to run. Workers Builds settings in the Cloudflare dashboard:
+//   build command:  pnpm exec playwright install chromium && pnpm build:deploy
+//   deploy command: npx wrangler deploy
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "long-walks-atlas",
+	"compatibility_date": "2026-10-01",
+	"assets": {
+		"directory": "./build/client",
+		// /en becomes /en/, which is where each prerendered index.html lives.
+		"html_handling": "auto-trailing-slash",
+		// The nearest 404.html with a real 404, the way scripts/serve-static.ts does it.
+		"not_found_handling": "404-page"
+	},
+	"routes": [{ "pattern": "longwalksatlas.com", "custom_domain": true }]
+}
