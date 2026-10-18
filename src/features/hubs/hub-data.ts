@@ -17,6 +17,7 @@ export async function loadHub(hub: Hub, lang: Lang) {
 			titleOf(a.summary.slug, a.summary.name.original).localeCompare(
 				titleOf(b.summary.slug, b.summary.name.original),
 				lang,
+				{ ignorePunctuation: true },
 			),
 		);
 	return {

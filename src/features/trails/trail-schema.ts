@@ -54,34 +54,34 @@ const dayRange = z
 // The fields of a trail file, without the checks across fields: Zod will not pick()
 // from a schema that carries refinements, and the summary below picks from this.
 const trailFields = z.strictObject({
-		slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-		name: z.strictObject({ original: z.string().min(1) }),
-		type: z.enum(trailTypes),
-		region: z.enum(trailRegions),
-		start: place,
-		end: place,
-		countries: z.array(z.string().regex(/^[A-Z]{2}$/)).min(1),
-		lengthKm: z.number().positive().nullable(),
-		days: dayRange.nullable(),
-		bestSeason: z.array(z.enum(months)),
-		badges: z.array(z.enum(["coe-cultural-route", "unesco"])),
-		officialUrl: z.url({ protocol: /^https$/ }),
-		sources: z.array(z.url({ protocol: /^https?$/ })).min(1),
-		photo: z
-			.strictObject({
-				commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
-			})
-			.nullable(),
-		wikidata: z
-			.string()
-			.regex(/^Q[1-9][0-9]*$/)
-			.nullable(),
-		geometry: z.strictObject({
-			source: z.literal("osm"),
-			relationIds: z.array(z.int().positive()).min(1),
-			mode: z.enum(["main-line", "all-ways"]).optional(),
-		}),
-	});
+	slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+	name: z.strictObject({ original: z.string().min(1) }),
+	type: z.enum(trailTypes),
+	region: z.enum(trailRegions),
+	start: place,
+	end: place,
+	countries: z.array(z.string().regex(/^[A-Z]{2}$/)).min(1),
+	lengthKm: z.number().positive().nullable(),
+	days: dayRange.nullable(),
+	bestSeason: z.array(z.enum(months)),
+	badges: z.array(z.enum(["coe-cultural-route", "unesco"])),
+	officialUrl: z.url({ protocol: /^https$/ }),
+	sources: z.array(z.url({ protocol: /^https?$/ })).min(1),
+	photo: z
+		.strictObject({
+			commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
+		})
+		.nullable(),
+	wikidata: z
+		.string()
+		.regex(/^Q[1-9][0-9]*$/)
+		.nullable(),
+	geometry: z.strictObject({
+		source: z.literal("osm"),
+		relationIds: z.array(z.int().positive()).min(1),
+		mode: z.enum(["main-line", "all-ways"]).optional(),
+	}),
+});
 
 export const trailFileSchema = trailFields
 	.refine((t) => inRegion(t.start.coords, t.region), {

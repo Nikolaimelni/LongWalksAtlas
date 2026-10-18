@@ -105,7 +105,9 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const ranked = search(filters.q);
 	const results = ranked
 		? ranked.flatMap((slug) => filtered.find((tr) => tr.slug === slug) ?? [])
-		: [...filtered].sort((a, b) => titleOf(a).localeCompare(titleOf(b), lang));
+		: [...filtered].sort((a, b) =>
+				titleOf(a).localeCompare(titleOf(b), lang, { ignorePunctuation: true }),
+			);
 	const narrowed = countActive(filters) > 0 || filters.q.trim() !== "";
 
 	const home = absoluteUrl(`/${lang}/`);
@@ -121,7 +123,11 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			isPartOf: { "@id": `${home}#website` },
 			mainEntity: itemListNode(
 				[...trails]
-					.sort((a, b) => titleOf(a).localeCompare(titleOf(b), lang))
+					.sort((a, b) =>
+						titleOf(a).localeCompare(titleOf(b), lang, {
+							ignorePunctuation: true,
+						}),
+					)
 					.map((tr) => ({
 						name: titleOf(tr),
 						url: absoluteUrl(pageOf(tr.slug)),
