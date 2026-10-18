@@ -26,3 +26,6 @@ AGENTS.md
 
 # external collection runs, reviewed before anything moves into data/trails/
 /data/import/
+
+# social cards are shot into build/client/og/ by `pnpm build:deploy`
+/src/generated/og.json

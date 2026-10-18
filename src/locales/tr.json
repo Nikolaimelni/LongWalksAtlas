@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Haritadaki çizgiler şematiktir. Kesin güzergâh için her bir parkurun resmi web sitesine bakınız.",
-		"trail": "Haritadaki çizgi şematik olup, işaretli patikadan farklılık gösterebilir. Kesin güzergâh, etapları ve güncel değişiklikler için lütfen resmi web <link>{{site}}</link>sine bakınız."
+		"trail": "Haritadaki çizgi şematik olup, işaretli patikadan farklılık gösterebilir. Kesin güzergâh, etapları ve güncel değişiklikler için lütfen resmi web <a>{{site}}</a>sine bakınız."
 	},
 	"og": {
 		"tagline": "Dünyanın dört bir yanındaki hacı yolları, tarihi güzergâhlar, sahil ve dağ yürüyüş yolları, tek bir haritada."
@@ -119,7 +119,9 @@
 		"crashedText": "Sayfa gösterilemedi. Birazdan tekrar deneyin."
 	},
 	"site": {
-		"credits": "Parkur çizgileri © OpenStreetMap katkıda bulunanları, ODbL. Altlık harita: OpenFreeMap. Fotoğraflar Wikimedia Commons'tan, her birinin altında yazarı ve lisansı belirtilmiştir."
+		"credits": "Parkur çizgileri © OpenStreetMap katkıda bulunanları, ODbL. Altlık harita: OpenFreeMap. Fotoğraflar Wikimedia Commons'tan, her birinin altında yazarı ve lisansı belirtilmiştir.",
+		"growing": "Atlastaki rota sayısı: {{count}}. Yenileri kontrol edildikçe ekleniyor.",
+		"suggest": "Burada olması gereken bir uzun yürüyüş rotası mı biliyorsunuz? <a>{{email}}</a> adresine yazın."
 	},
 	"region": {
 		"europe": "Avrupa",

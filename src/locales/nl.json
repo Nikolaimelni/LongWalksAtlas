@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "De lijnen op de kaart zijn schematisch weergegeven. Raadpleeg de officiële website van de betreffende route voor de exacte route.",
-		"trail": "De lijn op de kaart is schematisch weergegeven en kan afwijken van het gemarkeerde pad. Zie de officiële website voor de exacte route, de etappes en actuele wijzigingen: <link>{{site}}</link>."
+		"trail": "De lijn op de kaart is schematisch weergegeven en kan afwijken van het gemarkeerde pad. Zie de officiële website voor de exacte route, de etappes en actuele wijzigingen: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Bedevaartsroutes, historische routes, kust- en bergpaden over de hele wereld, allemaal op één kaart."
@@ -119,7 +119,9 @@
 		"crashedText": "De pagina kon niet worden getoond. Probeer het zo nog eens."
 	},
 	"site": {
-		"credits": "Routelijnen © OpenStreetMap-bijdragers, ODbL. Basiskaart: OpenFreeMap. Foto's van Wikimedia Commons, met maker en licentie bij elke foto."
+		"credits": "Routelijnen © OpenStreetMap-bijdragers, ODbL. Basiskaart: OpenFreeMap. Foto's van Wikimedia Commons, met maker en licentie bij elke foto.",
+		"growing": "Routes in de atlas tot nu toe: {{count}}. Nieuwe komen erbij zodra ze zijn gecontroleerd.",
+		"suggest": "Kent u een lange wandelroute die hier ontbreekt? Schrijf naar <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

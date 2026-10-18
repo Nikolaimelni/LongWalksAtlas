@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Las líneas del mapa son esquemáticas. Para conocer el recorrido exacto, consulta la página web oficial de cada ruta.",
-		"trail": "La línea que aparece en el mapa es esquemática y puede diferir del sendero señalizado. Para conocer el recorrido exacto, sus etapas y los cambios actuales, consulta la página web oficial: <link>{{site}}</link>."
+		"trail": "La línea que aparece en el mapa es esquemática y puede diferir del sendero señalizado. Para conocer el recorrido exacto, sus etapas y los cambios actuales, consulta la página web oficial: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Caminos de peregrinación, rutas históricas, senderos costeros y de montaña de todo el mundo, en un solo mapa."
@@ -125,7 +125,9 @@
 		"crashedText": "No se ha podido mostrar la página. Vuelve a intentarlo en un momento."
 	},
 	"site": {
-		"credits": "Trazados de las rutas © colaboradores de OpenStreetMap, ODbL. Mapa base: OpenFreeMap. Fotos de Wikimedia Commons, con autor y licencia bajo cada una."
+		"credits": "Trazados de las rutas © colaboradores de OpenStreetMap, ODbL. Mapa base: OpenFreeMap. Fotos de Wikimedia Commons, con autor y licencia bajo cada una.",
+		"growing": "Senderos en el atlas hasta ahora: {{count}}. Se añaden más a medida que se comprueban.",
+		"suggest": "¿Conoce una ruta de largo recorrido que falte aquí? Escriba a <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

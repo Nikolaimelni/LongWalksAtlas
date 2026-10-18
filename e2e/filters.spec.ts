@@ -1,5 +1,5 @@
 import { expect, type Page, test } from "@playwright/test";
-import { countOf, trails } from "./trail-data";
+import { countOf, ruTitle, trails } from "./trail-data";
 
 const list = (page: Page) =>
 	page
@@ -19,7 +19,7 @@ test("search narrows the list and lands in the URL", async ({ page }) => {
 
 	await page.getByRole("searchbox", { name: "Поиск троп" }).fill("oludeniz");
 	await expect(list(page)).toHaveCount(1);
-	await expect(list(page)).toHaveText(/Ликийская тропа/);
+	await expect(list(page)).toHaveText(new RegExp(ruTitle("lycian-way")));
 	await expect(page).toHaveURL(/q=oludeniz/);
 });
 

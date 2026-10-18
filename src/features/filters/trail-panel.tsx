@@ -12,6 +12,7 @@ import {
 import { trailColor, trailTint } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
+import { SuggestTrail } from "~/shared/suggest-trail";
 import {
 	countActive,
 	dayBuckets,
@@ -362,6 +363,7 @@ export function TrailPanel({
 				<p className="mt-4 px-2 text-xs leading-relaxed text-muted">
 					{t("app.description")}
 				</p>
+				<SuggestTrail className="mt-2 px-2 text-xs leading-relaxed text-muted" />
 			</div>
 		</section>
 	);

@@ -1,12 +1,12 @@
 import { expect, test } from "@playwright/test";
-import { publishedLanguages, trails } from "./trail-data";
+import { publishedLanguages, ruTitle, trails } from "./trail-data";
 
 test("a trail page carries the facts, the story and the official link", async ({
 	page,
 }) => {
 	await page.goto("/ru/trail/lycian-way/");
 	await expect(
-		page.getByRole("heading", { level: 1, name: "Ликийская тропа" }),
+		page.getByRole("heading", { level: 1, name: ruTitle("lycian-way") }),
 	).toBeVisible();
 	await expect(page.getByText("Likya Yolu")).toBeVisible();
 	await expect(page.getByText("760 км").first()).toBeVisible();
@@ -27,7 +27,7 @@ test("a trail page carries the facts, the story and the official link", async ({
 	await expect(
 		page
 			.getByRole("region", { name: "Тропы рядом" })
-			.getByRole("link", { name: /Путь Святого Павла/ }),
+			.getByRole("link", { name: new RegExp(ruTitle("st-paul-trail")) }),
 	).toHaveAttribute("href", "/ru/trail/st-paul-trail/");
 });
 
@@ -72,7 +72,7 @@ test("the atlas has a large social card, the card page stays out of search", asy
 	await page.goto("/ru/");
 	await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
 		"content",
-		/^https:\/\/longwalksatlas\.com\/og\/atlas-ru-[0-9a-f]{8}\.jpg$/,
+		"https://longwalksatlas.com/og/atlas-ru.jpg",
 	);
 	await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
 		"content",

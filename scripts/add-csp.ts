@@ -18,12 +18,14 @@ const scriptTypes = new Set(["", "module", "text/javascript"]);
 export function cspPolicy(scriptHashes: readonly string[]): string {
 	return [
 		"default-src 'self'",
-		["script-src 'self'", ...scriptHashes.map((h) => `'sha256-${h}'`)].join(
-			" ",
-		),
+		// cloudflareinsights.com is Web Analytics: the beacon script and where it reports.
+		[
+			"script-src 'self' https://static.cloudflareinsights.com",
+			...scriptHashes.map((h) => `'sha256-${h}'`),
+		].join(" "),
 		"style-src 'self' 'unsafe-inline'",
 		"img-src 'self' data: blob:",
-		"connect-src 'self' https://tiles.openfreemap.org",
+		"connect-src 'self' https://tiles.openfreemap.org https://cloudflareinsights.com",
 		"worker-src 'self'",
 		"object-src 'none'",
 		"base-uri 'none'",

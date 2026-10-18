@@ -19,6 +19,7 @@ import { type Lang, langDir } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { trailColorCss } from "~/features/trails/trail-style";
 import { LogoMark } from "~/shared/logo-mark";
+import { webAnalyticsToken } from "~/shared/site";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -84,6 +85,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				{children}
 				<ScrollRestoration />
 				<Scripts />
+				{import.meta.env.PROD && webAnalyticsToken && (
+					<script
+						defer
+						src="https://static.cloudflareinsights.com/beacon.min.js"
+						data-cf-beacon={JSON.stringify({ token: webAnalyticsToken })}
+					/>
+				)}
 			</body>
 		</html>
 	);

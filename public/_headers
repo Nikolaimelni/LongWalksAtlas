@@ -6,6 +6,10 @@
 /photos/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Social cards are shot again on every deploy under the same names.
+/og/*
+  Cache-Control: public, max-age=86400
+
 # Trail lines keep their names between builds; an hour is plenty for data that changes
 # when someone runs `pnpm data`.
 /data/*

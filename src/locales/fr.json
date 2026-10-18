@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Les tracés indiqués sur la carte sont schématiques. Pour connaître l'itinéraire exact, consultez le site officiel de chaque sentier.",
-		"trail": "La ligne indiquée sur la carte est schématique et peut différer du parcours balisé. Pour connaître l'itinéraire exact, ses étapes et les modifications en cours, consultez le site officiel : <link>{{site}}</link>."
+		"trail": "La ligne indiquée sur la carte est schématique et peut différer du parcours balisé. Pour connaître l'itinéraire exact, ses étapes et les modifications en cours, consultez le site officiel : <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Chemins de pèlerinage, itinéraires historiques, sentiers côtiers et de montagne du monde entier, le tout sur une seule carte."
@@ -125,7 +125,9 @@
 		"crashedText": "La page n'a pas pu s'afficher. Réessayez dans un instant."
 	},
 	"site": {
-		"credits": "Tracés des sentiers © contributeurs d'OpenStreetMap, ODbL. Fond de carte : OpenFreeMap. Photos de Wikimedia Commons, avec auteur et licence sous chacune."
+		"credits": "Tracés des sentiers © contributeurs d'OpenStreetMap, ODbL. Fond de carte : OpenFreeMap. Photos de Wikimedia Commons, avec auteur et licence sous chacune.",
+		"growing": "Sentiers dans l'atlas à ce jour : {{count}}. D'autres sont ajoutés au fur et à mesure de leur vérification.",
+		"suggest": "Vous connaissez une grande randonnée qui manque ici ? Écrivez à <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europe",

@@ -16,3 +16,17 @@ export const countOf = (test: (trail: TrailSummary) => boolean) =>
 export const publishedLanguages = readdirSync(
 	new URL("../src/locales/", import.meta.url),
 ).filter((file) => file.endsWith(".json")).length;
+
+const russian: Record<string, { title: string }> = JSON.parse(
+	readFileSync(
+		new URL("../data/translations/ru.json", import.meta.url),
+		"utf8",
+	),
+);
+
+// Machine translations get rewritten, so a check names a trail the way the site does.
+export const ruTitle = (slug: string) => {
+	const title = russian[slug]?.title;
+	if (!title) throw new Error(`no Russian title for ${slug}`);
+	return title;
+};

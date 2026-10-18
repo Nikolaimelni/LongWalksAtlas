@@ -27,11 +27,7 @@ import { prerenderedOnly } from "~/shared/prerendered-only";
 import { absoluteUrl } from "~/shared/site";
 import { SiteFooter } from "~/shared/site-footer";
 import { SiteNav } from "~/shared/site-nav";
-import {
-	atlasCardMeta,
-	photoCardMeta,
-	trailCardMeta,
-} from "~/shared/social-cards";
+import { atlasCardMeta, photoCardMeta } from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/trail";
 
@@ -112,8 +108,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 		{ property: "og:url", content: url },
 		{ property: "og:site_name", content: app },
 		...localeMeta(layout.lang),
-		...(trailCardMeta(summary.slug, layout.lang) ??
-			(photo ? photoCardMeta(photo) : atlasCardMeta(layout.lang))),
+		...(photo ? photoCardMeta(photo) : atlasCardMeta(layout.lang)),
 		...(languages.includes(layout.lang)
 			? []
 			: [{ name: "robots", content: "noindex" }]),
@@ -253,7 +248,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 							i18nKey="disclaimer.trail"
 							values={{ site: officialHost }}
 							components={{
-								link: (
+								a: (
 									// biome-ignore lint/a11y/useAnchorContent: Trans fills the link with the site's name
 									<a
 										href={file.officialUrl}

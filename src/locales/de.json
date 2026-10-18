@@ -5,7 +5,7 @@
 	},
 	"disclaimer": {
 		"short": "Die Linien auf der Karte sind schematisch dargestellt. Die genaue Route finden Sie auf der offiziellen Website des jeweiligen Wanderwegs.",
-		"trail": "Die Linie auf der Karte ist schematisch dargestellt und kann vom markierten Wanderweg abweichen. Die genaue Route, ihre Etappen und aktuelle Änderungen finden Sie auf der offiziellen Website: <link>{{site}}</link>."
+		"trail": "Die Linie auf der Karte ist schematisch dargestellt und kann vom markierten Wanderweg abweichen. Die genaue Route, ihre Etappen und aktuelle Änderungen finden Sie auf der offiziellen Website: <a>{{site}}</a>."
 	},
 	"og": {
 		"tagline": "Pilgerwege, historische Routen, Küsten- und Bergwanderwege rund um die Welt – alles auf einer Karte."
@@ -119,7 +119,9 @@
 		"crashedText": "Die Seite konnte nicht angezeigt werden. Versuchen Sie es gleich noch einmal."
 	},
 	"site": {
-		"credits": "Wegverläufe © OpenStreetMap-Mitwirkende, ODbL. Kartengrundlage: OpenFreeMap. Fotos von Wikimedia Commons, jeweils mit Urheber und Lizenz."
+		"credits": "Wegverläufe © OpenStreetMap-Mitwirkende, ODbL. Kartengrundlage: OpenFreeMap. Fotos von Wikimedia Commons, jeweils mit Urheber und Lizenz.",
+		"growing": "Wege im Atlas bisher: {{count}}. Neue kommen hinzu, sobald sie geprüft sind.",
+		"suggest": "Sie kennen einen Weitwanderweg, der hier fehlt? Schreiben Sie an <a>{{email}}</a>."
 	},
 	"region": {
 		"europe": "Europa",

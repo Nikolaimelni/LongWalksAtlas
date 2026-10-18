@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { countOf, trails } from "./trail-data";
+import { countOf, ruTitle, trails } from "./trail-data";
 
 test("a country page lists its trails and is linked from them", async ({
 	page,
@@ -14,7 +14,7 @@ test("a country page lists its trails and is linked from them", async ({
 		}),
 	).toBeVisible();
 	await expect(
-		page.getByRole("link", { name: "Путь Святого Павла" }),
+		page.getByRole("link", { name: ruTitle("st-paul-trail") }),
 	).toHaveAttribute("href", "/ru/trail/st-paul-trail/");
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
 		"href",
