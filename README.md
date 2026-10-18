@@ -1,109 +1,45 @@
 # Long Walks Atlas
 
-A map of long-distance walking routes: pilgrim ways, historic paths, coastal and mountain
-trails, the E-paths. Europe and Turkey first, the rest of the world later. Tap a line to
-see a photo and a short note about the trail, then open its page for the full story and a
-link to the official site.
+A map of long-distance walking trails: pilgrim ways, historic routes, coastal and
+mountain paths. Tap a line for a photo and a short note, open the trail's page for the
+story, the facts and a link to the official site. A reference, not a planner: no stages,
+no beds, no GPS tracks.
 
-It is a reference, not a planner: no stages, no beds, no GPS tracks.
-
-## Running it
-
-Node 24 (see `.nvmrc`) and pnpm.
+The site is fully static and built to be found through search engines and AI
+assistants, so every trail, country and trail type gets its own prerendered page in
+each language, with JSON-LD, hreflang and the facts as plain text.
 
 ```sh
 pnpm install
 pnpm dev
 ```
 
-`pnpm build` writes a fully static site to `build/client`: the atlas, every trail page and
-the country and type pages, prerendered in each published language (`/en/`,
-`/ru/trail/lycian-way/`, `/ru/country/tr/` and so on), `/`,
-which sends the visitor to the language their browser asks for, plus `sitemap.xml`,
-`llms.txt` and a `404.html`. Search engines and AI assistants are the main way people
-will find the site, so each page carries its canonical URL, hreflang links to its
-translations and schema.org JSON-LD, and the facts are on the page as text, not only on
-the map.
+Node 24 and pnpm. `pnpm build` writes the site to `build/client`, `pnpm e2e` builds it and
+runs Playwright against it.
 
-After the build, `scripts/add-csp.ts` gives every page a Content-Security-Policy `<meta>`.
-React Router writes several inline scripts into each prerendered page, different on every
-page, so the policy lists their hashes rather than allowing inline script wholesale;
-`public/_headers` adds `frame-ancestors`, which a meta tag cannot carry, and HSTS. The
-only other origin the browser may talk to is OpenFreeMap. `pnpm dev` runs without the
-policy, so a page that breaks it shows up in `pnpm preview` and the e2e run, not in dev.
+## Where the data comes from
 
-The site follows the device's light or dark setting, basemap included (OpenFreeMap's
-positron and dark styles). Each theme has its own set of trail colours, and a test holds
-every colour to 3:1 contrast against both the land and the water of its basemap; the
-first light palette failed that for the pilgrim ways and nobody had noticed.
+- `data/trails/<slug>.json`: one file per trail, checked by a Zod schema.
+- `pnpm data`: pulls each trail's line from its OpenStreetMap relation and writes
+  `public/data/`. Slow, since Overpass is often overloaded; the output is committed so a
+  build needs no network.
+- `pnpm photos`: Wikimedia Commons file named in the trail JSON, credit and licence read
+  from Commons, NC and ND refused.
+- `data/content/<slug>/<lang>.md`: the texts. English is written (or imported), the
+  rest comes from `pnpm translate` (DeepL, key in `.env`) and is marked `machine` until
+  someone reads it.
 
-On the atlas, search (fuzzy and accent-blind, so "oludeniz" finds Ölüdeniz) and the
-filters for type, country, length and days live in the query string, so a filtered view
-is a link you can send. The trail list is part of the prerendered page; on a phone it
-folds into a bar under the map.
+Most trails came from a research run by another agent (`data/collection-brief.md`),
+then checked by hand and brought in with `scripts/import-trails.ts`. A quarter of them
+had a start or end several kilometres off the OSM line, which quietly breaks the line.
 
-A filtered view is not a page for search engines (its canonical is the plain atlas), so
-the queries people actually type, "hiking trails in Turkey" or "pilgrim ways", get pages
-of their own: `/<lang>/country/tr/` and `/<lang>/type/pilgrimage/` list their trails
-with photo, facts and summary. Nobody writes them. One appears as soon as a second trail
-shares the country or the type (`minTrailsPerHub` in `src/features/hubs/hubs.ts`), since
-a page holding one trail would only repeat that trail's own; today that is Italy,
-Switzerland and Türkiye. Trail pages link their type and countries to these pages and the
-atlas panel lists them under the trails. Both kinds share a single `:kind/:key` route,
-because with `ssr: false` React Router refuses a route with a loader and no prerendered
-page, and no type has its second trail yet.
+## Known issues
 
-A shared link to the atlas shows a card made from the real map: `pnpm og` builds the site,
-photographs `/<lang>/og-card/` (a 1200 × 630 page kept out of search) for each published
-language with Playwright, and writes the JPEGs to `public/og/`, committed. A trail page
-uses its photo, or the atlas card while it has none. The favicon and the touch icon are
-the logo mark on a brand-coloured disc, written by `pnpm icons` and committed too.
+- Lines are schematic. Where the OSM relation is incomplete (Lebanon Mountain Trail,
+  Juliana Trail) the line is too.
+- Five trails from the research run are left out: no usable OSM relation yet.
+- Every non-English text is a machine translation nobody has read.
+- One Markdown file per trail per language adds up to hundreds of small files. I would
+  keep machine translations in one file per language next time.
 
-`pnpm preview` serves `build/client` the way the host will: files as they are, `/en`
-redirected to `/en/`, and `404.html` with a real 404 for anything else (`vite preview`
-would answer unknown paths with the home page). `pnpm e2e` builds, serves through it and
-runs the Playwright checks on a phone viewport and a desktop one (`pnpm exec playwright
-install chromium` once beforehand).
-
-Each trail is a hand-written JSON file in `data/trails/`, checked against a Zod schema.
-Its `wikidata` id goes into the page's JSON-LD as `sameAs`, which tells a search engine
-the page is about an entity it already knows; the OSM relation's own `wikidata` tag is
-usually the right one, as long as it belongs to the whole route and not to a section.
-The line itself comes from the trail's OpenStreetMap relation: `pnpm data` pulls it through
-Overpass, drops variants and side trips, stitches the ways together, simplifies them and
-writes `public/data/` plus `src/generated/trails-index.json`. Those outputs are committed,
-so building the site needs no network. Raw Overpass responses are cached in `data/cache/`
-(not committed); `pnpm data --refresh` downloads them again. The public Overpass servers
-are often overloaded, so `.env` (copy `.env.example`) takes a list of endpoints to rotate
-through. Trail geometry is OSM data, © OpenStreetMap contributors, ODbL.
-
-A trail's photo is named by its Wikimedia Commons file in the trail JSON, nothing else.
-`pnpm photos` asks Commons for the author and licence (refusing NC and ND files), so the
-credit printed under the photo always matches the file page, then writes 640 and 1280 px
-WebP copies to `public/photos/` and the credits to `src/generated/photos.json`. Both are
-committed, like the geometry.
-
-The words live next to the data: `data/content/<slug>/<lang>.md`, a title, a one or two
-sentence summary and a `status` (`machine` or `reviewed`) in the frontmatter, the trail's
-story below it. English is required for every trail; any other language that is missing
-falls back to it. `pnpm content` turns them into JSON and HTML under `src/generated/content/`
-(not committed); `dev`, `build` and `typecheck` run it first. That HTML goes into the page
-as it is, so a tag outside a short list (paragraphs, emphasis, lists, h3 and h4, links) or
-a link that is not http, https or mailto stops the build, DeepL's output included.
-
-`pnpm translate` fills the gaps with DeepL (`DEEPL_API_KEY` in `.env`; `--dry-run` shows
-what would be sent without one). Interface strings keep their `{{placeholders}}`, and
-plural forms are built per language from CLDR rules: each form is translated from a
-phrase with a number that falls into it (22 дня, 25 дней), then the number goes back to
-`{{count}}`. Trail texts are only written where a language has no file yet, marked
-`status: machine`, and a reviewed file is never touched. A language only goes on the
-site, with its pages, sitemap entries, hreflang links and a place in the switcher, once
-`src/locales/<lang>.json` exists; English pages under a German URL would read as
-duplicates to a search engine. Today that means English and Russian. The same goes for a
-single trail: while its text falls back to English, its page in that language is marked
-`noindex` and left out of the sitemap and of the other versions' hreflang links.
-
-The sitemap dates each trail page by its `verifiedAt`, and the atlas by the newest of
-them. `robots.txt` carries a `Clean-param` line for Yandex, which does not follow
-canonical links as reliably as Google does, so the query strings of the atlas do not turn
-into thousands of copies of it.
+Trail geometry © OpenStreetMap contributors, ODbL.
