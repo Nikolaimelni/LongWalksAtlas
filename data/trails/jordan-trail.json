@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://www.jordantrail.org/",
 	"sources": ["https://www.jordantrail.org/discover-the-jordan-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Petra Jordan trail to the Treasury overlook.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [19065729]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

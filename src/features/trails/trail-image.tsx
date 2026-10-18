@@ -27,7 +27,7 @@ export function TrailImage({
 			<div
 				className={className}
 				style={{
-					background: `linear-gradient(135deg, ${color}, ${color}66)`,
+					background: `linear-gradient(135deg, ${color}, color-mix(in srgb, ${color} 40%, transparent))`,
 					viewTransitionName,
 				}}
 				role="presentation"
@@ -48,7 +48,7 @@ export function TrailImage({
 				className={`${className} object-cover`}
 				style={{ background: color, viewTransitionName }}
 			/>
-			<figcaption className="mt-1 truncate text-[11px] text-muted">
+			<figcaption className="mt-1 text-xs [overflow-wrap:anywhere] text-muted">
 				{t("trail.photoBy")}{" "}
 				<a href={photo.sourceUrl} rel="noopener" className="underline">
 					{photo.author}

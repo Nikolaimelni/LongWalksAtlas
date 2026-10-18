@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Harita üzerinde dünyanın uzun mesafeli yürüyüş parkurları",
 		"loading": "Harita yükleniyor…",
-		"pick": "Burada birkaç patika birleşiyor"
+		"pick": "Burada birkaç patika birleşiyor",
+		"pickHint": "Seçmek için tıklayın",
+		"mapFailed": "Harita bu cihazda gösterilemedi."
 	},
 	"filters": {
 		"list": "Yürüyüş parkurları",
@@ -37,7 +39,10 @@
 		"reset": "Tümünü temizle",
 		"active_one": "{{count}} filtre açık",
 		"active_other": "{{count}} filtre açık",
-		"none": "Eşleşen arama sonucu bulunamadı. Bir filtreyi kaldırmayı deneyin."
+		"none": "Eşleşen arama sonucu bulunamadı. Bir filtreyi kaldırmayı deneyin.",
+		"show": "listeyi ve filtreleri göster",
+		"region": "Bölge",
+		"anyRegion": "Herhangi bir"
 	},
 	"language": {
 		"label": "Dil",
@@ -79,34 +84,15 @@
 		"story": "Yürüyüş parkuru hakkında",
 		"officialSite": "Resmi web sitesi",
 		"sources": "Kaynaklar",
-		"checked": "{{date}} tarihinde doğrulanmış bilgiler.",
 		"lengthFromMap": "Uzunluk, OpenStreetMap üzerindeki çizgi üzerinden ölçülmüştür; henüz resmi bir rakam doğrulanmamıştır.",
-		"osm": "Yürüyüş yolu © OpenStreetMap katkıcıları, ODbL.",
 		"showOnMap": "Haritada göster",
-		"backToAtlas": "Tüm parkurlar",
-		"notReviewed": "Bu metin henüz bir kişi tarafından incelenmemiştir.",
 		"fallback": "Henüz bir çeviri bulunmadığından, bu metin İngilizce'dir.",
 		"mapLoading": "Harita yükleniyor…",
 		"crosses": "Kesiştiği patikalar",
 		"nearby": "Yakındaki yürüyüş parkurları",
 		"photoBy": "Fotoğraf:",
-		"photoAlt": "{{title}} hakkında"
-	},
-	"faq": {
-		"title": "Yürüyüşçülerin sorduğu sorular",
-		"lengthQ": "{{title}} ne kadar uzun?",
-		"lengthA": "{{title}}’in uzunluğu {{km}}’dir.",
-		"daysQ": "{{title}}’i yürüyerek tamamlamak kaç gün sürer?",
-		"daysA": "Çoğu yürüyüşçü, tüm güzergâhı tamamlamak için birkaç {{days}} sürer.",
-		"whereQ": "{{title}} nerede başlıyor ve nerede bitiyor?",
-		"whereA": "{{start}} ile başlar ve {{end}} ile biter.",
-		"whereLoopA": "Bu, {{start}} noktasında başlayan ve biten bir döngüdür.",
-		"whenQ": "{{title}}’i gezmek için en uygun zaman ne zamandır?",
-		"whenA": "En iyi aylar, {{months}}’dur.",
-		"countriesQ": "{{title}} hangi ülkelerden geçiyor?",
-		"countriesA": "{{countries}}'den geçer.",
-		"officialQ": "{{title}} ile ilgili resmi bilgiler nerede bulunabilir?",
-		"officialA": "Resmi web sitesinde, {{url}}."
+		"photoAlt": "{{title}} hakkında",
+		"daysEstimated": "Hiçbir kaynak gün sayısını vermiyor, bu yüzden uzunluktan günde {{pace}} yürüyüşe göre hesaplandı."
 	},
 	"seo": {
 		"trailTitle": "{{title}}: güzergâh haritası, {{km}}, {{days}}",
@@ -124,5 +110,23 @@
 		"browse": "Yürüyüş parkurlarına göz atın",
 		"byCountry": "Ülkeye göre",
 		"byType": "Türüne göre"
+	},
+	"error": {
+		"notFound": "Parkur burada bitiyor",
+		"crashed": "Bir şeyler ters gitti",
+		"home": "Haritaya dön",
+		"notFoundText": "Bu adreste bir sayfa yok. Bağlantı eski olabilir ya da adreste bir yazım hatası olabilir.",
+		"crashedText": "Sayfa gösterilemedi. Birazdan tekrar deneyin."
+	},
+	"site": {
+		"credits": "Parkur çizgileri © OpenStreetMap katkıda bulunanları, ODbL. Altlık harita: OpenFreeMap. Fotoğraflar Wikimedia Commons'tan, her birinin altında yazarı ve lisansı belirtilmiştir."
+	},
+	"region": {
+		"europe": "Avrupa",
+		"middle-east-caucasus": "Orta Doğu ve Kafkasya",
+		"asia": "Asya",
+		"africa": "Afrika",
+		"americas": "Amerika",
+		"oceania": "Okyanusya"
 	}
 }

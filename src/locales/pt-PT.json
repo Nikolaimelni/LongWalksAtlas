@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Percursos de caminhada de longa distância do mundo num mapa",
 		"loading": "A carregar o mapa…",
-		"pick": "Várias trilhas cruzam-se aqui"
+		"pick": "Várias trilhas cruzam-se aqui",
+		"pickHint": "Clique para escolher",
+		"mapFailed": "Não foi possível mostrar o mapa neste dispositivo."
 	},
 	"filters": {
 		"list": "Percursos",
@@ -39,7 +41,10 @@
 		"active_one": "{{count}} filtro ativado",
 		"active_many": "{{count}} filtro ativado",
 		"active_other": "{{count}} filtros ativados",
-		"none": "Não foram encontradas correspondências. Tente desativar um filtro."
+		"none": "Não foram encontradas correspondências. Tente desativar um filtro.",
+		"show": "mostrar a lista e os filtros",
+		"region": "Região",
+		"anyRegion": "Qualquer"
 	},
 	"language": {
 		"label": "Língua",
@@ -83,34 +88,15 @@
 		"story": "Sobre o percurso",
 		"officialSite": "Site oficial",
 		"sources": "Fontes",
-		"checked": "Factos verificados na {{date}}.",
 		"lengthFromMap": "Comprimento medido com base na linha do OpenStreetMap; ainda não foi verificado nenhum valor oficial.",
-		"osm": "Trajeto © Colaboradores do OpenStreetMap, ODbL.",
 		"showOnMap": "Mostrar no mapa",
-		"backToAtlas": "Todos os percursos",
-		"notReviewed": "Este texto ainda não foi revisto por ninguém.",
 		"fallback": "Ainda não existe tradução, pelo que este texto está em inglês.",
 		"mapLoading": "A carregar o mapa…",
 		"crosses": "Percursos com os quais se cruza",
 		"nearby": "Trilhos nas proximidades",
 		"photoBy": "Foto:",
-		"photoAlt": "Sobre o {{title}}"
-	},
-	"faq": {
-		"title": "Perguntas que os caminhantes fazem",
-		"lengthQ": "Qual é a extensão do {{title}}?",
-		"lengthA": "O e{{title}} tem {{km}} de comprimento.",
-		"daysQ": "Quantos dias demora a percorrer a «{{title}}» a pé?",
-		"daysA": "A maioria dos caminhantes demora vá{{days}} a percorrer todo o percurso.",
-		"whereQ": "Onde começa e onde termina o «{{title}}»?",
-		"whereA": "Começa em «{{start}}» e termina em «{{end}}».",
-		"whereLoopA": "É um ciclo que começa e termina em «{{start}}».",
-		"whenQ": "Qual é a melhor altura para registar o {{title}}?",
-		"whenA": "Os melhores meses são os {{months}}.",
-		"countriesQ": "Por que países passa o «{{title}}»?",
-		"countriesA": "Atravessa vários e{{countries}}.",
-		"officialQ": "Onde se encontram as informações oficiais sobre o «{{title}}»?",
-		"officialA": "No site oficial, {{url}}."
+		"photoAlt": "Sobre o {{title}}",
+		"daysEstimated": "Nenhuma fonte indica os dias a pé, por isso foram calculados a partir do comprimento, a {{pace}} por dia."
 	},
 	"seo": {
 		"trailTitle": "{{title}}m: mapa do percurso, {{km}}, {{days}}",
@@ -130,5 +116,23 @@
 		"browse": "Explorar percursos",
 		"byCountry": "Por país",
 		"byType": "Por tipo"
+	},
+	"error": {
+		"notFound": "O percurso acaba aqui",
+		"crashed": "Algo correu mal",
+		"home": "Voltar ao mapa",
+		"notFoundText": "Não existe nenhuma página neste endereço. A ligação pode estar desatualizada ou o endereço ter um erro.",
+		"crashedText": "Não foi possível mostrar a página. Tente novamente daqui a pouco."
+	},
+	"site": {
+		"credits": "Traçados dos percursos © contribuidores do OpenStreetMap, ODbL. Mapa de base: OpenFreeMap. Fotografias do Wikimedia Commons, com autor e licença em cada uma."
+	},
+	"region": {
+		"europe": "Europa",
+		"middle-east-caucasus": "Médio Oriente e Cáucaso",
+		"asia": "Ásia",
+		"africa": "África",
+		"americas": "Américas",
+		"oceania": "Oceânia"
 	}
 }

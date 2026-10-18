@@ -39,6 +39,7 @@
 			"min": 3,
 			"max": 5
 		},
+		"daysSource": "official",
 		"bbox": [
 			172.954,
 			-40.9961,
@@ -84,6 +85,7 @@
 			"min": 30,
 			"max": 38
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			12.7457,
 			45.5601,
@@ -132,6 +134,7 @@
 			"min": 12,
 			"max": 12
 		},
+		"daysSource": "official",
 		"bbox": [
 			12.0042,
 			46.14,
@@ -180,6 +183,7 @@
 			"min": 13,
 			"max": 13
 		},
+		"daysSource": "official",
 		"bbox": [
 			11.6826,
 			46.0355,
@@ -223,6 +227,7 @@
 			"min": 6,
 			"max": 6
 		},
+		"daysSource": "official",
 		"bbox": [
 			26.9354,
 			-32.7398,
@@ -271,6 +276,7 @@
 			"min": 10,
 			"max": 13
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			83.5939,
 			28.2542,
@@ -312,6 +318,7 @@
 			"min": 141,
 			"max": 177
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-84.1988,
 			34.6268,
@@ -360,6 +367,7 @@
 			"min": 25,
 			"max": 30
 		},
+		"daysSource": "official",
 		"bbox": [
 			30.6952,
 			36.9579,
@@ -411,6 +419,7 @@
 			"min": 42,
 			"max": 56
 		},
+		"daysSource": "official",
 		"bbox": [
 			115.8289,
 			-35.1093,
@@ -452,6 +461,7 @@
 			"min": 30,
 			"max": 30
 		},
+		"daysSource": "official",
 		"bbox": [
 			-81.663,
 			43.0901,
@@ -502,6 +512,7 @@
 			"min": 25,
 			"max": 31
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-9.1336,
 			38.7095,
@@ -550,6 +561,7 @@
 			"min": 5,
 			"max": 6
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-9.2195,
 			42.8751,
@@ -605,6 +617,7 @@
 			"min": 33,
 			"max": 41
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-8.1609,
 			42.9277,
@@ -662,6 +675,7 @@
 			"min": 31,
 			"max": 38
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-8.5446,
 			42.2583,
@@ -712,6 +726,7 @@
 			"min": 4,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			-72.544,
 			-13.2647,
@@ -753,6 +768,7 @@
 			"min": 4,
 			"max": 6
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-8.5446,
 			42.8811,
@@ -808,6 +824,7 @@
 			"min": 13,
 			"max": 16
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-8.0168,
 			42.9144,
@@ -860,6 +877,7 @@
 			"min": 5,
 			"max": 7
 		},
+		"daysSource": "official",
 		"bbox": [
 			114.9782,
 			-34.3689,
@@ -902,6 +920,7 @@
 			"min": 2,
 			"max": 3
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-135.3466,
 			59.5119,
@@ -943,6 +962,7 @@
 			"min": 5,
 			"max": 5
 		},
+		"daysSource": "official",
 		"bbox": [
 			-73.1838,
 			-51.0714,
@@ -984,6 +1004,7 @@
 			"min": 36,
 			"max": 46
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-108.0388,
 			37.3314,
@@ -1025,6 +1046,7 @@
 			"min": 19,
 			"max": 24
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			35.583,
 			33.5017,
@@ -1077,6 +1099,7 @@
 			"min": 285,
 			"max": 356
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			7.7471,
 			36.6466,
@@ -1124,6 +1147,7 @@
 			"min": 4,
 			"max": 5
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			17.4901,
 			-27.9162,
@@ -1165,6 +1189,7 @@
 			"min": 32,
 			"max": 40
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-1.8019,
 			42.2927,
@@ -1217,6 +1242,7 @@
 			"min": 16,
 			"max": 16
 		},
+		"daysSource": "official",
 		"bbox": [
 			8.8497,
 			41.7354,
@@ -1258,6 +1284,7 @@
 			"min": 8,
 			"max": 8
 		},
+		"daysSource": "official",
 		"bbox": [
 			143.1058,
 			-38.8544,
@@ -1306,6 +1333,7 @@
 			"min": 6,
 			"max": 7
 		},
+		"daysSource": "official",
 		"bbox": [
 			-3.2122,
 			54.8982,
@@ -1349,6 +1377,7 @@
 			"min": 60,
 			"max": 60
 		},
+		"daysSource": "official",
 		"bbox": [
 			137.9232,
 			-35.6593,
@@ -1390,6 +1419,7 @@
 			"min": 14,
 			"max": 17
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-119.5586,
 			36.5589,
@@ -1442,6 +1472,7 @@
 			"min": 11,
 			"max": 14
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			13.4887,
 			46.1502,
@@ -1488,6 +1519,7 @@
 			"min": 34,
 			"max": 43
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			27.3731,
 			36.5705,
@@ -1536,6 +1568,7 @@
 			"min": 3,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			167.5094,
 			-45.4939,
@@ -1579,6 +1612,7 @@
 			"min": 18,
 			"max": 23
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			15.0953,
 			65.8357,
@@ -1622,6 +1656,7 @@
 			"min": 9,
 			"max": 12
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			132.5225,
 			-23.7742,
@@ -1668,6 +1703,7 @@
 			"min": 4,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			-19.5168,
 			63.6843,
@@ -1715,6 +1751,7 @@
 			"min": 35,
 			"max": 35
 		},
+		"daysSource": "official",
 		"bbox": [
 			29.1217,
 			36.1484,
@@ -1758,6 +1795,7 @@
 			"min": 18,
 			"max": 22
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-73.1555,
 			42.7438,
@@ -1801,6 +1839,7 @@
 			"min": 2,
 			"max": 2
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			37.237,
 			-3.2195,
@@ -1842,6 +1881,7 @@
 			"min": 35,
 			"max": 35
 		},
+		"daysSource": "official",
 		"bbox": [
 			35.0178,
 			29.422,
@@ -1892,6 +1932,7 @@
 			"min": 4,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			167.7526,
 			-44.9321,
@@ -1936,6 +1977,7 @@
 			"min": 4,
 			"max": 8
 		},
+		"daysSource": "official",
 		"bbox": [
 			16.0787,
 			-24.3611,
@@ -1985,6 +2027,7 @@
 			"min": 11,
 			"max": 14
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-3.4049,
 			51.6421,
@@ -2026,6 +2069,7 @@
 			"min": 5,
 			"max": 5
 		},
+		"daysSource": "official",
 		"bbox": [
 			23.5666,
 			-34.0204,
@@ -2078,6 +2122,7 @@
 			"min": 6,
 			"max": 6
 		},
+		"daysSource": "official",
 		"bbox": [
 			145.9437,
 			-42.0694,
@@ -2120,6 +2165,7 @@
 			"min": 171,
 			"max": 213
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-123.2582,
 			32.6046,
@@ -2165,6 +2211,7 @@
 			"min": 10,
 			"max": 12
 		},
+		"daysSource": "official",
 		"bbox": [
 			19.7581,
 			42.4002,
@@ -2214,6 +2261,7 @@
 			"min": 6,
 			"max": 22
 		},
+		"daysSource": "official",
 		"bbox": [
 			-2.5624,
 			53.3644,
@@ -2262,6 +2310,7 @@
 			"min": 30,
 			"max": 32
 		},
+		"daysSource": "official",
 		"bbox": [
 			10.3998,
 			62.3471,
@@ -2305,6 +2354,7 @@
 			"min": 7,
 			"max": 9
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			10.225,
 			50.4005,
@@ -2357,6 +2407,7 @@
 			"min": 13,
 			"max": 13
 		},
+		"daysSource": "official",
 		"bbox": [
 			-8.9909,
 			37.0072,
@@ -2405,6 +2456,7 @@
 			"min": 2,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			168.1174,
 			-44.8248,
@@ -2453,6 +2505,7 @@
 			"min": 7,
 			"max": 7
 		},
+		"daysSource": "official",
 		"bbox": [
 			29.9275,
 			0.343,
@@ -2494,6 +2547,7 @@
 			"min": 3,
 			"max": 3
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			35.2801,
 			32.704,
@@ -2537,6 +2591,7 @@
 			"min": 5,
 			"max": 6
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-6.6484,
 			52.6954,
@@ -2578,6 +2633,7 @@
 			"min": 9,
 			"max": 9
 		},
+		"daysSource": "official",
 		"bbox": [
 			-10.1725,
 			51.7565,
@@ -2619,6 +2675,7 @@
 			"min": 8,
 			"max": 9
 		},
+		"daysSource": "official",
 		"bbox": [
 			-1.3087,
 			50.736,
@@ -2665,6 +2722,7 @@
 			"min": 30,
 			"max": 56
 		},
+		"daysSource": "official",
 		"bbox": [
 			-5.7151,
 			49.9595,
@@ -2706,6 +2764,7 @@
 			"min": 120,
 			"max": 150
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			167.7671,
 			-46.6254,
@@ -2761,6 +2820,7 @@
 			"min": 3,
 			"max": 4
 		},
+		"daysSource": "official",
 		"bbox": [
 			175.5417,
 			-39.2124,
@@ -2811,6 +2871,7 @@
 			"min": 7,
 			"max": 10
 		},
+		"daysSource": "official",
 		"bbox": [
 			6.7066,
 			45.6965,
@@ -2854,6 +2915,7 @@
 			"min": 36,
 			"max": 36
 		},
+		"daysSource": "official",
 		"bbox": [
 			89.2826,
 			27.2601,
@@ -2895,6 +2957,7 @@
 			"min": 7,
 			"max": 9
 		},
+		"daysSource": "official",
 		"bbox": [
 			42.73,
 			42.9158,
@@ -2936,6 +2999,7 @@
 			"min": 6,
 			"max": 6
 		},
+		"daysSource": "official",
 		"bbox": [
 			23.5666,
 			-33.9815,
@@ -2979,6 +3043,7 @@
 			"min": 28,
 			"max": 35
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			-6.4746,
 			37.3851,
@@ -3022,6 +3087,7 @@
 			"min": 5,
 			"max": 7
 		},
+		"daysSource": "official",
 		"bbox": [
 			11.2531,
 			43.7877,
@@ -3072,6 +3138,7 @@
 			"min": 128,
 			"max": 160
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			1.0821,
 			39.7986,
@@ -3129,6 +3196,7 @@
 			"min": 32,
 			"max": 32
 		},
+		"daysSource": "official",
 		"bbox": [
 			-1.2351,
 			43.1605,
@@ -3181,6 +3249,7 @@
 			"min": 6,
 			"max": 8
 		},
+		"daysSource": "official",
 		"bbox": [
 			-125.1303,
 			48.5467,
@@ -3227,6 +3296,7 @@
 			"min": 6,
 			"max": 7
 		},
+		"daysSource": "official",
 		"bbox": [
 			-5.1103,
 			55.9415,
@@ -3275,6 +3345,7 @@
 			"min": 11,
 			"max": 14
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			7.6047,
 			47.5674,
@@ -3318,6 +3389,7 @@
 			"min": 21,
 			"max": 27
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			135.7713,
 			34.9727,
@@ -3359,6 +3431,7 @@
 			"min": 48,
 			"max": 60
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			134.2067,
 			34.159,
@@ -3400,6 +3473,7 @@
 			"min": 2,
 			"max": 3
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			114.1404,
 			22.2267,
@@ -3445,6 +3519,7 @@
 			"min": 1,
 			"max": 2
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			135.5036,
 			33.7753,
@@ -3488,6 +3563,7 @@
 			"min": 3,
 			"max": 4
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			135.5854,
 			33.8553,
@@ -3531,6 +3607,7 @@
 			"min": 3,
 			"max": 4
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			114.1472,
 			22.2237,
@@ -3575,6 +3652,7 @@
 			"min": 4,
 			"max": 5
 		},
+		"daysSource": "estimate",
 		"bbox": [
 			113.9779,
 			22.3479,

@@ -1,12 +1,62 @@
 {
 	"atlas": {
 		"en": {
-			"src": "/og/atlas-en-8f6a81c8.jpg",
+			"src": "/og/atlas-en-84366da1.jpg",
 			"width": 1200,
 			"height": 630
 		},
 		"ru": {
-			"src": "/og/atlas-ru-c0fce9b1.jpg",
+			"src": "/og/atlas-ru-afdf9ad9.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"es": {
+			"src": "/og/atlas-es-beb3c45b.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"fr": {
+			"src": "/og/atlas-fr-d0c97428.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"de": {
+			"src": "/og/atlas-de-61fce9bc.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"it": {
+			"src": "/og/atlas-it-694a6e83.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"nl": {
+			"src": "/og/atlas-nl-f6ce2227.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"pl": {
+			"src": "/og/atlas-pl-f11307e4.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"sv": {
+			"src": "/og/atlas-sv-4f68120a.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"uk": {
+			"src": "/og/atlas-uk-b18232d2.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"pt-PT": {
+			"src": "/og/atlas-pt-PT-14cb3475.jpg",
+			"width": 1200,
+			"height": 630
+		},
+		"tr": {
+			"src": "/og/atlas-tr-51d89f4a.jpg",
 			"width": 1200,
 			"height": 630
 		}

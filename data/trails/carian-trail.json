@@ -23,11 +23,12 @@
 		"https://kariayolu.com/",
 		"https://cultureroutesinturkey.com/carian-trail/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Muğla 22.JPG"
+	},
 	"wikidata": "Q19617495",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [7235931]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

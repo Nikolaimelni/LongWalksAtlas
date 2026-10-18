@@ -22,11 +22,12 @@
 	"sources": [
 		"https://www.japan.travel/en/ph/special-features/nakasendo-trail/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Tateba tea house, Tsumago-juku, Nagiso, 2016.jpg"
+	},
 	"wikidata": "Q1154479",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [54496]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

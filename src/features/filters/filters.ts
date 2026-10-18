@@ -1,6 +1,6 @@
 import { z } from "zod";
 import type { TrailSummary } from "~/features/trails/trail-schema";
-import { trailTypes } from "~/features/trails/trail-schema";
+import { trailRegions, trailTypes } from "~/features/trails/trail-schema";
 
 export const lengthBuckets = {
 	short: [0, 200],
@@ -36,6 +36,7 @@ const filtersSchema = z.object({
 		)
 		.pipe(z.array(z.enum(trailTypes)))
 		.catch([]),
+	region: z.enum(trailRegions).nullable().catch(null),
 	country: z
 		.string()
 		.regex(/^[A-Z]{2}$/)
@@ -47,10 +48,20 @@ const filtersSchema = z.object({
 
 export type Filters = z.infer<typeof filtersSchema>;
 
+export const emptyFilters: Filters = {
+	q: "",
+	types: [],
+	region: null,
+	country: null,
+	length: null,
+	days: null,
+};
+
 export function parseFilters(params: URLSearchParams): Filters {
 	return filtersSchema.parse({
 		q: params.get("q") ?? "",
 		types: params.get("type") ?? "",
+		region: params.get("region"),
 		country: params.get("country"),
 		length: params.get("length"),
 		days: params.get("days"),
@@ -68,6 +79,7 @@ export function writeFilters(
 	};
 	set("q", filters.q.trim() || null);
 	set("type", filters.types.length > 0 ? filters.types.join(",") : null);
+	set("region", filters.region);
 	set("country", filters.country);
 	set("length", filters.length);
 	set("days", filters.days);
@@ -79,6 +91,11 @@ const overlaps = (
 	[from, to]: readonly [number, number],
 ) => min <= to && max >= from;
 
+// Length buckets share their edges (200, 500, 1000), so the upper edge is open: a
+// 500 km trail is 500–1000, not also 200–500. Day buckets do not touch.
+const inBucket = (km: number, [from, to]: readonly [number, number]) =>
+	km >= from && km < to;
+
 export function applyFilters(
 	trails: readonly TrailSummary[],
 	filters: Omit<Filters, "q">,
@@ -86,9 +103,10 @@ export function applyFilters(
 	return trails.filter(
 		(t) =>
 			(filters.types.length === 0 || filters.types.includes(t.type)) &&
+			(!filters.region || t.region === filters.region) &&
 			(!filters.country || t.countries.includes(filters.country)) &&
 			(!filters.length ||
-				overlaps([t.lengthKm, t.lengthKm], lengthBuckets[filters.length])) &&
+				inBucket(t.lengthKm, lengthBuckets[filters.length])) &&
 			(!filters.days ||
 				overlaps([t.days.min, t.days.max], dayBuckets[filters.days])),
 	);
@@ -97,6 +115,8 @@ export function applyFilters(
 export function countActive(filters: Filters): number {
 	return (
 		filters.types.length +
-		[filters.country, filters.length, filters.days].filter(Boolean).length
+		[filters.region, filters.country, filters.length, filters.days].filter(
+			Boolean,
+		).length
 	);
 }

@@ -1,7 +1,7 @@
 ---
 title: "Trans Bhutan Trail"
 summary: "Bhutan's restored national pilgrim and trade route of about 403 km from Haa in the west to Trashigang in the east."
-status: machine
+status: reviewed
 ---
 
 The Trans Bhutan Trail was a medieval trade and pilgrim route. It was reopened in 2022 for walking and cycling. The organisation's end-to-end itinerary gives 36 days.

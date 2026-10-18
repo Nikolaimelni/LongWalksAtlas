@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { trails } from "./trail-data";
 
 test.describe("with a Russian browser", () => {
 	test.use({ locale: "ru-RU" });
@@ -29,6 +30,25 @@ test("the atlas draws a map and says the lines are schematic", async ({
 	await expect(page.getByText("Lines on the map are schematic")).toBeVisible();
 });
 
+// Text that differs between the prerendered HTML and the first client render makes
+// React throw the page away and draw it again; country names once did.
+test("the prerendered atlas hydrates without a mismatch", async ({ page }) => {
+	const errors: string[] = [];
+	page.on("pageerror", (error) => errors.push(error.message));
+	page.on("console", (message) => {
+		if (message.type() === "error") errors.push(message.text());
+	});
+	for (const lang of ["en", "ru", "de"]) {
+		await page.goto(`/${lang}/`);
+		await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+	}
+	expect(
+		errors.filter((e) =>
+			/hydrat|Minified React error #4(18|19|23|25)/i.test(e),
+		),
+	).toEqual([]);
+});
+
 test("a trail in the URL opens its preview, and closing it clears the URL", async ({
 	page,
 }) => {
@@ -47,13 +67,7 @@ test("a trail in the URL opens its preview, and closing it clears the URL", asyn
 
 test("the prerendered atlas links to every trail page", async ({ request }) => {
 	const html = await (await request.get("/en/")).text();
-	for (const slug of [
-		"caminho-portugues",
-		"e1",
-		"lycian-way",
-		"st-paul-trail",
-		"tour-du-mont-blanc",
-	]) {
+	for (const { slug } of trails) {
 		expect(html).toContain(`href="/en/trail/${slug}/"`);
 	}
 });

@@ -1,7 +1,7 @@
 ---
 title: "Camino Inglés"
 summary: "A short Galician pilgrim road from the naval port of Ferrol to Santiago, historically used by pilgrims arriving by sea from northern Europe."
-status: machine
+status: reviewed
 ---
 
 The English Way takes its name from pilgrims from the British Isles and northern Europe who landed at Ferrol and A Coruña. From Ferrol it is 112.4 km to Santiago, from A Coruña only 72.8 km. Pilgrims need to cover at least 100 km on foot to receive the certificate, which makes the Ferrol route the usual choice.

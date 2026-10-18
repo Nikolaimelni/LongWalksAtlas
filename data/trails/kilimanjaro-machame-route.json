@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
 	"sources": ["https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Rainbow and Barranco wall, Barranco camp, Kilimanjaro region, Tanzania.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8737224, 8737225]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

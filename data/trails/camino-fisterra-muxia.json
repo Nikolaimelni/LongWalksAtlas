@@ -22,11 +22,12 @@
 	"sources": [
 		"https://www.caminodesantiago.gal/en/make-plans/the-ways/the-fisterra-and-muxia-way"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Negreira.Portor.Galiza.139.jpg"
+	},
 	"wikidata": "Q31281727",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [385098]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

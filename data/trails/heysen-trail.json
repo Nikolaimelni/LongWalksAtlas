@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://heysentrail.asn.au/",
 	"sources": ["https://heysentrail.asn.au/walking-the-heysen-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Heysen Trail (29887823055).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [124080]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

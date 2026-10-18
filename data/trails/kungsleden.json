@@ -22,11 +22,12 @@
 	"sources": [
 		"https://www.svenskaturistforeningen.se/guider-tips/omraden/kungsleden/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Stuor Dáhtá lake along the Kungsleden trail during golden hour in Kvikkjokk-Kabla fjällurskog (DSCF2557).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1657661]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

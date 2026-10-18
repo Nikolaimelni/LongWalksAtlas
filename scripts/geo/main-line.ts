@@ -86,8 +86,12 @@ function bridgeDeadEnds(graph: Graph, bridgeKm: number) {
 		if (!p) continue;
 		const own = new Set(reachableWithin(graph, i, bridgeKm * 4));
 		const [x, y] = cellOf(p);
+		// Cells are square in degrees, and a degree of longitude shrinks towards the
+		// poles: at Kungsleden's 67° N a bridge spans three cells sideways, not one.
+		const lat = ((p[1] ?? 0) * Math.PI) / 180;
+		const reachX = Math.ceil(1 / Math.max(Math.cos(lat), 0.05));
 		let best: { j: number; km: number } | undefined;
-		for (let dx = -1; dx <= 1; dx++) {
+		for (let dx = -reachX; dx <= reachX; dx++) {
 			for (let dy = -1; dy <= 1; dy++) {
 				for (const j of grid.get(`${x + dx},${y + dy}`) ?? []) {
 					if (own.has(j)) continue;
@@ -102,22 +106,24 @@ function bridgeDeadEnds(graph: Graph, bridgeKm: number) {
 	}
 }
 
+// Dijkstra cut off at `km`: a node first reached by a long way round still counts as
+// near when a shorter way to it turns up later.
 function reachableWithin(graph: Graph, from: number, km: number): number[] {
-	const seen = new Map<number, number>([[from, 0]]);
-	const queue = [from];
-	while (queue.length > 0) {
-		const i = queue.shift();
-		if (i === undefined) break;
-		const d = seen.get(i) ?? 0;
+	const dist = new Map<number, number>([[from, 0]]);
+	const heap = new MinHeap();
+	heap.push(from, 0);
+	for (let top = heap.pop(); top; top = heap.pop()) {
+		const [i, d] = top;
+		if (d > (dist.get(i) ?? Infinity)) continue;
 		for (const e of graph.edges[i] ?? []) {
 			const next = d + e.km;
-			if (next <= km && !seen.has(e.to)) {
-				seen.set(e.to, next);
-				queue.push(e.to);
+			if (next <= km && next < (dist.get(e.to) ?? Infinity)) {
+				dist.set(e.to, next);
+				heap.push(e.to, next);
 			}
 		}
 	}
-	return [...seen.keys()];
+	return [...dist.keys()];
 }
 
 function nearest(

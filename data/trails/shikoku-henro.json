@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://shikokuhenro.jp/en/about-en/",
 	"sources": ["https://shikokuhenro.jp/en/about-en/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Shikoku Henro pilgrims at Yashima-ji (26537880201).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [13653655]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

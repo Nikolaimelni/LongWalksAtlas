@@ -36,7 +36,7 @@ export function HubLinks({ hubs, current, className }: Props) {
 			{groups.map((group) => (
 				<div key={group.title} className="mt-3 first:mt-0">
 					<h2 className="text-xs font-medium text-muted">{group.title}</h2>
-					<ul className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
+					<ul className="mt-1 flex flex-wrap gap-x-1 text-sm">
 						{group.hubs.map((hub) => (
 							<li key={hubPath(hub)}>
 								<Link
@@ -45,7 +45,7 @@ export function HubLinks({ hubs, current, className }: Props) {
 									aria-current={
 										hubPath(hub) === currentPath ? "page" : undefined
 									}
-									className="underline aria-[current=page]:font-semibold aria-[current=page]:no-underline"
+									className="inline-block rounded-md px-1.5 py-1.5 underline hover:bg-soft aria-[current=page]:font-semibold aria-[current=page]:no-underline"
 								>
 									{label(hub)}
 								</Link>

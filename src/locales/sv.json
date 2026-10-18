@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Världens långdistansvandringsleder på en karta",
 		"loading": "Laddar kartan…",
-		"pick": "Här möts flera vandringsleder"
+		"pick": "Här möts flera vandringsleder",
+		"pickHint": "Klicka för att välja",
+		"mapFailed": "Kartan kunde inte visas på den här enheten."
 	},
 	"filters": {
 		"list": "Vandringsleder",
@@ -37,7 +39,10 @@
 		"reset": "Rensa allt",
 		"active_one": "{{count}} filter aktiverat",
 		"active_other": "{{count}} filter aktiverade",
-		"none": "Inga träffar hittades. Försök ta bort ett filter."
+		"none": "Inga träffar hittades. Försök ta bort ett filter.",
+		"show": "visa listan och filtren",
+		"region": "Region",
+		"anyRegion": "Vilken som helst"
 	},
 	"language": {
 		"label": "Språk",
@@ -79,34 +84,15 @@
 		"story": "Om vandringsleden",
 		"officialSite": "Officiell webbplats",
 		"sources": "Källor",
-		"checked": "Fakta kontrollerade den {{date}}n.",
 		"lengthFromMap": "Längden är uppmätt utifrån linjen på OpenStreetMap; inga officiella siffror har ännu kontrollerats.",
-		"osm": "Vandringsled © OpenStreetMap-bidragare, ODbL.",
 		"showOnMap": "Visa på kartan",
-		"backToAtlas": "Alla vandringsleder",
-		"notReviewed": "Den här texten har ännu inte granskats av någon.",
 		"fallback": "Det finns ingen översättning ännu, så texten är på engelska.",
 		"mapLoading": "Laddar kartan…",
 		"crosses": "Vandringsleder som den korsar",
 		"nearby": "Vandringsleder i närheten",
 		"photoBy": "Foto:",
-		"photoAlt": "Om {{title}}n"
-	},
-	"faq": {
-		"title": "Frågor som vandrare ställer",
-		"lengthQ": "Hur lång är {{title}}n?",
-		"lengthA": "{{title}}n är {{km}} lång.",
-		"daysQ": "Hur många dagar tar det att vandra längs ”{{title}}”?",
-		"daysA": "De flesta vandrare tar flera {{days}} på att gå hela sträckan.",
-		"whereQ": "Var börjar och slutar {{title}}n?",
-		"whereA": "Det börjar vid ”{{start}}” och slutar vid ”{{end}}”.",
-		"whereLoopA": "Det är en slinga som börjar och slutar vid {{start}}.",
-		"whenQ": "När är det bästa tillfället att registrera ägar{{title}}n?",
-		"whenA": "De bästa månaderna är {{months}}.",
-		"countriesQ": "Vilka länder passerar {{title}}n genom?",
-		"countriesA": "Den går genom flera {{countries}}.",
-		"officialQ": "Var finns den officiella informationen om {{title}}n?",
-		"officialA": "På den officiella webbplatsen, {{url}}."
+		"photoAlt": "Om {{title}}n",
+		"daysEstimated": "Ingen källa anger antalet dagar, så de är beräknade utifrån längden med {{pace}} per dag."
 	},
 	"seo": {
 		"trailTitle": "{{title}}n: ruttskarta, {{km}}, {{days}}",
@@ -124,5 +110,23 @@
 		"browse": "Utforska vandringsleder",
 		"byCountry": "Per land",
 		"byType": "Efter typ"
+	},
+	"error": {
+		"notFound": "Här tar leden slut",
+		"crashed": "Något gick fel",
+		"home": "Tillbaka till kartan",
+		"notFoundText": "Det finns ingen sida på den här adressen. Länken kan vara gammal, eller så finns det ett stavfel i adressen.",
+		"crashedText": "Sidan kunde inte visas. Försök igen om en stund."
+	},
+	"site": {
+		"credits": "Ledernas linjer © OpenStreetMaps bidragsgivare, ODbL. Bakgrundskarta: OpenFreeMap. Foton från Wikimedia Commons, med upphovsperson och licens vid varje bild."
+	},
+	"region": {
+		"europe": "Europa",
+		"middle-east-caucasus": "Mellanöstern och Kaukasus",
+		"asia": "Asien",
+		"africa": "Afrika",
+		"americas": "Amerika",
+		"oceania": "Oceanien"
 	}
 }

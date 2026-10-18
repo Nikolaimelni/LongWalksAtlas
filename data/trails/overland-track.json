@@ -25,11 +25,12 @@
 	"sources": [
 		"https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Kitchen Hut with Cradle Mountain in the background.jpg"
+	},
 	"wikidata": "Q491216",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1673569]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

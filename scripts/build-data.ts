@@ -2,9 +2,11 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import type { Position } from "geojson";
-import type {
-	TrailFile,
-	TrailSummary,
+import { z } from "zod";
+import {
+	type TrailFile,
+	type TrailSummary,
+	trailSummarySchema,
 } from "../src/features/trails/trail-schema.ts";
 import { buildTrail, type TrailFeature } from "./build-trail.ts";
 import { DataError } from "./data-error.ts";
@@ -126,7 +128,9 @@ async function main() {
 		JSON.stringify({ type: "FeatureCollection", features: atlas }),
 	);
 	await mkdir(join(root, "src/generated"), { recursive: true });
-	await writeFile(indexFile, `${JSON.stringify(summaries, null, "\t")}\n`);
+	// The app reads this file without parsing it, so it is held to the schema here.
+	const index = z.array(trailSummarySchema).parse(summaries);
+	await writeFile(indexFile, `${JSON.stringify(index, null, "\t")}\n`);
 	log.info({ trails: summaries.length }, "wrote atlas, trail files and index");
 
 	if (failed.length > 0) {

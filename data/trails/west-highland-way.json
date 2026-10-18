@@ -26,11 +26,12 @@
 		"https://www.westhighlandway.org/the-route/",
 		"https://www.westhighlandway.org/getting-started/frequently-asked-questions/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:130707 Glen Coe from east C.jpg"
+	},
 	"wikidata": "Q965998",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [16287]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -42,7 +42,7 @@ const regionBounds = {
 	oceania: { west: 110, south: -48, east: 180, north: 0 },
 } as const;
 
-const regions = Object.keys(regionBounds) as [
+export const trailRegions = Object.keys(regionBounds) as [
 	keyof typeof regionBounds,
 	...(keyof typeof regionBounds)[],
 ];
@@ -51,12 +51,13 @@ const dayRange = z
 	.strictObject({ min: z.int().positive(), max: z.int().positive() })
 	.refine((d) => d.min <= d.max, { message: "min is larger than max" });
 
-export const trailFileSchema = z
-	.strictObject({
+// The fields of a trail file, without the checks across fields: Zod will not pick()
+// from a schema that carries refinements, and the summary below picks from this.
+const trailFields = z.strictObject({
 		slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
 		name: z.strictObject({ original: z.string().min(1) }),
 		type: z.enum(trailTypes),
-		region: z.enum(regions),
+		region: z.enum(trailRegions),
 		start: place,
 		end: place,
 		countries: z.array(z.string().regex(/^[A-Z]{2}$/)).min(1),
@@ -80,8 +81,9 @@ export const trailFileSchema = z
 			relationIds: z.array(z.int().positive()).min(1),
 			mode: z.enum(["main-line", "all-ways"]).optional(),
 		}),
-		verifiedAt: z.iso.date(),
-	})
+	});
+
+export const trailFileSchema = trailFields
 	.refine((t) => inRegion(t.start.coords, t.region), {
 		path: ["start", "coords"],
 		message: "outside the trail's region; is it [lng, lat]?",
@@ -103,34 +105,44 @@ export type TrailFile = z.infer<typeof trailFileSchema>;
 export type TrailType = TrailFile["type"];
 export type DayRange = NonNullable<TrailFile["days"]>;
 
-export type TrailSummary = Pick<
-	TrailFile,
-	| "slug"
-	| "name"
-	| "type"
-	| "region"
-	| "start"
-	| "end"
-	| "countries"
-	| "bestSeason"
-	| "badges"
-> & {
-	lengthKm: number;
-	lengthSource: "official" | "osm";
-	days: DayRange;
-	bbox: [west: number, south: number, east: number, north: number];
-	crosses: string[];
-	nearby: string[];
-};
+// One line of src/generated/trails-index.json, written by scripts/build-data.ts and
+// checked against this before it is written.
+export const trailSummarySchema = trailFields
+	.pick({
+		slug: true,
+		name: true,
+		type: true,
+		region: true,
+		start: true,
+		end: true,
+		countries: true,
+		bestSeason: true,
+		badges: true,
+	})
+	.extend({
+		lengthKm: z.number().positive(),
+		lengthSource: z.enum(["official", "osm"]),
+		days: dayRange,
+		// "estimate" when no source gives the days and they come from the length.
+		daysSource: z.enum(["official", "estimate"]),
+		bbox: z.tuple([z.number(), z.number(), z.number(), z.number()]),
+		crosses: z.array(z.string()),
+		nearby: z.array(z.string()),
+	});
 
-export type TrailPhoto = {
-	file: string;
-	author: string;
-	license: string;
-	licenseUrl: string | null;
-	sourceUrl: string;
-	width: number;
-	height: number;
-	smallWidth: number;
-	src: { small: string; large: string };
-};
+export type TrailSummary = z.infer<typeof trailSummarySchema>;
+
+// One entry of src/generated/photos.json, written and checked by scripts/build-photos.ts.
+export const trailPhotoSchema = z.strictObject({
+	file: z.string(),
+	author: z.string().min(1),
+	license: z.string().min(1),
+	licenseUrl: z.url({ protocol: /^https?$/ }).nullable(),
+	sourceUrl: z.url({ protocol: /^https$/ }),
+	width: z.int().positive(),
+	height: z.int().positive(),
+	smallWidth: z.int().positive(),
+	src: z.strictObject({ small: z.string(), large: z.string() }),
+});
+
+export type TrailPhoto = z.infer<typeof trailPhotoSchema>;

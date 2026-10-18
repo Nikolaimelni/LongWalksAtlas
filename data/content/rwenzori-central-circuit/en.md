@@ -1,7 +1,7 @@
 ---
 title: "Rwenzori Central Circuit"
 summary: "A seven-day circuit in the Rwenzori Mountains of Uganda starting from Mihunga, with huts and glacier views."
-status: machine
+status: reviewed
 ---
 
 The Central Circuit is a high-altitude trek in Rwenzori Mountains National Park, run by Uganda Wildlife Authority.

@@ -25,9 +25,17 @@ runs Playwright against it.
   build needs no network.
 - `pnpm photos`: Wikimedia Commons file named in the trail JSON, credit and licence read
   from Commons, NC and ND refused.
-- `data/content/<slug>/<lang>.md`: the texts. English is written (or imported), the
-  rest comes from `pnpm translate` (DeepL, key in `.env`) and is marked `machine` until
-  someone reads it.
+- `data/content/<slug>/en.md`: the English text of each trail, read and marked
+  `reviewed`. A `<lang>.md` next to it is a person's translation and always wins.
+- `data/translations/<lang>.json`: machine translations from `pnpm translate` (DeepL, key
+  in `.env`), one file per language.
+
+Where no source gives the days on foot, they are worked out from the length at 20 to 25
+km a day, shown with "≈" and a note saying so, and left out of the JSON-LD.
+
+`pnpm og` builds the site and photographs the social card of the atlas in each
+language. `pnpm og --trails` also makes one card per trail and language, close to a
+thousand JPEGs, so they are not made by default; a trail page without one uses its photo.
 
 Most trails came from a research run by another agent (`data/collection-brief.md`),
 then checked by hand and brought in with `scripts/import-trails.ts`. A quarter of them
@@ -39,7 +47,7 @@ had a start or end several kilometres off the OSM line, which quietly breaks the
   Juliana Trail) the line is too.
 - Five trails from the research run are left out: no usable OSM relation yet.
 - Every non-English text is a machine translation nobody has read.
-- One Markdown file per trail per language adds up to hundreds of small files. I would
-  keep machine translations in one file per language next time.
+- Days on foot are an estimate for about half the trails, and for a climb like
+  Kilimanjaro the estimate from the length is far too short.
 
 Trail geometry © OpenStreetMap contributors, ODbL.

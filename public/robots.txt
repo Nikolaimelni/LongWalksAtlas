@@ -6,6 +6,6 @@ Allow: /
 
 # Yandex only: the atlas keeps search, filters and the open trail in the query string,
 # and every combination is the same page. Google reads the canonical link instead.
-Clean-param: q&type&country&length&days&trail /
+Clean-param: q&type&region&country&length&days&trail /
 
 Sitemap: https://longwalksatlas.com/sitemap.xml

@@ -44,16 +44,20 @@ export async function fetchFromOverpass(
 		const url = env.OVERPASS_URLS[(attempt - 1) % env.OVERPASS_URLS.length];
 		if (!url) throw new DataError("overpass-failed", "no Overpass URL set");
 
+		// A refused connection or a timeout rejects instead of answering; it is treated
+		// like a busy server, so the next endpoint and then the OSM API still get a turn.
 		const response = await fetch(
 			`${url}?${new URLSearchParams({ data: ql })}`,
 			{
 				headers: { "User-Agent": userAgent },
 				signal: AbortSignal.timeout(16 * 60_000),
 			},
-		);
+		).catch((error: unknown) => String(error));
 
-		if (response.ok) {
-			const parsed = relationTreeSchema.safeParse(await response.json());
+		if (typeof response !== "string" && response.ok) {
+			const parsed = relationTreeSchema.safeParse(
+				await response.json().catch(() => null),
+			);
 			if (!parsed.success) {
 				throw new DataError(
 					"overpass-bad-response",
@@ -66,17 +70,17 @@ export async function fetchFromOverpass(
 			return parsed.data.elements;
 		}
 
-		if (!retryable.has(response.status) || attempt === maxAttempts) {
+		const reason =
+			typeof response === "string" ? response : `answered ${response.status}`;
+		const busy = typeof response === "string" || retryable.has(response.status);
+		if (!busy || attempt === maxAttempts) {
 			throw new DataError(
 				"overpass-failed",
-				`${url} answered ${response.status} on attempt ${attempt}`,
+				`${url} ${reason} on attempt ${attempt}`,
 			);
 		}
 		const waitMs = 10_000 * 2 ** (attempt - 1);
-		log.warn(
-			{ url, status: response.status, attempt, waitMs },
-			"Overpass busy, retrying",
-		);
+		log.warn({ url, reason, attempt, waitMs }, "Overpass busy, retrying");
 		await sleep(waitMs);
 	}
 }

@@ -18,7 +18,6 @@ const valid = {
 	photo: null,
 	wikidata: null,
 	geometry: { source: "osm", relationIds: [124456] },
-	verifiedAt: "2026-10-18",
 };
 
 function issuesFor(input: unknown) {

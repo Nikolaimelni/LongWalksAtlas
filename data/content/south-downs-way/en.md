@@ -1,7 +1,7 @@
 ---
 title: "South Downs Way"
 summary: "A National Trail along the chalk ridge of the South Downs from Winchester to the sea cliffs at Eastbourne."
-status: machine
+status: reviewed
 ---
 
 The path follows the crest of the South Downs through woodland and open chalk grassland, ending at Beachy Head and the Seven Sisters.

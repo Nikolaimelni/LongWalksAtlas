@@ -84,12 +84,15 @@ export async function fetchFromOsmApi(
 async function getFull(id: number): Promise<z.infer<typeof fullSchema>> {
 	const url = `${base}/relation/${id}/full.json`;
 	for (let attempt = 1; ; attempt++) {
+		// A dropped connection or a timeout rejects; it is retried like a 5xx.
 		const response = await fetch(url, {
 			headers: { "User-Agent": userAgent },
 			signal: AbortSignal.timeout(5 * 60_000),
-		});
-		if (response.ok) {
-			const parsed = fullSchema.safeParse(await response.json());
+		}).catch((error: unknown) => String(error));
+		if (typeof response !== "string" && response.ok) {
+			const parsed = fullSchema.safeParse(
+				await response.json().catch(() => null),
+			);
 			if (!parsed.success) {
 				throw new DataError(
 					"osm-api-failed",
@@ -98,22 +101,19 @@ async function getFull(id: number): Promise<z.infer<typeof fullSchema>> {
 			}
 			return parsed.data;
 		}
-		if (response.status < 500 && response.status !== 429) {
-			throw new DataError(
-				"osm-api-failed",
-				`${url} answered ${response.status}`,
-			);
+		const reason =
+			typeof response === "string" ? response : `answered ${response.status}`;
+		if (
+			typeof response !== "string" &&
+			response.status < 500 &&
+			response.status !== 429
+		) {
+			throw new DataError("osm-api-failed", `${url} ${reason}`);
 		}
 		if (attempt === 3) {
-			throw new DataError(
-				"osm-api-failed",
-				`${url} answered ${response.status} three times`,
-			);
+			throw new DataError("osm-api-failed", `${url} ${reason}, three times`);
 		}
-		log.warn(
-			{ url, status: response.status, attempt },
-			"OSM API busy, retrying",
-		);
+		log.warn({ url, reason, attempt }, "OSM API busy, retrying");
 		await sleep(5_000 * attempt);
 	}
 }

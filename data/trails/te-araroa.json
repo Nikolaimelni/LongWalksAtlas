@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.teararoa.org.nz/the-trail/",
 	"sources": ["https://www.teararoa.org.nz/the-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Te Araroa Trail by Lake Clearwater, Canterbury, New Zealand 03.jpg"
+	},
 	"wikidata": "Q4242105",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8518624, 8518626]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

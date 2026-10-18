@@ -1,6 +1,6 @@
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer } from "node:http";
-import { extname, join, normalize } from "node:path";
+import { extname, join, normalize, sep } from "node:path";
 import { parseArgs } from "node:util";
 
 const { values } = parseArgs({
@@ -21,6 +21,9 @@ const types: Record<string, string> = {
 	".svg": "image/svg+xml",
 	".ico": "image/x-icon",
 	".webp": "image/webp",
+	".jpg": "image/jpeg",
+	".png": "image/png",
+	".woff2": "font/woff2",
 };
 
 const isFile = (path: string) => existsSync(path) && statSync(path).isFile();
@@ -47,7 +50,9 @@ createServer((req, res) => {
 		return res.end();
 	}
 	const file = join(root, normalize(decoded));
-	if (!file.startsWith(root)) return send(res, join(root, "404.html"), 404);
+	// root + sep, so that a sibling such as build/client-old does not pass as inside.
+	if (file !== root && !file.startsWith(root + sep))
+		return send(res, join(root, "404.html"), 404);
 
 	if (isFile(file)) return send(res, file);
 	if (isFile(join(file, "index.html"))) {

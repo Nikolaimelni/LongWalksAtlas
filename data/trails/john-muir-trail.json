@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.nps.gov/yose/planyourvisit/jmt.htm",
 	"sources": ["https://www.nps.gov/yose/planyourvisit/jmt.htm"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Mt Banner and Thousand Island Lake.jpg"
+	},
 	"wikidata": "Q967917",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1244828]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

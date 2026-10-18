@@ -31,6 +31,5 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [19001007]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.alpe-adria-trail.com/en/the-trail/",
 	"sources": ["https://www.alpe-adria-trail.com/en/the-trail/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Innerfragant Wasserfall am Alpe Adria Trail, Mölltal, Kärnten.jpg"
+	},
 	"wikidata": "Q15782535",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3176522]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.lebanontrail.org/",
 	"sources": ["https://www.lebanontrail.org/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:View of the Kadisha Valley, Lebanon.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [15574869]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

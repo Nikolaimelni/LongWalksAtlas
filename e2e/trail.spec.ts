@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { publishedLanguages, trails } from "./trail-data";
 
 test("a trail page carries the facts, the story and the official link", async ({
 	page,
@@ -15,9 +16,6 @@ test("a trail page carries the facts, the story and the official link", async ({
 		"href",
 		"https://cultureroutesinturkey.com/the-lycian-way/",
 	);
-	await expect(
-		page.getByText("Сколько дней идти маршрут «Ликийская тропа»?"),
-	).toBeVisible();
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
 	await expect(page.getByText("Линия на карте схематична")).toBeVisible();
 	await expect(
@@ -33,13 +31,30 @@ test("a trail page carries the facts, the story and the official link", async ({
 	).toHaveAttribute("href", "/ru/trail/st-paul-trail/");
 });
 
+test("days worked out from the length are marked as an estimate", async ({
+	page,
+}) => {
+	const estimated = trails.find((t) => t.daysSource === "estimate");
+	test.skip(!estimated, "every trail has its days from a source");
+	await page.goto(`/en/trail/${estimated?.slug}/`);
+	await expect(
+		page.getByRole("definition").filter({ hasText: /^≈\s\d/ }),
+	).toBeVisible();
+	await expect(
+		page.getByText("No source gives the days on foot", { exact: false }),
+	).toBeVisible();
+});
+
 test("a trail page is described for search engines", async ({ page }) => {
 	await page.goto("/en/trail/tour-du-mont-blanc/");
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
 		"href",
 		"https://longwalksatlas.com/en/trail/tour-du-mont-blanc/",
 	);
-	await expect(page.locator('link[rel="alternate"]')).toHaveCount(3);
+	// Every published language plus x-default: the Tour du Mont Blanc is in all of them.
+	await expect(page.locator('link[rel="alternate"]')).toHaveCount(
+		publishedLanguages + 1,
+	);
 	const ld = JSON.parse(
 		(await page.locator('script[type="application/ld+json"]').textContent()) ??
 			"{}",
@@ -78,7 +93,6 @@ test("sitemap, robots.txt and llms.txt are published", async ({ request }) => {
 	expect(sitemap).toContain(
 		"<loc>https://longwalksatlas.com/ru/trail/e1/</loc>",
 	);
-	expect(sitemap).toMatch(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/);
 	expect(await (await request.get("/robots.txt")).text()).toContain(
 		"Sitemap: https://longwalksatlas.com/sitemap.xml",
 	);
@@ -93,11 +107,11 @@ test("an unknown trail answers 404 and points back to the map", async ({
 	const response = await page.goto("/en/trail/no-such-trail/");
 	expect(response?.status()).toBe(404);
 	await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-		"Page not found",
+		"This trail ends here",
 	);
 	await expect(
-		page.getByRole("link", { name: "Go to the map of all trails" }),
-	).toHaveAttribute("href", "/");
+		page.getByRole("link", { name: "Back to the map" }),
+	).toHaveAttribute("href", "/en/");
 });
 
 test("a path without its trailing slash is redirected to it", async ({

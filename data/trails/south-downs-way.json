@@ -25,11 +25,12 @@
 	"sources": [
 		"https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/trail-information/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Seven Sisters 9.jpg"
+	},
 	"wikidata": "Q1382726",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [77976]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Langeafstandswandelroutes van de wereld op een kaart",
 		"loading": "De kaart wordt geladen…",
-		"pick": "Hier komen verschillende wandelpaden samen"
+		"pick": "Hier komen verschillende wandelpaden samen",
+		"pickHint": "Klik om er een te kiezen",
+		"mapFailed": "De kaart kan op dit apparaat niet worden getoond."
 	},
 	"filters": {
 		"list": "Wandelroutes",
@@ -37,7 +39,10 @@
 		"reset": "Alles wissen",
 		"active_one": "{{count}} filter ingeschakeld",
 		"active_other": "{{count}} filters ingeschakeld",
-		"none": "Er zijn geen resultaten gevonden. Probeer een filter uit te schakelen."
+		"none": "Er zijn geen resultaten gevonden. Probeer een filter uit te schakelen.",
+		"show": "lijst en filters tonen",
+		"region": "Regio",
+		"anyRegion": "Elke"
 	},
 	"language": {
 		"label": "Taal",
@@ -79,34 +84,15 @@
 		"story": "Over de route",
 		"officialSite": "Officiële website",
 		"sources": "Bronnen",
-		"checked": "Feiten gecontroleerd op {{date}}.",
 		"lengthFromMap": "Lengte gemeten aan de hand van de lijn op OpenStreetMap; er is nog geen officieel cijfer gecontroleerd.",
-		"osm": "Trail-lijn © OpenStreetMap-bijdragers, ODbL.",
 		"showOnMap": "Op de kaart weergeven",
-		"backToAtlas": "Alle wandelroutes",
-		"notReviewed": "Deze tekst is nog niet door iemand nagekeken.",
 		"fallback": "Er is nog geen vertaling beschikbaar, dus deze tekst is in het Engels.",
 		"mapLoading": "De kaart wordt geladen…",
 		"crosses": "Paden die het kruist",
 		"nearby": "Wandelpaden in de buurt",
 		"photoBy": "Foto:",
-		"photoAlt": "Over de {{title}}"
-	},
-	"faq": {
-		"title": "Vragen die wandelaars stellen",
-		"lengthQ": "Hoe lang is de {{title}}?",
-		"lengthA": "De {{title}} is {{km}} lang.",
-		"daysQ": "Hoeveel dagen duurt het om de route van de „{{title}}” te lopen?",
-		"daysA": "De meeste wandelaars doen er me{{days}} over om de hele route af te leggen.",
-		"whereQ": "Waar begint en eindigt de {{title}}?",
-		"whereA": "Het begint bij ‘{{start}}’ en eindigt bij ‘{{end}}’.",
-		"whereLoopA": "Het is een lus die begint en eindigt bij {{start}}.",
-		"whenQ": "Wanneer is het beste moment om de tit{{title}} te verdedigen?",
-		"whenA": "De beste maanden zijn {{months}}.",
-		"countriesQ": "Door welke landen loopt de ge{{title}}?",
-		"countriesA": "Het loopt door verschillende {{countries}}.",
-		"officialQ": "Waar vind ik de officiële informatie over de {{title}}?",
-		"officialA": "Op de officiële website, {{url}}."
+		"photoAlt": "Over de {{title}}",
+		"daysEstimated": "Geen bron noemt het aantal dagen, dus dat is berekend uit de lengte bij {{pace}} per dag."
 	},
 	"seo": {
 		"trailTitle": "{{title}}n: routekaart, {{km}}, {{days}}",
@@ -124,5 +110,23 @@
 		"browse": "Bekijk wandelroutes",
 		"byCountry": "Per land",
 		"byType": "Per type"
+	},
+	"error": {
+		"notFound": "Hier houdt het pad op",
+		"crashed": "Er is iets misgegaan",
+		"home": "Terug naar de kaart",
+		"notFoundText": "Op dit adres staat geen pagina. Misschien is de link verouderd of zit er een typfout in het adres.",
+		"crashedText": "De pagina kon niet worden getoond. Probeer het zo nog eens."
+	},
+	"site": {
+		"credits": "Routelijnen © OpenStreetMap-bijdragers, ODbL. Basiskaart: OpenFreeMap. Foto's van Wikimedia Commons, met maker en licentie bij elke foto."
+	},
+	"region": {
+		"europe": "Europa",
+		"middle-east-caucasus": "Midden-Oosten en Kaukasus",
+		"asia": "Azië",
+		"africa": "Afrika",
+		"americas": "Amerika",
+		"oceania": "Oceanië"
 	}
 }

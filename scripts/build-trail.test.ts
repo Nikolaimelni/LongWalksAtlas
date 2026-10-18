@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { TrailFile } from "../src/features/trails/trail-schema.ts";
-import { buildTrail, estimateDays } from "./build-trail.ts";
+import { buildTrail } from "./build-trail.ts";
 
 const trail: TrailFile = {
 	slug: "test-way",
@@ -19,20 +19,9 @@ const trail: TrailFile = {
 	photo: null,
 	wikidata: null,
 	geometry: { source: "osm", relationIds: [1] },
-	verifiedAt: "2026-10-18",
 };
 
 const line = Array.from({ length: 101 }, (_, i) => [10 + i / 100, 45]);
-
-describe("estimateDays", () => {
-	it("assumes 20 to 25 km a day", () => {
-		expect(estimateDays(500)).toEqual({ min: 20, max: 25 });
-	});
-
-	it("never says zero days", () => {
-		expect(estimateDays(8)).toEqual({ min: 1, max: 1 });
-	});
-});
 
 describe("buildTrail", () => {
 	it("measures the OSM line when no official length is given", () => {
@@ -41,6 +30,7 @@ describe("buildTrail", () => {
 		expect(summary.lengthKm).toBe(79);
 		expect(summary.lengthSource).toBe("osm");
 		expect(summary.days).toEqual({ min: 3, max: 4 });
+		expect(summary.daysSource).toBe("estimate");
 	});
 
 	it("prefers the official length and days", () => {
@@ -51,6 +41,7 @@ describe("buildTrail", () => {
 		expect(summary.lengthKm).toBe(80);
 		expect(summary.lengthSource).toBe("official");
 		expect(summary.days).toEqual({ min: 4, max: 5 });
+		expect(summary.daysSource).toBe("official");
 	});
 
 	it("simplifies a straight line down to its ends", () => {

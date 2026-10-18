@@ -16,6 +16,5 @@
 	],
 	"photo": { "commons": "File:Trail and Massif du Mont-Blanc.jpg" },
 	"wikidata": "Q24777",
-	"geometry": { "source": "osm", "relationIds": [124456] },
-	"verifiedAt": "2026-10-18"
+	"geometry": { "source": "osm", "relationIds": [124456] }
 }

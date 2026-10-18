@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://visiteasterncape.co.za/?p=18885",
 	"sources": ["https://visiteasterncape.co.za/?p=18885"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Groot River.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1383550]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

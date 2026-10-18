@@ -1,7 +1,7 @@
 ---
 title: "Naukluft Hiking Trail"
 summary: "A circular trail in the Naukluft Mountains of Namibia with a 4-day and an 8-day version."
-status: machine
+status: reviewed
 ---
 
 The Naukluft trail is a circular trail in the Naukluft Mountains. Namibia Wildlife Resorts offers 4-day and 8-day versions.

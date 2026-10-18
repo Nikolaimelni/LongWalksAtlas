@@ -1,7 +1,7 @@
 ---
 title: "Cape to Cape Track"
 summary: "A coastal walk of about 135 km along cliffs and beaches between the lighthouses at Cape Naturaliste and Cape Leeuwin in south-west Western Australia."
-status: machine
+status: reviewed
 ---
 
 The track passes limestone caves, surf breaks, wildflowers and whale viewing points. Tourism Western Australia says it takes five to seven days and the wildflower season is spring; whales are seen from September to December.

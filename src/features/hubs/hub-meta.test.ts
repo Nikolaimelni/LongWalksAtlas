@@ -17,6 +17,7 @@ const base: TrailSummary = {
 	badges: [],
 	lengthKm: 100,
 	lengthSource: "official",
+	daysSource: "official",
 	days: { min: 5, max: 5 },
 	bbox: [0, 40, 1, 41],
 	crosses: [],

@@ -13,7 +13,9 @@
 	"atlas": {
 		"title": "Fernwanderwege der Welt auf einer Karte",
 		"loading": "Die Karte wird geladen…",
-		"pick": "Hier treffen mehrere Wanderwege aufeinander"
+		"pick": "Hier treffen mehrere Wanderwege aufeinander",
+		"pickHint": "Zum Auswählen klicken",
+		"mapFailed": "Die Karte kann auf diesem Gerät nicht angezeigt werden."
 	},
 	"filters": {
 		"list": "Wanderwege",
@@ -37,7 +39,10 @@
 		"reset": "Alle löschen",
 		"active_one": "{{count}} Filter aktiviert",
 		"active_other": "{{count}} Filter aktiviert",
-		"none": "Es wurden keine Treffer gefunden. Versuchen Sie, einen Filter zu deaktivieren."
+		"none": "Es wurden keine Treffer gefunden. Versuchen Sie, einen Filter zu deaktivieren.",
+		"show": "Liste und Filter anzeigen",
+		"region": "Region",
+		"anyRegion": "Beliebige"
 	},
 	"language": {
 		"label": "Sprache",
@@ -79,34 +84,15 @@
 		"story": "Über den Wanderweg",
 		"officialSite": "Offizielle Website",
 		"sources": "Quellen",
-		"checked": "Die Fakten wurden am {{date}} überprüft.",
 		"lengthFromMap": "Länge gemessen anhand der Linie in OpenStreetMap; noch keine offiziellen Angaben überprüft.",
-		"osm": "Wanderweg © OpenStreetMap-Mitwirkende, ODbL.",
 		"showOnMap": "Auf der Karte anzeigen",
-		"backToAtlas": "Alle Wanderwege",
-		"notReviewed": "Dieser Text wurde noch nicht von einer Person überprüft.",
 		"fallback": "Es gibt noch keine Übersetzung, daher ist dieser Text auf Englisch.",
 		"mapLoading": "Die Karte wird geladen…",
 		"crosses": "Wanderwege, an die er grenzt",
 		"nearby": "Wanderwege in der Umgebung",
 		"photoBy": "Foto:",
-		"photoAlt": "Zum {{title}}"
-	},
-	"faq": {
-		"title": "Fragen, die Wanderer stellen",
-		"lengthQ": "Wie lang ist der {{title}}?",
-		"lengthA": "Die {{title}} ist {{km}} lang.",
-		"daysQ": "Wie viele Tage braucht man, um die „{{title}}“-Route zu Fuß zurückzulegen?",
-		"daysA": "Die meisten Wanderer benötigen für die gesamte Strecke mehrere {{days}}.",
-		"whereQ": "Wo beginnt und wo endet der {{title}}?",
-		"whereA": "Es beginnt bei „{{start}}“ und endet bei „{{end}}“.",
-		"whereLoopA": "Es handelt sich um eine Schleife, die bei „{{start}}“ beginnt und dort endet.",
-		"whenQ": "Wann ist der beste Zeitpunkt, um den „{{title}}“ zu laufen?",
-		"whenA": "Die besten Monate sind die {{months}}.",
-		"countriesQ": "Durch welche Länder verläuft der „{{title}}“?",
-		"countriesA": "Sie führt durch verschiedene {{countries}}.",
-		"officialQ": "Wo finde ich die offiziellen Informationen zu diesem {{title}}n?",
-		"officialA": "Auf der offiziellen Website unter {{url}}."
+		"photoAlt": "Zum {{title}}",
+		"daysEstimated": "Keine Quelle nennt die Zahl der Tage, daher ist sie aus der Länge bei {{pace}} pro Tag berechnet."
 	},
 	"seo": {
 		"trailTitle": "{{title}}: Routenkarte, {{km}}, {{days}}",
@@ -124,5 +110,23 @@
 		"browse": "Wanderwege durchsuchen",
 		"byCountry": "Nach Land",
 		"byType": "Nach Typ"
+	},
+	"error": {
+		"notFound": "Hier endet der Weg",
+		"crashed": "Etwas ist schiefgelaufen",
+		"home": "Zurück zur Karte",
+		"notFoundText": "Unter dieser Adresse gibt es keine Seite. Vielleicht ist der Link veraltet oder die Adresse enthält einen Tippfehler.",
+		"crashedText": "Die Seite konnte nicht angezeigt werden. Versuchen Sie es gleich noch einmal."
+	},
+	"site": {
+		"credits": "Wegverläufe © OpenStreetMap-Mitwirkende, ODbL. Kartengrundlage: OpenFreeMap. Fotos von Wikimedia Commons, jeweils mit Urheber und Lizenz."
+	},
+	"region": {
+		"europe": "Europa",
+		"middle-east-caucasus": "Naher Osten und Kaukasus",
+		"asia": "Asien",
+		"africa": "Afrika",
+		"americas": "Amerika",
+		"oceania": "Ozeanien"
 	}
 }

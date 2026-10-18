@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.wicklowway.com/",
 	"sources": ["https://www.wicklowway.com/trail-description/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Wicklow Way.jpg"
+	},
 	"wikidata": "Q389539",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2740]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

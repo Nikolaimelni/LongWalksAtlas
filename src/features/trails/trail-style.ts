@@ -20,7 +20,22 @@ export const trailPalettes = {
 	},
 } as const satisfies Record<Scheme, TrailPalette>;
 
-export const basemapColors = {
-	light: { land: "#f6f1e6", water: "#bcd9e6", woods: "#d9e6cc" },
-	dark: { land: "#151b22", water: "#0e1d2a", woods: "#18241f" },
-} as const satisfies Record<Scheme, Record<"land" | "water" | "woods", string>>;
+// The page draws trail colours through CSS custom properties, set from the palettes
+// above in root.tsx. The prerendered HTML then already has the dark ones on a dark
+// device; reading the scheme in JS meant the light ones until hydration. MapLibre
+// cannot read CSS variables, so the map keeps using trailPalettes.
+export function trailColor(type: TrailType): string {
+	return `var(--trail-${type})`;
+}
+
+export function trailTint(type: TrailType, percent: number): string {
+	return `color-mix(in srgb, ${trailColor(type)} ${percent}%, transparent)`;
+}
+
+export function trailColorCss(): string {
+	const vars = (scheme: Scheme) =>
+		Object.entries(trailPalettes[scheme])
+			.map(([type, color]) => `--trail-${type}:${color}`)
+			.join(";");
+	return `:root{${vars("light")}}@media (prefers-color-scheme:dark){:root{${vars("dark")}}}`;
+}

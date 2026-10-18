@@ -20,11 +20,12 @@
 	"badges": ["coe-cultural-route"],
 	"officialUrl": "https://www.coe.int/web/cultural-routes/the-via-francigena",
 	"sources": ["https://www.coe.int/web/cultural-routes/the-via-francigena"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Cap Blanc-Nez.- Le mont d'hubert (9).jpg"
+	},
 	"wikidata": "Q542830",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [11860709]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

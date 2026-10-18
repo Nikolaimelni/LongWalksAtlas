@@ -2,8 +2,8 @@ import { bbox } from "@turf/bbox";
 import { length } from "@turf/length";
 import { simplify } from "@turf/simplify";
 import type { Feature, MultiLineString, Position } from "geojson";
+import { estimateDays } from "../src/features/trails/day-estimate.ts";
 import type {
-	DayRange,
 	TrailFile,
 	TrailSummary,
 } from "../src/features/trails/trail-schema.ts";
@@ -15,13 +15,6 @@ export type TrailFeature = Feature<
 
 const atlasTolerance = 0.003;
 const detailTolerance = 0.0003;
-
-export function estimateDays(km: number): DayRange {
-	return {
-		min: Math.max(1, Math.round(km / 25)),
-		max: Math.max(1, Math.round(km / 20)),
-	};
-}
 
 export function buildTrail(trail: TrailFile, lines: Position[][]) {
 	const feature: TrailFeature = {
@@ -46,6 +39,7 @@ export function buildTrail(trail: TrailFile, lines: Position[][]) {
 		lengthKm,
 		lengthSource: trail.lengthKm === null ? "osm" : "official",
 		days: trail.days ?? estimateDays(lengthKm),
+		daysSource: trail.days === null ? "estimate" : "official",
 		bbox: [round(west, 4), round(south, 4), round(east, 4), round(north, 4)],
 		crosses: [],
 		nearby: [],

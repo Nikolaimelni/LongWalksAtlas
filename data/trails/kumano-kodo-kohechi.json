@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.tb-kumano.jp/en/kumano-kodo/",
 	"sources": ["https://en.japantravel.com/view/the-kohechi-pilgrimage-route"],
-	"photo": null,
+	"photo": {
+		"commons": "File:果無集落 熊野古道 果無峠越 - panoramio.jpg"
+	},
 	"wikidata": "Q11463835",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [17131166]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

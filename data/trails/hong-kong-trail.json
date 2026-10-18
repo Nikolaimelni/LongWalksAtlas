@@ -22,11 +22,12 @@
 	"sources": [
 		"https://www.afcd.gov.hk/english/aboutus/abt_adv/files/WP-CMPB-10-2025(Eng).pdf"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:龙脊径 - Dragon's Back Trail - 2015.01 - panoramio.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2919237]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -1,7 +1,7 @@
 ---
 title: "Routeburn Track"
 summary: "A high alpine Great Walk of two to four days between Routeburn Shelter near Glenorchy and The Divide on the Milford road, crossing the Harris Saddle."
-status: machine
+status: reviewed
 ---
 
 The track links Mount Aspiring and Fiordland National Parks, with views of alpine lakes, beech forest and the Hollyford valley. It can be walked in either direction.

@@ -25,11 +25,12 @@
 	"sources": [
 		"https://visiteasterncape.co.za/iconic-eastern-cape-hiking-trails/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Hogsback, region menziesberg.JPG"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [10777063]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

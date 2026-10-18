@@ -25,11 +25,12 @@
 	"sources": [
 		"https://www.dolomiti.it/en/itineraries/alpine-paths-of-the-dolomites/alpine-path-of-the-dolomites-no-2"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Dolomites - Alta Via 2, Stage 02-11 Rifugio Genova to Rifugio Puez - panoramio (8).jpg"
+	},
 	"wikidata": "Q123376517",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [404914]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

@@ -23,11 +23,12 @@
 	"badges": [],
 	"officialUrl": "https://transcaucasiantrail.org/en/hike/upper-svaneti-georgia/",
 	"sources": ["https://transcaucasiantrail.org/en/hike/upper-svaneti-georgia/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Adishi Village (2050m), Samegrelo-Zemo Svaneti, Georgia.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [16118590]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

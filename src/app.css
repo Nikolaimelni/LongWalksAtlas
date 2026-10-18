@@ -8,6 +8,8 @@
 	--color-surface: #fffdf8;
 	--color-soft: #f0e9da;
 	--color-line: #e4dac6;
+	/* The edge of a text field or a select: 3:1 against the surface it sits on. */
+	--color-field: #8f806a;
 	--color-ink: #2b251d;
 	--color-muted: #776b5a;
 	--color-brand: #1d6b57;
@@ -22,6 +24,7 @@
 		--color-surface: #1a2028;
 		--color-soft: #232b35;
 		--color-line: #2e3743;
+		--color-field: #6b7684;
 		--color-ink: #ece6da;
 		--color-muted: #a69d8e;
 		--color-brand: #5cc2a5;
@@ -69,8 +72,20 @@
 html,
 body {
 	@apply bg-canvas font-sans text-ink;
+}
 
-	@media (prefers-color-scheme: dark) {
-		color-scheme: dark;
+/* MapLibre draws its attribution white on any map; on the dark basemap it should not glare. */
+@media (prefers-color-scheme: dark) {
+	.maplibregl-ctrl.maplibregl-ctrl-attrib {
+		background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+		color: var(--color-muted);
+
+		& a {
+			color: var(--color-muted);
+		}
+	}
+
+	.maplibregl-ctrl-attrib-button {
+		filter: invert(1);
 	}
 }

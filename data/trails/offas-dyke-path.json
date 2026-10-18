@@ -20,11 +20,12 @@
 	"badges": [],
 	"officialUrl": "https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/",
 	"sources": ["https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:On Offa's Dyke Path by Pen Twyn Hill Fort above Pandy - geograph.org.uk - 6006436.jpg"
+	},
 	"wikidata": "Q745914",
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9649]
-	},
-	"verifiedAt": "2026-10-18"
+	}
 }

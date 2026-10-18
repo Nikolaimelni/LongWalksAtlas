@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { countOf, trails } from "./trail-data";
 
 test("a country page lists its trails and is linked from them", async ({
 	page,
@@ -24,6 +25,10 @@ test("a country page lists its trails and is linked from them", async ({
 test("a country with a single trail has no page of its own", async ({
 	page,
 }) => {
-	const response = await page.goto("/en/country/pt/");
+	const lonely = trails
+		.flatMap((t) => t.countries)
+		.find((code) => countOf((t) => t.countries.includes(code)) === 1);
+	test.skip(!lonely, "every country has at least two trails");
+	const response = await page.goto(`/en/country/${lonely?.toLowerCase()}/`);
 	expect(response?.status()).toBe(404);
 });
