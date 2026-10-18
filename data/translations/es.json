@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Ruta de la Costa de Abel Tasman",
+		"summary": "Una ruta costera de entre tres y cinco días por playas doradas y zonas boscosas del Parque Nacional Abel Tasman, desde Mārahau hasta Wainui.",
+		"html": "<p>Los taxis acuáticos permiten a los senderistas acortar o alargar su recorrido y cruzar los estuarios durante la marea baja.</p>\n<p>El DOC indica que son 60 km de ida. Según este organismo, la ruta tiene mayor afluencia de visitantes de octubre a abril, aunque se puede recorrer durante todo el año.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Ruta Alpe-Adria",
+		"summary": "Una ruta de larga distancia que va desde las faldas del Grossglockner, en Austria, pasando por los Alpes Julianos de Eslovenia, hasta la costa adriática, cerca de Trieste.",
+		"html": "<p>La ruta Alpe-Adria-Trail atraviesa los Alpes desde los glaciares hasta el mar, pasando por los lagos de Carintia, el valle esloveno del Soča y la meseta del Karst antes de descender hasta Muggia. Se divide en 43 etapas para recorrer a pie de pueblo en pueblo.</p>\n<p>La página web oficial indica unos 750 km, mientras que la relación de OSM marca 690 km, por lo que las longitudes dependen de las variantes de la ruta.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "La clásica ruta de alta montaña por las Dolomitas, desde el Lago di Braies hasta Belluno, con refugios cada día y doce etapas.",
+		"html": "<p>La Alta Via 1 une el lago Pragser Wildsee con las Cinque Torri, el macizo de la Civetta y el valle del Piave, atravesando puertos de montaña y paredes rocosas que actualmente forman parte del patrimonio de la UNESCO. Su recorrido está diseñado en torno a los refugios de montaña, que permanecen abiertos en verano.</p>\n<p>El portal turístico de las Dolomitas indica unos 125 km, doce etapas y una temporada que va desde finales de junio hasta finales de septiembre.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "Una ruta más larga y exigente que la Alta Via 1, que va desde Brixen, en el Tirol del Sur, pasando por los Odle, la Marmolada y las Pale di San Martino, hasta Feltre.",
+		"html": "<p>La ruta discurre de norte a sur a través de las Dolomitas occidentales y centrales, pasando por refugios y algunos tramos similares a vías ferratas. Atraviesa el glaciar de la Marmolada, el pico más alto de la cordillera, y la meseta de las Pale di San Martino.</p>\n<p>El portal de las Dolomitas indica unos 180 km, trece etapas diarias y una temporada que va desde finales de junio hasta finales de septiembre.</p>"
+	},
+	"amatola-trail": {
+		"title": "Ruta de senderismo de Amatola",
+		"summary": "Una ruta de seis días de unos 100 km por las montañas de Amathole, en el Cabo Oriental, desde las afueras de Qonce hasta Hogsback.",
+		"html": "<p>La ruta de Amatola atraviesa bosques autóctonos, arroyos de montaña y crestas, y cuenta con refugios. La página web de turismo del Cabo Oriental la incluye entre las rutas de senderismo más emblemáticas de la provincia.</p>\n<p>La ruta discurre por las montañas de Amathole, el cinturón verde situado detrás de la costa del Cabo Oriental. En la página web de turismo de la provincia figura como una de las rutas de senderismo emblemáticas de la región.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Circuito del Annapurna",
+		"summary": "Una ruta clásica de senderismo por el Himalaya que rodea el macizo del Annapurna a través del paso de Thorong La, desde Besisahar hasta Nayapul.",
+		"html": "<p>El recorrido atraviesa distintas zonas climáticas, desde los valles subtropicales hasta el desierto de altura de Manang y el paso de Thorong La, a 5.400 m.</p>\n<p>La Oficina de Turismo de Nepal indica que la ruta de senderismo dura tres semanas o más y recomienda los meses de marzo a mayo y de septiembre a noviembre.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Sendero de los Apalaches",
+		"summary": "La ruta de senderismo de larga distancia más famosa de Estados Unidos recorre unas 2.200 millas a lo largo de las cordilleras de los Apalaches, desde el monte Springer, en Georgia, hasta el Katahdin, en Maine, atravesando 14 estados.",
+		"html": "<p>El Sendero de los Apalaches está gestionado por la Appalachian Trail Conservancy y el Servicio de Parques Nacionales. La mayoría de los excursionistas que lo recorren de punta a punta parten de Georgia hacia el norte entre finales de febrero y principios de abril, y tardan unos seis meses en completarlo.</p>\n<p>Según la ATC, en 2026 el sendero tenía una longitud de 2.197,9 millas, lo que equivale a unos 3.537 km; la longitud varía ligeramente a medida que se modifican los trazados.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Ruta Bibbulmun",
+		"summary": "Una ruta de larga distancia de unos 1.000 km que atraviesa los bosques y la costa del suroeste de Australia Occidental, entre Kalamunda, cerca de Perth, y Albany.",
+		"html": "<p>La ruta está señalizada con un triángulo amarillo en el que aparece una serpiente arcoíris y cuenta con refugios situados aproximadamente a un día de distancia entre sí. Los excursionistas pueden recorrerla en cualquier dirección.</p>\n<p>La Fundación Bibbulmun Track afirma que recorrer la ruta de principio a fin lleva entre seis y ocho semanas y recomienda hacerlo durante los meses más frescos, de abril a principios de noviembre.</p>"
+	},
+	"bruce-trail": {
+		"title": "Ruta Bruce",
+		"summary": "La ruta de senderismo señalizada más antigua y más larga de Canadá recorre la escarpa del Niágara a lo largo de más de 900 km, desde Niágara hasta Tobermory, en la península de Bruce.",
+		"html": "<p>La Bruce Trail Conservancy describe un sendero principal de más de 900 km, además de unos 400 km de senderos secundarios, que en conjunto suman 1.300 km. Atraviesa acantilados, cuevas, bosques y pequeños pueblos entre el lago Ontario y la bahía de Georgian.</p>\n<p>La asociación recomienda unos 30 días para recorrer el sendero principal de principio a fin.</p>"
+	},
+	"caminho-portugues": {
+		"title": "El Camino Portugués",
+		"summary": "La ruta de peregrinación que va desde Lisboa, pasando por Coimbra y Oporto, hasta la catedral de Santiago de Compostela.",
+		"html": "<p>Desde la Edad Media, los peregrinos han caminado hacia el norte desde Lisboa hasta Santiago. La mayoría parte de Oporto, a poco más de 240 km de Santiago; el recorrido completo desde Lisboa es de unos 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "Una ruta de peregrinación costera que parte de la localidad fronteriza vasca de Irún, recorre el golfo de Vizcaya y atraviesa Cantabria, Asturias y Galicia hasta llegar a Santiago.",
+		"html": "<p>El Camino del Norte recorre la costa cantábrica, sustituyendo las llanuras de la Meseta por playas, acantilados, pueblos pesqueros y subidas cortas y empinadas entre valles fluviales. Lo utilizaban los peregrinos que querían evitar el sur, bajo dominio musulmán, a principios de la Edad Media, y hoy en día es más tranquilo que el Camino Francés.</p>\n<p>La Oficina de Turismo de España indica que tiene unos 825 km (800 km en su sección de preguntas frecuentes) y unas 35 etapas. En Galicia, la web oficial de peregrinación describe el último tramo, desde Ribadeo hasta Santiago.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "Camino de Fisterra-Muxía",
+		"summary": "Un tramo gallego del Camino de Santiago que va desde la catedral hasta el cabo de Fisterra, en el Atlántico, y la localidad de Muxía, sede de un santuario.",
+		"html": "<p>Desde Santiago, el camino se dirige hacia el oeste, hacia la Costa da Morte, con Fisterra (el cabo que antaño se consideraba el fin del mundo conocido) y Muxía como los dos destinos finales. Algunos peregrinos caminan hasta Fisterra y luego continúan hasta Muxía, o al revés.</p>\n<p>La página web de peregrinación de Galicia indica que la variante Fisterra-Muxía tiene una longitud de 118,8 km y la variante Muxía-Fisterra, de 119,9 km.</p>"
+	},
+	"camino-frances": {
+		"title": "Camino Francés",
+		"summary": "El camino más popular hacia Santiago cruza los Pirineos por Roncesvalles y discurre hacia el oeste a través del norte de España, pasando por Pamplona, Burgos y León, hasta la tumba de Santiago.",
+		"html": "<p>Los peregrinos han recorrido esta ruta desde la Edad Media, y las localidades que la bordean aún conservan las huellas de aquel tránsito: hospitales, puentes, monasterios e iglesias construidos para los viajeros. Muchos caminantes parten de Saint-Jean-Pied-de-Port, dedican el primer día a cruzar los Pirineos y luego se adentran en la extensa meseta antes de llegar a las verdes colinas de Galicia.</p>\n<p>El Camino Francés forma parte de la Ruta de Santiago de Compostela, declarada Patrimonio de la Humanidad por la UNESCO. La Oficina de Turismo de España calcula que son unos 930 km y unas 32 etapas si se cuenta desde Somport o Roncesvalles, y recomienda recorrerlo en primavera y entre septiembre y octubre.</p>"
+	},
+	"camino-ingles": {
+		"title": "Camino Inglés",
+		"summary": "Una breve ruta de peregrinación gallega que va desde el puerto naval de Ferrol hasta Santiago, utilizada históricamente por los peregrinos que llegaban por mar desde el norte de Europa.",
+		"html": "<p>El Camino Inglés debe su nombre a los peregrinos procedentes de las Islas Británicas y del norte de Europa que desembarcaban en Ferrol y A Coruña. La página web oficial gallega dedicada a los peregrinos indica que la distancia es de 112,4 km desde Ferrol y de 72,8 km desde A Coruña. Los peregrinos deben recorrer al menos 100 km a pie para obtener el certificado, lo que hace que la ruta de Ferrol sea la opción más habitual.</p>\n<p>Al ser más corta que las demás rutas gallegas, es una opción práctica para quienes solo disponen de una semana o menos. Dado que la ruta que parte de Ferrol supera los 100 km, el recorrido sigue dando derecho a obtener el certificado de peregrino en Santiago.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Camino Primitivo",
+		"summary": "La ruta jacobea más antigua, que según se dice sigue el recorrido que realizó el rey Alfonso II en el siglo IX, va desde Oviedo hasta Santiago, atravesando los montes Cantábricos.",
+		"html": "<p>El Primitivo es una ruta corta y montañosa que atraviesa Asturias y Galicia, cruza el puerto de montaña por la ruta de Los Hospitales y se une al Camino Francés en Melide durante los últimos días. Es más tranquila que el Francés y presenta subidas empinadas.</p>\n<p>La Oficina de Turismo de España indica que tiene unos 325 km y unas 14 etapas; la página web de peregrinos de Galicia describe el tramo gallego por separado.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Ruta de Cabo a Cabo",
+		"summary": "Una ruta costera de unos 135 km a lo largo de acantilados y playas entre los faros del cabo Naturaliste y el cabo Leeuwin, en el suroeste de Australia Occidental.",
+		"html": "<p>La ruta discurre junto a cuevas de piedra caliza, puntos de surf, flores silvestres y miradores para avistar ballenas. Según Turismo de Australia Occidental, se tarda entre cinco y siete días en recorrerla; la temporada de flores silvestres es en primavera, y las ballenas se pueden avistar de septiembre a diciembre.</p>\n<p>La página web de turismo del estado recomienda reservar entre cinco y siete días y menciona las flores silvestres de primavera en los cabos. Las ballenas pasan por los cabos aproximadamente de septiembre a diciembre.</p>"
+	},
+	"carian-trail": {
+		"title": "Ruta de Carian",
+		"summary": "Una larga ruta a través de la antigua Caria, en el suroeste de Turquía, desde la costa, cerca de Marmaris, hasta las ruinas del interior, en los alrededores de Alinda.",
+		"html": "<p>La Ruta de Caria une las penínsulas de Bozburun y Datça, la bahía de Gökova y el interior de Caria, y discurre por ruinas antiguas, antiguas rutas de caravanas y senderos de mulas.</p>\n<p>La propia página web de la ruta indica unos 850 km repartidos en cuatro tramos principales; la asociación «Rutas Culturales» afirma que son 800 km.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "Ruta de Chilkoot",
+		"summary": "Una ruta histórica de la fiebre del oro que va desde Dyea, en Alaska, pasando por el paso de Chilkoot, hasta el lago Bennett, en Columbia Británica, con una longitud de 33 millas.",
+		"html": "<p>En 1897-98, los buscadores de oro transportaron toneladas de provisiones a través del puerto de montaña en su camino hacia el Klondike. Hoy en día, el sendero está gestionado conjuntamente por el Servicio de Parques Nacionales de EE. UU. y Parks Canada, y permanece abierto en verano.</p>\n<p>El NPS indica que tiene una longitud de 33 millas.</p>"
+	},
+	"colorado-trail": {
+		"title": "Ruta de Colorado",
+		"summary": "Una ruta de 567 millas que atraviesa las Montañas Rocosas de Colorado, desde las afueras de Denver, en Waterton Canyon, hasta Durango, discurriendo en su mayor parte por encima de los 3.000 m.",
+		"html": "<p>La ruta atraviesa ocho cadenas montañosas y seis áreas silvestres, con la opción de elegir entre las rutas Collegiate West y Collegiate East. Según la Colorado Trail Foundation, discurre desde Denver hasta Durango.</p>\n<p>Recorrerlo de punta a punta suele llevar entre cuatro y seis semanas.</p>"
+	},
+	"e1": {
+		"title": "E1: Ruta europea de larga distancia",
+		"summary": "La ruta europea de larga distancia norte-sur, desde Nordkapp, en Noruega, pasando por Escandinavia, Dinamarca, Alemania y Suiza, hasta Capo Passero, en Sicilia.",
+		"html": "<p>La ruta E1 une senderos nacionales y regionales bajo una misma señalización. Su extremo sur se amplió a través de Italia hasta Sicilia en la década de 2010, y todavía se están señalizando algunos tramos del tramo italiano.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Ruta de senderismo del Cañón del Río Fish",
+		"summary": "Una ruta de senderismo de 90 km por el cañón del río Fish, en el sur de Namibia, desde Hobas hasta Ai-Ais.",
+		"html": "<p>La ruta discurre por el fondo del cañón y atraviesa meandros del río, campos de arena y de cantos rodados.</p>\n<p>Según Namibia Wildlife Resorts, la ruta comienza en Hobas y tiene una longitud de 90 km.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Ruta de los Pescadores",
+		"summary": "Una ruta costera señalizada en el extremo suroeste de Portugal, desde Porto Covo, en el Alentejo, hasta Lagos, en el Algarve, a lo largo de acantilados, dunas y senderos de pescadores.",
+		"html": "<p>La ruta sigue antiguos senderos de pescadores por la arena y los acantilados del Parque Natural del Suroeste del Alentejo y de la Costa Vicentina. Se divide en 13 etapas diarias, por lo que se puede recorrer alojándose en hoteles o pensiones en lugar de acampar.</p>\n<p>La asociación Rota Vicentina recomienda recorrer la ruta entre septiembre y junio, evitando los meses más calurosos del verano.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "El tramo español de la travesía de los Pirineos, un largo sendero de montaña que va desde el Cabo de Higuer, en el Atlántico, hasta el Cap de Creus, en el Mediterráneo.",
+		"html": "<p>El GR-11 recorre las laderas meridionales de los Pirineos a través del País Vasco, Navarra, Aragón y Cataluña, cruzando la cordillera principal en varias ocasiones y manteniéndose cerca de la frontera francesa. La Federación Española de Montañismo lo divide en 46 etapas, además de un prólogo.</p>\n<p>La federación indica que su longitud supera los 800 km. Es habitual recorrerla por tramos; la travesía completa lleva bastante más de un mes debido a las continuas subidas entre valles.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "El GR20 es una exigente ruta de alta montaña que atraviesa Córcega desde Calenzana, en el noroeste, hasta Conca, en el sureste, a lo largo de la cordillera granítica de la isla.",
+		"html": "<p>La ruta discurre por la cresta central de Córcega, con tramos de escalada en roca, cadenas de seguridad en los tramos empinados y refugios gestionados por el parque regional. A menudo se la describe como una de las rutas largas más difíciles de Europa debido al terreno accidentado y a las condiciones meteorológicas variables, aunque las etapas sean cortas.</p>\n<p>La página web oficial de turismo de Córcega indica que son 180 km repartidos en 16 días de unas siete horas cada uno, con buenas condiciones desde junio hasta mediados de octubre. La ruta se divide en una mitad norte más difícil y una mitad sur algo más suave.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Great Ocean Walk",
+		"summary": "Una ruta costera en Victoria, desde Apollo Bay hasta los Doce Apóstoles, con más de 100 km de playas, acantilados y selva tropical, que suele recorrerse en ocho días.",
+		"html": "<p>La ruta Great Ocean Walk recorre la costa del Parque Nacional Great Otway y del Parque Nacional de Port Campbell, y normalmente se recorre de este a oeste. Las autoridades indican que tiene «más de 100 km» y que se tarda ocho días en completarla.</p>\n<p>Los excursionistas suelen alojarse en campings o albergues a lo largo del recorrido y terminan cerca de los Doce Apóstoles. La ruta se recorre con mayor frecuencia de este a oeste, tal y como sugiere la autoridad competente.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "La ruta del Muro de Adriano",
+		"summary": "Una ruta nacional que discurre a lo largo de la frontera romana entre Wallsend-on-Tyne y Bowness-on-Solway, pasando por fuertes, fortalezas de milla y los peñascos de Whin Sill.",
+		"html": "<p>La ruta atraviesa el norte de Inglaterra de costa a costa, en su mayor parte a lo largo o cerca del trazado de la muralla del siglo II. El tramo central, que discurre por los peñascos de Whin Sill, ofrece los restos mejor conservados, con fortalezas como Housesteads y Vindolanda a poca distancia del sendero.</p>\n<p>National Trails indica una longitud de 84 millas y recomienda entre seis y siete días para senderistas experimentados, siendo la mejor época de mayo a octubre. En su página también se menciona Carlisle en la descripción de la ruta, pero el sendero y la relación de OSM terminan en Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Ruta Heysen",
+		"summary": "La ruta «Long Walk» de Australia Meridional recorre unos 1.200 km desde el cabo Jervis, pasando por la península de Fleurieu, la región de Barossa y la cordillera de Flinders, hasta llegar al desfiladero de Parachilna.",
+		"html": "<p>La ruta Heysen Trail ha sido construida y es mantenida por la asociación «Friends of the Heysen Trail» y atraviesa tierras de cultivo, viñedos y la cordillera de Flinders. Permanece cerrada durante la temporada de riesgo de incendios.</p>\n<p>Según la asociación, el sendero tiene una longitud de 1.200 km y se recorre en unos 60 días.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Ruta de Hong Kong",
+		"summary": "Una ruta de 50 km que atraviesa la isla de Hong Kong, desde Victoria Peak hasta Big Wave Bay, inaugurada en 1985 y dividida en 8 tramos.",
+		"html": "<p>La Ruta de Hong Kong es una de las cuatro rutas de larga distancia gestionadas por el Departamento de Agricultura, Pesca y Conservación y atraviesa cinco parques naturales. Se divide en ocho tramos.</p>\n<p>Estos ocho tramos se pueden recorrer en una sola jornada larga o en paseos más cortos, y la ruta comienza en el mirador más conocido de la ciudad. Se inauguró en abril de 1985.</p>"
+	},
+	"inca-trail": {
+		"title": "Camino Inca a Machu Picchu",
+		"summary": "La clásica ruta de senderismo por el camino inca a través de los Andes hasta Machu Picchu, una caminata de cuatro días que termina en la Puerta del Sol y las ruinas.",
+		"html": "<p>El sendero discurre por caminos y escaleras incas a través del bosque nuboso, pasando por ruinas como Wiñay Wayna, hasta llegar a Machu Picchu. El acceso está limitado mediante permiso.</p>\n<p>La relación de OSM registra 38 km y un operador del Ministerio de Cultura de Perú.</p>"
+	},
+	"jesus-trail": {
+		"title": "El Camino de Jesús",
+		"summary": "Una ruta de peregrinación y senderismo de unos 65 km en Galilea, desde Nazaret hasta Cafarnaúm, a orillas del mar de Galilea.",
+		"html": "<p>La Ruta de Jesús recorre senderos relacionados con el ministerio de Jesús a través de Caná, los Cuernos de Hattin y el monte Arbel. Es una mezcla de peregrinación cristiana y paseo por la naturaleza, y suele completarse en tres o cuatro días.</p>\n<p>La página web de la ruta indica que tiene una longitud de 65 km.</p>"
+	},
+	"john-muir-trail": {
+		"title": "Ruta John Muir",
+		"summary": "Una ruta de alta montaña por Sierra Nevada de unas 211 millas, que va desde el valle de Yosemite hasta la cima del monte Whitney, pasando por puertos de montaña de más de 3.500 m.",
+		"html": "<p>La ruta John Muir Trail recorre la cresta de Sierra Nevada a través de los parques nacionales de Yosemite, Kings Canyon y Sequoia. El Servicio de Parques Nacionales indica que tiene una longitud de 211 millas y que es necesario disponer de permisos.</p>\n<p>La mayoría de los excursionistas necesitan entre dos y tres semanas y llevan provisiones para tramos largos sin posibilidad de reabastecimiento.</p>"
+	},
+	"jordan-trail": {
+		"title": "Ruta de Jordania",
+		"summary": "Una ruta de 675 km que va desde Umm Qais, en el norte de Jordania, pasando por Dana y Petra, hasta Aqaba, en el mar Rojo, y que suele recorrerse en unos 35 días.",
+		"html": "<p>La ruta Jordan Trail atraviesa Jordania desde las ruinas romanas de Umm Qais, pasando por las montañas de la Falla del Jordán, las tierras altas del Mar Muerto, Dana, Petra y Wadi Rum, hasta llegar al Mar Rojo. Conecta los pueblos de la zona con las comunidades beduinas.</p>\n<p>La asociación del Sendero de Jordania indica que tiene una longitud de 675 km y que se recorre en unos 35 días de marcha ininterrumpida.</p>"
+	},
+	"juliana-trail": {
+		"title": "Ruta de Juliana",
+		"summary": "Una ruta circular de larga distancia que recorre los Alpes Julianos en Eslovenia, compuesta por 16 etapas que bordean las principales cumbres y siguen el curso de los ríos Soča y Sava.",
+		"html": "<p>La ruta Juliana Trail conecta valles, puertos de montaña, bosques y pueblos de los alrededores del Parque Nacional de Triglav sin necesidad de ascender a ninguna cima. Está señalizada y se divide en 16 etapas de unos 17,5 km cada una.</p>\n<p>La página web de turismo del valle del Soča indica que el recorrido circular principal tiene una longitud de 270 km, con extensiones opcionales de 42 km y 60 km, y que la temporada se extiende desde finales de marzo hasta finales de octubre.</p>"
+	},
+	"kepler-track": {
+		"title": "Ruta Kepler",
+		"summary": "Una ruta circular de 60 km que comienza cerca de Te Anau, asciende por encima de la línea de arbustos a lo largo de la cresta de las montañas Kepler y regresa bordeando el lago Te Anau y el río Waiau.",
+		"html": "<p>La ruta Kepler Track es un circuito de tres a cuatro días con tres refugios, vistas a las montañas por encima del límite forestal y bosques de estilo fiordo.</p>\n<p>La página de comparación del Departamento de Conservación indica que tiene una longitud de 60 km y dura entre tres y cuatro días. La temporada de las Great Walks comienza a finales de octubre.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "Un recorrido circular por la península de Iveragh, en el condado de Kerry, que comienza y termina en Killarney, y atraviesa montañas, turberas y pueblos costeros como Cahersiveen y Sneem.",
+		"html": "<p>La ruta Kerry Way combina carreteras tranquilas, antiguos caminos y senderos de montaña entre la cordillera Macgillycuddy&#x27;s Reeks y la costa atlántica. Aproximadamente un tercio del recorrido discurre por carreteras locales.</p>\n<p>El registro nacional de rutas de Sport Ireland indica 232,1 km y nueve días; la ruta de OSM tiene una longitud de 214 km, por lo que las cifras exactas varían según la variante de la ruta de Kerry.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimanjaro - Ruta Machame",
+		"summary": "Una de las principales rutas para ascender al Kilimanjaro, que comienza en la Puerta de Machame y en la que se pernocta en campamentos de tiendas de campaña.",
+		"html": "<p>La ruta Machame es una de las rutas del Kilimanjaro y cuenta con campamentos de tiendas de campaña gestionados por operadores autorizados. La Agencia de Parques Nacionales de Tanzania señala a Machame como una de las principales entradas, con descenso por Mweka.</p>\n<p>Parques Nacionales de Tanzania señala que la ruta Marangu cuenta con refugios, mientras que las demás rutas, incluida la de Machame, cuentan con campamentos de tiendas de campaña. El descenso se realiza por la puerta de Mweka.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo - Kohechi",
+		"summary": "Una exigente ruta de peregrinación de montaña de unos 72 km entre el centro budista de Kōyasan y el santuario Kumano Hongu Taisha, en la península de Kii, en Japón.",
+		"html": "<p>El Kohechi atraviesa tres puertos de montaña a más de 1.000 m y une la montaña sagrada de Kōyasan con los santuarios de Kumano, lo que lo convierte en la ruta más empinada y tranquila del Kumano Kodo. En la página web de turismo se describe como un recorrido que pasa por pueblos apartados y antiguos senderos de piedra.</p>\n<p>La fuente utilizada aquí es un artículo turístico que indica una longitud de 72 km; no especifica la duración en días ni la temporada.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo - Nakahechi",
+		"summary": "La ruta principal de peregrinación del Kumano Kodo, en la península de Kii (Japón), que va desde Takijiri hasta el santuario Kumano Hongu Taisha, y que suele recorrerse a pie en un plazo de entre dos y cuatro días.",
+		"html": "<p>El Nakahechi era la ruta principal que seguían tanto los emperadores como el pueblo llano para dirigirse a los tres santuarios de Kumano, y discurre por pasos boscosos salpicados de pequeños santuarios de parada (oji). La ruta forma parte de los «Lugares sagrados y rutas de peregrinación de la cordillera de Kii», declarados Patrimonio de la Humanidad por la UNESCO.</p>\n<p>La página de la asociación de turismo de Tanabe que consultamos no indicaba la longitud ni la temporada; los 36 km proceden de la etiqueta de OSM.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "La famosa ruta sueca de cabaña en cabaña por el Ártico recorre unos 450 km desde Abisko, más allá del círculo polar ártico, hasta Hemavan, en el sur, atravesando las montañas y los valles de Laponia.",
+		"html": "<p>La ruta Kungsleden está gestionada por la Asociación Sueca de Turismo, que se encarga del mantenimiento de los refugios, los puentes y los traslados en barco. Su tramo más conocido es el del norte, desde Abisko, pasando por el puerto de Tjäktja, hasta Nikkaluokta, donde los excursionistas atraviesan la tundra abierta y los valles alpinos a los pies de las montañas más altas de Suecia.</p>\n<p>La página de la STF indica 450 km entre Abisko y Hemavan, mientras que la suma de las longitudes de sus tramos es mayor y OSM registra 440 km, por lo que la cifra exacta depende de cómo se contabilicen los desvíos y los atajos en barco.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Ruta de Larapinta",
+		"summary": "Una ruta por el desierto en la cordillera West MacDonnell, en el centro de Australia, desde la estación telegráfica de Alice Springs hasta la cima del monte Sonder, dividida en doce tramos.",
+		"html": "<p>La ruta Larapinta recorre las crestas de la cordillera West MacDonnell a través de desfiladeros y abrevaderos. Según la página web del Gobierno, tiene una longitud de más de 230 km y se divide en 12 tramos de uno a dos días cada uno.</p>\n<p>Otras fuentes indican que son 223 km; la ruta se suele recorrer en los meses más frescos.</p>"
+	},
+	"laugavegur": {
+		"title": "Ruta de Laugavegur",
+		"summary": "La ruta de senderismo más popular de Islandia atraviesa las tierras altas del sur en unos cuatro días, desde las aguas termales de riolita de Landmannalaugar hasta los verdes valles de Þórsmörk.",
+		"html": "<p>El sendero discurre junto a fumarolas, campos de obsidiana negra, campos nevados y ríos glaciales antes de terminar en un valle cubierto de matorrales de abedules entre tres glaciares. Las cabañas que hay a lo largo del camino están gestionadas por la Asociación Islandesa de Turismo, y la ruta solo es transitable en verano.</p>\n<p>La página web de la asociación indica una distancia de entre 54 y 56 km, dependiendo de la tabla de tramos, y una duración de cuatro días; el sendero está abierto desde aproximadamente el 25 de junio hasta el 15 de septiembre.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "Ruta de montaña del Líbano",
+		"summary": "Una ruta de 470 km a lo largo de las montañas del Líbano, desde Andaket, en el norte, hasta Marjayoun, en el sur, que atraviesa más de 75 pueblos y aldeas.",
+		"html": "<p>La Asociación del Sendero de la Montaña del Líbano afirma que el sendero discurre entre los 600 y los 2.000 m y está señalizado con marcas blancas y moradas. Atraviesa bosques de cedros, monasterios y pueblos, y cuenta con casas de huéspedes.</p>\n<p>Las casas de huéspedes locales y los proyectos comunitarios a lo largo del recorrido han sido uno de los principales objetivos de la ruta desde su creación. Los excursionistas siguen las marcas blancas y moradas a través de los pueblos de montaña de norte a sur.</p>"
+	},
+	"long-trail": {
+		"title": "Sendero largo",
+		"summary": "La ruta de senderismo de larga distancia más antigua de Estados Unidos recorre las Montañas Verdes a lo largo de 272 millas, desde la frontera con Massachusetts hasta la frontera con Canadá.",
+		"html": "<p>El Long Trail fue construido a principios del siglo XX por el Green Mountain Club y más tarde sirvió de inspiración para el Appalachian Trail, con el que comparte las primeras 100 millas.</p>\n<p>Según el club, el sendero recorre 272 millas a lo largo de la cordillera de Vermont y recorrerlo de principio a fin lleva unas semanas.</p>"
+	},
+	"lycian-way": {
+		"title": "Ruta de Licia",
+		"summary": "Una ruta de senderismo señalizada que discurre por la costa de la antigua Licia, en el sur de Turquía, desde Ölüdeniz, cerca de Fethiye, hasta Geyikbayırı, cerca de Antalya.",
+		"html": "<p>Trazado y señalizado en 1999, el sendero une antiguas rutas de mulas y calzadas romanas que discurren junto a las tumbas y los teatros de las ciudades licias, con largos tramos que discurren a gran altura sobre el mar.</p>"
+	},
+	"maclehose-trail": {
+		"title": "Ruta MacLehose",
+		"summary": "La ruta de senderismo más larga de Hong Kong, de unos 100 km repartidos en 10 tramos, que va desde East Dam, en Sai Kung, hasta Tuen Mun.",
+		"html": "<p>La ruta MacLehose atraviesa los Nuevos Territorios pasando por parques naturales, playas y montañas, y recorre la costa de Sai Kung, Sha Tin y Tai Mo Shan. Se trata de una ruta gestionada por el Gobierno y es el recorrido de la Oxfam Trailwalker.</p>\n<p>La Oficina de Turismo de Hong Kong indica que tiene unos 100 km repartidos en 10 tramos.</p>"
+	},
+	"milford-track": {
+		"title": "Ruta Milford Track",
+		"summary": "La ruta de senderismo más famosa de Nueva Zelanda atraviesa Fiordland a lo largo de cuatro días, desde Glade Wharf, en el lago Te Anau, pasando por el puerto de McKinnon, hasta Sandfly Point, en Milford Sound.",
+		"html": "<p>La ruta Milford Track recorre los valles de Clinton y Arthur, asciende por el paso de Mackinnon y desciende a lo largo del río Arthur, pasando por las cataratas de Sutherland, una de las más altas de Nueva Zelanda. Los excursionistas deben reservar los refugios con antelación y recorrer la ruta en un solo sentido.</p>\n<p>El Departamento de Conservación indica que la ruta tiene una longitud de 53,5 km, dura tres noches y cuatro días, y que la temporada de las Great Walks va del 1 de noviembre al 30 de abril.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "La antigua carretera entre Kioto y Edo (Tokio), de unos 534 km y con 69 pueblos de posta, se conserva en parte como ruta de senderismo en Magome y Tsumago.",
+		"html": "<p>El Nakasendo fue una de las cinco rutas del periodo Edo y conectaba Kioto y Edo a través de las montañas. Algunos tramos, como el camino de Magome a Tsumago en el valle de Kiso, se conservan en buen estado.</p>\n<p>La Organización Nacional de Turismo de Japón indica que tiene una longitud aproximada de 534 km y cuenta con 69 pueblos de posta.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Ruta de senderismo de Naukluft",
+		"summary": "Una ruta circular por las montañas de Naukluft, en Namibia, con una versión de 4 días y otra de 8 días.",
+		"html": "<p>La ruta de Naukluft es un recorrido circular por las montañas de Naukluft. Namibia Wildlife Resorts ofrece versiones de 4 y 8 días.</p>\n<p>Namibia Wildlife Resorts organiza la ruta desde su campamento de Naukluft. La versión más larga, de 8 días, atraviesa la meseta alta, mientras que la versión más corta está pensada para excursionistas con menos tiempo.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Ruta del Offa's Dyke",
+		"summary": "Una ruta nacional que discurre por la frontera entre Inglaterra y Gales y que sigue el trazado de un terraplén del siglo VIII, desde el estuario del Severn, cerca de Chepstow, hasta la costa norte, en Prestatyn.",
+		"html": "<p>La ruta recorre tramos del dique atribuido al rey Offa de Mercia y une el valle del Wye, las Montañas Negras, las colinas de Shropshire y la cordillera de Clwyd. Cruza la frontera en numerosas ocasiones, por lo que los excursionistas pasan de pueblos ingleses a galeses casi a diario.</p>\n<p>La página web de National Trail indica que la ruta tiene una longitud de 177 millas, señala que se puede recorrer durante todo el año, aunque se suele hacer entre abril y octubre, y recomienda dedicarle unas dos semanas o más. El punto de partida se encuentra en la localidad de Chepstow, cerca de los acantilados de Sedbury.</p>"
+	},
+	"otter-trail": {
+		"title": "Sendero de las nutrias",
+		"summary": "La primera y más famosa ruta de senderismo de estilo «slackpacking» de Sudáfrica recorre la costa de Tsitsikamma a lo largo de 45 km, entre Storms River Mouth y Nature's Valley, en cinco días.",
+		"html": "<p>El Otter Trail es una ruta costera del Parque Nacional Garden Route a la que solo se puede acceder con reserva previa, con cabañas en los puntos de pernoctación y cruces de ríos que dependen de las mareas.</p>\n<p>SANParks lo describe como un recorrido de 45 km a lo largo de cinco días y cuatro noches.</p>"
+	},
+	"overland-track": {
+		"title": "Ruta Overland Track",
+		"summary": "La clásica ruta alpina de seis días de Tasmania, desde Ronny Creek, en Cradle Mountain, hasta el lago St Clair.",
+		"html": "<p>La ruta Overland Track discurre junto a lagos y llanuras de hierba «button-grass» y termina en el lago de agua dulce más profundo de Australia; es necesario reservar y pagar una tarifa durante la temporada alta.</p>\n<p>El Servicio de Parques y Vida Silvestre indica que la ruta tiene una longitud de 65 km en un solo sentido y que se tarda seis días en recorrerla, y señala que el periodo de reserva va del 1 de octubre al 31 de mayo.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Ruta de la Cresta del Pacífico",
+		"summary": "Una ruta panorámica nacional que recorre las montañas de California, Oregón y Washington, desde la frontera con México, en Campo, hasta Manning Park, en Canadá, con una longitud aproximada de 4.265 km.",
+		"html": "<p>El PCT atraviesa la Sierra Nevada y la cordillera de las Cascadas, pasando por desiertos, puertos de montaña, nieve y paisajes volcánicos. La Asociación del Pacific Crest Trail indica que su longitud es de 2.650 millas.</p>\n<p>Las travesías completas suelen durar unos cinco meses, y las condiciones de nieve e incendios son factores determinantes a la hora de planificar el recorrido.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "Ruta «Cumbres de los Balcanes»",
+		"summary": "Un recorrido transfronterizo por las Montañas Malditas de Albania, Kosovo y Montenegro, que une pueblos con casas de huéspedes como Theth, Valbona, Plav y Peja.",
+		"html": "<p>La ruta se creó tras las guerras de la década de los noventa como un proyecto conjunto para fomentar la cooperación entre tres países. Discurre por senderos de pastores, atraviesa puertos de montaña de más de 2.000 m y incluye alojamientos en casas rurales, por lo que los excursionistas no necesitan tienda de campaña.</p>\n<p>La página web del proyecto indica un recorrido de 192 km en 10 etapas (de 10 a 12 días) y describe un circuito; el punto de partida suele ser Theth, Plav o Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Ruta de los Peninos",
+		"summary": "La primera ruta nacional de Inglaterra discurre por las colinas de los Peninos, desde Edale, en el Peak District, hasta Kirk Yetholm, justo al otro lado de la frontera con Escocia.",
+		"html": "<p>La ruta atraviesa páramos de arenisca, valles de piedra caliza y las altas colinas de los Yorkshire Dales y los Penninos del Norte, para luego seguir el Muro de Adriano antes de ascender a las colinas de Cheviot. Las turberas y las crestas expuestas hacen que la orientación resulte un reto cuando hace mal tiempo.</p>\n<p>Según National Trails, la ruta tiene una longitud de 268 millas y se puede recorrer en un plazo de entre seis y 22 días, siendo el periodo recomendado para realizarla desde abril hasta principios de octubre.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "Un sendero de cresta que atraviesa el Bosque de Turingia, desde Hörschel, a orillas del Werra, hasta Blankenstein, a orillas del Saale, y que se ha utilizado durante mucho tiempo como camino fronterizo.",
+		"html": "<p>El Rennsteig discurre por la cresta del Bosque de Turingia y las Montañas de Pizarra de Turingia, y es una de las rutas de senderismo más antiguas y conocidas de Alemania. Está señalizada con una «R» blanca sobre fondo verde.</p>\n<p>La organización regional de turismo indica una longitud de unos 170 km, con itinerarios de cuatro, seis u ocho etapas, y señala el inicio en Hörschel y el final en Blankenstein.</p>"
+	},
+	"routeburn-track": {
+		"title": "Ruta Routeburn",
+		"summary": "Una ruta de alta montaña de entre dos y cuatro días de duración que discurre entre Routeburn Shelter, cerca de Glenorchy, y The Divide, en la carretera de Milford, atravesando el Harris Saddle.",
+		"html": "<p>La ruta une los parques nacionales de Mount Aspiring y Fiordland, y ofrece vistas de lagos alpinos, bosques de hayas y el valle de Hollyford. Se puede recorrer en cualquier dirección.</p>\n<p>El Departamento de Conservación indica que tiene una longitud de 32 km y que se tarda entre dos y cuatro días en recorrerla, y señala que la temporada de la Great Walk va del 1 de noviembre al 30 de abril.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Circuito Central de Rwenzori",
+		"summary": "Un recorrido de siete días por las montañas de Rwenzori, en Uganda, con salida desde Mihunga, que incluye refugios y vistas a los glaciares.",
+		"html": "<p>El Circuito Central es una ruta de senderismo de alta montaña en el Parque Nacional de las Montañas de Rwenzori, gestionado por la Autoridad de Vida Silvestre de Uganda.</p>\n<p>La Autoridad de Vida Silvestre de Uganda ofrece este circuito como una ruta de senderismo de siete días con guías y refugios. En la página se indican enero, junio y julio como los mejores meses.</p>"
+	},
+	"shikoku-henro": {
+		"title": "Peregrinación de Shikoku",
+		"summary": "Una ruta de peregrinación circular por 88 templos alrededor de la isla de Shikoku, de unos 1.200 km, relacionada con el monje Kūkai.",
+		"html": "<p>El Shikoku Henro es la ruta de peregrinación circular más conocida de Japón, que se recorre en el sentido de las agujas del reloj partiendo del templo n.º 1, el Ryōzen-ji. La asociación de peregrinos calcula que tiene una longitud de unos 1.200 km. Muchos peregrinos la recorren por tramos.</p>\n<p>Dado que el recorrido recorre toda la costa y las montañas de la isla, muchos peregrinos lo realizan en varios viajes. La vestimenta blanca de peregrino y el bastón son elementos tradicionales, pero hoy en día no son obligatorios para quienes realizan el recorrido a pie.</p>"
+	},
+	"south-downs-way": {
+		"title": "Ruta de South Downs",
+		"summary": "Una ruta nacional que discurre por la cresta de creta de los South Downs, desde Winchester hasta los acantilados de Eastbourne.",
+		"html": "<p>La ruta discurre por la cresta de los South Downs, atravesando bosques y praderas calcáreas abiertas, y termina en Beachy Head y las Seven Sisters.</p>\n<p>National Trails indica que son 100 millas, de ocho a nueve días, y afirma que se puede recorrer en cualquier época del año; los meses de mayor afluencia son de mayo a septiembre.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "Ruta de la Costa Suroeste",
+		"summary": "La ruta nacional más larga de Gran Bretaña recorre la costa suroeste de Inglaterra desde Minehead, pasando por Cornualles, hasta Poole, con más de 1.000 km de acantilados, calas y puertos.",
+		"html": "<p>La ruta bordea la costa a su paso por Exmoor, el norte de Devon y Cornualles, rodea Land’s End y luego vuelve hacia el este a lo largo del Canal de la Mancha hasta Dorset. Presenta constantes subidas y bajadas cortas al cruzar estuarios y cabos, por lo que el avance es más lento de lo que sugiere la distancia.</p>\n<p>National Trails indica que son 630 millas y que la ruta se recorre en unos 30 días de marcha para un caminante rápido, o entre siete y ocho semanas a un ritmo pausado; se recomienda realizarla en primavera o a finales de verano.</p>"
+	},
+	"st-olavsleden": {
+		"title": "El Camino de San Olav",
+		"summary": "Una ruta de peregrinación que parte de Selånger, en la costa sueca del Báltico, atraviesa las montañas escandinavas y llega hasta la catedral de Nidaros, siguiendo el camino que se atribuye al rey Olav en el año 1030.",
+		"html": "<p>La ruta atraviesa Suecia y Noruega, pasando por bosques, lagos y montañas, con tierras de cultivo y pueblos a lo largo del camino. Cerca de Munkeby, en Noruega, se divide en una ruta exterior a lo largo del fiordo de Trondheim y otra interior a través de los bosques.</p>\n<p>El centro de peregrinación noruego indica que la ruta tiene una longitud de 580 km, con 29 etapas diarias (de 30 a 32 días, incluyendo días de descanso), y recomienda realizarla entre el 1 de junio y el 1 de septiembre.</p>"
+	},
+	"st-paul-trail": {
+		"title": "Ruta de San Pablo",
+		"summary": "Una ruta señalizada que va desde Perge, cerca de Antalya, hacia el norte, atravesando los montes Tauro, hasta Yalvaç, la antigua Antioquía de Pisidia.",
+		"html": "<p>La ruta sigue, en parte, el camino que se cree que tomó el apóstol Pablo en su primer viaje por Asia Menor, ascendiendo desde la costa mediterránea hasta los lagos del interior.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "La ruta nacional de Nueva Zelanda recorre unos 3.000 km desde el cabo Reinga, en el extremo norte, hasta Bluff, en el extremo sur.",
+		"html": "<p>La ruta atraviesa playas, bosques, paisajes volcánicos y cordilleras en ambas islas, y discurre por una combinación de senderos, carreteras y cruces de ríos y del mar.</p>\n<p>La fundación responsable de la ruta indica que su longitud total es de 3.000 km. Recorrerla de principio a fin lleva meses.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Circuito Norte de Tongariro",
+		"summary": "Una ruta circular por zonas volcánicas de tres o cuatro días de duración alrededor del monte Ngauruhoe y el monte Tongariro, en la Isla Norte de Nueva Zelanda.",
+		"html": "<p>El recorrido atraviesa la meseta volcánica de Tongariro, pasando por el Cráter Rojo, los Lagos Esmeralda y el Lago Azul.</p>\n<p>El DOC indica que el recorrido completo es de 43 km y que se tarda entre tres y cuatro días; en su página web sobre rutas se describe actualmente una versión más corta, de 35,5 km, debido a un cambio en el trazado.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Vuelta al Mont Blanc",
+		"summary": "Una ruta circular alrededor del macizo del Mont Blanc que atraviesa Francia, Italia y Suiza, y que tradicionalmente comienza y termina en Les Houches.",
+		"html": "<p>La ruta atraviesa una sucesión de puertos de montaña entre los valles de Chamonix, Courmayeur y Champex, y se pernocta en refugios de montaña y posadas de los pueblos a lo largo del camino.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Ruta Trans-Bután",
+		"summary": "La ruta nacional de peregrinación y comercio de Bután, restaurada, que recorre unos 403 km desde Haa, al oeste, hasta Trashigang, al este.",
+		"html": "<p>La Ruta Trans-Bután fue una ruta medieval de comercio y peregrinación. Se reabrió en 2022 para practicar senderismo y ciclismo. El itinerario completo que propone la organización tiene una duración de 36 días.</p>\n<p>La ruta reabierta está gestionada por una organización sin ánimo de lucro y cuenta con un itinerario fijo de 36 días de un extremo a otro. Se pueden recorrer tramos más cortos como excursiones independientes desde las principales localidades.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Ruta Transcaucásica: Alta Svaneti",
+		"summary": "Un tramo de alta montaña de 140 km de la Ruta Transcaucásica que atraviesa la región de Svaneti, en Georgia, desde Chuberi, en el valle de Nenskra, hasta Ushguli, uno de los pueblos más altos de Europa.",
+		"html": "<p>La ruta de senderismo por la Alta Svaneti atraviesa pueblos con torres defensivas de piedra, cruza puertos de montaña y pasa junto a glaciares del Gran Cáucaso. Está gestionada por la Asociación del Sendero Transcaucásico, una organización sin ánimo de lucro que está construyendo una ruta continua a lo largo del Cáucaso.</p>\n<p>La asociación estima una longitud de 140 km y una duración de entre 7 y 9 días.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Ruta de senderismo de Tsitsikamma",
+		"summary": "Una ruta de senderismo de montaña de seis días a través del bosque autóctono y el fynbos de Tsitsikamma, desde Nature's Valley hasta Storms River, con cabañas en cada parada para pasar la noche.",
+		"html": "<p>La ruta discurre entre gargantas fluviales y enormes árboles de madera amarilla, y también se puede recorrer en tramos más cortos. Se ofrece un servicio opcional de porteadores.</p>\n<p>La página web de turismo del Cabo Oriental indica una distancia de 62,3 km a lo largo de seis días.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Vía de la Plata",
+		"summary": "Una ruta de peregrinación de norte a sur que parte de Sevilla y atraviesa Extremadura y Castilla; es el Camino español que sigue el trazado de la antigua calzada romana Vía de la Plata.",
+		"html": "<p>La Vía de la Plata sigue el trazado de la calzada romana que unía Mérida con Astorga. Los peregrinos procedentes de Andalucía la recorren a pie durante aproximadamente un mes hasta llegar a Astorga, donde se une al Camino Francés, o bien continúan por Galicia por el ramal del Sanabrés.</p>\n<p>La Oficina de Turismo de España indica que la ruta tiene una longitud de entre 800 y 900 km, con unas 32 etapas a pie (49 para ciclistas), y recomienda un mínimo de siete días.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Vía de los Dioses",
+		"summary": "Una ruta que atraviesa los Apeninos, desde Bolonia hasta Florencia, y que discurre en parte por caminos romanos y medievales; suele recorrerse a pie en un plazo de entre cinco y siete días.",
+		"html": "<p>La Via degli Dei une ambas ciudades a través de crestas boscosas, antiguos caminos y pueblos de montaña, con pernoctaciones en casas de huéspedes. El nombre hace referencia a topónimos de montaña relacionados con dioses antiguos, como el Monte Adone y el Monte Venere.</p>\n<p>La página web de la asociación indica 130 km y una ruta de entre cinco y siete días; la etiqueta de OSM muestra 117 km.</p>"
+	},
+	"via-francigena": {
+		"title": "Vía Francígena",
+		"summary": "El largo camino de peregrinación entre Canterbury y Roma, que se prolongaba hacia el sur hasta Santa María di Leuca, en Apulia, sigue la ruta descrita por el arzobispo Sigerico hacia el año 990.",
+		"html": "<p>Sigerico viajó a Roma para recibir su palio y anotó las 79 paradas de su viaje de vuelta. Esa lista constituye el esqueleto histórico de la Vía Francígena, que atraviesa Inglaterra, Francia, Suiza e Italia y llega hasta los Alpes por el paso del Gran San Bernardo.</p>\n<p>El Consejo de Europa la certificó como Ruta Cultural en 1994. En 2019, la Asociación de la Vía Francígena amplió el recorrido desde Roma hacia el sur hasta Santa María di Leuca, donde los peregrinos italianos solían embarcarse tradicionalmente hacia Tierra Santa.</p>"
+	},
+	"via-podiensis": {
+		"title": "Vía Podiensis",
+		"summary": "El camino francés a Santiago más conocido comienza en Le Puy-en-Velay y atraviesa el Macizo Central, el Aubrac y el suroeste hasta llegar a las estribaciones de los Pirineos, en Saint-Jean-Pied-de-Port.",
+		"html": "<p>Le Puy fue uno de los cuatro puntos de partida clásicos en Francia que figuraban en la guía medieval de peregrinos, y su recorrido es una sucesión de iglesias románicas, pueblos situados en mesetas de granito y pastos de altura. La meseta de Aubrac y el valle del Lot, en los alrededores de Conques, son los lugares más destacados.</p>\n<p>La asociación francesa de peregrinos calcula que hay unos 755 km y se tarda 32 días en llegar a Saint-Jean-Pied-de-Port, y que se puede recorrer a pie de marzo a octubre. Siete tramos del Chemin du Puy forman parte del bien de la UNESCO «Rutas de Santiago de Compostela en Francia».</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "Ruta W de Torres del Paine",
+		"summary": "Una ruta de senderismo de cinco días por el Parque Nacional Torres del Paine, en la Patagonia, a lo largo de tres valles con forma de W: el glaciar Grey, el Valle de los Franceses y la base de las Torres.",
+		"html": "<p>La ruta W une las Torres, el Valle Francés y el glaciar Grey, con refugios y zonas de acampada en el parque.</p>\n<p>La Oficina de Turismo de Chile indica que son unos 70 km y cinco días, y señala que la primavera y el verano son la temporada ideal para realizar la ruta.</p>"
+	},
+	"west-coast-trail": {
+		"title": "Ruta de la Costa Oeste",
+		"summary": "Una ruta costera accidentada en la costa oeste de la isla de Vancouver, con 75 km de playas, escaleras y bosque pluvial entre la bahía de Pachena y el río Gordon.",
+		"html": "<p>La ruta fue en su origen un sendero de rescate para los supervivientes de naufragios y ahora es una exigente ruta de senderismo en la Reserva del Parque Nacional Pacific Rim. Los excursionistas deben reservar plaza y asistir a una sesión informativa, y el sendero solo está abierto en verano.</p>\n<p>Parks Canada indica que la ruta dura entre seis y ocho días, y que abre el 1 de mayo y cierra el 30 de septiembre.</p>"
+	},
+	"west-highland-way": {
+		"title": "West Highland Way",
+		"summary": "La ruta de senderismo de larga distancia más conocida de Escocia une las afueras de Glasgow con Fort William, pasando por Loch Lomond, Rannoch Moor y Glen Coe en su recorrido hacia las Highlands.",
+		"html": "<p>La ruta comienza en la ciudad dormitorio de Milngavie y, poco a poco, va dejando atrás los barrios residenciales para adentrarse en el bosque, para luego ascender a lo largo de la orilla oriental del lago Lomond. Al norte de Tyndrum, atraviesa las extensiones abiertas de turba y roca de Rannoch Moor antes de descender por el gran valle de Glen Coe.</p>\n<p>El último tramo discurre por la subida conocida como «Devil’s Staircase» y por antiguas carreteras militares, y termina en Fort William, a los pies del Ben Nevis. La mayoría de los excursionistas tardan entre seis y siete días; la página web oficial señala que mayo es el mes más popular y afirma que la ruta se puede recorrer durante todo el año, aunque los mosquitos son una molestia en verano.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "La ruta de larga distancia más antigua de la Selva Negra, que va desde Pforzheim a Basilea, siguiendo la cresta occidental de la cordillera.",
+		"html": "<p>El Westweg recorre la cresta de la parte norte y central de la Selva Negra, pasando por el Hornisgrinde, el Feldberg y el Belchen, y termina en la ciudad suiza de Basilea, en la frontera. Desde 1900, su mantenimiento corre a cargo del Club de la Selva Negra, que además lo señaliza con un rombo rojo.</p>\n<p>La oficina de turismo de la Selva Negra indica unos 285 km repartidos en 12 etapas en la ruta occidental y 13 en la variante oriental, que se bifurca en Titisee.</p>"
+	},
+	"wicklow-way": {
+		"title": "Ruta de Wicklow",
+		"summary": "La ruta señalizada más antigua de Irlanda atraviesa las montañas de Wicklow, desde las afueras de Dublín hasta el pueblo de Clonegal, en Carlow.",
+		"html": "<p>La ruta discurre por caminos forestales y senderos pantanosos a través de Glendalough, por las estribaciones de Lugnaquilla y por las tierras altas de Wicklow. La descripción de la ruta indica que se tarda siete días o más, dependiendo del ritmo.</p>\n<p>La página web de la ruta indica que hay 127 km entre Marlay Park y Clonegal.</p>"
+	},
+	"wilson-trail": {
+		"title": "Sendero Wilson",
+		"summary": "Una ruta de 78 km que atraviesa Hong Kong, desde Stanley, en la isla de Hong Kong, hasta Nam Chung, en los Nuevos Territorios, dividida en 10 tramos.",
+		"html": "<p>La ruta Wilson Trail discurre desde la costa sur de la isla de Hong Kong, pasando por Lion Rock y la zona de Tai Po, hasta el noreste de los Nuevos Territorios.</p>\n<p>La oficina de turismo indica que tiene una longitud de 78 km y se divide en 10 tramos.</p>"
+	}
+}

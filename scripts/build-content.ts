@@ -17,6 +17,7 @@ import {
 import { DataError } from "./data-error.ts";
 import { log } from "./log.ts";
 import { parseStoryHtml } from "./story-html.ts";
+import { readTranslations, type Translations } from "./translations.ts";
 
 const root = join(import.meta.dirname, "..");
 const trailsDir = join(root, "data/trails");
@@ -54,6 +55,10 @@ async function main() {
 		.sort();
 	const problems: string[] = [];
 	const parsed = new Map<string, Partial<Record<Lang, Parsed>>>();
+	const translations = new Map<Lang, Translations>();
+	for (const { code } of languages) {
+		translations.set(code, await readTranslations(code));
+	}
 
 	for (const slug of slugs) {
 		const dir = join(contentDir, slug);
@@ -72,6 +77,21 @@ async function main() {
 		}
 		if (!byLang[defaultLang])
 			problems.push(`${slug}: missing ${defaultLang}.md`);
+		for (const [lang, entries] of translations) {
+			const entry = entries[slug];
+			if (byLang[lang] || !entry) continue;
+			const story = parseStoryHtml(entry.html);
+			if (story.problems.length > 0) {
+				problems.push(
+					`translations/${lang}.json, ${slug}\n${story.problems.join("\n")}`,
+				);
+				continue;
+			}
+			byLang[lang] = {
+				meta: { title: entry.title, summary: entry.summary, status: "machine" },
+				html: story.html,
+			};
+		}
 		parsed.set(slug, byLang);
 	}
 

@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Abel Tasman Coast Track",
+		"summary": "Een drie- tot vijfdaagse kustwandeling langs gouden stranden en door de bush in het Abel Tasman National Park, van Mārahau naar Wainui.",
+		"html": "<p>Met watertaxi’s kunnen wandelaars hun tocht inkorten of verlengen en bij eb riviermondingen oversteken.</p>\n<p>Volgens het DOC is de afstand 60 km enkele reis. Het pad is volgens het DOC het drukst van oktober tot april en kan het hele jaar door worden bewandeld.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Alpe-Adria-route",
+		"summary": "Een langeafstandsroute vanaf de voet van de Grossglockner in Oostenrijk door de Julische Alpen in Slovenië naar de Adriatische kust bij Triëst.",
+		"html": "<p>De Alpe-Adria-Trail doorkruist de Alpen van de gletsjers tot aan de zee en voert langs de Karinthische meren, de Sloveense Soča-vallei en het Karst-plateau, voordat hij afdaalt naar Muggia. De route is opgedeeld in 43 etappes om van dorp naar dorp te wandelen.</p>\n<p>Op de officiële website wordt een lengte van ongeveer 750 km vermeld, terwijl de OSM-relatie 690 km aangeeft; de lengte hangt dus af van de routevarianten.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "De klassieke hooggebergteroute door de Dolomieten, van het Lago di Braies naar Belluno, met elke dag een berghut en twaalf etappes.",
+		"html": "<p>De Alta Via 1 verbindt de Pragser Wildsee met de Cinque Torri, het Civetta-massief en de Piave-vallei, en voert over hoge bergpassen en rotswanden die inmiddels op de UNESCO-werelderfgoedlijst staan. Het etappenschema is afgestemd op de berghutten, die in de zomer geopend zijn.</p>\n<p>Het toerismeportaal van de Dolomieten vermeldt een lengte van ongeveer 125 km, twaalf etappes en een seizoen dat loopt van eind juni tot eind september.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "Een langere en ruigere variant van de Alta Via 1, die loopt van Brixen in Zuid-Tirol via de Odle, de Marmolada en de Pale di San Martino naar Feltre.",
+		"html": "<p>De route loopt van noord naar zuid door de westelijke en centrale Dolomieten en maakt gebruik van berghutten en enkele via ferrata-achtige stukken. De route voert langs de gletsjer van de Marmolada, de hoogste top van het gebergte, en het plateau van de Pale di San Martino.</p>\n<p>Volgens het Dolomietenportaal is de route ongeveer 180 km lang, bestaat hij uit dertien dagetappes en loopt het seizoen van eind juni tot eind september.</p>"
+	},
+	"amatola-trail": {
+		"title": "Amatola-wandelroute",
+		"summary": "Een zesdaagse wandeltocht van ongeveer 100 km in het Amathole-gebergte in de Oost-Kaap, van de buitenwijken van Qonce naar Hogsback.",
+		"html": "<p>De Amatola Trail loopt door inheems bos, langs bergbeekjes en over bergkammen en maakt gebruik van berghutten. Op de toeristische website van de Oost-Kaap wordt deze route genoemd als een van de iconische wandelroutes van de provincie.</p>\n<p>De route loopt door het Amathole-gebergte, de groene gordel achter de kust van de Oost-Kaap. Op de provinciale toerismewebsite wordt de route genoemd als een van de iconische wandelroutes van de regio.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Annapurna-circuit",
+		"summary": "Een klassieke trektocht in de Himalaya rond het Annapurna-massief via de Thorong La-pas, van Besisahar naar Nayapul.",
+		"html": "<p>De tocht voert door verschillende klimaatzones, van subtropische valleien tot de hooggelegen woestijn van Manang en de Thorong La-pas op 5.400 m.</p>\n<p>Volgens de Nepal Tourism Board duurt de trektocht drie weken of langer en raadt de organisatie de maanden maart tot en met mei en september tot en met november aan.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Appalachian Trail",
+		"summary": "Het beroemdste langeafstandswandelpad van de Verenigde Staten strekt zich uit over ongeveer 2.200 mijl langs de bergkammen van de Appalachen, van Springer Mountain in Georgia tot Katahdin in Maine, en loopt door 14 staten.",
+		"html": "<p>De Appalachian Trail wordt beheerd door de Appalachian Trail Conservancy en de National Park Service. De meeste doorlopers vertrekken tussen eind februari en begin april vanuit Georgia in noordelijke richting en doen er ongeveer zes maanden over.</p>\n<p>Volgens de ATC was de route in 2026 2.197,9 mijl lang, wat neerkomt op ongeveer 3.537 km; de lengte varieert enigszins naarmate de route wordt aangepast.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Bibbulmun Track",
+		"summary": "Een langeafstandswandelroute van ongeveer 1.000 km door de bossen en langs de kust van het zuidwesten van West-Australië, tussen Kalamunda bij Perth en Albany.",
+		"html": "<p>Het pad is gemarkeerd met een gele driehoek waarop een regenboogslang is afgebeeld, en er staan hutten op ongeveer een dag afstand van elkaar. Wandelaars kunnen beide kanten op lopen.</p>\n<p>Volgens de Bibbulmun Track Foundation duurt een wandeling van het ene uiteinde naar het andere ongeveer zes tot acht weken en raadt de stichting de koelere maanden van april tot begin november aan.</p>"
+	},
+	"bruce-trail": {
+		"title": "Bruce Trail",
+		"summary": "Het oudste en langste gemarkeerde wandelpad van Canada volgt de Niagara-helling over een afstand van meer dan 900 km, van Niagara tot Tobermory op het schiereiland Bruce.",
+		"html": "<p>De Bruce Trail Conservancy beschrijft een hoofdroute van meer dan 900 km plus ongeveer 400 km aan zijpaden, die samen 1.300 km vormen. De route loopt langs kliffen, grotten, bossen en kleine plaatsjes tussen Lake Ontario en Georgian Bay.</p>\n<p>De organisatie raadt aan om ongeveer 30 dagen uit te trekken om het hoofdroute van begin tot eind te bewandelen.</p>"
+	},
+	"caminho-portugues": {
+		"title": "De Portugese Weg",
+		"summary": "De pelgrimsroute van Lissabon via Coimbra en Porto naar de kathedraal van Santiago de Compostela.",
+		"html": "<p>Al sinds de middeleeuwen trekken pelgrims te voet vanuit Lissabon naar het noorden, naar Santiago. De meesten beginnen in Porto, iets meer dan 240 km van Santiago; de volledige route vanuit Lissabon bedraagt ongeveer 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "Een pelgrimsroute langs de kust, vanuit de Baskische grensstad Irún langs de Golf van Biskaje en door Cantabrië, Asturië en Galicië naar Santiago.",
+		"html": "<p>De Noordelijke Route volgt de Cantabrische kust en verruilt de uitgestrekte vlaktes van de Meseta voor stranden, kliffen, vissersdorpjes en korte, steile beklimmingen tussen riviervalleien. In de vroege middeleeuwen werd deze route gebruikt door pelgrims die het door de moslims bezette zuiden wilden vermijden, en tegenwoordig is het er rustiger dan op de Camino Francés.</p>\n<p>Het Spaanse bureau voor toerisme geeft een lengte van ongeveer 825 km (800 km in de veelgestelde vragen) en ongeveer 35 etappes aan. In Galicië beschrijft de officiële pelgrimswebsite het laatste deel van Ribadeo naar Santiago.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "De route Fisterra-Muxía",
+		"summary": "Een Galicische uitloper van de Camino de Santiago, die loopt van de kathedraal naar de Atlantische kaap van Fisterra en het bedevaartsoord Muxía.",
+		"html": "<p>Vanuit Santiago loopt de route in westelijke richting naar de Costa da Morte, met Fisterra (de kaap die vroeger werd beschouwd als het einde van de bekende wereld) en Muxía als de twee eindbestemmingen. Sommige pelgrims lopen naar Fisterra en gaan vervolgens verder naar Muxía, of andersom.</p>\n<p>Op de Galicische pelgrimswebsite staat een afstand van 118,8 km vermeld voor de routevariant Fisterra-Muxía en 119,9 km voor de routevariant Muxía-Fisterra.</p>"
+	},
+	"camino-frances": {
+		"title": "Camino Francés",
+		"summary": "De populairste route naar Santiago steekt bij Roncesvalles de Pyreneeën over en loopt in westelijke richting door Noord-Spanje, via Pamplona, Burgos en León, naar het graf van Sint-Jakobus.",
+		"html": "<p>Al sinds de middeleeuwen volgen pelgrims deze route, en de plaatsen langs de route dragen nog steeds de sporen van dat verkeer: ziekenhuizen, bruggen, kloosters en kerken die voor reizigers zijn gebouwd. Veel wandelaars beginnen in Saint-Jean-Pied-de-Port, steken op de eerste dag de Pyreneeën over en komen vervolgens op het uitgestrekte plateau van de Meseta terecht, voordat ze de groene heuvels van Galicië bereiken.</p>\n<p>De Camino Francés maakt deel uit van de UNESCO-lijst voor de Route naar Santiago de Compostela. Het Spaanse bureau voor toerisme geeft een afstand van ongeveer 930 km en zo’n 32 etappes aan, gerekend vanaf Somport of Roncesvalles, en beveelt de lente en september-oktober aan.</p>"
+	},
+	"camino-ingles": {
+		"title": "Engelse route",
+		"summary": "Een korte Galicische pelgrimsroute van de marinehaven van Ferrol naar Santiago, die van oudsher werd gebruikt door pelgrims die over zee vanuit Noord-Europa kwamen.",
+		"html": "<p>De Engelse Route dankt zijn naam aan pelgrims uit de Britse Eilanden en Noord-Europa die in Ferrol en A Coruña aan land gingen. Volgens de officiële Galicische pelgrimswebsite bedraagt de afstand 112,4 km vanaf Ferrol en 72,8 km vanaf A Coruña. Pelgrims moeten ten minste 100 km te voet afleggen om het certificaat te ontvangen, waardoor de route vanuit Ferrol de gebruikelijke keuze is.</p>\n<p>Deze route is korter dan de andere Galicische routes en is daarom een praktische keuze voor mensen die slechts een week of minder de tijd hebben. Omdat de route vanuit Ferrol meer dan 100 km beslaat, kan de pelgrim in Santiago nog steeds het pelgrimscertificaat behalen.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Camino Primitivo",
+		"summary": "De oudste Jakobsroute, die naar verluidt het spoor volgt van koning Alfonso II in de negende eeuw, loopt van Oviedo over het Cantabrisch Gebergte naar Santiago.",
+		"html": "<p>De Primitivo is een korte, heuvelachtige route door Asturië en Galicië, die de bergpas van de Hospitales-route doorkruist en in Melide aansluit op de Camino Francés voor de laatste dagen. Deze route is rustiger dan de Francés en kent steile beklimmingen.</p>\n<p>Het Spaanse bureau voor toerisme geeft een lengte van ongeveer 325 km en ongeveer 14 etappes aan; de Galicische pelgrimswebsite beschrijft het Galicische deel apart.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Cape to Cape-route",
+		"summary": "Een kustwandeling van ongeveer 135 km langs kliffen en stranden tussen de vuurtorens van Cape Naturaliste en Cape Leeuwin in het zuidwesten van West-Australië.",
+		"html": "<p>De route loopt langs kalksteengrotten, surfspots, wilde bloemen en uitkijkpunten voor walvissen. Volgens Tourism Western Australia duurt de tocht vijf tot zeven dagen; het seizoen voor wilde bloemen is in de lente en walvissen zijn te zien van september tot december.</p>\n<p>De toeristische website van de staat raadt aan om vijf tot zeven dagen uit te trekken en vermeldt de lentebloemen op de landtongen. Walvissen trekken van ongeveer september tot december langs de kapen.</p>"
+	},
+	"carian-trail": {
+		"title": "Carian-route",
+		"summary": "Een lange wandelroute door het oude Carië in het zuidwesten van Turkije, van de kust bij Marmaris tot de ruïnes in het binnenland rond Alinda.",
+		"html": "<p>De Carian Trail verbindt de schiereilanden Bozburun en Datça, de Golf van Gökova en het binnenland van Caria, en loopt langs oude ruïnes, voormalige karavaanwegen en muilezelpaden.</p>\n<p>Op de eigen website van de route wordt een lengte van ongeveer 850 km in vier hoofdsecties vermeld; de vereniging Culture Routes geeft een lengte van 800 km aan.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "Chilkoot-route",
+		"summary": "Een historische goudkoortsroute van Dyea, Alaska, over de Chilkoot Pass naar Lake Bennett in British Columbia, met een lengte van 33 mijl.",
+		"html": "<p>In 1897-98 droegen goudzoekers tonnen aan voorraden over de pas op weg naar de Klondike. Tegenwoordig wordt het pad gezamenlijk beheerd door de Amerikaanse National Park Service en Parks Canada en is het in de zomer open.</p>\n<p>Volgens de NPS is het 33 mijl lang.</p>"
+	},
+	"colorado-trail": {
+		"title": "Colorado Trail",
+		"summary": "Een route van 567 mijl door de Colorado Rockies, van de rand van Denver bij Waterton Canyon tot Durango, grotendeels boven de 3.000 m.",
+		"html": "<p>De route doorkruist acht bergketens en zes wildernisgebieden, met een optionele route via Collegiate West en East. Volgens de Colorado Trail Foundation loopt de route van Denver naar Durango.</p>\n<p>Een doorwandeling duurt doorgaans vier tot zes weken.</p>"
+	},
+	"e1": {
+		"title": "E1 Europese langeafstandsroute",
+		"summary": "De noord-zuid-route door Europa, van de Noordkaap in Noorwegen via Scandinavië, Denemarken, Duitsland en Zwitserland naar Capo Passero op Sicilië.",
+		"html": "<p>De E1 verbindt nationale en regionale wandelroutes onder één routeaanduiding. Het zuidelijke uiteinde werd in de jaren 2010 door Italië heen tot aan Sicilië verlengd, en delen van het Italiaanse traject worden nog steeds van bewegwijzering voorzien.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Wandelroute door de Fish River Canyon",
+		"summary": "Een wandeling van 90 km door de Fish River Canyon in het zuiden van Namibië, van Hobas naar Ai-Ais.",
+		"html": "<p>De route loopt langs de bodem van de kloof en voert langs rivierbochten, zand- en rotsblokkenvelden.</p>\n<p>Volgens Namibia Wildlife Resorts begint het pad in Hobas en is het 90 km lang.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Vissersroute",
+		"summary": "Een bewegwijzerd kustpad op het zuidwestelijke puntje van Portugal, van Porto Covo in de Alentejo naar Lagos in de Algarve, langs kliffen, duinen en visserspaadjes.",
+		"html": "<p>De route volgt oude visserspaden over zand en kliffen in het Natuurpark van het Zuidwestelijke Alentejo en de Vicentijnse Kust. De route is verdeeld in 13 dagetappes, waardoor je deze kunt afleggen met overnachtingen in hotels of pensions in plaats van op campings.</p>\n<p>Volgens de vereniging Rota Vicentina kun je de route het beste tussen september en juni lopen, zodat je de heetste zomermaanden vermijdt.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "De Spaanse kant van de Pyreneeën-travers, een lang bergpad van Cabo de Higuer aan de Atlantische Oceaan tot Cap de Creus aan de Middellandse Zee.",
+		"html": "<p>De GR11 volgt de zuidelijke hellingen van de Pyreneeën door Baskenland, Navarra, Aragon en Catalonië, waarbij hij de hoofdketen meerdere keren doorkruist en dicht bij de Franse grens blijft. De route is door de Spaanse bergbeklimmersfederatie opgedeeld in 46 etappes, plus een proloog.</p>\n<p>De federatie beschrijft de route als langer dan 800 km. Meestal wordt de route in etappes gelopen; een volledige tocht duurt ruim een maand vanwege de aanhoudende beklimmingen tussen de valleien.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "De GR20 is een veeleisende bergwandelroute die Corsica doorkruist van Calenzana in het noordwesten naar Conca in het zuidoosten, langs de granieten ruggengraat van het eiland.",
+		"html": "<p>De route volgt de centrale bergkam van Corsica, met rotsklimstukken, kettingen op steile stukken en schuilplaatsen die door het regionale park worden beheerd. Vanwege het ruige terrein en het wisselvallige weer wordt de route vaak beschreven als een van de zwaarste langeafstandswandelingen van Europa, ook al zijn de etappes kort.</p>\n<p>Volgens de officiële toeristische website van Corsica is de tocht 180 km lang, verdeeld over 16 dagen van elk ongeveer zeven uur, met goede omstandigheden van juni tot half oktober. De route is opgesplitst in een zwaardere noordelijke helft en een iets gemakkelijker zuidelijk deel.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Great Ocean Walk",
+		"summary": "Een kustwandeling in Victoria, van Apollo Bay naar de Twelve Apostles, over meer dan 100 km aan stranden, kliffen en regenwoud, die doorgaans in acht dagen wordt afgelegd.",
+		"html": "<p>De Great Ocean Walk volgt de kustlijn van het Great Otway National Park en het Port Campbell National Park en wordt doorgaans van oost naar west gelopen. De beheerder geeft een afstand van ‘meer dan 100 km’ en een duur van acht dagen aan.</p>\n<p>Wandelaars overnachten meestal op campings of in lodges langs de route en eindigen in de buurt van de Twelve Apostles. De route wordt meestal van oost naar west gelopen, zoals de beheerder aanbeveelt.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "Het Hadrianusmuurpad",
+		"summary": "Een nationaal wandelpad langs de Romeinse grens tussen Wallsend on the Tyne en Bowness-on-Solway, langs forten, mijlposten en de rotsen van de Whin Sill.",
+		"html": "<p>De route doorkruist Noord-Engeland van kust tot kust, grotendeels langs of vlakbij het tracé van de muur uit de tweede eeuw. Het centrale deel over de rotsen van Whin Sill biedt de best bewaarde overblijfselen, met forten zoals Housesteads en Vindolanda op korte afstand van het pad.</p>\n<p>National Trails geeft een afstand van 84 mijl aan en adviseert ervaren wandelaars zes tot zeven dagen uit te trekken, waarbij mei tot oktober als het beste seizoen wordt genoemd. Op de pagina wordt in de routebeschrijving ook Carlisle genoemd, maar het pad en de OSM-relatie eindigen bij Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Heysen Trail",
+		"summary": "De ‘Long Walk’ in Zuid-Australië strekt zich uit over ongeveer 1.200 km, van Cape Jervis via het schiereiland Fleurieu, de Barossa en de Flinders Ranges tot aan de Parachilna Gorge.",
+		"html": "<p>De Heysen Trail wordt aangelegd en onderhouden door de Friends of the Heysen Trail en loopt door landbouwgebied, wijngaarden en de Flinders Ranges. Tijdens het brandgevaarseizoen is het pad gesloten.</p>\n<p>Volgens de vereniging is het pad 1.200 km lang en duurt het ongeveer 60 dagen om het te bewandelen.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Hong Kong Trail",
+		"summary": "Een wandelroute van 50 km over Hong Kong Island, van Victoria Peak naar Big Wave Bay, die in 1985 werd geopend en uit 8 etappes bestaat.",
+		"html": "<p>De Hong Kong Trail is een van de vier langeafstandswandelroutes die worden beheerd door het Departement Landbouw, Visserij en Natuurbehoud en loopt door vijf natuurparken. De route is opgedeeld in 8 etappes.</p>\n<p>De acht etappes kunnen worden gecombineerd tot één lange dagwandeling of tot kortere wandelingen, en de route begint bij het bekendste uitkijkpunt van de stad. De route werd in april 1985 geopend.</p>"
+	},
+	"inca-trail": {
+		"title": "De Inca-route naar Machu Picchu",
+		"summary": "De klassieke Inca-trektocht over de Andes naar Machu Picchu, een vierdaagse wandeling die eindigt bij de Zonnepoort en de ruïnes.",
+		"html": "<p>Het pad volgt Inca-paden en trappen door het nevelwoud, langs ruïnes zoals Wiñay Wayna, naar Machu Picchu. Toegang is beperkt en alleen mogelijk met een vergunning.</p>\n<p>De OSM-relatie vermeldt een lengte van 38 km en een beheerder bij het Peruaanse Ministerie van Cultuur.</p>"
+	},
+	"jesus-trail": {
+		"title": "Jezusroute",
+		"summary": "Een pelgrims- en wandelroute van ongeveer 65 km in Galilea, van Nazareth naar Kapernaüm aan het Meer van Galilea.",
+		"html": "<p>De Jesus Trail volgt routes die verband houden met het werk van Jezus, via Kana, de Hoorns van Hattin en de berg Arbel. Het is een combinatie van een christelijke pelgrimstocht en een natuurwandeling, en wordt doorgaans in drie tot vier dagen afgelegd.</p>\n<p>Op de website van de route wordt een afstand van 65 km vermeld.</p>"
+	},
+	"john-muir-trail": {
+		"title": "John Muir Trail",
+		"summary": "Een hooggelegen wandelroute in de Sierra Nevada van ongeveer 211 mijl, die vanuit Yosemite Valley via bergpassen van meer dan 3.500 m naar de top van Mount Whitney loopt.",
+		"html": "<p>De John Muir Trail volgt de bergkam van de Sierra Nevada door de nationale parken Yosemite, Kings Canyon en Sequoia. De National Park Service geeft aan dat de route 211 mijl lang is en dat er vergunningen nodig zijn.</p>\n<p>De meeste wandelaars doen er twee tot drie weken over en nemen proviand mee voor lange stukken zonder bevoorradingsmogelijkheden.</p>"
+	},
+	"jordan-trail": {
+		"title": "Jordan Trail",
+		"summary": "Een route van 675 km van Umm Qais in het noorden van Jordanië via Dana en Petra naar Aqaba aan de Rode Zee, die doorgaans in ongeveer 35 dagen wordt afgelegd.",
+		"html": "<p>De Jordan Trail doorkruist Jordanië vanaf de Romeinse ruïnes bij Umm Qais, over het Jordaan-Riftgebergte, de hoogvlakten van de Dode Zee, Dana, Petra en Wadi Rum tot aan de Rode Zee. De route verbindt lokale dorpen met bedoeïenengemeenschappen.</p>\n<p>Volgens de vereniging Jordan Trail is het een tocht van 675 km die ongeveer 35 dagen ononderbroken wandelen in beslag neemt.</p>"
+	},
+	"juliana-trail": {
+		"title": "Juliana-route",
+		"summary": "Een rondwandelroute over lange afstand rond de Julische Alpen in Slovenië, bestaande uit 16 etappes die langs de belangrijkste bergtoppen lopen en de rivieren Soča en Sava volgen.",
+		"html": "<p>De Juliana Trail verbindt valleien, bergpassen, bossen en dorpen rondom het Nationaal Park Triglav zonder dat er toppen beklommen hoeven te worden. De route is bewegwijzerd en verdeeld in 16 etappes van elk ongeveer 17,5 km.</p>\n<p>Volgens de toeristische website van de Soča-vallei is de hoofdroute 270 km lang, met optionele uitbreidingen van 42 km en 60 km, en is het seizoen van eind maart tot eind oktober.</p>"
+	},
+	"kepler-track": {
+		"title": "Kepler Track",
+		"summary": "Een rondwandeling van 60 km die begint in de buurt van Te Anau, langs de bergkam van het Kepler-gebergte boven de bosgrens uitklimt en terugloopt langs het Te Anau-meer en de Waiau-rivier.",
+		"html": "<p>De Kepler Track is een rondwandeling van drie tot vier dagen met drie berghutten, uitzicht op de bergen boven de boomgrens en bossen die doen denken aan fjorden.</p>\n<p>Op de vergelijkingspagina van het Department of Conservation staat een afstand van 60 km en een duur van drie tot vier dagen vermeld. Het seizoen voor de Great Walks begint eind oktober.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "Een rondrit rond het schiereiland Iveragh in County Kerry, die begint en eindigt in Killarney, door bergen, veengebieden en kustdorpjes zoals Cahersiveen en Sneem.",
+		"html": "<p>De Kerry Way voert over rustige wegen, oude paden en bergpaden tussen de Macgillycuddy’s Reeks en de Atlantische kust. Ongeveer een derde van de route loopt over lokale wegen.</p>\n<p>Het nationale wandelpadregister van Sport Ireland vermeldt 232,1 km en negen dagen; de OSM-relatie is getagd als 214 km, dus de exacte cijfers variëren afhankelijk van de gekozen routevariant in Kerry.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimanjaro – Machame-route",
+		"summary": "Een van de belangrijkste routes naar de top van de Kilimanjaro, die begint bij de Machame Gate en waarbij gebruik wordt gemaakt van tentenkampen.",
+		"html": "<p>De Machame-route is een van de routes op de Kilimanjaro en maakt gebruik van tentenkampen die worden beheerd door erkende exploitanten. Tanzania National Parks noemt Machame als een van de belangrijkste toegangspoorten, met afdaling via Mweka.</p>\n<p>Tanzania National Parks merkt op dat op de Marangu-route hutten worden gebruikt, terwijl op de andere routes, waaronder de Machame-route, tentenkampen worden gebruikt. De afdaling vindt plaats via de Mweka-poort.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo - Kohechi",
+		"summary": "Een zwaar bergpad van ongeveer 72 km tussen het boeddhistische centrum Kōyasan en het Kumano Hongu Taisha-heiligdom op het Kii-schiereiland in Japan.",
+		"html": "<p>De Kohechi-route doorkruist drie bergpassen boven de 1.000 m en verbindt de heilige berg Kōyasan met de Kumano-heiligdommen, waardoor het de steilste en rustigste route van de Kumano Kodo is. Op de toeristische website wordt beschreven dat de route langs afgelegen dorpjes en oude stenen paden loopt.</p>\n<p>De hier gebruikte bron is een toeristisch artikel waarin een afstand van 72 km wordt genoemd; er wordt geen melding gemaakt van het aantal dagen of het seizoen.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo - Nakahechi",
+		"summary": "De belangrijkste pelgrimsroute van de Kumano Kodo op het Japanse schiereiland Kii, van Takijiri naar het Kumano Hongu Taisha-heiligdom, wordt doorgaans in twee tot vier dagen afgelegd.",
+		"html": "<p>De Nakahechi was de hoofdweg voor keizers en gewone burgers die op weg waren naar de drie Kumano-heiligdommen en loopt over beboste bergpassen met kleine tussenliggende heiligdommen (oji). De route maakt deel uit van de door UNESCO erkende ‘Heilige plaatsen en pelgrimsroutes in het Kii-gebergte’.</p>\n<p>Op de pagina van de toeristenvereniging van Tanabe die we hebben geopend, werden geen gegevens over de lengte of het seizoen vermeld; de 36 km is afkomstig van de OSM-tag.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "De beroemde Zweedse tocht van hut naar hut in het Noordpoolgebied strekt zich uit over ongeveer 450 km, van Abisko boven de poolcirkel tot Hemavan in het zuiden, door de bergen en valleien van Lapland.",
+		"html": "<p>Kungsleden wordt beheerd door de Zweedse Toeristenvereniging, die hutten, bruggen en bootverbindingen onderhoudt. Het bekendste deel is het noordelijke traject, van Abisko via de Tjäktja-pas naar Nikkaluokta, waar wandelaars door open toendra en alpiene valleien onder de hoogste bergen van Zweden trekken.</p>\n<p>Op de STF-pagina wordt een afstand van 450 km tussen Abisko en Hemavan vermeld, terwijl de som van de afstandslengtes van de afzonderlijke etappes hoger is en OSM 440 km aangeeft; het exacte cijfer hangt dus af van hoe omwegen en kortere routes per boot worden meegeteld.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Larapinta-route",
+		"summary": "Een woestijnroute in de West MacDonnell Ranges in Centraal-Australië, van het telegraafstation van Alice Springs naar de top van Mount Sonder, verdeeld over twaalf etappes.",
+		"html": "<p>De Larapinta volgt de bergkammen van de West MacDonnell Ranges door kloven en waterpoelen. Op de website van de overheid staat dat de route meer dan 230 km lang is en verdeeld is in 12 etappes van elk één tot twee dagen.</p>\n<p>Andere bronnen noemen 223 km; de route wordt meestal in de koelere maanden gelopen.</p>"
+	},
+	"laugavegur": {
+		"title": "Laugavegur-route",
+		"summary": "De populairste trektocht van IJsland voert in ongeveer vier dagen door de zuidelijke hooglanden, van de ryoliet-warmwaterbronnen van Landmannalaugar naar de groene valleien van Þórsmörk.",
+		"html": "<p>Het pad loopt langs dampende openingen, zwarte obsidiaanvelden, sneeuwvelden en gletsjerrivieren, voordat het uitkomt in een met berkenbegroeiing begroeide vallei tussen drie gletsjers. De hutten langs de route worden beheerd door de IJslandse Toeristenvereniging, en het pad is alleen in de zomer begaanbaar.</p>\n<p>Op de website van de vereniging staat een afstand van 54 tot 56 km, afhankelijk van de etappetabel, en een duur van vier dagen; het pad is geopend van ongeveer 25 juni tot 15 september.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "De Libanon-bergwandelroute",
+		"summary": "Een route van 470 km door de bergen van Libanon, van Andaket in het noorden tot Marjayoun in het zuiden, langs meer dan 75 steden en dorpen.",
+		"html": "<p>Volgens de Lebanon Mountain Trail Association loopt het pad op een hoogte tussen de 600 en 2.000 meter en is het gemarkeerd met witte en paarse markeringen. Het voert langs cederbossen, kloosters en dorpen en maakt gebruik van gastenverblijven.</p>\n<p>Lokale pensions en gemeenschapsprojecten langs de route vormen al sinds de aanleg van de route een belangrijk doel ervan. Wandelaars volgen witte en paarse markeringen door bergdorpen van noord naar zuid.</p>"
+	},
+	"long-trail": {
+		"title": "Lange route",
+		"summary": "De oudste langeafstandswandelroute van Amerika loopt 272 mijl langs de Green Mountains, van de grens met Massachusetts tot aan de Canadese grens.",
+		"html": "<p>De Long Trail werd in het begin van de twintigste eeuw aangelegd door de Green Mountain Club en diende later als inspiratiebron voor de Appalachian Trail, waarmee hij de eerste 100 mijl gemeen heeft.</p>\n<p>Volgens de club loopt het pad 272 mijl over de bergkam van Vermont en duurt een doorlopende tocht enkele weken.</p>"
+	},
+	"lycian-way": {
+		"title": "De Lycische Route",
+		"summary": "Een gemarkeerd wandelpad langs de kust van het oude Lycië in Zuid-Turkije, van Ölüdeniz bij Fethiye tot Geyikbayırı bij Antalya.",
+		"html": "<p>Het pad, dat in 1999 is aangelegd en gemarkeerd, verbindt oude muilezelpaden en Romeinse wegen langs de graven en theaters van Lycische steden, met lange stukken hoog boven de zee.</p>"
+	},
+	"maclehose-trail": {
+		"title": "MacLehose-route",
+		"summary": "De langste wandelroute van Hongkong, ongeveer 100 km verdeeld over 10 etappes, van East Dam in Sai Kung tot Tuen Mun.",
+		"html": "<p>De MacLehose Trail doorkruist de New Territories via natuurparken, stranden en bergen, langs de kust van Sai Kung, Sha Tin en Tai Mo Shan. Het is een door de overheid beheerd wandelpad en tevens de route van de Oxfam Trailwalker.</p>\n<p>Volgens de Hong Kong Tourism Board is het pad ongeveer 100 km lang en verdeeld in 10 etappes.</p>"
+	},
+	"milford-track": {
+		"title": "Milford Track",
+		"summary": "De beroemdste Great Walk van Nieuw-Zeeland voert in vier dagen door Fiordland, van Glade Wharf aan het Te Anau-meer, over de McKinnon-pas, naar Sandfly Point aan de Milford Sound.",
+		"html": "<p>De Milford Track volgt de Clinton- en Arthur-valleien, klimt over de Mackinnon Pass en daalt langs de Arthur River af, langs de Sutherland Falls, een van de hoogste watervallen van Nieuw-Zeeland. Wandelaars moeten hun hutten van tevoren reserveren en mogen de route slechts in één richting afleggen.</p>\n<p>Het Department of Conservation geeft een afstand van 53,5 km aan, drie nachten en vier dagen, en het seizoen voor de Great Walks loopt van 1 november tot 30 april.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "De oude rijksweg tussen Kyoto en Edo (Tokio), ongeveer 534 km lang met 69 poststeden, is gedeeltelijk bewaard gebleven als wandelroute bij Magome en Tsumago.",
+		"html": "<p>De Nakasendo was een van de vijf wegen uit de Edo-periode en verbond Kyoto en Edo via de bergen. Delen zoals het pad tussen Magome en Tsumago in de Kiso-vallei zijn goed bewaard gebleven.</p>\n<p>Volgens de Japanse Nationale Toerismeorganisatie is de route ongeveer 534 km lang en telt hij 69 poststeden.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Naukluft-wandelroute",
+		"summary": "Een rondwandeling in het Naukluft-gebergte in Namibië, met een variant van 4 dagen en een variant van 8 dagen.",
+		"html": "<p>De Naukluft-route is een rondwandeling in het Naukluft-gebergte. Namibia Wildlife Resorts biedt zowel een 4-daagse als een 8-daagse versie aan.</p>\n<p>Namibia Wildlife Resorts organiseert de tocht vanuit zijn kamp in Naukluft. De langere 8-daagse versie doorkruist het hoogplateau, en de kortere versie is bedoeld voor wandelaars die minder tijd hebben.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Het Offa's Dyke-pad",
+		"summary": "Een nationaal wandelpad langs de grens tussen Engeland en Wales dat de loop volgt van een aarden wal uit de 8e eeuw, vanaf de monding van de Severn bij Chepstow tot aan de noordkust bij Prestatyn.",
+		"html": "<p>De route volgt delen van de dijk die wordt toegeschreven aan koning Offa van Mercia en verbindt de Wye-vallei, de Black Mountains, de heuvels van Shropshire en de Clwydian Range met elkaar. De route steekt meerdere keren de grens over, waardoor wandelaars bijna dagelijks van Engelse naar Welshe dorpen lopen.</p>\n<p>Op de website van de National Trail staat een afstand van 177 mijl vermeld; er wordt aangegeven dat de route het hele jaar door bewandeld kan worden, maar dat dit meestal tussen april en oktober gebeurt, en er wordt een wandeltijd van ongeveer twee weken of meer aanbevolen. Het startpunt is de stad Chepstow, vlakbij de Sedbury Cliffs.</p>"
+	},
+	"otter-trail": {
+		"title": "Otter Trail",
+		"summary": "De eerste en bekendste wandelroute in Zuid-Afrika in de ‘slackpacking’-stijl volgt de kust van Tsitsikamma over een afstand van 45 km tussen Storms River Mouth en Nature’s Valley en duurt vijf dagen.",
+		"html": "<p>De Otter Trail is een kustwandelroute in het Garden Route National Park waarvoor je vooraf moet reserveren, met hutten bij de overnachtingsplaatsen en rivieroversteken die afhankelijk zijn van de getijden.</p>\n<p>SANParks beschrijft het als een tocht van 45 km, verdeeld over vijf dagen en vier nachten.</p>"
+	},
+	"overland-track": {
+		"title": "Overland Track",
+		"summary": "De klassieke zesdaagse bergtocht in Tasmanië, van Ronny Creek bij Cradle Mountain naar Lake St Clair.",
+		"html": "<p>De Overland Track loopt langs meren en vlaktes met buttongras en eindigt bij het diepste zoetwatermeer van Australië; in het hoogseizoen moet je reserveren en is er een vergoeding verschuldigd.</p>\n<p>De Parks and Wildlife Service geeft aan dat de route 65 km enkele reis is en zes dagen in beslag neemt, en dat het reserveringsseizoen loopt van 1 oktober tot en met 31 mei.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Pacific Crest Trail",
+		"summary": "Een nationale toeristische route langs de bergen van Californië, Oregon en Washington, van de Mexicaanse grens bij Campo tot Manning Park in Canada, ongeveer 4.265 km.",
+		"html": "<p>De PCT loopt door de Sierra Nevada en de Cascade Range en doorkruist woestijnen, hoge bergpassen, sneeuw- en vulkanische landschappen. De Pacific Crest Trail Association geeft de lengte op als 2.650 mijl.</p>\n<p>Een doorwandeling duurt doorgaans ongeveer vijf maanden, en de planning wordt grotendeels bepaald door de sneeuw- en brandomstandigheden.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "De toppen van de Balkan-route",
+		"summary": "Een grensoverschrijdende route door het Vervloekte Gebergte van Albanië, Kosovo en Montenegro, die gastvrije dorpjes zoals Theth, Valbona, Plav en Peja met elkaar verbindt.",
+		"html": "<p>De route is na de oorlogen van de jaren negentig aangelegd als een gezamenlijk project om de samenwerking tussen drie landen te bevorderen. De route volgt herderspaden, gaat over bergpassen boven de 2.000 m en maakt gebruik van dorpsherbergen, zodat wandelaars geen tent nodig hebben.</p>\n<p>Op de website van het project wordt een route van 192 km in 10 etappes (10-12 dagen) beschreven, die een rondwandeling vormt; de tocht begint meestal in Theth, Plav of Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Pennine Way",
+		"summary": "De eerste National Trail van Engeland loopt langs de Pennine-heuvels, van Edale in het Peak District tot Kirk Yetholm, net over de Schotse grens.",
+		"html": "<p>De route loopt door heidevelden met gritstone, kalkstenen dalen en de hoge heuvels van de Yorkshire Dales en de North Pennines, volgt vervolgens de Muur van Hadrianus en klimt daarna de Cheviot Hills in. Turfmoerassen en blootliggende bergkammen maken de route bij slecht weer tot een navigatie-uitdaging.</p>\n<p>National Trails geeft een afstand van 268 mijl aan en een duur van zes tot 22 dagen, met april tot begin oktober als aanbevolen wandelperiode.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "Een bergkamroute door het Thüringer Woud, van Hörschel aan de Werra naar Blankenstein aan de Saale, die al sinds lange tijd als grenspad wordt gebruikt.",
+		"html": "<p>De Rennsteig volgt de bergkam van het Thüringer Woud en het Thüringer Leisteengebergte en is een van de oudste en bekendste wandelroutes van Duitsland. De route is gemarkeerd met een witte R op een groene achtergrond.</p>\n<p>De regionale toeristische dienst geeft een lengte van ongeveer 170 km aan, met routes van vier, zes of acht etappes, en geeft Hörschel als startpunt en Blankenstein als eindpunt aan.</p>"
+	},
+	"routeburn-track": {
+		"title": "Routeburn Track",
+		"summary": "Een hoogalpiene Great Walk van twee tot vier dagen tussen Routeburn Shelter bij Glenorchy en The Divide aan de Milford Road, waarbij de Harris Saddle wordt doorkruist.",
+		"html": "<p>De route verbindt de nationale parken Mount Aspiring en Fiordland en biedt uitzicht op bergmeren, beukenbossen en de Hollyford-vallei. De route kan in beide richtingen worden gelopen.</p>\n<p>Het Department of Conservation geeft een lengte van 32 km aan en een duur van twee tot vier dagen, en vermeldt dat het seizoen voor de Great Walk loopt van 1 november tot 30 april.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Rwenzori Centraal Circuit",
+		"summary": "Een zevendaagse rondwandeling in het Rwenzori-gebergte in Oeganda, beginnend in Mihunga, met berghutten en uitzicht op gletsjers.",
+		"html": "<p>De Central Circuit is een trektocht op grote hoogte in het Rwenzori Mountains National Park, die wordt georganiseerd door de Uganda Wildlife Authority.</p>\n<p>De Uganda Wildlife Authority biedt het circuit aan als een zevendaagse trektocht met gidsen en overnachtingen in berghutten. Op de pagina worden januari, juni en juli genoemd als de beste maanden.</p>"
+	},
+	"shikoku-henro": {
+		"title": "De Shikoku-bedevaart",
+		"summary": "Een rondreis langs 88 tempels op het eiland Shikoku, van ongeveer 1.200 km, die in verband wordt gebracht met de monnik Kūkai.",
+		"html": "<p>De Shikoku Henro is de bekendste rondwandeling in Japan, die met de klok mee wordt afgelegd, beginnend bij tempel 1 in Ryōzen-ji. De pelgrimsvereniging geeft de lengte aan op ongeveer 1.200 km. Veel pelgrims leggen de route in etappes af.</p>\n<p>Omdat de route langs de hele kust en door de bergen van het eiland loopt, leggen veel pelgrims de tocht in meerdere etappes af. Witte pelgrimskleding en een staf zijn traditioneel, maar tegenwoordig zijn ze niet meer verplicht voor wandelaars.</p>"
+	},
+	"south-downs-way": {
+		"title": "South Downs Way",
+		"summary": "Een nationaal wandelpad langs de krijtrotsen van de South Downs, van Winchester tot de zeekliffen bij Eastbourne.",
+		"html": "<p>De route volgt de bergkam van de South Downs door bossen en open kalkgraslanden en eindigt bij Beachy Head en de Seven Sisters.</p>\n<p>Volgens National Trails is het een tocht van 100 mijl, die acht tot negen dagen in beslag neemt, en kan deze het hele jaar door worden gelopen; de drukste maanden zijn mei tot en met september.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "Zuidwestkustpad",
+		"summary": "Het langste National Trail van Groot-Brittannië loopt langs de zuidwestkust van Engeland, van Minehead via Cornwall naar Poole, en omvat meer dan 1.000 km aan kliffen, baaien en havens.",
+		"html": "<p>Het pad slingert langs de kust door Exmoor, Noord-Devon en Cornwall, loopt rond Land’s End en gaat vervolgens weer naar het oosten langs het Kanaal naar Dorset. Er zijn voortdurend korte stijgingen en dalingen bij het oversteken van riviermondingen en landtongen, waardoor je langzamer vordert dan de afstand doet vermoeden.</p>\n<p>National Trails geeft een afstand van 630 mijl aan en zegt dat de route ongeveer 30 wandeldagen in beslag neemt voor een snelle wandelaar, of zeven tot acht weken in een rustig tempo; de lente en de nazomer worden aanbevolen.</p>"
+	},
+	"st-olavsleden": {
+		"title": "De St. Olav-route",
+		"summary": "Een pelgrimsroute van Selånger aan de Zweedse Oostzeekust over de Scandinavische bergen naar de kathedraal van Nidaros, in de voetsporen van koning Olav uit het jaar 1030.",
+		"html": "<p>De route loopt door Zweden en Noorwegen, langs bossen, meren en bergen, met onderweg landbouwgrond en dorpen. Bij Munkeby in Noorwegen splitst de route zich in een buitenroute langs de Trondheimfjord en een binnenroute door de bossen.</p>\n<p>Het Noorse pelgrimcentrum geeft een afstand van 580 km aan, verdeeld over 29 dagetappes (30 tot 32 dagen inclusief rustdagen), en raadt aan om de tocht tussen 1 juni en 1 september te lopen.</p>"
+	},
+	"st-paul-trail": {
+		"title": "St Paul-route",
+		"summary": "Een bewegwijzerde route vanuit Perge, nabij Antalya, noordwaarts door het Taurusgebergte naar Yalvaç, het oude Antiochië in Pisidië.",
+		"html": "<p>De route volgt gedeeltelijk de weg die de apostel Paulus naar verluidt heeft afgelegd tijdens zijn eerste reis door Klein-Azië, waarbij hij vanaf de Middellandse Zeekust omhoog trok naar de meren in het binnenland.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "Het nationale wandelpad van Nieuw-Zeeland strekt zich uit over ongeveer 3.000 km, van Cape Reinga in het uiterste noorden tot Bluff aan de zuidpunt.",
+		"html": "<p>De route loopt over stranden, door bossen, vulkanische landschappen en bergketens op beide eilanden en voert over een mix van paden, wegen en rivier- en zeeoversteken.</p>\n<p>Volgens de Trail Trust bedraagt de totale lengte 3.000 km. Een doorlopende tocht duurt maanden.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Tongariro Northern Circuit",
+		"summary": "Een vulkanische rondwandeling van drie tot vier dagen rond de bergen Ngauruhoe en Tongariro op het Noordereiland van Nieuw-Zeeland.",
+		"html": "<p>De route loopt over het vulkanische plateau van Tongariro, langs Red Crater, de Emerald Lakes en Blue Lake.</p>\n<p>Volgens het DOC is de volledige tocht 43 km lang en duurt deze drie tot vier dagen; op de wandelpagina wordt momenteel een kortere versie van 35,5 km beschreven vanwege een routewijziging.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Ronde om de Mont Blanc",
+		"summary": "Een rondwandeling rond het Mont Blanc-massief door Frankrijk, Italië en Zwitserland, die traditioneel begint en eindigt in Les Houches.",
+		"html": "<p>De route loopt over een reeks hoge bergpassen tussen de valleien van Chamonix, Courmayeur en Champex, waarbij je onderweg in berghutten en dorpsherbergen overnacht.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Trans-Bhutan-route",
+		"summary": "De gerestaureerde nationale pelgrims- en handelsroute van Bhutan, die ongeveer 403 km lang is en loopt van Haa in het westen naar Trashigang in het oosten.",
+		"html": "<p>De Trans Bhutan Trail was een middeleeuwse handels- en pelgrimsroute. In 2022 werd de route heropend voor wandelaars en fietsers. De route van begin tot eind die de organisatie aanbiedt, duurt 36 dagen.</p>\n<p>De heropende route wordt beheerd door een non-profitorganisatie met een vast 36-daags traject van begin tot eind. Kortere trajecten kunnen als op zichzelf staande tochten vanuit de belangrijkste steden worden gelopen.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Transkaukasische route: Boven-Svaneti",
+		"summary": "Een 140 km lang hooggebergte-traject van de Transkaukasische Route door de Georgische regio Svaneti, van Chuberi in de Nenskra-vallei naar Ushguli, een van de hoogstgelegen dorpen van Europa.",
+		"html": "<p>De wandeltocht door Boven-Svaneti voert door dorpjes met stenen verdedigingstorens, over bergpassen en langs gletsjers van de Grote Kaukasus. De tocht wordt georganiseerd door de Transcaucasian Trail Association, een non-profitorganisatie die bezig is met de aanleg van een aaneengesloten wandelroute door de Kaukasus.</p>\n<p>De vereniging geeft een afstand van 140 km en een duur van 7-9 dagen aan.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Tsitsikamma-wandelroute",
+		"summary": "Een zesdaagse bergwandelroute door inheems bos en fynbos in het Tsitsikamma-gebied, van Nature’s Valley naar Storms River, met hutten bij elke overnachtingsplaats.",
+		"html": "<p>De route loopt langs rivierkloven en enorme geelhoutbomen en kan ook in kortere varianten worden gelopen. Er is een optionele draagservice beschikbaar.</p>\n<p>Volgens de toeristische website van de Oost-Kaap is het een tocht van 62,3 km in zes dagen.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Vía de la Plata",
+		"summary": "Een noord-zuid pelgrimsroute vanuit Sevilla door Extremadura en Castilië; het is de Spaanse Camino die de oude Romeinse weg, de Via de la Plata, volgt.",
+		"html": "<p>De Vía de la Plata volgt de Romeinse weg die Mérida en Astorga met elkaar verbond. Pelgrims uit Andalusië leggen deze route in ongeveer een maand af naar Astorga, waar hij samenkomt met de Camino Francés, of lopen verder door Galicië via de Sanabrés-tak.</p>\n<p>Volgens het Spaanse bureau voor toerisme is de route 800 tot 900 km lang, met ongeveer 32 wandeletappes (49 voor fietsers), en adviseert het een reisduur van minimaal zeven dagen.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Via degli Dei",
+		"summary": "Een route over de Apennijnen van Bologna naar Florence, die deels over Romeinse en middeleeuwse wegen loopt en doorgaans in vijf tot zeven dagen wordt afgelegd.",
+		"html": "<p>De Via degli Dei verbindt de twee steden via beboste bergkammen, oude wegen en bergdorpjes, met overnachtingen in pensions. De naam verwijst naar plaatsnamen in de bergen die naar oude goden zijn vernoemd, zoals Monte Adone en Monte Venere.</p>\n<p>Op de website van de vereniging staat een afstand van 130 km en een wandelduur van vijf tot zeven dagen vermeld; de OSM-tag geeft 117 km aan.</p>"
+	},
+	"via-francigena": {
+		"title": "Via Francigena",
+		"summary": "De lange pelgrimsroute tussen Canterbury en Rome, die zich in zuidelijke richting uitstrekt tot aan Santa Maria di Leuca in Apulië, volgt de reis die aartsbisschop Sigeric rond het jaar 990 heeft beschreven.",
+		"html": "<p>Sigeric reisde naar Rome om zijn pallium in ontvangst te nemen en noteerde op de terugweg de 79 tussenstops. Die lijst vormt het historische raamwerk van de Via Francigena, die door Engeland, Frankrijk, Zwitserland en Italië loopt en bij de Grote Sint-Bernhardpas de Alpen bereikt.</p>\n<p>De Raad van Europa heeft de route in 1994 erkend als culturele route. In 2019 heeft de Vereniging van de Via Francigena de route vanuit Rome naar het zuiden uitgebreid tot Santa Maria di Leuca, waar Italiaanse pelgrims van oudsher inscheepten op weg naar het Heilige Land.</p>"
+	},
+	"via-podiensis": {
+		"title": "Via Podiensis",
+		"summary": "De bekendste Franse pelgrimsroute naar Santiago begint in Le Puy-en-Velay en loopt door het Centraal Massief, de Aubrac en het zuidwesten, om uiteindelijk bij Saint-Jean-Pied-de-Port de uitlopers van de Pyreneeën te bereiken.",
+		"html": "<p>Le Puy was een van de vier klassieke startpunten in Frankrijk die in de middeleeuwse pelgrimsgids werden genoemd, en de route ernaartoe is een aaneenschakeling van romaanse kerken, dorpjes op granieten plateaus en hooggelegen weiden. Het Aubrac-plateau en de Lot-vallei rond Conques zijn de bekendste hoogtepunten.</p>\n<p>De Franse pelgrimsvereniging schat de afstand naar Saint-Jean-Pied-de-Port op ongeveer 755 km en de looptijd op 32 dagen; wandelen is mogelijk van maart tot oktober. Zeven etappes van de Chemin du Puy maken deel uit van het UNESCO-werelderfgoed „Routes van Santiago de Compostela in Frankrijk“.</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "Torres del Paine W-trektocht",
+		"summary": "Een vijfdaagse trektocht in het Nationaal Park Torres del Paine in Patagonië, langs drie valleien die de vorm van een W hebben: de Grey-gletsjer, de Franse Vallei en de voet van de Torens.",
+		"html": "<p>De W-trektocht verbindt de Torres, de Valle Francés en de Grey-gletsjer, met berghutten en kampeerplaatsen in het park.</p>\n<p>Het Chileense bureau voor toerisme schat de afstand op ongeveer 70 km en de duur op vijf dagen, en noemt de lente en de zomer het wandelseizoen.</p>"
+	},
+	"west-coast-trail": {
+		"title": "West Coast Trail",
+		"summary": "Een ruig kustpad aan de westkust van Vancouver Island, met 75 km aan stranden, ladders en regenwoud tussen Pachena Bay en de Gordon River.",
+		"html": "<p>Het pad was oorspronkelijk een reddingsroute voor schipbreukelingen en is nu een zware wandeltocht in het Pacific Rim National Park Reserve. Wandelaars moeten reserveren en een introductiebijeenkomst bijwonen, en het pad is alleen in de zomer open.</p>\n<p>Volgens Parks Canada duurt de tocht zes tot acht dagen en is het pad geopend van 1 mei tot en met 30 september.</p>"
+	},
+	"west-highland-way": {
+		"title": "West Highland Way",
+		"summary": "Het bekendste langeafstandswandelpad van Schotland verbindt de rand van Glasgow met Fort William en loopt langs Loch Lomond, Rannoch Moor en Glen Coe op weg naar de Hooglanden.",
+		"html": "<p>De route begint in de forensenstad Milngavie en verruilt geleidelijk de buitenwijken voor bosgebied, waarna hij langs de oostelijke oever van Loch Lomond omhoog loopt. Ten noorden van Tyndrum doorkruist hij het open veen- en rotslandschap van Rannoch Moor, alvorens af te dalen door de grote vallei van Glen Coe.</p>\n<p>Het laatste stuk voert over de Devil’s Staircase en oude militaire wegen, en eindigt in Fort William aan de voet van Ben Nevis. De meeste wandelaars doen er zes of zeven dagen over; volgens de officiële website is mei de populairste maand en kan het pad het hele jaar door worden bewandeld, hoewel muggen in de zomer voor overlast zorgen.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "De oudste langeafstandsroute in het Zwarte Woud, van Pforzheim langs de westelijke bergkam van het gebergte naar Basel.",
+		"html": "<p>De Westweg volgt de bergkam van het noordelijke en centrale Zwarte Woud, loopt langs de Hornisgrinde, de Feldberg en de Belchen, en eindigt in de Zwitserse grensstad Bazel. Sinds 1900 wordt de route onderhouden door de Zwarte Woud-Club, die hem ook markeert met een rode ruit.</p>\n<p>Het toeristenbureau van het Zwarte Woud geeft een lengte van ongeveer 285 km aan, verdeeld over 12 etappes op de westelijke route en 13 op de oostelijke variant, die bij Titisee afsplits.</p>"
+	},
+	"wicklow-way": {
+		"title": "Wicklow Way",
+		"summary": "Het oudste bewegwijzerde wandelpad van Ierland doorkruist de Wicklow Mountains, van de buitenwijken van Dublin tot het dorpje Clonegal in Carlow.",
+		"html": "<p>De route loopt over boswegen en moeraspaden door Glendalough, over de uitlopers van de Lugnaquilla en door het hoogland van Wicklow. In de routebeschrijving wordt gesproken over zeven dagen of meer, afhankelijk van het tempo.</p>\n<p>Op de website van de route staat vermeld dat de afstand tussen Marlay Park en Clonegal 127 km bedraagt.</p>"
+	},
+	"wilson-trail": {
+		"title": "Wilson Trail",
+		"summary": "Een wandelroute van 78 km door Hongkong, van Stanley op Hongkong Island naar Nam Chung in de New Territories, verdeeld over 10 etappes.",
+		"html": "<p>De Wilson Trail loopt van de zuidkust van Hong Kong Island via Lion Rock en het Tai Po-gebied naar het noordoosten van de New Territories.</p>\n<p>Volgens de toeristenorganisatie is het 78 km lang en bestaat het uit 10 etappes.</p>"
+	}
+}

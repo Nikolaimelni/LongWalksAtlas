@@ -1,0 +1,392 @@
+{
+	"abel-tasman-coast-track": {
+		"title": "Abel-Tasman-Küstenwanderweg",
+		"summary": "Eine drei- bis fünftägige Küstenwanderung durch goldene Strände und Buschland im Abel-Tasman-Nationalpark, von Mārahau nach Wainui.",
+		"html": "<p>Mit Wassertaxis können Wanderer ihre Tour verkürzen oder verlängern und bei Ebbe Flussmündungen überqueren.</p>\n<p>Laut DOC beträgt die Strecke 60 km (einfach). Demnach ist der Weg von Oktober bis April am stärksten frequentiert und kann das ganze Jahr über begangen werden.</p>"
+	},
+	"alpe-adria-trail": {
+		"title": "Alpe-Adria-Trail",
+		"summary": "Ein Fernwanderweg vom Fuße des Großglockners in Österreich durch die Julischen Alpen in Slowenien bis zur Adriaküste bei Triest.",
+		"html": "<p>Der Alpe-Adria-Trail durchquert die Alpen von den Gletschern bis zum Meer und führt vorbei an den Kärntner Seen, dem slowenischen Soča-Tal und der Karsthochebene, bevor er nach Muggia hinabführt. Er ist in 43 Etappen unterteilt, die von Dorf zu Dorf gewandert werden können.</p>\n<p>Die offizielle Website gibt eine Länge von etwa 750 km an, während die OSM-Relation 690 km angibt; die Länge hängt also von den Routenvarianten ab.</p>"
+	},
+	"alta-via-1": {
+		"title": "Alta Via 1",
+		"summary": "Die klassische Höhenroute durch die Dolomiten vom Lago di Braies nach Belluno, mit täglichen Hüttenübernachtungen und zwölf Etappen.",
+		"html": "<p>Die Alta Via 1 verbindet den Pragser Wildsee mit den Cinque Torri, der Civetta-Gruppe und dem Piave-Tal und führt dabei über hohe Pässe und Felswände, die mittlerweile zum UNESCO-Weltnaturerbe gehören. Die Etappenführung orientiert sich an den Berghütten, die im Sommer geöffnet sind.</p>\n<p>Das Tourismusportal der Dolomiten gibt eine Gesamtlänge von etwa 125 km, zwölf Etappen und eine Saison von Ende Juni bis Ende September an.</p>"
+	},
+	"alta-via-2": {
+		"title": "Alta Via 2",
+		"summary": "Eine längere und anspruchsvollere Variante der Alta Via 1, die von Brixen in Südtirol über die Odle, die Marmolada und die Pale di San Martino bis nach Feltre führt.",
+		"html": "<p>Die Route verläuft von Norden nach Süden durch die westlichen und zentralen Dolomiten und führt an Hütten sowie einigen klettersteigähnlichen Abschnitten vorbei. Sie führt am Gletscher der Marmolada, dem höchsten Gipfel des Gebirges, und am Plateau der Pale di San Martino vorbei.</p>\n<p>Das Dolomiten-Portal gibt eine Gesamtlänge von etwa 180 km, dreizehn Tagesetappen und eine Saison von Ende Juni bis Ende September an.</p>"
+	},
+	"amatola-trail": {
+		"title": "Amatola-Wanderweg",
+		"summary": "Eine sechstägige Wanderung über etwa 100 km in den Amathole-Bergen im Ostkap, vom Stadtrand von Qonce bis nach Hogsback.",
+		"html": "<p>Der Amatola Trail führt durch Urwald, vorbei an Gebirgsbächen und über Bergrücken und nutzt Hütten als Zwischenstationen. Auf der Tourismus-Website des Ostkaps wird er als einer der bekanntesten Wanderwege der Provinz aufgeführt.</p>\n<p>Der Wanderweg verläuft durch das Amathole-Gebirge, den grünen Gürtel hinter der Küste des Ostkaps. Auf der Tourismus-Website der Provinz wird er als einer der bekanntesten Wanderwege der Region aufgeführt.</p>"
+	},
+	"annapurna-circuit": {
+		"title": "Annapurna-Rundwanderung",
+		"summary": "Eine klassische Himalaya-Wanderung rund um das Annapurna-Massiv über den Thorong-La-Pass, von Besisahar nach Nayapul.",
+		"html": "<p>Die Route führt durch verschiedene Klimazonen, von subtropischen Tälern bis hin zur Hochwüste von Manang und dem 5.400 m hohen Thorong-La-Pass.</p>\n<p>Nach Angaben des Nepal Tourism Board dauert die Wanderung drei Wochen oder länger; als beste Reisezeiten werden März bis Mai sowie September bis November empfohlen.</p>"
+	},
+	"appalachian-trail": {
+		"title": "Appalachian Trail",
+		"summary": "Der berühmteste Fernwanderweg der Vereinigten Staaten verläuft über eine Länge von etwa 2.200 Meilen entlang der Appalachen-Bergrücken vom Springer Mountain in Georgia bis zum Katahdin in Maine und durchquert dabei 14 Bundesstaaten.",
+		"html": "<p>Der Appalachian Trail wird von der Appalachian Trail Conservancy und dem National Park Service verwaltet. Die meisten Thru-Hiker starten zwischen Ende Februar und Anfang April in Georgia in Richtung Norden und benötigen etwa sechs Monate für die Wanderung.</p>\n<p>Nach Angaben der ATC war der Wanderweg im Jahr 2026 2.197,9 Meilen lang, was etwa 3.537 km entspricht; die Länge ändert sich geringfügig, da der Verlauf gelegentlich angepasst wird.</p>"
+	},
+	"bibbulmun-track": {
+		"title": "Bibbulmun-Wanderweg",
+		"summary": "Ein Fernwanderweg von etwa 1.000 km Länge durch die Wälder und entlang der Küste im Südwesten von Westaustralien zwischen Kalamunda bei Perth und Albany.",
+		"html": "<p>Der Weg ist mit einem gelben Dreieck, auf dem eine Regenbogenschlange abgebildet ist, markiert und verfügt über Hütten, die etwa einen Tagesmarsch voneinander entfernt liegen. Wanderer können den Weg in beide Richtungen zurücklegen.</p>\n<p>Die Bibbulmun Track Foundation gibt an, dass eine Durchquerung von einem Ende zum anderen etwa sechs bis acht Wochen dauert, und empfiehlt die kühleren Monate von April bis Anfang November.</p>"
+	},
+	"bruce-trail": {
+		"title": "Bruce Trail",
+		"summary": "Kanadas ältester und längster markierter Wanderweg verläuft über mehr als 900 km entlang der Niagara-Steilwand von Niagara bis nach Tobermory auf der Bruce-Halbinsel.",
+		"html": "<p>Die Bruce Trail Conservancy beschreibt einen Hauptwanderweg von mehr als 900 km Länge sowie etwa 400 km Nebenwege, die zusammen eine Gesamtlänge von 1.300 km ergeben. Der Weg führt zwischen dem Ontariosee und der Georgian Bay an Klippen, Höhlen, Wäldern und kleinen Ortschaften vorbei.</p>\n<p>Die Organisation empfiehlt etwa 30 Tage, um den Hauptweg von einem Ende zum anderen zu wandern.</p>"
+	},
+	"caminho-portugues": {
+		"title": "Der portugiesische Weg",
+		"summary": "Der Pilgerweg von Lissabon über Coimbra und Porto zur Kathedrale von Santiago de Compostela.",
+		"html": "<p>Seit dem Mittelalter wandern Pilger von Lissabon aus nach Norden bis nach Santiago. Die meisten starten in Porto, etwas mehr als 240 km von Santiago entfernt; die gesamte Strecke von Lissabon beträgt etwa 620 km.</p>"
+	},
+	"camino-del-norte": {
+		"title": "Camino del Norte",
+		"summary": "Ein Pilgerweg entlang der Küste, der von der baskischen Grenzstadt Irún am Golf von Biskaya durch Kantabrien, Asturien und Galicien bis nach Santiago führt.",
+		"html": "<p>Der „Northern Way“ verläuft entlang der kantabrischen Küste und tauscht die weiten Ebenen der Meseta gegen Strände, Klippen, Fischerdörfer und kurze, steile Anstiege zwischen Flusstälern ein. Er wurde im frühen Mittelalter von Pilgern genutzt, die den von den Muslimen beherrschten Süden meiden wollten, und ist heute ruhiger als der „Camino Francés“.</p>\n<p>Das spanische Fremdenverkehrsamt gibt eine Länge von etwa 825 km (800 km in den FAQ) und etwa 35 Etappen an. In Galicien beschreibt die offizielle Pilger-Website den letzten Abschnitt von Ribadeo nach Santiago.</p>"
+	},
+	"camino-fisterra-muxia": {
+		"title": "Der Weg von Fisterra nach Muxía",
+		"summary": "Eine galizische Verlängerung des Jakobswegs von der Kathedrale bis zum Atlantik-Kap Fisterra und zur Wallfahrtsstadt Muxía.",
+		"html": "<p>Von Santiago aus führt der Weg nach Westen zur Costa da Morte, wobei Fisterra (das Kap, das einst als das Ende der bekannten Welt galt) und Muxía die beiden Endziele sind. Manche Pilger wandern nach Fisterra und setzen dann ihren Weg nach Muxía fort – oder umgekehrt.</p>\n<p>Die galizische Pilger-Website gibt für die Variante Fisterra–Muxía eine Länge von 118,8 km und für die Variante Muxía–Fisterra eine Länge von 119,9 km an.</p>"
+	},
+	"camino-frances": {
+		"title": "Camino Francés",
+		"summary": "Der beliebteste der Wege nach Santiago überquert die Pyrenäen bei Roncesvalles und führt westwärts durch Nordspanien über Pamplona, Burgos und León bis zum Grab des Heiligen Jakobus.",
+		"html": "<p>Seit dem Mittelalter wandern Pilger auf dieser Route, und die Städte entlang des Weges tragen noch immer die Spuren dieses Pilgerverkehrs: Hospize, Brücken, Klöster und Kirchen, die für Reisende errichtet wurden. Viele Wanderer starten in Saint-Jean-Pied-de-Port, überwinden am ersten Tag die Pyrenäen und gelangen dann auf die weitläufige Hochebene der Meseta, bevor sie die grünen Hügel Galiciens erreichen.</p>\n<p>Der Camino Francés ist Teil der UNESCO-Liste für den Jakobsweg nach Santiago de Compostela. Das spanische Fremdenverkehrsamt gibt die Länge mit etwa 930 km und rund 32 Etappen an, wenn man von Somport oder Roncesvalles aus zählt, und empfiehlt den Frühling sowie September und Oktober als Reisezeiten.</p>"
+	},
+	"camino-ingles": {
+		"title": "Englischer Weg",
+		"summary": "Ein kurzer galizischer Pilgerweg vom Marinehafen Ferrol nach Santiago, der früher von Pilgern genutzt wurde, die auf dem Seeweg aus Nordeuropa kamen.",
+		"html": "<p>Der „English Way“ hat seinen Namen von Pilgern aus den Britischen Inseln und Nordeuropa, die in Ferrol und A Coruña an Land gingen. Die offizielle galizische Pilgerstelle gibt eine Strecke von 112,4 km ab Ferrol und 72,8 km ab A Coruña an. Pilger müssen mindestens 100 km zu Fuß zurücklegen, um die Pilgerurkunde zu erhalten, weshalb die Route ab Ferrol die übliche Wahl ist.</p>\n<p>Da sie kürzer ist als die anderen galizischen Anmarschrouten, ist sie eine praktische Wahl für Menschen, die nur eine Woche oder weniger Zeit haben. Da der Start in Ferrol mehr als 100 km beträgt, kann man mit dieser Wanderung in Santiago dennoch die Pilgerurkunde erhalten.</p>"
+	},
+	"camino-primitivo": {
+		"title": "Camino Primitivo",
+		"summary": "Der älteste jakobinische Pilgerweg, der angeblich der Reise von König Alfons II. im 9. Jahrhundert folgt, führt von Oviedo über das Kantabrische Gebirge nach Santiago.",
+		"html": "<p>Der Primitivo ist eine kurze, hügelige Route durch Asturien und Galicien, die den Gebirgspass auf der Hospitales-Route überquert und in Melide für die letzten Tage auf den Camino Francés trifft. Er ist ruhiger als der Francés und weist steile Anstiege auf.</p>\n<p>Das spanische Fremdenverkehrsamt gibt eine Länge von etwa 325 km und etwa 14 Etappen an; die galizische Pilger-Website beschreibt den galizischen Abschnitt separat.</p>"
+	},
+	"cape-to-cape-track": {
+		"title": "Cape-to-Cape-Wanderweg",
+		"summary": "Eine etwa 135 km lange Küstenwanderung entlang von Klippen und Stränden zwischen den Leuchttürmen am Cape Naturaliste und am Cape Leeuwin im Südwesten von Westaustralien.",
+		"html": "<p>Die Route führt an Kalksteinhöhlen, Surfspots, Wildblumen und Aussichtspunkten zur Walbeobachtung vorbei. Laut „Tourism Western Australia“ dauert die Wanderung fünf bis sieben Tage; die Wildblumenblüte findet im Frühling statt, Wale sind von September bis Dezember zu sehen.</p>\n<p>Die Tourismus-Website des Bundesstaates empfiehlt, fünf bis sieben Tage einzuplanen, und erwähnt die Frühlingswildblumen auf den Landzungen. Wale ziehen von etwa September bis Dezember an den Kaps vorbei.</p>"
+	},
+	"carian-trail": {
+		"title": "Carian-Wanderweg",
+		"summary": "Eine lange Wanderroute durch das antike Karien im Südwesten der Türkei, von der Küste bei Marmaris bis zu den Ruinen im Landesinneren rund um Alinda.",
+		"html": "<p>Der Karische Wanderweg verbindet die Halbinseln Bozburun und Datça, die Gökova-Bucht und das Landesinnere von Karien und führt an antiken Ruinen, alten Karawanenstraßen und Maultierpfaden vorbei.</p>\n<p>Auf der Website des Wanderwegs selbst wird eine Länge von etwa 850 km in vier Hauptabschnitten angegeben; der Verein „Culture Routes“ gibt 800 km an.</p>"
+	},
+	"chilkoot-trail": {
+		"title": "Chilkoot-Trail",
+		"summary": "Eine historische Goldrauschroute von Dyea (Alaska) über den Chilkoot-Pass zum Lake Bennett in British Columbia, 33 Meilen lang.",
+		"html": "<p>In den Jahren 1897–98 transportierten Goldsucher auf ihrem Weg zum Klondike Tonnen von Vorräten über den Pass. Heute wird der Weg gemeinsam vom US-Nationalparkdienst und Parks Canada verwaltet und ist im Sommer geöffnet.</p>\n<p>Der NPS gibt eine Länge von 33 Meilen an.</p>"
+	},
+	"colorado-trail": {
+		"title": "Colorado Trail",
+		"summary": "Ein 567 Meilen langer Wanderweg quer durch die Colorado Rockies, vom Stadtrand von Denver am Waterton Canyon bis nach Durango, größtenteils in Höhenlagen über 3.000 m.",
+		"html": "<p>Der Wanderweg durchquert acht Gebirgszüge und sechs Wildnisgebiete, wobei man zwischen den optionalen Routen „Collegiate West“ und „Collegiate East“ wählen kann. Nach Angaben der Colorado Trail Foundation verläuft er von Denver nach Durango.</p>\n<p>Eine Durchwanderung dauert in der Regel vier bis sechs Wochen.</p>"
+	},
+	"e1": {
+		"title": "E1 – Europäischer Fernwanderweg",
+		"summary": "Der europäische Nord-Süd-Fernwanderweg, der vom Nordkap in Norwegen über Skandinavien, Dänemark, Deutschland und die Schweiz bis zum Capo Passero auf Sizilien führt.",
+		"html": "<p>Der E1 verbindet nationale und regionale Wanderwege unter einer gemeinsamen Wegmarkierung. Sein südliches Ende wurde in den 2010er Jahren durch Italien bis nach Sizilien verlängert, und Teile des italienischen Abschnitts werden noch immer ausgeschildert.</p>"
+	},
+	"fish-river-canyon-trail": {
+		"title": "Wanderweg durch den Fish River Canyon",
+		"summary": "Eine 90 km lange Canyon-Wanderung durch den Fish River Canyon im Süden Namibias von Hobas nach Ai-Ais.",
+		"html": "<p>Die Route verläuft am Grund der Schlucht entlang und führt durch Flussbiegungen, Sand- und Geröllfelder.</p>\n<p>Laut Namibia Wildlife Resorts beginnt der Wanderweg in Hobas und ist 90 km lang.</p>"
+	},
+	"fishermens-trail": {
+		"title": "Fischerpfad",
+		"summary": "Ein ausgeschilderter Küstenweg an der Südwestspitze Portugals, von Porto Covo im Alentejo bis nach Lagos an der Algarve, entlang von Klippen, Dünen und Fischerpfaden.",
+		"html": "<p>Der Wanderweg folgt alten Fischerpfaden über Sand und Klippen im Naturpark „Südwest-Alentejo und Vicentine-Küste“. Er ist in 13 Tagesetappen unterteilt, sodass man ihn eher mit Übernachtungen in Hotels oder Pensionen als mit Camping zurücklegen kann.</p>\n<p>Der Verein „Rota Vicentina“ empfiehlt, den Weg am besten zwischen September und Juni zu wandern, um die heißesten Sommermonate zu vermeiden.</p>"
+	},
+	"gr11": {
+		"title": "GR11 Transpirenaica",
+		"summary": "Die spanische Seite der Pyrenäen-Durchquerung, ein langer Bergwanderweg vom Cabo de Higuer am Atlantik bis zum Cap de Creus am Mittelmeer.",
+		"html": "<p>Der GR11 verläuft entlang der Südhänge der Pyrenäen durch das Baskenland, Navarra, Aragon und Katalonien, überquert dabei mehrmals das Hauptgebirge und verläuft nahe der französischen Grenze. Er ist vom spanischen Bergsteigerverband in 46 Etappen sowie einen Prolog unterteilt.</p>\n<p>Der Verband gibt die Gesamtlänge mit mehr als 800 km an. Die Route wird meist in Etappen gewandert; eine vollständige Durchquerung dauert aufgrund der stetigen Anstiege zwischen den Tälern weit über einen Monat.</p>"
+	},
+	"gr20": {
+		"title": "GR20",
+		"summary": "Der GR20 ist ein anspruchsvoller Hochgebirgswanderweg, der Korsika von Calenzana im Nordwesten bis nach Conca im Südosten entlang des Granitrückgrats der Insel durchquert.",
+		"html": "<p>Der Weg verläuft entlang des zentralen Gebirgskamms von Korsika und bietet Kletterpassagen, Ketten an steilen Abschnitten sowie vom Regionalpark betriebene Schutzhütten. Aufgrund des unwegsamen Geländes und der wechselhaften Wetterbedingungen wird er oft als einer der anspruchsvollsten Fernwanderwege Europas bezeichnet, obwohl die Etappen kurz sind.</p>\n<p>Die offizielle Tourismus-Website Korsikas gibt eine Gesamtlänge von 180 km für 16 Tage mit jeweils etwa sieben Stunden Wanderzeit an; die Bedingungen sind von Juni bis Mitte Oktober gut. Die Route ist unterteilt in eine anspruchsvollere nördliche Hälfte und einen etwas leichteren südlichen Abschnitt.</p>"
+	},
+	"great-ocean-walk": {
+		"title": "Great Ocean Walk",
+		"summary": "Eine Küstenwanderung in Victoria von Apollo Bay zu den Zwölf Aposteln, über 100 km entlang von Stränden, Klippen und Regenwald, die in der Regel in acht Tagen zurückgelegt wird.",
+		"html": "<p>Der Great Ocean Walk verläuft entlang der Küste des Great Otway-Nationalparks und des Port Campbell-Nationalparks und wird in der Regel von Osten nach Westen zurückgelegt. Die zuständige Behörde gibt eine Länge von „mehr als 100 km“ und eine Dauer von acht Tagen an.</p>\n<p>Wanderer übernachten in der Regel auf Campingplätzen oder in Hütten entlang der Strecke und beenden ihre Wanderung in der Nähe der Twelve Apostles. Die Route wird meist von Osten nach Westen zurückgelegt, wie von der zuständigen Behörde empfohlen.</p>"
+	},
+	"hadrians-wall-path": {
+		"title": "Der Hadrianswall-Wanderweg",
+		"summary": "Ein National Trail entlang der römischen Grenze zwischen Wallsend on the Tyne und Bowness-on-Solway, der an Festungen, Meilensteinen und den Felsen des Whin Sill vorbeiführt.",
+		"html": "<p>Die Route durchquert Nordengland von Küste zu Küste und verläuft größtenteils entlang oder in der Nähe des Verlaufs der Mauer aus dem 2. Jahrhundert. Der zentrale Abschnitt über die Whin-Sill-Felsen bietet die am besten erhaltenen Überreste, wobei Festungen wie Housesteads und Vindolanda nur unweit des Weges liegen.</p>\n<p>National Trails gibt eine Länge von 84 Meilen an und empfiehlt erfahrenen Wanderern sechs bis sieben Tage für die Strecke, wobei Mai bis Oktober als beste Jahreszeit angegeben wird. Auf der entsprechenden Seite wird in der Wegbeschreibung zwar auch Carlisle erwähnt, doch der Weg und die OSM-Relation enden in Bowness-on-Solway.</p>"
+	},
+	"heysen-trail": {
+		"title": "Heysen Trail",
+		"summary": "Der „Long Walk“ in Südaustralien erstreckt sich über etwa 1.200 km vom Cape Jervis über die Fleurieu-Halbinsel, das Barossa und die Flinders Ranges bis zur Parachilna-Schlucht.",
+		"html": "<p>Der Heysen Trail wird von den „Friends of the Heysen Trail“ angelegt und gepflegt und führt durch Ackerland, Weinberge und die Flinders Ranges. Während der Waldbrandsaison ist er gesperrt.</p>\n<p>Nach Angaben des Vereins ist der Wanderweg 1.200 km lang und die Wanderung dauert etwa 60 Tage.</p>"
+	},
+	"hong-kong-trail": {
+		"title": "Hongkong-Wanderweg",
+		"summary": "Ein 50 km langer Wanderweg quer über Hong Kong Island vom Victoria Peak bis zur Big Wave Bay, der 1985 in acht Abschnitten eröffnet wurde.",
+		"html": "<p>Der Hong Kong Trail ist einer der vier Fernwanderwege, die vom Ministerium für Landwirtschaft, Fischerei und Naturschutz verwaltet werden, und durchquert fünf Naturparks. Er ist in acht Abschnitte unterteilt.</p>\n<p>Die acht Abschnitte lassen sich zu einer langen Tageswanderung oder zu kürzeren Wanderungen kombinieren, und der Wanderweg beginnt am bekanntesten Aussichtspunkt der Stadt. Er wurde im April 1985 eröffnet.</p>"
+	},
+	"inca-trail": {
+		"title": "Inka-Trail nach Machu Picchu",
+		"summary": "Die klassische Inka-Trail-Wanderung über die Anden nach Machu Picchu, eine viertägige Wanderung, die am Sonnentor und bei den Ruinen endet.",
+		"html": "<p>Der Weg führt über Inka-Pfade und -Treppen durch den Nebelwald, vorbei an Ruinen wie Wiñay Wayna, bis nach Machu Picchu. Der Zutritt ist genehmigungspflichtig.</p>\n<p>Die OSM-Relation verzeichnet eine Länge von 38 km und einen Betreiber im peruanischen Kulturministerium.</p>"
+	},
+	"jesus-trail": {
+		"title": "Jesus-Weg",
+		"summary": "Ein etwa 65 km langer Pilger- und Wanderweg in Galiläa von Nazareth nach Kapernaum am See Genezareth.",
+		"html": "<p>Der Jesus-Trail folgt Wegen, die mit dem Wirken Jesu in Kana, an den Hörnern von Hattin und auf dem Berg Arbel in Verbindung stehen. Er ist eine Mischung aus christlicher Pilgerreise und Naturwanderung und wird in der Regel in drei bis vier Tagen zurückgelegt.</p>\n<p>Auf der Website des Wanderwegs wird eine Länge von 65 km angegeben.</p>"
+	},
+	"john-muir-trail": {
+		"title": "John-Muir-Trail",
+		"summary": "Ein hochgelegener Wanderweg in der Sierra Nevada, der sich über eine Länge von etwa 211 Meilen vom Yosemite Valley über Pässe in über 3.500 m Höhe bis zum Gipfel des Mount Whitney erstreckt.",
+		"html": "<p>Der John-Muir-Trail verläuft entlang des Gebirgskamms der Sierra Nevada durch die Nationalparks Yosemite, Kings Canyon und Sequoia. Der National Park Service gibt seine Länge mit 211 Meilen an und weist darauf hin, dass eine Genehmigung erforderlich ist.</p>\n<p>Die meisten Wanderer benötigen zwei bis drei Wochen und tragen Proviant für lange Strecken ohne Nachschub mit sich.</p>"
+	},
+	"jordan-trail": {
+		"title": "Jordan-Trail",
+		"summary": "Eine 675 km lange Wanderroute von Umm Qais im Norden Jordaniens über Dana und Petra bis nach Aqaba am Roten Meer, die in der Regel in etwa 35 Tagen zurückgelegt wird.",
+		"html": "<p>Der Jordan Trail durchquert Jordanien von den römischen Ruinen in Umm Qais über das Jordan-Rift-Gebirge, das Hochland am Toten Meer, Dana, Petra und Wadi Rum bis zum Roten Meer. Er verbindet lokale Dörfer mit Beduinengemeinden.</p>\n<p>Der Verein „Jordan Trail“ gibt eine Länge von 675 km und eine Dauer von etwa 35 Tagen bei ununterbrochener Wanderung an.</p>"
+	},
+	"juliana-trail": {
+		"title": "Juliana-Wanderweg",
+		"summary": "Ein Rundwanderweg rund um die Julischen Alpen in Slowenien, bestehend aus 16 Etappen, die an den wichtigsten Gipfeln vorbeiführen und den Flüssen Soča und Sava folgen.",
+		"html": "<p>Der Juliana-Trail verbindet Täler, Pässe, Wälder und Dörfer rund um den Triglav-Nationalpark, ohne dass Gipfelbesteigungen erforderlich sind. Er ist ausgeschildert und in 16 Etappen von jeweils etwa 17,5 km beschrieben.</p>\n<p>Die Tourismus-Website des Soča-Tals gibt für die Hauptrunde eine Länge von 270 km an, mit optionalen Erweiterungen von 42 km und 60 km, sowie eine Saison von Ende März bis Ende Oktober.</p>"
+	},
+	"kepler-track": {
+		"title": "Kepler-Wanderweg",
+		"summary": "Eine 60 km lange Rundwanderung, die in der Nähe von Te Anau beginnt, entlang des Kepler-Gebirgskamms über die Buschgrenze hinausführt und entlang des Te-Anau-Sees und des Waiau-Flusses zurückführt.",
+		"html": "<p>Der Kepler Track ist eine drei- bis viertägige Rundwanderung mit drei Hütten, Bergpanoramen oberhalb der Baumgrenze und fjordartigen Wäldern.</p>\n<p>Auf der Vergleichsseite des Department of Conservation sind 60 km und drei bis vier Tage angegeben. Die Saison für die „Great Walks“ beginnt Ende Oktober.</p>"
+	},
+	"kerry-way": {
+		"title": "Kerry Way",
+		"summary": "Eine Rundtour um die Iveragh-Halbinsel in der Grafschaft Kerry, die in Killarney beginnt und endet und durch Berge, Moorlandschaften und Küstendörfer wie Cahersiveen und Sneem führt.",
+		"html": "<p>Der Kerry Way verbindet ruhige Straßen, alte Pfade und Bergwege zwischen den Macgillycuddy’s Reeks und der Atlantikküste. Etwa ein Drittel der Strecke verläuft auf lokalen Straßen.</p>\n<p>Das nationale Wanderwegregister von Sport Ireland gibt eine Länge von 232,1 km und eine Dauer von neun Tagen an; die OSM-Relation ist mit 214 km gekennzeichnet, sodass die genauen Zahlen je nach gewählter Route in Kerry variieren.</p>"
+	},
+	"kilimanjaro-machame-route": {
+		"title": "Kilimandscharo – Machame-Route",
+		"summary": "Eine der Hauptrouten auf den Kilimandscharo, die am Machame-Tor beginnt und bei der in Zeltlagern übernachtet wird.",
+		"html": "<p>Die Machame-Route ist eine der Routen auf dem Kilimandscharo und führt über Zeltlager, die von lizenzierten Veranstaltern betrieben werden. Die Tanzania National Parks bezeichnen Machame als eines der Haupttore, wobei der Abstieg über Mweka erfolgt.</p>\n<p>Die Tanzania National Parks weisen darauf hin, dass auf der Marangu-Route Hütten genutzt werden, während auf den anderen Routen, einschließlich der Machame-Route, Zeltlager zum Einsatz kommen. Der Abstieg erfolgt über das Mweka-Tor.</p>"
+	},
+	"kumano-kodo-kohechi": {
+		"title": "Kumano Kodo – Kohechi",
+		"summary": "Ein anspruchsvoller Bergpilgerweg von etwa 72 km Länge zwischen dem buddhistischen Zentrum Kōyasan und dem Schrein Kumano Hongu Taisha auf der japanischen Kii-Halbinsel.",
+		"html": "<p>Der Kohechi überquert drei Pässe in über 1.000 m Höhe und verbindet den heiligen Berg Kōyasan mit den Kumano-Schreinen, was ihn zum steilsten und ruhigsten der Kumano-Kodo-Wanderwege macht. Auf der Tourismus-Website wird beschrieben, dass er durch abgelegene Dörfer und über alte Steinwege führt.</p>\n<p>Die hier verwendete Quelle ist ein Tourismusartikel, der eine Länge von 72 km angibt; Tage oder Jahreszeiten werden darin nicht genannt.</p>"
+	},
+	"kumano-kodo-nakahechi": {
+		"title": "Kumano Kodo – Nakahechi",
+		"summary": "Der Hauptpilgerweg „Kumano Kodo“ auf der japanischen Kii-Halbinsel, der von Takijiri zum Kumano-Hongu-Taisha-Schrein führt und in der Regel in zwei bis vier Tagen zurückgelegt wird.",
+		"html": "<p>Die Nakahechi war die Hauptstraße für Kaiser und einfache Bürger auf dem Weg zu den drei Kumano-Schreinen und führt über bewaldete Pässe mit kleinen Wegschreinen (Oji). Die Route ist Teil der von der UNESCO gelisteten „Heiligen Stätten und Pilgerwege im Kii-Gebirge“.</p>\n<p>Auf der Seite des Tourismusverbands von Tanabe, die wir aufgerufen haben, wurden weder Länge noch Saison angegeben; die Angabe von 36 km stammt aus dem OSM-Tag.</p>"
+	},
+	"kungsleden": {
+		"title": "Kungsleden",
+		"summary": "Der berühmte schwedische Hüttenwanderweg in der Arktis verläuft über eine Strecke von etwa 450 km von Abisko oberhalb des Polarkreises bis nach Hemavan im Süden und führt dabei durch die Berge und Täler Lapplands.",
+		"html": "<p>Der Kungsleden wird vom Schwedischen Tourismusverband betrieben, der Hütten, Brücken und Fährverbindungen unterhält. Der bekannteste Abschnitt ist der nördliche Teil, der von Abisko über den Tjäktja-Pass nach Nikkaluokta führt, wo Wanderer offene Tundra und alpine Täler unterhalb der höchsten Berge Schwedens durchqueren.</p>\n<p>Auf der STF-Seite wird die Strecke Abisko–Hemavan mit 450 km angegeben, während die Summe der Etappenlängen höher ist und OSM 440 km angibt; die genaue Zahl hängt also davon ab, wie Abstecher und Abkürzungen per Boot mitgerechnet werden.</p>"
+	},
+	"larapinta-trail": {
+		"title": "Larapinta-Trail",
+		"summary": "Ein Wüstenwanderweg in den West MacDonnell Ranges in Zentralaustralien, von der Telegrafenstation Alice Springs bis zum Gipfel des Mount Sonder, aufgeteilt in zwölf Abschnitte.",
+		"html": "<p>Der Larapinta-Trail folgt den Bergrücken der West MacDonnell Ranges durch Schluchten und vorbei an Wasserstellen. Auf der Website der Regierung heißt es, er sei über 230 km lang und in 12 Etappen von jeweils einem bis zwei Tagen unterteilt.</p>\n<p>Andere Quellen geben 223 km an; der Wanderweg wird in der Regel in den kühleren Monaten begangen.</p>"
+	},
+	"laugavegur": {
+		"title": "Laugavegur-Wanderweg",
+		"summary": "Islands beliebteste Wanderroute führt in etwa vier Tagen durch das südliche Hochland, von den Rhyolith-Heißquellen von Landmannalaugar bis zu den grünen Tälern von Þórsmörk.",
+		"html": "<p>Der Weg führt an dampfenden Schloten, schwarzen Obsidianfeldern, Schneefeldern und Gletscherflüssen vorbei, bevor er in einem mit Birkengebüsch bewachsenen Tal zwischen drei Gletschern endet. Die Hütten entlang der Strecke werden vom isländischen Wanderverein betrieben, und der Weg ist nur im Sommer begehbar.</p>\n<p>Auf der Website des Vereins wird je nach Etappentabelle eine Länge von 54 bis 56 km und eine Dauer von vier Tagen angegeben; der Weg ist von etwa 25. Juni bis 15. September geöffnet.</p>"
+	},
+	"lebanon-mountain-trail": {
+		"title": "Lebanon-Bergwanderweg",
+		"summary": "Ein 470 km langer Wanderweg entlang der Berge des Libanon, der von Andaket im Norden bis nach Marjayoun im Süden führt und dabei mehr als 75 Städte und Dörfer durchquert.",
+		"html": "<p>Nach Angaben der Lebanon Mountain Trail Association verläuft der Wanderweg in Höhenlagen zwischen 600 und 2.000 m und ist mit weißen und violetten Markierungen gekennzeichnet. Er führt durch Zedernwälder, vorbei an Klöstern und Dörfern und nutzt Gästehäuser.</p>\n<p>Lokale Gasthäuser und Gemeinschaftsprojekte entlang der Route sind seit der Einrichtung des Wanderwegs ein Hauptziel. Wanderer folgen den weißen und violetten Markierungen durch Bergdörfer von Norden nach Süden.</p>"
+	},
+	"long-trail": {
+		"title": "Langer Wanderweg",
+		"summary": "Amerikas ältester Fernwanderweg verläuft über eine Länge von 272 Meilen entlang der Green Mountains, von der Grenze zu Massachusetts bis zur kanadischen Grenze.",
+		"html": "<p>Der Long Trail wurde zu Beginn des 20. Jahrhunderts vom Green Mountain Club angelegt und diente später als Vorbild für den Appalachian Trail, mit dem er die ersten 100 Meilen gemeinsam hat.</p>\n<p>Nach Angaben des Clubs erstreckt sich der Wanderweg über 272 Meilen entlang des Bergrückens von Vermont, und eine Durchquerung dauert einige Wochen.</p>"
+	},
+	"lycian-way": {
+		"title": "Lykischer Weg",
+		"summary": "Ein ausgeschilderter Wanderweg entlang der Küste des antiken Lykien in der Südtürkei, von Ölüdeniz bei Fethiye bis nach Geyikbayırı bei Antalya.",
+		"html": "<p>Der 1999 angelegte und markierte Weg verbindet alte Maultierpfade und Römerstraßen, die an den Gräbern und Theatern lykischer Städte vorbeiführen, wobei lange Abschnitte hoch über dem Meer verlaufen.</p>"
+	},
+	"maclehose-trail": {
+		"title": "MacLehose-Wanderweg",
+		"summary": "Hongkongs längster Wanderweg, etwa 100 km lang und in 10 Abschnitte unterteilt, vom East Dam in Sai Kung bis nach Tuen Mun.",
+		"html": "<p>Der MacLehose Trail durchquert die New Territories und führt durch Naturparks, an Stränden und Bergen vorbei, unter anderem an der Küste von Sai Kung, durch Sha Tin und am Tai Mo Shan entlang. Es handelt sich um einen von der Regierung verwalteten Wanderweg, der auch Teil der Oxfam Trailwalker-Route ist.</p>\n<p>Das Hong Kong Tourism Board gibt eine Gesamtlänge von etwa 100 km in 10 Abschnitten an.</p>"
+	},
+	"milford-track": {
+		"title": "Milford Track",
+		"summary": "Neuseelands berühmtester „Great Walk“ führt über vier Tage durch das Fiordland – von Glade Wharf am Lake Te Anau über den McKinnon Pass bis zum Sandfly Point am Milford Sound.",
+		"html": "<p>Der Milford Track führt durch das Clinton- und das Arthur-Tal, steigt über den Mackinnon-Pass hinauf und führt entlang des Arthur River hinab, vorbei an den Sutherland Falls, einem der höchsten Wasserfälle Neuseelands. Wanderer müssen Hütten im Voraus buchen und dürfen die Strecke nur in eine Richtung zurücklegen.</p>\n<p>Das Department of Conservation gibt die Strecke mit 53,5 km, drei Übernachtungen und vier Tagen an; die Saison für die „Great Walks“ dauert vom 1. November bis zum 30. April.</p>"
+	},
+	"nakasendo": {
+		"title": "Nakasendō",
+		"summary": "Die alte Fernstraße zwischen Kyoto und Edo (Tokio), etwa 534 km lang und mit 69 Poststationen, ist in Magome und Tsumago teilweise als Wanderweg erhalten geblieben.",
+		"html": "<p>Der Nakasendo war eine der fünf Straßen der Edo-Zeit und verband Kyoto und Edo über die Berge. Abschnitte wie der Weg von Magome nach Tsumago im Kiso-Tal sind gut erhalten.</p>\n<p>Die Japanische Nationalen Tourismusorganisation gibt eine Länge von etwa 534 km und 69 Poststädte an.</p>"
+	},
+	"naukluft-hiking-trail": {
+		"title": "Naukluft-Wanderweg",
+		"summary": "Eine Rundwanderung im Naukluft-Gebirge in Namibia, die in einer 4-tägigen und einer 8-tägigen Variante angeboten wird.",
+		"html": "<p>Der Naukluft-Wanderweg ist ein Rundweg in den Naukluft-Bergen. Namibia Wildlife Resorts bietet 4-Tage- und 8-Tage-Varianten an.</p>\n<p>Namibia Wildlife Resorts organisiert die Wanderung von seinem Naukluft-Camp aus. Die längere 8-Tage-Variante führt über das Hochplateau, während die kürzere Variante für Wanderer mit weniger Zeit gedacht ist.</p>"
+	},
+	"offas-dyke-path": {
+		"title": "Der Offa's Dyke-Wanderweg",
+		"summary": "Ein National Trail entlang der Grenze zwischen England und Wales, der dem Verlauf eines Erdwalls aus dem 8. Jahrhundert von der Severn-Mündung bei Chepstow bis zur Nordküste bei Prestatyn folgt.",
+		"html": "<p>Der Weg verläuft teilweise auf Abschnitten des Deiches, der König Offa von Mercia zugeschrieben wird, und verbindet das Wye-Tal, die Black Mountains, die Shropshire Hills und die Clwydian Range. Er überquert mehrfach die Grenze, sodass Wanderer fast täglich zwischen englischen und walisischen Dörfern hin- und herwandern.</p>\n<p>Auf der Website des National Trail wird die Länge mit 177 Meilen angegeben; dort heißt es, die Route sei das ganze Jahr über begehbar, werde jedoch meist zwischen April und Oktober zurückgelegt, und es wird eine Wanderzeit von etwa zwei Wochen oder mehr empfohlen. Als Startpunkt gilt die Stadt Chepstow in der Nähe der Sedbury Cliffs.</p>"
+	},
+	"otter-trail": {
+		"title": "Otter Trail",
+		"summary": "Südafrikas erster und berühmtester Wanderweg im „Slackpacking“-Stil führt über 45 km entlang der Tsitsikamma-Küste zwischen Storms River Mouth und Nature’s Valley und dauert fünf Tage.",
+		"html": "<p>Der Otter Trail ist ein ausschließlich nach Voranmeldung begehbarer Küstenwanderweg im Garden-Route-Nationalpark mit Hütten an den Übernachtungsstellen und Flussüberquerungen, die von den Gezeiten abhängen.</p>\n<p>SANParks beschreibt ihn als eine 45 km lange Wanderung über fünf Tage und vier Nächte.</p>"
+	},
+	"overland-track": {
+		"title": "Overland Track",
+		"summary": "Tasmaniens klassische sechstägige Bergwanderung von Ronny Creek am Cradle Mountain zum Lake St. Clair.",
+		"html": "<p>Der Overland Track führt an Seen und Button-Grass-Ebenen vorbei und endet am tiefsten Süßwassersee Australiens; in der Hauptsaison sind eine Reservierung und eine Gebühr erforderlich.</p>\n<p>Der Parks and Wildlife Service gibt eine Strecke von 65 km (einfach) und eine Dauer von sechs Tagen an und teilt mit, dass die Buchungssaison vom 1. Oktober bis zum 31. Mai läuft.</p>"
+	},
+	"pacific-crest-trail": {
+		"title": "Pacific Crest Trail",
+		"summary": "Ein nationaler Panoramaweg entlang der Gebirge von Kalifornien, Oregon und Washington, der von der mexikanischen Grenze bei Campo bis zum Manning Park in Kanada führt und etwa 4.265 km lang ist.",
+		"html": "<p>Der PCT verläuft durch die Sierra Nevada und die Kaskadenkette und führt dabei durch Wüsten, über hohe Pässe sowie durch Schnee- und Vulkanlandschaften. Seine Länge wird von der Pacific Crest Trail Association mit 2.650 Meilen angegeben.</p>\n<p>Durchwanderungen dauern in der Regel etwa fünf Monate, wobei die Schneelage und die Brandgefahr die Planung maßgeblich beeinflussen.</p>"
+	},
+	"peaks-of-the-balkans": {
+		"title": "Der „Peaks of the Balkans“-Wanderweg",
+		"summary": "Eine grenzüberschreitende Rundreise durch das Verfluchte Gebirge in Albanien, im Kosovo und in Montenegro, die Dörfer mit Gästehäusern wie Theth, Valbona, Plav und Peja miteinander verbindet.",
+		"html": "<p>Der Wanderweg wurde nach den Kriegen der 1990er Jahre als gemeinsames Projekt zur Förderung der Zusammenarbeit zwischen drei Ländern angelegt. Er führt über Hirtenpfade und Pässe in über 2.000 m Höhe und sieht Übernachtungen in Dorfgasthöfen vor, sodass Wanderer kein Zelt benötigen.</p>\n<p>Auf der Projekt-Website wird eine Strecke von 192 km in 10 Etappen (10–12 Tage) angegeben und eine Rundwanderung beschrieben; der Start erfolgt in der Regel in Theth, Plav oder Peja.</p>"
+	},
+	"pennine-way": {
+		"title": "Pennine Way",
+		"summary": "Englands erster National Trail verläuft entlang der Pennine-Hügel von Edale im Peak District bis nach Kirk Yetholm, direkt hinter der schottischen Grenze.",
+		"html": "<p>Die Route führt durch Sandsteinmoore, Kalksteintäler und die hohen Fells der Yorkshire Dales und der North Pennines, folgt dann dem Hadrianswall, bevor sie in die Cheviot Hills hinaufführt. Torfmoore und exponierte Bergrücken machen die Orientierung bei schlechtem Wetter zu einer Herausforderung.</p>\n<p>„National Trails“ gibt eine Länge von 268 Meilen und eine Dauer von sechs bis 22 Tagen an; als empfohlener Wanderzeitraum wird der Zeitraum von April bis Anfang Oktober genannt.</p>"
+	},
+	"rennsteig": {
+		"title": "Rennsteig",
+		"summary": "Ein Kammweg durch den Thüringer Wald von Hörschel an der Werra nach Blankenstein an der Saale, der seit langem als Grenzweg dient.",
+		"html": "<p>Der Rennsteig verläuft entlang des Kamms des Thüringer Waldes und des Thüringer Schiefergebirges und ist einer der ältesten und bekanntesten Wanderwege Deutschlands. Er ist mit einem weißen „R“ auf grünem Hintergrund ausgeschildert.</p>\n<p>Die regionale Tourismusorganisation gibt eine Gesamtlänge von etwa 170 km an, mit Routen von vier, sechs oder acht Etappen, und legt den Start in Hörschel und das Ziel in Blankenstein fest.</p>"
+	},
+	"routeburn-track": {
+		"title": "Routeburn Track",
+		"summary": "Eine zwei- bis viertägige Hochgebirgswanderung zwischen dem Routeburn Shelter in der Nähe von Glenorchy und „The Divide“ an der Milford Road, die über den Harris Saddle führt.",
+		"html": "<p>Der Wanderweg verbindet den Mount Aspiring- und den Fiordland-Nationalpark und bietet Ausblicke auf Alpenseen, Buchenwälder und das Hollyford-Tal. Er kann in beide Richtungen begangen werden.</p>\n<p>Das Department of Conservation gibt die Länge mit 32 km und die Dauer mit zwei bis vier Tagen an und nennt als Saison für den Great Walk den Zeitraum vom 1. November bis zum 30. April.</p>"
+	},
+	"rwenzori-central-circuit": {
+		"title": "Rwenzori-Zentralkreis",
+		"summary": "Eine siebentägige Rundwanderung im Rwenzori-Gebirge in Uganda, die in Mihunga beginnt und Hütten sowie Ausblicke auf Gletscher bietet.",
+		"html": "<p>Der Central Circuit ist eine Trekkingtour in großer Höhe im Rwenzori-Mountains-Nationalpark, der von der Uganda Wildlife Authority verwaltet wird.</p>\n<p>Die Uganda Wildlife Authority bietet die Tour als siebentägige Wanderung mit Führern und Übernachtungen in Hütten an. Auf der Seite werden Januar, Juni und Juli als die besten Monate genannt.</p>"
+	},
+	"shikoku-henro": {
+		"title": "Shikoku-Pilgerreise",
+		"summary": "Eine Rundwallfahrt zu 88 Tempeln rund um die Insel Shikoku, die etwa 1.200 km lang ist und mit dem Mönch Kūkai in Verbindung steht.",
+		"html": "<p>Der Shikoku-Henro ist der bekannteste Rundpilgerweg in Japan, der im Uhrzeigersinn beginnend am Tempel Nr. 1, dem Ryōzen-ji, zurückgelegt wird. Der Pilgerverein gibt die Länge mit etwa 1.200 km an. Viele Pilger legen die Strecke in Etappen zurück.</p>\n<p>Da die Route entlang der gesamten Küste und durch die Berge der Insel führt, absolvieren viele Pilger sie in mehreren Etappen. Weiße Pilgerkleidung und ein Pilgerstab sind traditionell üblich, für Wanderer heute jedoch nicht mehr vorgeschrieben.</p>"
+	},
+	"south-downs-way": {
+		"title": "South Downs Way",
+		"summary": "Ein nationaler Wanderweg entlang des Kreidegrats der South Downs von Winchester bis zu den Meeresklippen bei Eastbourne.",
+		"html": "<p>Der Weg führt entlang des Kamms der South Downs durch Waldgebiete und offene Kreidewiesen und endet bei Beachy Head und den Seven Sisters.</p>\n<p>Laut „National Trails“ sind es 100 Meilen, die Wanderung dauert acht bis neun Tage und kann zu jeder Jahreszeit unternommen werden; die Hauptsaison dauert von Mai bis September.</p>"
+	},
+	"south-west-coast-path": {
+		"title": "South West Coast Path",
+		"summary": "Der längste National Trail Großbritanniens verläuft entlang der südwestenglischen Küste von Minehead über Cornwall bis nach Poole und führt über mehr als 1.000 km an Klippen, Buchten und Häfen vorbei.",
+		"html": "<p>Der Weg schlängelt sich entlang der Küste durch Exmoor, Nord-Devon und Cornwall, umrundet Land’s End und führt dann entlang des Ärmelkanals zurück nach Osten bis nach Dorset. Da es an Flussmündungen und Landzungen ständig kurze Anstiege und Abstiege gibt, kommt man langsamer voran, als die Entfernung vermuten lässt.</p>\n<p>„National Trails“ gibt die Länge mit 630 Meilen an und schätzt die Dauer der Wanderung auf etwa 30 Wandertage für zügige Wanderer bzw. sieben bis acht Wochen bei gemächlichem Tempo; als beste Reisezeiten werden der Frühling und der Spätsommer empfohlen.</p>"
+	},
+	"st-olavsleden": {
+		"title": "Der St.-Olav-Weg",
+		"summary": "Ein Pilgerweg von Selånger an der schwedischen Ostseeküste über das skandinavische Gebirge zur Kathedrale von Nidaros, der dem Weg folgt, der König Olav im Jahr 1030 zugeschrieben wird.",
+		"html": "<p>Die Route führt durch Schweden und Norwegen, durch Wälder, vorbei an Seen und Bergen, mit Ackerland und Ortschaften entlang des Weges. In der Nähe von Munkeby in Norwegen teilt sie sich in eine äußere Route entlang des Trondheim-Fjords und eine innere Route durch die Wälder.</p>\n<p>Das norwegische Pilgerzentrum gibt eine Gesamtlänge von 580 km und 29 Tagesetappen an (30 bis 32 Tage einschließlich Ruhetage) und empfiehlt, die Wanderung zwischen dem 1. Juni und dem 1. September zu unternehmen.</p>"
+	},
+	"st-paul-trail": {
+		"title": "St. Paul Trail",
+		"summary": "Eine ausgeschilderte Route von Perge bei Antalya nach Norden durch das Taurusgebirge bis nach Yalvaç, dem antiken Antiochia in Pisidien.",
+		"html": "<p>Der Wanderweg folgt teilweise der Route, die der Apostel Paulus vermutlich auf seiner ersten Reise durch Kleinasien genommen hat, und führt von der Mittelmeerküste hinauf zu den Seen im Landesinneren.</p>"
+	},
+	"te-araroa": {
+		"title": "Te Araroa",
+		"summary": "Der neuseeländische Nationalwanderweg erstreckt sich über etwa 3.000 km vom Kap Reinga im hohen Norden bis nach Bluff an der Südspitze.",
+		"html": "<p>Der Wanderweg führt über Strände, durch Wälder, Vulkanlandschaften und Gebirgszüge auf beiden Inseln und verläuft über eine Mischung aus Pfaden, Straßen sowie Fluss- und Meeresüberquerungen.</p>\n<p>Der Trail Trust gibt die Gesamtlänge mit 3.000 km an. Eine Durchquerung dauert Monate.</p>"
+	},
+	"tongariro-northern-circuit": {
+		"title": "Tongariro-Nordrundwanderung",
+		"summary": "Eine drei- bis viertägige Vulkanrundwanderung rund um den Mount Ngauruhoe und den Mount Tongariro auf der Nordinsel Neuseelands.",
+		"html": "<p>Die Route führt über das Tongariro-Vulkanplateau, vorbei am Red Crater, den Emerald Lakes und dem Blue Lake.</p>\n<p>Das DOC gibt für die gesamte Rundwanderung eine Länge von 43 km und eine Dauer von drei bis vier Tagen an; auf seiner Wanderweg-Seite wird derzeit aufgrund einer Routenänderung eine kürzere Variante von 35,5 km beschrieben.</p>"
+	},
+	"tour-du-mont-blanc": {
+		"title": "Tour du Mont Blanc",
+		"summary": "Eine Rundtour um das Mont-Blanc-Massiv durch Frankreich, Italien und die Schweiz, die klassischerweise in Les Houches beginnt und endet.",
+		"html": "<p>Die Route führt über eine Reihe hoher Pässe zwischen den Tälern von Chamonix, Courmayeur und Champex, wobei man unterwegs in Berghütten und Dorfgasthöfen übernachtet.</p>"
+	},
+	"trans-bhutan-trail": {
+		"title": "Trans-Bhutan-Trail",
+		"summary": "Bhutans wiederhergestellte nationale Pilger- und Handelsroute von etwa 403 km Länge, die von Haa im Westen nach Trashigang im Osten führt.",
+		"html": "<p>Der Trans-Bhutan-Trail war im Mittelalter eine Handels- und Pilgerroute. Im Jahr 2022 wurde er für Wanderer und Radfahrer wiedereröffnet. Die von der Organisation vorgeschlagene Route von Anfang bis Ende dauert 36 Tage.</p>\n<p>Die wiedereröffnete Route wird von einer gemeinnützigen Organisation mit einem festen 36-tägigen Rundweg betrieben. Kürzere Abschnitte können als eigenständige Touren von den größeren Orten aus gewandert werden.</p>"
+	},
+	"transcaucasian-trail-upper-svaneti": {
+		"title": "Transkaukasischer Wanderweg: Ober-Swanetien",
+		"summary": "Ein 140 km langer Hochgebirgsabschnitt des Transkaukasischen Wanderwegs durch Georgiens Swanetien, von Chuberi im Nenskra-Tal bis nach Uschguli, einem der höchstgelegenen Dörfer Europas.",
+		"html": "<p>Die Wanderung durch Ober-Swanetien führt durch Dörfer mit steinernen Wehrtürmen, über Pässe und vorbei an Gletschern des Großen Kaukasus. Sie wird vom Verein „Transcaucasian Trail Association“ organisiert, einer gemeinnützigen Organisation, die einen durchgehenden Wanderweg quer durch den Kaukasus aufbaut.</p>\n<p>Der Verein gibt eine Länge von 140 km und eine Dauer von 7 bis 9 Tagen an.</p>"
+	},
+	"tsitsikamma-hiking-trail": {
+		"title": "Tsitsikamma-Wanderweg",
+		"summary": "Ein sechstägiger Bergwanderweg durch Urwald und Fynbos im Tsitsikamma-Nationalpark, von Nature’s Valley bis zum Storms River, mit Hütten an jedem Übernachtungsort.",
+		"html": "<p>Der Wanderweg führt an Flussschluchten und riesigen Gelbholz-Bäumen vorbei und kann auch in kürzeren Varianten begangen werden. Ein optionaler Gepäcktransport wird angeboten.</p>\n<p>Die Tourismus-Website des Ostkaps gibt eine Länge von 62,3 km über sechs Tage an.</p>"
+	},
+	"via-de-la-plata": {
+		"title": "Vía de la Plata",
+		"summary": "Ein Nord-Süd-Pilgerweg von Sevilla durch die Extremadura und Kastilien; es handelt sich um den spanischen Camino, der der alten Römerstraße „Via de la Plata“ folgt.",
+		"html": "<p>Die Vía de la Plata folgt der römischen Straße, die Mérida und Astorga verband. Pilger aus Andalusien wandern etwa einen Monat lang bis nach Astorga, wo der Weg auf den Camino Francés trifft, oder setzen ihre Reise auf dem Sanabrés-Zweig durch Galicien fort.</p>\n<p>Nach Angaben des spanischen Fremdenverkehrsamts ist die Route 800 bis 900 km lang und umfasst etwa 32 Wandertage (49 für Radfahrer); empfohlen wird eine Dauer von mindestens sieben Tagen.</p>"
+	},
+	"via-degli-dei": {
+		"title": "Via degli Dei",
+		"summary": "Eine Route über die Apenninen von Bologna nach Florenz, die teilweise auf römischen und mittelalterlichen Straßen verläuft und in der Regel in fünf bis sieben Tagen zurückgelegt wird.",
+		"html": "<p>Die „Via degli Dei“ verbindet die beiden Städte über bewaldete Bergrücken, alte Straßen und Bergdörfer, wobei die Übernachtungen in Pensionen stattfinden. Der Name bezieht sich auf Bergnamen, die nach antiken Göttern benannt sind, wie beispielsweise Monte Adone und Monte Venere.</p>\n<p>Auf der Website des Vereins sind 130 km und eine Wanderzeit von fünf bis sieben Tagen angegeben; das OSM-Tag gibt 117 km an.</p>"
+	},
+	"via-francigena": {
+		"title": "Via Francigena",
+		"summary": "Der lange Pilgerweg zwischen Canterbury und Rom, der sich nach Süden bis nach Santa Maria di Leuca in Apulien erstreckt, folgt der Reise, die Erzbischof Sigeric um das Jahr 990 herum beschrieb.",
+		"html": "<p>Sigeric reiste nach Rom, um sein Pallium entgegenzunehmen, und hielt auf seinem Rückweg die 79 Etappen fest. Diese Liste bildet das historische Gerüst der Via Francigena, die durch England, Frankreich, die Schweiz und Italien führt und am Großen St. Bernhard-Pass in die Alpen mündet.</p>\n<p>Der Europarat hat sie 1994 als Kulturroute anerkannt. Im Jahr 2019 verlängerte die Vereinigung der Via Francigena die Route von Rom nach Süden bis nach Santa Maria di Leuca, wo sich italienische Pilger traditionell auf den Weg ins Heilige Land machten.</p>"
+	},
+	"via-podiensis": {
+		"title": "Via Podiensis",
+		"summary": "Der bekannteste französische Jakobsweg beginnt in Le Puy-en-Velay und führt durch das Zentralmassiv, das Aubrac und den Südwesten bis zum Fuß der Pyrenäen nach Saint-Jean-Pied-de-Port.",
+		"html": "<p>Le Puy war einer der vier klassischen Ausgangspunkte in Frankreich, die im mittelalterlichen Pilgerführer genannt wurden, und die Wanderung führt an einer Reihe von romanischen Kirchen, Dörfern auf Granitplateaus und Hochweiden vorbei. Das Aubrac-Plateau und das Lot-Tal rund um Conques sind die bekanntesten Höhepunkte.</p>\n<p>Der französische Pilgerverein schätzt die Strecke nach Saint-Jean-Pied-de-Port auf etwa 755 km und die Dauer auf 32 Tage; die Wanderung ist von März bis Oktober möglich. Sieben Abschnitte des „Chemin du Puy“ sind Teil des UNESCO-Weltkulturerbes „Pilgerwege nach Santiago de Compostela in Frankreich“.</p>"
+	},
+	"w-trek-torres-del-paine": {
+		"title": "W-Trek im Nationalpark Torres del Paine",
+		"summary": "Eine fünftägige Wanderung im Nationalpark Torres del Paine in Patagonien entlang dreier Täler, die die Form eines W haben: der Grey-Gletscher, das Französische Tal und der Fuß der Torres.",
+		"html": "<p>Die W-Wanderung verbindet die Torres, das Valle Francés und den Grey-Gletscher und führt an Berghütten und Campingplätzen im Nationalpark vorbei.</p>\n<p>Chiles Tourismusverband gibt die Strecke mit etwa 70 km und einer Dauer von fünf Tagen an und bezeichnet Frühling und Sommer als Wandersaison.</p>"
+	},
+	"west-coast-trail": {
+		"title": "West Coast Trail",
+		"summary": "Ein anspruchsvoller Küstenwanderweg an der Westküste von Vancouver Island: 75 km Strände, Leitern und Regenwald zwischen der Pachena Bay und dem Gordon River.",
+		"html": "<p>Der Weg diente ursprünglich als Rettungsweg für Schiffbrüchige und ist heute eine anspruchsvolle Wanderroute im Pacific Rim National Park Reserve. Wanderer müssen sich anmelden und an einer Einweisung teilnehmen; der Weg ist nur im Sommer geöffnet.</p>\n<p>Laut Parks Canada dauert die Wanderung sechs bis acht Tage; die Route ist vom 1. Mai bis zum 30. September geöffnet.</p>"
+	},
+	"west-highland-way": {
+		"title": "West Highland Way",
+		"summary": "Schottlands bekanntester Fernwanderweg verbindet die Außenbezirke von Glasgow mit Fort William und führt auf dem Weg in die Highlands am Loch Lomond, am Rannoch Moor und am Glen Coe vorbei.",
+		"html": "<p>Die Route beginnt in der Pendlerstadt Milngavie und führt nach und nach von den Vororten in den Wald, bevor sie entlang des Ostufers des Loch Lomond ansteigt. Nördlich von Tyndrum durchquert sie die offene Torf- und Felslandschaft des Rannoch Moor, bevor es hinab in das große Tal von Glen Coe geht.</p>\n<p>Der letzte Abschnitt führt über den „Devil’s Staircase“-Anstieg und alte Militärstraßen und endet in Fort William am Fuße des Ben Nevis. Die meisten Wanderer benötigen sechs oder sieben Tage; laut der offiziellen Website ist der Mai der beliebteste Monat, und der Weg ist das ganze Jahr über begehbar, wobei Mücken im Sommer lästig sein können.</p>"
+	},
+	"westweg": {
+		"title": "Westweg",
+		"summary": "Der älteste Fernwanderweg im Schwarzwald, der von Pforzheim entlang des westlichen Gebirgskamms bis nach Basel führt.",
+		"html": "<p>Der Westweg verläuft entlang der Kammlinie des nördlichen und mittleren Schwarzwaldes, führt vorbei an Hornisgrinde, Feldberg und Belchen und endet in der Schweizer Grenzstadt Basel. Seit 1900 wird er vom Schwarzwaldverein gepflegt, der ihn zudem mit einem roten Rautenzeichen markiert.</p>\n<p>Der Tourismusverband Schwarzwald gibt die Länge mit etwa 285 km an, verteilt auf 12 Etappen auf der westlichen Route und 13 Etappen auf der östlichen Variante, die sich am Titisee gabelt.</p>"
+	},
+	"wicklow-way": {
+		"title": "Wicklow Way",
+		"summary": "Irlands ältester markierter Wanderweg führt durch die Wicklow Mountains von den Vororten Dublins bis zum Dorf Clonegal in der Grafschaft Carlow.",
+		"html": "<p>Die Route führt über Waldwege und Moorpfade durch Glendalough, über die Ausläufer des Lugnaquilla und durch das Wicklow-Hochland. In der Wegbeschreibung ist von sieben Tagen oder mehr die Rede, je nach Tempo.</p>\n<p>Auf der Website des Wanderwegs sind 127 km zwischen Marlay Park und Clonegal angegeben.</p>"
+	},
+	"wilson-trail": {
+		"title": "Wilson-Wanderweg",
+		"summary": "Ein 78 km langer Wanderweg quer durch Hongkong, der von Stanley auf Hong Kong Island bis nach Nam Chung in den New Territories führt und in 10 Abschnitte unterteilt ist.",
+		"html": "<p>Der Wilson Trail verläuft von der Südküste von Hong Kong Island über den Lion Rock und das Gebiet Tai Po bis in den Nordosten der New Territories.</p>\n<p>Nach Angaben der Tourismusbehörde ist er 78 km lang und in 10 Abschnitte unterteilt.</p>"
+	}
+}
