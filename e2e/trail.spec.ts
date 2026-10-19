@@ -19,7 +19,7 @@ test("a trail page carries the facts, the story and the official link", async ({
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
 	await expect(page.getByText("Линия на карте схематична")).toBeVisible();
 	await expect(
-		page.getByRole("link", { name: "cultureroutesinturkey.com" }),
+		page.getByRole("link", { name: "cultureroutesinturkey.com", exact: true }),
 	).toHaveAttribute(
 		"href",
 		"https://cultureroutesinturkey.com/the-lycian-way/",

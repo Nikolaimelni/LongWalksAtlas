@@ -29,6 +29,6 @@ export default defineConfig({
 	// whole project with this setting. It does not know build/ is the output, so it put
 	// a watcher on every folder the prerender wrote and stalled the server for minutes.
 	server: {
-		watch: { ignored: ["**/build/**", "**/data/cache/**"] },
+		watch: { ignored: ["**/build/**", "**/data/cache/**", "**/.claude/**"] },
 	},
 });
