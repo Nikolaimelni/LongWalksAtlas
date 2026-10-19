@@ -89,3 +89,15 @@ test("switching language keeps the page and remembers the choice", async ({
 	await page.goto("/");
 	await expect(page).toHaveURL(/\/ru\/$/);
 });
+
+test("the privacy page is linked from the map and says what is collected", async ({
+	page,
+}) => {
+	await page.goto("/en/");
+	await page.getByRole("link", { name: "Privacy and terms" }).click();
+	await expect(page).toHaveURL(/\/en\/privacy\/$/);
+	await expect(
+		page.getByRole("heading", { level: 1, name: "Privacy and terms" }),
+	).toBeVisible();
+	await expect(page.getByText("Cloudflare Web Analytics")).toBeVisible();
+});

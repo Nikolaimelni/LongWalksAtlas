@@ -127,6 +127,20 @@
 		"growing": "Atlastaki rota sayısı: {{count}}. Yenileri kontrol edildikçe ekleniyor.",
 		"suggest": "Burada olması gereken bir uzun yürüyüş rotası mı biliyorsunuz? <a>{{email}}</a> adresine yazın."
 	},
+	"legal": {
+		"link": "Gizlilik ve kullanım koşulları",
+		"title": "Gizlilik ve kullanım koşulları",
+		"description": "Atlas, verilerinizi nasıl işliyor ve her bir parkur hakkında verdiği bilgilere ne ölçüde güvenebilirsiniz?",
+		"useHeading": "Atlasın kullanımı",
+		"use": "Bu atlas yalnızca bilgi amaçlıdır. Yürüyüş parkuru çizgileri şematiktir ve bilgiler, resmi yürüyüş parkuru web siteleri, OpenStreetMap ve Wikimedia Commons gibi açık kaynaklardan alınmıştır. Bu bilgiler eksik veya güncel olmayabilir.",
+		"risk": "Yola çıkmadan önce, parkurun resmi web sitesinden güzergâhı, koşulları ve gerekli izinleri kontrol edin. Yürüyüşü kendi sorumluluğunuzda gerçekleştirirsiniz.",
+		"privacyHeading": "Gizlilik",
+		"noCookies": "Sitenin kendisi herhangi bir çerez yerleştirmez ve hesap, kayıt veya form içermez. Siteyi barındıran Cloudflare, bir ziyaretçinin bot olup olmadığını kontrol etmesi gerektiğinde, kesinlikle gerekli olan bir güvenlik çerezi yerleştirebilir; bu çerez izleme amacıyla kullanılmaz.",
+		"analytics": "Ziyaretler, çerez kullanmayan ve diğer sitelerde sizi takip etmeyen Cloudflare Web Analytics ile sayılmaktadır. Site, her bir isteği herhangi bir web barındırma hizmeti sağlayıcısının yaptığı gibi işleyen Cloudflare üzerinde barındırılmaktadır.",
+		"map": "Harita karoları OpenFreeMap'ten yüklenir; bu nedenle harita görüntülendiğinde bu hizmetin sunucuları IP adresinizi görebilir.",
+		"storage": "Seçtiğiniz dil, tarayıcınızın yerel depolama alanında saklanır ve cihazınızdan asla dışarı çıkmaz.",
+		"contact": "Bu konularla ilgili sorularınız varsa: <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Avrupa",
 		"middle-east-caucasus": "Orta Doğu ve Kafkasya",

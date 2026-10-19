@@ -133,6 +133,20 @@
 		"growing": "Senderos en el atlas hasta ahora: {{count}}. Se añaden más a medida que se comprueban.",
 		"suggest": "¿Conoce una ruta de largo recorrido que falte aquí? Escriba a <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Política de privacidad y condiciones de uso",
+		"title": "Política de privacidad y condiciones de uso",
+		"description": "Cómo gestiona el atlas tus datos y hasta qué punto puedes fiarte de lo que indica sobre cada ruta.",
+		"useHeading": "Cómo utilizar el atlas",
+		"use": "El atlas tiene carácter meramente informativo. Las rutas están representadas de forma esquemática, y la información procede de fuentes abiertas, como las páginas web oficiales de las rutas, OpenStreetMap y Wikimedia Commons. Es posible que la información esté incompleta o desactualizada.",
+		"risk": "Antes de salir, consulta la ruta, las condiciones y los permisos necesarios en la página web oficial del sendero. Caminas bajo tu propia responsabilidad.",
+		"privacyHeading": "Privacidad",
+		"noCookies": "La propia página web no instala cookies y no cuenta con cuentas, registros ni formularios. Cloudflare, que la aloja, puede instalar una cookie de seguridad estrictamente necesaria si necesita comprobar que un visitante no es un bot; no se utiliza con fines de seguimiento.",
+		"analytics": "Las visitas se contabilizan mediante Cloudflare Web Analytics, que no utiliza cookies ni realiza un seguimiento de tu actividad en otros sitios web. El sitio está alojado en Cloudflare, que gestiona cada solicitud del mismo modo que lo haría cualquier proveedor de alojamiento web.",
+		"map": "Los mosaicos del mapa se cargan desde OpenFreeMap, por lo que sus servidores ven tu dirección IP cuando se genera el mapa.",
+		"storage": "El idioma que elijas se guarda en el almacenamiento local de tu navegador y nunca sale de tu dispositivo.",
+		"contact": "Si tienes alguna duda sobre esto, envíame un <a>{{email}}</a>o."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Oriente Medio y Cáucaso",

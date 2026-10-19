@@ -19,6 +19,11 @@ export async function loader() {
 			langs: everywhere,
 			xDefault: "/",
 		},
+		{
+			rest: "privacy/",
+			langs: everywhere,
+			xDefault: "/en/privacy/",
+		},
 		...listHubs(trailsIndex).map(
 			(hub): Page => ({
 				rest: hubPath(hub),

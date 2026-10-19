@@ -139,6 +139,20 @@
 		"growing": "Szlaków w atlasie: {{count}}. Kolejne dodajemy, gdy tylko je sprawdzimy.",
 		"suggest": "Znasz długi szlak, którego tu brakuje? Napisz na <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Polityka prywatności i warunki korzystania z serwisu",
+		"title": "Polityka prywatności i warunki korzystania z serwisu",
+		"description": "W jaki sposób atlas przetwarza dane i na ile można polegać na informacjach zawartych w nim na temat poszczególnych szlaków.",
+		"useHeading": "Korzystanie z atlasu",
+		"use": "Atlas ma charakter wyłącznie informacyjny. Trasy szlaków są przedstawione w sposób schematyczny, a informacje pochodzą ze źródeł ogólnodostępnych, takich jak oficjalne strony internetowe szlaków, OpenStreetMap i Wikimedia Commons. Mogą one być niekompletne lub nieaktualne.",
+		"risk": "Przed wyruszeniem w trasę sprawdź trasę, warunki i ewentualne zezwolenia na oficjalnej stronie internetowej szlaku. Wędrówka odbywa się na własne ryzyko.",
+		"privacyHeading": "Polityka prywatności",
+		"noCookies": "Sama strona nie umieszcza żadnych plików cookie i nie zawiera kont, formularzy rejestracyjnych ani innych formularzy. Firma Cloudflare, która ją hostuje, może umieścić plik cookie niezbędny z względów bezpieczeństwa, jeśli zajdzie potrzeba sprawdzenia, czy odwiedzający nie jest botem; plik ten nie służy do śledzenia użytkowników.",
+		"analytics": "Liczba odwiedzin jest rejestrowana za pomocą narzędzia Cloudflare Web Analytics, które nie wykorzystuje plików cookie i nie śledzi użytkowników na innych stronach. Witryna jest hostowana przez Cloudflare, które obsługuje każde żądanie tak samo, jak każdy inny dostawca usług hostingowych.",
+		"map": "Kafelki mapy są pobierane z serwisu OpenFreeMap, więc podczas wyświetlania mapy serwery tego serwisu widzą adres IP użytkownika.",
+		"storage": "Wybrany język jest zapisywany w lokalnej pamięci przeglądarki i nigdy nie opuszcza Twojego urządzenia.",
+		"contact": "W razie jakichkolwiek pytań w tej sprawie: proszę o kontakt przez <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Bliski Wschód i Kaukaz",

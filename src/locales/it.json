@@ -133,6 +133,20 @@
 		"growing": "Sentieri nell'atlante finora: {{count}}. Se ne aggiungono altri man mano che vengono verificati.",
 		"suggest": "Conosci un lungo cammino che manca? Scrivi a <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Informativa sulla privacy e condizioni d'uso",
+		"title": "Informativa sulla privacy e condizioni d'uso",
+		"description": "In che modo l'atlante gestisce i tuoi dati e fino a che punto puoi fare affidamento sulle informazioni che fornisce su ciascun sentiero.",
+		"useHeading": "Come utilizzare l'atlante",
+		"use": "L'atlante ha solo scopo di riferimento. I tracciati dei sentieri sono schematici e le informazioni provengono da fonti aperte quali i siti web ufficiali dei sentieri, OpenStreetMap e Wikimedia Commons. Potrebbero essere incomplete o non aggiornate.",
+		"risk": "Prima di partire, controlla il percorso, le condizioni e gli eventuali permessi sul sito web ufficiale del sentiero. Cammini a tuo rischio e pericolo.",
+		"privacyHeading": "Privacy",
+		"noCookies": "Il sito in sé non imposta alcun cookie e non prevede account, registrazioni o moduli. Cloudflare, che lo ospita, potrebbe impostare un cookie di sicurezza strettamente necessario qualora dovesse verificare che un visitatore non sia un bot; tale cookie non viene utilizzato a fini di tracciamento.",
+		"analytics": "Le visite vengono conteggiate tramite Cloudflare Web Analytics, che non utilizza cookie e non traccia l'utente su altri siti. Il sito è ospitato su Cloudflare, che gestisce ogni richiesta come farebbe qualsiasi host web.",
+		"map": "Le tessere della mappa vengono caricate da OpenFreeMap, quindi i suoi server rilevano il tuo indirizzo IP quando viene visualizzata la mappa.",
+		"storage": "La lingua selezionata viene memorizzata nella memoria locale del browser e non lascia mai il tuo dispositivo.",
+		"contact": "Per qualsiasi domanda al riguardo: inviate un’<a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Medio Oriente e Caucaso",

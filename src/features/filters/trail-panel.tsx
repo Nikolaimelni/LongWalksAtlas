@@ -269,7 +269,19 @@ export function TrailPanel({
 				</button>
 			</div>
 			<p className="-mt-1 px-4 pb-2 text-xs leading-snug text-muted">
-				{t("disclaimer.short")}
+				{t("disclaimer.short")}{" "}
+				<Link to={`/${lang}/privacy/`} viewTransition className="underline">
+					{t("legal.link")}
+				</Link>
+				{" · "}
+				<a
+					href="https://nikolaidev.online"
+					target="_blank"
+					rel="noopener author"
+					className="underline"
+				>
+					nikolaidev.online
+				</a>
 			</p>
 
 			<div

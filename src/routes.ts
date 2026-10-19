@@ -8,6 +8,7 @@ export default [
 		index("routes/atlas.tsx"),
 		route("trail/:slug", "routes/trail.tsx"),
 		route(":kind/:key", "routes/hub.tsx"),
+		route("privacy", "routes/privacy.tsx"),
 		route("og-card", "routes/og-card.tsx"),
 	]),
 ] satisfies RouteConfig;

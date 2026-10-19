@@ -133,6 +133,20 @@
 		"growing": "Trilhos no atlas até agora: {{count}}. Juntam-se novos à medida que são verificados.",
 		"suggest": "Conhece um percurso de longa distância que falte aqui? Escreva para <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Privacidade e condições",
+		"title": "Privacidade e condições",
+		"description": "Como é que o atlas trata os seus dados e até que ponto pode confiar no que este diz sobre cada trilho.",
+		"useHeading": "Como utilizar o atlas",
+		"use": "O atlas destina-se apenas a servir de referência. Os percursos das trilhas são esquemáticos e os dados provêm de fontes abertas, tais como sites oficiais das trilhas, o OpenStreetMap e o Wikimedia Commons. Podem estar incompletos ou desatualizados.",
+		"risk": "Antes de partir, verifique o percurso, as condições e quaisquer autorizações necessárias no site oficial do trilho. A caminhada é por sua conta e risco.",
+		"privacyHeading": "Privacidade",
+		"noCookies": "O próprio site não instala cookies e não possui contas, registos nem formulários. A Cloudflare, que o aloja, pode instalar um cookie de segurança estritamente necessário, caso seja necessário verificar se um visitante não é um bot; este não é utilizado para fins de rastreamento.",
+		"analytics": "As visitas são contabilizadas através do Cloudflare Web Analytics, que não utiliza cookies nem rastreia o utilizador noutros sites. O site está alojado na Cloudflare, que processa cada pedido da mesma forma que qualquer outro serviço de alojamento web.",
+		"map": "Os blocos do mapa são carregados a partir do OpenFreeMap, pelo que os servidores deste servem o seu endereço IP quando o mapa é apresentado.",
+		"storage": "O idioma que escolher é guardado no armazenamento local do seu navegador e nunca sai do seu dispositivo.",
+		"contact": "Se tiver alguma dúvida sobre isto: envie um <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Médio Oriente e Cáucaso",

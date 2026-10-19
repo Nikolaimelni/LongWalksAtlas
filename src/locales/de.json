@@ -127,6 +127,20 @@
 		"growing": "Wege im Atlas bisher: {{count}}. Neue kommen hinzu, sobald sie geprüft sind.",
 		"suggest": "Sie kennen einen Weitwanderweg, der hier fehlt? Schreiben Sie an <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Datenschutz und Nutzungsbedingungen",
+		"title": "Datenschutz und Nutzungsbedingungen",
+		"description": "Wie der Atlas mit Ihren Daten umgeht und inwieweit Sie sich auf die Angaben zu den einzelnen Wanderwegen verlassen können.",
+		"useHeading": "Verwendung des Atlas",
+		"use": "Der Atlas dient lediglich als Nachschlagewerk. Die Wanderwegverläufe sind schematisch dargestellt, und die Angaben stammen aus öffentlich zugänglichen Quellen wie offiziellen Wanderweg-Websites, OpenStreetMap und Wikimedia Commons. Sie können unvollständig oder veraltet sein.",
+		"risk": "Bevor Sie losgehen, informieren Sie sich auf der offiziellen Website des Wanderwegs über die Route, die Bedingungen und eventuelle Genehmigungen. Sie wandern auf eigene Gefahr.",
+		"privacyHeading": "Datenschutz",
+		"noCookies": "Die Website selbst setzt keine Cookies und verfügt weder über Konten noch über Anmeldeformulare oder andere Formulare. Cloudflare, der Host dieser Website, setzt möglicherweise ein unbedingt notwendiges Sicherheits-Cookie, um zu überprüfen, ob es sich bei einem Besucher nicht um einen Bot handelt; dieses Cookie wird nicht zu Tracking-Zwecken verwendet.",
+		"analytics": "Die Besuche werden mit Cloudflare Web Analytics gezählt, das keine Cookies verwendet und Sie nicht über andere Websites hinweg nachverfolgt. Die Website wird auf Cloudflare gehostet, das jede Anfrage so verarbeitet, wie es jeder Webhost tut.",
+		"map": "Die Kartenkacheln werden von OpenFreeMap geladen, sodass dessen Server Ihre IP-Adresse sehen, wenn die Karte geladen wird.",
+		"storage": "Die von Ihnen gewählte Sprache wird im lokalen Speicher Ihres Browsers gespeichert und verlässt Ihr Gerät zu keinem Zeitpunkt.",
+		"contact": "Fragen dazu: per <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Naher Osten und Kaukasus",

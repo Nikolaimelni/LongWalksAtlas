@@ -127,6 +127,20 @@
 		"growing": "Trails on the atlas so far: {{count}}. New ones are added as they are checked.",
 		"suggest": "Know a long walk that belongs here? Suggest it at <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Privacy and terms",
+		"title": "Privacy and terms",
+		"description": "How the atlas handles your data, and how far you can rely on what it says about each trail.",
+		"useHeading": "Using the atlas",
+		"use": "The atlas is for reference only. Trail lines are schematic, and the facts come from open sources such as official trail websites, OpenStreetMap and Wikimedia Commons. They may be incomplete or out of date.",
+		"risk": "Before you set out, check the route, conditions and any permits on the trail's official website. You walk at your own risk.",
+		"privacyHeading": "Privacy",
+		"noCookies": "The site itself sets no cookies and has no accounts, sign-ups or forms. Cloudflare, which hosts it, may set a strictly necessary security cookie if it needs to check that a visitor is not a bot; it is not used for tracking.",
+		"analytics": "Visits are counted with Cloudflare Web Analytics, which uses no cookies and does not follow you across other sites. The site is hosted on Cloudflare, which handles each request the way any web host does.",
+		"map": "Map tiles load from OpenFreeMap, so its servers see your IP address when the map is drawn.",
+		"storage": "The language you pick is kept in your browser's local storage and never leaves your device.",
+		"contact": "Questions about any of this: <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europe",
 		"middle-east-caucasus": "Middle East and Caucasus",

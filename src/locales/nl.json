@@ -127,6 +127,20 @@
 		"growing": "Routes in de atlas tot nu toe: {{count}}. Nieuwe komen erbij zodra ze zijn gecontroleerd.",
 		"suggest": "Kent u een lange wandelroute die hier ontbreekt? Schrijf naar <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Privacy en voorwaarden",
+		"title": "Privacy en voorwaarden",
+		"description": "Hoe de atlas met je gegevens omgaat, en in hoeverre je kunt vertrouwen op wat er over elke route staat vermeld.",
+		"useHeading": "Gebruik van de atlas",
+		"use": "De atlas dient uitsluitend ter referentie. De routes zijn schematisch weergegeven en de gegevens zijn afkomstig uit open bronnen, zoals officiële websites van wandelroutes, OpenStreetMap en Wikimedia Commons. Deze gegevens kunnen onvolledig of verouderd zijn.",
+		"risk": "Controleer, voordat je vertrekt, de route, de omstandigheden en eventuele vergunningen op de officiële website van het wandelpad. Je wandelt op eigen risico.",
+		"privacyHeading": "Privacy",
+		"noCookies": "De website zelf plaatst geen cookies en kent geen accounts, aanmeldingen of formulieren. Cloudflare, de hostingprovider, kan een strikt noodzakelijke beveiligingscookie plaatsen om te controleren of een bezoeker geen bot is; deze wordt niet gebruikt voor tracking.",
+		"analytics": "Bezoeken worden bijgehouden met Cloudflare Web Analytics, dat geen cookies gebruikt en je niet volgt op andere websites. De website wordt gehost door Cloudflare, dat elk verzoek op dezelfde manier verwerkt als elke andere webhost.",
+		"map": "De kaarttegels worden geladen vanuit OpenFreeMap, dus de servers van OpenFreeMap zien je IP-adres wanneer de kaart wordt weergegeven.",
+		"storage": "De taal die je kiest, wordt opgeslagen in het lokale geheugen van je browser en verlaat je apparaat nooit.",
+		"contact": "Heb je hier vragen over? Stuur dan een <a>{{email}}</a>tje."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Midden-Oosten en Kaukasus",

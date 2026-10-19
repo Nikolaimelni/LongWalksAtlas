@@ -139,6 +139,20 @@
 		"growing": "Trasy v atlasu k dnešnímu dni: {{count}}. Nové trasy se přidávají postupně, jak jsou ověřovány.",
 		"suggest": "Znáte nějakou dlouhou trasu, která by sem patřila? Navrhněte ji na <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Ochrana osobních údajů a podmínky",
+		"title": "Ochrana osobních údajů a podmínky",
+		"description": "Jak atlas zpracovává vaše data a do jaké míry se můžete spolehnout na informace, které o jednotlivých trasách uvádí.",
+		"useHeading": "Práce s atlasem",
+		"use": "Tento atlas slouží pouze jako referenční materiál. Trasy jsou znázorněny schematicky a údaje pocházejí z veřejně dostupných zdrojů, jako jsou oficiální webové stránky tras, OpenStreetMap a Wikimedia Commons. Mohou být neúplné nebo zastaralé.",
+		"risk": "Než se vydáte na cestu, zkontrolujte si trasu, podmínky a případná povolení na oficiálních stránkách stezky. Chodíte na vlastní nebezpečí.",
+		"privacyHeading": "Ochrana osobních údajů",
+		"noCookies": "Samotný web neukládá žádné soubory cookie a neobsahuje žádné účty, registrace ani formuláře. Společnost Cloudflare, která tento web hostuje, může uložit nezbytný bezpečnostní soubor cookie, pokud potřebuje ověřit, že návštěvník není robot; tento soubor cookie se nepoužívá ke sledování.",
+		"analytics": "Počet návštěv se počítá pomocí služby Cloudflare Web Analytics, která nepoužívá žádné soubory cookie a nesleduje vás na jiných webech. Web je hostován na platformě Cloudflare, která zpracovává každý požadavek stejně jako jakýkoli jiný webhostingový poskytovatel.",
+		"map": "Mapové dlaždice se načítají ze služby OpenFreeMap, takže při vykreslování mapy její servery vidí vaši IP adresu.",
+		"storage": "Jazyk, který si vyberete, se ukládá do lokálního úložiště vašeho prohlížeče a nikdy neopustí vaše zařízení.",
+		"contact": "Máte-li k tomuto tématu nějaké dotazy, napište nám na <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Evropa",
 		"middle-east-caucasus": "Blízký východ a Kavkaz",

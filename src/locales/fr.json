@@ -133,6 +133,20 @@
 		"growing": "Sentiers dans l'atlas à ce jour : {{count}}. D'autres sont ajoutés au fur et à mesure de leur vérification.",
 		"suggest": "Vous connaissez une grande randonnée qui manque ici ? Écrivez à <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Confidentialité et conditions générales",
+		"title": "Confidentialité et conditions générales",
+		"description": "Comment l'atlas traite vos données, et dans quelle mesure vous pouvez vous fier à ce qu'il indique sur chaque sentier.",
+		"useHeading": "Utilisation de l'atlas",
+		"use": "Cet atlas est fourni à titre indicatif uniquement. Les tracés des sentiers sont schématiques et les informations proviennent de sources ouvertes telles que les sites web officiels des sentiers, OpenStreetMap et Wikimedia Commons. Elles peuvent être incomplètes ou obsolètes.",
+		"risk": "Avant de partir, consultez l'itinéraire, les conditions et les éventuelles autorisations requises sur le site officiel du sentier. Vous marchez à vos propres risques.",
+		"privacyHeading": "Confidentialité",
+		"noCookies": "Le site lui-même n'installe aucun cookie et ne comporte ni compte, ni inscription, ni formulaire. Cloudflare, qui l'héberge, peut installer un cookie de sécurité strictement nécessaire s'il doit vérifier qu'un visiteur n'est pas un robot ; celui-ci n'est pas utilisé à des fins de suivi.",
+		"analytics": "Les visites sont comptabilisées à l'aide de Cloudflare Web Analytics, qui n'utilise aucun cookie et ne vous suit pas sur d'autres sites. Le site est hébergé sur Cloudflare, qui traite chaque requête comme le ferait n'importe quel hébergeur web.",
+		"map": "Les tuiles de la carte sont chargées depuis OpenFreeMap ; ses serveurs ont donc accès à votre adresse IP lorsque la carte s'affiche.",
+		"storage": "La langue que vous choisissez est enregistrée dans la mémoire locale de votre navigateur et ne quitte jamais votre appareil.",
+		"contact": "Si vous avez des questions à ce sujet, n'hésitez pas à m'envoyer un <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europe",
 		"middle-east-caucasus": "Moyen-Orient et Caucase",

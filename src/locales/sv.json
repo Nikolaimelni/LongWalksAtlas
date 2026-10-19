@@ -127,6 +127,20 @@
 		"growing": "Leder i atlasen hittills: {{count}}. Nya läggs till när de har kontrollerats.",
 		"suggest": "Känner du till en vandringsled som saknas här? Skriv till <a>{{email}}</a>."
 	},
+	"legal": {
+		"link": "Sekretess och användarvillkor",
+		"title": "Sekretess och användarvillkor",
+		"description": "Hur atlasen hanterar dina data, och i vilken utsträckning du kan lita på den information som ges om varje vandringsled.",
+		"useHeading": "Så här använder du atlasen",
+		"use": "Atlasen är endast avsedd som referens. Vandringslederna är schematiskt återgivna, och uppgifterna hämtas från öppna källor såsom officiella webbplatser för vandringslederna, OpenStreetMap och Wikimedia Commons. Uppgifterna kan vara ofullständiga eller inaktuella.",
+		"risk": "Innan du ger dig iväg bör du kontrollera rutten, förhållandena och eventuella tillstånd på vandringsledens officiella webbplats. Du vandrar på egen risk.",
+		"privacyHeading": "Sekretess",
+		"noCookies": "Webbplatsen i sig sätter inga cookies och har inga konton, registreringar eller formulär. Cloudflare, som står för webbhotellstjänsten, kan sätta en absolut nödvändig säkerhetscookie om det behövs för att kontrollera att en besökare inte är en bot; den används inte för spårning.",
+		"analytics": "Besöken räknas med hjälp av Cloudflare Web Analytics, som inte använder några cookies och inte spårar dig på andra webbplatser. Webbplatsen är hostad hos Cloudflare, som hanterar varje förfrågan på samma sätt som vilken webbhotellleverantör som helst.",
+		"map": "Kartrutorna hämtas från OpenFreeMap, vilket innebär att deras servrar ser din IP-adress när kartan ritas upp.",
+		"storage": "Det språk du väljer sparas i webbläsarens lokala lagringsutrymme och lämnar aldrig din enhet.",
+		"contact": "Har du frågor om något av detta? Skicka ett <a>{{email}}</a>."
+	},
 	"region": {
 		"europe": "Europa",
 		"middle-east-caucasus": "Mellanöstern och Kaukasus",
