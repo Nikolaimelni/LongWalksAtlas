@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
+import { CountryList } from "~/features/hubs/country-list";
 import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
 import { TrailImage } from "./trail-image";
@@ -54,7 +55,7 @@ export function TrailPreview({ trail, content, photo, variant }: Props) {
 					<p className="text-sm text-muted italic">{trail.name.original}</p>
 				)}
 				<p className="mt-1 text-sm text-muted">
-					{format.countries(trail.countries)}
+					<CountryList codes={trail.countries} linked={false} />
 				</p>
 			</div>
 			{content && (

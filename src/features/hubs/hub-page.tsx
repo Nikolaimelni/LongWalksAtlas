@@ -16,6 +16,8 @@ import { absoluteUrl } from "~/shared/site";
 import { SiteFooter } from "~/shared/site-footer";
 import { SiteNav } from "~/shared/site-nav";
 import { useHydrated } from "~/shared/use-hydrated";
+import { CountryList } from "./country-list";
+import { Flag } from "./flag";
 import type { HubData } from "./hub-data";
 import { HubLinks } from "./hub-links";
 import { hubIntro, hubTitle } from "./hub-meta";
@@ -97,6 +99,9 @@ export function HubPage({ data }: Props) {
 
 			<header className="mt-4">
 				<h1 className="font-display text-3xl leading-tight font-semibold">
+					{hub.kind === "country" && (
+						<Flag code={hub.code} className="me-3 align-baseline" />
+					)}
 					{title}
 				</h1>
 				<p className="mt-4 text-lg leading-relaxed">
@@ -160,7 +165,7 @@ export function HubPage({ data }: Props) {
 									</Link>
 								</h2>
 								<p className="mt-1 text-sm text-muted">
-									{format.countries(tr.summary.countries)} ·{" "}
+									<CountryList codes={tr.summary.countries} linked={false} /> ·{" "}
 									{format.km(tr.summary.lengthKm)} · {format.daysOf(tr.summary)}
 								</p>
 								{tr.content && (

@@ -3,12 +3,12 @@ import { Link } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
 import { trailsIndex } from "~/features/trails/trails-index";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
+import { Flag } from "./flag";
 import { type Hub, hasHub, hubPath } from "./hubs";
 
-type Props = { codes: readonly string[] };
+type Props = { codes: readonly string[]; linked?: boolean };
 
-// "France, Italy and Switzerland", with each country that has its own page linked to it.
-export function CountryList({ codes }: Props) {
+export function CountryList({ codes, linked = true }: Props) {
 	const lang = useLang();
 	const format = useTrailFormat();
 	const parts = new Intl.ListFormat(lang, {
@@ -28,18 +28,27 @@ export function CountryList({ codes }: Props) {
 		}
 		const code = codes[next++] ?? "";
 		const hub: Hub = { kind: "country", code };
+		// The flag stays on the line of its name.
+		const name = (
+			<>
+				<Flag code={code} className="me-1" />
+				{part.value}
+			</>
+		);
 		nodes.push(
-			hasHub(hub, trailsIndex) ? (
+			linked && hasHub(hub, trailsIndex) ? (
 				<Link
 					key={code}
 					to={`/${lang}/${hubPath(hub)}`}
 					viewTransition
-					className="underline"
+					className="whitespace-nowrap underline"
 				>
-					{part.value}
+					{name}
 				</Link>
 			) : (
-				<Fragment key={code}>{part.value}</Fragment>
+				<span key={code} className="whitespace-nowrap">
+					{name}
+				</span>
 			),
 		);
 	}

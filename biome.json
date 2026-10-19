@@ -7,7 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**", "!src/generated", "!public/data"]
+		"includes": ["**", "!src/generated", "!public/data", "!public/flags"]
 	},
 	"formatter": {
 		"enabled": true,

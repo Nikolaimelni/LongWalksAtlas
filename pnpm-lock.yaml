@@ -84,6 +84,9 @@ importers:
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
+      flag-icons:
+        specifier: 7.5.0
+        version: 7.5.0
       marked:
         specifier: ^18.1.1
         version: 18.1.1
@@ -1102,6 +1105,9 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  flag-icons@7.5.0:
+    resolution: {integrity: sha512-kd+MNXviFIg5hijH766tt+3x76ele1AXlo4zDdCxIvqWZhKt4T83bOtxUOOMlTx/EcFdUMH5yvQgYlFh1EqqFg==}
 
   flru@1.0.2:
     resolution: {integrity: sha512-kWyh8ADvHBFz6ua5xYOPnUroZTT/bwWfrCeL0Wj1dzG4/YOmOcfJ99W8dOVyyynJN35rZ9aCOtHChqQovV7yog==}
@@ -2749,6 +2755,8 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
       picomatch: 4.0.7
+
+  flag-icons@7.5.0: {}
 
   flru@1.0.2: {}
 

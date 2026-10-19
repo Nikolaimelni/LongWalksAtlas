@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
+import { Flag } from "./flag";
 import { type Hub, hubPath } from "./hubs";
 
 type Props = {
@@ -45,8 +46,9 @@ export function HubLinks({ hubs, current, className }: Props) {
 									aria-current={
 										hubPath(hub) === currentPath ? "page" : undefined
 									}
-									className="inline-block rounded-md px-1.5 py-1.5 underline hover:bg-soft aria-[current=page]:font-semibold aria-[current=page]:no-underline"
+									className="inline-flex items-center gap-1.5 rounded-md px-1.5 py-1.5 underline hover:bg-soft aria-[current=page]:font-semibold aria-[current=page]:no-underline"
 								>
+									{hub.kind === "country" && <Flag code={hub.code} />}
 									{label(hub)}
 								</Link>
 							</li>

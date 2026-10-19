@@ -21,6 +21,7 @@
 		"data": "node --env-file-if-exists=.env scripts/build-data.ts",
 		"photos": "node scripts/build-photos.ts",
 		"icons": "node scripts/build-icons.ts",
+		"flags": "node scripts/build-flags.ts",
 		"translate": "node --env-file-if-exists=.env scripts/translate.ts",
 		"build:deploy": "pnpm build && node scripts/build-og.ts"
 	},
@@ -52,6 +53,7 @@
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
 		"babel-plugin-react-compiler": "^1.0.0",
+		"flag-icons": "7.5.0",
 		"marked": "^18.1.1",
 		"parse5": "^8.0.1",
 		"pino": "^10.4.0",
