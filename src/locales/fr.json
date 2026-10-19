@@ -23,6 +23,7 @@
 		"list": "Sentiers",
 		"search": "Pistes de recherche",
 		"searchPlaceholder": "Sentier ou lieu",
+		"clearSearch": "Effacer la recherche",
 		"count_one": "{{count}} sentier",
 		"count_many": "{{count}} sentier",
 		"count_other": "{{count}} sentiers",
@@ -46,7 +47,7 @@
 		"none": "Aucun résultat correspondant. Essayez de désactiver un filtre.",
 		"show": "afficher la liste et les filtres",
 		"region": "Région",
-		"anyRegion": "N'importe laquelle"
+		"toggle": "Filtres"
 	},
 	"language": {
 		"label": "Langue",

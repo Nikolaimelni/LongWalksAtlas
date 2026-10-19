@@ -23,6 +23,7 @@
 		"list": "Тропы",
 		"search": "Поиск троп",
 		"searchPlaceholder": "Тропа или место",
+		"clearSearch": "Очистить поиск",
 		"count_one": "{{count}} тропа",
 		"count_few": "{{count}} тропы",
 		"count_many": "{{count}} троп",
@@ -48,7 +49,7 @@
 		"none": "Ни одна тропа не подходит. Попробуйте убрать фильтр.",
 		"show": "показать список и фильтры",
 		"region": "Регион",
-		"anyRegion": "Любой"
+		"toggle": "Фильтры"
 	},
 	"language": {
 		"label": "Язык",

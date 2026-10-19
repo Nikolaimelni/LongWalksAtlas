@@ -25,18 +25,21 @@ const lengthKeys = Object.keys(lengthBuckets) as [
 ];
 const dayKeys = Object.keys(dayBuckets) as [DayBucket, ...DayBucket[]];
 
-const filtersSchema = z.object({
-	q: z.string().trim().max(80).catch(""),
-	types: z
+// A comma-separated list in the URL, keeping the values it knows and dropping the rest.
+function listOf<const T extends readonly [string, ...string[]]>(values: T) {
+	return z
 		.string()
 		.transform((value) =>
-			value
-				.split(",")
-				.filter((t) => (trailTypes as readonly string[]).includes(t)),
+			value.split(",").filter((v) => (values as readonly string[]).includes(v)),
 		)
-		.pipe(z.array(z.enum(trailTypes)))
-		.catch([]),
-	region: z.enum(trailRegions).nullable().catch(null),
+		.pipe(z.array(z.enum(values)))
+		.catch([]);
+}
+
+const filtersSchema = z.object({
+	q: z.string().trim().max(80).catch(""),
+	types: listOf(trailTypes),
+	regions: listOf(trailRegions),
 	country: z
 		.string()
 		.regex(/^[A-Z]{2}$/)
@@ -51,7 +54,7 @@ export type Filters = z.infer<typeof filtersSchema>;
 export const emptyFilters: Filters = {
 	q: "",
 	types: [],
-	region: null,
+	regions: [],
 	country: null,
 	length: null,
 	days: null,
@@ -61,7 +64,7 @@ export function parseFilters(params: URLSearchParams): Filters {
 	return filtersSchema.parse({
 		q: params.get("q") ?? "",
 		types: params.get("type") ?? "",
-		region: params.get("region"),
+		regions: params.get("region") ?? "",
 		country: params.get("country"),
 		length: params.get("length"),
 		days: params.get("days"),
@@ -79,7 +82,7 @@ export function writeFilters(
 	};
 	set("q", filters.q.trim() || null);
 	set("type", filters.types.length > 0 ? filters.types.join(",") : null);
-	set("region", filters.region);
+	set("region", filters.regions.length > 0 ? filters.regions.join(",") : null);
 	set("country", filters.country);
 	set("length", filters.length);
 	set("days", filters.days);
@@ -103,7 +106,7 @@ export function applyFilters(
 	return trails.filter(
 		(t) =>
 			(filters.types.length === 0 || filters.types.includes(t.type)) &&
-			(!filters.region || t.region === filters.region) &&
+			(filters.regions.length === 0 || filters.regions.includes(t.region)) &&
 			(!filters.country || t.countries.includes(filters.country)) &&
 			(!filters.length ||
 				inBucket(t.lengthKm, lengthBuckets[filters.length])) &&
@@ -115,8 +118,7 @@ export function applyFilters(
 export function countActive(filters: Filters): number {
 	return (
 		filters.types.length +
-		[filters.region, filters.country, filters.length, filters.days].filter(
-			Boolean,
-		).length
+		filters.regions.length +
+		[filters.country, filters.length, filters.days].filter(Boolean).length
 	);
 }

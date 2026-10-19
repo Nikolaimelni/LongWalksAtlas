@@ -23,6 +23,7 @@
 		"list": "Szlaki",
 		"search": "Szlaki turystyczne",
 		"searchPlaceholder": "Szlak czy miejsce",
+		"clearSearch": "Wyczyść wyszukiwanie",
 		"count_one": "{{count}} szlak",
 		"count_few": "{{count}} trasy",
 		"count_many": "{{count}} szlaków",
@@ -48,7 +49,7 @@
 		"none": "Nie znaleziono wyników. Spróbuj wyczyścić filtr.",
 		"show": "pokaż listę i filtry",
 		"region": "Region",
-		"anyRegion": "Każdy"
+		"toggle": "Filtry"
 	},
 	"language": {
 		"label": "Język",

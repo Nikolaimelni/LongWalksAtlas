@@ -38,6 +38,13 @@ type Props = {
 	focus: TrailSummary | null;
 	highlighted: string[];
 	visible: string[] | null;
+	// What the camera frames when the place filters change. Only region and country move
+	// it: following the search would shake the map on every letter typed.
+	frame: {
+		key: string;
+		trails: readonly TrailSummary[];
+		underPanel: boolean;
+	};
 	loading: ReactNode;
 	onHover: (info: HoverInfo | null) => void;
 	onPick: (slugs: string[]) => void;
@@ -65,6 +72,7 @@ export function AtlasMap({
 	focus,
 	highlighted,
 	visible,
+	frame,
 	loading,
 	onHover,
 	onPick,
@@ -145,11 +153,38 @@ export function AtlasMap({
 		);
 	}, [focus, loaded]);
 
+	// MapLibre camera, for the place filters. A link that comes in with them is framed
+	// by the initial view.
+	const framed = useRef(frame.key);
+	// biome-ignore lint/correctness/useExhaustiveDependencies: the trails and the panel are read when the key changes; a new list under the same filters must not move the camera again.
+	useEffect(() => {
+		const map = mapRef.current?.getMap();
+		if (!map || !loaded || framed.current === frame.key) return;
+		framed.current = frame.key;
+		if (focus || frame.trails.length === 0) return;
+		const { clientWidth, clientHeight } = map.getContainer();
+		const phone = clientWidth < md;
+		map.fitBounds(boundsOf(frame.trails), {
+			padding: phone
+				? {
+						top: header,
+						bottom: frame.underPanel ? clientHeight * 0.6 : phoneBar,
+						left: 24,
+						right: 24,
+					}
+				: { top: header, bottom: 24, left: panelEdge + 24, right: 24 },
+			maxZoom: 9,
+			duration: 800,
+		});
+	}, [frame.key, loaded]);
+
 	return (
 		<>
 			<MapLibreMap
 				ref={mapRef}
-				initialViewState={initialView(trails)}
+				initialViewState={initialView(
+					frame.trails.length > 0 ? frame.trails : trails,
+				)}
 				mapStyle={mapStyle}
 				onError={onError}
 				style={{ position: "absolute", inset: 0 }}

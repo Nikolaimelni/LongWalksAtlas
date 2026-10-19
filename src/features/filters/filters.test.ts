@@ -37,7 +37,7 @@ function trail(
 
 const none: Omit<Filters, "q"> = {
 	types: [],
-	region: null,
+	regions: [],
 	country: null,
 	length: null,
 	days: null,
@@ -48,13 +48,13 @@ describe("parseFilters", () => {
 		expect(
 			parseFilters(
 				params(
-					"q=lyc&type=coastal,mountain&region=europe&country=TR&length=long&days=month",
+					"q=lyc&type=coastal,mountain&region=europe,africa&country=TR&length=long&days=month",
 				),
 			),
 		).toEqual({
 			q: "lyc",
 			types: ["coastal", "mountain"],
-			region: "europe",
+			regions: ["europe", "africa"],
 			country: "TR",
 			length: "long",
 			days: "month",
@@ -69,7 +69,7 @@ describe("parseFilters", () => {
 		).toEqual({
 			q: "",
 			types: ["coastal"],
-			region: null,
+			regions: [],
 			country: null,
 			length: null,
 			days: null,
@@ -95,7 +95,7 @@ describe("writeFilters", () => {
 		const filters = {
 			q: "via",
 			types: ["pilgrimage" as const],
-			region: "europe" as const,
+			regions: ["europe" as const],
 			country: "IT",
 			length: "epic" as const,
 			days: "more" as const,
@@ -134,11 +134,16 @@ describe("applyFilters", () => {
 		]);
 	});
 
-	it("matches a region", () => {
-		const world = [...trails, trail("kepler", { region: "oceania" })];
-		expect(
-			applyFilters(world, { ...none, region: "oceania" }).map((t) => t.slug),
-		).toEqual(["kepler"]);
+	it("matches any of the chosen regions", () => {
+		const world = [
+			...trails,
+			trail("kepler", { region: "oceania" }),
+			trail("otter", { region: "africa" }),
+		];
+		const pick = (regions: (typeof none)["regions"]) =>
+			applyFilters(world, { ...none, regions }).map((t) => t.slug);
+		expect(pick(["oceania"])).toEqual(["kepler"]);
+		expect(pick(["oceania", "africa"])).toEqual(["kepler", "otter"]);
 	});
 
 	it("matches a country anywhere on the route", () => {
@@ -179,7 +184,7 @@ describe("countActive", () => {
 			countActive({
 				q: "x",
 				types: ["coastal", "mountain"],
-				region: "europe",
+				regions: ["europe"],
 				country: "TR",
 				length: null,
 				days: "week",

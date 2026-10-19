@@ -23,6 +23,7 @@
 		"list": "Percursos",
 		"search": "Percursos de exploração",
 		"searchPlaceholder": "Trilho ou local",
+		"clearSearch": "Limpar a pesquisa",
 		"count_one": "{{count}} trilho",
 		"count_many": "{{count}} trilho",
 		"count_other": "{{count}} percursos",
@@ -46,7 +47,7 @@
 		"none": "Não foram encontradas correspondências. Tente desativar um filtro.",
 		"show": "mostrar a lista e os filtros",
 		"region": "Região",
-		"anyRegion": "Qualquer"
+		"toggle": "Filtros"
 	},
 	"language": {
 		"label": "Língua",

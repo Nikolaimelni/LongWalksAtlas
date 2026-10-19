@@ -23,6 +23,7 @@
 		"list": "Trails",
 		"search": "Search trails",
 		"searchPlaceholder": "Trail or place",
+		"clearSearch": "Clear search",
 		"count_one": "{{count}} trail",
 		"count_other": "{{count}} trails",
 		"types": "Type",
@@ -44,7 +45,7 @@
 		"none": "No trail matches. Try clearing a filter.",
 		"show": "show the list and filters",
 		"region": "Region",
-		"anyRegion": "Any"
+		"toggle": "Filters"
 	},
 	"language": {
 		"label": "Language",

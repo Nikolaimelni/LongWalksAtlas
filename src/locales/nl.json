@@ -23,8 +23,9 @@
 		"list": "Wandelroutes",
 		"search": "Zoekpaden",
 		"searchPlaceholder": "Route of plaats",
-		"count_one": "{{count}} wandelroute",
-		"count_other": "{{count}} wandelroutes",
+		"clearSearch": "Zoekopdracht wissen",
+		"count_one": "{{count}} route",
+		"count_other": "{{count}} routes",
 		"types": "Type",
 		"country": "Land",
 		"anyCountry": "Elke",
@@ -44,7 +45,7 @@
 		"none": "Er zijn geen resultaten gevonden. Probeer een filter uit te schakelen.",
 		"show": "lijst en filters tonen",
 		"region": "Regio",
-		"anyRegion": "Elke"
+		"toggle": "Filters"
 	},
 	"language": {
 		"label": "Taal",

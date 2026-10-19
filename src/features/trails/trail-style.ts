@@ -28,10 +28,6 @@ export function trailColor(type: TrailType): string {
 	return `var(--trail-${type})`;
 }
 
-export function trailTint(type: TrailType, percent: number): string {
-	return `color-mix(in srgb, ${trailColor(type)} ${percent}%, transparent)`;
-}
-
 export function trailColorCss(): string {
 	const vars = (scheme: Scheme) =>
 		Object.entries(trailPalettes[scheme])

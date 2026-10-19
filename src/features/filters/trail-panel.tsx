@@ -1,3 +1,4 @@
+import { type ReactNode, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { HubLinks } from "~/features/hubs/hub-links";
@@ -8,10 +9,11 @@ import {
 	trailRegions,
 	trailTypes,
 } from "~/features/trails/trail-schema";
-import { trailColor, trailTint } from "~/features/trails/trail-style";
+import { trailColor } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
 import { SuggestTrail } from "~/shared/suggest-trail";
+import { useSwipe } from "~/shared/use-swipe";
 import {
 	countActive,
 	dayBuckets,
@@ -60,6 +62,84 @@ function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 	);
 }
 
+function Chevron({ up }: { up: boolean }) {
+	return (
+		<svg
+			aria-hidden="true"
+			viewBox="0 0 20 20"
+			className={`size-4 transition-transform motion-reduce:transition-none ${up ? "rotate-180" : ""}`}
+		>
+			<path
+				d="m6 8 4 4 4-4"
+				fill="none"
+				stroke="currentColor"
+				strokeWidth="2"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
+		</svg>
+	);
+}
+
+function ChipRow({
+	legend,
+	children,
+}: {
+	legend: string;
+	children: ReactNode;
+}) {
+	return (
+		// A fieldset defaults to min-width: min-content: without min-w-0 it grows to the
+		// width of every chip on a phone and the whole panel scrolls sideways.
+		<fieldset className="min-w-0">
+			<legend className="mb-2 text-xs font-medium text-muted">{legend}</legend>
+			<div className="-mx-3 flex gap-2 overflow-x-auto px-3 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
+				{children}
+			</div>
+		</fieldset>
+	);
+}
+
+type ChipProps = {
+	pressed: boolean;
+	color: string;
+	dot?: boolean;
+	onToggle: () => void;
+	children: ReactNode;
+};
+
+// A type chip keeps a wash of its colour before it is pressed, so the row reads as the
+// map's key; a region chip stays plain until then.
+const chipLook = (pressed: boolean, dot = false) =>
+	pressed
+		? "border-(--chip) bg-[color-mix(in_srgb,var(--chip)_15%,transparent)] font-medium"
+		: dot
+			? "border-[color-mix(in_srgb,var(--chip)_35%,transparent)] bg-[color-mix(in_srgb,var(--chip)_7%,transparent)] hover:bg-[color-mix(in_srgb,var(--chip)_14%,transparent)]"
+			: "border-line hover:border-muted/50 hover:bg-soft";
+
+function Chip({ pressed, color, dot, onToggle, children }: ChipProps) {
+	return (
+		<button
+			type="button"
+			aria-pressed={pressed}
+			onClick={onToggle}
+			className={`flex h-11 shrink-0 cursor-pointer items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors md:h-9 ${chipLook(pressed, dot)}`}
+			style={{ "--chip": color } as React.CSSProperties}
+		>
+			{dot && (
+				<span
+					className="inline-block size-2.5 rounded-full"
+					style={{ background: color }}
+				/>
+			)}
+			{children}
+		</button>
+	);
+}
+
+const toggle = <T,>(list: readonly T[], value: T): T[] =>
+	list.includes(value) ? list.filter((x) => x !== value) : [...list, value];
+
 export function TrailPanel({
 	trails,
 	allTrails,
@@ -74,17 +154,19 @@ export function TrailPanel({
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
+	const [filtersOpen, setFiltersOpen] = useState(false);
+	const searchRef = useRef<HTMLInputElement>(null);
 
 	const regions = trailRegions.filter((region) =>
 		allTrails.some((tr) => tr.region === region),
 	);
-	const countriesOf = (region: Filters["region"]) =>
+	const countriesOf = (picked: Filters["regions"]) =>
 		new Set(
 			allTrails
-				.filter((tr) => !region || tr.region === region)
+				.filter((tr) => picked.length === 0 || picked.includes(tr.region))
 				.flatMap((tr) => tr.countries),
 		);
-	const countries = [...countriesOf(filters.region)]
+	const countries = [...countriesOf(filters.regions)]
 		.map((code) => ({ code, name: format.country(code) }))
 		.sort((a, b) => a.name.localeCompare(b.name, lang));
 	const kmRange = new Intl.NumberFormat(lang, {
@@ -101,48 +183,79 @@ export function TrailPanel({
 		return kmRange.formatRange(from, to);
 	};
 	const active = countActive(filters);
+	// The type chips stay in sight as the map's colour key, so the badge on the folded
+	// block counts only what the fold hides.
+	const hidden = active - filters.types.length;
+	const swipe = useSwipe((s) => onOpenChange(s === "tap" ? !open : s === "up"));
 
 	return (
 		<section
 			aria-label={t("filters.list")}
 			className="absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-4 md:bottom-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0"
 		>
-			<div className="flex items-center gap-2 p-3">
-				<label className="relative flex-1">
-					<span className="sr-only">{t("filters.search")}</span>
-					<svg
-						viewBox="0 0 24 24"
-						aria-hidden="true"
-						className="pointer-events-none absolute start-3.5 top-1/2 size-5 -translate-y-1/2 text-muted"
-					>
-						<circle
-							cx="11"
-							cy="11"
-							r="6.5"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
+			<div
+				aria-hidden="true"
+				{...swipe}
+				className="grid h-5 shrink-0 cursor-grab touch-none place-items-center md:hidden"
+			>
+				<span className="h-1 w-10 rounded-full bg-line" />
+			</div>
+			<div className="flex items-center gap-2 px-3 pb-3 md:pt-3">
+				<div className="relative flex-1">
+					<label>
+						<span className="sr-only">{t("filters.search")}</span>
+						<svg
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+							className="pointer-events-none absolute start-3.5 top-1/2 size-5 -translate-y-1/2 text-muted"
+						>
+							<circle
+								cx="11"
+								cy="11"
+								r="6.5"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth="2"
+							/>
+							<path
+								d="m16 16 4 4"
+								stroke="currentColor"
+								strokeWidth="2"
+								strokeLinecap="round"
+							/>
+						</svg>
+						<input
+							ref={searchRef}
+							type="search"
+							value={filters.q}
+							onChange={(e) => {
+								const q = e.target.value;
+								onChange((f) => ({ ...f, q }));
+								onOpenChange(true);
+								// On a phone the matches belong right under the field, above the keyboard.
+								if (!canHover()) setFiltersOpen(false);
+							}}
+							placeholder={t("filters.searchPlaceholder")}
+							enterKeyHint="search"
+							className={`h-11 w-full rounded-full border border-field bg-surface ps-11 text-base text-ellipsis shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] transition-colors placeholder:text-muted hover:border-muted/50 focus:border-brand focus:outline-2 focus:outline-brand/30 [&::-webkit-search-cancel-button]:appearance-none ${filters.q === "" ? "pe-4" : "pe-11"}`}
 						/>
-						<path
-							d="m16 16 4 4"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-						/>
-					</svg>
-					<input
-						type="search"
-						value={filters.q}
-						onChange={(e) => {
-							const q = e.target.value;
-							onChange((f) => ({ ...f, q }));
-							onOpenChange(true);
-						}}
-						placeholder={t("filters.searchPlaceholder")}
-						enterKeyHint="search"
-						className="h-11 w-full rounded-full border border-field bg-surface ps-11 pe-4 text-base shadow-[inset_0_1px_2px_rgb(0_0_0/0.05)] transition-colors placeholder:text-muted hover:border-muted/50 focus:border-brand focus:outline-2 focus:outline-brand/30"
-					/>
-				</label>
+					</label>
+					{/* Our own cross: Safari and Chrome draw a tiny one that a finger misses, and
+					Firefox draws none. */}
+					{filters.q !== "" && (
+						<button
+							type="button"
+							onClick={() => {
+								onChange((f) => ({ ...f, q: "" }));
+								searchRef.current?.focus();
+							}}
+							aria-label={t("filters.clearSearch")}
+							className="absolute end-0 top-0 grid size-11 cursor-pointer place-items-center rounded-full text-xl text-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-brand"
+						>
+							<span aria-hidden="true">×</span>
+						</button>
+					)}
+				</div>
 				<button
 					type="button"
 					aria-expanded={open}
@@ -152,19 +265,7 @@ export function TrailPanel({
 				>
 					{t("filters.count", { count: trails.length })}
 					<span className="sr-only">, {t("filters.show")}</span>
-					{active > 0 && (
-						<>
-							<span
-								aria-hidden="true"
-								className="grid size-5 place-items-center rounded-full bg-surface text-xs text-ink"
-							>
-								{active}
-							</span>
-							<span className="sr-only">
-								{t("filters.active", { count: active })}
-							</span>
-						</>
-					)}
+					<Chevron up={!open} />
 				</button>
 			</div>
 			<p className="-mt-1 px-4 pb-2 text-xs leading-snug text-muted">
@@ -175,153 +276,150 @@ export function TrailPanel({
 				id="trail-panel-body"
 				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none md:flex`}
 			>
-				{/* A fieldset defaults to min-width: min-content: without min-w-0 it grows to
-				the width of every chip on a phone and the whole panel scrolls sideways. */}
-				<fieldset className="min-w-0">
-					<legend className="mb-2 text-xs font-medium text-muted">
-						{t("filters.types")}
-					</legend>
-					<div className="-mx-3 flex gap-2 overflow-x-auto px-3 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
-						{trailTypes.map((type) => {
-							const pressed = filters.types.includes(type);
-							return (
-								<button
-									key={type}
-									type="button"
-									aria-pressed={pressed}
-									onClick={() =>
-										onChange((f) => ({
-											...f,
-											types: f.types.includes(type)
-												? f.types.filter((x) => x !== type)
-												: [...f.types, type],
-										}))
-									}
-									className={`flex h-11 shrink-0 cursor-pointer md:h-9 items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors ${
-										pressed
-											? "font-medium"
-											: "border-line hover:border-muted/50 hover:bg-soft"
-									}`}
-									style={
-										pressed
-											? {
-													background: trailTint(type, 15),
-													borderColor: trailColor(type),
-												}
-											: undefined
-									}
+				<div className="flex items-center justify-between gap-2 text-sm">
+					<button
+						type="button"
+						aria-expanded={filtersOpen}
+						aria-controls="trail-filters"
+						onClick={() => setFiltersOpen(!filtersOpen)}
+						className="-ms-2 flex h-11 cursor-pointer items-center gap-1.5 rounded-full px-2 font-medium hover:bg-soft md:h-9"
+					>
+						{t("filters.toggle")}
+						{hidden > 0 && (
+							<>
+								<span
+									aria-hidden="true"
+									className="grid size-5 place-items-center rounded-full bg-brand text-xs font-semibold text-on-brand"
 								>
-									<span
-										className="inline-block size-2.5 rounded-full"
-										style={{ background: trailColor(type) }}
-									/>
-									{t(`trailType.${type}`)}
-								</button>
-							);
-						})}
-					</div>
-				</fieldset>
-
-				<div className="mt-3 flex flex-col gap-2">
-					<label className={rowClass}>
-						<span className={labelClass}>{t("filters.region")}</span>
-						<SelectBox
-							value={filters.region ?? ""}
-							onChange={(e) => {
-								const region =
-									(e.target.value as NonNullable<Filters["region"]>) || null;
-								onChange((f) => ({
-									...f,
-									region,
-									country:
-										f.country && countriesOf(region).has(f.country)
-											? f.country
-											: null,
-								}));
-							}}
-						>
-							<option value="">{t("filters.anyRegion")}</option>
-							{regions.map((region) => (
-								<option key={region} value={region}>
-									{t(`region.${region}`)}
-								</option>
-							))}
-						</SelectBox>
-					</label>
-					<label className={rowClass}>
-						<span className={labelClass}>{t("filters.country")}</span>
-						<SelectBox
-							value={filters.country ?? ""}
-							onChange={(e) => {
-								const country = e.target.value || null;
-								onChange((f) => ({ ...f, country }));
-							}}
-						>
-							<option value="">{t("filters.anyCountry")}</option>
-							{countries.map((c) => (
-								<option key={c.code} value={c.code}>
-									{c.name}
-								</option>
-							))}
-						</SelectBox>
-					</label>
-					<label className={rowClass}>
-						<span className={labelClass}>{t("filters.length")}</span>
-						<SelectBox
-							value={filters.length ?? ""}
-							onChange={(e) => {
-								const length =
-									(e.target.value as keyof typeof lengthBuckets) || null;
-								onChange((f) => ({ ...f, length }));
-							}}
-						>
-							<option value="">{t("filters.anyLength")}</option>
-							{Object.keys(lengthBuckets).map((key) => (
-								<option key={key} value={key}>
-									{lengthLabel(key as keyof typeof lengthBuckets)}
-								</option>
-							))}
-						</SelectBox>
-					</label>
-					<label className={rowClass}>
-						<span className={labelClass}>{t("filters.duration")}</span>
-						<SelectBox
-							value={filters.days ?? ""}
-							onChange={(e) => {
-								const days =
-									(e.target.value as keyof typeof dayBuckets) || null;
-								onChange((f) => ({ ...f, days }));
-							}}
-						>
-							<option value="">{t("filters.anyDuration")}</option>
-							{(Object.keys(dayBuckets) as (keyof typeof dayBuckets)[]).map(
-								(key) => (
-									<option key={key} value={key}>
-										{t(`filters.${key}`)}
-									</option>
-								),
-							)}
-						</SelectBox>
-					</label>
-				</div>
-
-				<div className="mt-4 flex items-center justify-between text-sm">
-					<h2 id="trail-count" className="font-semibold">
-						{t("filters.count", { count: trails.length })}
-					</h2>
-					<p role="status" className="sr-only">
-						{t("filters.count", { count: trails.length })}
-					</p>
+									{hidden}
+								</span>
+								<span className="sr-only">
+									, {t("filters.active", { count: hidden })}
+								</span>
+							</>
+						)}
+						<Chevron up={filtersOpen} />
+					</button>
 					{(active > 0 || filters.q) && (
 						<button
 							type="button"
 							onClick={() => onChange(() => emptyFilters)}
-							className="-my-2 rounded-lg px-2 py-2 text-muted underline hover:bg-soft"
+							className="-me-2 h-11 cursor-pointer rounded-full px-3 text-muted underline hover:bg-soft md:h-9"
 						>
 							{t("filters.reset")}
 						</button>
 					)}
 				</div>
+
+				<ChipRow legend={t("filters.types")}>
+					{trailTypes.map((type) => (
+						<Chip
+							key={type}
+							pressed={filters.types.includes(type)}
+							color={trailColor(type)}
+							dot
+							onToggle={() =>
+								onChange((f) => ({ ...f, types: toggle(f.types, type) }))
+							}
+						>
+							{t(`trailType.${type}`)}
+						</Chip>
+					))}
+				</ChipRow>
+
+				<div
+					id="trail-filters"
+					className={`${filtersOpen ? "flex" : "hidden"} mt-3 flex-col gap-3`}
+				>
+					<ChipRow legend={t("filters.region")}>
+						{regions.map((region) => (
+							<Chip
+								key={region}
+								pressed={filters.regions.includes(region)}
+								color="var(--color-brand)"
+								onToggle={() =>
+									onChange((f) => {
+										const picked = toggle(f.regions, region);
+										return {
+											...f,
+											regions: picked,
+											country:
+												f.country && countriesOf(picked).has(f.country)
+													? f.country
+													: null,
+										};
+									})
+								}
+							>
+								{t(`region.${region}`)}
+							</Chip>
+						))}
+					</ChipRow>
+					<div className="flex flex-col gap-2">
+						<label className={rowClass}>
+							<span className={labelClass}>{t("filters.country")}</span>
+							<SelectBox
+								value={filters.country ?? ""}
+								onChange={(e) => {
+									const country = e.target.value || null;
+									onChange((f) => ({ ...f, country }));
+								}}
+							>
+								<option value="">{t("filters.anyCountry")}</option>
+								{countries.map((c) => (
+									<option key={c.code} value={c.code}>
+										{c.name}
+									</option>
+								))}
+							</SelectBox>
+						</label>
+						<label className={rowClass}>
+							<span className={labelClass}>{t("filters.length")}</span>
+							<SelectBox
+								value={filters.length ?? ""}
+								onChange={(e) => {
+									const length =
+										(e.target.value as keyof typeof lengthBuckets) || null;
+									onChange((f) => ({ ...f, length }));
+								}}
+							>
+								<option value="">{t("filters.anyLength")}</option>
+								{Object.keys(lengthBuckets).map((key) => (
+									<option key={key} value={key}>
+										{lengthLabel(key as keyof typeof lengthBuckets)}
+									</option>
+								))}
+							</SelectBox>
+						</label>
+						<label className={rowClass}>
+							<span className={labelClass}>{t("filters.duration")}</span>
+							<SelectBox
+								value={filters.days ?? ""}
+								onChange={(e) => {
+									const days =
+										(e.target.value as keyof typeof dayBuckets) || null;
+									onChange((f) => ({ ...f, days }));
+								}}
+							>
+								<option value="">{t("filters.anyDuration")}</option>
+								{(Object.keys(dayBuckets) as (keyof typeof dayBuckets)[]).map(
+									(key) => (
+										<option key={key} value={key}>
+											{t(`filters.${key}`)}
+										</option>
+									),
+								)}
+							</SelectBox>
+						</label>
+					</div>
+				</div>
+
+				<h2 id="trail-count" className="mt-4 text-sm font-semibold">
+					{t("filters.count", { count: trails.length })}
+				</h2>
+				<p role="status" className="sr-only">
+					{t("filters.count", { count: trails.length })}
+				</p>
 
 				{trails.length === 0 ? (
 					<p className="mt-4 text-sm text-muted">{t("filters.none")}</p>

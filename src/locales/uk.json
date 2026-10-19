@@ -22,7 +22,8 @@
 	"filters": {
 		"list": "Маршрути",
 		"search": "Маршрути для пошуку",
-		"searchPlaceholder": "Маршрут чи місце",
+		"searchPlaceholder": "Шлях чи місце",
+		"clearSearch": "Очистити пошук",
 		"count_one": "{{count}} маршрут",
 		"count_few": "{{count}} маршрути",
 		"count_many": "{{count}} маршрутів",
@@ -48,7 +49,7 @@
 		"none": "Не знайдено відповідних записів. Спробуйте скасувати фільтр.",
 		"show": "показати список і фільтри",
 		"region": "Регіон",
-		"anyRegion": "Будь-який"
+		"toggle": "Фільтри"
 	},
 	"language": {
 		"label": "Мова",

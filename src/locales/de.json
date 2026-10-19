@@ -22,9 +22,10 @@
 	"filters": {
 		"list": "Wanderwege",
 		"search": "Suchpfade",
-		"searchPlaceholder": "Wanderweg oder Ort",
-		"count_one": "{{count}} Wanderweg",
-		"count_other": "{{count}} Wanderwege",
+		"searchPlaceholder": "Weg oder Ort",
+		"clearSearch": "Suche löschen",
+		"count_one": "{{count}} Weg",
+		"count_other": "{{count}} Wege",
 		"types": "Typ",
 		"country": "Land",
 		"anyCountry": "Beliebige",
@@ -44,7 +45,7 @@
 		"none": "Es wurden keine Treffer gefunden. Versuchen Sie, einen Filter zu deaktivieren.",
 		"show": "Liste und Filter anzeigen",
 		"region": "Region",
-		"anyRegion": "Beliebige"
+		"toggle": "Filter"
 	},
 	"language": {
 		"label": "Sprache",

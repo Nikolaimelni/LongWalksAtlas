@@ -22,7 +22,8 @@
 	"filters": {
 		"list": "Yürüyüş parkurları",
 		"search": "Arama izleri",
-		"searchPlaceholder": "Yol mu, yoksa yer mi?",
+		"searchPlaceholder": "Parkur veya yer",
+		"clearSearch": "Aramayı temizle",
 		"count_one": "{{count}} parkur",
 		"count_other": "{{count}} parkur",
 		"types": "Tür",
@@ -44,7 +45,7 @@
 		"none": "Eşleşen arama sonucu bulunamadı. Bir filtreyi kaldırmayı deneyin.",
 		"show": "listeyi ve filtreleri göster",
 		"region": "Bölge",
-		"anyRegion": "Herhangi bir"
+		"toggle": "Filtreler"
 	},
 	"language": {
 		"label": "Dil",

@@ -23,6 +23,7 @@
 		"list": "Senderos",
 		"search": "Rastros de búsqueda",
 		"searchPlaceholder": "Sendero o lugar",
+		"clearSearch": "Borrar la búsqueda",
 		"count_one": "{{count}} ruta",
 		"count_many": "{{count}} ruta",
 		"count_other": "{{count}} rutas",
@@ -46,7 +47,7 @@
 		"none": "No se han encontrado resultados. Intenta eliminar algún filtro.",
 		"show": "mostrar la lista y los filtros",
 		"region": "Región",
-		"anyRegion": "Cualquiera"
+		"toggle": "Filtros"
 	},
 	"language": {
 		"label": "Idioma",

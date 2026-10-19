@@ -209,6 +209,11 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 							focus={selected}
 							highlighted={highlighted}
 							visible={narrowed ? results.map((tr) => tr.slug) : null}
+							frame={{
+								key: `${filters.regions.join(",")}|${filters.country ?? ""}`,
+								trails: results,
+								underPanel: panelOpen,
+							}}
 							loading={placeholder}
 							onHover={setHovered}
 							onPick={(slugs) => {
@@ -307,7 +312,6 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 								content={content[selected.slug]}
 								photo={photos[selected.slug] ?? null}
 								variant="sheet"
-								onClose={() => select(null)}
 							/>
 						)
 					)}

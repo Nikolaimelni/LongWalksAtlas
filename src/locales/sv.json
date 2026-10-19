@@ -23,8 +23,9 @@
 		"list": "Vandringsleder",
 		"search": "Sökstigar",
 		"searchPlaceholder": "Stig eller plats",
-		"count_one": "{{count}} vandringsled",
-		"count_other": "{{count}} vandringsleder",
+		"clearSearch": "Rensa sökningen",
+		"count_one": "{{count}} led",
+		"count_other": "{{count}} leder",
 		"types": "Typ",
 		"country": "Land",
 		"anyCountry": "Vilken som helst",
@@ -44,7 +45,7 @@
 		"none": "Inga träffar hittades. Försök ta bort ett filter.",
 		"show": "visa listan och filtren",
 		"region": "Region",
-		"anyRegion": "Vilken som helst"
+		"toggle": "Filter"
 	},
 	"language": {
 		"label": "Språk",

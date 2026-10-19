@@ -12,16 +12,9 @@ type Props = {
 	content: TrailContent | undefined;
 	photo: TrailPhoto | null;
 	variant: "sheet" | "hover";
-	onClose?: () => void;
 };
 
-export function TrailPreview({
-	trail,
-	content,
-	photo,
-	variant,
-	onClose,
-}: Props) {
+export function TrailPreview({ trail, content, photo, variant }: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
@@ -37,7 +30,7 @@ export function TrailPreview({
 				})}
 				className={
 					variant === "sheet"
-						? "aspect-[5/2] w-full rounded-xl md:aspect-[16/9]"
+						? "aspect-[16/9] w-full rounded-xl md:aspect-[3/2]"
 						: "aspect-[2/1] w-full rounded-lg"
 				}
 				sizes={
@@ -87,25 +80,13 @@ export function TrailPreview({
 				</div>
 			</dl>
 			{variant === "sheet" && (
-				<div className="flex items-center gap-2">
-					<Link
-						to={`/${lang}/trail/${trail.slug}/`}
-						viewTransition
-						className="flex-1 rounded-full bg-brand px-4 py-3 text-center text-sm font-semibold text-on-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-					>
-						{t("trail.more")}
-					</Link>
-					{onClose && (
-						<button
-							type="button"
-							onClick={onClose}
-							className="grid size-11 place-items-center rounded-full bg-soft text-xl focus-visible:outline-2 focus-visible:outline-brand"
-							aria-label={t("trail.close")}
-						>
-							<span aria-hidden="true">×</span>
-						</button>
-					)}
-				</div>
+				<Link
+					to={`/${lang}/trail/${trail.slug}/`}
+					viewTransition
+					className="rounded-full bg-brand px-4 py-3 text-center text-sm font-semibold text-on-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+				>
+					{t("trail.more")}
+				</Link>
 			)}
 		</article>
 	);
