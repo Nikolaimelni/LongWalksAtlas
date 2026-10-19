@@ -1,7 +1,5 @@
 // A Worker with static assets only: every page is prerendered, so there is no server
-// code to run. Workers Builds settings in the Cloudflare dashboard:
-//   build command:  pnpm exec playwright install chromium && pnpm build:deploy
-//   deploy command: npx wrangler deploy
+// code to run. The deploy job in .github/workflows/ci.yml builds it and runs wrangler.
 {
 	"name": "long-walks-atlas",
 	"compatibility_date": "2026-10-01",

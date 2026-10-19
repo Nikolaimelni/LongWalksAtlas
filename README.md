@@ -24,7 +24,7 @@ pnpm dev
 | `pnpm data`         | Fetches trail lines from OpenStreetMap (slow)          |
 | `pnpm photos`       | Fetches photos and credits from Wikimedia Commons      |
 | `pnpm translate`    | Fills missing translations with DeepL (key in `.env`)  |
-| `pnpm build:deploy` | The build plus social cards, what Cloudflare runs      |
+| `pnpm build:deploy` | The build plus social cards, what the deploy job runs  |
 
 ## How it works
 
