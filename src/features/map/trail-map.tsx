@@ -1,8 +1,10 @@
 import { type ReactNode, use, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
 	Layer,
 	Map as MapLibreMap,
 	Marker,
+	NavigationControl,
 	Source,
 } from "react-map-gl/maplibre";
 import { useLang } from "~/features/i18n/use-lang";
@@ -32,6 +34,7 @@ export function TrailMap({
 	const scheme = useColorScheme();
 	const [loaded, setLoaded] = useState(false);
 	const lang = useLang();
+	const { t } = useTranslation();
 	const mapStyle = use(loadMapStyle(scheme, lang));
 	const onError = useMapFailure();
 	const [west, south, east, north] = trail.bbox;
@@ -54,8 +57,13 @@ export function TrailMap({
 				dragRotate={false}
 				touchPitch={false}
 				attributionControl={{ compact: true }}
+				locale={{
+					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
+					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
+				}}
 				onLoad={() => setLoaded(true)}
 			>
+				<NavigationControl position="top-right" showCompass={false} />
 				<Source
 					id="trail"
 					type="geojson"

@@ -15,7 +15,9 @@
 		"loading": "Chargement de la carte…",
 		"pick": "Plusieurs sentiers se croisent à cet endroit",
 		"pickHint": "Cliquez pour choisir",
-		"mapFailed": "La carte ne peut pas s'afficher sur cet appareil."
+		"mapFailed": "La carte ne peut pas s'afficher sur cet appareil.",
+		"zoomIn": "Zoom avant",
+		"zoomOut": "Zoom arrière"
 	},
 	"filters": {
 		"list": "Sentiers",

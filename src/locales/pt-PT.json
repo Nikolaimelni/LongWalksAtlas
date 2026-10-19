@@ -15,7 +15,9 @@
 		"loading": "A carregar o mapa…",
 		"pick": "Várias trilhas cruzam-se aqui",
 		"pickHint": "Clique para escolher",
-		"mapFailed": "Não foi possível mostrar o mapa neste dispositivo."
+		"mapFailed": "Não foi possível mostrar o mapa neste dispositivo.",
+		"zoomIn": "Aproximar",
+		"zoomOut": "Afastar"
 	},
 	"filters": {
 		"list": "Percursos",

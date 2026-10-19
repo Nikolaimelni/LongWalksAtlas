@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { HubLinks } from "~/features/hubs/hub-links";
@@ -29,13 +28,15 @@ type Props = {
 	onChange: (change: (current: Filters) => Filters) => void;
 	onHoverTrail: (slug: string | null) => void;
 	onSelect: (slug: string) => void;
+	open: boolean;
+	onOpenChange: (open: boolean) => void;
 };
 
 const rowClass = "flex items-center gap-3 text-sm";
 const labelClass = "w-24 shrink-0 text-muted";
 // The list keeps the system font: Windows draws a native popup more reliably with it.
 const selectClass =
-	"h-11 w-full cursor-pointer appearance-none rounded-lg border border-field bg-surface md:h-10 ps-3 pe-9 text-sm transition-colors hover:border-muted/50 hover:bg-soft/60 focus-visible:border-brand focus-visible:outline-2 focus-visible:outline-brand/30 [&_option]:font-[system-ui]";
+	"h-11 w-full cursor-pointer appearance-none rounded-full border border-field bg-surface md:h-10 ps-4 pe-10 text-sm transition-colors hover:border-muted/50 hover:bg-soft/60 focus-visible:border-brand focus-visible:outline-2 focus-visible:outline-brand/30 [&_option]:font-[system-ui]";
 
 function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 	return (
@@ -44,7 +45,7 @@ function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 			<svg
 				aria-hidden="true"
 				viewBox="0 0 20 20"
-				className="pointer-events-none absolute end-2.5 top-1/2 size-5 -translate-y-1/2 text-muted"
+				className="pointer-events-none absolute end-3 top-1/2 size-5 -translate-y-1/2 text-muted"
 			>
 				<path
 					d="m6 8 4 4 4-4"
@@ -67,11 +68,12 @@ export function TrailPanel({
 	onChange,
 	onHoverTrail,
 	onSelect,
+	open,
+	onOpenChange,
 }: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
-	const [open, setOpen] = useState(false);
 
 	const regions = trailRegions.filter((region) =>
 		allTrails.some((tr) => tr.region === region),
@@ -134,7 +136,7 @@ export function TrailPanel({
 						onChange={(e) => {
 							const q = e.target.value;
 							onChange((f) => ({ ...f, q }));
-							setOpen(true);
+							onOpenChange(true);
 						}}
 						placeholder={t("filters.searchPlaceholder")}
 						enterKeyHint="search"
@@ -145,7 +147,7 @@ export function TrailPanel({
 					type="button"
 					aria-expanded={open}
 					aria-controls="trail-panel-body"
-					onClick={() => setOpen(!open)}
+					onClick={() => onOpenChange(!open)}
 					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-brand px-4 text-sm font-semibold text-on-brand md:hidden"
 				>
 					{t("filters.count", { count: trails.length })}
@@ -173,7 +175,9 @@ export function TrailPanel({
 				id="trail-panel-body"
 				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none md:flex`}
 			>
-				<fieldset>
+				{/* A fieldset defaults to min-width: min-content: without min-w-0 it grows to
+				the width of every chip on a phone and the whole panel scrolls sideways. */}
+				<fieldset className="min-w-0">
 					<legend className="mb-2 text-xs font-medium text-muted">
 						{t("filters.types")}
 					</legend>
@@ -331,7 +335,7 @@ export function TrailPanel({
 									onClick={(e) => {
 										if (canHover()) return;
 										e.preventDefault();
-										setOpen(false);
+										onOpenChange(false);
 										onSelect(trail.slug);
 									}}
 									onMouseEnter={() => onHoverTrail(trail.slug)}

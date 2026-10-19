@@ -58,7 +58,9 @@ test.describe("on a phone", () => {
 		"tapping a list row is the phone flow",
 	);
 
-	test("tapping a trail in the list shows it on the map", async ({ page }) => {
+	test("tapping a trail in the list shows it, and Back closes it", async ({
+		page,
+	}) => {
 		await page.goto("/ru/");
 		await openPanel(page);
 		await list(page).filter({ hasText: "Португальский путь" }).click();
@@ -66,5 +68,30 @@ test.describe("on a phone", () => {
 			page.getByRole("region", { name: "Португальский путь" }),
 		).toBeVisible();
 		await expect(page).toHaveURL(/trail=caminho-portugues/);
+
+		await page.goBack();
+		await expect(
+			page.getByRole("region", { name: "Португальский путь" }),
+		).toBeHidden();
+		await expect(page).toHaveURL(/\/ru\/$/);
+	});
+
+	test("a tap on the map folds the list away", async ({ page }) => {
+		await page.goto("/ru/");
+		await openPanel(page);
+		await expect(list(page).first()).toBeVisible();
+		await page
+			.locator("canvas.maplibregl-canvas")
+			.click({ position: { x: 40, y: 140 } });
+		await expect(list(page).first()).toBeHidden();
+	});
+
+	test("the type chips scroll in their row, not the panel", async ({
+		page,
+	}) => {
+		await page.goto("/ru/");
+		await openPanel(page);
+		const chips = await page.getByRole("group", { name: "Тип" }).boundingBox();
+		expect(chips?.width).toBeLessThanOrEqual(page.viewportSize()?.width ?? 0);
 	});
 });

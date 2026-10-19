@@ -15,7 +15,9 @@
 		"loading": "Die Karte wird geladen…",
 		"pick": "Hier treffen mehrere Wanderwege aufeinander",
 		"pickHint": "Zum Auswählen klicken",
-		"mapFailed": "Die Karte kann auf diesem Gerät nicht angezeigt werden."
+		"mapFailed": "Die Karte kann auf diesem Gerät nicht angezeigt werden.",
+		"zoomIn": "Vergrößern",
+		"zoomOut": "Verkleinern"
 	},
 	"filters": {
 		"list": "Wanderwege",

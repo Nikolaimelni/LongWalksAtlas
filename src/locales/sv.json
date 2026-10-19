@@ -15,7 +15,9 @@
 		"loading": "Laddar kartan…",
 		"pick": "Här möts flera vandringsleder",
 		"pickHint": "Klicka för att välja",
-		"mapFailed": "Kartan kunde inte visas på den här enheten."
+		"mapFailed": "Kartan kunde inte visas på den här enheten.",
+		"zoomIn": "Zooma in",
+		"zoomOut": "Zooma ut"
 	},
 	"filters": {
 		"list": "Vandringsleder",

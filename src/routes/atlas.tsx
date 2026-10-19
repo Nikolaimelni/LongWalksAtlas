@@ -1,6 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { data, useNavigate, useSearchParams } from "react-router";
+import { data, useLocation, useNavigate, useSearchParams } from "react-router";
 import { HoverCard } from "~/features/atlas/hover-card";
 import { TrailSheet } from "~/features/atlas/trail-sheet";
 import {
@@ -75,11 +75,13 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const navigate = useNavigate();
+	const location = useLocation();
 	const hydrated = useHydrated();
 	const [params, setParams] = useSearchParams();
 	const [hovered, setHovered] = useState<HoverInfo | null>(null);
 	const [listHover, setListHover] = useState<string | null>(null);
 	const [choices, setChoices] = useState<string[]>([]);
+	const [panelOpen, setPanelOpen] = useState(false);
 
 	const titleOf = (trail: TrailSummary) =>
 		content[trail.slug]?.title ?? trail.name.original;
@@ -136,23 +138,36 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 		},
 	];
 
-	function update(next: URLSearchParams) {
-		setParams(next, { replace: true, preventScrollReset: true });
-	}
+	// A sheet opened here gets its own history entry, so Back on a phone closes it
+	// instead of leaving the site. A trail that came in with the URL has no entry of
+	// its own behind it, so closing that one only rewrites the URL.
+	const sheetPushed = (location.state as { sheet?: boolean } | null)?.sheet;
 
 	function select(slug: string | null) {
 		setChoices([]);
+		if (!slug && sheetPushed) {
+			void navigate(-1);
+			return;
+		}
 		const next = new URLSearchParams(params);
 		if (slug) next.set("trail", slug);
 		else next.delete("trail");
-		update(next);
+		const opening = slug !== null && selected === null;
+		setParams(next, {
+			replace: !opening,
+			state: opening ? { sheet: true } : location.state,
+			preventScrollReset: true,
+		});
 	}
 
 	function pick(slugs: string[]) {
 		const [only] = slugs;
 		if (slugs.length > 1) return setChoices(slugs);
 		if (!only) return select(null);
-		if (canHover() || selected?.slug === only) {
+		// A mouse click opens the sheet like a tap does: going straight to the trail page
+		// threw people off the map when they only meant to look. A second tap on the same
+		// trail still goes through, but a double-click to zoom must not.
+		if (selected?.slug === only && !canHover()) {
 			void navigate(pageOf(only), { viewTransition: true });
 			return;
 		}
@@ -184,7 +199,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	);
 
 	return (
-		<main className="relative h-dvh overflow-hidden [&_.maplibregl-ctrl-bottom-right]:bottom-[calc(6rem+env(safe-area-inset-bottom))] md:[&_.maplibregl-ctrl-bottom-right]:bottom-0">
+		<main className="atlas relative h-dvh overflow-hidden">
 			<h1 className="sr-only">{t("atlas.title")}</h1>
 			{hydrated ? (
 				<MapBoundary fallback={mapFailed}>
@@ -196,7 +211,10 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 							visible={narrowed ? results.map((tr) => tr.slug) : null}
 							loading={placeholder}
 							onHover={setHovered}
-							onPick={pick}
+							onPick={(slugs) => {
+								setPanelOpen(false);
+								pick(slugs);
+							}}
 						/>
 					</Suspense>
 				</MapBoundary>
@@ -225,12 +243,15 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 							(prev) => writeFilters(prev, change(parseFilters(prev))),
 							{
 								replace: true,
+								state: location.state,
 								preventScrollReset: true,
 							},
 						)
 					}
 					onHoverTrail={setListHover}
 					onSelect={select}
+					open={panelOpen}
+					onOpenChange={setPanelOpen}
 				/>
 			</div>
 
@@ -252,20 +273,28 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 				>
 					{choiceTrails.length > 0 ? (
 						<>
-							<h2 className="mb-2 text-sm font-semibold">{t("atlas.pick")}</h2>
-							<ul className="flex flex-col">
+							<h2 className="mb-2 min-h-11 pe-12 text-sm font-semibold">
+								{t("atlas.pick")}
+							</h2>
+							<ul className="flex flex-col gap-1.5">
 								{choiceTrails.map((tr) => (
 									<li key={tr.slug}>
 										<button
 											type="button"
 											onClick={() => select(tr.slug)}
-											className="flex w-full items-center gap-3 rounded-lg px-3 py-3 text-start hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
+											className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-soft/60 px-3 py-3 text-start font-medium hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
 										>
 											<span
 												className="size-2.5 shrink-0 rounded-full"
 												style={{ background: trailColor(tr.type) }}
 											/>
-											{titleOf(tr)}
+											<span className="flex-1">{titleOf(tr)}</span>
+											<span
+												aria-hidden="true"
+												className="text-lg leading-none text-muted rtl:-scale-x-100"
+											>
+												›
+											</span>
 										</button>
 									</li>
 								))}

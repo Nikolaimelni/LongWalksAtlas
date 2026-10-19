@@ -1,9 +1,11 @@
 import type { MapLayerMouseEvent } from "maplibre-gl";
 import { type ReactNode, use, useState } from "react";
-import { Map as MapLibreMap } from "react-map-gl/maplibre";
+import { useTranslation } from "react-i18next";
+import { Map as MapLibreMap, NavigationControl } from "react-map-gl/maplibre";
 import { useLang } from "~/features/i18n/use-lang";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
+import { canHover } from "~/shared/can-hover";
 import { useColorScheme } from "~/shared/use-color-scheme";
 import { basemapColors } from "./basemap-colors";
 import { boundsOf } from "./bounds";
@@ -25,6 +27,7 @@ function slugAt(event: MapLayerMouseEvent): string | null {
 export function HubMap({ trails, loading, onPick }: Props) {
 	const scheme = useColorScheme();
 	const lang = useLang();
+	const { t } = useTranslation();
 	const mapStyle = use(loadMapStyle(scheme, lang));
 	const onError = useMapFailure();
 	const [loaded, setLoaded] = useState(false);
@@ -44,6 +47,10 @@ export function HubMap({ trails, loading, onPick }: Props) {
 				dragRotate={false}
 				touchPitch={false}
 				attributionControl={{ compact: true }}
+				locale={{
+					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
+					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
+				}}
 				interactiveLayerIds={trailHitLayerIds}
 				cursor={pointer ? "pointer" : "grab"}
 				onLoad={() => setLoaded(true)}
@@ -54,12 +61,14 @@ export function HubMap({ trails, loading, onPick }: Props) {
 					if (slug) onPick(slug);
 				}}
 			>
+				<NavigationControl position="top-right" showCompass={false} />
 				<TrailLayers
 					trails={trails}
 					dimmed={false}
 					visible={trails.map((t) => t.slug)}
 					palette={trailPalettes[scheme]}
 					halo={basemapColors[scheme].land}
+					touch={!canHover()}
 				/>
 			</MapLibreMap>
 			{!loaded && loading}

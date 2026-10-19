@@ -15,7 +15,9 @@
 		"loading": "Loading the map…",
 		"pick": "Several trails meet here",
 		"pickHint": "Click to choose one",
-		"mapFailed": "The map could not be shown on this device."
+		"mapFailed": "The map could not be shown on this device.",
+		"zoomIn": "Zoom in",
+		"zoomOut": "Zoom out"
 	},
 	"filters": {
 		"list": "Trails",

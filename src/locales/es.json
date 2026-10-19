@@ -15,7 +15,9 @@
 		"loading": "Cargando el mapa…",
 		"pick": "Aquí confluyen varias rutas de senderismo",
 		"pickHint": "Haz clic para elegir",
-		"mapFailed": "No se ha podido mostrar el mapa en este dispositivo."
+		"mapFailed": "No se ha podido mostrar el mapa en este dispositivo.",
+		"zoomIn": "Acercar",
+		"zoomOut": "Alejar"
 	},
 	"filters": {
 		"list": "Senderos",

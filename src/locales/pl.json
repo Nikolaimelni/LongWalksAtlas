@@ -15,7 +15,9 @@
 		"loading": "Ładowanie mapy…",
 		"pick": "W tym miejscu krzyżuje się kilka szlaków",
 		"pickHint": "Kliknij, aby wybrać",
-		"mapFailed": "Na tym urządzeniu nie udało się wyświetlić mapy."
+		"mapFailed": "Na tym urządzeniu nie udało się wyświetlić mapy.",
+		"zoomIn": "Przybliż",
+		"zoomOut": "Oddal"
 	},
 	"filters": {
 		"list": "Szlaki",

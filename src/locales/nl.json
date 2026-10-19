@@ -15,7 +15,9 @@
 		"loading": "De kaart wordt geladen…",
 		"pick": "Hier komen verschillende wandelpaden samen",
 		"pickHint": "Klik om er een te kiezen",
-		"mapFailed": "De kaart kan op dit apparaat niet worden getoond."
+		"mapFailed": "De kaart kan op dit apparaat niet worden getoond.",
+		"zoomIn": "Inzoomen",
+		"zoomOut": "Uitzoomen"
 	},
 	"filters": {
 		"list": "Wandelroutes",

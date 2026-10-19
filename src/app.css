@@ -74,6 +74,36 @@ body {
 	@apply bg-canvas font-sans text-ink;
 }
 
+/* The zoom buttons wear the same pill as the header controls, at a finger's size. */
+.maplibregl-ctrl.maplibregl-ctrl-group {
+	overflow: hidden;
+	border-radius: 9999px;
+	background-color: var(--color-surface);
+	box-shadow: var(--shadow-float);
+}
+
+.maplibregl-ctrl-group button.maplibregl-ctrl-zoom-in,
+.maplibregl-ctrl-group button.maplibregl-ctrl-zoom-out {
+	width: 44px;
+	height: 44px;
+	border-color: var(--color-line);
+}
+
+/* On the atlas the zoom buttons sit under the language switcher, and on a phone the
+attribution sits above the trail bar. MapLibre's stylesheet is not in a cascade layer,
+so it beats any Tailwind utility; these rules stay outside a layer too. */
+.atlas .maplibregl-ctrl-top-right {
+	top: calc(3.5rem + max(0.75rem, env(safe-area-inset-top)));
+}
+
+.atlas .maplibregl-ctrl-bottom-right {
+	bottom: calc(10rem + env(safe-area-inset-bottom));
+
+	@media (width >= 48rem) {
+		bottom: 0;
+	}
+}
+
 /* MapLibre draws its attribution white on any map; on the dark basemap it should not glare. */
 @media (prefers-color-scheme: dark) {
 	.maplibregl-ctrl.maplibregl-ctrl-attrib {
@@ -85,7 +115,8 @@ body {
 		}
 	}
 
-	.maplibregl-ctrl-attrib-button {
+	.maplibregl-ctrl-attrib-button,
+	.maplibregl-ctrl-group .maplibregl-ctrl-icon {
 		filter: invert(1);
 	}
 }

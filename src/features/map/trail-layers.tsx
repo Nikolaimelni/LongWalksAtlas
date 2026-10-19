@@ -70,6 +70,9 @@ type Props = {
 	palette: TrailPalette;
 	// The land colour, drawn round each dot so neighbours stay apart.
 	halo: string;
+	// A finger needs a wider catch than a mouse pointer. Where two catches overlap, the
+	// atlas asks which trail was meant, so the wider one costs a question, not a miss.
+	touch?: boolean;
 };
 
 export function TrailLayers({
@@ -79,6 +82,7 @@ export function TrailLayers({
 	weight = 1,
 	palette,
 	halo,
+	touch = false,
 }: Props) {
 	const color = colorBy(palette);
 	const only = (base: ExpressionSpecification): ExpressionSpecification =>
@@ -161,7 +165,7 @@ export function TrailLayers({
 					paint={{
 						"line-color": "#000000",
 						"line-opacity": 0,
-						"line-width": 24,
+						"line-width": touch ? 32 : 24,
 					}}
 				/>
 			</Source>
@@ -183,7 +187,7 @@ export function TrailLayers({
 					type="circle"
 					maxzoom={pointsUntilZoom - 1}
 					filter={only(["boolean", true])}
-					paint={{ "circle-radius": 12, "circle-opacity": 0 }}
+					paint={{ "circle-radius": touch ? 20 : 12, "circle-opacity": 0 }}
 				/>
 			</Source>
 		</>

@@ -15,7 +15,9 @@
 		"loading": "Harita yükleniyor…",
 		"pick": "Burada birkaç patika birleşiyor",
 		"pickHint": "Seçmek için tıklayın",
-		"mapFailed": "Harita bu cihazda gösterilemedi."
+		"mapFailed": "Harita bu cihazda gösterilemedi.",
+		"zoomIn": "Yakınlaştır",
+		"zoomOut": "Uzaklaştır"
 	},
 	"filters": {
 		"list": "Yürüyüş parkurları",

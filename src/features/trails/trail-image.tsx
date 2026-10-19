@@ -50,13 +50,19 @@ export function TrailImage({
 			/>
 			<figcaption className="mt-1 text-xs [overflow-wrap:anywhere] text-muted">
 				{t("trail.photoBy")}{" "}
-				<a href={photo.sourceUrl} rel="noopener" className="underline">
+				<a
+					href={photo.sourceUrl}
+					target="_blank"
+					rel="noopener"
+					className="underline"
+				>
 					{photo.author}
 				</a>
 				{", "}
 				{photo.licenseUrl ? (
 					<a
 						href={photo.licenseUrl}
+						target="_blank"
 						rel="noopener license"
 						className="underline"
 					>

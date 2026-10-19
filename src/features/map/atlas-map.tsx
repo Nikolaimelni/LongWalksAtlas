@@ -1,9 +1,15 @@
 import type { MapLayerMouseEvent } from "maplibre-gl";
 import { type ReactNode, use, useEffect, useRef, useState } from "react";
-import { Map as MapLibreMap, type MapRef } from "react-map-gl/maplibre";
+import { useTranslation } from "react-i18next";
+import {
+	Map as MapLibreMap,
+	type MapRef,
+	NavigationControl,
+} from "react-map-gl/maplibre";
 import { useLang } from "~/features/i18n/use-lang";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
+import { canHover } from "~/shared/can-hover";
 import { useColorScheme } from "~/shared/use-color-scheme";
 import { basemapColors } from "./basemap-colors";
 import { boundsOf } from "./bounds";
@@ -23,7 +29,7 @@ const md = 768;
 const panelEdge = 16 + 384;
 const sheetEdge = 416 + 384;
 const header = 72;
-const phoneBar = 120;
+const phoneBar = 160;
 
 export type HoverInfo = { slugs: string[]; x: number; y: number };
 
@@ -66,10 +72,12 @@ export function AtlasMap({
 	const mapRef = useRef<MapRef>(null);
 	const scheme = useColorScheme();
 	const lang = useLang();
+	const { t } = useTranslation();
 	const mapStyle = use(loadMapStyle(scheme, lang));
 	const onError = useMapFailure();
 	const [loaded, setLoaded] = useState(false);
 	const [pointer, setPointer] = useState(false);
+	const byMouse = useRef(false);
 	// A string, so that a new array with the same trails does not rerun the effect.
 	const highlightKey = highlighted.join(",");
 
@@ -91,6 +99,24 @@ export function AtlasMap({
 		mark(true);
 		return () => mark(false);
 	}, [highlightKey, loaded]);
+
+	// DOM pointer events, which say what moved: a laptop with a touch screen can match
+	// neither hover media query and still have a mouse, and iOS turns a tap into mouse
+	// events too. When the hover changed the page, Safari swallowed the click, so the
+	// first tap showed a card without a button.
+	useEffect(() => {
+		const container = mapRef.current?.getMap().getCanvasContainer();
+		if (!container || !loaded) return;
+		const note = (event: PointerEvent) => {
+			byMouse.current = event.pointerType === "mouse";
+		};
+		container.addEventListener("pointermove", note);
+		container.addEventListener("pointerdown", note);
+		return () => {
+			container.removeEventListener("pointermove", note);
+			container.removeEventListener("pointerdown", note);
+		};
+	}, [loaded]);
 
 	// MapLibre camera.
 	useEffect(() => {
@@ -130,10 +156,15 @@ export function AtlasMap({
 				dragRotate={false}
 				touchPitch={false}
 				attributionControl={{ compact: true }}
+				locale={{
+					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
+					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
+				}}
 				interactiveLayerIds={trailHitLayerIds}
 				cursor={pointer ? "pointer" : "grab"}
 				onLoad={() => setLoaded(true)}
 				onMouseMove={(event) => {
+					if (!byMouse.current) return;
 					const slugs = slugsAt(event);
 					setPointer(slugs.length > 0);
 					onHover(
@@ -148,12 +179,16 @@ export function AtlasMap({
 				}}
 				onClick={(event) => onPick(slugsAt(event))}
 			>
+				{/* Besides zooming without a pinch, the buttons tell a first-time visitor that
+				the map moves at all. */}
+				<NavigationControl position="top-right" showCompass={false} />
 				<TrailLayers
 					trails={trails}
 					dimmed={highlighted.length > 0}
 					visible={visible}
 					palette={trailPalettes[scheme]}
 					halo={basemapColors[scheme].land}
+					touch={!canHover()}
 				/>
 			</MapLibreMap>
 			<div

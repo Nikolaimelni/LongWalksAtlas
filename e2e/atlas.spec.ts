@@ -28,6 +28,7 @@ test("the atlas draws a map and says the lines are schematic", async ({
 	await page.goto("/en/");
 	await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
 	await expect(page.getByText("Lines on the map are schematic")).toBeVisible();
+	await expect(page.getByRole("button", { name: "Zoom in" })).toBeVisible();
 });
 
 // Text that differs between the prerendered HTML and the first client render makes
@@ -59,6 +60,10 @@ test("a trail in the URL opens its preview, and closing it clears the URL", asyn
 	await expect(
 		sheet.getByRole("link", { name: "Подробнее о тропе" }),
 	).toHaveAttribute("href", "/ru/trail/caminho-portugues/");
+	// The photo credit leads off the site, so it must not replace the map.
+	await expect(
+		sheet.getByRole("figure").getByRole("link").first(),
+	).toHaveAttribute("target", "_blank");
 
 	await sheet.getByRole("button", { name: "Закрыть" }).click();
 	await expect(sheet).toBeHidden();

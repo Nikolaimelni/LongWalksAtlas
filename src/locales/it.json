@@ -15,7 +15,9 @@
 		"loading": "Caricamento della mappa in corso…",
 		"pick": "Qui si incrociano diversi sentieri",
 		"pickHint": "Fai clic per sceglierne uno",
-		"mapFailed": "Non è stato possibile mostrare la mappa su questo dispositivo."
+		"mapFailed": "Non è stato possibile mostrare la mappa su questo dispositivo.",
+		"zoomIn": "Ingrandisci",
+		"zoomOut": "Riduci"
 	},
 	"filters": {
 		"list": "Sentieri",
