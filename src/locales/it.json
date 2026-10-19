@@ -58,14 +58,14 @@
 		"historic": "Percorso storico",
 		"coastal": "Sentiero costiero",
 		"mountain": "Sentiero di montagna",
-		"e-path": "Sentiero europeo a lunga percorrenza"
+		"forest": "Sentiero nel bosco"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Itinerari di pellegrinaggio",
 		"historic": "Itinerari storici",
 		"coastal": "Sentieri costieri",
 		"mountain": "Sentieri di montagna",
-		"e-path": "Sentieri europei a lunga percorrenza"
+		"forest": "Sentieri nel bosco"
 	},
 	"badge": {
 		"coe-cultural-route": "Itinerario culturale del Consiglio d’Europa",

@@ -228,7 +228,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 			)}
 
 			<header className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
-				<p className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/90 py-1 ps-1.5 pe-4 font-serif text-sm font-semibold shadow-float backdrop-blur">
+				<p className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/90 py-1 ps-1.5 pe-4 font-display text-sm font-semibold shadow-float backdrop-blur">
 					<LogoMark className="size-8" />
 					{t("app.name")}
 				</p>

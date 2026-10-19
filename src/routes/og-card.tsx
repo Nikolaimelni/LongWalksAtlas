@@ -25,7 +25,7 @@ export default function OgCard() {
 			<div className="absolute inset-y-0 start-0 flex w-[540px] flex-col justify-between bg-gradient-to-r from-canvas via-canvas/95 to-canvas/0 p-14 pe-24">
 				<div>
 					<LogoMark className="size-20" />
-					<p className="mt-6 font-serif text-6xl leading-tight font-semibold text-ink">
+					<p className="mt-6 font-display text-6xl leading-tight font-semibold text-ink">
 						{t("app.name")}
 					</p>
 					<p className="mt-5 text-2xl leading-snug text-ink">

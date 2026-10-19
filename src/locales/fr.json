@@ -58,14 +58,14 @@
 		"historic": "Itinéraire historique",
 		"coastal": "Sentier côtier",
 		"mountain": "Sentier de montagne",
-		"e-path": "Sentier européen de grande randonnée"
+		"forest": "Sentier forestier"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Chemins de pèlerinage",
 		"historic": "Itinéraires historiques",
 		"coastal": "Sentiers côtiers",
 		"mountain": "Sentiers de montagne",
-		"e-path": "Sentiers européens de grande randonnée"
+		"forest": "Sentiers forestiers"
 	},
 	"badge": {
 		"coe-cultural-route": "Itinéraire culturel du Conseil de l'Europe",

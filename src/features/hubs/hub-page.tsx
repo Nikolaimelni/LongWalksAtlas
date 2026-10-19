@@ -96,7 +96,7 @@ export function HubPage({ data }: Props) {
 			<SiteNav />
 
 			<header className="mt-4">
-				<h1 className="font-serif text-3xl leading-tight font-semibold">
+				<h1 className="font-display text-3xl leading-tight font-semibold">
 					{title}
 				</h1>
 				<p className="mt-4 text-lg leading-relaxed">
@@ -150,7 +150,7 @@ export function HubPage({ data }: Props) {
 									/>
 									{t(`trailType.${tr.summary.type}`)}
 								</p>
-								<h2 className="mt-1 font-serif text-xl leading-snug font-semibold">
+								<h2 className="mt-1 font-display text-xl leading-snug font-semibold">
 									<Link
 										to={pageOf(tr.summary.slug)}
 										viewTransition

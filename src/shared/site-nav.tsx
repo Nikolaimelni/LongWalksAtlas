@@ -12,7 +12,7 @@ export function SiteNav() {
 			<Link
 				to={`/${lang}/`}
 				viewTransition
-				className="flex items-center gap-2 rounded-full py-1 ps-1 pe-3 font-serif text-sm font-semibold hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
+				className="flex items-center gap-2 rounded-full py-1 ps-1 pe-3 font-display text-sm font-semibold hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
 			>
 				<LogoMark className="size-8 text-brand" />
 				{t("app.name")}

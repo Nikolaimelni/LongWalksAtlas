@@ -14,7 +14,7 @@ export function TrailFacts({ summary, file }: Props) {
 
 	return (
 		<section aria-labelledby="facts">
-			<h2 id="facts" className="font-serif text-xl font-semibold">
+			<h2 id="facts" className="font-display text-xl font-semibold">
 				{t("trail.facts")}
 			</h2>
 			<dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-4 text-sm sm:grid-cols-3">

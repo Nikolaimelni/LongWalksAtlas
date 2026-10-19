@@ -7,14 +7,10 @@ import {
 	ScrollRestoration,
 } from "react-router";
 
-import "@fontsource-variable/noto-sans";
-import "@fontsource-variable/noto-serif";
-import sansCyrillic from "@fontsource-variable/noto-sans/files/noto-sans-cyrillic-wght-normal.woff2?url";
-import sansLatinExt from "@fontsource-variable/noto-sans/files/noto-sans-latin-ext-wght-normal.woff2?url";
-import sansLatin from "@fontsource-variable/noto-sans/files/noto-sans-latin-wght-normal.woff2?url";
-import serifCyrillic from "@fontsource-variable/noto-serif/files/noto-serif-cyrillic-wght-normal.woff2?url";
-import serifLatinExt from "@fontsource-variable/noto-serif/files/noto-serif-latin-ext-wght-normal.woff2?url";
-import serifLatin from "@fontsource-variable/noto-serif/files/noto-serif-latin-wght-normal.woff2?url";
+import "@fontsource-variable/onest";
+import cyrillic from "@fontsource-variable/onest/files/onest-cyrillic-wght-normal.woff2?url";
+import latinExt from "@fontsource-variable/onest/files/onest-latin-ext-wght-normal.woff2?url";
+import latin from "@fontsource-variable/onest/files/onest-latin-wght-normal.woff2?url";
 import { type Lang, langDir } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import { trailColorCss } from "~/features/trails/trail-style";
@@ -23,13 +19,13 @@ import { webAnalyticsToken } from "~/shared/site";
 import type { Route } from "./+types/root";
 import "./app.css";
 
-// The site name and headings are serif, the rest sans, so every page needs both in Latin
-// plus the subset its own letters live in: ł and ş are latin-ext, ї and ы cyrillic.
+// Everything is set in Onest, so every page needs its Latin plus the subset its own
+// letters live in: ł and ş are latin-ext, ї and ы cyrillic.
 const scriptFonts: Partial<Record<Lang, string[]>> = {
-	ru: [sansCyrillic, serifCyrillic],
-	uk: [sansCyrillic, serifCyrillic],
-	pl: [sansLatinExt, serifLatinExt],
-	tr: [sansLatinExt, serifLatinExt],
+	ru: [cyrillic],
+	uk: [cyrillic],
+	pl: [latinExt],
+	tr: [latinExt],
 };
 
 // why: Vite turns each JSON key into a named export, so this pulls only the few
@@ -44,7 +40,7 @@ const errorText = import.meta.glob<{
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	const lang = useLang();
-	const preload = [sansLatin, serifLatin, ...(scriptFonts[lang] ?? [])];
+	const preload = [latin, ...(scriptFonts[lang] ?? [])];
 	return (
 		<html lang={lang} dir={langDir(lang)}>
 			<head>
@@ -118,7 +114,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 			<div className="flex w-full max-w-md flex-col items-center text-center">
 				<a
 					href={home}
-					className="flex items-center gap-2 rounded-full py-1 ps-1 pe-3 font-serif text-sm font-semibold hover:bg-soft"
+					className="flex items-center gap-2 rounded-full py-1 ps-1 pe-3 font-display text-sm font-semibold hover:bg-soft"
 				>
 					<LogoMark className="size-8 text-brand" />
 					Long Walks Atlas
@@ -127,7 +123,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 				<p className="mt-4 text-sm font-medium tracking-widest text-muted uppercase">
 					{crashed ? "500" : "404"}
 				</p>
-				<h1 className="mt-2 font-serif text-3xl leading-tight font-semibold text-balance">
+				<h1 className="mt-2 font-display text-3xl leading-tight font-semibold text-balance">
 					{heading}
 				</h1>
 				<p className="mt-3 leading-relaxed text-pretty text-muted">

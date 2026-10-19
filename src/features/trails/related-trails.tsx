@@ -29,7 +29,7 @@ export function RelatedTrails({ related }: Props) {
 		<div className="flex flex-col gap-10">
 			{kinds.map((kind) => (
 				<section key={kind} aria-labelledby={kind}>
-					<h2 id={kind} className="font-serif text-xl font-semibold">
+					<h2 id={kind} className="font-display text-xl font-semibold">
 						{t(`trail.${kind}`)}
 					</h2>
 					<ul className="mt-3 grid gap-2 sm:grid-cols-2">

@@ -37,15 +37,15 @@ function colorBy(palette: TrailPalette): ExpressionSpecification {
 	] as unknown as ExpressionSpecification;
 }
 
-function width(base: number): ExpressionSpecification {
+function width(base: number, edge = 0): ExpressionSpecification {
 	return [
 		"interpolate",
 		["linear"],
 		["zoom"],
 		3,
-		["case", active, base * 2, base],
+		["case", active, base * 2 + edge, base + edge],
 		10,
-		["case", active, base * 3.5, base * 2],
+		["case", active, base * 3.5 + edge, base * 2 + edge],
 	];
 }
 
@@ -139,23 +139,26 @@ export function TrailLayers({
 				data="/data/trails.geojson"
 				promoteId="slug"
 			>
+				{/* A land-coloured edge under every line, as on a printed map: a trail along
+				a coast or through a forest keeps its contrast, and crossing trails stay
+				apart. */}
+				<Layer
+					id="trails-casing"
+					type="line"
+					filter={only(["boolean", true])}
+					layout={layout}
+					paint={{
+						"line-color": halo,
+						"line-opacity": opacity,
+						"line-width": width(2 * weight, 3),
+					}}
+				/>
 				<Layer
 					id="trails-solid"
 					type="line"
-					filter={only(["!=", ["get", "type"], "e-path"])}
+					filter={only(["boolean", true])}
 					layout={layout}
 					paint={{ ...paint, "line-width": width(2 * weight) }}
-				/>
-				<Layer
-					id="trails-e-path"
-					type="line"
-					filter={only(["==", ["get", "type"], "e-path"])}
-					layout={{ ...layout, "line-cap": "butt" }}
-					paint={{
-						...paint,
-						"line-width": width(1.5 * weight),
-						"line-dasharray": [3, 2],
-					}}
 				/>
 				<Layer
 					id="trails-hit"

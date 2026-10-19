@@ -65,7 +65,7 @@ describe("hubTitle", () => {
 			hubTitle(await tIn("ru"), "ru", { kind: "country", code: "ES" }),
 		).toBe("Испания: многодневные пешие маршруты");
 		expect(
-			hubTitle(await tIn("en"), "en", { kind: "type", type: "e-path" }),
-		).toBe("European long-distance paths on the map");
+			hubTitle(await tIn("en"), "en", { kind: "type", type: "forest" }),
+		).toBe("Forest trails on the map");
 	});
 });

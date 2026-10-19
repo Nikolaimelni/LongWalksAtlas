@@ -194,7 +194,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 							t(`trailType.${summary.type}`)
 						)}
 					</p>
-					<h1 className="mt-1 font-serif text-3xl leading-tight font-semibold text-balance lg:text-4xl">
+					<h1 className="mt-1 font-display text-3xl leading-tight font-semibold text-balance lg:text-4xl">
 						{content.title}
 					</h1>
 					{content.title !== file.name.original && (
@@ -280,7 +280,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 
 				{body && (
 					<section aria-labelledby="story" className="lg:col-start-1">
-						<h2 id="story" className="font-serif text-xl font-semibold">
+						<h2 id="story" className="font-display text-xl font-semibold">
 							{t("trail.story")}
 						</h2>
 						<div

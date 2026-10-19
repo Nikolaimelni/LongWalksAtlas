@@ -3,20 +3,24 @@ import type { TrailType } from "./trail-schema";
 export type Scheme = "light" | "dark";
 export type TrailPalette = Record<TrailType, string>;
 
+// Picked by search, not by eye: every pair stays apart for protan and deutan vision
+// (OKLab ΔE ≥ 10 after the Machado 2009 simulation) and for everyone else (ΔE ≥ 15),
+// at 3:1 against the land. A trail never needs it against water or woods, because
+// trail-layers.tsx draws each line on a land-coloured casing.
 export const trailPalettes = {
 	light: {
-		pilgrimage: "#9a6100",
-		historic: "#a63d26",
-		coastal: "#1f6fb8",
-		mountain: "#3a7a30",
-		"e-path": "#7a4fbf",
+		pilgrimage: "#b3317f",
+		historic: "#be6609",
+		coastal: "#2282cb",
+		mountain: "#4d29c4",
+		forest: "#026440",
 	},
 	dark: {
-		pilgrimage: "#f2b441",
-		historic: "#f0846a",
-		coastal: "#62aef2",
-		mountain: "#86cf74",
-		"e-path": "#b995f5",
+		pilgrimage: "#d057a7",
+		historic: "#cd8b4b",
+		coastal: "#44b0fe",
+		mountain: "#826df2",
+		forest: "#29d6bb",
 	},
 } as const satisfies Record<Scheme, TrailPalette>;
 

@@ -56,14 +56,14 @@
 		"historic": "Historische route",
 		"coastal": "Kustroute",
 		"mountain": "Bergpad",
-		"e-path": "Europese langeafstandsroute"
+		"forest": "Bospad"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Bedevaartsroutes",
 		"historic": "Historische routes",
 		"coastal": "Kustroutes",
 		"mountain": "Bergpaden",
-		"e-path": "Europese langeafstandsroutes"
+		"forest": "Bospaden"
 	},
 	"badge": {
 		"coe-cultural-route": "Cultuurroute van de Raad van Europa",

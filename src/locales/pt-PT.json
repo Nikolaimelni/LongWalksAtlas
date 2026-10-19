@@ -58,14 +58,14 @@
 		"historic": "Percurso histórico",
 		"coastal": "Trilho costeiro",
 		"mountain": "Trilho de montanha",
-		"e-path": "Percurso europeu de longa distância"
+		"forest": "Trilho florestal"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Caminhos de peregrinação",
 		"historic": "Rotas históricas",
 		"coastal": "Trilhos costeiros",
 		"mountain": "Trilhos de montanha",
-		"e-path": "Percursos europeus de longa distância"
+		"forest": "Trilhos florestais"
 	},
 	"badge": {
 		"coe-cultural-route": "Rota Cultural do Conselho da Europa",

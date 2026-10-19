@@ -56,14 +56,14 @@
 		"historic": "Historic route",
 		"coastal": "Coastal trail",
 		"mountain": "Mountain trail",
-		"e-path": "European long-distance path"
+		"forest": "Forest trail"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Pilgrim ways",
 		"historic": "Historic routes",
 		"coastal": "Coastal trails",
 		"mountain": "Mountain trails",
-		"e-path": "European long-distance paths"
+		"forest": "Forest trails"
 	},
 	"badge": {
 		"coe-cultural-route": "Cultural Route of the Council of Europe",

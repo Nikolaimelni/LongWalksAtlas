@@ -56,14 +56,14 @@
 		"historic": "Historisk rutt",
 		"coastal": "Kustled",
 		"mountain": "Bergsstig",
-		"e-path": "Europeisk långdistansled"
+		"forest": "Skogsled"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Pilgrimsleder",
 		"historic": "Historiska rutter",
 		"coastal": "Kuststigar",
 		"mountain": "Bergsstigar",
-		"e-path": "Europeiska långdistansleder"
+		"forest": "Skogsleder"
 	},
 	"badge": {
 		"coe-cultural-route": "Europarådets kulturväg",

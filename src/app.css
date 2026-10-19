@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-	--font-sans: "Noto Sans Variable", ui-sans-serif, system-ui, sans-serif;
-	--font-serif: "Noto Serif Variable", ui-serif, Georgia, serif;
+	--font-sans: "Onest Variable", ui-sans-serif, system-ui, sans-serif;
+	--font-display: "Onest Variable", ui-sans-serif, system-ui, sans-serif;
 
 	--color-canvas: #f7f3ea;
 	--color-surface: #fffdf8;
@@ -36,24 +36,27 @@
 
 :lang(zh-Hans) {
 	--font-sans:
-		"Noto Sans Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+		"Onest Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
 		"Noto Sans CJK SC", sans-serif;
-	--font-serif:
-		"Noto Serif Variable", "Songti SC", "SimSun", "Noto Serif CJK SC", serif;
+	--font-display:
+		"Onest Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+		"Noto Sans CJK SC", sans-serif;
 }
 :lang(ja) {
 	--font-sans:
-		"Noto Sans Variable", "Hiragino Sans", "Yu Gothic", Meiryo,
-		"Noto Sans CJK JP", sans-serif;
-	--font-serif:
-		"Noto Serif Variable", "Hiragino Mincho ProN", "Yu Mincho",
-		"Noto Serif CJK JP", serif;
+		"Onest Variable", "Hiragino Sans", "Yu Gothic", Meiryo, "Noto Sans CJK JP",
+		sans-serif;
+	--font-display:
+		"Onest Variable", "Hiragino Sans", "Yu Gothic", Meiryo, "Noto Sans CJK JP",
+		sans-serif;
 }
 :lang(ar) {
 	--font-sans:
-		"Noto Sans Variable", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma,
+		"Onest Variable", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma,
 		sans-serif;
-	--font-serif: "Noto Serif Variable", "Noto Naskh Arabic", "Geeza Pro", serif;
+	--font-display:
+		"Onest Variable", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma,
+		sans-serif;
 }
 
 ::view-transition-group(trail-photo) {

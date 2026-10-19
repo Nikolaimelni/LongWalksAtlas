@@ -73,9 +73,9 @@ test("two regions together, counted on the folded filters", async ({
 });
 
 test("a filtered link opens with the filters applied", async ({ page }) => {
-	await page.goto("/ru/?type=e-path");
+	await page.goto("/ru/?type=forest");
 	await openPanel(page);
-	await expect(list(page)).toHaveCount(countOf((t) => t.type === "e-path"));
+	await expect(list(page)).toHaveCount(countOf((t) => t.type === "forest"));
 	await expect(list(page).first()).toHaveText(/E1/);
 });
 

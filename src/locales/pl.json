@@ -60,14 +60,14 @@
 		"historic": "Trasa historyczna",
 		"coastal": "Szlak nadmorski",
 		"mountain": "Szlak górski",
-		"e-path": "Europejski szlak długodystansowy"
+		"forest": "Szlak leśny"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Szlaki pielgrzymkowe",
 		"historic": "Szlaki historyczne",
 		"coastal": "Szlaki nadmorskie",
 		"mountain": "Szlaki górskie",
-		"e-path": "Europejskie szlaki długodystansowe"
+		"forest": "Szlaki leśne"
 	},
 	"badge": {
 		"coe-cultural-route": "Szlak kulturowy Rady Europy",

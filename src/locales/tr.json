@@ -56,14 +56,14 @@
 		"historic": "Tarihi güzergâh",
 		"coastal": "Kıyı yürüyüş yolu",
 		"mountain": "Dağ patikası",
-		"e-path": "Avrupa uzun mesafe yürüyüş yolu"
+		"forest": "Orman yolu"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Hac yolları",
 		"historic": "Tarihi güzergâhlar",
 		"coastal": "Kıyı yürüyüş yolları",
 		"mountain": "Dağ yürüyüş yolları",
-		"e-path": "Avrupa uzun mesafe yürüyüş yolları"
+		"forest": "Orman yolları"
 	},
 	"badge": {
 		"coe-cultural-route": "Avrupa Konseyi Kültür Rotası",

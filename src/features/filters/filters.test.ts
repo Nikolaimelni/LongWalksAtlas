@@ -86,9 +86,9 @@ describe("writeFilters", () => {
 		const next = writeFilters(params("trail=e1&type=coastal&q=x"), {
 			q: "  ",
 			...none,
-			types: ["mountain", "e-path"],
+			types: ["mountain", "forest"],
 		});
-		expect(next.toString()).toBe("trail=e1&type=mountain%2Ce-path");
+		expect(next.toString()).toBe("trail=e1&type=mountain%2Cforest");
 	});
 
 	it("round-trips through parseFilters", () => {
@@ -114,7 +114,7 @@ describe("applyFilters", () => {
 			days: { min: 7, max: 10 },
 		}),
 		trail("e1", {
-			type: "e-path",
+			type: "forest",
 			countries: ["NO", "DE", "IT"],
 			lengthKm: 7114,
 			days: { min: 285, max: 356 },
@@ -128,7 +128,7 @@ describe("applyFilters", () => {
 	});
 
 	it("matches any of the chosen types", () => {
-		expect(slugs({ ...none, types: ["mountain", "e-path"] })).toEqual([
+		expect(slugs({ ...none, types: ["mountain", "forest"] })).toEqual([
 			"alps",
 			"e1",
 		]);

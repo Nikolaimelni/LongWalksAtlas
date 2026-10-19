@@ -1,7 +1,7 @@
 {
 	"slug": "e1",
 	"name": { "original": "E1" },
-	"type": "e-path",
+	"type": "forest",
 	"region": "europe",
 	"start": { "name": "Nordkapp", "coords": [25.7836, 71.1685] },
 	"end": { "name": "Capo Passero", "coords": [15.1497, 36.6886] },

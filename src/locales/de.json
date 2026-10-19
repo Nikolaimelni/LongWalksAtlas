@@ -56,14 +56,14 @@
 		"historic": "Historische Route",
 		"coastal": "Küstenwanderweg",
 		"mountain": "Bergwanderweg",
-		"e-path": "Europäischer Fernwanderweg"
+		"forest": "Waldwanderweg"
 	},
 	"trailTypePlural": {
 		"pilgrimage": "Pilgerwege",
 		"historic": "Historische Routen",
 		"coastal": "Küstenwanderwege",
 		"mountain": "Bergwanderwege",
-		"e-path": "Europäische Fernwanderwege"
+		"forest": "Waldwanderwege"
 	},
 	"badge": {
 		"coe-cultural-route": "Kulturroute des Europarats",

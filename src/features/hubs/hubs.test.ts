@@ -6,7 +6,7 @@ const trails: Pick<TrailSummary, "type" | "countries">[] = [
 	{ type: "coastal", countries: ["TR"] },
 	{ type: "historic", countries: ["TR"] },
 	{ type: "mountain", countries: ["FR", "IT", "CH"] },
-	{ type: "e-path", countries: ["NO", "DE", "CH", "IT"] },
+	{ type: "forest", countries: ["NO", "DE", "CH", "IT"] },
 	{ type: "pilgrimage", countries: ["PT", "ES"] },
 	{ type: "pilgrimage", countries: ["ES"] },
 ];
@@ -30,7 +30,7 @@ describe("listHubs", () => {
 describe("hubPath", () => {
 	it("uses the lowercase country code", () => {
 		expect(hubPath({ kind: "country", code: "TR" })).toBe("country/tr/");
-		expect(hubPath({ kind: "type", type: "e-path" })).toBe("type/e-path/");
+		expect(hubPath({ kind: "type", type: "forest" })).toBe("type/forest/");
 	});
 });
 

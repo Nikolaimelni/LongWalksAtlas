@@ -5,7 +5,7 @@ export const trailTypes = [
 	"historic",
 	"coastal",
 	"mountain",
-	"e-path",
+	"forest",
 ] as const;
 
 const months = [
