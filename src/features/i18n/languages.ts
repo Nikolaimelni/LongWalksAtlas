@@ -7,12 +7,12 @@ export const languages = [
 	{ code: "it", name: "Italiano", dir: "ltr" },
 	{ code: "nl", name: "Nederlands", dir: "ltr" },
 	{ code: "pl", name: "Polski", dir: "ltr" },
+	{ code: "cs", name: "Čeština", dir: "ltr" },
 	{ code: "sv", name: "Svenska", dir: "ltr" },
 	{ code: "uk", name: "Українська", dir: "ltr" },
 	{ code: "pt-PT", name: "Português", dir: "ltr" },
-	{ code: "zh-Hans", name: "简体中文", dir: "ltr" },
 	{ code: "ja", name: "日本語", dir: "ltr" },
-	{ code: "ar", name: "العربية", dir: "rtl" },
+	{ code: "ko", name: "한국어", dir: "ltr" },
 	{ code: "tr", name: "Türkçe", dir: "ltr" },
 ] as const;
 

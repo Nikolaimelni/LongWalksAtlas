@@ -15,9 +15,9 @@ const targets: Record<Exclude<Lang, "en">, string> = {
 	sv: "SV",
 	uk: "UK",
 	"pt-PT": "PT-PT",
-	"zh-Hans": "ZH-HANS",
 	ja: "JA",
-	ar: "AR",
+	ko: "KO",
+	cs: "CS",
 	tr: "TR",
 };
 

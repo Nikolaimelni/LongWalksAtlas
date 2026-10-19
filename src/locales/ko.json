@@ -1,0 +1,132 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "전 세계 장거리 도보 여행 코스 지도: 순례길, 역사적인 길, 해안 및 산악 코스 등이 수록되어 있으며, 각 코스의 길이, 소요 일수 및 공식 웹사이트 링크가 함께 제공됩니다."
+	},
+	"disclaimer": {
+		"short": "지도상의 선은 대략적인 것입니다. 정확한 경로는 각 트레일의 공식 웹사이트를 참조하십시오.",
+		"trail": "지도상의 경로는 개략적인 것이며, 실제 표지판이 설치된 등산로와 다를 수 있습니다. 정확한 경로, 구간별 정보 및 최신 변경 사항은 공식 웹사이트(<a>{{site}}</a>)에서 확인하시기 바랍니다."
+	},
+	"og": {
+		"tagline": "전 세계의 순례길, 역사적인 길, 해안 및 산악 트레일을 한 장의 지도에 담았습니다."
+	},
+	"atlas": {
+		"title": "지도에 표시된 전 세계의 장거리 하이킹 코스",
+		"loading": "지도 불러오는 중…",
+		"pick": "여러 등산로가 이곳에서 만나고 있습니다",
+		"pickHint": "클릭하여 하나를 선택하세요",
+		"mapFailed": "이 기기에서는 지도를 표시할 수 없습니다.",
+		"zoomIn": "확대하기",
+		"zoomOut": "축소하기"
+	},
+	"filters": {
+		"list": "트레일",
+		"search": "탐방로 검색",
+		"searchPlaceholder": "트레일 또는 장소",
+		"clearSearch": "검색어 지우기",
+		"count_other": "{{count}}개 등산로",
+		"types": "유형",
+		"country": "국가",
+		"anyCountry": "어떤",
+		"length": "길이",
+		"anyLength": "어떤",
+		"under": "",
+		"over": "과{{value}}",
+		"duration": "도보로",
+		"anyDuration": "어떤",
+		"week": "최대 일주일",
+		"fortnight": "1~2주",
+		"month": "2~4주",
+		"more": "한 달 넘게",
+		"reset": "모두 지우기",
+		"active_other": "{{count}}개의 필터 적용됨",
+		"none": "일치하는 검색 결과가 없습니다. 필터를 해제해 보세요.",
+		"show": "목록과 필터 표시",
+		"region": "지역",
+		"toggle": "필터"
+	},
+	"language": {
+		"label": "언어",
+		"choose": "언어 선택"
+	},
+	"trailType": {
+		"pilgrimage": "순례길",
+		"historic": "역사적인 경로",
+		"coastal": "해안 산책로",
+		"mountain": "산길",
+		"forest": "숲길"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "순례길",
+		"historic": "역사적인 노선",
+		"coastal": "해안 산책로",
+		"mountain": "산길",
+		"forest": "산길"
+	},
+	"badge": {
+		"coe-cultural-route": "유럽평의회 문화 루트",
+		"unesco": "유네스코 세계유산"
+	},
+	"trail": {
+		"length": "길이",
+		"duration": "도보로",
+		"days_other": "{{count}}일",
+		"daysRange_other": "{{min}}~{{count}}일",
+		"more": "이 트레일에 대한 자세한 정보",
+		"close": "닫기",
+		"start": "시작까지",
+		"end": "남은 시간",
+		"loop": "~에서 시작해 ~로 돌아오는 루프",
+		"countries": "국가",
+		"season": "가장 좋은 달",
+		"facts": "한눈에 보기",
+		"story": "이 트레일에 대해",
+		"officialSite": "공식 웹사이트",
+		"sources": "출처",
+		"lengthFromMap": "OpenStreetMap 상의 선을 기준으로 측정한 길이이며, 아직 공식 수치는 확인되지 않았습니다.",
+		"showOnMap": "지도에서 보기",
+		"fallback": "아직 번역본이 없으므로 이 텍스트는 영어로 되어 있습니다.",
+		"mapLoading": "지도 불러오는 중…",
+		"crosses": "이 트레일이 만나는 길",
+		"nearby": "주변 산책로",
+		"photoBy": "사진:",
+		"photoAlt": "{{title}}에 관하여",
+		"daysEstimated": "어느 자료에도 도보로 이동한 일수가 명시되어 있지 않으므로, 하루 이동 {{pace}}를 기준으로 일수를 계산해 냈습니다."
+	},
+	"seo": {
+		"trailTitle": "{{title}}: 경로 지도, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, 도보로 {{days}}."
+	},
+	"hub": {
+		"countryTitle": "{{country}}의 장거리 하이킹 코스",
+		"typeTitle": "지도상의 {{types}}",
+		"countryIntro_other": "이 지도집에는 {{country}}를 가로지르는 {{count}}개의 트레일이 수록되어 있으며, {{shortest}}한 것부터 {{longest}}한 것까지 순서대로 정리되어 있습니다.",
+		"typeIntro_other": "이 지도집에는 여러{{countries}}에 걸쳐 있는 {{count}}개의 이와 같은 트레일이 수록되어 있으며, {{shortest}}에서 {{longest}}까지 순서대로 정리되어 있습니다.",
+		"each": "각 코스마다 거리와 도보 소요 일수, 추천 시기, 그리고 공식 사이트 링크가 함께 제공됩니다.",
+		"showOnMap": "지도에서 표시하기",
+		"browse": "트레일 둘러보기",
+		"byCountry": "국가별",
+		"byType": "유형별"
+	},
+	"error": {
+		"notFound": "이 산책로는 여기서 끝납니다",
+		"crashed": "문제가 발생했습니다",
+		"home": "지도로 돌아가기",
+		"notFoundText": "이 주소에는 해당 페이지가 없습니다. 링크가 오래된 것일 수도 있고, 주소에 오타가 있을 수도 있습니다.",
+		"crashedText": "해당 페이지를 표시할 수 없습니다. 잠시 후 다시 시도해 주세요."
+	},
+	"site": {
+		"credits": "트레일 라인 © OpenStreetMap 기여자, ODbL. 기본 지도: OpenFreeMap. 사진 출처: 위키미디어 공용, 각 사진의 출처는 표시된 대로 명시되어 있습니다.",
+		"translations": "영어 원문은 DeepL과 Claude를 사용하여 번역되었습니다.",
+		"growing": "지금까지 지도집에 표시된 트레일: {{count}}. 확인된 트레일은 새로 추가됩니다.",
+		"suggest": "이곳에 소개할 만한 긴 산책 코스를 알고 계신가요? <a>{{email}}</a>로 제안해 주세요."
+	},
+	"region": {
+		"europe": "유럽",
+		"middle-east-caucasus": "중동 및 코카서스",
+		"asia": "아시아",
+		"africa": "아프리카",
+		"americas": "미주",
+		"oceania": "오세아니아"
+	}
+}

@@ -123,6 +123,7 @@
 	},
 	"site": {
 		"credits": "Routelijnen © OpenStreetMap-bijdragers, ODbL. Basiskaart: OpenFreeMap. Foto's van Wikimedia Commons, met maker en licentie bij elke foto.",
+		"translations": "Vertalingen vanuit het Engels zijn gemaakt met DeepL en Claude.",
 		"growing": "Routes in de atlas tot nu toe: {{count}}. Nieuwe komen erbij zodra ze zijn gecontroleerd.",
 		"suggest": "Kent u een lange wandelroute die hier ontbreekt? Schrijf naar <a>{{email}}</a>."
 	},

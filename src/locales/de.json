@@ -123,6 +123,7 @@
 	},
 	"site": {
 		"credits": "Wegverläufe © OpenStreetMap-Mitwirkende, ODbL. Kartengrundlage: OpenFreeMap. Fotos von Wikimedia Commons, jeweils mit Urheber und Lizenz.",
+		"translations": "Die Übersetzungen aus dem Englischen wurden mit DeepL und Claude angefertigt.",
 		"growing": "Wege im Atlas bisher: {{count}}. Neue kommen hinzu, sobald sie geprüft sind.",
 		"suggest": "Sie kennen einen Weitwanderweg, der hier fehlt? Schreiben Sie an <a>{{email}}</a>."
 	},

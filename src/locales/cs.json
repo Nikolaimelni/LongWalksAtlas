@@ -1,0 +1,150 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "Mapa dálkových turistických tras po celém světě: poutní cesty, historické trasy, pobřežní a horské stezky, včetně údajů o délce, počtu dnů chůze a odkazu na příslušné oficiální stránky."
+	},
+	"disclaimer": {
+		"short": "Čáry na mapě jsou schematické. Přesnou trasu najdete na oficiálních webových stránkách jednotlivých stezek.",
+		"trail": "Čára na mapě je schematická a může se lišit od značené trasy. Přesný popis trasy, její etapy a aktuální změny najdete na oficiálních webových <a>{{site}}</a>ch."
+	},
+	"og": {
+		"tagline": "Poutní cesty, historické trasy, pobřežní a horské stezky z celého světa na jedné mapě."
+	},
+	"atlas": {
+		"title": "Dálkové turistické trasy světa na mapě",
+		"loading": "Načítání mapy…",
+		"pick": "Zde se kříží několik turistických stezek",
+		"pickHint": "Klikněte a vyberte jednu možnost",
+		"mapFailed": "Na tomto zařízení nebylo možné mapu zobrazit.",
+		"zoomIn": "Přiblížit",
+		"zoomOut": "Zmenšit zobrazení"
+	},
+	"filters": {
+		"list": "Stezky",
+		"search": "Vyhledávací trasy",
+		"searchPlaceholder": "Trasa nebo místo",
+		"clearSearch": "Vymazat hledání",
+		"count_one": "{{count}} stezka",
+		"count_few": "{{count}} trasy",
+		"count_many": "{{count}} trasy",
+		"count_other": "{{count}} tras",
+		"types": "Typ",
+		"country": "Země",
+		"anyCountry": "Jakýkoli",
+		"length": "Délka",
+		"anyLength": "Jakýkoli",
+		"under": "Pod{{value}}",
+		"over": "Nad{{value}}",
+		"duration": "Pěšky",
+		"anyDuration": "Jakýkoli",
+		"week": "Až jeden týden",
+		"fortnight": "1–2 týdny",
+		"month": "2–4 týdny",
+		"more": "Více než měsíc",
+		"reset": "Vymazat vše",
+		"active_one": "{{count}} filtr zapnutý",
+		"active_few": "{{count}} filtry zapnuty",
+		"active_many": "{{count}} filtry zapnuty",
+		"active_other": "{{count}} filtrů zapnuto",
+		"none": "Nebyly nalezeny žádné shody. Zkuste odstranit filtr.",
+		"show": "zobrazit seznam a filtry",
+		"region": "Region",
+		"toggle": "Filtry"
+	},
+	"language": {
+		"label": "Jazyk",
+		"choose": "Vyberte jazyk"
+	},
+	"trailType": {
+		"pilgrimage": "Poutní cesta",
+		"historic": "Historická trasa",
+		"coastal": "Pobřežní stezka",
+		"mountain": "Horská stezka",
+		"forest": "Lesní stezka"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "Poutní cesty",
+		"historic": "Historické trasy",
+		"coastal": "Pobřežní stezky",
+		"mountain": "Horské stezky",
+		"forest": "Lesní stezky"
+	},
+	"badge": {
+		"coe-cultural-route": "Kulturní trasa Rady Evropy",
+		"unesco": "Světové dědictví UNESCO"
+	},
+	"trail": {
+		"length": "Délka",
+		"duration": "Pěšky",
+		"days_one": "{{count}} den",
+		"days_few": "{{count}} dny",
+		"days_many": "{{count}} dny",
+		"days_other": "{{count}} dní",
+		"daysRange_one": "{{min}}–{{count}} dní",
+		"daysRange_few": "{{min}}imálně {{count}} dny",
+		"daysRange_many": "{{min}}imálně {{count}} dny",
+		"daysRange_other": "{{min}} – {{count}} dní",
+		"more": "Více o této trase",
+		"close": "Zavřít",
+		"start": "Začíná za",
+		"end": "Končí za",
+		"loop": "Smyčka od a zpět k",
+		"countries": "Země",
+		"season": "Nejlepší měsíce",
+		"facts": "Stručný přehled",
+		"story": "O stezce",
+		"officialSite": "Oficiální webové stránky",
+		"sources": "Zdroje",
+		"lengthFromMap": "Délka změřená podle trasy na OpenStreetMap; oficiální údaj zatím nebyl ověřen.",
+		"showOnMap": "Zobrazit na mapě",
+		"fallback": "Zatím neexistuje žádný překlad, takže tento text je v angličtině.",
+		"mapLoading": "Načítání mapy…",
+		"crosses": "Trasy, na které se napojuje",
+		"nearby": "Okolní turistické trasy",
+		"photoBy": "Foto:",
+		"photoAlt": "O {{title}}u",
+		"daysEstimated": "Žádný zdroj neuvádí počet dní strávených pěšky, proto jsou vypočítány na základě denní délky u{{pace}}."
+	},
+	"seo": {
+		"trailTitle": "{{title}}a: mapa trasy, {{km}}, {{days}}",
+		"trailDescription": "{{summary}} {{km}}, {{days}} pěšky."
+	},
+	"hub": {
+		"countryTitle": "Dálkové turistické trasy v této {{country}}",
+		"typeTitle": "{{types}} na mapě",
+		"countryIntro_one": "V atlasu je uvedena {{count}} turistická stezka, která protíná celou z{{country}}, a to v její {{shortest}}é délce.",
+		"countryIntro_few": "V atlasu jsou uvedeny {{count}} trasy, které protínají{{country}}, seřazené od {{shortest}} po {{longest}}.",
+		"countryIntro_many": "V atlasu jsou uvedeny {{count}} trasy, které protínají{{country}}, seřazené od {{shortest}} po {{longest}}.",
+		"countryIntro_other": "Atlas obsahuje {{count}} tras, které protínají celou z{{country}}, seřazených od {{shortest}} po {{longest}}.",
+		"typeIntro_one": "Atlas obsahuje {{count}} trasu tohoto druhu, v{{countries}}, {{shortest}} long.",
+		"typeIntro_few": "V atlasu jsou uvedeny {{count}} trasy tohoto druhu, které vedou napříč {{countries}}, seřazené od {{shortest}} po {{longest}}.",
+		"typeIntro_many": "V atlasu jsou uvedeny {{count}} trasy tohoto druhu, které vedou napříč {{countries}}, seřazené od {{shortest}} po {{longest}}.",
+		"typeIntro_other": "Atlas obsahuje {{count}} tras tohoto druhu napříč různými {{countries}}, seřazených od {{shortest}} po {{longest}}.",
+		"each": "U každé trasy je uvedena délka, počet dní chůze, nejvhodnější měsíce a odkaz na oficiální webové stránky.",
+		"showOnMap": "Zobrazit je na mapě",
+		"browse": "Prohlédnout si trasy",
+		"byCountry": "Podle země",
+		"byType": "Podle typu"
+	},
+	"error": {
+		"notFound": "Tato stezka zde končí",
+		"crashed": "Došlo k chybě",
+		"home": "Zpět na mapu",
+		"notFoundText": "Na této adrese se žádná stránka nenachází. Odkaz je možná zastaralý, případně obsahuje překlep v adrese.",
+		"crashedText": "Stránku se nepodařilo zobrazit. Zkuste to za chvíli znovu."
+	},
+	"site": {
+		"credits": "Trasy © přispěvatelé OpenStreetMap, ODbL. Základní mapa od OpenFreeMap. Fotografie z Wikimedia Commons, u každé je uveden zdroj tam, kde je zobrazena.",
+		"translations": "Překlady z angličtiny byly provedeny pomocí nástrojů DeepL a Claude.",
+		"growing": "Trasy v atlasu k dnešnímu dni: {{count}}. Nové trasy se přidávají postupně, jak jsou ověřovány.",
+		"suggest": "Znáte nějakou dlouhou trasu, která by sem patřila? Navrhněte ji na <a>{{email}}</a>."
+	},
+	"region": {
+		"europe": "Evropa",
+		"middle-east-caucasus": "Blízký východ a Kavkaz",
+		"asia": "Asie",
+		"africa": "Afrika",
+		"americas": "Amerika",
+		"oceania": "Oceánie"
+	}
+}

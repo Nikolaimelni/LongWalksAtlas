@@ -123,6 +123,7 @@
 	},
 	"site": {
 		"credits": "Ledernas linjer © OpenStreetMaps bidragsgivare, ODbL. Bakgrundskarta: OpenFreeMap. Foton från Wikimedia Commons, med upphovsperson och licens vid varje bild.",
+		"translations": "Översättningarna från engelska gjordes med hjälp av DeepL och Claude.",
 		"growing": "Leder i atlasen hittills: {{count}}. Nya läggs till när de har kontrollerats.",
 		"suggest": "Känner du till en vandringsled som saknas här? Skriv till <a>{{email}}</a>."
 	},

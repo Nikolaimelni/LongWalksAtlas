@@ -1,0 +1,132 @@
+{
+	"app": {
+		"name": "Long Walks Atlas",
+		"description": "世界中の長距離ウォーキングコースの地図：巡礼路、歴史的なルート、海岸沿いや山間の道など。各コースの距離、所要日数、および各公式サイトへのリンクを掲載しています。"
+	},
+	"disclaimer": {
+		"short": "地図上の線は概略です。正確なルートについては、各トレイルの公式サイトをご覧ください。",
+		"trail": "地図上の線は概略図であり、実際に標識が設置されたトレイルとは異なる場合があります。正確なルート、各区間、および最新の変更については、公式ウェブサイトをご覧ください：<a>{{site}}</a>。"
+	},
+	"og": {
+		"tagline": "世界中の巡礼路、歴史的なルート、海岸沿いや山間のトレイルを、1枚の地図にまとめました。"
+	},
+	"atlas": {
+		"title": "地図に示された世界中の長距離ハイキングコース",
+		"loading": "地図を読み込んでいます…",
+		"pick": "ここにはいくつかのトレイルが合流しています",
+		"pickHint": "クリックして1つ選んでください",
+		"mapFailed": "この端末では地図を表示できませんでした。",
+		"zoomIn": "拡大する",
+		"zoomOut": "ズームアウト"
+	},
+	"filters": {
+		"list": "トレイル",
+		"search": "トレイルを検索",
+		"searchPlaceholder": "トレイルや場所",
+		"clearSearch": "検索をクリア",
+		"count_other": "{{count}}のトレイル",
+		"types": "種類",
+		"country": "国",
+		"anyCountry": "いずれか",
+		"length": "長さ",
+		"anyLength": "いずれか",
+		"under": "{{value}}未満",
+		"over": "{{value}}超過",
+		"duration": "徒歩で",
+		"anyDuration": "いずれか",
+		"week": "最大1週間",
+		"fortnight": "1～2週間",
+		"month": "2～4週間",
+		"more": "1か月以上",
+		"reset": "すべてクリア",
+		"active_other": "{{count}}個のフィルターが有効",
+		"none": "一致するトレイルはありません。フィルターを解除してみてください。",
+		"show": "リストとフィルタを表示する",
+		"region": "地域",
+		"toggle": "フィルター"
+	},
+	"language": {
+		"label": "言語",
+		"choose": "言語を選択してください"
+	},
+	"trailType": {
+		"pilgrimage": "巡礼の道",
+		"historic": "歴史的なルート",
+		"coastal": "海岸沿いの遊歩道",
+		"mountain": "山道",
+		"forest": "森の小道"
+	},
+	"trailTypePlural": {
+		"pilgrimage": "巡礼の道",
+		"historic": "歴史的なルート",
+		"coastal": "海岸沿いの遊歩道",
+		"mountain": "山道",
+		"forest": "森の小道"
+	},
+	"badge": {
+		"coe-cultural-route": "欧州評議会の文化ルート",
+		"unesco": "ユネスコ世界遺産"
+	},
+	"trail": {
+		"length": "長さ",
+		"duration": "徒歩で",
+		"days_other": "{{count}}日間",
+		"daysRange_other": "{{min}}～{{count}}日",
+		"more": "このトレイルの詳細",
+		"close": "閉じる",
+		"start": "開始まであと",
+		"end": "あと",
+		"loop": "～から～までループする",
+		"countries": "国",
+		"season": "おすすめの月",
+		"facts": "一目でわかる",
+		"story": "このトレイルについて",
+		"officialSite": "公式サイト",
+		"sources": "出典",
+		"lengthFromMap": "OpenStreetMap上の線に基づいて測定した長さ。公式の数値はまだ確認していない。",
+		"showOnMap": "地図上に表示する",
+		"fallback": "まだ翻訳がないため、このテキストは英語のままです。",
+		"mapLoading": "地図を読み込んでいます…",
+		"crosses": "交差するトレイル",
+		"nearby": "周辺のトレイル",
+		"photoBy": "写真：",
+		"photoAlt": "「{{title}}」について",
+		"daysEstimated": "どの資料にも徒歩での日数が記載されていないため、1日あたりの歩{{pace}}に基づいて算出されている。"
+	},
+	"seo": {
+		"trailTitle": "{{title}}：ルートマップ、{{km}}、{{days}}",
+		"trailDescription": "{{summary}} {{km}}、{{days}}の徒歩旅行。"
+	},
+	"hub": {
+		"countryTitle": "{{country}}の長距離ハイキングコース",
+		"typeTitle": "地図上の{{types}}",
+		"countryIntro_other": "この地図帳には、{{country}}を横断する{{count}}のトレイルが、{{shortest}}なものから{{longest}}なものまで掲載されています。",
+		"typeIntro_other": "このアトラスには、{{countries}}にまたがるこの種のトレイルが{{count}}本掲載されており、{{shortest}}なものから{{longest}}なものへと順に並んでいます。",
+		"each": "それぞれについて、距離、徒歩での所要日数、おすすめの時期、および公式サイトへのリンクが記載されています。",
+		"showOnMap": "地図上で表示する",
+		"browse": "トレイルを閲覧する",
+		"byCountry": "国別",
+		"byType": "種類別"
+	},
+	"error": {
+		"notFound": "このトレイルはここで終わります",
+		"crashed": "何か問題が発生しました",
+		"home": "地図に戻る",
+		"notFoundText": "このアドレスにはページがありません。リンクが古くなっているか、アドレスの入力に誤りがある可能性があります。",
+		"crashedText": "このページを表示できませんでした。しばらくしてからもう一度お試しください。"
+	},
+	"site": {
+		"credits": "トレイルの線 © OpenStreetMap 貢献者、ODbL。ベースマップ：OpenFreeMap。写真はウィキメディア・コモンズより。各写真には表示されている場所にクレジットが記載されています。",
+		"translations": "英語からの翻訳は、DeepLとClaudeを使用して行いました。",
+		"growing": "現時点でアトラスに記録されているトレイルの数：{{count}}。確認され次第、新しいトレイルが追加されます。",
+		"suggest": "ここに掲載すべき長い散歩コースをご存知ですか？<a>{{email}}</a>までご提案ください。"
+	},
+	"region": {
+		"europe": "ヨーロッパ",
+		"middle-east-caucasus": "中東およびコーカサス",
+		"asia": "アジア",
+		"africa": "アフリカ",
+		"americas": "南北アメリカ",
+		"oceania": "オセアニア"
+	}
+}

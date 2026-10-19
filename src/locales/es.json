@@ -129,6 +129,7 @@
 	},
 	"site": {
 		"credits": "Trazados de las rutas © colaboradores de OpenStreetMap, ODbL. Mapa base: OpenFreeMap. Fotos de Wikimedia Commons, con autor y licencia bajo cada una.",
+		"translations": "Las traducciones del inglés se realizaron con DeepL y Claude.",
 		"growing": "Senderos en el atlas hasta ahora: {{count}}. Se añaden más a medida que se comprueban.",
 		"suggest": "¿Conoce una ruta de largo recorrido que falte aquí? Escriba a <a>{{email}}</a>."
 	},

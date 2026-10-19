@@ -89,16 +89,3 @@ test("switching language keeps the page and remembers the choice", async ({
 	await page.goto("/");
 	await expect(page).toHaveURL(/\/ru\/$/);
 });
-
-test("a language without interface strings is not published", async ({
-	page,
-	request,
-}) => {
-	expect((await request.get("/ja/")).status()).toBe(404);
-	expect(await (await request.get("/sitemap.xml")).text()).not.toContain(
-		"/ja/",
-	);
-	await page.goto("/en/");
-	await expect(page.locator('link[hreflang="ja"]')).toHaveCount(0);
-	await expect(page.locator('link[hreflang="ru"]')).toHaveCount(1);
-});

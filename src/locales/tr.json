@@ -123,6 +123,7 @@
 	},
 	"site": {
 		"credits": "Parkur çizgileri © OpenStreetMap katkıda bulunanları, ODbL. Altlık harita: OpenFreeMap. Fotoğraflar Wikimedia Commons'tan, her birinin altında yazarı ve lisansı belirtilmiştir.",
+		"translations": "İngilizce’den yapılan çeviriler DeepL ve Claude kullanılarak gerçekleştirilmiştir.",
 		"growing": "Atlastaki rota sayısı: {{count}}. Yenileri kontrol edildikçe ekleniyor.",
 		"suggest": "Burada olması gereken bir uzun yürüyüş rotası mı biliyorsunuz? <a>{{email}}</a> adresine yazın."
 	},

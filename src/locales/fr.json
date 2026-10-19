@@ -129,6 +129,7 @@
 	},
 	"site": {
 		"credits": "Tracés des sentiers © contributeurs d'OpenStreetMap, ODbL. Fond de carte : OpenFreeMap. Photos de Wikimedia Commons, avec auteur et licence sous chacune.",
+		"translations": "Les traductions depuis l'anglais ont été réalisées à l'aide de DeepL et de Claude.",
 		"growing": "Sentiers dans l'atlas à ce jour : {{count}}. D'autres sont ajoutés au fur et à mesure de leur vérification.",
 		"suggest": "Vous connaissez une grande randonnée qui manque ici ? Écrivez à <a>{{email}}</a>."
 	},

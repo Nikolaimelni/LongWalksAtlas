@@ -123,6 +123,7 @@
 	},
 	"site": {
 		"credits": "Trail lines © OpenStreetMap contributors, ODbL. Basemap by OpenFreeMap. Photos from Wikimedia Commons, each credited where it is shown.",
+		"translations": "Translations from English were made with DeepL and Claude.",
 		"growing": "Trails on the atlas so far: {{count}}. New ones are added as they are checked.",
 		"suggest": "Know a long walk that belongs here? Suggest it at <a>{{email}}</a>."
 	},

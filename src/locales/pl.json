@@ -135,6 +135,7 @@
 	},
 	"site": {
 		"credits": "Przebieg szlaków © współtwórcy OpenStreetMap, ODbL. Mapa podkładowa: OpenFreeMap. Zdjęcia z Wikimedia Commons, autor i licencja podane pod każdym.",
+		"translations": "Tłumaczenia z języka angielskiego zostały wykonane przy użyciu serwisów DeepL i Claude.",
 		"growing": "Szlaków w atlasie: {{count}}. Kolejne dodajemy, gdy tylko je sprawdzimy.",
 		"suggest": "Znasz długi szlak, którego tu brakuje? Napisz na <a>{{email}}</a>."
 	},

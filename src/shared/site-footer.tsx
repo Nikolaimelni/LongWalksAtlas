@@ -8,6 +8,7 @@ export function SiteFooter() {
 			<p>{t("app.description")}</p>
 			<SuggestTrail className="mt-2" />
 			<p className="mt-2">{t("site.credits")}</p>
+			<p className="mt-2">{t("site.translations")}</p>
 		</footer>
 	);
 }

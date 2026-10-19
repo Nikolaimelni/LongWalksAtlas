@@ -23,6 +23,7 @@ pnpm dev
 | `pnpm e2e`          | Builds, then runs the Playwright tests                 |
 | `pnpm data`         | Fetches trail lines from OpenStreetMap (slow)          |
 | `pnpm photos`       | Fetches photos and credits from Wikimedia Commons      |
+| `pnpm flags`        | Copies the flags of the atlas's countries to `public/` |
 | `pnpm translate`    | Fills missing translations with DeepL (key in `.env`)  |
 | `pnpm build:deploy` | The build plus social cards, what the deploy job runs  |
 
@@ -36,9 +37,10 @@ A trail is a JSON file in `data/trails/` plus its English text in
 per language. Map lines and photos are downloaded once and committed, so the build
 needs no network.
 
-Most of the 78 trails were collected by an AI research agent and then checked by
-hand. A quarter of them had a start or end a few kilometres off the trail, enough to
-break the line on the map.
+The 186 trails were collected by an AI research agent and checked by hand.
+
+Translations into 14 languages were made with DeepL and Claude. Nobody fluent has
+read most of them, so expect the odd stiff sentence.
 
 ## Licence
 

@@ -129,6 +129,7 @@
 	},
 	"site": {
 		"credits": "Tracciati dei sentieri © contributori di OpenStreetMap, ODbL. Mappa di base: OpenFreeMap. Foto da Wikimedia Commons, con autore e licenza sotto ciascuna.",
+		"translations": "Le traduzioni dall'inglese sono state effettuate con DeepL e Claude.",
 		"growing": "Sentieri nell'atlante finora: {{count}}. Se ne aggiungono altri man mano che vengono verificati.",
 		"suggest": "Conosci un lungo cammino che manca? Scrivi a <a>{{email}}</a>."
 	},

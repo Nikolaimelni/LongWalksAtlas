@@ -24,6 +24,7 @@ import "./app.css";
 const scriptFonts: Partial<Record<Lang, string[]>> = {
 	ru: [cyrillic],
 	uk: [cyrillic],
+	cs: [latinExt],
 	pl: [latinExt],
 	tr: [latinExt],
 };

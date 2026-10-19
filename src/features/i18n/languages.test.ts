@@ -9,16 +9,16 @@ describe("pickLang", () => {
 	it("matches a regional variant to the language we ship", () => {
 		expect(pickLang(["ru-RU"])).toBe("ru");
 		expect(pickLang(["pt-BR"])).toBe("pt-PT");
-		expect(pickLang(["zh-CN"])).toBe("zh-Hans");
+		expect(pickLang(["ko-KR"])).toBe("ko");
 	});
 
-	it("does not serve Simplified Chinese to a Traditional reader", () => {
+	it("skips a language the atlas does not have", () => {
 		expect(pickLang(["zh-TW", "ja"])).toBe("ja");
 		expect(pickLang(["zh-Hant"])).toBe("en");
 	});
 
 	it("walks the list in order", () => {
-		expect(pickLang(["cs-CZ", "de-AT", "fr"])).toBe("de");
+		expect(pickLang(["hu-HU", "de-AT", "fr"])).toBe("de");
 	});
 
 	it("skips malformed tags", () => {
@@ -50,7 +50,7 @@ describe("swapLang", () => {
 		expect(swapLang("/en/trail/camino-portugues", "ru")).toBe(
 			"/ru/trail/camino-portugues",
 		);
-		expect(swapLang("/en", "ar")).toBe("/ar");
+		expect(swapLang("/en", "cs")).toBe("/cs");
 		expect(swapLang("/en/", "ja")).toBe("/ja/");
 	});
 });
@@ -60,7 +60,7 @@ describe("ogLocale", () => {
 		expect(ogLocale("en")).toBe("en_US");
 		expect(ogLocale("ru")).toBe("ru_RU");
 		expect(ogLocale("pt-PT")).toBe("pt_PT");
-		expect(ogLocale("zh-Hans")).toBe("zh_CN");
+		expect(ogLocale("cs")).toBe("cs_CZ");
 		expect(ogLocale("uk")).toBe("uk_UA");
 	});
 });

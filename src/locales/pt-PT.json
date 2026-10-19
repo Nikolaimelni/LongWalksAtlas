@@ -129,6 +129,7 @@
 	},
 	"site": {
 		"credits": "Traçados dos percursos © contribuidores do OpenStreetMap, ODbL. Mapa de base: OpenFreeMap. Fotografias do Wikimedia Commons, com autor e licença em cada uma.",
+		"translations": "As traduções do inglês foram feitas com o DeepL e o Claude.",
 		"growing": "Trilhos no atlas até agora: {{count}}. Juntam-se novos à medida que são verificados.",
 		"suggest": "Conhece um percurso de longa distância que falte aqui? Escreva para <a>{{email}}</a>."
 	},

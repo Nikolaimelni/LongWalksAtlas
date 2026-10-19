@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { publishedLanguages, ruTitle, trails } from "./trail-data";
+import { ruTitle, textLanguagesOf, trails } from "./trail-data";
 
 test("a trail page carries the facts, the story and the official link", async ({
 	page,
@@ -51,9 +51,9 @@ test("a trail page is described for search engines", async ({ page }) => {
 		"href",
 		"https://longwalksatlas.com/en/trail/tour-du-mont-blanc/",
 	);
-	// Every published language plus x-default: the Tour du Mont Blanc is in all of them.
+	// Every language with its own text for the trail, plus x-default.
 	await expect(page.locator('link[rel="alternate"]')).toHaveCount(
-		publishedLanguages + 1,
+		textLanguagesOf("tour-du-mont-blanc") + 1,
 	);
 	const ld = JSON.parse(
 		(await page.locator('script[type="application/ld+json"]').textContent()) ??
