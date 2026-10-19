@@ -1,0 +1,37 @@
+{
+	"slug": "tct-imereti-to-racha",
+	"name": {
+		"original": "TCT: Imereti to Racha"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Southern trailhead on the road to Sachkhere",
+		"coords": [43.52, 42.22]
+	},
+	"end": {
+		"name": "Oni",
+		"coords": [43.4335, 42.581]
+	},
+	"countries": ["GE"],
+	"lengthKm": 74,
+	"days": {
+		"min": 3,
+		"max": 5
+	},
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://transcaucasiantrail.org/en/hike/imereti-to-racha-georgia",
+	"sources": [
+		"https://transcaucasiantrail.org/en/hike/imereti-to-racha-georgia",
+		"https://transcaucasiantrail.org/en/hike/imereti-to-racha-georgia/practical-information"
+	],
+	"photo": {
+		"commons": "File:Bokva village 1.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [14995924]
+	}
+}

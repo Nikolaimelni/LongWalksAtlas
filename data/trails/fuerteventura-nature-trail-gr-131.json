@@ -1,0 +1,35 @@
+{
+	"slug": "fuerteventura-nature-trail-gr-131",
+	"name": {
+		"original": "Camino Natural de Fuerteventura (GR 131)"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Corralejo harbour (ferry from Isla de Lobos)",
+		"coords": [-13.8686, 28.7388]
+	},
+	"end": {
+		"name": "Punta de Jandía",
+		"coords": [-14.503, 28.056]
+	},
+	"countries": ["ES"],
+	"lengthKm": 153,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/fuerteventura/default.aspx",
+	"sources": [
+		"https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/fuerteventura/default.aspx",
+		"https://servicio.mapama.gob.es/en/desarrollo-rural/temas/caminos-naturales/Fuerteventura-EN_tcm38-140470.pdf",
+		"https://servicio.mapama.gob.es/en/desarrollo-rural/temas/caminos-naturales/canarias_en_web_tcm38-420330.pdf"
+	],
+	"photo": {
+		"commons": "File:Embalse de las Peñitas - Betancuria - Fuerteventura - Canary islands - Spain - 07.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3353722]
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"slug": "rota-vicentina-historical-way",
+	"name": {
+		"original": "Rota Vicentina - Caminho Histórico"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Santiago do Cacém",
+		"coords": [-8.695, 38.017]
+	},
+	"end": {
+		"name": "Cape St Vincent (Cabo de São Vicente)",
+		"coords": [-8.996, 37.023]
+	},
+	"countries": ["PT"],
+	"lengthKm": 263,
+	"days": {
+		"min": 13,
+		"max": 13
+	},
+	"bestSeason": [
+		"sep",
+		"oct",
+		"nov",
+		"dec",
+		"jan",
+		"feb",
+		"mar",
+		"apr",
+		"may",
+		"jun"
+	],
+	"badges": [],
+	"officialUrl": "https://rotavicentina.com/caminho-historico/",
+	"sources": [
+		"https://rotavicentina.com/caminho-historico/",
+		"https://rotavicentina.com/en/walking/"
+	],
+	"photo": {
+		"commons": "File:Odeceixe (4900164127).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7592697]
+	}
+}

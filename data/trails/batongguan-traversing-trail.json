@@ -1,0 +1,36 @@
+{
+	"slug": "batongguan-traversing-trail",
+	"name": {
+		"original": "八通關古道"
+	},
+	"type": "historic",
+	"region": "asia",
+	"start": {
+		"name": "Dongpu",
+		"coords": [120.9276, 23.5565]
+	},
+	"end": {
+		"name": "Shanfeng trailhead, Yuli",
+		"coords": [121.233, 23.324]
+	},
+	"countries": ["TW"],
+	"lengthKm": 120,
+	"days": {
+		"min": 7,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://trail.tacp.gov.tw/en/ExploringHistoricTrails/BatongguanTraversingHistoricTrail",
+	"sources": [
+		"https://trail.tacp.gov.tw/en/ExploringHistoricTrails/BatongguanTraversingHistoricTrail"
+	],
+	"photo": {
+		"commons": "File:玉山國家公園-八通關.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13678191]
+	}
+}

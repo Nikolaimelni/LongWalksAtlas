@@ -1,0 +1,34 @@
+{
+	"slug": "via-transilvanica",
+	"name": {
+		"original": "Via Transilvanica"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Putna Monastery",
+		"coords": [25.5996, 47.8687]
+	},
+	"end": {
+		"name": "Drobeta-Turnu Severin, Danube bank by the ruins of Trajan's Bridge",
+		"coords": [22.6672, 44.6236]
+	},
+	"countries": ["RO"],
+	"lengthKm": 1600,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.viatransilvanica.com/en",
+	"sources": [
+		"https://www.viatransilvanica.com/en",
+		"https://en.wikipedia.org/wiki/Via_Transilvanica"
+	],
+	"photo": {
+		"commons": "File:Via Transilvanica Pole with Locks 1.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [12165014]
+	}
+}

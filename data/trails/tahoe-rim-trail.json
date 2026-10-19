@@ -1,0 +1,31 @@
+{
+	"slug": "tahoe-rim-trail",
+	"name": {
+		"original": "Tahoe Rim Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Tahoe City",
+		"coords": [-120.144, 39.1677]
+	},
+	"end": {
+		"name": "Tahoe City",
+		"coords": [-120.144, 39.1677]
+	},
+	"countries": ["US"],
+	"lengthKm": 266,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://tahoerimtrail.org/",
+	"sources": ["https://tahoerimtrail.org/"],
+	"photo": {
+		"commons": "File:Tahoe Rim Trail SL.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3094865]
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"slug": "ciudad-perdida-trek",
+	"name": {
+		"original": "Camino a Ciudad Perdida"
+	},
+	"type": "historic",
+	"region": "americas",
+	"start": {
+		"name": "El Mamey (Machete Pelao)",
+		"coords": [-74.037, 11.0755]
+	},
+	"end": {
+		"name": "Ciudad Perdida (Teyuna)",
+		"coords": [-73.9252, 11.0373]
+	},
+	"countries": ["CO"],
+	"lengthKm": 23.3,
+	"days": {
+		"min": 5,
+		"max": 6
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://old.parquesnacionales.gov.co/portal/en/ecotourism/caribbean-region/sierra-nevada-de-santa-marta-national-natural-park/activities/",
+	"sources": [
+		"https://old.parquesnacionales.gov.co/portal/en/ecotourism/caribbean-region/sierra-nevada-de-santa-marta-national-natural-park/activities/",
+		"https://colombia.travel/en/blog/ciudad-perdida-glimpse-past-in-sierra-nevada"
+	],
+	"photo": {
+		"commons": "File:Panorámica Terraza Final Ciudad Perdida 16-04-2019.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [12533224]
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"slug": "foothills-trail",
+	"name": {
+		"original": "Foothills Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Oconee State Park, South Carolina",
+		"coords": [-83.105, 34.866]
+	},
+	"end": {
+		"name": "Table Rock State Park, South Carolina",
+		"coords": [-82.7003, 35.032]
+	},
+	"countries": ["US"],
+	"lengthKm": 124,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://visitoconeesc.com/foothills-trail",
+	"sources": ["https://visitoconeesc.com/foothills-trail"],
+	"photo": {
+		"commons": "File:Fall morning on Lake Jocassee. - panoramio.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [4572989]
+	}
+}

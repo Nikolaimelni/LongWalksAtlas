@@ -1,0 +1,34 @@
+{
+	"slug": "kilimanjaro-rongai-route",
+	"name": {
+		"original": "Rongai Route"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Rongai Gate",
+		"coords": [37.4952, -2.9594]
+	},
+	"end": {
+		"name": "Uhuru Peak",
+		"coords": [37.354, -3.0764]
+	},
+	"countries": ["TZ"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": ["jul", "aug", "sep", "dec", "jan", "feb"],
+	"badges": ["unesco"],
+	"officialUrl": "https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
+	"sources": [
+		"https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
+		"https://www.tanzaniaparks.go.tz/uploads/publications/en-1633175047-KI-ENG.pdf"
+	],
+	"photo": {
+		"commons": "File:Mawenzi-from-Kibohut 16001200.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8737343]
+	}
+}

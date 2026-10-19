@@ -1,0 +1,31 @@
+{
+	"slug": "great-south-west-walk",
+	"name": {
+		"original": "Great South West Walk"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Portland",
+		"coords": [141.6074, -38.3463]
+	},
+	"end": {
+		"name": "Portland",
+		"coords": [141.6074, -38.3463]
+	},
+	"countries": ["AU"],
+	"lengthKm": 262,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://greatsouthwestwalk.com/",
+	"sources": ["https://greatsouthwestwalk.com/"],
+	"photo": {
+		"commons": "File:(AUS-Victoria) Cape Nelson Lighthouse 2025-12-11 - 1.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11228635]
+	}
+}

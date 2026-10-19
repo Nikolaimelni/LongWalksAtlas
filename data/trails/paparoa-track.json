@@ -1,0 +1,36 @@
+{
+	"slug": "paparoa-track",
+	"name": {
+		"original": "Paparoa Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Smoke-ho car park, near Blackball",
+		"coords": [171.3982, -42.3375]
+	},
+	"end": {
+		"name": "Pororari River car park, Punakaiki",
+		"coords": [171.34, -42.11]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 55,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/things-to-do/tracks/paparoa-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/things-to-do/tracks/paparoa-track/"
+	],
+	"photo": {
+		"commons": "File:Paparoa Track.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10462885]
+	}
+}

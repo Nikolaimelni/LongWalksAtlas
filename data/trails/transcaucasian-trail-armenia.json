@@ -1,0 +1,33 @@
+{
+	"slug": "transcaucasian-trail-armenia",
+	"name": {
+		"original": "Տրանսկովկասյան արահետ"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Lake Arpi National Park, northern border",
+		"coords": [43.6536, 41.0667]
+	},
+	"end": {
+		"name": "Meghri",
+		"coords": [46.2442, 38.9035]
+	},
+	"countries": ["AM"],
+	"lengthKm": 819,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://transcaucasiantrail.org/en/hike/thru-hike-armenia/thru-hike-armenia-route-overview",
+	"sources": [
+		"https://transcaucasiantrail.org/en/hike/thru-hike-armenia/thru-hike-armenia-route-overview"
+	],
+	"photo": {
+		"commons": "File:-Փառակատար S-N 03.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8928052]
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"slug": "continental-divide-trail",
+	"name": {
+		"original": "Continental Divide National Scenic Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Crazy Cook Monument",
+		"coords": [-108.2087, 31.497]
+	},
+	"end": {
+		"name": "Waterton Lake, Canadian border",
+		"coords": [-113.91, 49]
+	},
+	"countries": ["US"],
+	"lengthKm": 4989,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://cdtcoalition.org/",
+	"sources": [
+		"https://cdtcoalition.org/",
+		"https://pnts.org/new/continental-divide-national-scenic-trail/"
+	],
+	"photo": {
+		"commons": "File:Continental divide trail in Weminuche Wilderness.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [921198]
+	}
+}

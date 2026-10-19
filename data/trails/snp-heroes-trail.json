@@ -1,0 +1,36 @@
+{
+	"slug": "snp-heroes-trail",
+	"name": {
+		"original": "Cesta hrdinov SNP"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Devín Castle",
+		"coords": [16.979, 48.1745]
+	},
+	"end": {
+		"name": "Dukla Pass",
+		"coords": [21.6997, 49.4139]
+	},
+	"countries": ["SK"],
+	"lengthKm": 769,
+	"days": {
+		"min": 21,
+		"max": 28
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.kst.sk/",
+	"sources": [
+		"https://archiv.kst.sk/index.php/vykonnostna-turistika/1120-cesta-hrdinov-snp-tematicky-turisticky-odznak"
+	],
+	"photo": {
+		"commons": "File:Kosodrevina Cesta SNP.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7700604]
+	}
+}

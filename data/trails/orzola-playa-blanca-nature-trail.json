@@ -1,0 +1,34 @@
+{
+	"slug": "orzola-playa-blanca-nature-trail",
+	"name": {
+		"original": "Camino Natural Órzola-Playa Blanca (GR 131)"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Órzola",
+		"coords": [-13.4525, 29.2236]
+	},
+	"end": {
+		"name": "Playa Blanca",
+		"coords": [-13.829, 28.864]
+	},
+	"countries": ["ES"],
+	"lengthKm": 71,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/orzola-playa-blanca/default.aspx",
+	"sources": [
+		"https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/orzola-playa-blanca/default.aspx",
+		"https://servicio.mapama.gob.es/en/desarrollo-rural/temas/caminos-naturales/canarias_en_web_tcm38-420330.pdf"
+	],
+	"photo": {
+		"commons": "File:La Graciosa from Lanzarote.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [6171552]
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"slug": "perakula-aegviidu-ahijarve-hiking-route",
+	"name": {
+		"original": "Peraküla-Aegviidu-Ähijärve matkatee"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Nõva visitor centre, Peraküla",
+		"coords": [23.689, 59.223]
+	},
+	"end": {
+		"name": "Ähijärve visitor centre, Karula",
+		"coords": [26.487, 57.705]
+	},
+	"countries": ["EE"],
+	"lengthKm": 812,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://rmk.ee/en/exploring-nature/hiking-route/perakula-aegviidu-ahijarve-812-km-2/",
+	"sources": [
+		"https://rmk.ee/en/exploring-nature/hiking-route/perakula-aegviidu-ahijarve-812-km-2/"
+	],
+	"photo": {
+		"commons": "File:Liivaluited.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13182780]
+	}
+}

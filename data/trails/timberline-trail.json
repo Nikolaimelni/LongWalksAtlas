@@ -1,0 +1,37 @@
+{
+	"slug": "timberline-trail",
+	"name": {
+		"original": "Timberline Trail #600"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Timberline Lodge",
+		"coords": [-121.711, 45.3311]
+	},
+	"end": {
+		"name": "Timberline Lodge",
+		"coords": [-121.711, 45.3311]
+	},
+	"countries": ["US"],
+	"lengthKm": 64,
+	"days": {
+		"min": 3,
+		"max": 4
+	},
+	"bestSeason": ["jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.fs.usda.gov/r06/mthood/recreation/trails/timberline-trail-600",
+	"sources": [
+		"https://www.fs.usda.gov/r06/mthood/recreation/trails/timberline-trail-600",
+		"https://www.opb.org/news/article/new-route-reconnects-timberline-trail-around-mount-hood"
+	],
+	"photo": {
+		"commons": "File:Hiking Timberline trail, Mt Hood National Forest (36169867492).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7641482]
+	}
+}

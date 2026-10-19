@@ -1,0 +1,36 @@
+{
+	"slug": "st-james-walkway",
+	"name": {
+		"original": "St James Walkway"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Lewis Pass",
+		"coords": [172.401, -42.3798]
+	},
+	"end": {
+		"name": "Boyle Village",
+		"coords": [172.3979, -42.5203]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 65,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/st-james-conservation-area/things-to-do/tracks/st-james-walkway/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/st-james-conservation-area/things-to-do/tracks/st-james-walkway/"
+	],
+	"photo": {
+		"commons": "File:Cannibal Gorge Hut St James Walkway 032.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17504806]
+	}
+}

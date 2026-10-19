@@ -1,0 +1,34 @@
+{
+	"slug": "lechweg",
+	"name": {
+		"original": "Lechweg"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Formarinsee",
+		"coords": [10.084, 47.185]
+	},
+	"end": {
+		"name": "Lech Falls, Füssen",
+		"coords": [10.701, 47.569]
+	},
+	"countries": ["AT", "DE"],
+	"lengthKm": 125,
+	"days": {
+		"min": 7,
+		"max": 8
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.lechweg.com/",
+	"sources": ["https://www.lechweg.com/"],
+	"photo": {
+		"commons": "File:Lechweg bei Forchach.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [4728034]
+	}
+}

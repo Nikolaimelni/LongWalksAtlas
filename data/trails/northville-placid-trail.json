@@ -1,0 +1,31 @@
+{
+	"slug": "northville-placid-trail",
+	"name": {
+		"original": "Northville-Placid Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Averyville Road trailhead, Lake Placid",
+		"coords": [-73.9799, 44.2795]
+	},
+	"end": {
+		"name": "Northville",
+		"coords": [-74.1716, 43.2256]
+	},
+	"countries": ["US"],
+	"lengthKm": 222,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.lakeplacid.com/hiking/northvillelake-placid-trail",
+	"sources": ["https://www.lakeplacid.com/hiking/northvillelake-placid-trail"],
+	"photo": {
+		"commons": "File:Seward Mountain, The Seward Range from Long Lake - panoramio.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [4286650]
+	}
+}

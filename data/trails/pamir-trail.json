@@ -1,0 +1,35 @@
+{
+	"slug": "pamir-trail",
+	"name": {
+		"original": "Pamir Trail"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Shing",
+		"coords": [67.8016, 39.2796]
+	},
+	"end": {
+		"name": "Vrang",
+		"coords": [72.367, 37]
+	},
+	"countries": ["TJ"],
+	"lengthKm": 1313,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.pamirtrail.org/",
+	"sources": [
+		"https://www.pamirtrail.org/",
+		"https://www.pamirtrail.org/the-trail",
+		"https://www.pamirtrail.org/about"
+	],
+	"photo": {
+		"commons": "File:Tajikistan fann mountains dvoynoy pass.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19862178]
+	}
+}

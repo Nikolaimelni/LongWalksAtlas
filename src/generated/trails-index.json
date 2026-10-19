@@ -1,5 +1,141 @@
 [
 	{
+		"slug": "ala-kul-trek",
+		"name": {
+			"original": "Ала-Куль"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Karakol National Park entrance, Karakol Gorge",
+			"coords": [
+				78.4138,
+				42.444
+			]
+		},
+		"end": {
+			"name": "Altyn-Arashan",
+			"coords": [
+				78.615,
+				42.375
+			]
+		},
+		"countries": [
+			"KG"
+		],
+		"bestSeason": [
+			"jun",
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 34,
+		"lengthSource": "osm",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			78.4138,
+			42.3171,
+			78.6225,
+			42.444
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "botev-trail",
+		"name": {
+			"original": "Ботев път (Козлодуй - Околчица)"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Kozloduy, Danube bank",
+			"coords": [
+				23.727,
+				43.7867
+			]
+		},
+		"end": {
+			"name": "Okolchitsa peak",
+			"coords": [
+				23.6089,
+				43.132
+			]
+		},
+		"countries": [
+			"BG"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 120,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			23.5695,
+			43.1319,
+			23.817,
+			43.7847
+		],
+		"crosses": [],
+		"nearby": [
+			"kom-emine"
+		]
+	},
+	{
+		"slug": "kom-emine",
+		"name": {
+			"original": "Ком-Емине"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Kom Peak",
+			"coords": [
+				23.0536,
+				43.1744
+			]
+		},
+		"end": {
+			"name": "Cape Emine",
+			"coords": [
+				27.9,
+				42.7
+			]
+		},
+		"countries": [
+			"BG"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 558,
+		"lengthSource": "osm",
+		"days": {
+			"min": 20,
+			"max": 20
+		},
+		"daysSource": "official",
+		"bbox": [
+			23.0534,
+			42.7038,
+			27.8986,
+			43.175
+		],
+		"crosses": [],
+		"nearby": [
+			"botev-trail",
+			"sultans-trail"
+		]
+	},
+	{
 		"slug": "abel-tasman-coast-track",
 		"name": {
 			"original": "Abel Tasman Coast Track"
@@ -48,7 +184,55 @@
 		],
 		"crosses": [],
 		"nearby": [
+			"heaphy-track",
 			"te-araroa"
+		]
+	},
+	{
+		"slug": "great-plain-blue-trail",
+		"name": {
+			"original": "Alföldi Kéktúra"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Szekszárd",
+			"coords": [
+				18.7062,
+				46.3474
+			]
+		},
+		"end": {
+			"name": "Sátoraljaújhely",
+			"coords": [
+				21.6574,
+				48.3862
+			]
+		},
+		"countries": [
+			"HU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 869,
+		"lengthSource": "official",
+		"days": {
+			"min": 35,
+			"max": 43
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			18.7119,
+			46.193,
+			22.1625,
+			48.3943
+		],
+		"crosses": [
+			"south-transdanubian-blue-trail"
+		],
+		"nearby": [
+			"national-blue-trail",
+			"sultans-trail"
 		]
 	},
 	{
@@ -93,7 +277,9 @@
 			47.0753
 		],
 		"crosses": [
-			"juliana-trail"
+			"juliana-trail",
+			"julius-kugy-alpine-trail",
+			"slovenian-mountain-trail"
 		],
 		"nearby": []
 	},
@@ -143,7 +329,8 @@
 		],
 		"crosses": [],
 		"nearby": [
-			"alta-via-2"
+			"alta-via-2",
+			"julius-kugy-alpine-trail"
 		]
 	},
 	{
@@ -326,8 +513,53 @@
 			45.9044
 		],
 		"crosses": [
+			"benton-mackaye-trail",
 			"long-trail"
 		],
+		"nearby": [
+			"foothills-trail"
+		]
+	},
+	{
+		"slug": "arizona-trail",
+		"name": {
+			"original": "Arizona National Scenic Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Mexican border, Coronado National Memorial",
+			"coords": [
+				-110.29,
+				31.334
+			]
+		},
+		"end": {
+			"name": "Utah border",
+			"coords": [
+				-112.035,
+				37.001
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1287,
+		"lengthSource": "official",
+		"days": {
+			"min": 51,
+			"max": 64
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-112.1892,
+			31.3336,
+			-110.2779,
+			37.001
+		],
+		"crosses": [],
 		"nearby": []
 	},
 	{
@@ -378,6 +610,50 @@
 		"nearby": [
 			"lycian-way"
 		]
+	},
+	{
+		"slug": "benton-mackaye-trail",
+		"name": {
+			"original": "Benton MacKaye Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Springer Mountain, Georgia",
+			"coords": [
+				-84.1939,
+				34.6268
+			]
+		},
+		"end": {
+			"name": "Davenport Gap",
+			"coords": [
+				-83.1105,
+				35.7637
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 463,
+		"lengthSource": "official",
+		"days": {
+			"min": 19,
+			"max": 23
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-84.5292,
+			34.6268,
+			-83.1046,
+			35.7655
+		],
+		"crosses": [
+			"appalachian-trail"
+		],
+		"nearby": []
 	},
 	{
 		"slug": "bibbulmun-track",
@@ -472,6 +748,51 @@
 		"nearby": []
 	},
 	{
+		"slug": "choquequirao-trek",
+		"name": {
+			"original": "Caminata a Choquequirao"
+		},
+		"type": "historic",
+		"region": "americas",
+		"start": {
+			"name": "Cachora",
+			"coords": [
+				-72.8105,
+				-13.5012
+			]
+		},
+		"end": {
+			"name": "Choquequirao archaeological site",
+			"coords": [
+				-72.8626,
+				-13.3899
+			]
+		},
+		"countries": [
+			"PE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 32,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			-72.8626,
+			-13.5028,
+			-72.8015,
+			-13.3894
+		],
+		"crosses": [],
+		"nearby": [
+			"salkantay-trek",
+			"inca-trail"
+		]
+	},
+	{
 		"slug": "caminho-portugues",
 		"name": {
 			"original": "Caminho Português"
@@ -528,6 +849,48 @@
 			"camino-del-norte",
 			"camino-primitivo"
 		]
+	},
+	{
+		"slug": "ciudad-perdida-trek",
+		"name": {
+			"original": "Camino a Ciudad Perdida"
+		},
+		"type": "historic",
+		"region": "americas",
+		"start": {
+			"name": "El Mamey (Machete Pelao)",
+			"coords": [
+				-74.037,
+				11.0755
+			]
+		},
+		"end": {
+			"name": "Ciudad Perdida (Teyuna)",
+			"coords": [
+				-73.9252,
+				11.0373
+			]
+		},
+		"countries": [
+			"CO"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 23.3,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "official",
+		"bbox": [
+			-74.037,
+			11.0373,
+			-73.916,
+			11.1038
+		],
+		"crosses": [],
+		"nearby": []
 	},
 	{
 		"slug": "camino-fisterra-muxia",
@@ -629,10 +992,56 @@
 			"camino-frances"
 		],
 		"nearby": [
+			"gr10-pyrenees",
 			"camino-primitivo",
 			"camino-ingles",
-			"caminho-portugues",
-			"camino-fisterra-muxia"
+			"caminho-portugues"
+		]
+	},
+	{
+		"slug": "salkantay-trek",
+		"name": {
+			"original": "Camino del Salkantay"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Mollepata",
+			"coords": [
+				-72.5309,
+				-13.5005
+			]
+		},
+		"end": {
+			"name": "Machu Picchu Pueblo (Aguas Calientes)",
+			"coords": [
+				-72.5254,
+				-13.1547
+			]
+		},
+		"countries": [
+			"PE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 74,
+		"lengthSource": "osm",
+		"days": {
+			"min": 5,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			-72.6722,
+			-13.5005,
+			-72.5305,
+			-13.1454
+		],
+		"crosses": [
+			"inca-trail"
+		],
+		"nearby": [
+			"choquequirao-trek"
 		]
 	},
 	{
@@ -684,6 +1093,7 @@
 		],
 		"crosses": [
 			"camino-ingles",
+			"gr10-pyrenees",
 			"gr11",
 			"camino-primitivo",
 			"camino-del-norte",
@@ -733,8 +1143,12 @@
 			-72.384,
 			-13.165
 		],
-		"crosses": [],
-		"nearby": []
+		"crosses": [
+			"salkantay-trek"
+		],
+		"nearby": [
+			"choquequirao-trek"
+		]
 	},
 	{
 		"slug": "camino-ingles",
@@ -783,6 +1197,225 @@
 		"nearby": [
 			"camino-del-norte",
 			"camino-primitivo"
+		]
+	},
+	{
+		"slug": "camino-krk",
+		"name": {
+			"original": "Camino Krk"
+		},
+		"type": "pilgrimage",
+		"region": "europe",
+		"start": {
+			"name": "Krk Cathedral, Krk",
+			"coords": [
+				14.574,
+				45.027
+			]
+		},
+		"end": {
+			"name": "Church of St James the Apostle, Kornić",
+			"coords": [
+				14.593,
+				45.064
+			]
+		},
+		"countries": [
+			"HR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 152,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			14.4413,
+			44.9633,
+			14.7633,
+			45.2436
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "camino-lituano",
+		"name": {
+			"original": "Camino Lituano"
+		},
+		"type": "pilgrimage",
+		"region": "europe",
+		"start": {
+			"name": "Žagarė",
+			"coords": [
+				23.2646,
+				56.3622
+			]
+		},
+		"end": {
+			"name": "Sejny",
+			"coords": [
+				23.346,
+				54.109
+			]
+		},
+		"countries": [
+			"LT",
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 500.8,
+		"lengthSource": "official",
+		"days": {
+			"min": 20,
+			"max": 25
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			23.2646,
+			54.1084,
+			24.2052,
+			56.3622
+		],
+		"crosses": [
+			"forest-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "anaga-chasna-nature-trail",
+		"name": {
+			"original": "Camino Natural Anaga-Chasna (GR 131)"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "La Esperanza",
+			"coords": [
+				-16.372,
+				28.448
+			]
+		},
+		"end": {
+			"name": "Arona",
+			"coords": [
+				-16.6817,
+				28.0982
+			]
+		},
+		"countries": [
+			"ES"
+		],
+		"bestSeason": [],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 93,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-16.6965,
+			28.0981,
+			-16.3724,
+			28.4494
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "fuerteventura-nature-trail-gr-131",
+		"name": {
+			"original": "Camino Natural de Fuerteventura (GR 131)"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Corralejo harbour (ferry from Isla de Lobos)",
+			"coords": [
+				-13.8686,
+				28.7388
+			]
+		},
+		"end": {
+			"name": "Punta de Jandía",
+			"coords": [
+				-14.503,
+				28.056
+			]
+		},
+		"countries": [
+			"ES"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 153,
+		"lengthSource": "official",
+		"days": {
+			"min": 6,
+			"max": 8
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-14.5076,
+			28.0468,
+			-13.8686,
+			28.7388
+		],
+		"crosses": [],
+		"nearby": [
+			"orzola-playa-blanca-nature-trail"
+		]
+	},
+	{
+		"slug": "orzola-playa-blanca-nature-trail",
+		"name": {
+			"original": "Camino Natural Órzola-Playa Blanca (GR 131)"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Órzola",
+			"coords": [
+				-13.4525,
+				29.2236
+			]
+		},
+		"end": {
+			"name": "Playa Blanca",
+			"coords": [
+				-13.829,
+				28.864
+			]
+		},
+		"countries": [
+			"ES"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 71,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-13.8304,
+			28.8636,
+			-13.4503,
+			29.2236
+		],
+		"crosses": [],
+		"nearby": [
+			"fuerteventura-nature-trail-gr-131"
 		]
 	},
 	{
@@ -888,6 +1521,96 @@
 		"nearby": []
 	},
 	{
+		"slug": "central-roztocze-trail",
+		"name": {
+			"original": "Centralny Szlak Roztocza"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Szastarka",
+			"coords": [
+				22.317,
+				50.858
+			]
+		},
+		"end": {
+			"name": "Horyniec-Zdrój",
+			"coords": [
+				23.3565,
+				50.1947
+			]
+		},
+		"countries": [
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 195,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			22.3326,
+			50.1947,
+			23.5207,
+			50.854
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "snp-heroes-trail",
+		"name": {
+			"original": "Cesta hrdinov SNP"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Devín Castle",
+			"coords": [
+				16.979,
+				48.1745
+			]
+		},
+		"end": {
+			"name": "Dukla Pass",
+			"coords": [
+				21.6997,
+				49.4139
+			]
+		},
+		"countries": [
+			"SK"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 769,
+		"lengthSource": "official",
+		"days": {
+			"min": 21,
+			"max": 28
+		},
+		"daysSource": "official",
+		"bbox": [
+			16.98,
+			48.1522,
+			21.7008,
+			49.4137
+		],
+		"crosses": [
+			"sultans-trail"
+		],
+		"nearby": [
+			"main-beskid-trail",
+			"national-blue-trail",
+			"tatra-magistrala"
+		]
+	},
+	{
 		"slug": "chilkoot-trail",
 		"name": {
 			"original": "Chilkoot Trail"
@@ -931,6 +1654,225 @@
 		"nearby": []
 	},
 	{
+		"slug": "huayhuash-circuit",
+		"name": {
+			"original": "Circuito de Huayhuash"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Llamac",
+			"coords": [
+				-77.0344,
+				-10.1978
+			]
+		},
+		"end": {
+			"name": "Llamac",
+			"coords": [
+				-77.0344,
+				-10.1978
+			]
+		},
+		"countries": [
+			"PE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 99,
+		"lengthSource": "osm",
+		"days": {
+			"min": 12,
+			"max": 12
+		},
+		"daysSource": "official",
+		"bbox": [
+			-77.043,
+			-10.4135,
+			-76.8372,
+			-10.1493
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "santa-cruz-trek",
+		"name": {
+			"original": "Circuito de trekking Santa Cruz"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Cashapampa",
+			"coords": [
+				-77.775,
+				-8.955
+			]
+		},
+		"end": {
+			"name": "Vaquería",
+			"coords": [
+				-77.525,
+				-9
+			]
+		},
+		"countries": [
+			"PE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 50,
+		"lengthSource": "official",
+		"days": {
+			"min": 2,
+			"max": 3
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-77.7755,
+			-9.0001,
+			-77.5271,
+			-8.9097
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "ausangate-circuit",
+		"name": {
+			"original": "Circuito del Ausangate"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Tinki",
+			"coords": [
+				-71.3135,
+				-13.6719
+			]
+		},
+		"end": {
+			"name": "Tinki",
+			"coords": [
+				-71.3135,
+				-13.6719
+			]
+		},
+		"countries": [
+			"PE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 63,
+		"lengthSource": "osm",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-71.3162,
+			-13.8256,
+			-71.1602,
+			-13.6712
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "dientes-de-navarino-circuit",
+		"name": {
+			"original": "Circuito Dientes de Navarino"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Río Róbalo bridge, Puerto Williams",
+			"coords": [
+				-67.6401,
+				-54.9482
+			]
+		},
+		"end": {
+			"name": "Bahía Virginia",
+			"coords": [
+				-67.7041,
+				-54.9423
+			]
+		},
+		"countries": [
+			"CL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 35,
+		"lengthSource": "osm",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			-67.7976,
+			-55.0225,
+			-67.6236,
+			-54.9422
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "torres-del-paine-o-circuit",
+		"name": {
+			"original": "Circuito O"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Las Torres sector, Welcome Centre",
+			"coords": [
+				-72.867,
+				-50.959
+			]
+		},
+		"end": {
+			"name": "Las Torres sector, Welcome Centre",
+			"coords": [
+				-72.867,
+				-50.959
+			]
+		},
+		"countries": [
+			"CL"
+		],
+		"bestSeason": [
+			"sep",
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb"
+		],
+		"badges": [],
+		"lengthKm": 93,
+		"lengthSource": "official",
+		"days": {
+			"min": 9,
+			"max": 9
+		},
+		"daysSource": "official",
+		"bbox": [
+			-73.204,
+			-51.0714,
+			-72.8489,
+			-50.8443
+		],
+		"crosses": [
+			"w-trek-torres-del-paine"
+		],
+		"nearby": []
+	},
+	{
 		"slug": "w-trek-torres-del-paine",
 		"name": {
 			"original": "Circuito W - Torres del Paine"
@@ -969,7 +1911,9 @@
 			-72.8739,
 			-50.9658
 		],
-		"crosses": [],
+		"crosses": [
+			"torres-del-paine-o-circuit"
+		],
 		"nearby": []
 	},
 	{
@@ -1011,7 +1955,53 @@
 			-105.0937,
 			39.5516
 		],
-		"crosses": [],
+		"crosses": [
+			"continental-divide-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "continental-divide-trail",
+		"name": {
+			"original": "Continental Divide National Scenic Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Crazy Cook Monument",
+			"coords": [
+				-108.2087,
+				31.497
+			]
+		},
+		"end": {
+			"name": "Waterton Lake, Canadian border",
+			"coords": [
+				-113.91,
+				49
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 4989,
+		"lengthSource": "official",
+		"days": {
+			"min": 200,
+			"max": 249
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-113.9362,
+			31.4954,
+			-105.6618,
+			48.9987
+		],
+		"crosses": [
+			"colorado-trail"
+		],
 		"nearby": []
 	},
 	{
@@ -1055,6 +2045,50 @@
 		],
 		"crosses": [],
 		"nearby": []
+	},
+	{
+		"slug": "drumul-maramuresului",
+		"name": {
+			"original": "Drumul Maramureșului"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Baia Mare",
+			"coords": [
+				23.568,
+				47.657
+			]
+		},
+		"end": {
+			"name": "Baia Mare",
+			"coords": [
+				23.568,
+				47.657
+			]
+		},
+		"countries": [
+			"RO"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 702,
+		"lengthSource": "official",
+		"days": {
+			"min": 30,
+			"max": 31
+		},
+		"daysSource": "official",
+		"bbox": [
+			23.5358,
+			47.4033,
+			24.5877,
+			47.9874
+		],
+		"crosses": [],
+		"nearby": [
+			"via-transilvanica"
+		]
 	},
 	{
 		"slug": "e1",
@@ -1116,6 +2150,179 @@
 		"nearby": []
 	},
 	{
+		"slug": "east-coast-trail",
+		"name": {
+			"original": "East Coast Trail"
+		},
+		"type": "coastal",
+		"region": "americas",
+		"start": {
+			"name": "Topsail Beach",
+			"coords": [
+				-52.92,
+				47.542
+			]
+		},
+		"end": {
+			"name": "Cappahayden",
+			"coords": [
+				-52.958,
+				46.861
+			]
+		},
+		"countries": [
+			"CA"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 336,
+		"lengthSource": "official",
+		"days": {
+			"min": 13,
+			"max": 17
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-52.9843,
+			46.8609,
+			-52.6207,
+			47.808
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "efeler-way",
+		"name": {
+			"original": "Efeler Yolu"
+		},
+		"type": "historic",
+		"region": "middle-east-caucasus",
+		"start": {
+			"name": "Kavaklıdere, Bornova",
+			"coords": [
+				27.3294,
+				38.4252
+			]
+		},
+		"end": {
+			"name": "Meryemana, Selçuk",
+			"coords": [
+				27.3333,
+				37.9118
+			]
+		},
+		"countries": [
+			"TR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 500,
+		"lengthSource": "official",
+		"days": {
+			"min": 20,
+			"max": 25
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			27.3294,
+			37.8849,
+			28.4873,
+			38.4252
+		],
+		"crosses": [],
+		"nearby": [
+			"carian-trail"
+		]
+	},
+	{
+		"slug": "everest-base-camp-trek",
+		"name": {
+			"original": "Everest Base Camp Trek"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Lukla",
+			"coords": [
+				86.7321,
+				27.6879
+			]
+		},
+		"end": {
+			"name": "Everest Base Camp",
+			"coords": [
+				86.857,
+				28.004
+			]
+		},
+		"countries": [
+			"NP"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 54,
+		"lengthSource": "osm",
+		"days": {
+			"min": 2,
+			"max": 3
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			86.7097,
+			27.6879,
+			86.8557,
+			28.0029
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "ezertaka",
+		"name": {
+			"original": "Ezertaka"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Ludza",
+			"coords": [
+				27.719,
+				56.546
+			]
+		},
+		"end": {
+			"name": "Ludza",
+			"coords": [
+				27.719,
+				56.546
+			]
+		},
+		"countries": [
+			"LV"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1070,
+		"lengthSource": "official",
+		"days": {
+			"min": 43,
+			"max": 54
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			26.3282,
+			55.6832,
+			28.1691,
+			57.2794
+		],
+		"crosses": [],
+		"nearby": [
+			"forest-trail",
+			"perakula-aegviidu-ahijarve-hiking-route"
+		]
+	},
+	{
 		"slug": "fish-river-canyon-trail",
 		"name": {
 			"original": "Fish River Canyon Hiking Trail"
@@ -1156,6 +2363,316 @@
 		],
 		"crosses": [],
 		"nearby": []
+	},
+	{
+		"slug": "florida-trail",
+		"name": {
+			"original": "Florida National Scenic Trail"
+		},
+		"type": "coastal",
+		"region": "americas",
+		"start": {
+			"name": "Oasis Visitor Center, Big Cypress National Preserve",
+			"coords": [
+				-81.0335,
+				25.8566
+			]
+		},
+		"end": {
+			"name": "Fort Pickens, Gulf Islands National Seashore",
+			"coords": [
+				-87.2874,
+				30.3277
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 2414,
+		"lengthSource": "official",
+		"days": {
+			"min": 97,
+			"max": 121
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-87.2874,
+			25.8572,
+			-80.8049,
+			30.7653
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "foothills-trail",
+		"name": {
+			"original": "Foothills Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Oconee State Park, South Carolina",
+			"coords": [
+				-83.105,
+				34.866
+			]
+		},
+		"end": {
+			"name": "Table Rock State Park, South Carolina",
+			"coords": [
+				-82.7003,
+				35.032
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 124,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-83.1305,
+			34.8653,
+			-82.7003,
+			35.0727
+		],
+		"crosses": [],
+		"nearby": [
+			"appalachian-trail"
+		]
+	},
+	{
+		"slug": "giants-cup-trail",
+		"name": {
+			"original": "Giant's Cup Trail"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Sani Pass Road trailhead",
+			"coords": [
+				29.4076,
+				-29.6287
+			]
+		},
+		"end": {
+			"name": "Bushman's Nek",
+			"coords": [
+				29.21,
+				-29.848
+			]
+		},
+		"countries": [
+			"ZA"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 49,
+		"lengthSource": "osm",
+		"days": {
+			"min": 5,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			29.2069,
+			-29.8439,
+			29.423,
+			-29.6287
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "main-beskid-trail",
+		"name": {
+			"original": "Główny Szlak Beskidzki"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Ustroń",
+			"coords": [
+				18.8105,
+				49.7213
+			]
+		},
+		"end": {
+			"name": "Wołosate",
+			"coords": [
+				22.6834,
+				49.0653
+			]
+		},
+		"countries": [
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 500,
+		"lengthSource": "official",
+		"days": {
+			"min": 21,
+			"max": 28
+		},
+		"daysSource": "official",
+		"bbox": [
+			18.8047,
+			49.0512,
+			22.7706,
+			49.7273
+		],
+		"crosses": [],
+		"nearby": [
+			"snp-heroes-trail",
+			"tatra-magistrala"
+		]
+	},
+	{
+		"slug": "main-sudetes-trail",
+		"name": {
+			"original": "Główny Szlak Sudecki"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Świeradów-Zdrój",
+			"coords": [
+				15.3355,
+				50.9089
+			]
+		},
+		"end": {
+			"name": "Prudnik",
+			"coords": [
+				17.5785,
+				50.3213
+			]
+		},
+		"countries": [
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 428.7,
+		"lengthSource": "official",
+		"days": {
+			"min": 17,
+			"max": 21
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			15.2927,
+			50.2079,
+			17.5834,
+			50.9114
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "main-swietokrzyskie-trail",
+		"name": {
+			"original": "Główny Szlak Świętokrzyski im. Edmunda Massalskiego"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Kuźniaki",
+			"coords": [
+				20.368,
+				50.972
+			]
+		},
+		"end": {
+			"name": "Gołoszyce",
+			"coords": [
+				21.2934,
+				50.799
+			]
+		},
+		"countries": [
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 105,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			20.3675,
+			50.799,
+			21.2934,
+			50.9775
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "gr10-pyrenees",
+		"name": {
+			"original": "GR 10, la grande traversée des Pyrénées"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Hendaye",
+			"coords": [
+				-1.774,
+				43.373
+			]
+		},
+		"end": {
+			"name": "Banyuls-sur-Mer",
+			"coords": [
+				3.1291,
+				42.482
+			]
+		},
+		"countries": [
+			"FR"
+		],
+		"bestSeason": [
+			"jun",
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 1100,
+		"lengthSource": "official",
+		"days": {
+			"min": 30,
+			"max": 45
+		},
+		"daysSource": "official",
+		"bbox": [
+			-1.774,
+			42.4216,
+			3.1291,
+			43.373
+		],
+		"crosses": [
+			"camino-frances",
+			"via-podiensis"
+		],
+		"nearby": [
+			"gr11",
+			"camino-del-norte"
+		]
 	},
 	{
 		"slug": "gr11",
@@ -1201,6 +2718,7 @@
 			"camino-frances"
 		],
 		"nearby": [
+			"gr10-pyrenees",
 			"via-podiensis"
 		]
 	},
@@ -1253,6 +2771,152 @@
 		"nearby": []
 	},
 	{
+		"slug": "gr-r1-tour-du-piton-des-neiges",
+		"name": {
+			"original": "GR R1 Tour du Piton des Neiges"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Hell-Bourg",
+			"coords": [
+				55.5208,
+				-21.0646
+			]
+		},
+		"end": {
+			"name": "Hell-Bourg",
+			"coords": [
+				55.5208,
+				-21.0646
+			]
+		},
+		"countries": [
+			"RE"
+		],
+		"bestSeason": [
+			"may",
+			"jun",
+			"jul",
+			"aug",
+			"sep",
+			"oct",
+			"nov"
+		],
+		"badges": [],
+		"lengthKm": 58.9,
+		"lengthSource": "official",
+		"days": {
+			"min": 2,
+			"max": 3
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			55.4235,
+			-21.1271,
+			55.5367,
+			-21.0432
+		],
+		"crosses": [
+			"gr-r2-reunion"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "gr-r2-reunion",
+		"name": {
+			"original": "GR R2 Grande traversée de La Réunion"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "La Providence, Saint-Denis",
+			"coords": [
+				55.456,
+				-20.893
+			]
+		},
+		"end": {
+			"name": "Basse-Vallée, Saint-Philippe",
+			"coords": [
+				55.717,
+				-21.366
+			]
+		},
+		"countries": [
+			"RE"
+		],
+		"bestSeason": [
+			"may",
+			"jun",
+			"jul",
+			"aug",
+			"sep",
+			"oct",
+			"nov"
+		],
+		"badges": [],
+		"lengthKm": 130,
+		"lengthSource": "official",
+		"days": {
+			"min": 9,
+			"max": 10
+		},
+		"daysSource": "official",
+		"bbox": [
+			55.3738,
+			-21.3663,
+			55.7143,
+			-20.8973
+		],
+		"crosses": [
+			"gr-r1-tour-du-piton-des-neiges"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "grampians-peaks-trail",
+		"name": {
+			"original": "Grampians Peaks Trail"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Mount Zero",
+			"coords": [
+				142.3758,
+				-36.8913
+			]
+		},
+		"end": {
+			"name": "Dunkeld",
+			"coords": [
+				142.34,
+				-37.65
+			]
+		},
+		"countries": [
+			"AU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 164,
+		"lengthSource": "official",
+		"days": {
+			"min": 13,
+			"max": 13
+		},
+		"daysSource": "official",
+		"bbox": [
+			142.3165,
+			-37.6487,
+			142.6043,
+			-36.8912
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
 		"slug": "great-ocean-walk",
 		"name": {
 			"original": "Great Ocean Walk"
@@ -1290,6 +2954,48 @@
 			-38.8544,
 			143.6719,
 			-38.6632
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "great-south-west-walk",
+		"name": {
+			"original": "Great South West Walk"
+		},
+		"type": "coastal",
+		"region": "oceania",
+		"start": {
+			"name": "Portland",
+			"coords": [
+				141.6074,
+				-38.3463
+			]
+		},
+		"end": {
+			"name": "Portland",
+			"coords": [
+				141.6074,
+				-38.3463
+			]
+		},
+		"countries": [
+			"AU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 262,
+		"lengthSource": "official",
+		"days": {
+			"min": 10,
+			"max": 13
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			140.9571,
+			-38.4315,
+			141.6438,
+			-37.9886
 		],
 		"crosses": [],
 		"nearby": []
@@ -1346,6 +3052,51 @@
 		"nearby": []
 	},
 	{
+		"slug": "heaphy-track",
+		"name": {
+			"original": "Heaphy Track"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Brown Hut, Golden Bay",
+			"coords": [
+				172.4492,
+				-40.8478
+			]
+		},
+		"end": {
+			"name": "Kohaihai, West Coast",
+			"coords": [
+				172.1024,
+				-41.1094
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 78.4,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 6
+		},
+		"daysSource": "official",
+		"bbox": [
+			172.1024,
+			-41.1094,
+			172.4561,
+			-40.8478
+		],
+		"crosses": [],
+		"nearby": [
+			"abel-tasman-coast-track",
+			"old-ghost-road"
+		]
+	},
+	{
 		"slug": "heysen-trail",
 		"name": {
 			"original": "Heysen Trail"
@@ -1383,6 +3134,232 @@
 			-35.6593,
 			139.1298,
 			-31.1349
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "high-sierra-trail",
+		"name": {
+			"original": "High Sierra Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Crescent Meadow, Giant Forest",
+			"coords": [
+				-118.7491,
+				36.5548
+			]
+		},
+		"end": {
+			"name": "Wallace Creek junction, John Muir Trail",
+			"coords": [
+				-118.365,
+				36.588
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 79,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-118.7491,
+			36.4559,
+			-118.3711,
+			36.5943
+		],
+		"crosses": [
+			"john-muir-trail",
+			"pacific-crest-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "high-coast-trail",
+		"name": {
+			"original": "Höga Kusten-leden"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Hornöberget, High Coast Bridge",
+			"coords": [
+				17.9517,
+				62.8039
+			]
+		},
+		"end": {
+			"name": "Örnsköldsvik",
+			"coords": [
+				18.715,
+				63.29
+			]
+		},
+		"countries": [
+			"SE"
+		],
+		"bestSeason": [],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 128.6,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			17.9467,
+			62.7865,
+			18.7139,
+			63.2897
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "hollyford-track",
+		"name": {
+			"original": "Hollyford Track"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Lower Hollyford Road end",
+			"coords": [
+				168.1261,
+				-44.6928
+			]
+		},
+		"end": {
+			"name": "Martins Bay",
+			"coords": [
+				167.9973,
+				-44.3301
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 52.6,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			167.9973,
+			-44.6928,
+			168.1365,
+			-44.3297
+		],
+		"crosses": [],
+		"nearby": [
+			"routeburn-track",
+			"milford-track",
+			"te-araroa"
+		]
+	},
+	{
+		"slug": "hump-ridge-track",
+		"name": {
+			"original": "Hump Ridge Track"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Rarakau car park, near Tuatapere",
+			"coords": [
+				167.4728,
+				-46.1465
+			]
+		},
+		"end": {
+			"name": "Rarakau car park, near Tuatapere",
+			"coords": [
+				167.4728,
+				-46.1465
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 61.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			167.2852,
+			-46.2498,
+			167.4745,
+			-46.1465
+		],
+		"crosses": [],
+		"nearby": [
+			"te-araroa"
+		]
+	},
+	{
+		"slug": "jatbula-trail",
+		"name": {
+			"original": "Jatbula Trail"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Nitmiluk Gorge",
+			"coords": [
+				132.4236,
+				-14.3113
+			]
+		},
+		"end": {
+			"name": "Leliyn (Edith Falls)",
+			"coords": [
+				132.1931,
+				-14.1789
+			]
+		},
+		"countries": [
+			"AU"
+		],
+		"bestSeason": [
+			"jun",
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 62,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "official",
+		"bbox": [
+			132.1931,
+			-14.3113,
+			132.4363,
+			-14.0998
 		],
 		"crosses": [],
 		"nearby": []
@@ -1427,7 +3404,8 @@
 			37.8721
 		],
 		"crosses": [
-			"pacific-crest-trail"
+			"pacific-crest-trail",
+			"high-sierra-trail"
 		],
 		"nearby": []
 	},
@@ -1480,9 +3458,61 @@
 			46.4204
 		],
 		"crosses": [
-			"alpe-adria-trail"
+			"alpe-adria-trail",
+			"julius-kugy-alpine-trail",
+			"slovenian-mountain-trail"
 		],
 		"nearby": []
+	},
+	{
+		"slug": "julius-kugy-alpine-trail",
+		"name": {
+			"original": "Julius Kugy-Dreiländerweg"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Karawanks ridge near Hochstuhl (Stol)",
+			"coords": [
+				14.1832,
+				46.4467
+			]
+		},
+		"end": {
+			"name": "Karawanks ridge near Hochstuhl (Stol)",
+			"coords": [
+				14.1832,
+				46.4467
+			]
+		},
+		"countries": [
+			"AT",
+			"SI",
+			"IT"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 720,
+		"lengthSource": "official",
+		"days": {
+			"min": 29,
+			"max": 36
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			12.7071,
+			46.1768,
+			14.7595,
+			46.7228
+		],
+		"crosses": [
+			"alpe-adria-trail",
+			"juliana-trail",
+			"slovenian-mountain-trail"
+		],
+		"nearby": [
+			"alta-via-1"
+		]
 	},
 	{
 		"slug": "carian-trail",
@@ -1527,7 +3557,9 @@
 			37.5595
 		],
 		"crosses": [],
-		"nearby": []
+		"nearby": [
+			"efeler-way"
+		]
 	},
 	{
 		"slug": "kepler-track",
@@ -1581,6 +3613,200 @@
 		]
 	},
 	{
+		"slug": "klipspringer-hiking-trail",
+		"name": {
+			"original": "Klipspringer Hiking Trail"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Augrabies Falls National Park",
+			"coords": [
+				20.2978,
+				-28.583
+			]
+		},
+		"end": {
+			"name": "Augrabies Falls National Park",
+			"coords": [
+				20.2978,
+				-28.583
+			]
+		},
+		"countries": [
+			"ZA"
+		],
+		"bestSeason": [
+			"apr",
+			"may",
+			"jun",
+			"jul",
+			"aug",
+			"sep",
+			"oct"
+		],
+		"badges": [],
+		"lengthKm": 35.8,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			20.2587,
+			-28.6005,
+			20.3379,
+			-28.5431
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "kokoda-track",
+		"name": {
+			"original": "Kokoda Track"
+		},
+		"type": "historic",
+		"region": "oceania",
+		"start": {
+			"name": "Owers' Corner",
+			"coords": [
+				147.495,
+				-9.356
+			]
+		},
+		"end": {
+			"name": "Kokoda",
+			"coords": [
+				147.738,
+				-8.8826
+			]
+		},
+		"countries": [
+			"PG"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 96,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			147.4947,
+			-9.3603,
+			147.7475,
+			-8.8832
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "gunung-tahan-trail",
+		"name": {
+			"original": "Kuala Tahan - Gunung Tahan"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Kuala Tahan",
+			"coords": [
+				102.4001,
+				4.3854
+			]
+		},
+		"end": {
+			"name": "Gunung Tahan summit",
+			"coords": [
+				102.235,
+				4.6331
+			]
+		},
+		"countries": [
+			"MY"
+		],
+		"bestSeason": [
+			"mar",
+			"apr",
+			"may",
+			"jun",
+			"jul",
+			"aug"
+		],
+		"badges": [],
+		"lengthKm": 41,
+		"lengthSource": "osm",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			102.2349,
+			4.3854,
+			102.4031,
+			4.633
+		],
+		"crosses": [
+			"trans-tahan-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "trans-tahan-trail",
+		"name": {
+			"original": "Kuala Tahan - Gunung Tahan - Kuala Juram"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Kuala Tahan",
+			"coords": [
+				102.4001,
+				4.3854
+			]
+		},
+		"end": {
+			"name": "Kuala Juram (Merapoh)",
+			"coords": [
+				102.14,
+				4.6475
+			]
+		},
+		"countries": [
+			"MY"
+		],
+		"bestSeason": [
+			"mar",
+			"apr",
+			"may",
+			"jun",
+			"jul",
+			"aug"
+		],
+		"badges": [],
+		"lengthKm": 55,
+		"lengthSource": "osm",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			102.1398,
+			4.3854,
+			102.4031,
+			4.6563
+		],
+		"crosses": [
+			"gunung-tahan-trail"
+		],
+		"nearby": []
+	},
+	{
 		"slug": "kungsleden",
 		"name": {
 			"original": "Kungsleden"
@@ -1622,6 +3848,48 @@
 		"crosses": [
 			"e1"
 		],
+		"nearby": []
+	},
+	{
+		"slug": "lake-waikaremoana-great-walk",
+		"name": {
+			"original": "Lake Waikaremoana Great Walk"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Onepoto",
+			"coords": [
+				177.1209,
+				-38.8
+			]
+		},
+		"end": {
+			"name": "Hopuruahine Landing",
+			"coords": [
+				177.0656,
+				-38.7008
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 44.2,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			176.9794,
+			-38.8271,
+			177.1209,
+			-38.7008
+		],
+		"crosses": [],
 		"nearby": []
 	},
 	{
@@ -1714,6 +3982,147 @@
 		"nearby": []
 	},
 	{
+		"slug": "laurel-highlands-hiking-trail",
+		"name": {
+			"original": "Laurel Highlands Hiking Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Ohiopyle",
+			"coords": [
+				-79.4901,
+				39.8712
+			]
+		},
+		"end": {
+			"name": "Conemaugh Gorge near Seward",
+			"coords": [
+				-79.02,
+				40.41
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 113,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-79.4901,
+			39.8562,
+			-78.9753,
+			40.409
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "lechweg",
+		"name": {
+			"original": "Lechweg"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Formarinsee",
+			"coords": [
+				10.084,
+				47.185
+			]
+		},
+		"end": {
+			"name": "Lech Falls, Füssen",
+			"coords": [
+				10.701,
+				47.569
+			]
+		},
+		"countries": [
+			"AT",
+			"DE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 125,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 8
+		},
+		"daysSource": "official",
+		"bbox": [
+			10.0826,
+			47.1964,
+			10.7303,
+			47.5633
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "kilimanjaro-lemosho-route",
+		"name": {
+			"original": "Lemosho Route"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Lemosho Glades trailhead",
+			"coords": [
+				37.1343,
+				-3.0014
+			]
+		},
+		"end": {
+			"name": "Uhuru Peak",
+			"coords": [
+				37.354,
+				-3.0764
+			]
+		},
+		"countries": [
+			"TZ"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep",
+			"dec",
+			"jan",
+			"feb"
+		],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 43,
+		"lengthSource": "osm",
+		"days": {
+			"min": 2,
+			"max": 2
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			37.1343,
+			-3.1125,
+			37.3785,
+			-2.9966
+		],
+		"crosses": [
+			"kilimanjaro-machame-route",
+			"kilimanjaro-marangu-route",
+			"kilimanjaro-rongai-route",
+			"kilimanjaro-umbwe-route"
+		],
+		"nearby": []
+	},
+	{
 		"slug": "lycian-way",
 		"name": {
 			"original": "Likya Yolu"
@@ -1761,6 +4170,52 @@
 		"crosses": [],
 		"nearby": [
 			"st-paul-trail"
+		]
+	},
+	{
+		"slug": "wales-coast-path",
+		"name": {
+			"original": "Llwybr Arfordir Cymru"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Queensferry, near Chester",
+			"coords": [
+				-3.025,
+				53.208
+			]
+		},
+		"end": {
+			"name": "Chepstow",
+			"coords": [
+				-2.674,
+				51.642
+			]
+		},
+		"countries": [
+			"GB"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1400,
+		"lengthSource": "official",
+		"days": {
+			"min": 56,
+			"max": 70
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-5.3198,
+			51.3813,
+			-2.6632,
+			53.356
+		],
+		"crosses": [
+			"offas-dyke-path"
+		],
+		"nearby": [
+			"south-west-coast-path"
 		]
 	},
 	{
@@ -1846,8 +4301,113 @@
 			37.3792,
 			-3.0613
 		],
+		"crosses": [
+			"kilimanjaro-lemosho-route",
+			"kilimanjaro-umbwe-route"
+		],
+		"nearby": [
+			"kilimanjaro-marangu-route",
+			"kilimanjaro-rongai-route"
+		]
+	},
+	{
+		"slug": "malerweg",
+		"name": {
+			"original": "Malerweg"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Liebethal (Pirna)",
+			"coords": [
+				13.9583,
+				50.9965
+			]
+		},
+		"end": {
+			"name": "Pirna",
+			"coords": [
+				13.941,
+				50.962
+			]
+		},
+		"countries": [
+			"DE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 116,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 6
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			13.9443,
+			50.8828,
+			14.3251,
+			51.0002
+		],
 		"crosses": [],
 		"nearby": []
+	},
+	{
+		"slug": "kilimanjaro-marangu-route",
+		"name": {
+			"original": "Marangu Route"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Marangu Gate",
+			"coords": [
+				37.5177,
+				-3.2436
+			]
+		},
+		"end": {
+			"name": "Uhuru Peak",
+			"coords": [
+				37.354,
+				-3.0764
+			]
+		},
+		"countries": [
+			"TZ"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep",
+			"dec",
+			"jan",
+			"feb"
+		],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 34,
+		"lengthSource": "osm",
+		"days": {
+			"min": 1,
+			"max": 2
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			37.354,
+			-3.2436,
+			37.5213,
+			-3.0744
+		],
+		"crosses": [
+			"kilimanjaro-lemosho-route",
+			"kilimanjaro-rongai-route",
+			"kilimanjaro-umbwe-route"
+		],
+		"nearby": [
+			"kilimanjaro-machame-route"
+		]
 	},
 	{
 		"slug": "jordan-trail",
@@ -1941,8 +4501,60 @@
 		],
 		"crosses": [],
 		"nearby": [
+			"hollyford-track",
 			"routeburn-track",
 			"te-araroa"
+		]
+	},
+	{
+		"slug": "forest-trail",
+		"name": {
+			"original": "Miško takas"
+		},
+		"type": "e-path",
+		"region": "europe",
+		"start": {
+			"name": "Polish-Lithuanian border near Lazdijai",
+			"coords": [
+				23.4753,
+				54.1635
+			]
+		},
+		"end": {
+			"name": "Tallinn",
+			"coords": [
+				24.7454,
+				59.437
+			]
+		},
+		"countries": [
+			"LT",
+			"LV",
+			"EE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 2141,
+		"lengthSource": "official",
+		"days": {
+			"min": 102,
+			"max": 114
+		},
+		"daysSource": "official",
+		"bbox": [
+			21.4861,
+			54.003,
+			27.6466,
+			59.6471
+		],
+		"crosses": [
+			"camino-lituano",
+			"oandu-ikla-hiking-route",
+			"penijoe-aegviidu-kauksi-hiking-route",
+			"perakula-aegviidu-ahijarve-hiking-route"
+		],
+		"nearby": [
+			"ezertaka"
 		]
 	},
 	{
@@ -1985,6 +4597,94 @@
 			-24.185
 		],
 		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "northville-placid-trail",
+		"name": {
+			"original": "Northville-Placid Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Averyville Road trailhead, Lake Placid",
+			"coords": [
+				-73.9799,
+				44.2795
+			]
+		},
+		"end": {
+			"name": "Northville",
+			"coords": [
+				-74.1716,
+				43.2256
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 222,
+		"lengthSource": "official",
+		"days": {
+			"min": 9,
+			"max": 11
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-74.6267,
+			43.2042,
+			-73.986,
+			44.2764
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "oandu-ikla-hiking-route",
+		"name": {
+			"original": "Oandu-Aegviidu-Ikla matkatee"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "RMK Oandu visitor centre",
+			"coords": [
+				26.0965,
+				59.5625
+			]
+		},
+		"end": {
+			"name": "Ikla, Latvian border",
+			"coords": [
+				24.3612,
+				57.8745
+			]
+		},
+		"countries": [
+			"EE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 370,
+		"lengthSource": "official",
+		"days": {
+			"min": 15,
+			"max": 19
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			24.3612,
+			57.8745,
+			26.1043,
+			59.5746
+		],
+		"crosses": [
+			"forest-trail",
+			"penijoe-aegviidu-kauksi-hiking-route",
+			"perakula-aegviidu-ahijarve-hiking-route"
+		],
 		"nearby": []
 	},
 	{
@@ -2034,8 +4734,103 @@
 			-2.6496,
 			53.3327
 		],
-		"crosses": [],
+		"crosses": [
+			"wales-coast-path"
+		],
 		"nearby": []
+	},
+	{
+		"slug": "old-ghost-road",
+		"name": {
+			"original": "Old Ghost Road"
+		},
+		"type": "historic",
+		"region": "oceania",
+		"start": {
+			"name": "Lyell",
+			"coords": [
+				172.05,
+				-41.795
+			]
+		},
+		"end": {
+			"name": "Seddonville",
+			"coords": [
+				172,
+				-41.56
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 85,
+		"lengthSource": "official",
+		"days": {
+			"min": 2,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			172.0177,
+			-41.7966,
+			172.2156,
+			-41.5338
+		],
+		"crosses": [],
+		"nearby": [
+			"travers-sabine-circuit",
+			"heaphy-track"
+		]
+	},
+	{
+		"slug": "national-blue-trail",
+		"name": {
+			"original": "Országos Kéktúra"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Írott-kő",
+			"coords": [
+				16.4334,
+				47.3523
+			]
+		},
+		"end": {
+			"name": "Hollóháza",
+			"coords": [
+				21.4179,
+				48.5401
+			]
+		},
+		"countries": [
+			"HU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1183,
+		"lengthSource": "official",
+		"days": {
+			"min": 47,
+			"max": 59
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			16.4338,
+			46.7599,
+			21.6247,
+			48.5797
+		],
+		"crosses": [
+			"sultans-trail",
+			"south-transdanubian-blue-trail"
+		],
+		"nearby": [
+			"great-plain-blue-trail",
+			"snp-heroes-trail"
+		]
 	},
 	{
 		"slug": "otter-trail",
@@ -2079,7 +4874,96 @@
 		"crosses": [
 			"tsitsikamma-hiking-trail"
 		],
+		"nearby": [
+			"outeniqua-hiking-trail"
+		]
+	},
+	{
+		"slug": "ouachita-trail",
+		"name": {
+			"original": "Ouachita National Recreation Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Talimena State Park, Oklahoma",
+			"coords": [
+				-94.9515,
+				34.7835
+			]
+		},
+		"end": {
+			"name": "Pinnacle Mountain State Park, Arkansas",
+			"coords": [
+				-92.48,
+				34.84
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 359,
+		"lengthSource": "official",
+		"days": {
+			"min": 14,
+			"max": 18
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-94.9515,
+			34.6588,
+			-92.4784,
+			34.9148
+		],
+		"crosses": [],
 		"nearby": []
+	},
+	{
+		"slug": "outeniqua-hiking-trail",
+		"name": {
+			"original": "Outeniqua Hiking Trail"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Beervlei",
+			"coords": [
+				22.7325,
+				-33.935
+			]
+		},
+		"end": {
+			"name": "Harkerville",
+			"coords": [
+				23.22,
+				-34.045
+			]
+		},
+		"countries": [
+			"ZA"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 93,
+		"lengthSource": "osm",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			22.7269,
+			-34.051,
+			23.2281,
+			-33.8503
+		],
+		"crosses": [],
+		"nearby": [
+			"otter-trail",
+			"tsitsikamma-hiking-trail"
+		]
 	},
 	{
 		"slug": "overland-track",
@@ -2133,6 +5017,48 @@
 		"nearby": []
 	},
 	{
+		"slug": "ozark-highlands-trail",
+		"name": {
+			"original": "Ozark Highlands Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Lake Fort Smith State Park",
+			"coords": [
+				-94.115,
+				35.695
+			]
+		},
+		"end": {
+			"name": "Norfork Lake",
+			"coords": [
+				-92.308,
+				36.2142
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 435,
+		"lengthSource": "official",
+		"days": {
+			"min": 17,
+			"max": 22
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-94.1186,
+			35.6663,
+			-92.308,
+			36.2142
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
 		"slug": "pacific-crest-trail",
 		"name": {
 			"original": "Pacific Crest Trail"
@@ -2173,8 +5099,97 @@
 			49.0635
 		],
 		"crosses": [
-			"john-muir-trail"
+			"john-muir-trail",
+			"tahoe-rim-trail",
+			"timberline-trail",
+			"high-sierra-trail"
 		],
+		"nearby": [
+			"wonderland-trail"
+		]
+	},
+	{
+		"slug": "pamir-trail",
+		"name": {
+			"original": "Pamir Trail"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Shing",
+			"coords": [
+				67.8016,
+				39.2796
+			]
+		},
+		"end": {
+			"name": "Vrang",
+			"coords": [
+				72.367,
+				37
+			]
+		},
+		"countries": [
+			"TJ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1313,
+		"lengthSource": "official",
+		"days": {
+			"min": 53,
+			"max": 66
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			67.7968,
+			36.9897,
+			73.5869,
+			39.4661
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "paparoa-track",
+		"name": {
+			"original": "Paparoa Track"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Smoke-ho car park, near Blackball",
+			"coords": [
+				171.3982,
+				-42.3375
+			]
+		},
+		"end": {
+			"name": "Pororari River car park, Punakaiki",
+			"coords": [
+				171.34,
+				-42.11
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 55,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			171.3422,
+			-42.3375,
+			171.4578,
+			-42.1092
+		],
+		"crosses": [],
 		"nearby": []
 	},
 	{
@@ -2219,6 +5234,94 @@
 			42.743
 		],
 		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "rinjani-sembalun-senaru-crossing",
+		"name": {
+			"original": "Pendakian Gunung Rinjani Sembalun - Senaru"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Sembalun",
+			"coords": [
+				116.4983,
+				-8.3418
+			]
+		},
+		"end": {
+			"name": "Senaru",
+			"coords": [
+				116.4011,
+				-8.3025
+			]
+		},
+		"countries": [
+			"ID"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 26,
+		"lengthSource": "osm",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			116.3945,
+			-8.3939,
+			116.4983,
+			-8.3025
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "penijoe-aegviidu-kauksi-hiking-route",
+		"name": {
+			"original": "Penijõe-Aegviidu-Kauksi matkatee"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Penijõe manor, Matsalu National Park",
+			"coords": [
+				23.8022,
+				58.7406
+			]
+		},
+		"end": {
+			"name": "Kauksi, Lake Peipus",
+			"coords": [
+				27.227,
+				59.006
+			]
+		},
+		"countries": [
+			"EE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 613,
+		"lengthSource": "official",
+		"days": {
+			"min": 25,
+			"max": 31
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			23.8278,
+			58.6998,
+			27.8841,
+			59.4443
+		],
+		"crosses": [
+			"forest-trail",
+			"oandu-ikla-hiking-route",
+			"perakula-aegviidu-ahijarve-hiking-route"
+		],
 		"nearby": []
 	},
 	{
@@ -2274,6 +5377,54 @@
 		"nearby": []
 	},
 	{
+		"slug": "perakula-aegviidu-ahijarve-hiking-route",
+		"name": {
+			"original": "Peraküla-Aegviidu-Ähijärve matkatee"
+		},
+		"type": "coastal",
+		"region": "europe",
+		"start": {
+			"name": "Nõva visitor centre, Peraküla",
+			"coords": [
+				23.689,
+				59.223
+			]
+		},
+		"end": {
+			"name": "Ähijärve visitor centre, Karula",
+			"coords": [
+				26.487,
+				57.705
+			]
+		},
+		"countries": [
+			"EE"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 812,
+		"lengthSource": "official",
+		"days": {
+			"min": 32,
+			"max": 41
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			23.6114,
+			57.5097,
+			27.7153,
+			59.3054
+		],
+		"crosses": [
+			"forest-trail",
+			"oandu-ikla-hiking-route",
+			"penijoe-aegviidu-kauksi-hiking-route"
+		],
+		"nearby": [
+			"ezertaka"
+		]
+	},
+	{
 		"slug": "st-olavsleden",
 		"name": {
 			"original": "Pilgrimsleden - St. Olavsleden"
@@ -2323,6 +5474,94 @@
 		"nearby": []
 	},
 	{
+		"slug": "queen-charlotte-track",
+		"name": {
+			"original": "Queen Charlotte Track"
+		},
+		"type": "coastal",
+		"region": "oceania",
+		"start": {
+			"name": "Meretoto / Ship Cove",
+			"coords": [
+				174.2345,
+				-41.0946
+			]
+		},
+		"end": {
+			"name": "Anakiwa",
+			"coords": [
+				173.92,
+				-41.27
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 73.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			173.9215,
+			-41.2644,
+			174.2345,
+			-41.0858
+		],
+		"crosses": [
+			"te-araroa"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "rakiura-track",
+		"name": {
+			"original": "Rakiura Track"
+		},
+		"type": "coastal",
+		"region": "oceania",
+		"start": {
+			"name": "Oban, Stewart Island/Rakiura",
+			"coords": [
+				168.1289,
+				-46.8968
+			]
+		},
+		"end": {
+			"name": "Oban, Stewart Island/Rakiura",
+			"coords": [
+				168.1289,
+				-46.8968
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 32,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			168.0186,
+			-46.9023,
+			168.1351,
+			-46.8451
+		],
+		"crosses": [],
+		"nearby": [
+			"te-araroa"
+		]
+	},
+	{
 		"slug": "rennsteig",
 		"name": {
 			"original": "Rennsteig"
@@ -2362,6 +5601,206 @@
 			51.0079
 		],
 		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "rideau-trail",
+		"name": {
+			"original": "Rideau Trail"
+		},
+		"type": "historic",
+		"region": "americas",
+		"start": {
+			"name": "Confederation Park, Kingston",
+			"coords": [
+				-76.4797,
+				44.2305
+			]
+		},
+		"end": {
+			"name": "Ottawa Locks, Ottawa",
+			"coords": [
+				-75.6989,
+				45.4265
+			]
+		},
+		"countries": [
+			"CA"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 325,
+		"lengthSource": "official",
+		"days": {
+			"min": 13,
+			"max": 16
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-76.6453,
+			44.2311,
+			-75.6989,
+			45.4265
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "south-transdanubian-blue-trail",
+		"name": {
+			"original": "Rockenbauer Pál Dél-dunántúli Kéktúra"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Írott-kő",
+			"coords": [
+				16.4338,
+				47.3528
+			]
+		},
+		"end": {
+			"name": "Szekszárd",
+			"coords": [
+				18.7062,
+				46.3474
+			]
+		},
+		"countries": [
+			"HU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 542,
+		"lengthSource": "official",
+		"days": {
+			"min": 22,
+			"max": 27
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			16.3237,
+			46.0937,
+			18.7062,
+			47.353
+		],
+		"crosses": [
+			"sultans-trail",
+			"national-blue-trail",
+			"great-plain-blue-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "kilimanjaro-rongai-route",
+		"name": {
+			"original": "Rongai Route"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Rongai Gate",
+			"coords": [
+				37.4952,
+				-2.9594
+			]
+		},
+		"end": {
+			"name": "Uhuru Peak",
+			"coords": [
+				37.354,
+				-3.0764
+			]
+		},
+		"countries": [
+			"TZ"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep",
+			"dec",
+			"jan",
+			"feb"
+		],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 34,
+		"lengthSource": "osm",
+		"days": {
+			"min": 1,
+			"max": 2
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			37.354,
+			-3.0817,
+			37.4952,
+			-2.9594
+		],
+		"crosses": [
+			"kilimanjaro-lemosho-route",
+			"kilimanjaro-marangu-route",
+			"kilimanjaro-umbwe-route"
+		],
+		"nearby": [
+			"kilimanjaro-machame-route"
+		]
+	},
+	{
+		"slug": "rota-vicentina-historical-way",
+		"name": {
+			"original": "Rota Vicentina - Caminho Histórico"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Santiago do Cacém",
+			"coords": [
+				-8.695,
+				38.017
+			]
+		},
+		"end": {
+			"name": "Cape St Vincent (Cabo de São Vicente)",
+			"coords": [
+				-8.996,
+				37.023
+			]
+		},
+		"countries": [
+			"PT"
+		],
+		"bestSeason": [
+			"sep",
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb",
+			"mar",
+			"apr",
+			"may",
+			"jun"
+		],
+		"badges": [],
+		"lengthKm": 263,
+		"lengthSource": "official",
+		"days": {
+			"min": 13,
+			"max": 13
+		},
+		"daysSource": "official",
+		"bbox": [
+			-8.9959,
+			37.0232,
+			-8.6083,
+			38.0142
+		],
+		"crosses": [
+			"fishermens-trail"
+		],
 		"nearby": []
 	},
 	{
@@ -2414,7 +5853,62 @@
 			-8.668,
 			37.8516
 		],
-		"crosses": [],
+		"crosses": [
+			"rota-vicentina-historical-way"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "round-the-mountain-track-ruapehu",
+		"name": {
+			"original": "Round the Mountain Track"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Whakapapa Village",
+			"coords": [
+				175.5429,
+				-39.1996
+			]
+		},
+		"end": {
+			"name": "Whakapapa Village",
+			"coords": [
+				175.5429,
+				-39.1996
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb",
+			"mar",
+			"apr"
+		],
+		"badges": [],
+		"lengthKm": 66.2,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 6
+		},
+		"daysSource": "official",
+		"bbox": [
+			175.4945,
+			-39.3431,
+			175.6793,
+			-39.1952
+		],
+		"crosses": [
+			"te-araroa",
+			"tongariro-northern-circuit"
+		],
 		"nearby": []
 	},
 	{
@@ -2465,6 +5959,7 @@
 		],
 		"crosses": [],
 		"nearby": [
+			"hollyford-track",
 			"te-araroa",
 			"milford-track"
 		]
@@ -2511,6 +6006,56 @@
 			0.343,
 			30.0255,
 			0.3841
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "cerro-castillo-las-horquetas-trail",
+		"name": {
+			"original": "Sendero Las Horquetas"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Las Horquetas",
+			"coords": [
+				-71.9547,
+				-45.981
+			]
+		},
+		"end": {
+			"name": "Villa Cerro Castillo sector",
+			"coords": [
+				-72.2178,
+				-46.1183
+			]
+		},
+		"countries": [
+			"CL"
+		],
+		"bestSeason": [
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb",
+			"mar",
+			"apr"
+		],
+		"badges": [],
+		"lengthKm": 53.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			-72.2374,
+			-46.1183,
+			-71.9547,
+			-45.9757
 		],
 		"crosses": [],
 		"nearby": []
@@ -2644,6 +6189,96 @@
 		"nearby": []
 	},
 	{
+		"slug": "slovenian-mountain-trail",
+		"name": {
+			"original": "Slovenska planinska pot"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Maribor (Spodnje Radvanje)",
+			"coords": [
+				15.628,
+				46.539
+			]
+		},
+		"end": {
+			"name": "Debeli rtič",
+			"coords": [
+				13.7046,
+				45.5915
+			]
+		},
+		"countries": [
+			"SI"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 616.4,
+		"lengthSource": "official",
+		"days": {
+			"min": 37,
+			"max": 37
+		},
+		"daysSource": "official",
+		"bbox": [
+			13.6649,
+			45.5324,
+			15.6283,
+			46.5323
+		],
+		"crosses": [
+			"alpe-adria-trail",
+			"juliana-trail",
+			"julius-kugy-alpine-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "south-coast-track",
+		"name": {
+			"original": "South Coast Track"
+		},
+		"type": "coastal",
+		"region": "oceania",
+		"start": {
+			"name": "Melaleuca",
+			"coords": [
+				146.2144,
+				-43.4952
+			]
+		},
+		"end": {
+			"name": "Cockle Creek",
+			"coords": [
+				146.8933,
+				-43.583
+			]
+		},
+		"countries": [
+			"AU"
+		],
+		"bestSeason": [],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 85,
+		"lengthSource": "official",
+		"days": {
+			"min": 6,
+			"max": 8
+		},
+		"daysSource": "official",
+		"bbox": [
+			146.2144,
+			-43.6113,
+			146.8932,
+			-43.4761
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
 		"slug": "south-downs-way",
 		"name": {
 			"original": "South Downs Way"
@@ -2730,6 +6365,377 @@
 			51.2409
 		],
 		"crosses": [],
+		"nearby": [
+			"wales-coast-path"
+		]
+	},
+	{
+		"slug": "st-james-walkway",
+		"name": {
+			"original": "St James Walkway"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "Lewis Pass",
+			"coords": [
+				172.401,
+				-42.3798
+			]
+		},
+		"end": {
+			"name": "Boyle Village",
+			"coords": [
+				172.3979,
+				-42.5203
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 65,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			172.3979,
+			-42.5223,
+			172.602,
+			-42.2784
+		],
+		"crosses": [
+			"te-araroa"
+		],
+		"nearby": [
+			"travers-sabine-circuit"
+		]
+	},
+	{
+		"slug": "sultans-trail",
+		"name": {
+			"original": "Sultans Trail"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Vienna (Nussdorf, Kahlenberger Straße)",
+			"coords": [
+				16.3362,
+				48.2751
+			]
+		},
+		"end": {
+			"name": "Istanbul (Süleymaniye)",
+			"coords": [
+				28.9639,
+				41.0163
+			]
+		},
+		"countries": [
+			"AT",
+			"SK",
+			"HU",
+			"HR",
+			"RS",
+			"BG",
+			"TR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 2500,
+		"lengthSource": "official",
+		"days": {
+			"min": 140,
+			"max": 175
+		},
+		"daysSource": "official",
+		"bbox": [
+			16.3314,
+			41.0145,
+			28.9637,
+			48.2751
+		],
+		"crosses": [
+			"national-blue-trail",
+			"south-transdanubian-blue-trail",
+			"snp-heroes-trail"
+		],
+		"nearby": [
+			"kom-emine",
+			"great-plain-blue-trail"
+		]
+	},
+	{
+		"slug": "superior-hiking-trail",
+		"name": {
+			"original": "Superior Hiking Trail"
+		},
+		"type": "coastal",
+		"region": "americas",
+		"start": {
+			"name": "Northern terminus, 270 Degree Overlook",
+			"coords": [
+				-89.9336,
+				47.999
+			]
+		},
+		"end": {
+			"name": "Southern terminus, Duluth",
+			"coords": [
+				-92.278,
+				46.656
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 483,
+		"lengthSource": "official",
+		"days": {
+			"min": 19,
+			"max": 24
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-92.2676,
+			46.6679,
+			-89.8973,
+			47.9991
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "swellendam-hiking-trail",
+		"name": {
+			"original": "Swellendam Hiking Trail"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Marloth Nature Reserve office",
+			"coords": [
+				20.4447,
+				-33.9996
+			]
+		},
+		"end": {
+			"name": "Marloth Nature Reserve office",
+			"coords": [
+				20.4447,
+				-33.9996
+			]
+		},
+		"countries": [
+			"ZA"
+		],
+		"bestSeason": [
+			"sep",
+			"oct",
+			"nov"
+		],
+		"badges": [],
+		"lengthKm": 58.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			20.3573,
+			-34.0048,
+			20.5091,
+			-33.9412
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "trail-of-the-eagles-nests",
+		"name": {
+			"original": "Szlak Orlich Gniazd"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Kraków (Pękowicka Street)",
+			"coords": [
+				19.9054,
+				50.1214
+			]
+		},
+		"end": {
+			"name": "Częstochowa railway station",
+			"coords": [
+				19.1185,
+				50.8075
+			]
+		},
+		"countries": [
+			"PL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 164,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 8
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			19.1286,
+			50.1214,
+			19.9054,
+			50.8159
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "tahoe-rim-trail",
+		"name": {
+			"original": "Tahoe Rim Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Tahoe City",
+			"coords": [
+				-120.144,
+				39.1677
+			]
+		},
+		"end": {
+			"name": "Tahoe City",
+			"coords": [
+				-120.144,
+				39.1677
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 266,
+		"lengthSource": "official",
+		"days": {
+			"min": 11,
+			"max": 13
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-120.2501,
+			38.7222,
+			-119.8805,
+			39.3312
+		],
+		"crosses": [
+			"pacific-crest-trail"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "tatra-magistrala",
+		"name": {
+			"original": "Tatranská magistrála"
+		},
+		"type": "mountain",
+		"region": "europe",
+		"start": {
+			"name": "Ždiar",
+			"coords": [
+				20.26,
+				49.271
+			]
+		},
+		"end": {
+			"name": "Podbanské",
+			"coords": [
+				19.91,
+				49.14
+			]
+		},
+		"countries": [
+			"SK"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 58,
+		"lengthSource": "osm",
+		"days": {
+			"min": 2,
+			"max": 3
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			19.9097,
+			49.1196,
+			20.2638,
+			49.2685
+		],
+		"crosses": [],
+		"nearby": [
+			"main-beskid-trail",
+			"snp-heroes-trail"
+		]
+	},
+	{
+		"slug": "tct-imereti-to-racha",
+		"name": {
+			"original": "TCT: Imereti to Racha"
+		},
+		"type": "mountain",
+		"region": "middle-east-caucasus",
+		"start": {
+			"name": "Southern trailhead on the road to Sachkhere",
+			"coords": [
+				43.52,
+				42.22
+			]
+		},
+		"end": {
+			"name": "Oni",
+			"coords": [
+				43.4335,
+				42.581
+			]
+		},
+		"countries": [
+			"GE"
+		],
+		"bestSeason": [
+			"may",
+			"jun",
+			"jul",
+			"aug",
+			"sep",
+			"oct"
+		],
+		"badges": [],
+		"lengthKm": 74,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			43.4087,
+			42.2168,
+			43.5713,
+			42.581
+		],
+		"crosses": [],
 		"nearby": []
 	},
 	{
@@ -2772,14 +6778,151 @@
 			-34.4266
 		],
 		"crosses": [
-			"tongariro-northern-circuit"
+			"queen-charlotte-track",
+			"round-the-mountain-track-ruapehu",
+			"st-james-walkway",
+			"tongariro-northern-circuit",
+			"travers-sabine-circuit"
 		],
 		"nearby": [
 			"routeburn-track",
+			"hollyford-track",
 			"kepler-track",
-			"milford-track",
-			"abel-tasman-coast-track"
+			"milford-track"
 		]
+	},
+	{
+		"slug": "pekoe-trail",
+		"name": {
+			"original": "The Pekoe Trail"
+		},
+		"type": "historic",
+		"region": "asia",
+		"start": {
+			"name": "Hantana, Kandy",
+			"coords": [
+				80.633,
+				7.2686
+			]
+		},
+		"end": {
+			"name": "Pedro Estate, Nuwara Eliya",
+			"coords": [
+				80.7945,
+				6.9701
+			]
+		},
+		"countries": [
+			"LK"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 300,
+		"lengthSource": "official",
+		"days": {
+			"min": 12,
+			"max": 15
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			80.6021,
+			6.7646,
+			81.0702,
+			7.2686
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "three-capes-track",
+		"name": {
+			"original": "Three Capes Track"
+		},
+		"type": "coastal",
+		"region": "oceania",
+		"start": {
+			"name": "Denmans Cove",
+			"coords": [
+				147.8935,
+				-43.1387
+			]
+		},
+		"end": {
+			"name": "Fortescue Bay",
+			"coords": [
+				147.96,
+				-43.14
+			]
+		},
+		"countries": [
+			"AU"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 48,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			147.889,
+			-43.2243,
+			148.0079,
+			-43.1355
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "timberline-trail",
+		"name": {
+			"original": "Timberline Trail #600"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Timberline Lodge",
+			"coords": [
+				-121.711,
+				45.3311
+			]
+		},
+		"end": {
+			"name": "Timberline Lodge",
+			"coords": [
+				-121.711,
+				45.3311
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep",
+			"oct"
+		],
+		"badges": [],
+		"lengthKm": 64,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			-121.7843,
+			45.3204,
+			-121.6332,
+			45.4141
+		],
+		"crosses": [
+			"pacific-crest-trail"
+		],
+		"nearby": []
 	},
 	{
 		"slug": "tongariro-northern-circuit",
@@ -2828,6 +6971,7 @@
 			-39.1322
 		],
 		"crosses": [
+			"round-the-mountain-track-ruapehu",
 			"te-araroa"
 		],
 		"nearby": []
@@ -2926,6 +7070,48 @@
 		"nearby": []
 	},
 	{
+		"slug": "trans-catalina-trail",
+		"name": {
+			"original": "Trans-Catalina Trail"
+		},
+		"type": "coastal",
+		"region": "americas",
+		"start": {
+			"name": "Avalon",
+			"coords": [
+				-118.3245,
+				33.3429
+			]
+		},
+		"end": {
+			"name": "Starlight Beach, near Parsons Landing",
+			"coords": [
+				-118.5541,
+				33.4728
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 62,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			-118.5541,
+			33.3269,
+			-118.3245,
+			33.471
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
 		"slug": "transcaucasian-trail-upper-svaneti",
 		"name": {
 			"original": "Transcaucasian Trail - Upper Svaneti"
@@ -2963,6 +7149,280 @@
 			42.9158,
 			43.0391,
 			43.0636
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "travers-sabine-circuit",
+		"name": {
+			"original": "Travers-Sabine Circuit"
+		},
+		"type": "mountain",
+		"region": "oceania",
+		"start": {
+			"name": "St Arnaud, Lake Rotoiti",
+			"coords": [
+				172.8499,
+				-41.81
+			]
+		},
+		"end": {
+			"name": "St Arnaud, Lake Rotoiti",
+			"coords": [
+				172.8499,
+				-41.81
+			]
+		},
+		"countries": [
+			"NZ"
+		],
+		"bestSeason": [
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb",
+			"mar",
+			"apr",
+			"may"
+		],
+		"badges": [],
+		"lengthKm": 80,
+		"lengthSource": "official",
+		"days": {
+			"min": 4,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			172.6805,
+			-42.0279,
+			172.8614,
+			-41.8067
+		],
+		"crosses": [
+			"te-araroa"
+		],
+		"nearby": [
+			"st-james-walkway",
+			"old-ghost-road"
+		]
+	},
+	{
+		"slug": "villarrica-traverse",
+		"name": {
+			"original": "Travesía del Villarrica"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Rucapillán sector, above Pucón",
+			"coords": [
+				-71.9629,
+				-39.3927
+			]
+		},
+		"end": {
+			"name": "Puesco sector",
+			"coords": [
+				-71.5665,
+				-39.5425
+			]
+		},
+		"countries": [
+			"CL"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 46.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 2,
+			"max": 2
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-71.996,
+			-39.5746,
+			-71.5617,
+			-39.3927
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "jeinimeni-aviles-traverse",
+		"name": {
+			"original": "Travesía Jeinimeni-Avilés"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Jeinimeni sector",
+			"coords": [
+				-72.0116,
+				-46.8383
+			]
+		},
+		"end": {
+			"name": "Casa de Piedra, Valle Chacabuco",
+			"coords": [
+				-72.1907,
+				-47.0526
+			]
+		},
+		"countries": [
+			"CL"
+		],
+		"bestSeason": [
+			"oct",
+			"nov",
+			"dec",
+			"jan",
+			"feb",
+			"mar",
+			"apr"
+		],
+		"badges": [],
+		"lengthKm": 46,
+		"lengthSource": "osm",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "official",
+		"bbox": [
+			-72.1907,
+			-47.0526,
+			-72.0064,
+			-46.8368
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "nahuel-huapi-traverse",
+		"name": {
+			"original": "Travesía Nahuel Huapi"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Villa Catedral",
+			"coords": [
+				-71.4423,
+				-41.1697
+			]
+		},
+		"end": {
+			"name": "Colonia Suiza",
+			"coords": [
+				-71.504,
+				-41.091
+			]
+		},
+		"countries": [
+			"AR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 45,
+		"lengthSource": "osm",
+		"days": {
+			"min": 4,
+			"max": 5
+		},
+		"daysSource": "official",
+		"bbox": [
+			-71.5912,
+			-41.2096,
+			-71.4364,
+			-41.0916
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "petropolis-teresopolis-traverse",
+		"name": {
+			"original": "Travessia Petrópolis-Teresópolis"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Serra dos Órgãos National Park, Petrópolis headquarters (Bonfim)",
+			"coords": [
+				-43.0942,
+				-22.4628
+			]
+		},
+		"end": {
+			"name": "Serra dos Órgãos National Park, Teresópolis headquarters",
+			"coords": [
+				-42.9854,
+				-22.4495
+			]
+		},
+		"countries": [
+			"BR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 30,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 3
+		},
+		"daysSource": "official",
+		"bbox": [
+			-43.0942,
+			-22.4869,
+			-43.0012,
+			-22.4469
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "troy-culture-route",
+		"name": {
+			"original": "Troya Kültür Rotası"
+		},
+		"type": "historic",
+		"region": "middle-east-caucasus",
+		"start": {
+			"name": "Troy archaeological site",
+			"coords": [
+				26.2509,
+				39.955
+			]
+		},
+		"end": {
+			"name": "Assos ancient harbour",
+			"coords": [
+				26.337,
+				39.488
+			]
+		},
+		"countries": [
+			"TR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 120,
+		"lengthSource": "official",
+		"days": {
+			"min": 5,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			26.1046,
+			39.482,
+			26.3343,
+			39.955
 		],
 		"crosses": [],
 		"nearby": []
@@ -3008,6 +7468,64 @@
 		],
 		"crosses": [
 			"otter-trail"
+		],
+		"nearby": [
+			"outeniqua-hiking-trail"
+		]
+	},
+	{
+		"slug": "kilimanjaro-umbwe-route",
+		"name": {
+			"original": "Umbwe Route"
+		},
+		"type": "mountain",
+		"region": "africa",
+		"start": {
+			"name": "Umbwe Gate",
+			"coords": [
+				37.2796,
+				-3.1896
+			]
+		},
+		"end": {
+			"name": "Uhuru Peak",
+			"coords": [
+				37.354,
+				-3.0764
+			]
+		},
+		"countries": [
+			"TZ"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep",
+			"dec",
+			"jan",
+			"feb"
+		],
+		"badges": [
+			"unesco"
+		],
+		"lengthKm": 26,
+		"lengthSource": "osm",
+		"days": {
+			"min": 1,
+			"max": 1
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			37.2778,
+			-3.1896,
+			37.3785,
+			-3.0764
+		],
+		"crosses": [
+			"kilimanjaro-lemosho-route",
+			"kilimanjaro-machame-route",
+			"kilimanjaro-marangu-route",
+			"kilimanjaro-rongai-route"
 		],
 		"nearby": []
 	},
@@ -3204,11 +7722,56 @@
 			45.0456
 		],
 		"crosses": [
+			"gr10-pyrenees",
 			"camino-frances"
 		],
 		"nearby": [
 			"gr11",
 			"camino-del-norte"
+		]
+	},
+	{
+		"slug": "via-transilvanica",
+		"name": {
+			"original": "Via Transilvanica"
+		},
+		"type": "historic",
+		"region": "europe",
+		"start": {
+			"name": "Putna Monastery",
+			"coords": [
+				25.5996,
+				47.8687
+			]
+		},
+		"end": {
+			"name": "Drobeta-Turnu Severin, Danube bank by the ruins of Trajan's Bridge",
+			"coords": [
+				22.6672,
+				44.6236
+			]
+		},
+		"countries": [
+			"RO"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1600,
+		"lengthSource": "official",
+		"days": {
+			"min": 64,
+			"max": 80
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			21.89,
+			44.624,
+			25.7106,
+			47.8711
+		],
+		"crosses": [],
+		"nearby": [
+			"drumul-maramuresului"
 		]
 	},
 	{
@@ -3358,6 +7921,226 @@
 		"nearby": []
 	},
 	{
+		"slug": "wonderland-trail",
+		"name": {
+			"original": "Wonderland Trail"
+		},
+		"type": "mountain",
+		"region": "americas",
+		"start": {
+			"name": "Longmire",
+			"coords": [
+				-121.813,
+				46.75
+			]
+		},
+		"end": {
+			"name": "Longmire",
+			"coords": [
+				-121.813,
+				46.75
+			]
+		},
+		"countries": [
+			"US"
+		],
+		"bestSeason": [
+			"jul",
+			"aug",
+			"sep"
+		],
+		"badges": [],
+		"lengthKm": 150,
+		"lengthSource": "official",
+		"days": {
+			"min": 6,
+			"max": 8
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			-121.9127,
+			46.7519,
+			-121.605,
+			46.9716
+		],
+		"crosses": [],
+		"nearby": [
+			"pacific-crest-trail"
+		]
+	},
+	{
+		"slug": "transcaucasian-trail-armenia",
+		"name": {
+			"original": "Տրանսկովկասյան արահետ"
+		},
+		"type": "mountain",
+		"region": "middle-east-caucasus",
+		"start": {
+			"name": "Lake Arpi National Park, northern border",
+			"coords": [
+				43.6536,
+				41.0667
+			]
+		},
+		"end": {
+			"name": "Meghri",
+			"coords": [
+				46.2442,
+				38.9035
+			]
+		},
+		"countries": [
+			"AM"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 819,
+		"lengthSource": "official",
+		"days": {
+			"min": 33,
+			"max": 41
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			43.6536,
+			38.9019,
+			46.3969,
+			41.0998
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "baekdudaegan-trail",
+		"name": {
+			"original": "백두대간"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Cheonwangbong, Jirisan",
+			"coords": [
+				127.7306,
+				35.337
+			]
+		},
+		"end": {
+			"name": "Jinburyeong pass, Seoraksan",
+			"coords": [
+				128.3714,
+				38.2717
+			]
+		},
+		"countries": [
+			"KR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 670,
+		"lengthSource": "official",
+		"days": {
+			"min": 27,
+			"max": 34
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			127.489,
+			35.2952,
+			129.0185,
+			38.2687
+		],
+		"crosses": [
+			"jirisan-dulle-gil"
+		],
+		"nearby": []
+	},
+	{
+		"slug": "seoul-trail",
+		"name": {
+			"original": "서울둘레길"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Dobongsan Station (Seoul Changpowon)",
+			"coords": [
+				127.046,
+				37.6895
+			]
+		},
+		"end": {
+			"name": "Dobongsan Station (Seoul Changpowon)",
+			"coords": [
+				127.046,
+				37.6895
+			]
+		},
+		"countries": [
+			"KR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 156.5,
+		"lengthSource": "official",
+		"days": {
+			"min": 6,
+			"max": 8
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			126.8566,
+			37.4338,
+			127.168,
+			37.6898
+		],
+		"crosses": [],
+		"nearby": []
+	},
+	{
+		"slug": "jirisan-dulle-gil",
+		"name": {
+			"original": "지리산둘레길"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Jucheon, Namwon",
+			"coords": [
+				127.4462,
+				35.3908
+			]
+		},
+		"end": {
+			"name": "Jucheon, Namwon",
+			"coords": [
+				127.4462,
+				35.3908
+			]
+		},
+		"countries": [
+			"KR"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 300,
+		"lengthSource": "official",
+		"days": {
+			"min": 12,
+			"max": 15
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			127.4237,
+			35.0716,
+			127.9149,
+			35.4593
+		],
+		"crosses": [
+			"baekdudaegan-trail"
+		],
+		"nearby": []
+	},
+	{
 		"slug": "nakasendo",
 		"name": {
 			"original": "中山道"
@@ -3395,6 +8178,52 @@
 			34.9727,
 			139.7746,
 			36.3722
+		],
+		"crosses": [
+			"kanto-fureai-no-michi"
+		],
+		"nearby": [
+			"takashima-trail"
+		]
+	},
+	{
+		"slug": "batongguan-traversing-trail",
+		"name": {
+			"original": "八通關古道"
+		},
+		"type": "historic",
+		"region": "asia",
+		"start": {
+			"name": "Dongpu",
+			"coords": [
+				120.9276,
+				23.5565
+			]
+		},
+		"end": {
+			"name": "Shanfeng trailhead, Yuli",
+			"coords": [
+				121.233,
+				23.324
+			]
+		},
+		"countries": [
+			"TW"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 120,
+		"lengthSource": "official",
+		"days": {
+			"min": 7,
+			"max": 7
+		},
+		"daysSource": "official",
+		"bbox": [
+			120.9266,
+			23.3257,
+			121.2314,
+			23.5583
 		],
 		"crosses": [],
 		"nearby": []
@@ -3484,7 +8313,8 @@
 			"wilson-trail"
 		],
 		"nearby": [
-			"maclehose-trail"
+			"maclehose-trail",
+			"lantau-trail"
 		]
 	},
 	{
@@ -3618,7 +8448,151 @@
 			"hong-kong-trail",
 			"maclehose-trail"
 		],
+		"nearby": [
+			"lantau-trail"
+		]
+	},
+	{
+		"slug": "kanto-fureai-no-michi",
+		"name": {
+			"original": "関東ふれあいの道"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Umenokidaira, Hachiōji",
+			"coords": [
+				139.253,
+				35.623
+			]
+		},
+		"end": {
+			"name": "Umenokidaira, Hachiōji",
+			"coords": [
+				139.253,
+				35.623
+			]
+		},
+		"countries": [
+			"JP"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 1797,
+		"lengthSource": "official",
+		"days": {
+			"min": 72,
+			"max": 90
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			138.7363,
+			35.1144,
+			140.4944,
+			37.0492
+		],
+		"crosses": [
+			"nakasendo"
+		],
 		"nearby": []
+	},
+	{
+		"slug": "takashima-trail",
+		"name": {
+			"original": "高島トレイル"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Arachigoe, Kunizakai Kogen (Makino)",
+			"coords": [
+				136.0965,
+				35.5354
+			]
+		},
+		"end": {
+			"name": "Kutsuki, Kuwabara-bashi below Mikunidake",
+			"coords": [
+				135.772,
+				35.322
+			]
+		},
+		"countries": [
+			"JP"
+		],
+		"bestSeason": [
+			"may",
+			"jun",
+			"jul",
+			"aug",
+			"sep",
+			"oct",
+			"nov"
+		],
+		"badges": [],
+		"lengthKm": 80,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			135.7644,
+			35.3156,
+			136.0965,
+			35.5407
+		],
+		"crosses": [],
+		"nearby": [
+			"nakasendo"
+		]
+	},
+	{
+		"slug": "lantau-trail",
+		"name": {
+			"original": "鳳凰徑"
+		},
+		"type": "mountain",
+		"region": "asia",
+		"start": {
+			"name": "Mui Wo",
+			"coords": [
+				114.001,
+				22.2646
+			]
+		},
+		"end": {
+			"name": "Mui Wo",
+			"coords": [
+				114.001,
+				22.2646
+			]
+		},
+		"countries": [
+			"HK"
+		],
+		"bestSeason": [],
+		"badges": [],
+		"lengthKm": 70,
+		"lengthSource": "official",
+		"days": {
+			"min": 3,
+			"max": 4
+		},
+		"daysSource": "estimate",
+		"bbox": [
+			113.8435,
+			22.2027,
+			114.0094,
+			22.2656
+		],
+		"crosses": [],
+		"nearby": [
+			"maclehose-trail",
+			"hong-kong-trail",
+			"wilson-trail"
+		]
 	},
 	{
 		"slug": "maclehose-trail",
@@ -3663,7 +8637,8 @@
 			"wilson-trail"
 		],
 		"nearby": [
-			"hong-kong-trail"
+			"hong-kong-trail",
+			"lantau-trail"
 		]
 	}
 ]

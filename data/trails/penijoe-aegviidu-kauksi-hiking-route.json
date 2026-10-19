@@ -1,0 +1,33 @@
+{
+	"slug": "penijoe-aegviidu-kauksi-hiking-route",
+	"name": {
+		"original": "Penijõe-Aegviidu-Kauksi matkatee"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Penijõe manor, Matsalu National Park",
+		"coords": [23.8022, 58.7406]
+	},
+	"end": {
+		"name": "Kauksi, Lake Peipus",
+		"coords": [27.227, 59.006]
+	},
+	"countries": ["EE"],
+	"lengthKm": 613,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://rmk.ee/en/exploring-nature/hiking-route/penijoe-aegviidu-kauksi-613-km-2/",
+	"sources": [
+		"https://rmk.ee/en/exploring-nature/hiking-route/penijoe-aegviidu-kauksi-613-km-2/"
+	],
+	"photo": {
+		"commons": "File:Jõuküla järv.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13185554]
+	}
+}

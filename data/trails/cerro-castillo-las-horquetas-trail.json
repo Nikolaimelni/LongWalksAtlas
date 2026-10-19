@@ -1,0 +1,37 @@
+{
+	"slug": "cerro-castillo-las-horquetas-trail",
+	"name": {
+		"original": "Sendero Las Horquetas"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Las Horquetas",
+		"coords": [-71.9547, -45.981]
+	},
+	"end": {
+		"name": "Villa Cerro Castillo sector",
+		"coords": [-72.2178, -46.1183]
+	},
+	"countries": ["CL"],
+	"lengthKm": 53.5,
+	"days": {
+		"min": 3,
+		"max": 5
+	},
+	"bestSeason": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.conaf.cl/parques/parque-nacional-cerro-castillo/",
+	"sources": [
+		"https://www.conaf.cl/parques/parque-nacional-cerro-castillo/",
+		"https://chile.travel/blog/trekking-en-cerro-castillo-imperdibles-de-este-paraiso-natural/"
+	],
+	"photo": {
+		"commons": "File:Laguna Cerro Castillo.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11906015]
+	}
+}

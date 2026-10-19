@@ -1,0 +1,31 @@
+{
+	"slug": "malerweg",
+	"name": {
+		"original": "Malerweg"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Liebethal (Pirna)",
+		"coords": [13.9583, 50.9965]
+	},
+	"end": {
+		"name": "Pirna",
+		"coords": [13.941, 50.962]
+	},
+	"countries": ["DE"],
+	"lengthKm": 116,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.saechsische-schweiz.de/malerweg",
+	"sources": ["https://www.saechsische-schweiz.de/malerweg"],
+	"photo": {
+		"commons": "File:20220906.Basteiblicke.-048.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [114289]
+	}
+}

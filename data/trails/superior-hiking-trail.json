@@ -1,0 +1,34 @@
+{
+	"slug": "superior-hiking-trail",
+	"name": {
+		"original": "Superior Hiking Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Northern terminus, 270 Degree Overlook",
+		"coords": [-89.9336, 47.999]
+	},
+	"end": {
+		"name": "Southern terminus, Duluth",
+		"coords": [-92.278, 46.656]
+	},
+	"countries": ["US"],
+	"lengthKm": 483,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://superiorhiking.org/",
+	"sources": [
+		"https://superiorhiking.org/",
+		"https://www.fs.usda.gov/r09/superior/recreation/groups/superior-hiking-trail"
+	],
+	"photo": {
+		"commons": "File:Lake Agnes on The Superior Hiking Trail in Lutsen, Minnesota.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1612587]
+	}
+}

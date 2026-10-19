@@ -1,0 +1,36 @@
+{
+	"slug": "hump-ridge-track",
+	"name": {
+		"original": "Hump Ridge Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Rarakau car park, near Tuatapere",
+		"coords": [167.4728, -46.1465]
+	},
+	"end": {
+		"name": "Rarakau car park, near Tuatapere",
+		"coords": [167.4728, -46.1465]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 61.5,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/hump-ridge-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/hump-ridge-track/"
+	],
+	"photo": {
+		"commons": "File:Boardwalk up near Okaka hut looking to Lake Poteriteri.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11620232]
+	}
+}

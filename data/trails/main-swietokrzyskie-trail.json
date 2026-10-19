@@ -1,0 +1,33 @@
+{
+	"slug": "main-swietokrzyskie-trail",
+	"name": {
+		"original": "Główny Szlak Świętokrzyski im. Edmunda Massalskiego"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Kuźniaki",
+		"coords": [20.368, 50.972]
+	},
+	"end": {
+		"name": "Gołoszyce",
+		"coords": [21.2934, 50.799]
+	},
+	"countries": ["PL"],
+	"lengthKm": 105,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.swietokrzyskipn.org.pl/turystyka/szlaki-piesze/czerwony/?lang=en",
+	"sources": [
+		"https://www.swietokrzyskipn.org.pl/turystyka/szlaki-piesze/czerwony/?lang=en"
+	],
+	"photo": {
+		"commons": "File:PL-SK Świętokrzyski Park Narodowy, gołoborze 2018-08-22--12-54-25-002.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3372500]
+	}
+}

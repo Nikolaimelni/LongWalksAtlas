@@ -1,0 +1,31 @@
+{
+	"slug": "benton-mackaye-trail",
+	"name": {
+		"original": "Benton MacKaye Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Springer Mountain, Georgia",
+		"coords": [-84.1939, 34.6268]
+	},
+	"end": {
+		"name": "Davenport Gap",
+		"coords": [-83.1105, 35.7637]
+	},
+	"countries": ["US"],
+	"lengthKm": 463,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://bmta.org/",
+	"sources": ["https://bmta.org/"],
+	"photo": {
+		"commons": "File:Lake View Drive-Tuckasegee River.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1675439]
+	}
+}

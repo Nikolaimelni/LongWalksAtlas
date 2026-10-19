@@ -1,0 +1,36 @@
+{
+	"slug": "trans-catalina-trail",
+	"name": {
+		"original": "Trans-Catalina Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Avalon",
+		"coords": [-118.3245, 33.3429]
+	},
+	"end": {
+		"name": "Starlight Beach, near Parsons Landing",
+		"coords": [-118.5541, 33.4728]
+	},
+	"countries": ["US"],
+	"lengthKm": 62,
+	"days": {
+		"min": 3,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://catalinaconservancy.org/recreation/trans-catalina-trail/",
+	"sources": [
+		"https://catalinaconservancy.org/recreation/trans-catalina-trail/"
+	],
+	"photo": {
+		"commons": "File:Parsons Landing (31892012092).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [12550621]
+	}
+}

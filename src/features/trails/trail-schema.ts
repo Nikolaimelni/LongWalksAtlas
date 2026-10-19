@@ -37,7 +37,8 @@ const regionBounds = {
 	europe: { west: -32, south: 27, east: 45, north: 72 },
 	"middle-east-caucasus": { west: 25, south: 12, east: 63, north: 45 },
 	asia: { west: 60, south: -11, east: 150, north: 56 },
-	africa: { west: -26, south: -36, east: 52, north: 38 },
+	// east of Madagascar for Réunion and Mauritius
+	africa: { west: -26, south: -36, east: 58, north: 38 },
 	americas: { west: -170, south: -56, east: -34, north: 72 },
 	oceania: { west: 110, south: -48, east: 180, north: 0 },
 } as const;

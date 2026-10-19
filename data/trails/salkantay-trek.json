@@ -1,0 +1,36 @@
+{
+	"slug": "salkantay-trek",
+	"name": {
+		"original": "Camino del Salkantay"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Mollepata",
+		"coords": [-72.5309, -13.5005]
+	},
+	"end": {
+		"name": "Machu Picchu Pueblo (Aguas Calientes)",
+		"coords": [-72.5254, -13.1547]
+	},
+	"countries": ["PE"],
+	"lengthKm": null,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.peru.travel/experiences/trekking-routes-tour",
+	"sources": [
+		"https://www.peru.travel/es/inspirate/4-rutas-para-hacer-trekking-en-cusco"
+	],
+	"photo": {
+		"commons": "File:Salkantay trek.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2376237]
+	}
+}

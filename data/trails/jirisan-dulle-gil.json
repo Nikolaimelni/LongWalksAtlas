@@ -1,0 +1,33 @@
+{
+	"slug": "jirisan-dulle-gil",
+	"name": {
+		"original": "지리산둘레길"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Jucheon, Namwon",
+		"coords": [127.4462, 35.3908]
+	},
+	"end": {
+		"name": "Jucheon, Namwon",
+		"coords": [127.4462, 35.3908]
+	},
+	"countries": ["KR"],
+	"lengthKm": 300,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.durunubi.kr/4-1-1-walk-Road-view.do?pageNum=&theme_mng=T_THEME_MNG0000011152",
+	"sources": [
+		"https://www.durunubi.kr/4-1-1-walk-Road-view.do?pageNum=&theme_mng=T_THEME_MNG0000011152"
+	],
+	"photo": {
+		"commons": "File:최참판댁 앞 전경.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [15691517]
+	}
+}

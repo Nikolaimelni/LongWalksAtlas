@@ -1,0 +1,31 @@
+{
+	"slug": "everest-base-camp-trek",
+	"name": {
+		"original": "Everest Base Camp Trek"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Lukla",
+		"coords": [86.7321, 27.6879]
+	},
+	"end": {
+		"name": "Everest Base Camp",
+		"coords": [86.857, 28.004]
+	},
+	"countries": ["NP"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://ntb.gov.np/everest-base-camp",
+	"sources": ["https://ntb.gov.np/everest-base-camp"],
+	"photo": {
+		"commons": "File:The way for the mountains.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1189003]
+	}
+}

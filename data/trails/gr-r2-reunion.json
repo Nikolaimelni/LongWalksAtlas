@@ -1,0 +1,37 @@
+{
+	"slug": "gr-r2-reunion",
+	"name": {
+		"original": "GR R2 Grande traversée de La Réunion"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "La Providence, Saint-Denis",
+		"coords": [55.456, -20.893]
+	},
+	"end": {
+		"name": "Basse-Vallée, Saint-Philippe",
+		"coords": [55.717, -21.366]
+	},
+	"countries": ["RE"],
+	"lengthKm": 130,
+	"days": {
+		"min": 9,
+		"max": 10
+	},
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://www.mongr.fr/trouver-prochaine-randonnee/itineraire/gr-r2-la-grande-traversee-de-l-ile-de-la-reunion",
+	"sources": [
+		"https://www.mongr.fr/trouver-prochaine-randonnee/itineraire/gr-r2-la-grande-traversee-de-l-ile-de-la-reunion",
+		"https://www.ffrandonnee.fr/s-informer/actualites/la-reunion-la-traversee-par-le-gr-r2"
+	],
+	"photo": {
+		"commons": "File:Wooden ladder @ GR R1 GR R2 Marla.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7238256]
+	}
+}

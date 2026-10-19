@@ -1,0 +1,31 @@
+{
+	"slug": "kokoda-track",
+	"name": {
+		"original": "Kokoda Track"
+	},
+	"type": "historic",
+	"region": "oceania",
+	"start": {
+		"name": "Owers' Corner",
+		"coords": [147.495, -9.356]
+	},
+	"end": {
+		"name": "Kokoda",
+		"coords": [147.738, -8.8826]
+	},
+	"countries": ["PG"],
+	"lengthKm": 96,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.kokodatrackauthority.org/",
+	"sources": ["https://www.kokodatrackauthority.org/"],
+	"photo": {
+		"commons": "File:Kokoda track Papua New Guinea.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7578789]
+	}
+}

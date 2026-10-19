@@ -1,0 +1,36 @@
+{
+	"slug": "klipspringer-hiking-trail",
+	"name": {
+		"original": "Klipspringer Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Augrabies Falls National Park",
+		"coords": [20.2978, -28.583]
+	},
+	"end": {
+		"name": "Augrabies Falls National Park",
+		"coords": [20.2978, -28.583]
+	},
+	"countries": ["ZA"],
+	"lengthKm": 35.8,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+	"badges": [],
+	"officialUrl": "https://www.sanparks.org/parks/augrabies-falls/what-to-do/activities/hikes-walks-trails",
+	"sources": [
+		"https://www.sanparks.org/parks/augrabies-falls/what-to-do/activities/hikes-walks-trails"
+	],
+	"photo": {
+		"commons": "File:Augrabie, Waterfalls, South Africa.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5364735]
+	}
+}

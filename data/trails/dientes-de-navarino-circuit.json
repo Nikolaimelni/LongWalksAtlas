@@ -1,0 +1,34 @@
+{
+	"slug": "dientes-de-navarino-circuit",
+	"name": {
+		"original": "Circuito Dientes de Navarino"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Río Róbalo bridge, Puerto Williams",
+		"coords": [-67.6401, -54.9482]
+	},
+	"end": {
+		"name": "Bahía Virginia",
+		"coords": [-67.7041, -54.9423]
+	},
+	"countries": ["CL"],
+	"lengthKm": null,
+	"days": {
+		"min": 4,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://chile.travel/atractivos/dientes-de-navarino/",
+	"sources": ["https://chile.travel/atractivos/dientes-de-navarino/"],
+	"photo": {
+		"commons": "File:Puerto Williams 04389.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2683305]
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"slug": "gr-r1-tour-du-piton-des-neiges",
+	"name": {
+		"original": "GR R1 Tour du Piton des Neiges"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Hell-Bourg",
+		"coords": [55.5208, -21.0646]
+	},
+	"end": {
+		"name": "Hell-Bourg",
+		"coords": [55.5208, -21.0646]
+	},
+	"countries": ["RE"],
+	"lengthKm": 58.9,
+	"days": null,
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://www.mongr.fr/trouver-prochaine-randonnee/itineraire/gr-r1-tour-du-piton-des-neiges",
+	"sources": [
+		"https://www.mongr.fr/trouver-prochaine-randonnee/itineraire/gr-r1-tour-du-piton-des-neiges",
+		"https://fr.wikipedia.org/wiki/Sentier_de_grande_randonn%C3%A9e_R1"
+	],
+	"photo": {
+		"commons": "File:Bras de Benjoin waterfall plateau du Petit Matarum @ Mare à Joncs.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7238091]
+	}
+}

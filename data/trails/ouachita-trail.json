@@ -1,0 +1,31 @@
+{
+	"slug": "ouachita-trail",
+	"name": {
+		"original": "Ouachita National Recreation Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Talimena State Park, Oklahoma",
+		"coords": [-94.9515, 34.7835]
+	},
+	"end": {
+		"name": "Pinnacle Mountain State Park, Arkansas",
+		"coords": [-92.48, 34.84]
+	},
+	"countries": ["US"],
+	"lengthKm": 359,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://nrtapplication.org/trails/ouachita-trail",
+	"sources": ["https://nrtapplication.org/trails/ouachita-trail"],
+	"photo": {
+		"commons": "File:Talimena National Scenic Byway November 2016 19 (Sunset Point Vista).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3838499]
+	}
+}

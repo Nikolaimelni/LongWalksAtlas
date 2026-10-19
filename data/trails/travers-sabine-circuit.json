@@ -1,0 +1,37 @@
+{
+	"slug": "travers-sabine-circuit",
+	"name": {
+		"original": "Travers-Sabine Circuit"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "St Arnaud, Lake Rotoiti",
+		"coords": [172.8499, -41.81]
+	},
+	"end": {
+		"name": "St Arnaud, Lake Rotoiti",
+		"coords": [172.8499, -41.81]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 80,
+	"days": {
+		"min": 4,
+		"max": 7
+	},
+	"bestSeason": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+	"badges": [],
+	"officialUrl": "https://doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/things-to-do/tracks/travers-sabine-circuit",
+	"sources": [
+		"https://doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/things-to-do/tracks/travers-sabine-circuit",
+		"https://www.newzealand.com/au/feature/travers-sabine-circuit/"
+	],
+	"photo": {
+		"commons": "File:View of Lake Rotoiti from Kerr Bay in St Arnaud (4672177850).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17722735]
+	}
+}

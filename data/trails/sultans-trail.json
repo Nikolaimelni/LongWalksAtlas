@@ -1,0 +1,34 @@
+{
+	"slug": "sultans-trail",
+	"name": {
+		"original": "Sultans Trail"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Vienna (Nussdorf, Kahlenberger Straße)",
+		"coords": [16.3362, 48.2751]
+	},
+	"end": {
+		"name": "Istanbul (Süleymaniye)",
+		"coords": [28.9639, 41.0163]
+	},
+	"countries": ["AT", "SK", "HU", "HR", "RS", "BG", "TR"],
+	"lengthKm": 2500,
+	"days": {
+		"min": 140,
+		"max": 175
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://sultanstrail.com/",
+	"sources": ["https://sultanstrail.com/"],
+	"photo": {
+		"commons": "File:Wien - Juni 2019 - Kahlenberg auf Wien.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16127693]
+	}
+}

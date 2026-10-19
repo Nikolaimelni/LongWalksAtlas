@@ -1,0 +1,33 @@
+{
+	"slug": "great-plain-blue-trail",
+	"name": {
+		"original": "Alföldi Kéktúra"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Szekszárd",
+		"coords": [18.7062, 46.3474]
+	},
+	"end": {
+		"name": "Sátoraljaújhely",
+		"coords": [21.6574, 48.3862]
+	},
+	"countries": ["HU"],
+	"lengthKm": 869,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://hellohungary.hu/en/active/blue-trail-through-the-alfold-great-plain-region",
+	"sources": [
+		"https://hellohungary.hu/en/active/blue-trail-through-the-alfold-great-plain-region"
+	],
+	"photo": {
+		"commons": "File:Csorge Lake NE part, 2016 Szekszard.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2164968]
+	}
+}

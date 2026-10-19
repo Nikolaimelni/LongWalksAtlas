@@ -1,0 +1,36 @@
+{
+	"slug": "petropolis-teresopolis-traverse",
+	"name": {
+		"original": "Travessia Petrópolis-Teresópolis"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Serra dos Órgãos National Park, Petrópolis headquarters (Bonfim)",
+		"coords": [-43.0942, -22.4628]
+	},
+	"end": {
+		"name": "Serra dos Órgãos National Park, Teresópolis headquarters",
+		"coords": [-42.9854, -22.4495]
+	},
+	"countries": ["BR"],
+	"lengthKm": 30,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-dos-orgaos/guia-do-visitante/guia-do-visitante-1/o-que-fazer/travessia-petropolis-teresopolis",
+	"sources": [
+		"https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-dos-orgaos/guia-do-visitante/guia-do-visitante-1/o-que-fazer/travessia-petropolis-teresopolis"
+	],
+	"photo": {
+		"commons": "File:Travessia Petropolis a Teresopolis - Panoramica.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17580573]
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"slug": "rideau-trail",
+	"name": {
+		"original": "Rideau Trail"
+	},
+	"type": "historic",
+	"region": "americas",
+	"start": {
+		"name": "Confederation Park, Kingston",
+		"coords": [-76.4797, 44.2305]
+	},
+	"end": {
+		"name": "Ottawa Locks, Ottawa",
+		"coords": [-75.6989, 45.4265]
+	},
+	"countries": ["CA"],
+	"lengthKm": 325,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.rideautrail.org/",
+	"sources": [
+		"https://www.rideautrail.org/about/history/",
+		"https://en.wikipedia.org/wiki/Rideau_Trail"
+	],
+	"photo": {
+		"commons": "File:Lockmaster's House - Detached Lock.JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7675635]
+	}
+}

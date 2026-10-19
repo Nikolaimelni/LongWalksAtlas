@@ -1,0 +1,31 @@
+{
+	"slug": "high-coast-trail",
+	"name": {
+		"original": "Höga Kusten-leden"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Hornöberget, High Coast Bridge",
+		"coords": [17.9517, 62.8039]
+	},
+	"end": {
+		"name": "Örnsköldsvik",
+		"coords": [18.715, 63.29]
+	},
+	"countries": ["SE"],
+	"lengthKm": 128.6,
+	"days": null,
+	"bestSeason": [],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.hogakusten.com/sv/media/265",
+	"sources": ["https://www.hogakusten.com/sv/media/265"],
+	"photo": {
+		"commons": "File:Skuleberget 2016 11.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1730468]
+	}
+}

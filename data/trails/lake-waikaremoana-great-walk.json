@@ -1,0 +1,36 @@
+{
+	"slug": "lake-waikaremoana-great-walk",
+	"name": {
+		"original": "Lake Waikaremoana Great Walk"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Onepoto",
+		"coords": [177.1209, -38.8]
+	},
+	"end": {
+		"name": "Hopuruahine Landing",
+		"coords": [177.0656, -38.7008]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 44.2,
+	"days": {
+		"min": 3,
+		"max": 4
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/east-coast/places/te-urewera/things-to-do/tracks/lake-waikaremoana-great-walk/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/east-coast/places/te-urewera/things-to-do/tracks/lake-waikaremoana-great-walk/"
+	],
+	"photo": {
+		"commons": "File:Lake Waikaremoana 01.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5987155]
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"slug": "oandu-ikla-hiking-route",
+	"name": {
+		"original": "Oandu-Aegviidu-Ikla matkatee"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "RMK Oandu visitor centre",
+		"coords": [26.0965, 59.5625]
+	},
+	"end": {
+		"name": "Ikla, Latvian border",
+		"coords": [24.3612, 57.8745]
+	},
+	"countries": ["EE"],
+	"lengthKm": 370,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://rmk.ee/en/exploring-nature/hiking-route/oandu-aegviidu-ikla-370-km-2/",
+	"sources": [
+		"https://rmk.ee/en/exploring-nature/hiking-route/oandu-aegviidu-ikla-370-km-2/"
+	],
+	"photo": {
+		"commons": "File:SuruBog.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13185696]
+	}
+}

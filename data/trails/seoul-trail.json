@@ -1,0 +1,35 @@
+{
+	"slug": "seoul-trail",
+	"name": {
+		"original": "서울둘레길"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Dobongsan Station (Seoul Changpowon)",
+		"coords": [127.046, 37.6895]
+	},
+	"end": {
+		"name": "Dobongsan Station (Seoul Changpowon)",
+		"coords": [127.046, 37.6895]
+	},
+	"countries": ["KR"],
+	"lengthKm": 156.5,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://gil.seoul.go.kr/",
+	"sources": [
+		"https://gil.seoul.go.kr/",
+		"https://www.koreajoongangdaily.com/korea/seoul-trail-hike-gives-international-students-taste-of-citys-greener-side/10674722",
+		"https://mediahub.seoul.go.kr/archives/1018602"
+	],
+	"photo": {
+		"commons": "File:DoBongSan (Mt. DoBongSan) in Spring.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10997622]
+	}
+}

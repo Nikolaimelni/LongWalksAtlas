@@ -1,0 +1,37 @@
+{
+	"slug": "tatra-magistrala",
+	"name": {
+		"original": "Tatranská magistrála"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Ždiar",
+		"coords": [20.26, 49.271]
+	},
+	"end": {
+		"name": "Podbanské",
+		"coords": [19.91, 49.14]
+	},
+	"countries": ["SK"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://tatry.sk/en/tatranska-magistrala-part-one",
+	"sources": [
+		"https://tatry.sk/en/tatranska-magistrala-part-one",
+		"https://tatry.sk/en/tatranska-magistrala-part-two",
+		"https://tatry.sk/en/tatranska-magistrala-part-three",
+		"https://tatry.sk/en/tatranska-magistrala-part-four",
+		"https://sita.sk/nasvidiek/turisti-ignoruju-uzaveru-casti-useku-tatranskej-magistraly-sprava-tanap-u-uz-rokuje-o-sanacii/"
+	],
+	"photo": {
+		"commons": "File:Mengusovská dolina, Vysoké Tatry (37).JPG"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13774955]
+	}
+}

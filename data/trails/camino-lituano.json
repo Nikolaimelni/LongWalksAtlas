@@ -1,0 +1,34 @@
+{
+	"slug": "camino-lituano",
+	"name": {
+		"original": "Camino Lituano"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Žagarė",
+		"coords": [23.2646, 56.3622]
+	},
+	"end": {
+		"name": "Sejny",
+		"coords": [23.346, 54.109]
+	},
+	"countries": ["LT", "PL"],
+	"lengthKm": 500.8,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://caminolituano.com/camino-lituano/",
+	"sources": [
+		"https://caminolituano.com/camino-lituano/",
+		"https://caminolituano.com/"
+	],
+	"photo": {
+		"commons": "File:Punios sen., Lithuania - panoramio (12).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [12405056]
+	}
+}

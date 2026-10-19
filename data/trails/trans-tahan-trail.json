@@ -1,0 +1,36 @@
+{
+	"slug": "trans-tahan-trail",
+	"name": {
+		"original": "Kuala Tahan - Gunung Tahan - Kuala Juram"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Kuala Tahan",
+		"coords": [102.4001, 4.3854]
+	},
+	"end": {
+		"name": "Kuala Juram (Merapoh)",
+		"coords": [102.14, 4.6475]
+	},
+	"countries": ["MY"],
+	"lengthKm": null,
+	"days": {
+		"min": 7,
+		"max": 7
+	},
+	"bestSeason": ["mar", "apr", "may", "jun", "jul", "aug"],
+	"badges": [],
+	"officialUrl": "https://wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/taman-negara-pahang-kuala-tahan",
+	"sources": [
+		"https://wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/taman-negara-pahang-kuala-tahan"
+	],
+	"photo": {
+		"commons": "File:Gunung Tahan. Snapped from Gunung Tangga Lima Belas.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17919247]
+	}
+}

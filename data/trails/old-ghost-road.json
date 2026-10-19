@@ -1,0 +1,36 @@
+{
+	"slug": "old-ghost-road",
+	"name": {
+		"original": "Old Ghost Road"
+	},
+	"type": "historic",
+	"region": "oceania",
+	"start": {
+		"name": "Lyell",
+		"coords": [172.05, -41.795]
+	},
+	"end": {
+		"name": "Seddonville",
+		"coords": [172, -41.56]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 85,
+	"days": {
+		"min": 2,
+		"max": 4
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.newzealand.com/au/feature/the-old-ghost-road-cycle-trail/",
+	"sources": [
+		"https://www.newzealand.com/au/feature/the-old-ghost-road-cycle-trail/"
+	],
+	"photo": {
+		"commons": "File:Deep Creek (Lyell Creek tributary) 16.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [14305597]
+	}
+}

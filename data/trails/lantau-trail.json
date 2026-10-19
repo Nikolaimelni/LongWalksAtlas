@@ -1,0 +1,37 @@
+{
+	"slug": "lantau-trail",
+	"name": {
+		"original": "鳳凰徑"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Mui Wo",
+		"coords": [114.001, 22.2646]
+	},
+	"end": {
+		"name": "Mui Wo",
+		"coords": [114.001, 22.2646]
+	},
+	"countries": ["HK"],
+	"lengthKm": 70,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.afcd.gov.hk/english/country/cou_vis/cou_vis_cou/cou_vis_cou_ls/cou_vis_cou_ls.html",
+	"sources": [
+		"https://www.afcd.gov.hk/english/country/cou_vis/cou_vis_cou/cou_vis_cou_ls/cou_vis_cou_ls.html",
+		"https://en.wikipedia.org/wiki/Lantau_Trail"
+	],
+	"photo": {
+		"commons": "File:Sunset Hill view 201511.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [
+			11816212, 11816211, 11816210, 11816209, 11816208, 11816207, 11816206,
+			11816205, 11816204, 11816203, 11816202, 11816201
+		]
+	}
+}

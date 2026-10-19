@@ -1,0 +1,34 @@
+{
+	"slug": "main-sudetes-trail",
+	"name": {
+		"original": "Główny Szlak Sudecki"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Świeradów-Zdrój",
+		"coords": [15.3355, 50.9089]
+	},
+	"end": {
+		"name": "Prudnik",
+		"coords": [17.5785, 50.3213]
+	},
+	"countries": ["PL"],
+	"lengthKm": 428.7,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://cotg.pttk.pl/odznaki/gss/punktacja/",
+	"sources": [
+		"https://cotg.pttk.pl/odznaki/gss/punktacja/",
+		"https://dolnyslask.travel/en/atrakcje/przejdz-glowny-szlak-sudecki"
+	],
+	"photo": {
+		"commons": "File:Główny Szlak Sudecki - panoramio (19).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [951694]
+	}
+}

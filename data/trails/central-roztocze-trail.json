@@ -1,0 +1,37 @@
+{
+	"slug": "central-roztocze-trail",
+	"name": {
+		"original": "Centralny Szlak Roztocza"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Szastarka",
+		"coords": [22.317, 50.858]
+	},
+	"end": {
+		"name": "Horyniec-Zdrój",
+		"coords": [23.3565, 50.1947]
+	},
+	"countries": ["PL"],
+	"lengthKm": 195,
+	"days": {
+		"min": 5,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.roztoczetravel.pl/dlaczego-na-roztocze/4-szlaki-piesze-roztocza",
+	"sources": [
+		"https://www.roztoczetravel.pl/dlaczego-na-roztocze/4-szlaki-piesze-roztocza",
+		"https://radio.lublin.pl/2024/05/szlak-pieszy-przez-lubelszczyzne-jednym-z-najpiekniejszych-w-polsce-zdjecia"
+	],
+	"photo": {
+		"commons": "File:Nowe Brusno, Cerkiew św. Paraskewy w Nowym Bruśnie.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2204530]
+	}
+}

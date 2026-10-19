@@ -1,0 +1,38 @@
+{
+	"slug": "jeinimeni-aviles-traverse",
+	"name": {
+		"original": "Travesía Jeinimeni-Avilés"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Jeinimeni sector",
+		"coords": [-72.0116, -46.8383]
+	},
+	"end": {
+		"name": "Casa de Piedra, Valle Chacabuco",
+		"coords": [-72.1907, -47.0526]
+	},
+	"countries": ["CL"],
+	"lengthKm": null,
+	"days": {
+		"min": 3,
+		"max": 4
+	},
+	"bestSeason": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+	"badges": [],
+	"officialUrl": "https://www.rutadelosparques.org/en/parque-nacional-patagonia/",
+	"sources": [
+		"https://www.rutadelosparques.org/en/parque-nacional-patagonia/",
+		"https://www.conaf.cl/parques/parque-nacional-patagonia/",
+		"https://andeshandbook.org/en/senderismo/ruta/668/Valle_del_Aviles"
+	],
+	"photo": {
+		"commons": "File:Valle de Avilés Parque Nacional Patagonia.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [17983029]
+	}
+}

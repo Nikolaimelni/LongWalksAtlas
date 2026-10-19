@@ -1,0 +1,34 @@
+{
+	"slug": "drumul-maramuresului",
+	"name": {
+		"original": "Drumul Maramureșului"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Baia Mare",
+		"coords": [23.568, 47.657]
+	},
+	"end": {
+		"name": "Baia Mare",
+		"coords": [23.568, 47.657]
+	},
+	"countries": ["RO"],
+	"lengthKm": 702,
+	"days": {
+		"min": 30,
+		"max": 31
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.drumulmaramuresului.ro/",
+	"sources": ["https://www.drumulmaramuresului.ro/"],
+	"photo": {
+		"commons": "File:Meadows at sunset, with Creasta Cocoșului in the background, Breb, Ocna Șugatag, 2017.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13075143]
+	}
+}

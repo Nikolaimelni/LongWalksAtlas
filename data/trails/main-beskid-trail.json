@@ -1,0 +1,37 @@
+{
+	"slug": "main-beskid-trail",
+	"name": {
+		"original": "Główny Szlak Beskidzki"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Ustroń",
+		"coords": [18.8105, 49.7213]
+	},
+	"end": {
+		"name": "Wołosate",
+		"coords": [22.6834, 49.0653]
+	},
+	"countries": ["PL"],
+	"lengthKm": 500,
+	"days": {
+		"min": 21,
+		"max": 28
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://visitmalopolska.pl/en/-/glowny-szlak-beskidzki",
+	"sources": [
+		"https://visitmalopolska.pl/en/-/glowny-szlak-beskidzki",
+		"https://podkarpackie.travel/en/articles/the-main-beskid-trail-in-podkarpackie--a-step-by-step-guide"
+	],
+	"photo": {
+		"commons": "File:02023 0645 Wetlinska Meadow photographs taken on 2023-08-12.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [545421]
+	}
+}

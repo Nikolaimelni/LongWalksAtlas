@@ -1,0 +1,31 @@
+{
+	"slug": "east-coast-trail",
+	"name": {
+		"original": "East Coast Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Topsail Beach",
+		"coords": [-52.92, 47.542]
+	},
+	"end": {
+		"name": "Cappahayden",
+		"coords": [-52.958, 46.861]
+	},
+	"countries": ["CA"],
+	"lengthKm": 336,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.eastcoasttrail.com/",
+	"sources": ["https://www.eastcoasttrail.com/"],
+	"photo": {
+		"commons": "File:Seal cove.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2199386]
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"slug": "swellendam-hiking-trail",
+	"name": {
+		"original": "Swellendam Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Marloth Nature Reserve office",
+		"coords": [20.4447, -33.9996]
+	},
+	"end": {
+		"name": "Marloth Nature Reserve office",
+		"coords": [20.4447, -33.9996]
+	},
+	"countries": ["ZA"],
+	"lengthKm": 58.5,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": ["sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://capenature.co.za/activities/hiking-and-walking-marloth-nature-reserve",
+	"sources": [
+		"https://www.capenature.co.za/uploads/files/Resources/Swellendam-Multiday-Hike-April-2024.pdf"
+	],
+	"photo": {
+		"commons": "File:Langeberg Mountains (32474023310).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7836874]
+	}
+}

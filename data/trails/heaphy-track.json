@@ -1,0 +1,36 @@
+{
+	"slug": "heaphy-track",
+	"name": {
+		"original": "Heaphy Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Brown Hut, Golden Bay",
+		"coords": [172.4492, -40.8478]
+	},
+	"end": {
+		"name": "Kohaihai, West Coast",
+		"coords": [172.1024, -41.1094]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 78.4,
+	"days": {
+		"min": 4,
+		"max": 6
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/"
+	],
+	"photo": {
+		"commons": "File:HeaphyRiver.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1385145]
+	}
+}

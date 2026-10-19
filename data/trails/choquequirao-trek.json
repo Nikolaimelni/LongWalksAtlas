@@ -1,0 +1,36 @@
+{
+	"slug": "choquequirao-trek",
+	"name": {
+		"original": "Caminata a Choquequirao"
+	},
+	"type": "historic",
+	"region": "americas",
+	"start": {
+		"name": "Cachora",
+		"coords": [-72.8105, -13.5012]
+	},
+	"end": {
+		"name": "Choquequirao archaeological site",
+		"coords": [-72.8626, -13.3899]
+	},
+	"countries": ["PE"],
+	"lengthKm": 32,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.peru.travel/attractions/choquequirao",
+	"sources": [
+		"https://www.peru.travel/es/inspirate/4-rutas-para-hacer-trekking-en-cusco"
+	],
+	"photo": {
+		"commons": "File:Camino hacia Choquequirao 03.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2072730]
+	}
+}

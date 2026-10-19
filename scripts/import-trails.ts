@@ -112,16 +112,24 @@ async function readJson<T>(file: string, schema: z.ZodType<T>): Promise<T> {
 }
 
 async function main() {
+	// Each collection run keeps its own pair of files, e.g. --run new-trails reads
+	// new-trails.json and new-trails-fixes.json.
 	const { values } = parseArgs({
-		options: { skip: { type: "string", default: "" } },
+		options: {
+			skip: { type: "string", default: "" },
+			run: { type: "string" },
+		},
 	});
 	const skip = new Set(values.skip.split(",").filter(Boolean));
 
 	const { trails } = await readJson(
-		join(importDir, "trails.json"),
+		join(importDir, values.run ? `${values.run}.json` : "trails.json"),
 		collectedSchema,
 	);
-	const fixesFile = join(importDir, "fixes.json");
+	const fixesFile = join(
+		importDir,
+		values.run ? `${values.run}-fixes.json` : "fixes.json",
+	);
 	const fixes = existsSync(fixesFile)
 		? await readJson(fixesFile, fixesSchema)
 		: {};

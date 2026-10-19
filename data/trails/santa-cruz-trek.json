@@ -1,0 +1,33 @@
+{
+	"slug": "santa-cruz-trek",
+	"name": {
+		"original": "Circuito de trekking Santa Cruz"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Cashapampa",
+		"coords": [-77.775, -8.955]
+	},
+	"end": {
+		"name": "Vaquería",
+		"coords": [-77.525, -9]
+	},
+	"countries": ["PE"],
+	"lengthKm": 50,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://andina.pe/ingles/noticia-fiestas-patrias-consejos-para-disfrutar-de-visita-al-parque-nacional-huascaran-718738.aspx",
+	"sources": [
+		"https://andina.pe/ingles/noticia-fiestas-patrias-consejos-para-disfrutar-de-visita-al-parque-nacional-huascaran-718738.aspx"
+	],
+	"photo": {
+		"commons": "File:Laguna Taullicocha desde Punta Unión 1.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1732163]
+	}
+}

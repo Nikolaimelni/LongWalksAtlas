@@ -1,0 +1,37 @@
+{
+	"slug": "kom-emine",
+	"name": {
+		"original": "Ком-Емине"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Kom Peak",
+		"coords": [23.0536, 43.1744]
+	},
+	"end": {
+		"name": "Cape Emine",
+		"coords": [27.9, 42.7]
+	},
+	"countries": ["BG"],
+	"lengthKm": null,
+	"days": {
+		"min": 20,
+		"max": 20
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://kom-emine.bg/",
+	"sources": [
+		"https://www.btsbg.org/activen-kalendar/pravila-za-provezhdane-na-nacionalniya-turisticheski-pohod-kom-emine-2019",
+		"https://en.wikipedia.org/wiki/Kom%E2%80%93Emine"
+	],
+	"photo": {
+		"commons": "File:Нос Емине.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [254283]
+	}
+}

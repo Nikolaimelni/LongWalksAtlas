@@ -1,0 +1,34 @@
+{
+	"slug": "forest-trail",
+	"name": {
+		"original": "Miško takas"
+	},
+	"type": "e-path",
+	"region": "europe",
+	"start": {
+		"name": "Polish-Lithuanian border near Lazdijai",
+		"coords": [23.4753, 54.1635]
+	},
+	"end": {
+		"name": "Tallinn",
+		"coords": [24.7454, 59.437]
+	},
+	"countries": ["LT", "LV", "EE"],
+	"lengthKm": 2141,
+	"days": {
+		"min": 102,
+		"max": 114
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://baltictrails.eu/en/forest",
+	"sources": ["https://baltictrails.eu/en/forest"],
+	"photo": {
+		"commons": "File:Buļļezers.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [6519670, 11116577, 11346181]
+	}
+}

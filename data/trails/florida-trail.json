@@ -1,0 +1,34 @@
+{
+	"slug": "florida-trail",
+	"name": {
+		"original": "Florida National Scenic Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Oasis Visitor Center, Big Cypress National Preserve",
+		"coords": [-81.0335, 25.8566]
+	},
+	"end": {
+		"name": "Fort Pickens, Gulf Islands National Seashore",
+		"coords": [-87.2874, 30.3277]
+	},
+	"countries": ["US"],
+	"lengthKm": 2414,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://home.nps.gov/thingstodo/florida-national-scenic-trail.htm",
+	"sources": [
+		"https://home.nps.gov/thingstodo/florida-national-scenic-trail.htm",
+		"https://floridadep.gov/sites/default/files/Florida%20National%20Scenic%20Trail%20flyer.pdf"
+	],
+	"photo": {
+		"commons": "File:Alapaha River Rise - panoramio.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1163455]
+	}
+}

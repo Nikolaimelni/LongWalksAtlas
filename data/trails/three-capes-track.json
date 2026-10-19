@@ -1,0 +1,37 @@
+{
+	"slug": "three-capes-track",
+	"name": {
+		"original": "Three Capes Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Denmans Cove",
+		"coords": [147.8935, -43.1387]
+	},
+	"end": {
+		"name": "Fortescue Bay",
+		"coords": [147.96, -43.14]
+	},
+	"countries": ["AU"],
+	"lengthKm": 48,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://australia.com/en/places/hobart-and-surrounds/guide-to-tasmanian-walking.html",
+	"sources": [
+		"https://australia.com/en/places/hobart-and-surrounds/guide-to-tasmanian-walking.html"
+	],
+	"photo": {
+		"commons": "File:Cape Pillar.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5693084],
+		"mode": "all-ways"
+	}
+}

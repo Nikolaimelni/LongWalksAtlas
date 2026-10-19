@@ -1,0 +1,34 @@
+{
+	"slug": "anaga-chasna-nature-trail",
+	"name": {
+		"original": "Camino Natural Anaga-Chasna (GR 131)"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "La Esperanza",
+		"coords": [-16.372, 28.448]
+	},
+	"end": {
+		"name": "Arona",
+		"coords": [-16.6817, 28.0982]
+	},
+	"countries": ["ES"],
+	"lengthKm": 93,
+	"days": null,
+	"bestSeason": [],
+	"badges": ["unesco"],
+	"officialUrl": "https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/anaga-chasna/default.aspx",
+	"sources": [
+		"https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/anaga-chasna/default.aspx",
+		"https://servicio.mapama.gob.es/en/desarrollo-rural/temas/caminos-naturales/canarias_en_web_tcm38-420330.pdf"
+	],
+	"photo": {
+		"commons": "File:Tenerife.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1122328]
+	}
+}

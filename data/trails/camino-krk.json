@@ -1,0 +1,37 @@
+{
+	"slug": "camino-krk",
+	"name": {
+		"original": "Camino Krk"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Krk Cathedral, Krk",
+		"coords": [14.574, 45.027]
+	},
+	"end": {
+		"name": "Church of St James the Apostle, Kornić",
+		"coords": [14.593, 45.064]
+	},
+	"countries": ["HR"],
+	"lengthKm": 152,
+	"days": {
+		"min": 7,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://caminocroatia.com/camino-krk/map-stages/",
+	"sources": [
+		"https://caminocroatia.com/camino-krk/map-stages/",
+		"https://caminocroatia.com/camino-krk/"
+	],
+	"photo": {
+		"commons": "File:Hiking trail from Mt. Obzova to Mt. Lipica in Primorje-Gorski Kotar County in Croatia.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13635257]
+	}
+}

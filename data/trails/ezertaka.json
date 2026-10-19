@@ -1,0 +1,35 @@
+{
+	"slug": "ezertaka",
+	"name": {
+		"original": "Ezertaka"
+	},
+	"type": "coastal",
+	"region": "europe",
+	"start": {
+		"name": "Ludza",
+		"coords": [27.719, 56.546]
+	},
+	"end": {
+		"name": "Ludza",
+		"coords": [27.719, 56.546]
+	},
+	"countries": ["LV"],
+	"lengthKm": 1070,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://latgale.travel/ezertaka/",
+	"sources": [
+		"https://latgale.travel/ezertaka/",
+		"https://visit.balvi.lv/en/?p=4414",
+		"https://www.lsm.lv/raksts/dzive--stils/valasprieki/06.06.2022-jauna-latgales-ezeru-taka-jurtakas-un-meztakas-jaunaka-masa.a460119/"
+	],
+	"photo": {
+		"commons": "File:Dūnakļu ezers, Saliena Parish, Latvia.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [13239065]
+	}
+}

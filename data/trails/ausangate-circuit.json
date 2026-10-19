@@ -1,0 +1,33 @@
+{
+	"slug": "ausangate-circuit",
+	"name": {
+		"original": "Circuito del Ausangate"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Tinki",
+		"coords": [-71.3135, -13.6719]
+	},
+	"end": {
+		"name": "Tinki",
+		"coords": [-71.3135, -13.6719]
+	},
+	"countries": ["PE"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.peru.travel/es/inspirate/4-rutas-para-hacer-trekking-en-cusco",
+	"sources": [
+		"https://www.peru.travel/es/inspirate/4-rutas-para-hacer-trekking-en-cusco"
+	],
+	"photo": {
+		"commons": "File:Curious llama on the Ausangate circult 26529224022.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3475867]
+	}
+}

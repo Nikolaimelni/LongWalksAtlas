@@ -1,0 +1,38 @@
+{
+	"slug": "troy-culture-route",
+	"name": {
+		"original": "Troya Kültür Rotası"
+	},
+	"type": "historic",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Troy archaeological site",
+		"coords": [26.2509, 39.955]
+	},
+	"end": {
+		"name": "Assos ancient harbour",
+		"coords": [26.337, 39.488]
+	},
+	"countries": ["TR"],
+	"lengthKm": 120,
+	"days": {
+		"min": 5,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://cultureroutesinturkey.com/?p=30723",
+	"sources": [
+		"https://cultureroutesinturkey.com/?p=30723",
+		"https://www.undp.org/tr/node/37111",
+		"https://www.troycultureroute.com/"
+	],
+	"photo": {
+		"commons": "File:Behramkale -Asoss - panoramio.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16569774]
+	}
+}

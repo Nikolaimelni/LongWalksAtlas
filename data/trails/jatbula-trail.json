@@ -1,0 +1,36 @@
+{
+	"slug": "jatbula-trail",
+	"name": {
+		"original": "Jatbula Trail"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Nitmiluk Gorge",
+		"coords": [132.4236, -14.3113]
+	},
+	"end": {
+		"name": "Leliyn (Edith Falls)",
+		"coords": [132.1931, -14.1789]
+	},
+	"countries": ["AU"],
+	"lengthKm": 62,
+	"days": {
+		"min": 5,
+		"max": 6
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/nitmiluk-national-park-jatbula-trail",
+	"sources": [
+		"https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/nitmiluk-national-park-jatbula-trail"
+	],
+	"photo": {
+		"commons": "File:Nitmilik National Park.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [14531438]
+	}
+}

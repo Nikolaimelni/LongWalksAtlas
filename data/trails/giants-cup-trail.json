@@ -1,0 +1,36 @@
+{
+	"slug": "giants-cup-trail",
+	"name": {
+		"original": "Giant's Cup Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Sani Pass Road trailhead",
+		"coords": [29.4076, -29.6287]
+	},
+	"end": {
+		"name": "Bushman's Nek",
+		"coords": [29.21, -29.848]
+	},
+	"countries": ["ZA"],
+	"lengthKm": null,
+	"days": {
+		"min": 5,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.kznwildlife.com/about-giant-s-cup-trails.html",
+	"sources": [
+		"https://www.sahikes.com/images/hike_maps/EKZNW_Giants_Cup_Trail.pdf"
+	],
+	"photo": {
+		"commons": "File:Castleburn resort - panoramio.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2616770]
+	}
+}

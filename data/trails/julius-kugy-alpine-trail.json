@@ -1,0 +1,31 @@
+{
+	"slug": "julius-kugy-alpine-trail",
+	"name": {
+		"original": "Julius Kugy-Dreiländerweg"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Karawanks ridge near Hochstuhl (Stol)",
+		"coords": [14.1832, 46.4467]
+	},
+	"end": {
+		"name": "Karawanks ridge near Hochstuhl (Stol)",
+		"coords": [14.1832, 46.4467]
+	},
+	"countries": ["AT", "SI", "IT"],
+	"lengthKm": 720,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.julius-kugy-alpine-trail.com/",
+	"sources": ["https://www.julius-kugy-alpine-trail.com/"],
+	"photo": {
+		"commons": "File:View of Kobarid 01.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10909145]
+	}
+}

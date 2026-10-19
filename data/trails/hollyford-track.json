@@ -1,0 +1,36 @@
+{
+	"slug": "hollyford-track",
+	"name": {
+		"original": "Hollyford Track"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Lower Hollyford Road end",
+		"coords": [168.1261, -44.6928]
+	},
+	"end": {
+		"name": "Martins Bay",
+		"coords": [167.9973, -44.3301]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 52.6,
+	"days": {
+		"min": 4,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/hollyford-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/hollyford-track/"
+	],
+	"photo": {
+		"commons": "File:Hollyford Track (9564034975).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7002240]
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"slug": "kanto-fureai-no-michi",
+	"name": {
+		"original": "関東ふれあいの道"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Umenokidaira, Hachiōji",
+		"coords": [139.253, 35.623]
+	},
+	"end": {
+		"name": "Umenokidaira, Hachiōji",
+		"coords": [139.253, 35.623]
+	},
+	"countries": ["JP"],
+	"lengthKm": 1797,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.env.go.jp/nature/nats/shizenhodo/kanto/",
+	"sources": ["https://www.env.go.jp/nature/nats/shizenhodo/kanto/"],
+	"photo": {
+		"commons": "File:Nusuttogari - Miura 03 盗人狩.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7165660]
+	}
+}

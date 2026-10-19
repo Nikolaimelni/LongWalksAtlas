@@ -1,0 +1,31 @@
+{
+	"slug": "high-sierra-trail",
+	"name": {
+		"original": "High Sierra Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Crescent Meadow, Giant Forest",
+		"coords": [-118.7491, 36.5548]
+	},
+	"end": {
+		"name": "Wallace Creek junction, John Muir Trail",
+		"coords": [-118.365, 36.588]
+	},
+	"countries": ["US"],
+	"lengthKm": 79,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.nps.gov/seki/planyourvisit/high-sierra-trail.htm",
+	"sources": ["https://www.nps.gov/seki/planyourvisit/high-sierra-trail.htm"],
+	"photo": {
+		"commons": "File:Kaweah downValley.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1714300]
+	}
+}

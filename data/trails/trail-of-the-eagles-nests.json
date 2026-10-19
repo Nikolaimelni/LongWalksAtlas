@@ -1,0 +1,31 @@
+{
+	"slug": "trail-of-the-eagles-nests",
+	"name": {
+		"original": "Szlak Orlich Gniazd"
+	},
+	"type": "historic",
+	"region": "europe",
+	"start": {
+		"name": "Kraków (Pękowicka Street)",
+		"coords": [19.9054, 50.1214]
+	},
+	"end": {
+		"name": "Częstochowa railway station",
+		"coords": [19.1185, 50.8075]
+	},
+	"countries": ["PL"],
+	"lengthKm": 164,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://slaskie.travel/en-US/Trasy/Pokaz/10801",
+	"sources": ["https://slaskie.travel/en-US/Trasy/Pokaz/10801"],
+	"photo": {
+		"commons": "File:Eagles Nests Trail 34.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1697841]
+	}
+}

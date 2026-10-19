@@ -1,0 +1,31 @@
+{
+	"slug": "national-blue-trail",
+	"name": {
+		"original": "Országos Kéktúra"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Írott-kő",
+		"coords": [16.4334, 47.3523]
+	},
+	"end": {
+		"name": "Hollóháza",
+		"coords": [21.4179, 48.5401]
+	},
+	"countries": ["HU"],
+	"lengthKm": 1183,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.kektura.hu/",
+	"sources": ["https://www.kektura.hu/"],
+	"photo": {
+		"commons": "File:Burok Valley.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [6007494]
+	}
+}

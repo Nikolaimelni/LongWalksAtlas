@@ -1,0 +1,36 @@
+{
+	"slug": "queen-charlotte-track",
+	"name": {
+		"original": "Queen Charlotte Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Meretoto / Ship Cove",
+		"coords": [174.2345, -41.0946]
+	},
+	"end": {
+		"name": "Anakiwa",
+		"coords": [173.92, -41.27]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 73.5,
+	"days": {
+		"min": 3,
+		"max": 5
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/marlborough/places/queen-charlotte-sound-totaranui-area/things-to-do/tracks/queen-charlotte-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/marlborough/places/queen-charlotte-sound-totaranui-area/things-to-do/tracks/queen-charlotte-track/"
+	],
+	"photo": {
+		"commons": "File:NZ030415 Queen Charlotte Sound 01.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8524520]
+	}
+}

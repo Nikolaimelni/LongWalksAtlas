@@ -1,0 +1,36 @@
+{
+	"slug": "gr10-pyrenees",
+	"name": {
+		"original": "GR 10, la grande traversée des Pyrénées"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Hendaye",
+		"coords": [-1.774, 43.373]
+	},
+	"end": {
+		"name": "Banyuls-sur-Mer",
+		"coords": [3.1291, 42.482]
+	},
+	"countries": ["FR"],
+	"lengthKm": 1100,
+	"days": {
+		"min": 30,
+		"max": 45
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://www.ffrandonnee.fr/randonner/sentiers/gr-10-la-grande-traversee-des-pyrenees",
+	"sources": [
+		"https://www.ffrandonnee.fr/randonner/sentiers/gr-10-la-grande-traversee-des-pyrenees"
+	],
+	"photo": {
+		"commons": "File:Etang Majeur de Bassies 04.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7411272]
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"slug": "efeler-way",
+	"name": {
+		"original": "Efeler Yolu"
+	},
+	"type": "historic",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Kavaklıdere, Bornova",
+		"coords": [27.3294, 38.4252]
+	},
+	"end": {
+		"name": "Meryemana, Selçuk",
+		"coords": [27.3333, 37.9118]
+	},
+	"countries": ["TR"],
+	"lengthKm": 500,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.efeleryolu.com/",
+	"sources": ["https://www.efeleryolu.com/"],
+	"photo": {
+		"commons": "File:Şirince - panoramio (1).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16118310]
+	}
+}

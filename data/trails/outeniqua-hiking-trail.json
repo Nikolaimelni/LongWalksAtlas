@@ -1,0 +1,36 @@
+{
+	"slug": "outeniqua-hiking-trail",
+	"name": {
+		"original": "Outeniqua Hiking Trail"
+	},
+	"type": "mountain",
+	"region": "africa",
+	"start": {
+		"name": "Beervlei",
+		"coords": [22.7325, -33.935]
+	},
+	"end": {
+		"name": "Harkerville",
+		"coords": [23.22, -34.045]
+	},
+	"countries": ["ZA"],
+	"lengthKm": null,
+	"days": {
+		"min": 7,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.sanparks.org/parks/garden-route/what-to-do/activities/hikes-walks-trails",
+	"sources": [
+		"https://www.sanparks.org/parks/garden-route/what-to-do/activities/hikes-walks-trails"
+	],
+	"photo": {
+		"commons": "File:Knysna Forest00.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10827587]
+	}
+}

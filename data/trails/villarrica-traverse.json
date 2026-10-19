@@ -1,0 +1,31 @@
+{
+	"slug": "villarrica-traverse",
+	"name": {
+		"original": "Travesía del Villarrica"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Rucapillán sector, above Pucón",
+		"coords": [-71.9629, -39.3927]
+	},
+	"end": {
+		"name": "Puesco sector",
+		"coords": [-71.5665, -39.5425]
+	},
+	"countries": ["CL"],
+	"lengthKm": 46.5,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.conaf.cl/parques/parque-nacional-villarrica/",
+	"sources": ["https://www.conaf.cl/parques/parque-nacional-villarrica/"],
+	"photo": {
+		"commons": "File:Laguna Azul Parque Nacional Villarrica 15.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16759060]
+	}
+}

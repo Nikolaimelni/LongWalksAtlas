@@ -1,0 +1,36 @@
+{
+	"slug": "grampians-peaks-trail",
+	"name": {
+		"original": "Grampians Peaks Trail"
+	},
+	"type": "mountain",
+	"region": "oceania",
+	"start": {
+		"name": "Mount Zero",
+		"coords": [142.3758, -36.8913]
+	},
+	"end": {
+		"name": "Dunkeld",
+		"coords": [142.34, -37.65]
+	},
+	"countries": ["AU"],
+	"lengthKm": 164,
+	"days": {
+		"min": 13,
+		"max": 13
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/things-to-do/grampians-peaks-trail",
+	"sources": [
+		"https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/things-to-do/grampians-peaks-trail"
+	],
+	"photo": {
+		"commons": "File:Grampians Halls Gap from Pinnacle - Nov 2008.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [11370594]
+	}
+}

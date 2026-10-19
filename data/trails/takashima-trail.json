@@ -1,0 +1,34 @@
+{
+	"slug": "takashima-trail",
+	"name": {
+		"original": "高島トレイル"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Arachigoe, Kunizakai Kogen (Makino)",
+		"coords": [136.0965, 35.5354]
+	},
+	"end": {
+		"name": "Kutsuki, Kuwabara-bashi below Mikunidake",
+		"coords": [135.772, 35.322]
+	},
+	"countries": ["JP"],
+	"lengthKm": 80,
+	"days": null,
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://takashima-trail.jp/about",
+	"sources": [
+		"https://takashima-trail.jp/about",
+		"https://takashima-trail.jp/"
+	],
+	"photo": {
+		"commons": "File:Awagara-goe Pass on the border between Shiga and Fukui Prefectures.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16665742]
+	}
+}

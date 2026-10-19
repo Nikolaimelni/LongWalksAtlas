@@ -1,0 +1,34 @@
+{
+	"slug": "baekdudaegan-trail",
+	"name": {
+		"original": "백두대간"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Cheonwangbong, Jirisan",
+		"coords": [127.7306, 35.337]
+	},
+	"end": {
+		"name": "Jinburyeong pass, Seoraksan",
+		"coords": [128.3714, 38.2717]
+	},
+	"countries": ["KR"],
+	"lengthKm": 670,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.data.go.kr/biz/dcat/metadata/15098180.do",
+	"sources": [
+		"https://www.data.go.kr/biz/dcat/metadata/15098180.do",
+		"https://www.koreatimes.co.kr/amp/lifestyle/travel-food/20071025/rediscovering-koreas-spine"
+	],
+	"photo": {
+		"commons": "File:청옥~두타 백두대간 능선 2020년 11월.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9439787]
+	}
+}

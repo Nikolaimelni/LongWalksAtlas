@@ -1,0 +1,36 @@
+{
+	"slug": "ala-kul-trek",
+	"name": {
+		"original": "Ала-Куль"
+	},
+	"type": "mountain",
+	"region": "asia",
+	"start": {
+		"name": "Karakol National Park entrance, Karakol Gorge",
+		"coords": [78.4138, 42.444]
+	},
+	"end": {
+		"name": "Altyn-Arashan",
+		"coords": [78.615, 42.375]
+	},
+	"countries": ["KG"],
+	"lengthKm": null,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": ["jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://cbtkyrgyzstan.kg/summer-travel/ala-kul-trekking-son-kol-horse-ride-adventures/",
+	"sources": [
+		"https://cbtkyrgyzstan.kg/summer-travel/ala-kul-trekking-son-kol-horse-ride-adventures/"
+	],
+	"photo": {
+		"commons": "File:Ala-Köl.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [12350207]
+	}
+}

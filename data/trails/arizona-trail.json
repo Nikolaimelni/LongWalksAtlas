@@ -1,0 +1,31 @@
+{
+	"slug": "arizona-trail",
+	"name": {
+		"original": "Arizona National Scenic Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Mexican border, Coronado National Memorial",
+		"coords": [-110.29, 31.334]
+	},
+	"end": {
+		"name": "Utah border",
+		"coords": [-112.035, 37.001]
+	},
+	"countries": ["US"],
+	"lengthKm": 1287,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://aztrail.org/",
+	"sources": ["https://aztrail.org/"],
+	"photo": {
+		"commons": "File:Water near the Arizona National Scenic Trail (26604585352).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2804113]
+	}
+}

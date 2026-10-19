@@ -1,0 +1,36 @@
+{
+	"slug": "rakiura-track",
+	"name": {
+		"original": "Rakiura Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Oban, Stewart Island/Rakiura",
+		"coords": [168.1289, -46.8968]
+	},
+	"end": {
+		"name": "Oban, Stewart Island/Rakiura",
+		"coords": [168.1289, -46.8968]
+	},
+	"countries": ["NZ"],
+	"lengthKm": 32,
+	"days": {
+		"min": 3,
+		"max": 3
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/rakiura-track/",
+	"sources": [
+		"https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/rakiura-track/"
+	],
+	"photo": {
+		"commons": "File:Rakiura Track at Lee Bay in 2025.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1385146]
+	}
+}

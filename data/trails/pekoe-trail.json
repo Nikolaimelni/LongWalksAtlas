@@ -1,0 +1,31 @@
+{
+	"slug": "pekoe-trail",
+	"name": {
+		"original": "The Pekoe Trail"
+	},
+	"type": "historic",
+	"region": "asia",
+	"start": {
+		"name": "Hantana, Kandy",
+		"coords": [80.633, 7.2686]
+	},
+	"end": {
+		"name": "Pedro Estate, Nuwara Eliya",
+		"coords": [80.7945, 6.9701]
+	},
+	"countries": ["LK"],
+	"lengthKm": 300,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://thepekoetrail.org/",
+	"sources": ["https://thepekoetrail.org/"],
+	"photo": {
+		"commons": "File:Anu360' photography (11).jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19413306, 19413305, 19413304]
+	}
+}

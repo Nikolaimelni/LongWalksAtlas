@@ -1,0 +1,36 @@
+{
+	"slug": "huayhuash-circuit",
+	"name": {
+		"original": "Circuito de Huayhuash"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Llamac",
+		"coords": [-77.0344, -10.1978]
+	},
+	"end": {
+		"name": "Llamac",
+		"coords": [-77.0344, -10.1978]
+	},
+	"countries": ["PE"],
+	"lengthKm": null,
+	"days": {
+		"min": 12,
+		"max": 12
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.peru.travel/es/masperu/huayhuash-uno-de-los-destinos-mas-espectaculares-para-hacer-trekking",
+	"sources": [
+		"https://www.peru.travel/es/masperu/huayhuash-uno-de-los-destinos-mas-espectaculares-para-hacer-trekking"
+	],
+	"photo": {
+		"commons": "File:אגמים.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1112639]
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"slug": "south-coast-track",
+	"name": {
+		"original": "South Coast Track"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Melaleuca",
+		"coords": [146.2144, -43.4952]
+	},
+	"end": {
+		"name": "Cockle Creek",
+		"coords": [146.8933, -43.583]
+	},
+	"countries": ["AU"],
+	"lengthKm": 85,
+	"days": {
+		"min": 6,
+		"max": 8
+	},
+	"bestSeason": [],
+	"badges": ["unesco"],
+	"officialUrl": "https://parks.tas.gov.au/explore-our-parks/southwest-national-park/south-coast-track",
+	"sources": [
+		"https://parks.tas.gov.au/explore-our-parks/southwest-national-park/south-coast-track"
+	],
+	"photo": {
+		"commons": "File:Lagoon in at Point Eric in Tasmania.jpg"
+	},
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2712082]
+	}
+}
