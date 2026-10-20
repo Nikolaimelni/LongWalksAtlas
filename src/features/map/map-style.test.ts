@@ -1,5 +1,7 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { localizeLabels, recolor } from "./map-style";
+
+vi.mock("./map-setup", () => ({}));
 
 const style = {
 	version: 8,

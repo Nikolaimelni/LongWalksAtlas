@@ -26,6 +26,10 @@
 		"clearSearch": "Clear search",
 		"count_one": "{{count}} trail",
 		"count_other": "{{count}} trails",
+		"total_one": "{{count}} trail in total",
+		"total_other": "{{count}} trails in total",
+		"found_one": "{{count}} trail found",
+		"found_other": "{{count}} trails found",
 		"types": "Type",
 		"country": "Country",
 		"anyCountry": "Any",
@@ -44,6 +48,7 @@
 		"active_other": "{{count}} filters on",
 		"none": "No trail matches. Try clearing a filter.",
 		"show": "show the list and filters",
+		"hide": "Hide",
 		"region": "Region",
 		"toggle": "Filters"
 	},

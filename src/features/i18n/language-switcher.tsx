@@ -36,6 +36,7 @@ export function LanguageSwitcher() {
 			<button
 				ref={buttonRef}
 				type="button"
+				data-passes-touch
 				popoverTarget={menuId}
 				onClick={placeMenu}
 				aria-label={`${t("language.label")}: ${current?.name ?? lang}`}

@@ -110,7 +110,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 	const heading = crashed ? text?.crashed : text?.notFound;
 	const home = `/${lang}/`;
 	return (
-		<main className="grid min-h-dvh place-items-center px-4 py-16">
+		<main className="flex min-h-dvh flex-col items-center justify-center px-4 py-16">
 			<title>{`${heading} · Long Walks Atlas`}</title>
 			<div className="flex w-full max-w-md flex-col items-center text-center">
 				<a

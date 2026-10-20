@@ -25,6 +25,8 @@
 		"searchPlaceholder": "트레일 또는 장소",
 		"clearSearch": "검색어 지우기",
 		"count_other": "{{count}}개 등산로",
+		"total_other": "전체 등산로 {{count}}개",
+		"found_other": "검색 결과 {{count}}개",
 		"types": "유형",
 		"country": "국가",
 		"anyCountry": "어떤",
@@ -42,6 +44,7 @@
 		"active_other": "{{count}}개의 필터 적용됨",
 		"none": "일치하는 검색 결과가 없습니다. 필터를 해제해 보세요.",
 		"show": "목록과 필터 표시",
+		"hide": "접기",
 		"region": "지역",
 		"toggle": "필터"
 	},

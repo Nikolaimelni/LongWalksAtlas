@@ -18,6 +18,12 @@ import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
 import type { HoverInfo } from "~/features/map/atlas-map";
 import { MapBoundary } from "~/features/map/map-boundary";
+import {
+	basemapFirstRequests,
+	loadTrailLines,
+	mapStyles,
+	trailLinesUrl,
+} from "~/features/map/map-sources";
 import { loadContentIndex } from "~/features/trails/content";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
@@ -34,17 +40,45 @@ import { atlasCardMeta } from "~/shared/social-cards";
 import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/atlas";
 
+const loadAtlasMap = () => import("~/features/map/atlas-map");
+const atlasMap = typeof document === "undefined" ? null : loadAtlasMap();
+if (typeof document !== "undefined") void loadTrailLines();
+
 const AtlasMap = lazy(() =>
-	import("~/features/map/atlas-map").then((m) => ({ default: m.AtlasMap })),
+	(atlasMap ?? loadAtlasMap()).then((m) => ({ default: m.AtlasMap })),
 );
+
+export const links: Route.LinksFunction = () => [
+	{
+		rel: "preconnect",
+		href: new URL(mapStyles.light).origin,
+		crossOrigin: "anonymous",
+	},
+	...(["light", "dark"] as const).map((scheme) => ({
+		rel: "preload",
+		as: "fetch",
+		href: mapStyles[scheme],
+		crossOrigin: "anonymous" as const,
+		media: `(prefers-color-scheme: ${scheme})`,
+	})),
+	{
+		rel: "preload",
+		as: "fetch",
+		href: trailLinesUrl,
+		crossOrigin: "anonymous",
+	},
+	...basemapFirstRequests.map(({ href, scheme }) => ({
+		rel: "preload",
+		as: "fetch",
+		href,
+		crossOrigin: "anonymous" as const,
+		...(scheme ? { media: `(prefers-color-scheme: ${scheme})` } : {}),
+	})),
+];
 
 export async function loader({ params }: Route.LoaderArgs) {
 	if (!isLang(params.lang)) throw data("Unknown language", { status: 404 });
-	return {
-		trails: trailsIndex,
-		photos,
-		content: await loadContentIndex(params.lang),
-	};
+	return { content: await loadContentIndex(params.lang) };
 }
 
 export const clientLoader = ({ serverLoader }: Route.ClientLoaderArgs) =>
@@ -71,7 +105,8 @@ export function meta({ matches }: Route.MetaArgs) {
 }
 
 export default function Atlas({ loaderData }: Route.ComponentProps) {
-	const { trails, content, photos } = loaderData;
+	const { content } = loaderData;
+	const trails = trailsIndex;
 	const { t } = useTranslation();
 	const lang = useLang();
 	const navigate = useNavigate();
@@ -81,7 +116,9 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	const [hovered, setHovered] = useState<HoverInfo | null>(null);
 	const [listHover, setListHover] = useState<string | null>(null);
 	const [choices, setChoices] = useState<string[]>([]);
+	const [closedOn, setClosedOn] = useState<string | null>(null);
 	const [panelOpen, setPanelOpen] = useState(false);
+	const [mapReady, setMapReady] = useState(false);
 
 	const titleOf = (trail: TrailSummary) =>
 		content[trail.slug]?.title ?? trail.name.original;
@@ -145,6 +182,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 
 	function select(slug: string | null) {
 		setChoices([]);
+		if (!slug) setClosedOn(location.key);
 		if (!slug && sheetPushed) {
 			void navigate(-1);
 			return;
@@ -181,14 +219,25 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 		(s) => bySlug.get(s) ?? [],
 	);
 	const choiceTrails = choices.flatMap((s) => bySlug.get(s) ?? []);
-	const sheetOpen = selected !== null || choiceTrails.length > 0;
+	const sheetOpen =
+		(selected !== null && closedOn !== location.key) || choiceTrails.length > 0;
 
 	const placeholder = (
 		<div
-			className="absolute inset-0 z-10 grid place-items-center bg-canvas text-sm text-muted"
-			aria-busy="true"
+			className={`absolute inset-0 z-10 grid place-items-center bg-water md:ps-[25rem] transition-[opacity,visibility] duration-300 motion-reduce:transition-none ${mapReady ? "invisible opacity-0" : ""}`}
+			aria-busy={!mapReady}
+			aria-hidden={mapReady || undefined}
 		>
-			<span className="motion-safe:animate-pulse">{t("atlas.loading")}</span>
+			<p
+				role="status"
+				className="flex items-center gap-3 rounded-full bg-surface/90 py-2.5 ps-3 pe-5 text-sm font-medium shadow-float backdrop-blur"
+			>
+				<span
+					aria-hidden="true"
+					className="size-5 rounded-full border-[3px] border-brand/20 border-t-brand motion-safe:animate-spin"
+				/>
+				{t("atlas.loading")}
+			</p>
 		</div>
 	);
 
@@ -201,9 +250,10 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 	return (
 		<main className="atlas relative h-dvh overflow-hidden">
 			<h1 className="sr-only">{t("atlas.title")}</h1>
-			{hydrated ? (
+			{placeholder}
+			{hydrated && (
 				<MapBoundary fallback={mapFailed}>
-					<Suspense fallback={placeholder}>
+					<Suspense fallback={null}>
 						<AtlasMap
 							trails={trails}
 							focus={selected}
@@ -214,7 +264,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 								trails: results,
 								underPanel: panelOpen,
 							}}
-							loading={placeholder}
+							onLoad={() => setMapReady(true)}
 							onHover={setHovered}
 							onPick={(slugs) => {
 								setPanelOpen(false);
@@ -223,11 +273,9 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 						/>
 					</Suspense>
 				</MapBoundary>
-			) : (
-				placeholder
 			)}
 
-			<header className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between gap-2 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
+			<header className="pointer-events-none absolute inset-x-0 top-0 z-10 flex items-center justify-between gap-2 p-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
 				<p className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/90 py-1 ps-1.5 pe-4 font-display text-sm font-semibold shadow-float backdrop-blur">
 					<LogoMark className="size-8" />
 					{t("app.name")}
@@ -237,28 +285,23 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 				</div>
 			</header>
 
-			<div className={sheetOpen ? "hidden md:contents" : "contents"}>
-				<TrailPanel
-					trails={results}
-					allTrails={trails}
-					filters={filters}
-					titleOf={titleOf}
-					onChange={(change) =>
-						setParams(
-							(prev) => writeFilters(prev, change(parseFilters(prev))),
-							{
-								replace: true,
-								state: location.state,
-								preventScrollReset: true,
-							},
-						)
-					}
-					onHoverTrail={setListHover}
-					onSelect={select}
-					open={panelOpen}
-					onOpenChange={setPanelOpen}
-				/>
-			</div>
+			<TrailPanel
+				trails={results}
+				allTrails={trails}
+				filters={filters}
+				titleOf={titleOf}
+				onChange={(change) =>
+					setParams((prev) => writeFilters(prev, change(parseFilters(prev))), {
+						replace: true,
+						state: location.state,
+						preventScrollReset: true,
+					})
+				}
+				onHoverTrail={setListHover}
+				onSelect={select}
+				open={panelOpen}
+				onOpenChange={setPanelOpen}
+			/>
 
 			{hovered && !selected && (
 				<HoverCard

@@ -9,7 +9,17 @@ const list = (page: Page) =>
 
 async function openPanel(page: Page) {
 	const toggle = page.getByRole("button", { name: /\d+ троп/ });
-	if (await toggle.isVisible()) await toggle.click();
+	if ((await toggle.getAttribute("aria-expanded")) === "false") {
+		await toggle.click();
+	}
+}
+
+async function openFilters(page: Page) {
+	const toggle = page.getByRole("button", { name: /^Фильтры/ });
+	if ((await toggle.getAttribute("aria-expanded")) === "false") {
+		await toggle.click();
+	}
+	return toggle;
 }
 
 test("search narrows the list and lands in the URL", async ({ page }) => {
@@ -33,6 +43,7 @@ test("search narrows the list and lands in the URL", async ({ page }) => {
 test("type chips and the country filter combine", async ({ page }) => {
 	await page.goto("/ru/");
 	await openPanel(page);
+	await openFilters(page);
 
 	await page.getByRole("button", { name: "Паломнический путь" }).click();
 	await expect(
@@ -40,7 +51,6 @@ test("type chips and the country filter combine", async ({ page }) => {
 	).toHaveAttribute("aria-pressed", "true");
 	await expect(list(page)).toHaveCount(countOf((t) => t.type === "pilgrimage"));
 
-	await page.getByRole("button", { name: /^Фильтры/ }).click();
 	await page.getByLabel("Страна").selectOption("ES");
 	await expect(list(page)).toHaveCount(
 		countOf((t) => t.type === "pilgrimage" && t.countries.includes("ES")),
@@ -58,8 +68,7 @@ test("two regions together, counted on the folded filters", async ({
 }) => {
 	await page.goto("/ru/");
 	await openPanel(page);
-	const filters = page.getByRole("button", { name: /^Фильтры/ });
-	await filters.click();
+	const filters = await openFilters(page);
 	await page.getByRole("button", { name: "Европа" }).click();
 	await page.getByRole("button", { name: "Африка" }).click();
 	await expect(list(page)).toHaveCount(
@@ -134,11 +143,74 @@ test.describe("on a phone", () => {
 		await expect(list(page).first()).toBeHidden();
 	});
 
+	test("a tap on the bar's handle opens the list, not a trail under it", async ({
+		page,
+	}) => {
+		await page.goto("/ru/");
+		await expect(page.locator("canvas.maplibregl-canvas")).toBeVisible();
+		await page
+			.getByRole("region", { name: "Тропы" })
+			.locator("[aria-hidden=true].cursor-grab")
+			.tap();
+		await expect(list(page).first()).toBeVisible();
+		await expect(page).toHaveURL(/\/ru\/$/);
+	});
+
+	test("a tap on the bar closes the trail sheet and does what it does", async ({
+		page,
+	}) => {
+		const sheet = page.getByRole("region", { name: "Португальский путь" });
+		const toggle = page.getByRole("button", { name: /\d+ троп/ });
+
+		await page.goto("/ru/?trail=caminho-portugues");
+		await expect(sheet).toBeVisible();
+		await toggle.tap();
+		await expect(sheet).toBeHidden();
+		await expect(toggle).toHaveAttribute("aria-expanded", "true");
+		await expect(
+			page.getByRole("button", { name: /^Фильтры/ }),
+		).toHaveAttribute("aria-expanded", "true");
+		await expect(page).toHaveURL(/\/ru\/$/);
+
+		await page.goto("/ru/?trail=caminho-portugues");
+		await expect(sheet).toBeVisible();
+		await page
+			.getByRole("region", { name: "Тропы" })
+			.locator("[aria-hidden=true].cursor-grab")
+			.tap();
+		await expect(sheet).toBeHidden();
+		await expect(toggle).toHaveAttribute("aria-expanded", "true");
+		await expect(page).toHaveURL(/\/ru\/$/);
+	});
+
+	test("a tap on the map only closes the trail sheet", async ({ page }) => {
+		const sheet = page.getByRole("region", { name: "Португальский путь" });
+		await page.goto("/ru/?trail=caminho-portugues");
+		await expect(sheet).toBeVisible();
+		await page
+			.locator("canvas.maplibregl-canvas")
+			.tap({ position: { x: 40, y: 140 } });
+		await expect(sheet).toBeHidden();
+		await expect(page).toHaveURL(/\/ru\/$/);
+	});
+
+	test("a tap on the language switcher closes the trail sheet and opens the menu", async ({
+		page,
+	}) => {
+		const sheet = page.getByRole("region", { name: "Португальский путь" });
+		await page.goto("/ru/?trail=caminho-portugues");
+		await expect(sheet).toBeVisible();
+		await page.getByRole("button", { name: /Русский/ }).tap();
+		await expect(sheet).toBeHidden();
+		await expect(page.getByRole("link", { name: "English" })).toBeVisible();
+	});
+
 	test("the type chips scroll in their row, not the panel", async ({
 		page,
 	}) => {
 		await page.goto("/ru/");
 		await openPanel(page);
+		await openFilters(page);
 		const chips = await page.getByRole("group", { name: "Тип" }).boundingBox();
 		expect(chips?.width).toBeLessThanOrEqual(page.viewportSize()?.width ?? 0);
 	});

@@ -11,6 +11,7 @@ import {
 	trailTypes,
 } from "~/features/trails/trail-schema";
 import type { TrailPalette } from "~/features/trails/trail-style";
+import { trailLinesUrl } from "./map-sources";
 
 export const trailSourceId = "trails";
 export const trailPointSourceId = "trail-starts";
@@ -73,6 +74,7 @@ type Props = {
 	// A finger needs a wider catch than a mouse pointer. Where two catches overlap, the
 	// atlas asks which trail was meant, so the wider one costs a question, not a miss.
 	touch?: boolean;
+	lines?: FeatureCollection | string;
 };
 
 export function TrailLayers({
@@ -83,6 +85,7 @@ export function TrailLayers({
 	palette,
 	halo,
 	touch = false,
+	lines = trailLinesUrl,
 }: Props) {
 	const color = colorBy(palette);
 	const only = (base: ExpressionSpecification): ExpressionSpecification =>
@@ -133,12 +136,7 @@ export function TrailLayers({
 
 	return (
 		<>
-			<Source
-				id={trailSourceId}
-				type="geojson"
-				data="/data/trails.geojson"
-				promoteId="slug"
-			>
+			<Source id={trailSourceId} type="geojson" data={lines} promoteId="slug">
 				{/* A land-coloured edge under every line, as on a printed map: a trail along
 				a coast or through a forest keeps its contrast, and crossing trails stay
 				apart. */}

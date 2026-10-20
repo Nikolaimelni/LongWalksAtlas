@@ -26,6 +26,10 @@
 		"clearSearch": "Aramayı temizle",
 		"count_one": "{{count}} parkur",
 		"count_other": "{{count}} parkur",
+		"total_one": "Toplam {{count}} parkur",
+		"total_other": "Toplam {{count}} parkur",
+		"found_one": "{{count}} parkur bulundu",
+		"found_other": "{{count}} parkur bulundu",
 		"types": "Tür",
 		"country": "Ülke",
 		"anyCountry": "Herhangi bir",
@@ -44,6 +48,7 @@
 		"active_other": "{{count}} filtre açık",
 		"none": "Eşleşen arama sonucu bulunamadı. Bir filtreyi kaldırmayı deneyin.",
 		"show": "listeyi ve filtreleri göster",
+		"hide": "Gizle",
 		"region": "Bölge",
 		"toggle": "Filtreler"
 	},

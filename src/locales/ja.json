@@ -25,6 +25,8 @@
 		"searchPlaceholder": "トレイルや場所",
 		"clearSearch": "検索をクリア",
 		"count_other": "{{count}}のトレイル",
+		"total_other": "全{{count}}件のトレイル",
+		"found_other": "{{count}}件見つかりました",
 		"types": "種類",
 		"country": "国",
 		"anyCountry": "いずれか",
@@ -42,6 +44,7 @@
 		"active_other": "{{count}}個のフィルターが有効",
 		"none": "一致するトレイルはありません。フィルターを解除してみてください。",
 		"show": "リストとフィルタを表示する",
+		"hide": "閉じる",
 		"region": "地域",
 		"toggle": "フィルター"
 	},

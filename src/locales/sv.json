@@ -26,6 +26,10 @@
 		"clearSearch": "Rensa sökningen",
 		"count_one": "{{count}} led",
 		"count_other": "{{count}} leder",
+		"total_one": "Totalt {{count}} led",
+		"total_other": "Totalt {{count}} leder",
+		"found_one": "{{count}} led hittades",
+		"found_other": "{{count}} leder hittades",
 		"types": "Typ",
 		"country": "Land",
 		"anyCountry": "Vilken som helst",
@@ -44,6 +48,7 @@
 		"active_other": "{{count}} filter aktiverade",
 		"none": "Inga träffar hittades. Försök ta bort ett filter.",
 		"show": "visa listan och filtren",
+		"hide": "Dölj",
 		"region": "Region",
 		"toggle": "Filter"
 	},

@@ -26,6 +26,10 @@
 		"clearSearch": "Zoekopdracht wissen",
 		"count_one": "{{count}} route",
 		"count_other": "{{count}} routes",
+		"total_one": "{{count}} route in totaal",
+		"total_other": "{{count}} routes in totaal",
+		"found_one": "{{count}} route gevonden",
+		"found_other": "{{count}} routes gevonden",
 		"types": "Type",
 		"country": "Land",
 		"anyCountry": "Elke",
@@ -44,6 +48,7 @@
 		"active_other": "{{count}} filters ingeschakeld",
 		"none": "Er zijn geen resultaten gevonden. Probeer een filter uit te schakelen.",
 		"show": "lijst en filters tonen",
+		"hide": "Verbergen",
 		"region": "Regio",
 		"toggle": "Filters"
 	},

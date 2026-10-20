@@ -13,7 +13,8 @@ export type DataErrorCode =
 	| "missing-key"
 	| "translate-failed"
 	| "og-failed"
-	| "csp-failed";
+	| "csp-failed"
+	| "map-preload-failed";
 
 export class DataError extends Error {
 	readonly code: DataErrorCode;

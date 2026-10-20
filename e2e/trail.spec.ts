@@ -112,6 +112,14 @@ test("an unknown trail answers 404 and points back to the map", async ({
 	await expect(
 		page.getByRole("link", { name: "Back to the map" }),
 	).toHaveAttribute("href", "/en/");
+	for (const path of ["/en/trail/no-such-trail/", "/de/trail/no-such-trail/"]) {
+		await page.goto(path);
+		expect(
+			await page.evaluate(
+				() => document.documentElement.scrollWidth <= window.innerWidth,
+			),
+		).toBe(true);
+	}
 });
 
 test("a path without its trailing slash is redirected to it", async ({

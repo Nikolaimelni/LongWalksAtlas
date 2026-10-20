@@ -2,7 +2,8 @@ import type { StyleSpecification } from "maplibre-gl";
 import type { Lang } from "~/features/i18n/languages";
 import type { Scheme } from "~/features/trails/trail-style";
 import { basemapPatches } from "./basemap-colors";
-import { mapStyles } from "./map-setup";
+import "./map-setup";
+import { mapStyles } from "./map-sources";
 
 const colorKey = {
 	background: "background-color",

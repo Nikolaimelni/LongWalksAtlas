@@ -1,4 +1,10 @@
-import { type ReactNode, useRef, useState } from "react";
+import {
+	type ReactNode,
+	useEffect,
+	useLayoutEffect,
+	useRef,
+	useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import { HubLinks } from "~/features/hubs/hub-links";
@@ -62,18 +68,101 @@ function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 	);
 }
 
-function Chevron({ up }: { up: boolean }) {
+type ListToggleProps = {
+	shown: boolean;
+	up: boolean;
+	count: number;
+	onToggle: () => void;
+	className: string;
+};
+
+const fade =
+	"transition-[opacity,visibility] duration-200 motion-reduce:transition-none";
+
+function ListToggle({
+	shown,
+	up,
+	count,
+	onToggle,
+	className,
+}: ListToggleProps) {
+	const { t } = useTranslation();
+	return (
+		<button
+			type="button"
+			aria-expanded={shown}
+			aria-controls="trail-panel-body"
+			onClick={onToggle}
+			className={`h-11 shrink-0 cursor-pointer items-center gap-1.5 rounded-full bg-brand ps-3.5 pe-2.5 text-sm font-semibold text-on-brand hover:bg-brand-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${className}`}
+		>
+			<span className="grid">
+				<span
+					className={`col-start-1 row-start-1 flex items-center gap-1.5 tabular-nums ${fade} ${shown ? "invisible opacity-0" : ""}`}
+				>
+					<FiltersIcon />
+					{t("filters.count", { count })}
+					<span className="sr-only">, {t("filters.show")}</span>
+				</span>
+				<span
+					className={`col-start-1 row-start-1 flex items-center justify-center ${fade} ${shown ? "" : "invisible opacity-0"}`}
+				>
+					{t("filters.hide")}
+					<span className="sr-only">, {t("filters.count", { count })}</span>
+				</span>
+			</span>
+			<Chevron up={up} className="size-5" />
+		</button>
+	);
+}
+
+function FiltersIcon() {
+	return (
+		<svg aria-hidden="true" viewBox="0 0 20 20" className="size-4 opacity-80">
+			<path
+				d="M3 6h7M14 6h3M3 14h3M10 14h7"
+				fill="none"
+				stroke="currentColor"
+				strokeWidth="2"
+				strokeLinecap="round"
+			/>
+			<circle
+				cx="12"
+				cy="6"
+				r="2"
+				fill="none"
+				stroke="currentColor"
+				strokeWidth="2"
+			/>
+			<circle
+				cx="8"
+				cy="14"
+				r="2"
+				fill="none"
+				stroke="currentColor"
+				strokeWidth="2"
+			/>
+		</svg>
+	);
+}
+
+function Chevron({
+	up,
+	className = "size-4",
+}: {
+	up: boolean;
+	className?: string;
+}) {
 	return (
 		<svg
 			aria-hidden="true"
 			viewBox="0 0 20 20"
-			className={`size-4 transition-transform motion-reduce:transition-none ${up ? "rotate-180" : ""}`}
+			className={`${className} transition-transform motion-reduce:transition-none ${up ? "rotate-180" : ""}`}
 		>
 			<path
 				d="m6 8 4 4 4-4"
 				fill="none"
 				stroke="currentColor"
-				strokeWidth="2"
+				strokeWidth="2.25"
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
@@ -155,6 +244,7 @@ export function TrailPanel({
 	const lang = useLang();
 	const format = useTrailFormat();
 	const [filtersOpen, setFiltersOpen] = useState(false);
+	const [folded, setFolded] = useState(false);
 	const searchRef = useRef<HTMLInputElement>(null);
 
 	const regions = trailRegions.filter((region) =>
@@ -183,15 +273,70 @@ export function TrailPanel({
 		return kmRange.formatRange(from, to);
 	};
 	const active = countActive(filters);
-	// The type chips stay in sight as the map's colour key, so the badge on the folded
-	// block counts only what the fold hides.
-	const hidden = active - filters.types.length;
+	const tally = t(
+		active > 0 || filters.q.trim() !== "" ? "filters.found" : "filters.total",
+		{ count: trails.length },
+	);
 	const swipe = useSwipe((s) => onOpenChange(s === "tap" ? !open : s === "up"));
+
+	// DOM layout: the folded bar's height, for what sits on top of it.
+	const sectionRef = useRef<HTMLElement>(null);
+	const bodyRef = useRef<HTMLDivElement>(null);
+	const height = useRef<number | null>(null);
+	useEffect(() => {
+		const section = sectionRef.current;
+		const body = bodyRef.current;
+		const main = section?.closest("main");
+		if (!section || !body || !main) return;
+		const observer = new ResizeObserver(() => {
+			height.current = section.offsetHeight;
+			const bar = section.offsetHeight - body.offsetHeight;
+			main.style.setProperty("--panel-bar", `${bar}px`);
+		});
+		observer.observe(section);
+		return () => observer.disconnect();
+	}, []);
+
+	// DOM layout: the panel eases from its old height to the new one.
+	useLayoutEffect(() => {
+		const section = sectionRef.current;
+		const before = height.current;
+		if (!section || before === null) return;
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+		const after = section.offsetHeight;
+		if (after === before) return;
+		const wide = window.matchMedia("(width >= 48rem)").matches;
+		const timing = {
+			duration: 280,
+			easing: (wide ? !folded : open)
+				? "cubic-bezier(0.2, 0, 0, 1)"
+				: "cubic-bezier(0.3, 0, 0.2, 1)",
+		};
+		if (wide) {
+			section.animate(
+				[
+					{ height: `${before}px`, overflow: "hidden" },
+					{ height: `${after}px`, overflow: "hidden" },
+				],
+				timing,
+			);
+		} else {
+			section.animate(
+				[
+					{ transform: `translateY(${after - before}px)` },
+					{ transform: "none" },
+				],
+				timing,
+			);
+		}
+	}, [open, folded]);
 
 	return (
 		<section
+			ref={sectionRef}
+			data-passes-touch
 			aria-label={t("filters.list")}
-			className="absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-4 md:bottom-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0"
+			className={`absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0 ${folded ? "md:bottom-auto" : "md:bottom-4"}`}
 		>
 			<div
 				aria-hidden="true"
@@ -232,6 +377,7 @@ export function TrailPanel({
 								const q = e.target.value;
 								onChange((f) => ({ ...f, q }));
 								onOpenChange(true);
+								setFolded(false);
 								// On a phone the matches belong right under the field, above the keyboard.
 								if (!canHover()) setFiltersOpen(false);
 							}}
@@ -256,17 +402,26 @@ export function TrailPanel({
 						</button>
 					)}
 				</div>
-				<button
-					type="button"
-					aria-expanded={open}
-					aria-controls="trail-panel-body"
-					onClick={() => onOpenChange(!open)}
-					className="flex h-11 shrink-0 items-center gap-2 rounded-full bg-brand px-4 text-sm font-semibold text-on-brand md:hidden"
-				>
-					{t("filters.count", { count: trails.length })}
-					<span className="sr-only">, {t("filters.show")}</span>
-					<Chevron up={!open} />
-				</button>
+				<ListToggle
+					shown={open}
+					up={!open}
+					count={trails.length}
+					onToggle={() => {
+						if (!open) setFiltersOpen(true);
+						onOpenChange(!open);
+					}}
+					className="flex md:hidden"
+				/>
+				<ListToggle
+					shown={!folded}
+					up={!folded}
+					count={trails.length}
+					onToggle={() => {
+						if (folded) setFiltersOpen(true);
+						setFolded(!folded);
+					}}
+					className="hidden md:flex"
+				/>
 			</div>
 			<p className="-mt-1 px-4 pb-2 text-xs leading-snug text-muted">
 				{t("disclaimer.short")}{" "}
@@ -285,8 +440,9 @@ export function TrailPanel({
 			</p>
 
 			<div
+				ref={bodyRef}
 				id="trail-panel-body"
-				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none md:flex`}
+				className={`${open ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto px-3 pb-3 transition-[opacity,translate] duration-200 ease-out starting:translate-y-2 starting:opacity-0 motion-reduce:transition-none ${folded ? "md:hidden" : "md:flex"}`}
 			>
 				<div className="flex items-center justify-between gap-2 text-sm">
 					<button
@@ -294,19 +450,19 @@ export function TrailPanel({
 						aria-expanded={filtersOpen}
 						aria-controls="trail-filters"
 						onClick={() => setFiltersOpen(!filtersOpen)}
-						className="-ms-2 flex h-11 cursor-pointer items-center gap-1.5 rounded-full px-2 font-medium hover:bg-soft md:h-9"
+						className="-ms-2 flex h-11 cursor-pointer items-center gap-1.5 rounded-full px-2 text-base font-semibold hover:bg-soft md:h-9"
 					>
 						{t("filters.toggle")}
-						{hidden > 0 && (
+						{active > 0 && (
 							<>
 								<span
 									aria-hidden="true"
 									className="grid size-5 place-items-center rounded-full bg-brand text-xs font-semibold text-on-brand"
 								>
-									{hidden}
+									{active}
 								</span>
 								<span className="sr-only">
-									, {t("filters.active", { count: hidden })}
+									, {t("filters.active", { count: active })}
 								</span>
 							</>
 						)}
@@ -322,22 +478,6 @@ export function TrailPanel({
 						</button>
 					)}
 				</div>
-
-				<ChipRow legend={t("filters.types")}>
-					{trailTypes.map((type) => (
-						<Chip
-							key={type}
-							pressed={filters.types.includes(type)}
-							color={trailColor(type)}
-							dot
-							onToggle={() =>
-								onChange((f) => ({ ...f, types: toggle(f.types, type) }))
-							}
-						>
-							{t(`trailType.${type}`)}
-						</Chip>
-					))}
-				</ChipRow>
 
 				<div
 					id="trail-filters"
@@ -424,13 +564,28 @@ export function TrailPanel({
 							</SelectBox>
 						</label>
 					</div>
+					<ChipRow legend={t("filters.types")}>
+						{trailTypes.map((type) => (
+							<Chip
+								key={type}
+								pressed={filters.types.includes(type)}
+								color={trailColor(type)}
+								dot
+								onToggle={() =>
+									onChange((f) => ({ ...f, types: toggle(f.types, type) }))
+								}
+							>
+								{t(`trailType.${type}`)}
+							</Chip>
+						))}
+					</ChipRow>
 				</div>
 
 				<h2 id="trail-count" className="mt-4 text-sm font-semibold">
-					{t("filters.count", { count: trails.length })}
+					{tally}
 				</h2>
 				<p role="status" className="sr-only">
-					{t("filters.count", { count: trails.length })}
+					{tally}
 				</p>
 
 				{trails.length === 0 ? (

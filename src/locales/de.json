@@ -26,6 +26,10 @@
 		"clearSearch": "Suche löschen",
 		"count_one": "{{count}} Weg",
 		"count_other": "{{count}} Wege",
+		"total_one": "Insgesamt {{count}} Weg",
+		"total_other": "Insgesamt {{count}} Wege",
+		"found_one": "{{count}} Weg gefunden",
+		"found_other": "{{count}} Wege gefunden",
 		"types": "Typ",
 		"country": "Land",
 		"anyCountry": "Beliebige",
@@ -44,6 +48,7 @@
 		"active_other": "{{count}} Filter aktiviert",
 		"none": "Es wurden keine Treffer gefunden. Versuchen Sie, einen Filter zu deaktivieren.",
 		"show": "Liste und Filter anzeigen",
+		"hide": "Ausblenden",
 		"region": "Region",
 		"toggle": "Filter"
 	},

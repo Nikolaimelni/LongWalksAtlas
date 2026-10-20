@@ -1,5 +1,12 @@
 import type { MapLayerMouseEvent } from "maplibre-gl";
-import { type ReactNode, use, useEffect, useRef, useState } from "react";
+import {
+	type ComponentProps,
+	Suspense,
+	use,
+	useEffect,
+	useRef,
+	useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import {
 	Map as MapLibreMap,
@@ -14,6 +21,7 @@ import { useColorScheme } from "~/shared/use-color-scheme";
 import { basemapColors } from "./basemap-colors";
 import { boundsOf } from "./bounds";
 import { useMapFailure } from "./map-boundary";
+import { loadTrailLines } from "./map-sources";
 import { loadMapStyle } from "./map-style";
 import {
 	TrailLayers,
@@ -31,6 +39,12 @@ const sheetEdge = 416 + 384;
 const header = 72;
 const phoneBar = 160;
 
+function AtlasTrailLayers(
+	props: Omit<ComponentProps<typeof TrailLayers>, "lines">,
+) {
+	return <TrailLayers {...props} lines={use(loadTrailLines())} />;
+}
+
 export type HoverInfo = { slugs: string[]; x: number; y: number };
 
 type Props = {
@@ -45,7 +59,7 @@ type Props = {
 		trails: readonly TrailSummary[];
 		underPanel: boolean;
 	};
-	loading: ReactNode;
+	onLoad: () => void;
 	onHover: (info: HoverInfo | null) => void;
 	onPick: (slugs: string[]) => void;
 };
@@ -73,7 +87,7 @@ export function AtlasMap({
 	highlighted,
 	visible,
 	frame,
-	loading,
+	onLoad,
 	onHover,
 	onPick,
 }: Props) {
@@ -179,45 +193,48 @@ export function AtlasMap({
 	}, [frame.key, loaded]);
 
 	return (
-		<>
-			<MapLibreMap
-				ref={mapRef}
-				initialViewState={initialView(
-					frame.trails.length > 0 ? frame.trails : trails,
-				)}
-				mapStyle={mapStyle}
-				onError={onError}
-				style={{ position: "absolute", inset: 0 }}
-				dragRotate={false}
-				touchPitch={false}
-				attributionControl={{ compact: true }}
-				locale={{
-					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
-					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
-				}}
-				interactiveLayerIds={trailHitLayerIds}
-				cursor={pointer ? "pointer" : "grab"}
-				onLoad={() => setLoaded(true)}
-				onMouseMove={(event) => {
-					if (!byMouse.current) return;
-					const slugs = slugsAt(event);
-					setPointer(slugs.length > 0);
-					onHover(
-						slugs.length > 0
-							? { slugs, x: event.point.x, y: event.point.y }
-							: null,
-					);
-				}}
-				onMouseLeave={() => {
-					setPointer(false);
-					onHover(null);
-				}}
-				onClick={(event) => onPick(slugsAt(event))}
-			>
-				{/* Besides zooming without a pinch, the buttons tell a first-time visitor that
+		<MapLibreMap
+			ref={mapRef}
+			initialViewState={initialView(
+				frame.trails.length > 0 ? frame.trails : trails,
+			)}
+			mapStyle={mapStyle}
+			onError={onError}
+			style={{ position: "absolute", inset: 0 }}
+			dragRotate={false}
+			touchPitch={false}
+			attributionControl={{ compact: true }}
+			locale={{
+				"NavigationControl.ZoomIn": t("atlas.zoomIn"),
+				"NavigationControl.ZoomOut": t("atlas.zoomOut"),
+			}}
+			interactiveLayerIds={trailHitLayerIds}
+			cursor={pointer ? "pointer" : "grab"}
+			onLoad={() => {
+				setLoaded(true);
+				onLoad();
+			}}
+			onMouseMove={(event) => {
+				if (!byMouse.current) return;
+				const slugs = slugsAt(event);
+				setPointer(slugs.length > 0);
+				onHover(
+					slugs.length > 0
+						? { slugs, x: event.point.x, y: event.point.y }
+						: null,
+				);
+			}}
+			onMouseLeave={() => {
+				setPointer(false);
+				onHover(null);
+			}}
+			onClick={(event) => onPick(slugsAt(event))}
+		>
+			{/* Besides zooming without a pinch, the buttons tell a first-time visitor that
 				the map moves at all. */}
-				<NavigationControl position="top-right" showCompass={false} />
-				<TrailLayers
+			<NavigationControl position="top-right" showCompass={false} />
+			<Suspense fallback={null}>
+				<AtlasTrailLayers
 					trails={trails}
 					dimmed={highlighted.length > 0}
 					visible={visible}
@@ -225,13 +242,7 @@ export function AtlasMap({
 					halo={basemapColors[scheme].land}
 					touch={!canHover()}
 				/>
-			</MapLibreMap>
-			<div
-				aria-hidden={loaded || undefined}
-				className={`absolute inset-0 transition-opacity duration-300 motion-reduce:transition-none ${loaded ? "pointer-events-none opacity-0" : ""}`}
-			>
-				{loading}
-			</div>
-		</>
+			</Suspense>
+		</MapLibreMap>
 	);
 }
