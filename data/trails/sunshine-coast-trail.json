@@ -1,0 +1,29 @@
+{
+	"slug": "sunshine-coast-trail",
+	"name": {
+		"original": "Sunshine Coast Trail"
+	},
+	"type": "coastal",
+	"region": "americas",
+	"start": {
+		"name": "Sarah Point",
+		"coords": [-124.8372, 50.0589]
+	},
+	"end": {
+		"name": "Saltery Bay",
+		"coords": [-124.178, 49.78]
+	},
+	"countries": ["CA"],
+	"lengthKm": 180,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://sunshinecoasttrail.com/",
+	"sources": ["https://sunshinecoasttrail.com/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [7406716]
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"slug": "thorsborne-trail",
+	"name": {
+		"original": "Thorsborne Trail"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Ramsay Bay",
+		"coords": [146.272, -18.3111]
+	},
+	"end": {
+		"name": "George Point",
+		"coords": [146.3253, -18.4849]
+	},
+	"countries": ["AU"],
+	"lengthKm": 32,
+	"days": {
+		"min": 4,
+		"max": 4
+	},
+	"bestSeason": ["apr", "may", "jun", "jul", "aug", "sep"],
+	"badges": [],
+	"officialUrl": "https://parks.qld.gov.au/parks/hinchinbrook/journeys",
+	"sources": ["https://parks.qld.gov.au/parks/hinchinbrook/journeys"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19347052]
+	}
+}

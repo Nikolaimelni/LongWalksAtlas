@@ -1,0 +1,32 @@
+{
+	"slug": "kgari-great-walk",
+	"name": {
+		"original": "K'gari Great Walk"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Dilli Village",
+		"coords": [153.065, -25.595]
+	},
+	"end": {
+		"name": "Happy Valley",
+		"coords": [153.1982, -25.3365]
+	},
+	"countries": ["AU"],
+	"lengthKm": 90,
+	"days": {
+		"min": 6,
+		"max": 8
+	},
+	"bestSeason": [],
+	"badges": ["unesco"],
+	"officialUrl": "https://parks.qld.gov.au/parks/great-walks-kgari-fraser",
+	"sources": ["https://parks.qld.gov.au/parks/great-walks-kgari-fraser"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9919461]
+	}
+}

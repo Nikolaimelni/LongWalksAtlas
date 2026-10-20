@@ -1,0 +1,32 @@
+{
+	"slug": "transcarpathian-tourist-trail",
+	"name": {
+		"original": "Закарпатський туристичний шлях"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Velykyi Bereznyi",
+		"coords": [22.459, 48.893]
+	},
+	"end": {
+		"name": "Hoverla",
+		"coords": [24.5003, 48.1603]
+	},
+	"countries": ["UA"],
+	"lengthKm": 315,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://rugala.pl/en/c/transcarpathian-tourist-trail/",
+	"sources": [
+		"https://rugala.pl/en/c/transcarpathian-tourist-trail/",
+		"https://interfax.com.ua/news/press-release/1102319-amp.html"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [2970399]
+	}
+}

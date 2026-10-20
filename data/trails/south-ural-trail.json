@@ -1,0 +1,29 @@
+{
+	"slug": "south-ural-trail",
+	"name": {
+		"original": "Южноуральская тропа"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Bannoe resort",
+		"coords": [58.6686, 53.6106]
+	},
+	"end": {
+		"name": "Lake Turgoyak",
+		"coords": [60.035, 55.2175]
+	},
+	"countries": ["RU"],
+	"lengthKm": 500,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://suraltrail.ru/",
+	"sources": ["https://suraltrail.ru/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [14496562]
+	}
+}

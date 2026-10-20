@@ -119,6 +119,11 @@
 		"summary": "Litevská svatojakubská cesta dlouhá 500 km, napříč zemí ze Žagarė u lotyšské hranice přes Kaunas do Sejn v Polsku.",
 		"html": "<p>Camino Lituano vzniklo jako součást evropské sítě poutních cest do Santiaga de Compostela a pořadatelé ho označují za první trasu v Litvě delší než 500 km připravenou pro samostatnou chůzi. Prochází zemí od severu k jihu, z městečka Žagarė u lotyšské hranice do Sejn hned za hranicí v Polsku.</p>\n<p>Cesta vede polnostmi a městečky litevské nížiny: Pakruojis, Rozalimas, Kėdainiai a dál do Kaunasu, pak kolem barokního kláštera Pažaislis, než se podél Němenu stočí na jih přes Prienai, Punii a Alytus do Lazdijai a k polské hranici.</p>\n<p>Oficiální web dělí hlavní trasu do 21 etap po 12,6 až 31,9 km, celkem asi 501 km, a ke každé zveřejňuje seznam ubytování. Dvě další trasy, Camino Lituano Žemaitija a Camino Lituano Aukštaitija o délce 415,8 km a 261,2 km, pokrývají západ a východ země.</p>"
 	},
+	"camino-podolico": {
+		"title": "Camino Podolico",
+		"summary": "Pěší trasa přes Podolí na západě Ukrajiny podle vzoru Svatojakubských cest, z Vinnycje přes Bar do pevnostního města Kamjanec-Podilskyj, v etapách po 20 až 30 km.",
+		"html": "<p>Camino Podolico je kulturní a přírodní trasa přes Podolí podle vzoru Svatojakubských cest, která spojuje Vinnycju s Kamjancem-Podilským přes Bar a pokračuje do Zavallji. Prochází městy a vesnicemi s dlouhou historií: Jaltuškiv je poprvé zmíněn roku 1431 a Vinkivci roku 1493, Bar vzkvétal za královny Bony Sforzy a stojí v něm kostel svaté Anny a Žmerynka vznikla roku 1865 se stavbou železnice.</p>\n<p>Trasa je pořádána ve spolupráci s městskými radami Vinnycje, Baru a Kamjance-Podilského a mezi svými oficiálními účastníky uvádí síť St James Way International. Je rozdělena na 14 zastávek vzdálených od sebe 20 až 30 km, kde poutníci sbírají razítka; sezona 2026 začala 1. dubna a pořadatelé upozorňují, že před sezonou nejsou nocleh ani razítka zaručeny.</p>"
+	},
 	"camino-primitivo": {
 		"title": "Původní cesta",
 		"summary": "Nejstarší svatojakubská cesta, která má sledovat pouť krále Alfonse II. v 9. století, vede z Ovieda přes Kantaberské pohoří do Santiaga.",
@@ -133,6 +138,11 @@
 		"title": "Karijská stezka",
 		"summary": "Dálková trasa starověkou Kárií v jihozápadním Turecku, od pobřeží u Marmarisu k ruinám ve vnitrozemí kolem Alindy.",
 		"html": "<p>Karijská stezka spojuje poloostrovy Bozburun a Datça, záliv Gökova a vnitrozemskou Kárii a vede kolem antických ruin, starých karavanních cest a mezkových stezek. Na pobřeží prochází borovým lesem nad tichými zátokami, ve vnitrozemí stoupá olivovými háji, vesnicemi a kopci posetými zbytky karijských měst.</p>\n<p>Chodí po ní mnohem méně lidí než po Lýkijské stezce a některé úseky mají jen prosté vesnické ubytování nebo žádné, takže se hodí stan.</p>\n<p>Trasa je rozdělena do čtyř hlavních úseků a nejlepší dobou je jaro. Některé stezky u Marmarisu poškodily lesní požáry v roce 2021.</p>"
+	},
+	"caucasian-trail": {
+		"title": "Kavkazská stezka",
+		"summary": "Nová dálková trasa dlouhá asi 1 500 km přes ruský Severní Kavkaz, z Derbentu u Kaspického moře do Soči u Černého moře, přes osm republik a regionů.",
+		"html": "<p>Kavkazská stezka prochází severní stranou Velkého Kavkazu z Derbentu, starobylého města na břehu Kaspického moře, až do Soči u Černého moře. Cestou vede Dagestánem, Čečenskem, Ingušskem, Severní Osetií, Kabardsko-Balkarskem, Karačajsko-Čerkeskem, Krasnodarským krajem a Adygejskem. Její první etapa v Dagestánu, nazvaná Vzory času, vede z Derbentu do hor k vesnici Kubači.</p>\n<p>Stezku vytváří nezisková organizace Peškom po Kavkazu, která popisuje hlavní trasu dlouhou asi 1 500 km a pro zkušené turisty zveřejňuje úplnou stopu z Derbentu do Soči. Na sezonu 2026 bylo plně připraveno devět etap, na některých úsecích bylo obnoveno značení a společně s VeloRussia vzniká cyklistická varianta.</p>"
 	},
 	"central-roztocze-trail": {
 		"title": "Středorostočská stezka",
@@ -169,6 +179,11 @@
 		"summary": "National Scenic Trail dlouhá 3 100 mil podél Skalnatých hor od mexické hranice v Novém Mexiku po kanadskou hranici v národním parku Glacier, přes Nové Mexiko, Colorado, Wyoming, Idaho a Montanu.",
 		"html": "<p>Continental Divide National Scenic Trail zřídil Kongres 10. listopadu 1978 a vede Skalnatými horami přes Nové Mexiko, Colorado, Wyoming, Idaho a Montanu. Jižní konec je u památníku Crazy Cook na mexické hranici v Novém Mexiku, severní u jezera Waterton v národním parku Glacier na hranici s Kanadou.</p>\n<p>Mezi oběma hranicemi se stezka drží blízko Kontinentálního rozvodí, rozvodnice mezi řekami tekoucími do Tichého oceánu a těmi, které odtékají do Atlantiku a Mexického zálivu. Vede od pouští na jihu po vysokohorský terén v Coloradu a severních Skalnatých horách.</p>\n<p>Continental Divide Trail Coalition, celostátní nezisková organizace budující komunitu dobrovolníků pro stezku, uvádí délku 3 100 mil a říká, že asi 160 mil zatím není dokončeno. Podle Partnership for the National Trails System je správcem Lesní služba amerického ministerstva zemědělství ve spolupráci s koalicí a Continental Divide Trail Society.</p>"
 	},
+	"cooloola-great-walk": {
+		"title": "Velká stezka Cooloola",
+		"summary": "Velká stezka dlouhá až 102 km rekreační oblastí Cooloola mezi Noosou a Rainbow Beach v Queenslandu, deštným pralesem, vysokým eukalyptovým lesem, pobřežními porosty a vřesovišti, se čtyřmi tábořišti pro pěší.",
+		"html": "<p>Velká stezka Cooloola vede rekreační oblastí Cooloola, která leží mezi pobřežními městečky Tewantin u Noosy a Rainbow Beach na jihovýchodě Queenslandu. Na vzdálenosti až 102 km prochází deštným pralesem, vysokými eukalyptovými lesy, suchými pobřežními porosty a vřesovištními pláněmi, s širokými výhledy na pobřeží Cooloola.</p>\n<p>Turisté nocují ve čtyřech tábořištích, Brahminy, Dutgee, Litoria a Kauri, která se rezervují přes systém národních parků Queenslandu. Od 1. prosince 2026 do 28. února 2027 je trasa sezonně uzavřena a park žádá všechny, aby si před odchodem přečetli zprávu o podmínkách v Cooloole.</p>"
+	},
 	"dientes-de-navarino-circuit": {
 		"title": "Okruh Dientes de Navarino",
 		"summary": "Drsný čtyř- až pětidenní trek pohořím Dientes de Navarino na ostrově Navarino, se startem kousek za Puerto Williams a přes vysoká sedla kolem lagun del Salto a de los Dientes.",
@@ -183,6 +198,11 @@
 		"title": "Evropská dálková trasa E1",
 		"summary": "Evropská dálková trasa ze severu na jih, z Nordkappu v Norsku přes Skandinávii, Dánsko, Německo a Švýcarsko na Capo Passero na Sicílii.",
 		"html": "<p>E1 spojuje národní a regionální stezky pod jednu značku, takže chodec v praxi postupně sleduje norské, švédské, dánské, německé, švýcarské a italské cesty, každou s vlastním značením a průvodci. Jižní konec byl v 2010. letech prodloužen přes Itálii na Sicílii a části italského úseku se dosud značí.</p>\n<p>Trasa začíná v otevřené tundře Severního mysu, prochází lesy a jezery Skandinávie a dánskými poli a pak přechází Německo od Baltu k Bodamskému jezeru. Jižně od Alp sleduje Apeniny po celé délce Itálie.</p>\n<p>Při délce přes 7 000 km ji téměř nikdo nejde najednou. Je to projekt na roky po úsecích a vhodná sezóna se mění od krátkého arktického léta na severu po jaro a podzim na středomořském jihu.</p>"
+	},
+	"east-carpathian-tourist-trail": {
+		"title": "Východokarpatská turistická stezka",
+		"summary": "Červeně značená stezka dlouhá téměř 280 km východní částí ukrajinských Karpat, od Toruňského průsmyku přes celé Gorgany, Čornohoru a Hryňavy do Šepitu u rumunské hranice.",
+		"html": "<p>Východokarpatská turistická stezka se táhne téměř 280 km od Toruňského průsmyku přes celé Gorgany, největší pohoří ukrajinských Karpat, dále přes Pokutské hory, hřbet Kostryča v Čornohoře, Hryňavy, krátký úsek Čyvčyn a Jalovyčory. Poslední úsek sleduje řeku Suceavu, po níž vede hranice s Rumunskem, až do vesnice Šepit.</p>\n<p>Nadace Karpatski stežky (Karpatské stezky) ji začala značit v roce 2002 s dobrovolníky z Polska a Česka, zpočátku jen v Gorganech, a několik let stezka končila v Krasnyku. Úseky z Krasnyku do Perkalabu a dál do Šepitu přibyly v roce 2014.</p>\n<p>Červené značky vedou po celé trase, ale vyžadují neustálou péči. V roce 2021 ukrajinská veřejnoprávní stanice Suspilne informovala, že horský záchranář a dobrovolník Vasyl Ficak, pracující většinou sám, v předchozím roce obnovil 87 km značení v Gorganech a chystal se obnovit dalších 100 km.</p>"
 	},
 	"east-coast-trail": {
 		"title": "Stezka Východního pobřeží",
@@ -269,6 +289,16 @@
 		"summary": "164km třináctidenní trasa po celé délce pohoří Gariwerd/Grampians v západní Victorii, z Mount Zero na severu do Dunkeldu na jihu.",
 		"html": "<p>Gariwerd, Grampians, je soustava pískovcových hřbetů vystupujících z plání západní Victorie a kulturní krajina Aboriginců, o kterou pečují její tradiční vlastníci. Stezka vrcholy Grampians vede po celé délce národního parku z Mount Zero u Dadswells Bridge do města Dunkeld.</p>\n<p>Sleduje skalnaté hřebeny a buš od vrcholu k vrcholu, přes Gar (Mount Difficult), Mount William, Signal Peak, Mount Abrupt a Mount Sturgeon, a nocuje se v tábořištích přístupných jen pěšky, jako Strachans, Buandik a Boreang, nebo v chatách pro turisty na severních vrcholech.</p>\n<p>Parks Victoria popisuje 164km trasu na 13 dní a 12 nocí s kratšími variantami na jeden až tři dny a vyžaduje rezervaci tábořišť. Požáry v letech 2024 a 2025 spálily přes 135 000 hektarů a některé stezky zůstávají uzavřené; tábořiště Strachans je kvůli modernizaci zavřené od 13. dubna do 29. října 2026.</p>"
 	},
+	"great-baikal-trail-listvyanka-bolshoye-goloustnoye": {
+		"title": "Velká bajkalská stezka: z Listvjanky do Bolšoje Goloustnoje",
+		"summary": "Pobřežní trasa dlouhá asi 55 km po Velké bajkalské stezce, z Listvjanky přes kopce do Bolšije Koty a dál podél útesů a zátok Bajkalu do Bolšoje Goloustnoje.",
+		"html": "<p>Sdružení Velká bajkalská stezka už přes dvacet let buduje a opravuje stezky kolem Bajkalu a na břehu mezi Listvjankou a Bolšoje Goloustnoje vedou dvě z nich. Práce na první, z Listvjanky do Bolšije Koty, začaly v roce 2004 jako bezpečnější alternativa k nebezpečné pobřežní stezce a trvaly do roku 2009; dobrovolníci postavili lávky přes četné potoky.</p>\n<p>Od konce Gudinovy ulice v Listvjance stoupá stezka 3,5 km prudce na vrchol ve výšce 860 m, 404 m nad jezerem, a pak vede nad vodou podél útesů a sutí, celkem asi 24,7 km, až k oblázkovému břehu Čornaja Pad u Bolšije Koty. Další úsek, asi 30 km, míjí mys Skriper, mys Sobolev a skálu Čajačij utjos s exponovaným Čertovým mostem, a kde se horní stezka zřítila, je třeba sestoupit na kamenité pláže; posledních několik kilometrů do Bolšoje Goloustnoje vede po nezpevněné cestě.</p>\n<p>Sdružení radí počítat na druhý úsek nejméně se dvěma dny a uvádí, že od konce financování v roce 2023 už tyto stezky neudržuje. Trasa leží v Pribajkalském národním parku, kde návštěva, táboření a rozdělávání ohňů vyžadují povolení správy parku v Irkutsku nebo lesních správ v Listvjance a Bolšoje Goloustnoje; od června do poloviny září jezdí z Irkutsku do Listvjanky a Bolšije Koty loď.</p>"
+	},
+	"great-divide-trail": {
+		"title": "Stezka Velkého rozvodí",
+		"summary": "Stezka dlouhá 1 095 km podél kontinentálního rozvodí kanadskými Skalnatými horami, z národního parku Waterton Lakes na hranici s USA na sever do provinčního parku Kakwa, mezi Albertou a Britskou Kolumbií.",
+		"html": "<p>Stezka Velkého rozvodí začíná v národním parku Waterton Lakes na hranici Kanady a Spojených států, kde navazuje na Continental Divide Trail, a vede 1 095 km na sever do provinčního parku Kakwa. Sleduje rozvodí mezi Albertou a Britskou Kolumbií vysokohorskou krajinou kanadských Skalnatých hor a překračuje ho nejméně 30krát.</p>\n<p>Stezku podporuje Great Divide Trail Association, kanadská nezisková a registrovaná dobročinná organizace se sídlem v Calgary. Protože její jižní konec navazuje na severní konec Continental Divide Trail, lze obě projít jako jednu trasu od mexické hranice až na sever Britské Kolumbie.</p>"
+	},
 	"great-ocean-walk": {
 		"title": "Great Ocean Walk",
 		"summary": "Pobřežní trasa ve Victorii z Apollo Bay k Dvanácti apoštolům, přes 100 km pláží, útesů a deštného lesa, obvykle na osm dní.",
@@ -284,6 +314,16 @@
 		"summary": "262km okruh z Portlandu v jihozápadní Victorii vnitrozemským lesem k řece Glenelg a zpět po plážích a útesech Discovery Bay.",
 		"html": "<p>Great South West Walk postavili obyvatelé Portlandu v jihozápadní Victorii: zaměstnanci, studenti a rodiny z místní střední školy vyznačili v letech 1980 až 1982 prvních 200 km na veřejných pozemcích. Spolek Friends of the Great South West Walk, založený v roce 1983, ji rozšířil na 262km okruh a dodnes ji jako dobrovolníci udržuje pod Parks Victoria.</p>\n<p>Z Portlandu vede okruh vnitrozemím lesem k soutěsce řeky Glenelg a vesnici Nelson, pak se vrací po dlouhých plážích Discovery Bay, kde pobřeží lemují strmé písečné útesy, a kolem mysů u Portlandu.</p>\n<p>Web spolku uvádí 262 km se 14 tábořišti a okruh lze jít najednou nebo po úsecích, například úsek z Trewally do Murrells na Discovery Bay.</p>"
 	},
+	"great-ural-trail": {
+		"title": "Velká uralská stezka",
+		"summary": "Celoroční systém stezek podél Uralu s pěší trasou delší než 2 300 km přes Orenburskou oblast, Baškortostán, Čeljabinskou a Sverdlovskou oblast a Permský kraj, z Orsku směrem k Ďatlovovu průsmyku.",
+		"html": "<p>Velká uralská stezka sleduje pohoří Ural, tradiční hranici mezi Evropou a Asií, přes Permský kraj, Sverdlovskou a Čeljabinskou oblast, Baškortostán a Orenburskou oblast. Její pěší trasa měří přes 2 300 km a vede z Orsku na jihu až na severní Ural k Ďatlovovu průsmyku.</p>\n<p>Nápad pochází od Vjačeslava Pestrikova, zkušeného cestovatele z Jekatěrinburgu, který s přáteli projezdil Ural autem, a práce na stezce začaly v roce 2022. První úsek byl vyznačen v ochranném pásmu Visimské přírodní rezervace, kde sloupek označuje nultý kilometr stezky.</p>\n<p>Časopis Vokrug světa ji popisuje jako celoroční systém, k němuž patří také vodní trasa dlouhá 2 440 km a cyklotrasy delší než 2 000 km. Podle zprávy zveřejněné v září 2025 cestovatelka Oksana Lytkinová ušla téměř 2 400 km stezky za 120 dní, z Orsku k Ďatlovovu průsmyku.</p>"
+	},
+	"great-valdai-trail": {
+		"title": "Velká valdajská stezka",
+		"summary": "Lesní stezka dlouhá 77 km přes Valdajský národní park v Novgorodské oblasti, kterou lze projít za pět až sedm dní mezi sedmi vybavenými základními tábory, kolem jezer, řek s bobry a visutého mostu přes Polomeť.",
+		"html": "<p>Valdajský národní park v Novgorodské oblasti chrání kopcovitou krajinu jezer, řek a lesů a Velká valdajská stezka ji pěšky protíná v délce 77 km. Trasa vede smrčinami s koberci zeleného mechu, listnatými lesy a bory, kolem řek s bobřími hrázemi, modrých jezer a rašelinišť a po visutém mostě překonává Polomeť, největší a místy peřejnatou řeku parku.</p>\n<p>Podél stezky je pro nocování rozmístěno sedm základních táborů s přístřešky, stoly, umyvadly, toaletami, popelnicemi a ohništi a vodu poskytují dva prameny. Na Ryžoše, nejvyšším bodě parku, stojí vyhlídková věž.</p>\n<p>Národní park počítá na stezku s pěti až sedmi dny a doporučuje návštěvu od května do listopadu, přičemž před vyrážením v říjnu nebo listopadu žádá ověřit si podmínky u pracovníků parku. Návštěvníci platí vstup do parku a jednorázový poplatek za základní tábory, vyplňují registrační formulář a skupiny musí deset dní předem informovat ruské ministerstvo pro mimořádné situace.</p>"
+	},
 	"gunung-tahan-trail": {
 		"title": "Stezka na Gunung Tahan z Kuala Tahan",
 		"summary": "Sedmidenní výprava džunglí s průvodcem přes Taman Negara z Kuala Tahan na Gunung Tahan, s 2 187 m nejvyšší vrchol Malajského poloostrova.",
@@ -298,6 +338,11 @@
 		"title": "Heaphy Track",
 		"summary": "78,4km Great Walk přes národní park Kahurangi, od kopců Golden Bay přes Gouland Downs k pobřeží s palmami nīkau v Kohaihai.",
 		"html": "<p>Heaphy Track přechází národní park Kahurangi na severozápadě Jižního ostrova mezi Golden Bay a západním pobřežím. Ústí řeky u jejího západního konce leží tam, kde se setkávaly dvě maorské stezky pro pounamu neboli nefrit, a archeologie dokládá, že zde lidé žili před 500 lety; později zeměměřiči a průzkumník James Mackay prosazovali podél trasy jezdeckou stezku.</p>\n<p>Od Brown Hut stoupá bukovým a podokarpovým lesem na otevřené trsnaté travinné pláně Gouland Downs s vápencovými oblouky a krasem, pak klesá k řece Heaphy a sleduje pobřeží s palmami nīkau a stromy rata do Kohaihai.</p>\n<p>Ministerstvo ochrany přírody udržuje trasu ve standardu Great Walk a doporučuje čtyři až šest dní, s chatami Brown, Perry Saddle, Gouland Downs, Saxon, James Mackay a Heaphy, které je stejně jako tábořiště nutné celoročně rezervovat. Horská kola jsou povolena od 1. května do 30. listopadu, za světla a ve skupinách nejvýše šesti lidí.</p>"
+	},
+	"hetta-pallas-hiking-trail": {
+		"title": "Turistická stezka Hetta-Pallas",
+		"summary": "Túra dlouhá 50 km přes fjeldy národního parku Pallas-Yllästunturi ve finském Laponsku, z Hetty do Pallasu řadou roklí, po trase poprvé vytyčené v roce 1934.",
+		"html": "<p>Turistická stezka Hetta-Pallas přechází fjeldy národního parku Pallas-Yllästunturi ve finském Laponsku v délce asi 50 km, od vesnice Hetta na severu po Pallas na jihu. Její trasa byla poprvé vytyčena v roce 1934.</p>\n<p>Od břehu jezera Ounasjärvi stoupá stezka na Pyhäkero a pak prochází řadou roklí mezi fjeldy, mezi nimi Sioskuru, Pahakuru, Hannukuru, Nammalakuru a Rihmakuru, než dorazí do Pallasu. Metsähallitus, který spravuje finské národní parky, popisuje letní trasu dlouhou 50 km na své službě luontoon.fi.</p>"
 	},
 	"heysen-trail": {
 		"title": "Heysenova stezka",
@@ -338,6 +383,11 @@
 		"title": "Inka Trail na Machu Picchu",
 		"summary": "Klasický trek po incké cestě přes Andy na Machu Picchu, čtyřdenní túra končící u Brány Slunce a ruin.",
 		"html": "<p>Stezka sleduje incké cesty a kamenná schodiště z údolí Urubamby na 82. kilometru, mlžným lesem a kolem ruin jako Runkurakay, Sayacmarca a Wiñay Wayna až na Machu Picchu. Nejtěžší den přechází Warmiwañuscu, Průsmyk mrtvé ženy, ve výšce asi 4 200 m. Poslední ráno chodci dorazí k Inti Punku, Bráně Slunce, s prvním pohledem dolů na citadelu.</p>\n<p>Vstup omezuje denní kvóta povolení, turisté musí jít s licencovanou agenturou a stezka se každý únor zavírá kvůli údržbě. Trasu spravuje peruánské ministerstvo kultury.</p>"
+	},
+	"israel-national-trail": {
+		"title": "Izraelská národní stezka",
+		"summary": "Národní stezka dlouhá 1 100 km napříč Izraelem, od kibucu Dan na severu do Ejlatu u Rudého moře, přes Galileu, Karmel, středomořské pobřeží, Negev a Ejlatské hory.",
+		"html": "<p>Izraelská národní stezka vede asi 1 100 km celou zemí, od kibucu Dan na severu po terénní školu v Ejlatu u Rudého moře, kterou provozuje Společnost pro ochranu přírody v Izraeli. Společnost ji otevřela v roce 1995 a stezka prochází Galileou a Karmelem, vede podél středomořského pobřeží a přes pustiny Negevu a Ejlatské hory.</p>\n<p>Společnost, známá pod zkratkou SPNI, stezku vytvořila a její název má zapsaný jako ochrannou známku. V roce 2015 se její mladí dobrovolníci vydali projít celou trasu za tři měsíce a zaznamenat ji pro Google Street View, v rámci projektu oznámeného izraelským ministerstvem cestovního ruchu.</p>"
 	},
 	"jatbula-trail": {
 		"title": "Stezka Jatbula",
@@ -384,6 +434,16 @@
 		"summary": "1 797km okruh ze 160 jednodenních tras Tokiem a šesti okolními prefekturami, od kopců západně od hlavního města k pobřeží Bósó a zpět.",
 		"html": "<p>Japonské ministerstvo životního prostředí vytvořilo síť dálkových přírodních stezek po celé zemi a Kantó Fureai no Miči je ta, která obepíná oblast Tokia. Vede Tokiem a prefekturami Kanagawa, Saitama, Gunma, Točigi, Ibaraki a Čiba a začíná i končí v Umenokidairě v Hačiódži, nedaleko hory Takao na západním okraji metropole.</p>\n<p>Okruh spojuje hory a nížiny: Takao a Okutamu, pohoří Čičibu, Mjógi, Ohira a Cukuba, pak jezero Kasumigaura, dlouhou pláž Kudžúkurihama, poloostrovy Bósó a Miura a pohoří Tanzawa. Mezi nimi sleduje venkovské cesty a pole a ministerstvo ji představuje jako způsob, jak si užít přírodní scenérie, venkovskou krajinu i historická a kulturní místa zároveň.</p>\n<p>Ministerstvo dělí trasu do 160 tras po zhruba 10 km, každá na jeden den, celkem asi 1 797 km. Chodci si mohou nechat potvrdit úsek prefektury tak, že se na vyznačeném místě každé trasy vyfotí a snímky pošlou na prefekturní úřad, a ti, kdo dokončí všech 160 tras, mohou předložit potvrzení najednou.</p>"
 	},
+	"karhunkierros": {
+		"title": "Karhunkierros (Medvědí okruh)",
+		"summary": "Jednosměrná trasa dlouhá 82 km národním parkem Oulanka u Kuusama na severovýchodě Finska, kolem zpěněných peřejí a sedmi otevřených divočinových chat, na tři až sedm dní.",
+		"html": "<p>Karhunkierros, Medvědí okruh, je stezka dlouhá 82 km národním parkem Oulanka u Kuusama na severovýchodě Finska, která vede po státních i soukromých pozemcích. Přestože název naznačuje okruh, jde o jednosměrnou trasu, kterou Metsähallitus označuje za legendární: vede na nejkrásnější místa parku a kolem zpěněných peřejí.</p>\n<p>Podél cesty stojí sedm otevřených divočinových chat a tři denní chaty, k tomu přístřešky a chatky. Podle města Kuusamo trvá túra tři až sedm dní podle toho, kolik chce člověk denně ujít, a možné jsou i kratší úseky nebo jednodenní výlety.</p>"
+	},
+	"kashmir-great-lakes-trek": {
+		"title": "Trek Velkých jezer Kašmíru",
+		"summary": "Vysokohorský trek dlouhý asi 70 km v kašmírském Himálaji, ze Sonamargu přes průsmyk Nichnai kolem řady horských jezer ke Gangabalu a do Naranagu, obvykle asi za sedm dní.",
+		"html": "<p>Trek Velkých jezer Kašmíru, komerčně známý jako trek Sonamarg-Vishansar-Naranag, je vysokohorská trasa dlouhá asi 70 km v kašmírském Himálaji. Z výchozího bodu v Sonamargu, asi 80 km severně od Šrínagaru, se vine rozlehlými loukami, zasněženými průsmyky, ledovci a horskými jezery a cestou k jezeru Vishansar překonává průsmyk Nichnai ve výšce asi 4 100 m.</p>\n<p>Trek končí v Naranagu po minutí jezera Gangabal, posvátného pro hinduisty, pod Harmukhem vysokým přes 5 000 m. Začátečníkům trvá asi sedm dní, po cestě nejsou žádné obchody a turisté potřebují předem povolení od úřadů pro cestovní ruch a lesy i souhlas policie a bezpečnostních složek.</p>"
+	},
 	"kepler-track": {
 		"title": "Keplerova stezka",
 		"summary": "Okružní 60km Great Walk, která začíná u Te Anau, stoupá nad hranici lesa po hřebeni Keplerových hor a vrací se kolem jezera Manapouri a řeky Waiau.",
@@ -393,6 +453,11 @@
 		"title": "Kerry Way",
 		"summary": "Okruh kolem poloostrova Iveragh v hrabství Kerry se začátkem a koncem v Killarney, přes hory, rašeliniště a pobřežní vesnice jako Cahersiveen a Sneem.",
 		"html": "<p>Kerry Way kombinuje klidné silnice, staré cesty a horské stezky mezi Macgillycuddy&#39;s Reeks a atlantským pobřežím. Asi třetina trasy vede po místních silnicích.</p>"
+	},
+	"kgari-great-walk": {
+		"title": "Velká stezka K'gari (ostrov Fraser)",
+		"summary": "Velká stezka dlouhá 90 km přes K'gari (ostrov Fraser), ostrov zapsaný na seznam světového dědictví v zemi lidu Butchulla, deštným pralesem a kolem sladkovodních jezer, jako je Boorangoora a jezero Wabby, za šest až osm dní.",
+		"html": "<p>K&#39;gari, známý také jako ostrov Fraser, leží v zemi lidu Butchulla na pobřeží Fraser Coast, asi 300 km severně od Brisbane, a je zapsán na seznam světového dědictví. Velká stezka K&#39;gari protíná ostrov v délce 90 km deštným pralesem plným ptačího zpěvu a kolem sladkovodních jezer, jako je Boorangoora (jezero McKenzie) a smaragdově zelené jezero Wabby.</p>\n<p>Správa národních parků Queenslandu počítá na celou trasu se šesti až osmi dny; tábořiště pro pěší jsou u jezer Boomanjin, Benaroon, Boorangoora, Wabby a Garawongera, u Central Station, ve Valley of the Giants a u bažiny Jabiru. Tábořiště je třeba rezervovat, pro vjezd na ostrov vozidlem je nutné povolení a turisté mají dbát bezpečnosti kvůli dingům a vše ukládat do schránek na jídlo v tábořištích.</p>"
 	},
 	"kilimanjaro-lemosho-route": {
 		"title": "Kilimandžáro: trasa Lemosho",
@@ -518,6 +583,11 @@
 		"title": "Malířská cesta",
 		"summary": "Osmietapová 116km trasa pískovcovými věžemi a stolovými horami Saského Švýcarska po stopách romantických malířů.",
 		"html": "<p>Saské Švýcarsko, Labské pískovce jihovýchodně od Drážďan, přitahovalo v desetiletích kolem roku 1800 cestovatele a malíře, mezi nimi umělce, kteří dnes patří k zakladatelům romantismu. Malířská cesta, otevřená a vyznačená v roce 2006, zhruba sleduje trasu, kterou oni a jejich druhové chodili do poloviny 19. století.</p>\n<p>Začíná v Liebethalu u Pirny a přechází Národní park Saské Švýcarsko k české hranici kolem Basteie a Schrammsteine, pak se vrací po levém břehu Labe přes stolové hory, kolem Pfaffensteinu a pevnosti Königstein do Pirny. Na 116 km nastoupá asi 3 600 m.</p>\n<p>Regionální turistická centrála ji dělí do osmi etap s asi 46 hodinami chůze. Chodci si mohou každou etapu orazítkovat v turistickém pasu Malířské cesty a na konci obdrží certifikát a ubytování podél stezky může nést označení „Wanderfreundlich am Malerweg“.</p>"
+	},
+	"menalon-trail": {
+		"title": "Stezka Menalon",
+		"summary": "Stezka dlouhá 75 km horskými vesnicemi Arkádie na Peloponésu, ze Stemnitsy do Lagkadie soutěskou Lousiosu, první stezka v Řecku certifikovaná Evropskou asociací turistů.",
+		"html": "<p>Stezka Menalon prochází horami Arkádie ve středu Peloponésu v délce 75 km, ze Stemnitsy do Lagkadie, a vine se soutěskou řeky Lousios. Jejích osm úseků spojuje vesnice Stemnitsa, Dimitsana, Zygovisti, Elati, Vytina, Nymphasia, Magouliana, Valtesiniko a Lagkadia.</p>\n<p>Byla to první stezka v Řecku certifikovaná Evropskou asociací turistů a její web provozuje komunitní družstvo Mainalon. Recenze turistů na webu chválí zřetelné značení, s výjimkou krátkého neznačeného úseku u muzea vody poblíž Dimitsany.</p>"
 	},
 	"milford-track": {
 		"title": "Milford Track",
@@ -664,6 +734,11 @@
 		"summary": "Čtyř- až pětidenní přechod hory Rinjani na Lomboku, výstup ze Sembalunu na vrchol ve 3 726 m a sestup kolem kráterového jezera Segara Anak do Senaru.",
 		"html": "<p>Gunung Rinjani se na ostrově Lombok zvedá do výšky 3 726 m a leží v národním parku Gunung Rinjani. Jeho kaldera skrývá Segara Anak, kráterové jezero posvátné pro Balijce i vyznavače Wetu Telu, z jehož vod se zvedá mladý kužel Gunung Baru.</p>\n<p>Výchozími body jsou Sembalun Lawang a Senaru a na vrchol se nejlépe dostanete ze Sembalunu. Oficiální indonéský turistický web popisuje třídenní trasy i čtyř- až pětidenní výstup na vrchol, který končí v Senaru.</p>\n<p>Horolezci se registrují online v systému eRinjani správy národního parku, která podle podmínek otevírá a zavírá jednotlivé stezky; v říjnu 2026 po lesním požáru znovu otevřela stezku ze Senaru.</p>"
 	},
+	"road-to-the-lavra": {
+		"title": "Cesta do Lávry",
+		"summary": "Pěší cesta dlouhá 120 km z moskevského Kremlu do Trojicko-sergijevské lávry v Sergijev Posadu, kterou vytvořili dobrovolníci pro poutníky a turisty, s razítky sbíranými na klíčových místech.",
+		"html": "<p>Trojicko-sergijevská lávra v Sergijev Posadu severovýchodně od Moskvy je nejvýznamnějším klášterem Ruské pravoslavné církve a po staletí k ní z Moskvy putovali poutníci. Cesta do Lávry oživuje starou myšlenku dojít tam pěšky a vede asi 120 km z moskevského Kremlu přes město a venkov Moskevské oblasti až ke klášteru.</p>\n<p>Na klíčových místech sbírají poutníci razítka do cestovního dokladu zvaného podorožnaja gramota, který lze získat v Iverské kapli a v klášteře Narození Bohorodice v Moskvě. Trasu lze projít najednou nebo po částech, za jediný den i zhruba za osm dní, podle cílů a kondice.</p>\n<p>Cestu budují dobrovolníci pod vedením Eldara Orudževa a dary směřují do neziskového centra pro vytváření a rozvoj ekologických cest. Podle webu projektu měří trasa asi 120 km a je určena poutníkům, turistům i všem, kdo rádi chodí pěšky.</p>"
+	},
 	"rota-vicentina-historical-way": {
 		"title": "Historická cesta Rota Vicentina",
 		"summary": "263km trasa ve 13 jednodenních etapách venkovským vnitrozemím jihozápadního Portugalska, ze Santiaga do Cacém k mysu svatého Vincenta.",
@@ -729,6 +804,11 @@
 		"summary": "Jižní větev maďarské soustavy Modrých stezek, 542 km od Írott-kő na rakouské hranici přes kopce Zadunají do Szekszárdu.",
 		"html": "<p>Stezka nese jméno Pála Rockenbauera, televizního redaktora a nadšeného chodce, jehož filmy o putování po Modré stezce si v Maďarsku dodnes pamatují. Modře značená trasa přes jižní Zadunají existovala už v roce 1989, kdy ji se svým štábem prošel a natočil, a dnešní vedení bylo stanoveno brzy poté. Začíná na Írott-kő v Kőszegských vrších na rakouské hranici a končí ve vinařském Szekszárdu nad dunajskou nížinou.</p>\n<p>Cestou přechází pět žup, Vas, Zala, Somogy, Baranya a Tolna, a spojuje zalesněné kopce Őrségu a Zaly se Zselicem a Mecsekem. Dlouhé úseky vedou poli a vesničkami mezi hřbety a celkové stoupání asi 9 500 m se rozkládá po celé délce, místo aby se soustředilo ve vysokých horách.</p>\n<p>Web Modré stezky Maďarského turistického svazu dělí trasu do 11 úseků s 57 razítkovými místy, s 542 km a asi 151 hodinami chůze. Jako na ostatních Modrých stezkách chodci sbírají razítka do sešitu a pevný počet dní se nedoporučuje.</p>"
 	},
+	"south-ural-trail": {
+		"title": "Jihouralská stezka",
+		"summary": "Síť stezek v horách Baškortostánu a Čeljabinské oblasti, jejíž hlavní větev dlouhá 500 km vede z lázní Bannoje k jezeru Turgojak kolem Inzerských zubčatek, Iremelu a národních parků Zjuratkul a Taganaj.",
+		"html": "<p>Jihouralská stezka spojuje horské oblasti Baškortostánu a Čeljabinské oblasti na jižním Uralu. Její hlavní větev vede z lázní Bannoje k jezeru Turgojak kolem rozeklaných Inzerských zubčatek, přírodního parku Iremel a národních parků Zigalga, Zjuratkul a Taganaj.</p>\n<p>Projekt popisuje stezku dlouhou zhruba tisíc kilometrů s vedlejšími větvemi, jako jsou Západní brána, Cesta Jurmaty a Burzjanská větev, přičemž bez zastávek se chodí právě hlavní větev dlouhá 500 km. Jako zakladatel je uváděn Rais Gabitov a o jednotlivé větve pečují dobrovolní strážci.</p>\n<p>Podle webu stezky turisté hlavní větev často dělí na tři týdenní části nebo chodí kratší úseky o víkendech.</p>"
+	},
 	"south-west-coast-path": {
 		"title": "Jihozápadní pobřežní stezka",
 		"summary": "Nejdelší britská národní stezka sleduje jihozápadní anglické pobřeží z Minehead kolem Cornwallu do Poole, přes 1 000 km útesů, zátok a přístavů.",
@@ -753,6 +833,11 @@
 		"title": "Sultánská stezka",
 		"summary": "Přeshraniční pěší trasa z Vídně do Istanbulu, která v opačném směru sleduje cestu osmanských tažení do střední Evropy.",
 		"html": "<p>Sultánská stezka vychází z cesty, kterou osmanská vojska táhla v 16. století k Vídni, a obrací ji na pochod z Vídně do Istanbulu. Pořadatelé ji představují jako cestu od dobývání ke spolupráci, spojující metropole a pohraniční města, jejichž dějiny utvářela staletí habsbursko-osmanského soupeření.</p>\n<p>Z Vídně sleduje trasa Dunaj do Bratislavy a Budapešti, přechází pláně jižního Maďarska a chorvatské a srbské pohraničí do Bělehradu, pak se stáčí na jihovýchod balkánskými údolími do Niše, Sofie a na Thrácké pláně. Za Edirne přechází východní Thrákii k Bosporu, takže pochod končí mezi mešitami starého Istanbulu.</p>\n<p>Sultans Trail Foundation uvádí 2 500 km v osmi úsecích a říká, že projít celou trasu trvá v průměru 20 až 25 týdnů; na kole ji lze ujet asi za pět týdnů. Velká část vede po venkovských silnicích, březích řek a vesnických cestách, s horskými stezkami v balkánském a rodopském úseku.</p>"
+	},
+	"sunshine-coast-trail": {
+		"title": "Stezka Sunshine Coast",
+		"summary": "Stezka od chaty k chatě dlouhá 180 km na severní části Sunshine Coast v Britské Kolumbii, ze Sarah Point u Desolation Sound do Saltery Bay, která spojuje pralesy a horské vrcholy, se 14 bezplatnými chatami.",
+		"html": "<p>Stezka Sunshine Coast se táhne 180 km divočinou severní části Sunshine Coast v Britské Kolumbii, ze Sarah Point u Desolation Sound do Saltery Bay. Vznikala od roku 1992, kdy malá skupina založila dnešní qathet Parks and Wilderness Society a začala budovat stezky spojující zbylé porosty pralesa v regionu.</p>\n<p>Trasa vede pralesem na vrcholy s panoramatickými výhledy a je označována za nejdelší kanadskou stezku od chaty k chatě, se 14 chatami a další plánovanou. Je také jedinou bezplatnou stezkou svého druhu a spolek uvítá dary na její údržbu.</p>"
 	},
 	"superior-hiking-trail": {
 		"title": "Stezka Superior",
@@ -788,6 +873,11 @@
 		"title": "Te Araroa",
 		"summary": "Novozélandská národní stezka vede asi 3 000 km od Cape Reinga na dalekém severu do Bluffu na jižním cípu.",
 		"html": "<p>Stezka přechází pláže, lesy, vulkanickou krajinu a pohoří obou ostrovů a kombinuje stezky, silnice a přechody řek i moře. Její jméno znamená v maorštině „dlouhá cesta“ a jako souvislá trasa byla otevřena v roce 2011 spojením existujících stezek s novými úseky, které postavily místní spolky a dobrovolníci.</p>\n<p>Polovina na Severním ostrově začíná podél pláže Ninety Mile Beach a prochází Aucklandem a Wellingtonem, s pádlovacím úsekem na řece Whanganui. Jižní ostrov je divočejší: dlouhé dny v pohoří Richmond a Jižních Alpách, řeky bez mostů a odlehlé chaty.</p>\n<p>Projít celou stezku trvá čtyři až šest měsíců a většina chodců vyráží z Cape Reinga na jaře, mezi říjnem a prosincem.</p>"
+	},
+	"thorsborne-trail": {
+		"title": "Thorsbornova stezka",
+		"summary": "Divoká trasa dlouhá 32 km po východní straně ostrova Hinchinbrook na tropickém severu Queenslandu, z Ramsay Bay na George Point asi za čtyři dny, kolem širokých zátok a opuštěných pláží.",
+		"html": "<p>Ostrov Hinchinbrook leží u pobřeží tropického severu Queenslandu a Thorsbornova stezka sleduje jeho východní stranu v délce 32 km jedním směrem, z Ramsay Bay na severu na George Point na jihu. Správa národních parků Queenslandu ji popisuje jako proslulou vícedenní trasu, která objevuje široké zátoky a opuštěné pláže.</p>\n<p>Trasa je hodnocena jako obtížná a trvá asi čtyři dny. Povolení na každý rok se vydávají předem, park varuje před krokodýly a žahavými medúzami a upozorňuje na náročné sezonní podmínky od října do března; na George Point byly kvůli erozi odstraněny toaleta a cedule.</p>"
 	},
 	"three-capes-track": {
 		"title": "Stezka Tří mysů",
@@ -833,6 +923,11 @@
 		"title": "Stezka přes Gunung Tahan",
 		"summary": "Sedmidenní přechod Taman Negara s průvodcem přes Gunung Tahan, nejvyšší vrchol Malajského poloostrova, od sídla parku v Kuala Tahan do Kuala Juram na straně Merapohu.",
 		"html": "<p>Gunung Tahan, s 2 187 m nejvyšší hora Malajského poloostrova, stojí hluboko v Taman Negara a tento přechod vede přes park přes vrchol, místo aby se vracel stejnou cestou. Z Kuala Tahan, sídla parku na jihovýchodě, stoupá stezka nížinným a pahorkatinným deštným lesem na vrcholový hřeben a pak sestupuje na severozápad do Kuala Juram u Merapohu.</p>\n<p>Úřad pro divokou přírodu a národní parky uvádí trasu z Kuala Tahan přes Gunung Tahan do Kuala Juram jako výpravu na sedm dní a šest nocí a poznamenává, že původní stezka je delší a těžší, se sedmi brody a 27 vrcholy. Chodci musí zůstat s horským průvodcem a na dohled od něj, za 1 200 RM za sedmidenní túru, a potřebují vstupní povolení parku; úřad doporučuje jít mezi březnem a srpnem.</p>"
+	},
+	"transcarpathian-tourist-trail": {
+		"title": "Zakarpatská turistická stezka",
+		"summary": "Červeně značená hřebenová trasa dlouhá asi 315 km přes ukrajinské Karpaty, z Velykého Berezného u slovenské hranice přes poloniny Rivna, Boržava, Krasna a Svydovec až na Hoverlu, nejvyšší horu Ukrajiny.",
+		"html": "<p>Zakarpatská turistická stezka prochází ukrajinskými Karpaty z Velykého Berezného v údolí Uže, nedaleko slovenské hranice, až na Hoverlu, která je s 2 061 m nejvyšší horou Ukrajiny. Velká část cesty vede po otevřených horských pastvinách zvaných poloniny: přes Poloninu Rivnou, Bukovské vrchy, Vododilnyj hřbet, Poloninu Boržavu, cíp Gorganů, Poloninu Krasnou, Svydovec a nakonec Čornohoru.</p>\n<p>Stezka je v celé délce značena červeně a autor průvodců Adam Rugała ji dělí na deset etap, od 12,5 km mezi Mižhirjou a Synevyrem po 50 km v Bukovských vrších mezi Dubovým Hajem a Užockým průsmykem, celkem 315 km. V roce 2025 představila Zakarpatská oblastní správa cyklotrasu, která má být moderní alternativou k této oblíbené pěší stezce.</p>"
 	},
 	"transcaucasian-trail-armenia": {
 		"title": "Transkavkazská stezka: Arménie",

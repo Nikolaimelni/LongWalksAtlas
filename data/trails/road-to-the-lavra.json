@@ -1,0 +1,29 @@
+{
+	"slug": "road-to-the-lavra",
+	"name": {
+		"original": "Дорога в Лавру"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Moscow Kremlin",
+		"coords": [37.6177, 55.7558]
+	},
+	"end": {
+		"name": "Trinity Lavra of St Sergius, Sergiev Posad",
+		"coords": [38.13, 56.3104]
+	},
+	"countries": ["RU"],
+	"lengthKm": 120,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://dorogavposad.ru/",
+	"sources": ["https://dorogavposad.ru/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9403045]
+	}
+}

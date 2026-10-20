@@ -1,0 +1,35 @@
+{
+	"slug": "karhunkierros",
+	"name": {
+		"original": "Karhunkierros"
+	},
+	"type": "forest",
+	"region": "europe",
+	"start": {
+		"name": "Hautajärvi",
+		"coords": [29.0549, 66.519]
+	},
+	"end": {
+		"name": "Ruka",
+		"coords": [29.14, 66.17]
+	},
+	"countries": ["FI"],
+	"lengthKm": 82,
+	"days": {
+		"min": 3,
+		"max": 7
+	},
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.luontoon.fi/karhunkierros",
+	"sources": [
+		"https://www.luontoon.fi/karhunkierros",
+		"https://kuusamo.fi/en/culture-and-leisure/routes-trails-and-lay-bys/summer-trails/karhunkierros-trail"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1633747]
+	}
+}

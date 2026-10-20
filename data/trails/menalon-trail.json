@@ -1,0 +1,29 @@
+{
+	"slug": "menalon-trail",
+	"name": {
+		"original": "Μονοπάτι Μαινάλου"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Stemnitsa",
+		"coords": [22.0794, 37.5541]
+	},
+	"end": {
+		"name": "Lagkadia",
+		"coords": [22.023, 37.668]
+	},
+	"countries": ["GR"],
+	"lengthKm": 75,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://menalontrail.eu/",
+	"sources": ["https://menalontrail.eu/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [19773901]
+	}
+}

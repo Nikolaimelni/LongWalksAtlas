@@ -1,0 +1,29 @@
+{
+	"slug": "camino-podolico",
+	"name": {
+		"original": "Camino Podolico"
+	},
+	"type": "pilgrimage",
+	"region": "europe",
+	"start": {
+		"name": "Vinnytsia",
+		"coords": [28.4735, 49.2332]
+	},
+	"end": {
+		"name": "Kamianets-Podilskyi",
+		"coords": [26.585, 48.678]
+	},
+	"countries": ["UA"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://www.caminopodolico.net/",
+	"sources": ["https://www.caminopodolico.net/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [15849854]
+	}
+}

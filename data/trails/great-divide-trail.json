@@ -1,0 +1,29 @@
+{
+	"slug": "great-divide-trail",
+	"name": {
+		"original": "Great Divide Trail"
+	},
+	"type": "mountain",
+	"region": "americas",
+	"start": {
+		"name": "Waterton Lakes National Park (Canada-US border)",
+		"coords": [-113.91, 49]
+	},
+	"end": {
+		"name": "Kakwa Provincial Park",
+		"coords": [-120.419, 53.8463]
+	},
+	"countries": ["CA"],
+	"lengthKm": 1095,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://greatdividetrail.com/",
+	"sources": ["https://greatdividetrail.com/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [8139599]
+	}
+}

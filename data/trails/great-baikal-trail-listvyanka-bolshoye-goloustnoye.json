@@ -1,0 +1,34 @@
+{
+	"slug": "great-baikal-trail-listvyanka-bolshoye-goloustnoye",
+	"name": {
+		"original": "Большая Байкальская тропа: Листвянка - Большие Коты - Большое Голоустное"
+	},
+	"type": "coastal",
+	"region": "asia",
+	"start": {
+		"name": "Listvyanka",
+		"coords": [104.89, 51.865]
+	},
+	"end": {
+		"name": "Bolshoye Goloustnoye",
+		"coords": [105.41, 52.033]
+	},
+	"countries": ["RU"],
+	"lengthKm": 55,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://greatbaikaltrail.org/trails",
+	"sources": [
+		"https://greatbaikaltrail.org/",
+		"https://greatbaikaltrail.org/trails",
+		"https://greatbaikaltrail.org/listvyanka-bol-shie-koty",
+		"https://greatbaikaltrail.org/tropa-bol-shie-koty-bol-shoe-goloustno"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [5461727]
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"slug": "great-valdai-trail",
+	"name": {
+		"original": "Большая Валдайская тропа"
+	},
+	"type": "forest",
+	"region": "europe",
+	"start": {
+		"name": "Valdai",
+		"coords": [33.263, 57.9541]
+	},
+	"end": {
+		"name": "Dunaevshchina",
+		"coords": [32.9713, 57.6727]
+	},
+	"countries": ["RU"],
+	"lengthKm": 77,
+	"days": {
+		"min": 5,
+		"max": 7
+	},
+	"bestSeason": ["may", "jun", "jul", "aug", "sep", "oct", "nov"],
+	"badges": [],
+	"officialUrl": "https://www.valdaypark.ru/bvt/",
+	"sources": ["https://www.valdaypark.ru/bvt/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [10513530]
+	}
+}

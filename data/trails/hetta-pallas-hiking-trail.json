@@ -1,0 +1,31 @@
+{
+	"slug": "hetta-pallas-hiking-trail",
+	"name": {
+		"original": "Hetta-Pallas-vaellusreitti"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Hetta",
+		"coords": [23.6664, 68.3828]
+	},
+	"end": {
+		"name": "Pallas",
+		"coords": [24.0632, 68.0464]
+	},
+	"countries": ["FI"],
+	"lengthKm": 50,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://luontoon.fi/en/trails/hetta-pallas-hiking-trail-summer-enontekio-190940-en",
+	"sources": [
+		"https://luontoon.fi/en/trails/hetta-pallas-hiking-trail-summer-enontekio-190940-en"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [1444449]
+	}
+}

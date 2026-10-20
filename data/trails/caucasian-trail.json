@@ -1,0 +1,29 @@
+{
+	"slug": "caucasian-trail",
+	"name": {
+		"original": "Кавказская тропа"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Derbent",
+		"coords": [48.2753, 42.0524]
+	},
+	"end": {
+		"name": "Loo, Sochi",
+		"coords": [39.575, 43.7125]
+	},
+	"countries": ["RU"],
+	"lengthKm": 1500,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://caucasiantrail.ru/",
+	"sources": ["https://caucasiantrail.ru/"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [14594896]
+	}
+}

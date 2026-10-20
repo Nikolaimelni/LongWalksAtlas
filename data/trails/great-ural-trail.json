@@ -1,0 +1,31 @@
+{
+	"slug": "great-ural-trail",
+	"name": {
+		"original": "Большая уральская тропа"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Orsk",
+		"coords": [58.5668, 51.2049]
+	},
+	"end": {
+		"name": "Dyatlov Pass",
+		"coords": [59.4627, 61.7547]
+	},
+	"countries": ["RU"],
+	"lengthKm": null,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://vk.com/greaturaltrail_gut",
+	"sources": [
+		"https://www.vokrugsveta.ru/news/ural-na-kablukakh-rossiiskaya-puteshestvennica-proshla-pochti-2400-km-po-bolshoi-uralskoi-trope-za-120-dnei-id6551209/"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [16502403]
+	}
+}

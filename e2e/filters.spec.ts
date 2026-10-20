@@ -76,7 +76,7 @@ test("a filtered link opens with the filters applied", async ({ page }) => {
 	await page.goto("/ru/?type=forest");
 	await openPanel(page);
 	await expect(list(page)).toHaveCount(countOf((t) => t.type === "forest"));
-	await expect(list(page).first()).toHaveText(/E1/);
+	await expect(list(page).filter({ hasText: "E1" })).toHaveCount(1);
 });
 
 test.describe("on a phone", () => {

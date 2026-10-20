@@ -1,0 +1,31 @@
+{
+	"slug": "israel-national-trail",
+	"name": {
+		"original": "שביל ישראל"
+	},
+	"type": "mountain",
+	"region": "middle-east-caucasus",
+	"start": {
+		"name": "Kibbutz Dan",
+		"coords": [35.675, 33.248]
+	},
+	"end": {
+		"name": "Eilat",
+		"coords": [34.92, 29.515]
+	},
+	"countries": ["IL"],
+	"lengthKm": 1100,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://embassies.gov.il/MFA/IsraelExperience/lifestyle/Pages/Google-View-technology-to-document-Israel-Trail-6-May-2015.aspx",
+	"sources": [
+		"https://embassies.gov.il/MFA/IsraelExperience/lifestyle/Pages/Google-View-technology-to-document-Israel-Trail-6-May-2015.aspx"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [282071]
+	}
+}

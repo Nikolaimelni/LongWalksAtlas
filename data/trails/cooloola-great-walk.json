@@ -1,0 +1,29 @@
+{
+	"slug": "cooloola-great-walk",
+	"name": {
+		"original": "Cooloola Great Walk"
+	},
+	"type": "coastal",
+	"region": "oceania",
+	"start": {
+		"name": "Noosa North Shore",
+		"coords": [153.044, -26.351]
+	},
+	"end": {
+		"name": "Rainbow Beach",
+		"coords": [153.091, -25.904]
+	},
+	"countries": ["AU"],
+	"lengthKm": 102,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://parks.qld.gov.au/parks/great-walks-cooloola",
+	"sources": ["https://parks.qld.gov.au/parks/great-walks-cooloola"],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [9931878]
+	}
+}

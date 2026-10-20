@@ -1,0 +1,32 @@
+{
+	"slug": "east-carpathian-tourist-trail",
+	"name": {
+		"original": "Східно-Карпатський туристичний шлях"
+	},
+	"type": "mountain",
+	"region": "europe",
+	"start": {
+		"name": "Torun Pass",
+		"coords": [23.6337, 48.7017]
+	},
+	"end": {
+		"name": "Shepit",
+		"coords": [25.11, 47.79]
+	},
+	"countries": ["UA"],
+	"lengthKm": 278.5,
+	"days": null,
+	"bestSeason": [],
+	"badges": [],
+	"officialUrl": "https://rugala.pl/en/c/eastern-carpathian-tourist-trail/",
+	"sources": [
+		"https://rugala.pl/en/c/eastern-carpathian-tourist-trail/",
+		"https://suspilne.media/135818-u-gorganah-vidnovluut-markuvanna-na-shidno-karpatskomu-turisticnomu-slahu/"
+	],
+	"photo": null,
+	"wikidata": null,
+	"geometry": {
+		"source": "osm",
+		"relationIds": [3075772]
+	}
+}

@@ -34,7 +34,8 @@ const place = z.strictObject({
 });
 
 const regionBounds = {
-	europe: { west: -32, south: 27, east: 45, north: 72 },
+	// east to the Urals, where Europe ends
+	europe: { west: -32, south: 27, east: 61, north: 72 },
 	"middle-east-caucasus": { west: 25, south: 12, east: 63, north: 45 },
 	asia: { west: 60, south: -11, east: 150, north: 56 },
 	// east of Madagascar for Réunion and Mauritius
