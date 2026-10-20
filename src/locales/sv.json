@@ -95,6 +95,10 @@
 		"nearby": "Vandringsleder i närheten",
 		"photoBy": "Foto:",
 		"photoAlt": "Om {{title}}n",
+		"photos": "Foton",
+		"prevPhoto": "Föregående foto",
+		"nextPhoto": "Nästa foto",
+		"photoN": "Foto {{n}} av {{total}}",
 		"daysEstimated": "Ingen källa anger antalet dagar, så de är beräknade utifrån längden med {{pace}} per dag."
 	},
 	"seo": {

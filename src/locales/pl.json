@@ -103,6 +103,10 @@
 		"nearby": "Szlaki w okolicy",
 		"photoBy": "Zdjęcie:",
 		"photoAlt": "O {{title}}",
+		"photos": "Zdjęcia",
+		"prevPhoto": "Poprzednie zdjęcie",
+		"nextPhoto": "Następne zdjęcie",
+		"photoN": "Zdjęcie {{n}} z {{total}}",
 		"daysEstimated": "Żadne źródło nie podaje liczby dni, więc obliczono ją na podstawie długości przy {{pace}} dziennie."
 	},
 	"seo": {

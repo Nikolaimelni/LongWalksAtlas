@@ -26,10 +26,20 @@
 		"https://jktdc.co.in/info.aspx?id=13",
 		"https://outlookindia.com/national/the-year-2022-has-emerged-as-the-golden-year-for-trekking-in-kashmir-news-225998"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Nundkol and Gangabal Lakes of Kashmir.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [11246723]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Vishansar Lake, Sonmarg, Kashmir valley, India.jpg"
+		},
+		{
+			"commons": "File:Campsite near Gangabal lake, Jammu and Kashmir, India.jpg"
+		}
+	]
 }

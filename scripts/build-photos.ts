@@ -17,6 +17,7 @@ const root = join(import.meta.dirname, "..");
 const cacheDir = join(root, "data/cache/photos");
 const outDir = join(root, "public/photos");
 const indexFile = join(root, "src/generated/photos.json");
+const galleryFile = join(root, "src/generated/gallery.json");
 
 const sourceWidth = 1280;
 // Boxes rather than widths, so a portrait photo is not 1700 px tall.
@@ -147,74 +148,99 @@ async function cachedImage(url: string, hash: string): Promise<Uint8Array> {
 	return image;
 }
 
+async function buildPhoto(
+	slug: string,
+	file: string,
+	keep: Set<string>,
+): Promise<TrailPhoto> {
+	const hash = createHash("sha1").update(file).digest("hex").slice(0, 10);
+
+	const info = await cachedInfo(file, hash);
+	const license = plainText(info.meta.LicenseShortName ?? "");
+	if (!isUsableLicense(license)) {
+		throw new DataError(
+			"photo-license",
+			`${file}: licence "${license}" cannot be used`,
+		);
+	}
+	const licenseLink = info.meta.LicenseUrl || null;
+	if (licenseLink && !licenseUrl.safeParse(licenseLink).success) {
+		throw new DataError(
+			"photo-license",
+			`${file}: licence link "${licenseLink}" is not a web address`,
+		);
+	}
+	const image = await cachedImage(info.thumbUrl, hash);
+
+	const names = {
+		small: `${slug}-${hash}-${boxes.small.width}.webp`,
+		large: `${slug}-${hash}-${boxes.large.width}.webp`,
+	};
+	const small = await sharp(image)
+		.resize({ ...boxes.small, fit: "inside", withoutEnlargement: true })
+		.webp({ quality: 65, effort: 6 })
+		.toFile(join(outDir, names.small));
+	const large = await sharp(image)
+		.resize({ ...boxes.large, fit: "inside", withoutEnlargement: true })
+		.webp({ quality: 65, effort: 6 })
+		.toFile(join(outDir, names.large));
+	keep.add(names.small);
+	keep.add(names.large);
+
+	const author = plainText(info.meta.Artist ?? "") || "Wikimedia Commons";
+	log.info({ slug, file, license, author }, "photo ready");
+	return {
+		file,
+		author,
+		license,
+		licenseUrl: licenseLink,
+		sourceUrl: info.pageUrl,
+		width: large.width,
+		smallWidth: small.width,
+		height: large.height,
+		src: { small: `/photos/${names.small}`, large: `/photos/${names.large}` },
+	};
+}
+
 async function main() {
-	const trails = (await readTrails()).filter((t) => t.photo !== null);
+	const trails = await readTrails();
 	await mkdir(cacheDir, { recursive: true });
 	await mkdir(outDir, { recursive: true });
 	const photos: Record<string, TrailPhoto> = {};
+	const gallery: Record<string, TrailPhoto[]> = {};
 	const keep = new Set<string>();
 
 	for (const trail of trails) {
-		const file = trail.photo?.commons;
-		if (!file) continue;
-		const hash = createHash("sha1").update(file).digest("hex").slice(0, 10);
-
-		const info = await cachedInfo(file, hash);
-		const license = plainText(info.meta.LicenseShortName ?? "");
-		if (!isUsableLicense(license)) {
-			throw new DataError(
-				"photo-license",
-				`${file}: licence "${license}" cannot be used`,
+		if (trail.photo) {
+			photos[trail.slug] = await buildPhoto(
+				trail.slug,
+				trail.photo.commons,
+				keep,
 			);
 		}
-		const licenseLink = info.meta.LicenseUrl || null;
-		if (licenseLink && !licenseUrl.safeParse(licenseLink).success) {
-			throw new DataError(
-				"photo-license",
-				`${file}: licence link "${licenseLink}" is not a web address`,
-			);
+		const more: TrailPhoto[] = [];
+		for (const { commons } of trail.morePhotos) {
+			more.push(await buildPhoto(trail.slug, commons, keep));
 		}
-		const image = await cachedImage(info.thumbUrl, hash);
-
-		const names = {
-			small: `${trail.slug}-${hash}-${boxes.small.width}.webp`,
-			large: `${trail.slug}-${hash}-${boxes.large.width}.webp`,
-		};
-		const small = await sharp(image)
-			.resize({ ...boxes.small, fit: "inside", withoutEnlargement: true })
-			.webp({ quality: 65, effort: 6 })
-			.toFile(join(outDir, names.small));
-		const large = await sharp(image)
-			.resize({ ...boxes.large, fit: "inside", withoutEnlargement: true })
-			.webp({ quality: 65, effort: 6 })
-			.toFile(join(outDir, names.large));
-		keep.add(names.small);
-		keep.add(names.large);
-
-		photos[trail.slug] = {
-			file,
-			author: plainText(info.meta.Artist ?? "") || "Wikimedia Commons",
-			license,
-			licenseUrl: licenseLink,
-			sourceUrl: info.pageUrl,
-			width: large.width,
-			smallWidth: small.width,
-			height: large.height,
-			src: { small: `/photos/${names.small}`, large: `/photos/${names.large}` },
-		};
-		log.info(
-			{ slug: trail.slug, license, author: photos[trail.slug]?.author },
-			"photo ready",
-		);
+		if (more.length > 0) gallery[trail.slug] = more;
 	}
 
 	for (const name of await readdir(outDir)) {
 		if (!keep.has(name)) await rm(join(outDir, name));
 	}
-	// photos.json is imported unparsed, so this is its only check.
 	const index = z.record(z.string(), trailPhotoSchema).parse(photos);
 	await writeFile(indexFile, `${JSON.stringify(index, null, "\t")}\n`);
-	log.info({ photos: Object.keys(photos).length }, "wrote photos");
+	const galleryIndex = z
+		.record(z.string(), z.array(trailPhotoSchema))
+		.parse(gallery);
+	await writeFile(galleryFile, `${JSON.stringify(galleryIndex, null, "\t")}\n`);
+	log.info(
+		{
+			photos: Object.keys(photos).length,
+			galleries: Object.keys(gallery).length,
+		},
+		"wrote photos",
+	);
 }
 
 if (import.meta.main) {

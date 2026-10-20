@@ -26,10 +26,20 @@
 		"https://www.luontoon.fi/karhunkierros",
 		"https://kuusamo.fi/en/culture-and-leisure/routes-trails-and-lay-bys/summer-trails/karhunkierros-trail"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Pieni Karhunkierros (3929024554).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1633747]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:80km Karhunkierros Hiking Trail.jpg"
+		},
+		{
+			"commons": "File:Moulin-Refuge, vu de la passerelle surplombant les rapides de Myllykoski. - panoramio.jpg"
+		}
+	]
 }

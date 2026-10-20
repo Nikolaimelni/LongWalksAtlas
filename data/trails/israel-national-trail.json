@@ -22,10 +22,20 @@
 	"sources": [
 		"https://embassies.gov.il/MFA/IsraelExperience/lifestyle/Pages/Google-View-technology-to-document-Israel-Trail-6-May-2015.aspx"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:1בקעת תמנע.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [282071]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Canyon walls in Maktesh Ramon (2961433124).jpg"
+		},
+		{
+			"commons": "File:Israel National Trail east Wadi Dishon.jpg"
+		}
+	]
 }

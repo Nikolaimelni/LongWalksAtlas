@@ -17,6 +17,7 @@ const file: TrailFile = {
 	officialUrl: "https://cultureroutesinturkey.com/the-lycian-way/",
 	sources: ["https://cultureroutesinturkey.com/the-lycian-way/"],
 	photo: null,
+	morePhotos: [],
 	wikidata: "Q1731039",
 	geometry: { source: "osm", relationIds: [51855] },
 };

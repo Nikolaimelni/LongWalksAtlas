@@ -103,6 +103,10 @@
 		"nearby": "Okolní turistické trasy",
 		"photoBy": "Foto:",
 		"photoAlt": "O {{title}}u",
+		"photos": "Fotografie",
+		"prevPhoto": "Předchozí fotografie",
+		"nextPhoto": "Další fotografie",
+		"photoN": "Fotografie {{n}} z {{total}}",
 		"daysEstimated": "Žádný zdroj neuvádí počet dní strávených pěšky, proto jsou vypočítány na základě denní délky u{{pace}}."
 	},
 	"seo": {

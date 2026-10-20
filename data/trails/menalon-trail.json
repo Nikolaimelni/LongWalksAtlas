@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://menalontrail.eu/",
 	"sources": ["https://menalontrail.eu/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Μονή Προδρόμου Στεμνίτσης DJI 4801.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [19773901]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Lousios1.jpg"
+		},
+		{
+			"commons": "File:Στεμνίτσα 3945.jpg"
+		}
+	]
 }

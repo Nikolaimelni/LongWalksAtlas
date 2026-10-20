@@ -91,6 +91,10 @@
 		"nearby": "주변 산책로",
 		"photoBy": "사진:",
 		"photoAlt": "{{title}}에 관하여",
+		"photos": "사진",
+		"prevPhoto": "이전 사진",
+		"nextPhoto": "다음 사진",
+		"photoN": "사진 {{n}}/{{total}}",
 		"daysEstimated": "어느 자료에도 도보로 이동한 일수가 명시되어 있지 않으므로, 하루 이동 {{pace}}를 기준으로 일수를 계산해 냈습니다."
 	},
 	"seo": {

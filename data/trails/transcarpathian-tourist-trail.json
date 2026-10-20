@@ -23,10 +23,20 @@
 		"https://rugala.pl/en/c/transcarpathian-tourist-trail/",
 		"https://interfax.com.ua/news/press-release/1102319-amp.html"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Догяска Свидовець.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2970399]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Вечірня Боржава.jpg"
+		},
+		{
+			"commons": "File:Золотий буковий ліс.jpg"
+		}
+	]
 }

@@ -120,3 +120,31 @@ test("a path without its trailing slash is redirected to it", async ({
 	await page.goto("/en/trail/e1");
 	await expect(page).toHaveURL(/\/en\/trail\/e1\/$/);
 });
+
+test("a trail with more photos shows them in a carousel", async ({
+	page,
+	isMobile,
+}) => {
+	await page.goto("/en/trail/menalon-trail/");
+	const carousel = page.getByRole("region", { name: "Photos" });
+	await expect(
+		carousel.getByRole("img", { name: /^On the Menalon Trail/ }),
+	).toHaveCount(3);
+	const next = carousel.getByRole("button", { name: "Next photo" });
+	const second = carousel.getByRole("button", { name: "Photo 2 of 3" });
+	if (isMobile) {
+		await expect(next).toBeHidden();
+		await carousel
+			.getByRole("list")
+			.evaluate((row) => row.scrollBy({ left: row.clientWidth }));
+	} else {
+		await next.click();
+	}
+	await expect(second).toHaveAttribute("aria-current", "true");
+});
+
+test("a trail with one photo shows it without a carousel", async ({ page }) => {
+	await page.goto("/en/trail/botev-trail/");
+	await expect(page.getByRole("img", { name: /^On the Botev/ })).toHaveCount(1);
+	await expect(page.getByRole("region", { name: "Photos" })).toHaveCount(0);
+});

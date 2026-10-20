@@ -22,10 +22,20 @@
 	"sources": [
 		"https://www.vokrugsveta.ru/news/ural-na-kablukakh-rossiiskaya-puteshestvennica-proshla-pochti-2400-km-po-bolshoi-uralskoi-trope-za-120-dnei-id6551209/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Иовский провал - panoramio.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [16502403]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Iremel Mount.jpg"
+		},
+		{
+			"commons": "File:Вид с высоты 414 в южном направлении - panoramio.jpg"
+		}
+	]
 }

@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://greatdividetrail.com/",
 	"sources": ["https://greatdividetrail.com/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Floe Lake, British Columbia, Canada.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8139599]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Moose Pass in Mount Robson Provincial Park, British Columbia.jpg"
+		},
+		{
+			"commons": "File:Pyramid Mnt From Old Fort Bridge (246104209).jpeg"
+		}
+	]
 }

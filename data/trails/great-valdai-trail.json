@@ -23,10 +23,20 @@
 	"badges": [],
 	"officialUrl": "https://www.valdaypark.ru/bvt/",
 	"sources": ["https://www.valdaypark.ru/bvt/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Заболоченный ручей.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [10513530]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Вход на экотропу.jpg"
+		},
+		{
+			"commons": "File:Swamps and forests in the Valdai National Park.jpg"
+		}
+	]
 }

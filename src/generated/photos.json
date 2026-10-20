@@ -335,6 +335,20 @@
 			"large": "/photos/camino-lituano-1a6929bb32-1280.webp"
 		}
 	},
+	"camino-podolico": {
+		"file": "File:68-104-9007 Kamianets-Podilskyi Fortress RB 18 2.jpg",
+		"author": "Rbrechko",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:68-104-9007_Kamianets-Podilskyi_Fortress_RB_18_2.jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/camino-podolico-1b99f244a3-640.webp",
+			"large": "/photos/camino-podolico-1b99f244a3-1280.webp"
+		}
+	},
 	"camino-primitivo": {
 		"file": "File:Berducedo1.jpg",
 		"author": "José Antonio Gil Martínez from Vigo, Spain",
@@ -375,6 +389,20 @@
 		"src": {
 			"small": "/photos/carian-trail-243fe11606-640.webp",
 			"large": "/photos/carian-trail-243fe11606-1280.webp"
+		}
+	},
+	"caucasian-trail": {
+		"file": "File:Вершина Карив-Хох со стороны Зинцара - panoramio.jpg",
+		"author": "Александр Попрыгин",
+		"license": "CC BY 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B5%D1%80%D1%88%D0%B8%D0%BD%D0%B0_%D0%9A%D0%B0%D1%80%D0%B8%D0%B2-%D0%A5%D0%BE%D1%85_%D1%81%D0%BE_%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B_%D0%97%D0%B8%D0%BD%D1%86%D0%B0%D1%80%D0%B0_-_panoramio.jpg",
+		"width": 1280,
+		"height": 848,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/caucasian-trail-3bb27128b1-640.webp",
+			"large": "/photos/caucasian-trail-3bb27128b1-1280.webp"
 		}
 	},
 	"central-roztocze-trail": {
@@ -475,6 +503,20 @@
 			"large": "/photos/continental-divide-trail-9a5fa79775-1280.webp"
 		}
 	},
+	"cooloola-great-walk": {
+		"file": "File:Carlo Sandblow looking towards Double Island Point, Queensland, Australia - panoramio.jpg",
+		"author": "zpunout",
+		"license": "CC BY-SA 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Carlo_Sandblow_looking_towards_Double_Island_Point,_Queensland,_Australia_-_panoramio.jpg",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/cooloola-great-walk-d3f82a6738-640.webp",
+			"large": "/photos/cooloola-great-walk-d3f82a6738-1280.webp"
+		}
+	},
 	"dientes-de-navarino-circuit": {
 		"file": "File:Puerto Williams 04389.JPG",
 		"author": "No machine-readable author provided. Donluca~commonswiki assumed (based on copyright claims).",
@@ -515,6 +557,20 @@
 		"src": {
 			"small": "/photos/e1-8f16bdc489-640.webp",
 			"large": "/photos/e1-8f16bdc489-1280.webp"
+		}
+	},
+	"east-carpathian-tourist-trail": {
+		"file": "File:Rozhnyativs'kyi district, Ivano-Frankivs'ka oblast, Ukraine - panoramio (7).jpg",
+		"author": "BirdsEyeLV",
+		"license": "CC BY-SA 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Rozhnyativs%27kyi_district,_Ivano-Frankivs%27ka_oblast,_Ukraine_-_panoramio_(7).jpg",
+		"width": 1280,
+		"height": 848,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/east-carpathian-tourist-trail-6975fcf439-640.webp",
+			"large": "/photos/east-carpathian-tourist-trail-6975fcf439-1280.webp"
 		}
 	},
 	"east-coast-trail": {
@@ -755,6 +811,34 @@
 			"large": "/photos/grampians-peaks-trail-b9412f6f48-1280.webp"
 		}
 	},
+	"great-baikal-trail-listvyanka-bolshoye-goloustnoye": {
+		"file": "File:Lake Baikal II (30211626121).jpg",
+		"author": "Ludger Heide",
+		"license": "CC BY-SA 2.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Baikal_II_(30211626121).jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/great-baikal-trail-listvyanka-bolshoye-goloustnoye-23cce45255-640.webp",
+			"large": "/photos/great-baikal-trail-listvyanka-bolshoye-goloustnoye-23cce45255-1280.webp"
+		}
+	},
+	"great-divide-trail": {
+		"file": "File:Floe Lake, British Columbia, Canada.jpg",
+		"author": "Benfwilliamson",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Floe_Lake,_British_Columbia,_Canada.jpg",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/great-divide-trail-43f8225cc2-640.webp",
+			"large": "/photos/great-divide-trail-43f8225cc2-1280.webp"
+		}
+	},
 	"great-ocean-walk": {
 		"file": "File:The Twelve Apostles Victoria Australia 2006.JPG",
 		"author": "Thomas ENGUEHARD",
@@ -797,6 +881,34 @@
 			"large": "/photos/great-south-west-walk-a9ab1ea50b-1280.webp"
 		}
 	},
+	"great-ural-trail": {
+		"file": "File:Иовский провал - panoramio.jpg",
+		"author": "ents",
+		"license": "CC BY 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%98%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%BB_-_panoramio.jpg",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/great-ural-trail-cceff6ad75-640.webp",
+			"large": "/photos/great-ural-trail-cceff6ad75-1280.webp"
+		}
+	},
+	"great-valdai-trail": {
+		"file": "File:Заболоченный ручей.jpg",
+		"author": "Александр Байдуков",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%80%D1%83%D1%87%D0%B5%D0%B9.jpg",
+		"width": 1280,
+		"height": 854,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/great-valdai-trail-d5c5d8969a-640.webp",
+			"large": "/photos/great-valdai-trail-d5c5d8969a-1280.webp"
+		}
+	},
 	"gunung-tahan-trail": {
 		"file": "File:Either Teku Valley or Tahan Valley. Snapped from Somewhere Above Kem Gedung.jpg",
 		"author": "Shaiful Azman Bin Abdul Rahim",
@@ -837,6 +949,20 @@
 		"src": {
 			"small": "/photos/heaphy-track-bc55af3e54-640.webp",
 			"large": "/photos/heaphy-track-bc55af3e54-1280.webp"
+		}
+	},
+	"hetta-pallas-hiking-trail": {
+		"file": "File:Hetta-Pallas 5.jpg",
+		"author": "kallerna",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Hetta-Pallas_5.jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/hetta-pallas-hiking-trail-726edd1926-640.webp",
+			"large": "/photos/hetta-pallas-hiking-trail-726edd1926-1280.webp"
 		}
 	},
 	"heysen-trail": {
@@ -949,6 +1075,20 @@
 		"src": {
 			"small": "/photos/inca-trail-56878bc09b-640.webp",
 			"large": "/photos/inca-trail-56878bc09b-1280.webp"
+		}
+	},
+	"israel-national-trail": {
+		"file": "File:1בקעת תמנע.jpg",
+		"author": "רחל סרוסי",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:1%D7%91%D7%A7%D7%A2%D7%AA_%D7%AA%D7%9E%D7%A0%D7%A2.jpg",
+		"width": 1280,
+		"height": 720,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/israel-national-trail-10642c7deb-640.webp",
+			"large": "/photos/israel-national-trail-10642c7deb-1280.webp"
 		}
 	},
 	"jatbula-trail": {
@@ -1077,6 +1217,34 @@
 			"large": "/photos/kanto-fureai-no-michi-132d8463d1-1280.webp"
 		}
 	},
+	"karhunkierros": {
+		"file": "File:Pieni Karhunkierros (3929024554).jpg",
+		"author": "Timo Newton-Syms from Helsinki, Finland & Maidenhead, Berkshire, UK",
+		"license": "CC BY-SA 2.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Pieni_Karhunkierros_(3929024554).jpg",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/karhunkierros-de723328c8-640.webp",
+			"large": "/photos/karhunkierros-de723328c8-1280.webp"
+		}
+	},
+	"kashmir-great-lakes-trek": {
+		"file": "File:Nundkol and Gangabal Lakes of Kashmir.jpg",
+		"author": "Rohit Sharma",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Nundkol_and_Gangabal_Lakes_of_Kashmir.jpg",
+		"width": 1280,
+		"height": 720,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/kashmir-great-lakes-trek-7169a1910c-640.webp",
+			"large": "/photos/kashmir-great-lakes-trek-7169a1910c-1280.webp"
+		}
+	},
 	"kepler-track": {
 		"file": "File:Kepler track alpine ridgeline.jpg",
 		"author": "Nomad Tales",
@@ -1103,6 +1271,20 @@
 		"src": {
 			"small": "/photos/kerry-way-233f6d636a-640.webp",
 			"large": "/photos/kerry-way-233f6d636a-1280.webp"
+		}
+	},
+	"kgari-great-walk": {
+		"file": "File:LakeMcKenzieNov112024.jpg",
+		"author": "Hagai Agmon-Snir حچاي اچمون-سنير חגי אגמון-שניר",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:LakeMcKenzieNov112024.jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/kgari-great-walk-7e9adde82d-640.webp",
+			"large": "/photos/kgari-great-walk-7e9adde82d-1280.webp"
 		}
 	},
 	"kilimanjaro-lemosho-route": {
@@ -1453,6 +1635,20 @@
 		"src": {
 			"small": "/photos/malerweg-fb46f34ba8-640.webp",
 			"large": "/photos/malerweg-fb46f34ba8-1280.webp"
+		}
+	},
+	"menalon-trail": {
+		"file": "File:Μονή Προδρόμου Στεμνίτσης DJI 4801.jpg",
+		"author": "C messier",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CE%BD%CE%AE_%CE%A0%CF%81%CE%BF%CE%B4%CF%81%CF%8C%CE%BC%CE%BF%CF%85_%CE%A3%CF%84%CE%B5%CE%BC%CE%BD%CE%AF%CF%84%CF%83%CE%B7%CF%82_DJI_4801.jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/menalon-trail-3860fee55d-640.webp",
+			"large": "/photos/menalon-trail-3860fee55d-1280.webp"
 		}
 	},
 	"milford-track": {
@@ -1861,6 +2057,20 @@
 			"large": "/photos/rinjani-sembalun-senaru-crossing-343990c5c8-1280.webp"
 		}
 	},
+	"road-to-the-lavra": {
+		"file": "File:The Trinity Cathedral in Trinity Lavra of St. Sergius 06.JPG",
+		"author": "Shesmax",
+		"license": "CC BY-SA 3.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Trinity_Cathedral_in_Trinity_Lavra_of_St._Sergius_06.JPG",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/road-to-the-lavra-e644dac62c-640.webp",
+			"large": "/photos/road-to-the-lavra-e644dac62c-1280.webp"
+		}
+	},
 	"rota-vicentina-historical-way": {
 		"file": "File:Odeceixe (4900164127).jpg",
 		"author": "Geerd-Olaf Freyer from Aachen, Deutschland",
@@ -2043,6 +2253,20 @@
 			"large": "/photos/south-transdanubian-blue-trail-87975f39da-1280.webp"
 		}
 	},
+	"south-ural-trail": {
+		"file": "File:Таганай, Вид на Откликной Гребень с Митькиных Скал.jpg",
+		"author": "Fanatos",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D0%B3%D0%B0%D0%BD%D0%B0%D0%B9,_%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%9E%D1%82%D0%BA%D0%BB%D0%B8%D0%BA%D0%BD%D0%BE%D0%B9_%D0%93%D1%80%D0%B5%D0%B1%D0%B5%D0%BD%D1%8C_%D1%81_%D0%9C%D0%B8%D1%82%D1%8C%D0%BA%D0%B8%D0%BD%D1%8B%D1%85_%D0%A1%D0%BA%D0%B0%D0%BB.jpg",
+		"width": 1280,
+		"height": 866,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/south-ural-trail-ca041b4096-640.webp",
+			"large": "/photos/south-ural-trail-ca041b4096-1280.webp"
+		}
+	},
 	"south-west-coast-path": {
 		"file": "File:Pendour Cove July 2026 02.jpg",
 		"author": "ArildV",
@@ -2111,6 +2335,20 @@
 		"src": {
 			"small": "/photos/sultans-trail-7931386c04-640.webp",
 			"large": "/photos/sultans-trail-7931386c04-1280.webp"
+		}
+	},
+	"sunshine-coast-trail": {
+		"file": "File:Fun on the Sunshine Coast Trails (43814955675).jpg",
+		"author": "Jennifer C.",
+		"license": "CC BY 2.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Fun_on_the_Sunshine_Coast_Trails_(43814955675).jpg",
+		"width": 1280,
+		"height": 720,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/sunshine-coast-trail-518ee102be-640.webp",
+			"large": "/photos/sunshine-coast-trail-518ee102be-1280.webp"
 		}
 	},
 	"superior-hiking-trail": {
@@ -2209,6 +2447,20 @@
 		"src": {
 			"small": "/photos/te-araroa-ff8262412c-640.webp",
 			"large": "/photos/te-araroa-ff8262412c-1280.webp"
+		}
+	},
+	"thorsborne-trail": {
+		"file": "File:Zoe Falls on Hinchinbrook Island.JPG",
+		"author": "Pattercakes at en.wikipedia",
+		"license": "Public domain",
+		"licenseUrl": null,
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:Zoe_Falls_on_Hinchinbrook_Island.JPG",
+		"width": 1280,
+		"height": 960,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/thorsborne-trail-6e96544ca2-640.webp",
+			"large": "/photos/thorsborne-trail-6e96544ca2-1280.webp"
 		}
 	},
 	"three-capes-track": {
@@ -2335,6 +2587,20 @@
 		"src": {
 			"small": "/photos/trans-tahan-trail-0b11622f00-640.webp",
 			"large": "/photos/trans-tahan-trail-0b11622f00-1280.webp"
+		}
+	},
+	"transcarpathian-tourist-trail": {
+		"file": "File:Догяска Свидовець.jpg",
+		"author": "Nata Mostova",
+		"license": "CC BY-SA 4.0",
+		"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+		"sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%B3%D1%8F%D1%81%D0%BA%D0%B0_%D0%A1%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B5%D1%86%D1%8C.jpg",
+		"width": 1280,
+		"height": 853,
+		"smallWidth": 640,
+		"src": {
+			"small": "/photos/transcarpathian-tourist-trail-0e8fb18394-640.webp",
+			"large": "/photos/transcarpathian-tourist-trail-0e8fb18394-1280.webp"
 		}
 	},
 	"transcaucasian-trail-armenia": {

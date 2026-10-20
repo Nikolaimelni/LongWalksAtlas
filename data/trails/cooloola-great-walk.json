@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://parks.qld.gov.au/parks/great-walks-cooloola",
 	"sources": ["https://parks.qld.gov.au/parks/great-walks-cooloola"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Carlo Sandblow looking towards Double Island Point, Queensland, Australia - panoramio.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9931878]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Carlo Sandblow looking towards Double Island Point. Queensland, Australia - panoramio.jpg"
+		},
+		{
+			"commons": "File:Cooloola QLD 4580, Australia - panoramio.jpg"
+		}
+	]
 }

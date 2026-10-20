@@ -23,10 +23,20 @@
 	"badges": ["unesco"],
 	"officialUrl": "https://parks.qld.gov.au/parks/great-walks-kgari-fraser",
 	"sources": ["https://parks.qld.gov.au/parks/great-walks-kgari-fraser"],
-	"photo": null,
+	"photo": {
+		"commons": "File:LakeMcKenzieNov112024.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9919461]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Fraser Island Lake McKenzie - panoramio.jpg"
+		},
+		{
+			"commons": "File:Lake Wabby 2004 - panoramio.jpg"
+		}
+	]
 }

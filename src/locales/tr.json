@@ -95,6 +95,10 @@
 		"nearby": "Yakındaki yürüyüş parkurları",
 		"photoBy": "Fotoğraf:",
 		"photoAlt": "{{title}} hakkında",
+		"photos": "Fotoğraflar",
+		"prevPhoto": "Önceki fotoğraf",
+		"nextPhoto": "Sonraki fotoğraf",
+		"photoN": "Fotoğraf {{n}}/{{total}}",
 		"daysEstimated": "Hiçbir kaynak gün sayısını vermiyor, bu yüzden uzunluktan günde {{pace}} yürüyüşe göre hesaplandı."
 	},
 	"seo": {

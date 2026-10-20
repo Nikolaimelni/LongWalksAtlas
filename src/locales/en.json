@@ -95,6 +95,10 @@
 		"nearby": "Nearby trails",
 		"photoBy": "Photo:",
 		"photoAlt": "On the {{title}}",
+		"photos": "Photos",
+		"prevPhoto": "Previous photo",
+		"nextPhoto": "Next photo",
+		"photoN": "Photo {{n}} of {{total}}",
 		"daysEstimated": "No source gives the days on foot, so they are worked out from the length at {{pace}} a day."
 	},
 	"seo": {

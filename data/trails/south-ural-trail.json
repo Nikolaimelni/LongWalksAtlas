@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://suraltrail.ru/",
 	"sources": ["https://suraltrail.ru/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Таганай, Вид на Откликной Гребень с Митькиных Скал.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [14496562]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Утро на озере Зюраткуль.jpg"
+		},
+		{
+			"commons": "File:Зимний Таганай.jpg"
+		}
+	]
 }

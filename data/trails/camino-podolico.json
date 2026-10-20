@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://www.caminopodolico.net/",
 	"sources": ["https://www.caminopodolico.net/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:68-104-9007 Kamianets-Podilskyi Fortress RB 18 2.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [15849854]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Pidlis. Mukariv.jpg"
+		},
+		{
+			"commons": "File:Троїцький собор, Браїлів.JPG"
+		}
+	]
 }

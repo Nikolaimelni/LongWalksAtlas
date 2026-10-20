@@ -95,6 +95,10 @@
 		"nearby": "Wanderwege in der Umgebung",
 		"photoBy": "Foto:",
 		"photoAlt": "Zum {{title}}",
+		"photos": "Fotos",
+		"prevPhoto": "Vorheriges Foto",
+		"nextPhoto": "Nächstes Foto",
+		"photoN": "Foto {{n}} von {{total}}",
 		"daysEstimated": "Keine Quelle nennt die Zahl der Tage, daher ist sie aus der Länge bei {{pace}} pro Tag berechnet."
 	},
 	"seo": {

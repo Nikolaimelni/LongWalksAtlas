@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://caucasiantrail.ru/",
 	"sources": ["https://caucasiantrail.ru/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Вершина Карив-Хох со стороны Зинцара - panoramio.jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [14594896]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Вид на окрестности села Чох в Дагестане.png"
+		},
+		{
+			"commons": "File:Архыз (1090338671).jpg"
+		}
+	]
 }

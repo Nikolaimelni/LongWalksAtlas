@@ -99,6 +99,10 @@
 		"nearby": "Senderos cercanos",
 		"photoBy": "Foto:",
 		"photoAlt": "Sobre el e{{title}}",
+		"photos": "Fotos",
+		"prevPhoto": "Foto anterior",
+		"nextPhoto": "Foto siguiente",
+		"photoN": "Foto {{n}} de {{total}}",
 		"daysEstimated": "Ninguna fuente indica los días a pie, así que se calculan a partir de la longitud, a {{pace}} por día."
 	},
 	"seo": {

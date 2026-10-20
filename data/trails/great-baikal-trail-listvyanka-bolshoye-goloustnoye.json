@@ -25,10 +25,20 @@
 		"https://greatbaikaltrail.org/listvyanka-bol-shie-koty",
 		"https://greatbaikaltrail.org/tropa-bol-shie-koty-bol-shoe-goloustno"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Lake Baikal II (30211626121).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [5461727]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Большая Байкальская тропа недалеко от посёлка Большое Голоустное.jpg"
+		},
+		{
+			"commons": "File:Widok na Bolszyje Koty i Bajkał.JPG"
+		}
+	]
 }

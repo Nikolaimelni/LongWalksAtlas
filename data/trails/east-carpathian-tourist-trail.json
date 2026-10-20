@@ -23,10 +23,20 @@
 		"https://rugala.pl/en/c/eastern-carpathian-tourist-trail/",
 		"https://suspilne.media/135818-u-gorganah-vidnovluut-markuvanna-na-shidno-karpatskomu-turisticnomu-slahu/"
 	],
-	"photo": null,
+	"photo": {
+		"commons": "File:Rozhnyativs'kyi district, Ivano-Frankivs'ka oblast, Ukraine - panoramio (7).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3075772]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Вид на хребет.jpg"
+		},
+		{
+			"commons": "File:Chornyj Cheremosh 4.JPG"
+		}
+	]
 }

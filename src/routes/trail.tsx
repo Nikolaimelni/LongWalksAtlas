@@ -11,8 +11,9 @@ import { MapBoundary } from "~/features/map/map-boundary";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
 import { RelatedTrails } from "~/features/trails/related-trails";
 import { textLanguages } from "~/features/trails/text-languages";
+import { TrailCarousel } from "~/features/trails/trail-carousel";
 import { TrailFacts } from "~/features/trails/trail-facts";
-import { loadTrailFile } from "~/features/trails/trail-files";
+import { loadGallery, loadTrailFile } from "~/features/trails/trail-files";
 import { TrailImage } from "~/features/trails/trail-image";
 import { trailJsonLd } from "~/features/trails/trail-json-ld";
 import { TrailNotes } from "~/features/trails/trail-notes";
@@ -48,6 +49,7 @@ export async function loader({ params }: Route.LoaderArgs) {
 	const body = await loadContentBody(lang, summary.slug);
 
 	const photo = photos[summary.slug] ?? null;
+	const gallery = await loadGallery(summary.slug);
 
 	const neighbour = (slug: string) => {
 		const other = trailsIndex.find((t) => t.slug === slug);
@@ -73,6 +75,7 @@ export async function loader({ params }: Route.LoaderArgs) {
 		content,
 		body,
 		photo,
+		gallery,
 		related,
 		languages: await textLanguages(summary.slug),
 	};
@@ -119,7 +122,7 @@ export function meta({ loaderData, params, matches }: Route.MetaArgs) {
 }
 
 export default function Trail({ loaderData }: Route.ComponentProps) {
-	const { summary, file, content, body, photo, related } = loaderData;
+	const { summary, file, content, body, photo, gallery, related } = loaderData;
 	const { t } = useTranslation();
 	const lang = useLang();
 	const hydrated = useHydrated();
@@ -168,15 +171,23 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 
 			<div className="mt-4 grid gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-x-12">
 				<header className="lg:col-start-1">
-					<TrailImage
-						photo={photo}
-						color={color}
-						alt={t("trail.photoAlt", { title: content.title })}
-						className="aspect-[16/9] w-full rounded-2xl"
-						sizes="(min-width: 1024px) 720px, 100vw"
-						eager
-						morph
-					/>
+					{photo && gallery.length > 0 ? (
+						<TrailCarousel
+							photos={[photo, ...gallery]}
+							color={color}
+							alt={t("trail.photoAlt", { title: content.title })}
+						/>
+					) : (
+						<TrailImage
+							photo={photo}
+							color={color}
+							alt={t("trail.photoAlt", { title: content.title })}
+							className="aspect-[16/9] w-full rounded-2xl"
+							sizes="(min-width: 1024px) 720px, 100vw"
+							eager
+							morph
+						/>
+					)}
 					<p className="mt-5 flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
 						<span
 							className="inline-block size-2.5 rounded-full"

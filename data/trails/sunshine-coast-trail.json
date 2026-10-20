@@ -20,10 +20,20 @@
 	"badges": [],
 	"officialUrl": "https://sunshinecoasttrail.com/",
 	"sources": ["https://sunshinecoasttrail.com/"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Fun on the Sunshine Coast Trails (43814955675).jpg"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [7406716]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:MermaidsCove.jpg"
+		},
+		{
+			"commons": "File:Inland Lake Provincial Park, Powell River.jpg"
+		}
+	]
 }

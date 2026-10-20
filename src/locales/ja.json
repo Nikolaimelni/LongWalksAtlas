@@ -91,6 +91,10 @@
 		"nearby": "周辺のトレイル",
 		"photoBy": "写真：",
 		"photoAlt": "「{{title}}」について",
+		"photos": "写真",
+		"prevPhoto": "前の写真",
+		"nextPhoto": "次の写真",
+		"photoN": "写真 {{n}}/{{total}}",
 		"daysEstimated": "どの資料にも徒歩での日数が記載されていないため、1日あたりの歩{{pace}}に基づいて算出されている。"
 	},
 	"seo": {

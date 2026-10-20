@@ -53,6 +53,10 @@ const dayRange = z
 	.strictObject({ min: z.int().positive(), max: z.int().positive() })
 	.refine((d) => d.min <= d.max, { message: "min is larger than max" });
 
+const photoRef = z.strictObject({
+	commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
+});
+
 // The fields of a trail file, without the checks across fields: Zod will not pick()
 // from a schema that carries refinements, and the summary below picks from this.
 const trailFields = z.strictObject({
@@ -69,11 +73,8 @@ const trailFields = z.strictObject({
 	badges: z.array(z.enum(["coe-cultural-route", "unesco"])),
 	officialUrl: z.url({ protocol: /^https$/ }),
 	sources: z.array(z.url({ protocol: /^https?$/ })).min(1),
-	photo: z
-		.strictObject({
-			commons: z.string().regex(/^File:.+\.(jpe?g|png|tiff?|webp)$/i),
-		})
-		.nullable(),
+	photo: photoRef.nullable(),
+	morePhotos: z.array(photoRef).max(3).default([]),
 	wikidata: z
 		.string()
 		.regex(/^Q[1-9][0-9]*$/)

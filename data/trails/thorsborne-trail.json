@@ -23,10 +23,20 @@
 	"badges": [],
 	"officialUrl": "https://parks.qld.gov.au/parks/hinchinbrook/journeys",
 	"sources": ["https://parks.qld.gov.au/parks/hinchinbrook/journeys"],
-	"photo": null,
+	"photo": {
+		"commons": "File:Zoe Falls on Hinchinbrook Island.JPG"
+	},
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
 		"relationIds": [19347052]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:HinchinbrookIslandOct312024 02.jpg"
+		},
+		{
+			"commons": "File:CSIRO ScienceImage 4528 Hinchinbrook Island channel and mangroves as seen from lookout near Cardwell QLD.jpg"
+		}
+	]
 }

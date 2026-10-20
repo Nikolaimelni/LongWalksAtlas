@@ -95,6 +95,10 @@
 		"nearby": "Wandelpaden in de buurt",
 		"photoBy": "Foto:",
 		"photoAlt": "Over de {{title}}",
+		"photos": "Foto's",
+		"prevPhoto": "Vorige foto",
+		"nextPhoto": "Volgende foto",
+		"photoN": "Foto {{n}} van {{total}}",
 		"daysEstimated": "Geen bron noemt het aantal dagen, dus dat is berekend uit de lengte bij {{pace}} per dag."
 	},
 	"seo": {
