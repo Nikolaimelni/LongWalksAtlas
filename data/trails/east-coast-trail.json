@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2199386]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Long way down - panoramio.jpg"
+		}
+	]
 }

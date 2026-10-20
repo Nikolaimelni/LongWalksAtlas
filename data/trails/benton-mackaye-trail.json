@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1675439]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Benton MacKaye Trail, Gilmer County, Georgia.JPG"
+		}
+	]
 }

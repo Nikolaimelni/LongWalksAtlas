@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1225005]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Chilcoot Pass - panoramio.jpg"
+		}
+	]
 }

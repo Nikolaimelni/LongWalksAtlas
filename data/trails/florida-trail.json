@@ -30,5 +30,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1163455]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:MCW random structure in the woods.jpg"
+		}
+	]
 }

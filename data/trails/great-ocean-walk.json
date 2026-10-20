@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1951913]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Castle Cove, Glenaire, Great Ocean Walk, Victoria - panoramio.jpg"
+		}
+	]
 }

@@ -1,13 +1,24 @@
 {
 	"slug": "lycian-way",
-	"name": { "original": "Likya Yolu" },
+	"name": {
+		"original": "Likya Yolu"
+	},
 	"type": "coastal",
 	"region": "europe",
-	"start": { "name": "Ölüdeniz", "coords": [29.1155, 36.549] },
-	"end": { "name": "Geyikbayırı", "coords": [30.4625, 36.8795] },
+	"start": {
+		"name": "Ölüdeniz",
+		"coords": [29.1155, 36.549]
+	},
+	"end": {
+		"name": "Geyikbayırı",
+		"coords": [30.4625, 36.8795]
+	},
 	"countries": ["TR"],
 	"lengthKm": 760,
-	"days": { "min": 35, "max": 35 },
+	"days": {
+		"min": 35,
+		"max": 35
+	},
 	"bestSeason": ["mar", "apr", "may", "oct", "nov"],
 	"badges": [],
 	"officialUrl": "https://cultureroutesinturkey.com/the-lycian-way/",
@@ -16,5 +27,17 @@
 		"commons": "File:View from the lycian way near Kirme 2021-11-05-1.jpg"
 	},
 	"wikidata": "Q1731039",
-	"geometry": { "source": "osm", "relationIds": [51855], "mode": "all-ways" }
+	"geometry": {
+		"source": "osm",
+		"relationIds": [51855],
+		"mode": "all-ways"
+	},
+	"morePhotos": [
+		{
+			"commons": "File:View from the lycian way near Ölüdeniz 2021-11-05-4.jpg"
+		},
+		{
+			"commons": "File:Llycian way near Ölüdeniz 2021-11-05-1.jpg"
+		}
+	]
 }

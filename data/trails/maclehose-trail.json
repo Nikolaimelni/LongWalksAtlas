@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1281208]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:HK PyramidHill.JPG"
+		}
+	]
 }

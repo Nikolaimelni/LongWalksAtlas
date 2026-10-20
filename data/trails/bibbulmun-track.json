@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [400098]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Bibbulmun Track WA south coast.jpg"
+		}
+	]
 }

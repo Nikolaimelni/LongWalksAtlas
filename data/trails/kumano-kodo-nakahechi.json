@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [17094646]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Kumano Kodo Gyuba Doji 2.jpg"
+		}
+	]
 }

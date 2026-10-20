@@ -30,5 +30,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2163573]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Camino de Santiago (2671922360).jpg"
+		},
+		{
+			"commons": "File:Portomarín-1.JPG"
+		}
+	]
 }

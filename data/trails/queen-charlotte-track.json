@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8524520]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Queen Charlotte Track (3380053425).jpg"
+		}
+	]
 }

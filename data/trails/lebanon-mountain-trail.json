@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [15574869]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Vue sur chaîne du Mont Liban depuis Bcharré.jpg"
+		}
+	]
 }

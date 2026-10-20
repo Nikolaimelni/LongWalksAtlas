@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3445384]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Greenhalgh Mountain.jpg"
+		}
+	]
 }

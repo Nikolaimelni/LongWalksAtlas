@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1102966]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:FinchaleCamino.jpg"
+		}
+	]
 }

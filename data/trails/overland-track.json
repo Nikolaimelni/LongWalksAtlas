@@ -32,5 +32,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1673569]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Cradle Mountain and Dove Lake, Tas.jpg"
+		},
+		{
+			"commons": "File:Eucalyptus forest and button grassland.jpg"
+		}
+	]
 }

@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [401769]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Cape Freycinet and Conto's Beach.jpg"
+		}
+	]
 }

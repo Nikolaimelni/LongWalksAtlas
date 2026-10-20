@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [7002240]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Hollyford Track 07.jpg"
+		}
+	]
 }

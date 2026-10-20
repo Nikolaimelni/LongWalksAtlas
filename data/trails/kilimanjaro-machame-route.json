@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8737224, 8737225]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Africa natural tours kilimanjaro climbing (159).jpg"
+		}
+	]
 }

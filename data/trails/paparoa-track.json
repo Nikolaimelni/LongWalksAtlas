@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [10462885]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Cycling on the Paparoa Track.jpg"
+		}
+	]
 }

@@ -31,5 +31,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [19001007]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Acantilados de Alfoz de Lloredo (Toñanes), Camino del norte costero.jpg"
+		},
+		{
+			"commons": "File:O camiño de Santiago pola Terra Cha. Gontán - Vilalba.jpg"
+		}
+	]
 }

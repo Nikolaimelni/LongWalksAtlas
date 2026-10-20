@@ -29,5 +29,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [156553]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Downriver View (10369273563).jpg"
+		},
+		{
+			"commons": "File:Great North Woods - New Hampshire.jpg"
+		}
+	]
 }

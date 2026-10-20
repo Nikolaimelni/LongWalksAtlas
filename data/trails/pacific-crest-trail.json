@@ -27,5 +27,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1225378]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:BLM Oregon and the Pacific Crest Trail (16920045952).jpg"
+		},
+		{
+			"commons": "File:Diamond Peak, United States (Unsplash IghZxJgO94M).jpg"
+		}
+	]
 }

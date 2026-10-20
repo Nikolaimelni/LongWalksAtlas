@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9649]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Offa's Dyke passing through blanket bog - geograph.org.uk - 3101173.jpg"
+		}
+	]
 }

@@ -27,5 +27,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1189003]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Nepal - Sagamartha Trek - 205 - Khumbu Gl, Ama Dablam and peaks (497790201).jpg"
+		},
+		{
+			"commons": "File:Nepal - Sagamartha Trek - 186 - Khumbu Icefall (plus climbers) (497684556).jpg"
+		}
+	]
 }

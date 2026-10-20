@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [13678191]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:八通關駐在所.jpg"
+		}
+	]
 }

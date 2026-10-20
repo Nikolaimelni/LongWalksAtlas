@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1730468]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:View from Skuleberget.jpg"
+		}
+	]
 }

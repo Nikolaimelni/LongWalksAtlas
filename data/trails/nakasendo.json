@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [54496]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Descending the Nakasendō to Nagiso, 2016.jpg"
+		}
+	]
 }

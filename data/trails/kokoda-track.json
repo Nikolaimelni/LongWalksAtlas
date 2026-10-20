@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [7578789]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Early morning at Alola, Kokoda Track, Papua New Guinea.jpg"
+		}
+	]
 }

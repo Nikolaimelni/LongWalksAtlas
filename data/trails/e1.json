@@ -1,10 +1,18 @@
 {
 	"slug": "e1",
-	"name": { "original": "E1" },
+	"name": {
+		"original": "E1"
+	},
 	"type": "forest",
 	"region": "europe",
-	"start": { "name": "Nordkapp", "coords": [25.7836, 71.1685] },
-	"end": { "name": "Capo Passero", "coords": [15.1497, 36.6886] },
+	"start": {
+		"name": "Nordkapp",
+		"coords": [25.7836, 71.1685]
+	},
+	"end": {
+		"name": "Capo Passero",
+		"coords": [15.1497, 36.6886]
+	},
 	"countries": ["NO", "FI", "SE", "DK", "DE", "CH", "IT"],
 	"lengthKm": 7114,
 	"days": null,
@@ -15,7 +23,20 @@
 		"https://www.era-ewv-ferp.org/e-paths/e1/",
 		"https://www.hiking-europe.eu/en/e1"
 	],
-	"photo": { "commons": "File:2020-01-01 115054 Bad Münder Deister E1.jpg" },
+	"photo": {
+		"commons": "File:2020-01-01 115054 Bad Münder Deister E1.jpg"
+	},
 	"wikidata": "Q151653",
-	"geometry": { "source": "osm", "relationIds": [371743] }
+	"geometry": {
+		"source": "osm",
+		"relationIds": [371743]
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Miellätno river from a bridge along the Padjelantaleden (DSCF1610).jpg"
+		},
+		{
+			"commons": "File:Karlstein (Ost).jpg"
+		}
+	]
 }

@@ -30,5 +30,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [921198]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Searle Pass, Summit County, Colorado, USA 01.jpg"
+		},
+		{
+			"commons": "File:Continental Divide Trail, Torreys to Grays.jpg"
+		}
+	]
 }

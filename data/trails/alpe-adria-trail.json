@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3176522]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Soca-trail-16.jpg"
+		}
+	]
 }

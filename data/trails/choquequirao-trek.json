@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2072730]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Aerial view of Choquequirao.jpg"
+		}
+	]
 }

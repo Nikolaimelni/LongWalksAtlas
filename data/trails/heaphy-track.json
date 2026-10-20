@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1385145]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Coastline section of Heaphy Track.jpg"
+		}
+	]
 }

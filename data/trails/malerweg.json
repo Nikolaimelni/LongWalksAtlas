@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [114289]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:20220906.Basteiblicke.-052.jpg"
+		}
+	]
 }

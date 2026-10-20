@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [11620232]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Hump Ridge Track beach.jpg"
+		}
+	]
 }

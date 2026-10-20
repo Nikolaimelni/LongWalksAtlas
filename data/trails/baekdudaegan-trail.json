@@ -30,5 +30,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [9439787]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:김유신 상장군 가혜진 개척(1).jpg"
+		}
+	]
 }

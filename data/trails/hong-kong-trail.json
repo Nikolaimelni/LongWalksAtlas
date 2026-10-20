@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2919237]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:High West and Victoria Peak.jpg"
+		}
+	]
 }

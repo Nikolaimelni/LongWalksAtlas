@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3066363]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:West Macdonnell Ranges Larapinta Trail section 4 ranges.jpg"
+		}
+	]
 }

@@ -1,4 +1,392 @@
 {
+	"abel-tasman-coast-track": [
+		{
+			"file": "File:Rocks in cove north of Anapai Bay.jpg",
+			"author": "Pseudopanax at English Wikipedia",
+			"license": "Public domain",
+			"licenseUrl": null,
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_in_cove_north_of_Anapai_Bay.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/abel-tasman-coast-track-51e475affe-640.webp",
+				"large": "/photos/abel-tasman-coast-track-51e475affe-1280.webp"
+			}
+		}
+	],
+	"ala-kul-trek": [
+		{
+			"file": "File:AlaKol.jpg",
+			"author": "User:Doron",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:AlaKol.jpg",
+			"width": 1280,
+			"height": 818,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/ala-kul-trek-d6ddeae6c0-640.webp",
+				"large": "/photos/ala-kul-trek-d6ddeae6c0-1280.webp"
+			}
+		}
+	],
+	"alpe-adria-trail": [
+		{
+			"file": "File:Soca-trail-16.jpg",
+			"author": "MartinThoma",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Soca-trail-16.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/alpe-adria-trail-a4f2570ab0-640.webp",
+				"large": "/photos/alpe-adria-trail-a4f2570ab0-1280.webp"
+			}
+		}
+	],
+	"alta-via-1": [
+		{
+			"file": "File:Pragser Wildsee und Seekofel 2.jpg",
+			"author": "STirol",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Pragser_Wildsee_und_Seekofel_2.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/alta-via-1-688e7a1215-640.webp",
+				"large": "/photos/alta-via-1-688e7a1215-1280.webp"
+			}
+		},
+		{
+			"file": "File:San Vito di Cadore, Province of Belluno, Italy - panoramio (1).jpg",
+			"author": "Hans Braam",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Vito_di_Cadore,_Province_of_Belluno,_Italy_-_panoramio_(1).jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/alta-via-1-00ebbbecc7-640.webp",
+				"large": "/photos/alta-via-1-00ebbbecc7-1280.webp"
+			}
+		}
+	],
+	"alta-via-2": [
+		{
+			"file": "File:Dolomites - Alta Via 2, Stage 02-11 Rifugio Genova to Rifugio Puez - panoramio.jpg",
+			"author": "Hans Braam",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Dolomites_-_Alta_Via_2,_Stage_02-11_Rifugio_Genova_to_Rifugio_Puez_-_panoramio.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/alta-via-2-da6ee12b23-640.webp",
+				"large": "/photos/alta-via-2-da6ee12b23-1280.webp"
+			}
+		}
+	],
+	"annapurna-circuit": [
+		{
+			"file": "File:160316-031 Bridge near Tatopani.jpg",
+			"author": "Faj2323",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:160316-031_Bridge_near_Tatopani.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/annapurna-circuit-9e5cbdbac8-640.webp",
+				"large": "/photos/annapurna-circuit-9e5cbdbac8-1280.webp"
+			}
+		},
+		{
+			"file": "File:Thorong La pass april 2011.jpg",
+			"author": "Solundir",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Thorong_La_pass_april_2011.jpg",
+			"width": 1280,
+			"height": 850,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/annapurna-circuit-2107f8919f-640.webp",
+				"large": "/photos/annapurna-circuit-2107f8919f-1280.webp"
+			}
+		}
+	],
+	"appalachian-trail": [
+		{
+			"file": "File:Downriver View (10369273563).jpg",
+			"author": "Nicholas A. Tonelli from Northeast Pennsylvania, USA",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Downriver_View_(10369273563).jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/appalachian-trail-706ff33a02-640.webp",
+				"large": "/photos/appalachian-trail-706ff33a02-1280.webp"
+			}
+		},
+		{
+			"file": "File:Great North Woods - New Hampshire.jpg",
+			"author": "Will leavitt",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_North_Woods_-_New_Hampshire.jpg",
+			"width": 1280,
+			"height": 855,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/appalachian-trail-d401166907-640.webp",
+				"large": "/photos/appalachian-trail-d401166907-1280.webp"
+			}
+		}
+	],
+	"arizona-trail": [
+		{
+			"file": "File:Arizona Trail- Anderson Mesa AZT-30 (36911594451).jpg",
+			"author": "Coconino National Forest",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Arizona_Trail-_Anderson_Mesa_AZT-30_(36911594451).jpg",
+			"width": 1280,
+			"height": 854,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/arizona-trail-4553163243-640.webp",
+				"large": "/photos/arizona-trail-4553163243-1280.webp"
+			}
+		}
+	],
+	"ausangate-circuit": [
+		{
+			"file": "File:Trekking Ausangate Circuit - Kampeerplaats Japata.jpg",
+			"author": "Ollyfant at nl.wikipedia",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Trekking_Ausangate_Circuit_-_Kampeerplaats_Japata.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/ausangate-circuit-238f3f290a-640.webp",
+				"large": "/photos/ausangate-circuit-238f3f290a-1280.webp"
+			}
+		}
+	],
+	"baekdudaegan-trail": [
+		{
+			"file": "File:김유신 상장군 가혜진 개척(1).jpg",
+			"author": "류금열",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:%EA%B9%80%EC%9C%A0%EC%8B%A0_%EC%83%81%EC%9E%A5%EA%B5%B0_%EA%B0%80%ED%98%9C%EC%A7%84_%EA%B0%9C%EC%B2%99(1).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/baekdudaegan-trail-2f255078c5-640.webp",
+				"large": "/photos/baekdudaegan-trail-2f255078c5-1280.webp"
+			}
+		}
+	],
+	"batongguan-traversing-trail": [
+		{
+			"file": "File:八通關駐在所.jpg",
+			"author": "原住民族委員會原住民族文化發展中心",
+			"license": "CC BY 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%85%AB%E9%80%9A%E9%97%9C%E9%A7%90%E5%9C%A8%E6%89%80.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/batongguan-traversing-trail-158ec657de-640.webp",
+				"large": "/photos/batongguan-traversing-trail-158ec657de-1280.webp"
+			}
+		}
+	],
+	"benton-mackaye-trail": [
+		{
+			"file": "File:Benton MacKaye Trail, Gilmer County, Georgia.JPG",
+			"author": "Thomson200",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Benton_MacKaye_Trail,_Gilmer_County,_Georgia.JPG",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/benton-mackaye-trail-6d86a15da7-640.webp",
+				"large": "/photos/benton-mackaye-trail-6d86a15da7-1280.webp"
+			}
+		}
+	],
+	"bibbulmun-track": [
+		{
+			"file": "File:Bibbulmun Track WA south coast.jpg",
+			"author": "User:Rst",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Bibbulmun_Track_WA_south_coast.jpg",
+			"width": 1280,
+			"height": 851,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/bibbulmun-track-df4fdf6c3d-640.webp",
+				"large": "/photos/bibbulmun-track-df4fdf6c3d-1280.webp"
+			}
+		}
+	],
+	"bruce-trail": [
+		{
+			"file": "File:Bruce Trail, Ontairo, Jones Bluff, 2017-10-22 10.39.24.jpg",
+			"author": "ArthurGron",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Trail,_Ontairo,_Jones_Bluff,_2017-10-22_10.39.24.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/bruce-trail-f75b57da7f-640.webp",
+				"large": "/photos/bruce-trail-f75b57da7f-1280.webp"
+			}
+		}
+	],
+	"caminho-portugues": [
+		{
+			"file": "File:4930 Valença, Portugal - panoramio (14).jpg",
+			"author": "Lucas Martínez Farra…",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:4930_Valen%C3%A7a,_Portugal_-_panoramio_(14).jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/caminho-portugues-1d65e955b7-640.webp",
+				"large": "/photos/caminho-portugues-1d65e955b7-1280.webp"
+			}
+		},
+		{
+			"file": "File:Barro, Agudelo, Valbón 01-01.JPG",
+			"author": "P.Lameiro",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Barro,_Agudelo,_Valb%C3%B3n_01-01.JPG",
+			"width": 1280,
+			"height": 852,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/caminho-portugues-99bff7aa46-640.webp",
+				"large": "/photos/caminho-portugues-99bff7aa46-1280.webp"
+			}
+		}
+	],
+	"camino-del-norte": [
+		{
+			"file": "File:Acantilados de Alfoz de Lloredo (Toñanes), Camino del norte costero.jpg",
+			"author": "Hotelpalacion",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Acantilados_de_Alfoz_de_Lloredo_(To%C3%B1anes),_Camino_del_norte_costero.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-del-norte-16cf328bfd-640.webp",
+				"large": "/photos/camino-del-norte-16cf328bfd-1280.webp"
+			}
+		},
+		{
+			"file": "File:O camiño de Santiago pola Terra Cha. Gontán - Vilalba.jpg",
+			"author": "José Antonio Gil Martínez",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:O_cami%C3%B1o_de_Santiago_pola_Terra_Cha._Gont%C3%A1n_-_Vilalba.jpg",
+			"width": 1280,
+			"height": 856,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-del-norte-c6ef07ba06-640.webp",
+				"large": "/photos/camino-del-norte-c6ef07ba06-1280.webp"
+			}
+		}
+	],
+	"camino-fisterra-muxia": [
+		{
+			"file": "File:Portor - Negreira - Ponte Maceira - Capilla de San Blas.JPG",
+			"author": "Xosema",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Portor_-_Negreira_-_Ponte_Maceira_-_Capilla_de_San_Blas.JPG",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-fisterra-muxia-ece61d1cab-640.webp",
+				"large": "/photos/camino-fisterra-muxia-ece61d1cab-1280.webp"
+			}
+		}
+	],
+	"camino-frances": [
+		{
+			"file": "File:Camino de Santiago (2671922360).jpg",
+			"author": "José Antonio Gil Martínez from Vigo, Spain",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Camino_de_Santiago_(2671922360).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-frances-8bd1d17670-640.webp",
+				"large": "/photos/camino-frances-8bd1d17670-1280.webp"
+			}
+		},
+		{
+			"file": "File:Portomarín-1.JPG",
+			"author": "Carlos Delgado",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Portomar%C3%ADn-1.JPG",
+			"width": 1280,
+			"height": 715,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-frances-2b855c7513-640.webp",
+				"large": "/photos/camino-frances-2b855c7513-1280.webp"
+			}
+		}
+	],
+	"camino-ingles": [
+		{
+			"file": "File:FinchaleCamino.jpg",
+			"author": "Robminchin",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:FinchaleCamino.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-ingles-8d84bdd2dc-640.webp",
+				"large": "/photos/camino-ingles-8d84bdd2dc-1280.webp"
+			}
+		}
+	],
 	"camino-podolico": [
 		{
 			"file": "File:Pidlis. Mukariv.jpg",
@@ -26,6 +414,38 @@
 			"src": {
 				"small": "/photos/camino-podolico-842986d296-640.webp",
 				"large": "/photos/camino-podolico-842986d296-1280.webp"
+			}
+		}
+	],
+	"camino-primitivo": [
+		{
+			"file": "File:Alto do Acevo e Meson do Acevo.jpg",
+			"author": "Xurde Morán",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Alto_do_Acevo_e_Meson_do_Acevo.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/camino-primitivo-0061809008-640.webp",
+				"large": "/photos/camino-primitivo-0061809008-1280.webp"
+			}
+		}
+	],
+	"cape-to-cape-track": [
+		{
+			"file": "File:Cape Freycinet and Conto's Beach.jpg",
+			"author": "Paulkyranc",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Freycinet_and_Conto%27s_Beach.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/cape-to-cape-track-0f404b8ba3-640.webp",
+				"large": "/photos/cape-to-cape-track-0f404b8ba3-1280.webp"
 			}
 		}
 	],
@@ -59,6 +479,84 @@
 			}
 		}
 	],
+	"chilkoot-trail": [
+		{
+			"file": "File:Chilcoot Pass - panoramio.jpg",
+			"author": "Kurt Minard",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilcoot_Pass_-_panoramio.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/chilkoot-trail-4e4689e4f4-640.webp",
+				"large": "/photos/chilkoot-trail-4e4689e4f4-1280.webp"
+			}
+		}
+	],
+	"choquequirao-trek": [
+		{
+			"file": "File:Aerial view of Choquequirao.jpg",
+			"author": "Bryan Dougherty",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Choquequirao.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/choquequirao-trek-8e02f31cd8-640.webp",
+				"large": "/photos/choquequirao-trek-8e02f31cd8-1280.webp"
+			}
+		}
+	],
+	"colorado-trail": [
+		{
+			"file": "File:Greenhalgh Mountain.jpg",
+			"author": "Bruno Rijsman",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenhalgh_Mountain.jpg",
+			"width": 1280,
+			"height": 882,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/colorado-trail-326297eb76-640.webp",
+				"large": "/photos/colorado-trail-326297eb76-1280.webp"
+			}
+		}
+	],
+	"continental-divide-trail": [
+		{
+			"file": "File:Searle Pass, Summit County, Colorado, USA 01.jpg",
+			"author": "John Sowell",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Searle_Pass,_Summit_County,_Colorado,_USA_01.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/continental-divide-trail-12ff2f350a-640.webp",
+				"large": "/photos/continental-divide-trail-12ff2f350a-1280.webp"
+			}
+		},
+		{
+			"file": "File:Continental Divide Trail, Torreys to Grays.jpg",
+			"author": "Xnatedawgx",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Continental_Divide_Trail,_Torreys_to_Grays.jpg",
+			"width": 1280,
+			"height": 720,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/continental-divide-trail-ebdfe8532b-640.webp",
+				"large": "/photos/continental-divide-trail-ebdfe8532b-1280.webp"
+			}
+		}
+	],
 	"cooloola-great-walk": [
 		{
 			"file": "File:Carlo Sandblow looking towards Double Island Point. Queensland, Australia - panoramio.jpg",
@@ -89,6 +587,36 @@
 			}
 		}
 	],
+	"e1": [
+		{
+			"file": "File:Miellätno river from a bridge along the Padjelantaleden (DSCF1610).jpg",
+			"author": "Trougnouf (Benoit Brummer)",
+			"license": "CC BY 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Miell%C3%A4tno_river_from_a_bridge_along_the_Padjelantaleden_(DSCF1610).jpg",
+			"width": 1280,
+			"height": 805,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/e1-ec7c00d1b9-640.webp",
+				"large": "/photos/e1-ec7c00d1b9-1280.webp"
+			}
+		},
+		{
+			"file": "File:Karlstein (Ost).jpg",
+			"author": "Aeroid",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Karlstein_(Ost).jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/e1-c248d9b1e9-640.webp",
+				"large": "/photos/e1-c248d9b1e9-1280.webp"
+			}
+		}
+	],
 	"east-carpathian-tourist-trail": [
 		{
 			"file": "File:Вид на хребет.jpg",
@@ -116,6 +644,146 @@
 			"src": {
 				"small": "/photos/east-carpathian-tourist-trail-00b58ee8b7-640.webp",
 				"large": "/photos/east-carpathian-tourist-trail-00b58ee8b7-1280.webp"
+			}
+		}
+	],
+	"east-coast-trail": [
+		{
+			"file": "File:Long way down - panoramio.jpg",
+			"author": "BihnX",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Long_way_down_-_panoramio.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/east-coast-trail-bf1197f06b-640.webp",
+				"large": "/photos/east-coast-trail-bf1197f06b-1280.webp"
+			}
+		}
+	],
+	"everest-base-camp-trek": [
+		{
+			"file": "File:Nepal - Sagamartha Trek - 205 - Khumbu Gl, Ama Dablam and peaks (497790201).jpg",
+			"author": "McKay Savage from London, UK",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Nepal_-_Sagamartha_Trek_-_205_-_Khumbu_Gl,_Ama_Dablam_and_peaks_(497790201).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/everest-base-camp-trek-ff68e10d29-640.webp",
+				"large": "/photos/everest-base-camp-trek-ff68e10d29-1280.webp"
+			}
+		},
+		{
+			"file": "File:Nepal - Sagamartha Trek - 186 - Khumbu Icefall (plus climbers) (497684556).jpg",
+			"author": "McKay Savage from London, UK",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Nepal_-_Sagamartha_Trek_-_186_-_Khumbu_Icefall_(plus_climbers)_(497684556).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/everest-base-camp-trek-3b84b4b3f3-640.webp",
+				"large": "/photos/everest-base-camp-trek-3b84b4b3f3-1280.webp"
+			}
+		}
+	],
+	"fishermens-trail": [
+		{
+			"file": "File:Access to Baía da Arquinha Beach, Fishermen's Trail, Zambujeira do Mar, Portugal julesvernex2.jpg",
+			"author": "Jules Verne Times Two",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Access_to_Ba%C3%ADa_da_Arquinha_Beach,_Fishermen%27s_Trail,_Zambujeira_do_Mar,_Portugal_julesvernex2.jpg",
+			"width": 1280,
+			"height": 823,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/fishermens-trail-41bced1c33-640.webp",
+				"large": "/photos/fishermens-trail-41bced1c33-1280.webp"
+			}
+		}
+	],
+	"florida-trail": [
+		{
+			"file": "File:MCW random structure in the woods.jpg",
+			"author": "BoFTA2023",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:MCW_random_structure_in_the_woods.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/florida-trail-2fc8fe12da-640.webp",
+				"large": "/photos/florida-trail-2fc8fe12da-1280.webp"
+			}
+		}
+	],
+	"gr11": [
+		{
+			"file": "File:Benasque - Llanos del Hospital 08.jpg",
+			"author": "Basotxerri",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Benasque_-_Llanos_del_Hospital_08.jpg",
+			"width": 1279,
+			"height": 960,
+			"smallWidth": 639,
+			"src": {
+				"small": "/photos/gr11-18e0abb20a-640.webp",
+				"large": "/photos/gr11-18e0abb20a-1280.webp"
+			}
+		}
+	],
+	"gr20": [
+		{
+			"file": "File:Descente vers refuge d'Asco-Stagnu.JPG",
+			"author": "Borvan53",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Descente_vers_refuge_d%27Asco-Stagnu.JPG",
+			"width": 1280,
+			"height": 719,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/gr20-d9b50d54fd-640.webp",
+				"large": "/photos/gr20-d9b50d54fd-1280.webp"
+			}
+		},
+		{
+			"file": "File:Vallée Ruisseau Tighiettu - Asco (FR2B) - 2021-09-09 - 5.jpg",
+			"author": "Chabe01",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Vall%C3%A9e_Ruisseau_Tighiettu_-_Asco_(FR2B)_-_2021-09-09_-_5.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/gr20-e06fbe5624-640.webp",
+				"large": "/photos/gr20-e06fbe5624-1280.webp"
+			}
+		}
+	],
+	"grampians-peaks-trail": [
+		{
+			"file": "File:Gar Campground - Grampians Peaks Trail.jpg",
+			"author": "Joshthefishy",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Gar_Campground_-_Grampians_Peaks_Trail.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/grampians-peaks-trail-4f5edcf27a-640.webp",
+				"large": "/photos/grampians-peaks-trail-4f5edcf27a-1280.webp"
 			}
 		}
 	],
@@ -179,6 +847,22 @@
 			}
 		}
 	],
+	"great-ocean-walk": [
+		{
+			"file": "File:Castle Cove, Glenaire, Great Ocean Walk, Victoria - panoramio.jpg",
+			"author": "John Gillmore",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Castle_Cove,_Glenaire,_Great_Ocean_Walk,_Victoria_-_panoramio.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/great-ocean-walk-bed885cc28-640.webp",
+				"large": "/photos/great-ocean-walk-bed885cc28-1280.webp"
+			}
+		}
+	],
 	"great-ural-trail": [
 		{
 			"file": "File:Iremel Mount.jpg",
@@ -239,6 +923,52 @@
 			}
 		}
 	],
+	"hadrians-wall-path": [
+		{
+			"file": "File:Highshield Crags - geograph.org.uk - 5368719.jpg",
+			"author": "Bill Boaden",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Highshield_Crags_-_geograph.org.uk_-_5368719.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/hadrians-wall-path-739aaaaa5a-640.webp",
+				"large": "/photos/hadrians-wall-path-739aaaaa5a-1280.webp"
+			}
+		},
+		{
+			"file": "File:2018-06-07 Sycamore Gap Tree (Acer pseudoplatanus), next to Hadrian’s Wall UK.jpg",
+			"author": "Gordon Leggett",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:2018-06-07_Sycamore_Gap_Tree_(Acer_pseudoplatanus),_next_to_Hadrian%E2%80%99s_Wall_UK.jpg",
+			"width": 1280,
+			"height": 689,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/hadrians-wall-path-f8764dba6e-640.webp",
+				"large": "/photos/hadrians-wall-path-f8764dba6e-1280.webp"
+			}
+		}
+	],
+	"heaphy-track": [
+		{
+			"file": "File:Coastline section of Heaphy Track.jpg",
+			"author": "Christoph Strässler",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Coastline_section_of_Heaphy_Track.jpg",
+			"width": 1280,
+			"height": 720,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/heaphy-track-9b537f65a3-640.webp",
+				"large": "/photos/heaphy-track-9b537f65a3-1280.webp"
+			}
+		}
+	],
 	"hetta-pallas-hiking-trail": [
 		{
 			"file": "File:Pallastunturi and Hanhijärvi in Muonio, Lapland, Finland, 2023 September.jpg",
@@ -269,6 +999,148 @@
 			}
 		}
 	],
+	"heysen-trail": [
+		{
+			"file": "File:Heysen Trail (28888083852).jpg",
+			"author": "NomadicPics(go to album) from cairns, australia",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Heysen_Trail_(28888083852).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/heysen-trail-361659a039-640.webp",
+				"large": "/photos/heysen-trail-361659a039-1280.webp"
+			}
+		}
+	],
+	"high-coast-trail": [
+		{
+			"file": "File:View from Skuleberget.jpg",
+			"author": "Waysi41",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Skuleberget.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/high-coast-trail-dce1a5e417-640.webp",
+				"large": "/photos/high-coast-trail-dce1a5e417-1280.webp"
+			}
+		}
+	],
+	"high-sierra-trail": [
+		{
+			"file": "File:Heading into Valhalla.jpg",
+			"author": "Mitch Barrie",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Heading_into_Valhalla.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/high-sierra-trail-d4715d43ff-640.webp",
+				"large": "/photos/high-sierra-trail-d4715d43ff-1280.webp"
+			}
+		}
+	],
+	"hollyford-track": [
+		{
+			"file": "File:Hollyford Track 07.jpg",
+			"author": "Sarang",
+			"license": "Public domain",
+			"licenseUrl": null,
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Hollyford_Track_07.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/hollyford-track-57e97b2b27-640.webp",
+				"large": "/photos/hollyford-track-57e97b2b27-1280.webp"
+			}
+		}
+	],
+	"hong-kong-trail": [
+		{
+			"file": "File:High West and Victoria Peak.jpg",
+			"author": "Ceeseven",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:High_West_and_Victoria_Peak.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/hong-kong-trail-759ecd626e-640.webp",
+				"large": "/photos/hong-kong-trail-759ecd626e-1280.webp"
+			}
+		}
+	],
+	"huayhuash-circuit": [
+		{
+			"file": "File:Cordillera Huayuash 02552.JPG",
+			"author": "Gato Expedicionario 1883",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Cordillera_Huayuash_02552.JPG",
+			"width": 1280,
+			"height": 721,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/huayhuash-circuit-47f3665ffa-640.webp",
+				"large": "/photos/huayhuash-circuit-47f3665ffa-1280.webp"
+			}
+		}
+	],
+	"hump-ridge-track": [
+		{
+			"file": "File:Hump Ridge Track beach.jpg",
+			"author": "Andre Richard Chalmers",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Hump_Ridge_Track_beach.jpg",
+			"width": 1280,
+			"height": 640,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/hump-ridge-track-f96fe599f9-640.webp",
+				"large": "/photos/hump-ridge-track-f96fe599f9-1280.webp"
+			}
+		}
+	],
+	"inca-trail": [
+		{
+			"file": "File:Camino-inca-dia4-c03.jpg",
+			"author": "Colegota",
+			"license": "CC BY-SA 2.5 es",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/es/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Camino-inca-dia4-c03.jpg",
+			"width": 1280,
+			"height": 823,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/inca-trail-afbae95085-640.webp",
+				"large": "/photos/inca-trail-afbae95085-1280.webp"
+			}
+		},
+		{
+			"file": "File:Camino Inca, Machu Picchu - panoramio.jpg",
+			"author": "Vlad Podvorny",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Camino_Inca,_Machu_Picchu_-_panoramio.jpg",
+			"width": 1280,
+			"height": 854,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/inca-trail-8da9020eb0-640.webp",
+				"large": "/photos/inca-trail-8da9020eb0-1280.webp"
+			}
+		}
+	],
 	"israel-national-trail": [
 		{
 			"file": "File:Canyon walls in Maktesh Ramon (2961433124).jpg",
@@ -296,6 +1168,84 @@
 			"src": {
 				"small": "/photos/israel-national-trail-2ffe9881dc-640.webp",
 				"large": "/photos/israel-national-trail-2ffe9881dc-1280.webp"
+			}
+		}
+	],
+	"jatbula-trail": [
+		{
+			"file": "File:Jatbula Trail.jpg",
+			"author": "Bruce",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Jatbula_Trail.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/jatbula-trail-774d867921-640.webp",
+				"large": "/photos/jatbula-trail-774d867921-1280.webp"
+			}
+		}
+	],
+	"jesus-trail": [
+		{
+			"file": "File:ARBEL MT.JPG",
+			"author": "AVRAHAM GRAICER",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:ARBEL_MT.JPG",
+			"width": 1280,
+			"height": 854,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/jesus-trail-3dbceaace2-640.webp",
+				"large": "/photos/jesus-trail-3dbceaace2-1280.webp"
+			}
+		}
+	],
+	"john-muir-trail": [
+		{
+			"file": "File:John Muir Trail-9 (4897071508).jpg",
+			"author": "Peretz Partensky from San Francisco, USA",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Muir_Trail-9_(4897071508).jpg",
+			"width": 1280,
+			"height": 956,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/john-muir-trail-d6fb30ef29-640.webp",
+				"large": "/photos/john-muir-trail-d6fb30ef29-1280.webp"
+			}
+		},
+		{
+			"file": "File:Hi camp above PCT-Bullfrog junction.jpg",
+			"author": "Dcrjsr",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Hi_camp_above_PCT-Bullfrog_junction.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/john-muir-trail-39772de4d0-640.webp",
+				"large": "/photos/john-muir-trail-39772de4d0-1280.webp"
+			}
+		}
+	],
+	"julius-kugy-alpine-trail": [
+		{
+			"file": "File:Bärental mit östlichen Karawanken (Freiberg (li.), Hochstul und Weinasch.jpg",
+			"author": "Vwulz",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A4rental_mit_%C3%B6stlichen_Karawanken_(Freiberg_(li.),_Hochstul_und_Weinasch.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/julius-kugy-alpine-trail-13297276e1-640.webp",
+				"large": "/photos/julius-kugy-alpine-trail-13297276e1-1280.webp"
 			}
 		}
 	],
@@ -359,6 +1309,38 @@
 			}
 		}
 	],
+	"kepler-track": [
+		{
+			"file": "File:Chemin de crête (24018751302).jpg",
+			"author": "Julien Carnot",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Chemin_de_cr%C3%AAte_(24018751302).jpg",
+			"width": 1280,
+			"height": 784,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kepler-track-8c58c40490-640.webp",
+				"large": "/photos/kepler-track-8c58c40490-1280.webp"
+			}
+		}
+	],
+	"kerry-way": [
+		{
+			"file": "File:Kw oberhalb dingle bay.jpg",
+			"author": "Dirtsc",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Kw_oberhalb_dingle_bay.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kerry-way-4ac1fceac4-640.webp",
+				"large": "/photos/kerry-way-4ac1fceac4-1280.webp"
+			}
+		}
+	],
 	"kgari-great-walk": [
 		{
 			"file": "File:Fraser Island Lake McKenzie - panoramio.jpg",
@@ -389,6 +1371,306 @@
 			}
 		}
 	],
+	"kilimanjaro-machame-route": [
+		{
+			"file": "File:Africa natural tours kilimanjaro climbing (159).jpg",
+			"author": "Africanaturaltours21",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Africa_natural_tours_kilimanjaro_climbing_(159).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kilimanjaro-machame-route-1d76e5e432-640.webp",
+				"large": "/photos/kilimanjaro-machame-route-1d76e5e432-1280.webp"
+			}
+		}
+	],
+	"kokoda-track": [
+		{
+			"file": "File:Early morning at Alola, Kokoda Track, Papua New Guinea.jpg",
+			"author": "Arthur Chapman",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Early_morning_at_Alola,_Kokoda_Track,_Papua_New_Guinea.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kokoda-track-f279bb8bdd-640.webp",
+				"large": "/photos/kokoda-track-f279bb8bdd-1280.webp"
+			}
+		}
+	],
+	"kumano-kodo-kohechi": [
+		{
+			"file": "File:Rice terraces in Hatenashi village A.jpg",
+			"author": "さかおり",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_terraces_in_Hatenashi_village_A.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kumano-kodo-kohechi-6e868f7940-640.webp",
+				"large": "/photos/kumano-kodo-kohechi-6e868f7940-1280.webp"
+			}
+		}
+	],
+	"kumano-kodo-nakahechi": [
+		{
+			"file": "File:Kumano Kodo Gyuba Doji 2.jpg",
+			"author": "Vindlys",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_Gyuba_Doji_2.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kumano-kodo-nakahechi-7dca1845c6-640.webp",
+				"large": "/photos/kumano-kodo-nakahechi-7dca1845c6-1280.webp"
+			}
+		}
+	],
+	"kungsleden": [
+		{
+			"file": "File:View from the Kungsleden - panoramio (3).jpg",
+			"author": "Keith Ruffles",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Kungsleden_-_panoramio_(3).jpg",
+			"width": 1280,
+			"height": 805,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/kungsleden-d0fba8bedb-640.webp",
+				"large": "/photos/kungsleden-d0fba8bedb-1280.webp"
+			}
+		}
+	],
+	"lake-waikaremoana-great-walk": [
+		{
+			"file": "File:PanekiriBluff.jpg",
+			"author": "Steffen Sledz ( Zone42 )",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:PanekiriBluff.jpg",
+			"width": 1280,
+			"height": 830,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lake-waikaremoana-great-walk-59956313b4-640.webp",
+				"large": "/photos/lake-waikaremoana-great-walk-59956313b4-1280.webp"
+			}
+		}
+	],
+	"lantau-trail": [
+		{
+			"file": "File:Tung Chung Road, Pak Kung Au (Hong Kong).jpg",
+			"author": "Mk2010",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Tung_Chung_Road,_Pak_Kung_Au_(Hong_Kong).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lantau-trail-33085abaff-640.webp",
+				"large": "/photos/lantau-trail-33085abaff-1280.webp"
+			}
+		}
+	],
+	"larapinta-trail": [
+		{
+			"file": "File:West Macdonnell Ranges Larapinta Trail section 4 ranges.jpg",
+			"author": "Kattastroffee1976",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Macdonnell_Ranges_Larapinta_Trail_section_4_ranges.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/larapinta-trail-6972f8bc0e-640.webp",
+				"large": "/photos/larapinta-trail-6972f8bc0e-1280.webp"
+			}
+		}
+	],
+	"laugavegur": [
+		{
+			"file": "File:Laugavegur Brennisteinsalda 2012.JPG",
+			"author": "Borvan53",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Laugavegur_Brennisteinsalda_2012.JPG",
+			"width": 1280,
+			"height": 770,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/laugavegur-1a42933090-640.webp",
+				"large": "/photos/laugavegur-1a42933090-1280.webp"
+			}
+		},
+		{
+			"file": "File:Landmannalaugar in summer 2009 (1).jpg",
+			"author": "Chmee2 / Valtameri",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Landmannalaugar_in_summer_2009_(1).jpg",
+			"width": 1280,
+			"height": 857,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/laugavegur-45093540dc-640.webp",
+				"large": "/photos/laugavegur-45093540dc-1280.webp"
+			}
+		}
+	],
+	"lebanon-mountain-trail": [
+		{
+			"file": "File:Vue sur chaîne du Mont Liban depuis Bcharré.jpg",
+			"author": "Jihelpé",
+			"license": "CC BY 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Vue_sur_cha%C3%AEne_du_Mont_Liban_depuis_Bcharr%C3%A9.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lebanon-mountain-trail-27aecb3321-640.webp",
+				"large": "/photos/lebanon-mountain-trail-27aecb3321-1280.webp"
+			}
+		}
+	],
+	"lechweg": [
+		{
+			"file": "File:Warth-Laerchwoldi-cattle-03ASD.jpg",
+			"author": "Asurnipal",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Warth-Laerchwoldi-cattle-03ASD.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lechweg-5face1b761-640.webp",
+				"large": "/photos/lechweg-5face1b761-1280.webp"
+			}
+		}
+	],
+	"long-trail": [
+		{
+			"file": "File:2017-09-11 12 51 16 View north along the Long Trail just north of its junction with the Halfway House Trail between the Nose and the Chin of Mount Mansfield within Mount Mansfield State Forest in Stowe, Lamoille County, Vermont.jpg",
+			"author": "Famartin",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-09-11_12_51_16_View_north_along_the_Long_Trail_just_north_of_its_junction_with_the_Halfway_House_Trail_between_the_Nose_and_the_Chin_of_Mount_Mansfield_within_Mount_Mansfield_State_Forest_in_Stowe,_Lamoille_County,_Vermont.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/long-trail-7ff39303c0-640.webp",
+				"large": "/photos/long-trail-7ff39303c0-1280.webp"
+			}
+		}
+	],
+	"lycian-way": [
+		{
+			"file": "File:View from the lycian way near Ölüdeniz 2021-11-05-4.jpg",
+			"author": "Alexey Komarov",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_lycian_way_near_%C3%96l%C3%BCdeniz_2021-11-05-4.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lycian-way-ceeb3ba226-640.webp",
+				"large": "/photos/lycian-way-ceeb3ba226-1280.webp"
+			}
+		},
+		{
+			"file": "File:Llycian way near Ölüdeniz 2021-11-05-1.jpg",
+			"author": "Alexey Komarov",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Llycian_way_near_%C3%96l%C3%BCdeniz_2021-11-05-1.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/lycian-way-a5c3f18045-640.webp",
+				"large": "/photos/lycian-way-a5c3f18045-1280.webp"
+			}
+		}
+	],
+	"maclehose-trail": [
+		{
+			"file": "File:HK PyramidHill.JPG",
+			"author": "Chong Fat",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_PyramidHill.JPG",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/maclehose-trail-f99599559c-640.webp",
+				"large": "/photos/maclehose-trail-f99599559c-1280.webp"
+			}
+		}
+	],
+	"main-beskid-trail": [
+		{
+			"file": "File:BdPN.jpg",
+			"author": "Yuiren0",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:BdPN.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/main-beskid-trail-bdc44971fc-640.webp",
+				"large": "/photos/main-beskid-trail-bdc44971fc-1280.webp"
+			}
+		}
+	],
+	"main-sudetes-trail": [
+		{
+			"file": "File:Karpacz - Śnieżka 19 - panoramio.jpg",
+			"author": "marek7400",
+			"license": "CC BY 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Karpacz_-_%C5%9Anie%C5%BCka_19_-_panoramio.jpg",
+			"width": 1280,
+			"height": 721,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/main-sudetes-trail-7a65e674df-640.webp",
+				"large": "/photos/main-sudetes-trail-7a65e674df-1280.webp"
+			}
+		}
+	],
+	"malerweg": [
+		{
+			"file": "File:20220906.Basteiblicke.-052.jpg",
+			"author": "Bybbisch94, Christian Gebhardt",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:20220906.Basteiblicke.-052.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/malerweg-edfc2970fe-640.webp",
+				"large": "/photos/malerweg-edfc2970fe-1280.webp"
+			}
+		}
+	],
 	"menalon-trail": [
 		{
 			"file": "File:Lousios1.jpg",
@@ -416,6 +1698,224 @@
 			"src": {
 				"small": "/photos/menalon-trail-e3de607241-640.webp",
 				"large": "/photos/menalon-trail-e3de607241-1280.webp"
+			}
+		}
+	],
+	"milford-track": [
+		{
+			"file": "File:Milford Track Bridge over the Clinton River.jpg",
+			"author": "AlasdairW",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Milford_Track_Bridge_over_the_Clinton_River.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/milford-track-2f63630273-640.webp",
+				"large": "/photos/milford-track-2f63630273-1280.webp"
+			}
+		},
+		{
+			"file": "File:Swampy But Pretty Bog In Fiordland NZ.jpg",
+			"author": "Ingolfson",
+			"license": "Public domain",
+			"licenseUrl": null,
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Swampy_But_Pretty_Bog_In_Fiordland_NZ.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/milford-track-83fa3f5c44-640.webp",
+				"large": "/photos/milford-track-83fa3f5c44-1280.webp"
+			}
+		}
+	],
+	"nakasendo": [
+		{
+			"file": "File:Descending the Nakasendō to Nagiso, 2016.jpg",
+			"author": "DimiTalen",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Descending_the_Nakasend%C5%8D_to_Nagiso,_2016.jpg",
+			"width": 1280,
+			"height": 851,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/nakasendo-63758529a2-640.webp",
+				"large": "/photos/nakasendo-63758529a2-1280.webp"
+			}
+		}
+	],
+	"national-blue-trail": [
+		{
+			"file": "File:View of Csobánka from the Csobánka Saddle 01.JPG",
+			"author": "Antissimo",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Csob%C3%A1nka_from_the_Csob%C3%A1nka_Saddle_01.JPG",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/national-blue-trail-b61195c7ca-640.webp",
+				"large": "/photos/national-blue-trail-b61195c7ca-1280.webp"
+			}
+		}
+	],
+	"offas-dyke-path": [
+		{
+			"file": "File:Offa's Dyke passing through blanket bog - geograph.org.uk - 3101173.jpg",
+			"author": "Roger Davies",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Offa%27s_Dyke_passing_through_blanket_bog_-_geograph.org.uk_-_3101173.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/offas-dyke-path-42209c78b3-640.webp",
+				"large": "/photos/offas-dyke-path-42209c78b3-1280.webp"
+			}
+		}
+	],
+	"otter-trail": [
+		{
+			"file": "File:Bloukrans river mouth on the Otter trail 2017 during high tide.jpg",
+			"author": "Louisvdw",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Bloukrans_river_mouth_on_the_Otter_trail_2017_during_high_tide.jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/otter-trail-578cac2a19-640.webp",
+				"large": "/photos/otter-trail-578cac2a19-1280.webp"
+			}
+		}
+	],
+	"overland-track": [
+		{
+			"file": "File:Cradle Mountain and Dove Lake, Tas.jpg",
+			"author": "Thennicke",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Cradle_Mountain_and_Dove_Lake,_Tas.jpg",
+			"width": 1280,
+			"height": 855,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/overland-track-13837ced31-640.webp",
+				"large": "/photos/overland-track-13837ced31-1280.webp"
+			}
+		},
+		{
+			"file": "File:Eucalyptus forest and button grassland.jpg",
+			"author": "J Brew from near Seattle, USA",
+			"license": "CC BY-SA 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_forest_and_button_grassland.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/overland-track-2a9b91e1f1-640.webp",
+				"large": "/photos/overland-track-2a9b91e1f1-1280.webp"
+			}
+		}
+	],
+	"pacific-crest-trail": [
+		{
+			"file": "File:BLM Oregon and the Pacific Crest Trail (16920045952).jpg",
+			"author": "Bureau of Land Management Oregon and Washington",
+			"license": "Public domain",
+			"licenseUrl": null,
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:BLM_Oregon_and_the_Pacific_Crest_Trail_(16920045952).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/pacific-crest-trail-1a328463b5-640.webp",
+				"large": "/photos/pacific-crest-trail-1a328463b5-1280.webp"
+			}
+		},
+		{
+			"file": "File:Diamond Peak, United States (Unsplash IghZxJgO94M).jpg",
+			"author": "Nathan Anderson nathananderson",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Diamond_Peak,_United_States_(Unsplash_IghZxJgO94M).jpg",
+			"width": 1280,
+			"height": 854,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/pacific-crest-trail-bf0ac26106-640.webp",
+				"large": "/photos/pacific-crest-trail-bf0ac26106-1280.webp"
+			}
+		}
+	],
+	"paparoa-track": [
+		{
+			"file": "File:Cycling on the Paparoa Track.jpg",
+			"author": "Mike and Lara Wolfe",
+			"license": "CC0",
+			"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Cycling_on_the_Paparoa_Track.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/paparoa-track-69789dca00-640.webp",
+				"large": "/photos/paparoa-track-69789dca00-1280.webp"
+			}
+		}
+	],
+	"peaks-of-the-balkans": [
+		{
+			"file": "File:PSK Balkan na Prokletijama.jpg",
+			"author": "Ranacgo",
+			"license": "CC BY-SA 4.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:PSK_Balkan_na_Prokletijama.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/peaks-of-the-balkans-46a97da589-640.webp",
+				"large": "/photos/peaks-of-the-balkans-46a97da589-1280.webp"
+			}
+		}
+	],
+	"pennine-way": [
+		{
+			"file": "File:2015 Swaledale from Kisdon Hill.jpg",
+			"author": "Kreuzschnabel",
+			"license": "CC BY-SA 3.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Swaledale_from_Kisdon_Hill.jpg",
+			"width": 1280,
+			"height": 853,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/pennine-way-a3cadbab1a-640.webp",
+				"large": "/photos/pennine-way-a3cadbab1a-1280.webp"
+			}
+		}
+	],
+	"queen-charlotte-track": [
+		{
+			"file": "File:Queen Charlotte Track (3380053425).jpg",
+			"author": "Weldon Kennedy from London, UK",
+			"license": "CC BY 2.0",
+			"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+			"sourceUrl": "https://commons.wikimedia.org/wiki/File:Queen_Charlotte_Track_(3380053425).jpg",
+			"width": 1280,
+			"height": 960,
+			"smallWidth": 640,
+			"src": {
+				"small": "/photos/queen-charlotte-track-dd0438698c-640.webp",
+				"large": "/photos/queen-charlotte-track-dd0438698c-1280.webp"
 			}
 		}
 	],

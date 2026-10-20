@@ -30,5 +30,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [4728034]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Warth-Laerchwoldi-cattle-03ASD.jpg"
+		}
+	]
 }

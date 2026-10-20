@@ -32,5 +32,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [177743]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Pragser Wildsee und Seekofel 2.jpg"
+		},
+		{
+			"commons": "File:San Vito di Cadore, Province of Belluno, Italy - panoramio (1).jpg"
+		}
+	]
 }

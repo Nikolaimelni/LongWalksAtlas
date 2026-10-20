@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1657661]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:View from the Kungsleden - panoramio (3).jpg"
+		}
+	]
 }

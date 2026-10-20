@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [14531438]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Jatbula Trail.jpg"
+		}
+	]
 }

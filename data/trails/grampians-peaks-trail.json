@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [11370594]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Gar Campground - Grampians Peaks Trail.jpg"
+		}
+	]
 }

@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [3475867]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Trekking Ausangate Circuit - Kampeerplaats Japata.jpg"
+		}
+	]
 }

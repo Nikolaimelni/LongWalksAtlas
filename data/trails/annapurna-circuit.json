@@ -27,5 +27,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1187310]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:160316-031 Bridge near Tatopani.jpg"
+		},
+		{
+			"commons": "File:Thorong La pass april 2011.jpg"
+		}
+	]
 }

@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1383551]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Bloukrans river mouth on the Otter trail 2017 during high tide.jpg"
+		}
+	]
 }

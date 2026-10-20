@@ -32,5 +32,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [101692]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Descente vers refuge d'Asco-Stagnu.JPG"
+		},
+		{
+			"commons": "File:Vallée Ruisseau Tighiettu - Asco (FR2B) - 2021-09-09 - 5.jpg"
+		}
+	]
 }

@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [404914]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Dolomites - Alta Via 2, Stage 02-11 Rifugio Genova to Rifugio Puez - panoramio.jpg"
+		}
+	]
 }

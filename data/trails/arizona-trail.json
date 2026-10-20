@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [2804113]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Arizona Trail- Anderson Mesa AZT-30 (36911594451).jpg"
+		}
+	]
 }

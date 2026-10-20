@@ -27,5 +27,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1244828]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:John Muir Trail-9 (4897071508).jpg"
+		},
+		{
+			"commons": "File:Hi camp above PCT-Bullfrog junction.jpg"
+		}
+	]
 }

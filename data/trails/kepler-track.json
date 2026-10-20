@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1385141]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Chemin de crête (24018751302).jpg"
+		}
+	]
 }

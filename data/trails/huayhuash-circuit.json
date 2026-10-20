@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [1112639]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Cordillera Huayuash 02552.JPG"
+		}
+	]
 }

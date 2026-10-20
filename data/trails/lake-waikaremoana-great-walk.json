@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [5987155]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:PanekiriBluff.jpg"
+		}
+	]
 }

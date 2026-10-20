@@ -32,5 +32,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [12350207]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:AlaKol.jpg"
+		}
+	]
 }

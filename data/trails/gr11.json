@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [8865914]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Benasque - Llanos del Hospital 08.jpg"
+		}
+	]
 }

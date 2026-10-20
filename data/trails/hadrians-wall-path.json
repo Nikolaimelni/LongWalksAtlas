@@ -32,5 +32,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [38791]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Highshield Crags - geograph.org.uk - 5368719.jpg"
+		},
+		{
+			"commons": "File:2018-06-07 Sycamore Gap Tree (Acer pseudoplatanus), next to Hadrian’s Wall UK.jpg"
+		}
+	]
 }

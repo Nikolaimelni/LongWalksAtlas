@@ -30,5 +30,13 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [15703494]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Camino-inca-dia4-c03.jpg"
+		},
+		{
+			"commons": "File:Camino Inca, Machu Picchu - panoramio.jpg"
+		}
+	]
 }

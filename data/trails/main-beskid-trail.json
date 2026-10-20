@@ -33,5 +33,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [545421]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:BdPN.jpg"
+		}
+	]
 }

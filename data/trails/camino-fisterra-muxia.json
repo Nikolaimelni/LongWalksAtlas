@@ -29,5 +29,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [385098]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Portor - Negreira - Ponte Maceira - Capilla de San Blas.JPG"
+		}
+	]
 }

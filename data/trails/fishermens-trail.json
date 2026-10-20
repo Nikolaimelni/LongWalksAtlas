@@ -41,5 +41,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [20810829]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Access to Baía da Arquinha Beach, Fishermen's Trail, Zambujeira do Mar, Portugal julesvernex2.jpg"
+		}
+	]
 }

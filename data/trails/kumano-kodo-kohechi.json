@@ -27,5 +27,10 @@
 	"geometry": {
 		"source": "osm",
 		"relationIds": [17131166]
-	}
+	},
+	"morePhotos": [
+		{
+			"commons": "File:Rice terraces in Hatenashi village A.jpg"
+		}
+	]
 }
