@@ -82,7 +82,7 @@ export function TrailSheet({ label, onClose, children }: Props) {
 			onKeyDown={(event) => {
 				if (event.key === "Escape") leave();
 			}}
-			className={`absolute inset-x-2 bottom-[calc(var(--panel-bar,0px)_+_0.5rem)] z-20 max-h-[55dvh] overflow-y-auto rounded-2xl bg-surface px-4 pb-4 shadow-float outline-none transition-[translate,opacity] ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:max-h-[calc(100dvh-6rem)] md:w-96 md:pt-4 md:starting:translate-y-4 md:starting:opacity-0 ${leaving ? "pointer-events-none translate-y-8 opacity-0 duration-200" : "duration-300"}`}
+			className={`absolute inset-x-2 bottom-[calc(var(--panel-bar,0px)_+_0.5rem)] z-20 max-h-[55dvh] overflow-y-auto rounded-2xl bg-surface px-4 pb-4 shadow-float outline-none transition-[translate,opacity] ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[calc(var(--edge)+25rem)] md:bottom-[max(1rem,env(safe-area-inset-bottom))] md:max-h-[calc(100dvh-6rem)] md:w-96 md:pt-4 md:starting:translate-y-4 md:starting:opacity-0 short:start-(--edge) short:top-16 short:max-h-none ${leaving ? "pointer-events-none translate-y-8 opacity-0 duration-200" : "duration-300"}`}
 		>
 			<div
 				aria-hidden="true"

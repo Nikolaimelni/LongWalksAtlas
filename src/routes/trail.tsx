@@ -157,7 +157,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 		<main className="mx-auto max-w-6xl px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-10">
 			<SiteNav />
 
-			<div className="mt-4 grid gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-x-12">
+			<div className="mt-4 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-x-12">
 				<header className="lg:col-start-1">
 					{photo && gallery.length > 0 ? (
 						<TrailCarousel

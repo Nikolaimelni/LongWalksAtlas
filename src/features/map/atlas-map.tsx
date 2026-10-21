@@ -26,9 +26,9 @@ import {
 } from "./trail-layers";
 import { useMapBase } from "./use-map-base";
 
-// What covers the map on a wide screen, in px: the trail panel (md:start-4 md:w-96 in
-// trail-panel.tsx) and the preview sheet next to it (md:start-[26rem] md:w-96 in
-// atlas/trail-sheet.tsx). Below Tailwind's md the panel folds into a bar at the bottom.
+// What covers the map on a wide screen, in px: the trail panel (md:start-(--edge) md:w-96
+// in trail-panel.tsx) and the preview sheet next to it (md:w-96 in atlas/trail-sheet.tsx).
+// Below Tailwind's md the panel folds into a bar at the bottom.
 const md = 768;
 const panelEdge = 16 + 384;
 const sheetEdge = 416 + 384;

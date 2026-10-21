@@ -289,37 +289,50 @@ export function TrailPanel({
 	}, []);
 
 	// DOM layout: the panel eases from its old height to the new one.
+	const slide = useRef<Animation | null>(null);
 	useLayoutEffect(() => {
 		const section = sectionRef.current;
+		const body = bodyRef.current;
 		const before = height.current;
-		if (!section || before === null) return;
+		if (!section || !body) return;
+		const release = () => {
+			body.style.removeProperty("display");
+			body.style.removeProperty("transition");
+		};
+		slide.current?.cancel();
+		release();
+		if (before === null) return;
 		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 		const after = section.offsetHeight;
 		if (after === before) return;
 		const wide = window.matchMedia("(width >= 48rem)").matches;
+		const closing = wide ? folded : !open;
 		const timing = {
 			duration: 280,
-			easing: (wide ? !folded : open)
-				? "cubic-bezier(0.2, 0, 0, 1)"
-				: "cubic-bezier(0.3, 0, 0.2, 1)",
+			easing: closing
+				? "cubic-bezier(0.3, 0, 0.2, 1)"
+				: "cubic-bezier(0.2, 0, 0, 1)",
 		};
-		if (wide) {
-			section.animate(
-				[
+		if (closing) {
+			body.style.display = "flex";
+			body.style.transition = "none";
+		}
+		const frames = wide
+			? [
 					{ height: `${before}px`, overflow: "hidden" },
 					{ height: `${after}px`, overflow: "hidden" },
-				],
-				timing,
-			);
-		} else {
-			section.animate(
-				[
-					{ transform: `translateY(${after - before}px)` },
-					{ transform: "none" },
-				],
-				timing,
-			);
-		}
+				]
+			: closing
+				? [
+						{ transform: "none" },
+						{ transform: `translateY(${before - after}px)` },
+					]
+				: [
+						{ transform: `translateY(${after - before}px)` },
+						{ transform: "none" },
+					];
+		slide.current = section.animate(frames, timing);
+		slide.current.onfinish = release;
 	}, [open, folded]);
 
 	return (
@@ -327,7 +340,7 @@ export function TrailPanel({
 			ref={sectionRef}
 			data-passes-touch
 			aria-label={t("filters.list")}
-			className={`absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-4 md:max-h-none md:w-96 md:rounded-2xl md:pb-0 ${folded ? "md:bottom-auto" : "md:bottom-4"}`}
+			className={`absolute inset-x-0 bottom-0 z-10 flex max-h-[75dvh] flex-col rounded-t-2xl bg-surface pb-[env(safe-area-inset-bottom)] shadow-float md:inset-x-auto md:top-20 md:start-(--edge) md:max-h-none md:w-96 md:rounded-2xl md:pb-0 short:top-16 ${folded ? "md:bottom-auto" : "md:bottom-[max(1rem,env(safe-area-inset-bottom))]"}`}
 		>
 			<div
 				aria-hidden="true"

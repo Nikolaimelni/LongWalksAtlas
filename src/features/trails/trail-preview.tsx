@@ -33,7 +33,7 @@ export function TrailPreview({ trail, content, photo, variant }: Props) {
 				})}
 				className={
 					variant === "sheet"
-						? "aspect-[16/9] w-full rounded-xl md:aspect-[3/2]"
+						? "aspect-[16/9] w-full rounded-xl md:aspect-[3/2] short:aspect-[3/1]"
 						: "aspect-[2/1] w-full rounded-lg"
 				}
 				sizes={

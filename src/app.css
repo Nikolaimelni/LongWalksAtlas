@@ -22,6 +22,8 @@
 	--font-display: var(--font-sans);
 }
 
+@custom-variant short (@media (width >= 48rem) and (height < 30rem));
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-canvas: #11161c;
@@ -91,11 +93,17 @@ body {
 /* On the atlas the zoom buttons sit under the language switcher, and on a phone the
 attribution sits above the trail bar. MapLibre's stylesheet is not in a cascade layer,
 so it beats any Tailwind utility; these rules stay outside a layer too. */
+.atlas {
+	--edge: max(1rem, env(safe-area-inset-left), env(safe-area-inset-right));
+}
+
 .atlas .maplibregl-ctrl-top-right {
 	top: calc(3.5rem + max(0.75rem, env(safe-area-inset-top)));
+	right: env(safe-area-inset-right);
 }
 
 .atlas .maplibregl-ctrl-bottom-right {
+	right: env(safe-area-inset-right);
 	bottom: var(--panel-bar, calc(8rem + env(safe-area-inset-bottom)));
 
 	@media (width >= 48rem) {
