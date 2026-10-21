@@ -88,6 +88,15 @@ test("a filtered link opens with the filters applied", async ({ page }) => {
 	await expect(list(page).filter({ hasText: "E1" })).toHaveCount(1);
 });
 
+test("the sheet's photo opens the trail page", async ({ page, isMobile }) => {
+	const sheet = page.getByRole("region", { name: "Португальский путь" });
+	await page.goto("/ru/?trail=caminho-portugues");
+	await expect(sheet).toBeVisible();
+	const photo = sheet.getByRole("img").first();
+	await (isMobile ? photo.tap() : photo.click());
+	await expect(page).toHaveURL(/\/ru\/trail\/caminho-portugues\/$/);
+});
+
 test.describe("on a phone", () => {
 	test.skip(
 		({ isMobile }) => !isMobile,

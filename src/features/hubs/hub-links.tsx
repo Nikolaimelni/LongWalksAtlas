@@ -46,7 +46,7 @@ export function HubLinks({ hubs, current, className }: Props) {
 									aria-current={
 										hubPath(hub) === currentPath ? "page" : undefined
 									}
-									className="inline-flex items-center gap-1.5 rounded-md px-1.5 py-1.5 underline hover:bg-soft aria-[current=page]:font-semibold aria-[current=page]:no-underline"
+									className="inline-flex items-center gap-1.5 rounded-md p-1.5 underline hover:bg-soft aria-[current=page]:font-semibold aria-[current=page]:no-underline"
 								>
 									{hub.kind === "country" && <Flag code={hub.code} />}
 									{label(hub)}

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { data, Link } from "react-router";
 import { hubTitle } from "~/features/hubs/hub-meta";
@@ -7,11 +7,12 @@ import { alternateLinks, localeMeta } from "~/features/i18n/alternates";
 import { getI18n } from "~/features/i18n/i18n";
 import { isLang } from "~/features/i18n/languages";
 import { useLang } from "~/features/i18n/use-lang";
-import { MapBoundary } from "~/features/map/map-boundary";
+import { MapSlot } from "~/features/map/map-slot";
 import { loadContentBody, loadContentIndex } from "~/features/trails/content";
 import { RelatedTrails } from "~/features/trails/related-trails";
 import { textLanguages } from "~/features/trails/text-languages";
 import { TrailCarousel } from "~/features/trails/trail-carousel";
+import { TrailDot } from "~/features/trails/trail-dot";
 import { TrailFacts } from "~/features/trails/trail-facts";
 import { loadGallery, loadTrailFile } from "~/features/trails/trail-files";
 import { TrailImage } from "~/features/trails/trail-image";
@@ -29,7 +30,6 @@ import { absoluteUrl } from "~/shared/site";
 import { SiteFooter } from "~/shared/site-footer";
 import { SiteNav } from "~/shared/site-nav";
 import { atlasCardMeta, photoCardMeta } from "~/shared/social-cards";
-import { useHydrated } from "~/shared/use-hydrated";
 import type { Route } from "./+types/trail";
 
 const TrailMap = lazy(() =>
@@ -125,7 +125,6 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 	const { summary, file, content, body, photo, gallery, related } = loaderData;
 	const { t } = useTranslation();
 	const lang = useLang();
-	const hydrated = useHydrated();
 	const format = useTrailFormat();
 	const color = trailColor(summary.type);
 	const officialHost = new URL(file.officialUrl).hostname.replace(/^www\./, "");
@@ -133,21 +132,10 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 	const typePage = hasHub(typeHub, trailsIndex)
 		? { name: hubTitle(t, lang, typeHub), path: `/${lang}/${hubPath(typeHub)}` }
 		: null;
-
-	const mapLoading = (
-		<p
-			className="absolute inset-0 z-10 grid place-items-center bg-soft text-sm text-ink/70"
-			aria-busy="true"
-		>
-			<span className="motion-safe:animate-pulse">{t("trail.mapLoading")}</span>
-		</p>
-	);
-
-	const mapFailed = (
-		<p className="absolute inset-0 z-10 grid place-items-center bg-soft px-6 text-center text-sm text-muted">
-			{t("atlas.mapFailed")}
-		</p>
-	);
+	const hasRelated = related.crosses.length > 0 || related.nearby.length > 0;
+	// The aside runs beside every block of the text column. A fixed span left an empty
+	// row, and an extra gap, on trails without a story or related trails.
+	const textRows = 3 + (body ? 1 : 0) + (hasRelated ? 1 : 0);
 
 	const jsonLd = trailJsonLd({
 		summary,
@@ -189,10 +177,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 						/>
 					)}
 					<p className="mt-5 flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
-						<span
-							className="inline-block size-2.5 rounded-full"
-							style={{ background: color }}
-						/>
+						<TrailDot color={color} />
 						{typePage ? (
 							<Link
 								to={typePage.path}
@@ -231,28 +216,22 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					</p>
 				</header>
 
-				<div className="lg:col-start-1">
-					<TrailFacts summary={summary} file={file} />
-				</div>
+				<TrailFacts summary={summary} file={file} className="lg:col-start-1" />
 
-				<aside className="flex flex-col gap-3 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-5 lg:row-start-1 lg:self-start">
+				<aside
+					className="flex flex-col gap-3 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-(--text-rows) lg:row-start-1 lg:self-start"
+					style={{ "--text-rows": textRows } as React.CSSProperties}
+				>
 					<div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-soft lg:aspect-[4/5]">
-						{hydrated ? (
-							<MapBoundary fallback={mapFailed}>
-								<Suspense fallback={mapLoading}>
-									<TrailMap
-										trail={summary}
-										start={file.start.coords}
-										end={file.end.coords}
-										startLabel={`${t("trail.start")}: ${file.start.name}`}
-										endLabel={`${t("trail.end")}: ${file.end.name}`}
-										loading={mapLoading}
-									/>
-								</Suspense>
-							</MapBoundary>
-						) : (
-							mapLoading
-						)}
+						<MapSlot key={summary.slug}>
+							<TrailMap
+								trail={summary}
+								start={file.start.coords}
+								end={file.end.coords}
+								startLabel={`${t("trail.start")}: ${file.start.name}`}
+								endLabel={`${t("trail.end")}: ${file.end.name}`}
+							/>
+						</MapSlot>
 					</div>
 					<p className="rounded-xl bg-soft p-3 text-sm leading-relaxed text-ink">
 						<Trans
@@ -303,18 +282,15 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					</section>
 				)}
 
-				<div className="lg:col-start-1">
-					<RelatedTrails related={related} />
-				</div>
+				<RelatedTrails related={related} className="lg:col-start-1" />
 
-				<div className="lg:col-start-1">
-					<TrailNotes
-						summary={summary}
-						file={file}
-						content={content}
-						lang={lang}
-					/>
-				</div>
+				<TrailNotes
+					summary={summary}
+					file={file}
+					content={content}
+					lang={lang}
+					className="lg:col-start-1"
+				/>
 			</div>
 
 			<SiteFooter />

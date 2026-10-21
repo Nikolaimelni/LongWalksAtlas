@@ -14,9 +14,10 @@ export type RelatedTrail = {
 
 type Props = {
 	related: { crosses: RelatedTrail[]; nearby: RelatedTrail[] };
+	className?: string;
 };
 
-export function RelatedTrails({ related }: Props) {
+export function RelatedTrails({ related, className = "" }: Props) {
 	const { t } = useTranslation();
 	const lang = useLang();
 	const format = useTrailFormat();
@@ -26,7 +27,7 @@ export function RelatedTrails({ related }: Props) {
 	if (kinds.length === 0) return null;
 
 	return (
-		<div className="flex flex-col gap-10">
+		<div className={`flex flex-col gap-10 ${className}`}>
 			{kinds.map((kind) => (
 				<section key={kind} aria-labelledby={kind}>
 					<h2 id={kind} className="font-display text-xl font-semibold">

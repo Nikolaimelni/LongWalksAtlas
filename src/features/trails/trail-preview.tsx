@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { CountryList } from "~/features/hubs/country-list";
 import { useLang } from "~/features/i18n/use-lang";
 import type { TrailContent } from "./content-schema";
+import { TrailDot } from "./trail-dot";
 import { TrailImage } from "./trail-image";
 import type { TrailPhoto, TrailSummary } from "./trail-schema";
 import { trailColor } from "./trail-style";
@@ -20,6 +21,7 @@ export function TrailPreview({ trail, content, photo, variant }: Props) {
 	const lang = useLang();
 	const format = useTrailFormat();
 	const color = trailColor(trail.type);
+	const page = `/${lang}/trail/${trail.slug}/`;
 
 	return (
 		<article className="flex flex-col gap-3">
@@ -39,13 +41,11 @@ export function TrailPreview({ trail, content, photo, variant }: Props) {
 				}
 				eager
 				morph={variant === "sheet"}
+				href={variant === "sheet" ? page : undefined}
 			/>
 			<div>
 				<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
-					<span
-						className="inline-block size-2.5 rounded-full"
-						style={{ background: color }}
-					/>
+					<TrailDot color={color} />
 					{t(`trailType.${trail.type}`)}
 				</p>
 				<h2 className="mt-1 font-display text-lg leading-snug font-semibold">
@@ -82,7 +82,7 @@ export function TrailPreview({ trail, content, photo, variant }: Props) {
 			</dl>
 			{variant === "sheet" && (
 				<Link
-					to={`/${lang}/trail/${trail.slug}/`}
+					to={page}
 					viewTransition
 					className="rounded-full bg-brand px-4 py-3 text-center text-sm font-semibold text-on-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
 				>

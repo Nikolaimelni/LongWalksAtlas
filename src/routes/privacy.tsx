@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from "react-i18next";
 import { alternateLinks, localeMeta } from "~/features/i18n/alternates";
+import { EmailLink } from "~/shared/email-link";
 import { absoluteUrl, contactEmail } from "~/shared/site";
 import { SiteFooter } from "~/shared/site-footer";
 import { SiteNav } from "~/shared/site-nav";
@@ -50,15 +51,7 @@ export default function Privacy() {
 				<Trans
 					i18nKey="legal.contact"
 					values={{ email: contactEmail }}
-					components={{
-						a: (
-							// biome-ignore lint/a11y/useAnchorContent: Trans fills the link with the address
-							<a
-								href={`mailto:${contactEmail}`}
-								className="font-medium text-brand underline"
-							/>
-						),
-					}}
+					components={{ a: <EmailLink /> }}
 				/>
 			</p>
 

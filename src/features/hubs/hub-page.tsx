@@ -1,8 +1,9 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router";
 import { useLang } from "~/features/i18n/use-lang";
-import { MapBoundary } from "~/features/map/map-boundary";
+import { MapSlot } from "~/features/map/map-slot";
+import { TrailDot } from "~/features/trails/trail-dot";
 import { TrailImage } from "~/features/trails/trail-image";
 import { trailColor } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
@@ -15,7 +16,6 @@ import {
 import { absoluteUrl } from "~/shared/site";
 import { SiteFooter } from "~/shared/site-footer";
 import { SiteNav } from "~/shared/site-nav";
-import { useHydrated } from "~/shared/use-hydrated";
 import { CountryList } from "./country-list";
 import { Flag } from "./flag";
 import type { HubData } from "./hub-data";
@@ -35,7 +35,6 @@ export function HubPage({ data }: Props) {
 	const lang = useLang();
 	const format = useTrailFormat();
 	const navigate = useNavigate();
-	const hydrated = useHydrated();
 
 	const title = hubTitle(t, lang, hub);
 	const intro = hubIntro(
@@ -51,21 +50,6 @@ export function HubPage({ data }: Props) {
 		hub.kind === "country"
 			? `/${lang}/?country=${hub.code}`
 			: `/${lang}/?type=${hub.type}`;
-
-	const mapLoading = (
-		<p
-			className="absolute inset-0 z-10 grid place-items-center bg-soft text-sm text-ink/70"
-			aria-busy="true"
-		>
-			<span className="motion-safe:animate-pulse">{t("trail.mapLoading")}</span>
-		</p>
-	);
-
-	const mapFailed = (
-		<p className="absolute inset-0 z-10 grid place-items-center bg-soft px-6 text-center text-sm text-muted">
-			{t("atlas.mapFailed")}
-		</p>
-	);
 
 	const home = absoluteUrl(`/${lang}/`);
 	const url = absoluteUrl(`/${lang}/${hubPath(hub)}`);
@@ -117,21 +101,14 @@ export function HubPage({ data }: Props) {
 			</header>
 
 			<div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl bg-soft">
-				{hydrated ? (
-					<MapBoundary fallback={mapFailed}>
-						<Suspense fallback={mapLoading}>
-							<HubMap
-								trails={trails.map((tr) => tr.summary)}
-								loading={mapLoading}
-								onPick={(slug) =>
-									void navigate(pageOf(slug), { viewTransition: true })
-								}
-							/>
-						</Suspense>
-					</MapBoundary>
-				) : (
-					mapLoading
-				)}
+				<MapSlot key={hubPath(hub)}>
+					<HubMap
+						trails={trails.map((tr) => tr.summary)}
+						onPick={(slug) =>
+							void navigate(pageOf(slug), { viewTransition: true })
+						}
+					/>
+				</MapSlot>
 			</div>
 
 			<ul className="mt-8 flex flex-col gap-6">
@@ -149,10 +126,7 @@ export function HubPage({ data }: Props) {
 							</div>
 							<div className="min-w-0">
 								<p className="flex items-center gap-2 text-xs font-medium tracking-wide text-muted uppercase">
-									<span
-										className="inline-block size-2.5 shrink-0 rounded-full"
-										style={{ background: trailColor(tr.summary.type) }}
-									/>
+									<TrailDot color={trailColor(tr.summary.type)} />
 									{t(`trailType.${tr.summary.type}`)}
 								</p>
 								<h2 className="mt-1 font-display text-xl leading-snug font-semibold">

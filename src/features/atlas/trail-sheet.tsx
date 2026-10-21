@@ -1,5 +1,6 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { CloseIcon } from "~/shared/close-icon";
 import { useSwipe } from "~/shared/use-swipe";
 
 function swallowNextClick() {
@@ -81,7 +82,7 @@ export function TrailSheet({ label, onClose, children }: Props) {
 			onKeyDown={(event) => {
 				if (event.key === "Escape") leave();
 			}}
-			className={`absolute inset-x-2 bottom-[calc(var(--panel-bar,0px)_+_0.5rem)] z-20 max-h-[55dvh] overflow-y-auto rounded-2xl bg-surface px-4 pb-4 shadow-float outline-none transition-[translate,opacity] ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:max-h-[calc(100dvh-6rem)] md:w-96 md:rounded-2xl md:pt-4 md:starting:translate-y-4 md:starting:opacity-0 ${leaving ? "pointer-events-none translate-y-8 opacity-0 duration-200" : "duration-300"}`}
+			className={`absolute inset-x-2 bottom-[calc(var(--panel-bar,0px)_+_0.5rem)] z-20 max-h-[55dvh] overflow-y-auto rounded-2xl bg-surface px-4 pb-4 shadow-float outline-none transition-[translate,opacity] ease-out starting:translate-y-full motion-reduce:transition-none md:inset-x-auto md:start-[26rem] md:bottom-4 md:max-h-[calc(100dvh-6rem)] md:w-96 md:pt-4 md:starting:translate-y-4 md:starting:opacity-0 ${leaving ? "pointer-events-none translate-y-8 opacity-0 duration-200" : "duration-300"}`}
 		>
 			<div
 				aria-hidden="true"
@@ -94,9 +95,9 @@ export function TrailSheet({ label, onClose, children }: Props) {
 				type="button"
 				onClick={leave}
 				aria-label={t("trail.close")}
-				className="absolute end-6 top-8 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-surface/90 text-xl shadow-float backdrop-blur focus-visible:outline-2 focus-visible:outline-brand md:top-6"
+				className="absolute end-6 top-8 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-surface/90 text-ink shadow-float backdrop-blur transition-colors hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand md:top-6"
 			>
-				<span aria-hidden="true">×</span>
+				<CloseIcon className="size-6" />
 			</button>
 			{children}
 		</section>

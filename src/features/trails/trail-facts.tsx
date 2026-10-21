@@ -3,9 +3,9 @@ import { CountryList } from "~/features/hubs/country-list";
 import type { TrailFile, TrailSummary } from "./trail-schema";
 import { useTrailFormat } from "./use-trail-format";
 
-type Props = { summary: TrailSummary; file: TrailFile };
+type Props = { summary: TrailSummary; file: TrailFile; className?: string };
 
-export function TrailFacts({ summary, file }: Props) {
+export function TrailFacts({ summary, file, className }: Props) {
 	const { t } = useTranslation();
 	const format = useTrailFormat();
 	const loop =
@@ -13,7 +13,7 @@ export function TrailFacts({ summary, file }: Props) {
 		file.start.coords[1] === file.end.coords[1];
 
 	return (
-		<section aria-labelledby="facts">
+		<section aria-labelledby="facts" className={className}>
 			<h2 id="facts" className="font-display text-xl font-semibold">
 				{t("trail.facts")}
 			</h2>

@@ -25,6 +25,7 @@ import {
 	trailLinesUrl,
 } from "~/features/map/map-sources";
 import { loadContentIndex } from "~/features/trails/content";
+import { TrailDot } from "~/features/trails/trail-dot";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailColor } from "~/features/trails/trail-style";
@@ -332,10 +333,7 @@ export default function Atlas({ loaderData }: Route.ComponentProps) {
 											onClick={() => select(tr.slug)}
 											className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-soft/60 px-3 py-3 text-start font-medium hover:bg-soft focus-visible:outline-2 focus-visible:outline-brand"
 										>
-											<span
-												className="size-2.5 shrink-0 rounded-full"
-												style={{ background: trailColor(tr.type) }}
-											/>
+											<TrailDot color={trailColor(tr.type)} />
 											<span className="flex-1">{titleOf(tr)}</span>
 											<span
 												aria-hidden="true"

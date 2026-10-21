@@ -1,5 +1,4 @@
-import { type ReactNode, use, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import {
 	Layer,
 	Map as MapLibreMap,
@@ -7,12 +6,10 @@ import {
 	NavigationControl,
 	Source,
 } from "react-map-gl/maplibre";
-import { useLang } from "~/features/i18n/use-lang";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
-import { useColorScheme } from "~/shared/use-color-scheme";
-import { useMapFailure } from "./map-boundary";
-import { loadMapStyle } from "./map-style";
+import { MapLoading } from "./map-slot";
+import { useMapBase } from "./use-map-base";
 
 type Props = {
 	trail: TrailSummary;
@@ -20,29 +17,18 @@ type Props = {
 	end: [number, number];
 	startLabel: string;
 	endLabel: string;
-	loading: ReactNode;
 };
 
-export function TrailMap({
-	trail,
-	start,
-	end,
-	startLabel,
-	endLabel,
-	loading,
-}: Props) {
-	const scheme = useColorScheme();
+export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
+	const { scheme, props } = useMapBase();
 	const [loaded, setLoaded] = useState(false);
-	const lang = useLang();
-	const { t } = useTranslation();
-	const mapStyle = use(loadMapStyle(scheme, lang));
-	const onError = useMapFailure();
 	const [west, south, east, north] = trail.bbox;
 	const loop = start[0] === end[0] && start[1] === end[1];
 
 	return (
 		<>
 			<MapLibreMap
+				{...props}
 				initialViewState={{
 					bounds: [
 						[west, south],
@@ -50,17 +36,7 @@ export function TrailMap({
 					],
 					fitBoundsOptions: { padding: 32 },
 				}}
-				mapStyle={mapStyle}
-				onError={onError}
-				style={{ position: "absolute", inset: 0 }}
 				cooperativeGestures
-				dragRotate={false}
-				touchPitch={false}
-				attributionControl={{ compact: true }}
-				locale={{
-					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
-					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
-				}}
 				onLoad={() => setLoaded(true)}
 			>
 				<NavigationControl position="top-right" showCompass={false} />
@@ -96,7 +72,7 @@ export function TrailMap({
 					</Marker>
 				)}
 			</MapLibreMap>
-			{!loaded && loading}
+			{!loaded && <MapLoading />}
 		</>
 	);
 }

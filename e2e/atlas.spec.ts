@@ -62,7 +62,11 @@ test("a trail in the URL opens its preview, and closing it clears the URL", asyn
 	).toHaveAttribute("href", "/ru/trail/caminho-portugues/");
 	// The photo credit leads off the site, so it must not replace the map.
 	await expect(
-		sheet.getByRole("figure").getByRole("link").first(),
+		sheet
+			.getByRole("figure")
+			.getByRole("link")
+			.filter({ hasNot: page.getByRole("img") })
+			.first(),
 	).toHaveAttribute("target", "_blank");
 
 	await sheet.getByRole("button", { name: "Закрыть" }).click();

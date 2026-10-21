@@ -1,4 +1,6 @@
+import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 import type { TrailPhoto } from "./trail-schema";
 
 type Props = {
@@ -9,6 +11,7 @@ type Props = {
 	sizes: string;
 	eager?: boolean;
 	morph?: boolean;
+	href?: string | undefined;
 };
 
 export function TrailImage({
@@ -19,11 +22,20 @@ export function TrailImage({
 	sizes,
 	eager,
 	morph,
+	href,
 }: Props) {
 	const { t } = useTranslation();
 	const viewTransitionName = morph ? "trail-photo" : undefined;
+	const linked = (picture: ReactNode) =>
+		href ? (
+			<Link to={href} viewTransition tabIndex={-1} className="block">
+				{picture}
+			</Link>
+		) : (
+			picture
+		);
 	if (!photo) {
-		return (
+		return linked(
 			<div
 				className={className}
 				style={{
@@ -31,23 +43,25 @@ export function TrailImage({
 					viewTransitionName,
 				}}
 				role="presentation"
-			/>
+			/>,
 		);
 	}
 	return (
 		<figure>
-			<img
-				src={photo.src.small}
-				srcSet={`${photo.src.small} ${photo.smallWidth}w, ${photo.src.large} ${photo.width}w`}
-				sizes={sizes}
-				width={photo.width}
-				height={photo.height}
-				alt={alt}
-				loading={eager ? "eager" : "lazy"}
-				decoding="async"
-				className={`${className} object-cover`}
-				style={{ background: color, viewTransitionName }}
-			/>
+			{linked(
+				<img
+					src={photo.src.small}
+					srcSet={`${photo.src.small} ${photo.smallWidth}w, ${photo.src.large} ${photo.width}w`}
+					sizes={sizes}
+					width={photo.width}
+					height={photo.height}
+					alt={alt}
+					loading={eager ? "eager" : "lazy"}
+					decoding="async"
+					className={`${className} object-cover`}
+					style={{ background: color, viewTransitionName }}
+				/>,
+			)}
 			<figcaption className="mt-1 text-xs [overflow-wrap:anywhere] text-muted">
 				{t("trail.photoBy")}{" "}
 				<a

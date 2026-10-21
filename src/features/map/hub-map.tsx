@@ -1,21 +1,17 @@
 import type { MapLayerMouseEvent } from "maplibre-gl";
-import { type ReactNode, use, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import { Map as MapLibreMap, NavigationControl } from "react-map-gl/maplibre";
-import { useLang } from "~/features/i18n/use-lang";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
 import { canHover } from "~/shared/can-hover";
-import { useColorScheme } from "~/shared/use-color-scheme";
 import { basemapColors } from "./basemap-colors";
 import { boundsOf } from "./bounds";
-import { useMapFailure } from "./map-boundary";
-import { loadMapStyle } from "./map-style";
+import { MapLoading } from "./map-slot";
 import { TrailLayers, trailHitLayerIds } from "./trail-layers";
+import { useMapBase } from "./use-map-base";
 
 type Props = {
 	trails: readonly TrailSummary[];
-	loading: ReactNode;
 	onPick: (slug: string) => void;
 };
 
@@ -24,33 +20,20 @@ function slugAt(event: MapLayerMouseEvent): string | null {
 	return typeof slug === "string" ? slug : null;
 }
 
-export function HubMap({ trails, loading, onPick }: Props) {
-	const scheme = useColorScheme();
-	const lang = useLang();
-	const { t } = useTranslation();
-	const mapStyle = use(loadMapStyle(scheme, lang));
-	const onError = useMapFailure();
+export function HubMap({ trails, onPick }: Props) {
+	const { scheme, props } = useMapBase();
 	const [loaded, setLoaded] = useState(false);
 	const [pointer, setPointer] = useState(false);
 
 	return (
 		<>
 			<MapLibreMap
+				{...props}
 				initialViewState={{
 					bounds: boundsOf(trails),
 					fitBoundsOptions: { padding: 32, maxZoom: 9 },
 				}}
-				mapStyle={mapStyle}
-				onError={onError}
-				style={{ position: "absolute", inset: 0 }}
 				cooperativeGestures
-				dragRotate={false}
-				touchPitch={false}
-				attributionControl={{ compact: true }}
-				locale={{
-					"NavigationControl.ZoomIn": t("atlas.zoomIn"),
-					"NavigationControl.ZoomOut": t("atlas.zoomOut"),
-				}}
 				interactiveLayerIds={trailHitLayerIds}
 				cursor={pointer ? "pointer" : "grab"}
 				onLoad={() => setLoaded(true)}
@@ -71,7 +54,7 @@ export function HubMap({ trails, loading, onPick }: Props) {
 					touch={!canHover()}
 				/>
 			</MapLibreMap>
-			{!loaded && loading}
+			{!loaded && <MapLoading />}
 		</>
 	);
 }

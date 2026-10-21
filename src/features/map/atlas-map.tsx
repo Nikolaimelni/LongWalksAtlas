@@ -7,32 +7,28 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { useTranslation } from "react-i18next";
 import {
 	Map as MapLibreMap,
 	type MapRef,
 	NavigationControl,
 } from "react-map-gl/maplibre";
-import { useLang } from "~/features/i18n/use-lang";
 import type { TrailSummary } from "~/features/trails/trail-schema";
 import { trailPalettes } from "~/features/trails/trail-style";
 import { canHover } from "~/shared/can-hover";
-import { useColorScheme } from "~/shared/use-color-scheme";
 import { basemapColors } from "./basemap-colors";
 import { boundsOf } from "./bounds";
-import { useMapFailure } from "./map-boundary";
 import { loadTrailLines } from "./map-sources";
-import { loadMapStyle } from "./map-style";
 import {
 	TrailLayers,
 	trailHitLayerIds,
 	trailPointSourceId,
 	trailSourceId,
 } from "./trail-layers";
+import { useMapBase } from "./use-map-base";
 
 // What covers the map on a wide screen, in px: the trail panel (md:start-4 md:w-96 in
 // trail-panel.tsx) and the preview sheet next to it (md:start-[26rem] md:w-96 in
-// routes/atlas.tsx). Below Tailwind's md the panel folds into a bar at the bottom.
+// atlas/trail-sheet.tsx). Below Tailwind's md the panel folds into a bar at the bottom.
 const md = 768;
 const panelEdge = 16 + 384;
 const sheetEdge = 416 + 384;
@@ -92,11 +88,7 @@ export function AtlasMap({
 	onPick,
 }: Props) {
 	const mapRef = useRef<MapRef>(null);
-	const scheme = useColorScheme();
-	const lang = useLang();
-	const { t } = useTranslation();
-	const mapStyle = use(loadMapStyle(scheme, lang));
-	const onError = useMapFailure();
+	const { scheme, props } = useMapBase();
 	const [loaded, setLoaded] = useState(false);
 	const [pointer, setPointer] = useState(false);
 	const byMouse = useRef(false);
@@ -194,20 +186,11 @@ export function AtlasMap({
 
 	return (
 		<MapLibreMap
+			{...props}
 			ref={mapRef}
 			initialViewState={initialView(
 				frame.trails.length > 0 ? frame.trails : trails,
 			)}
-			mapStyle={mapStyle}
-			onError={onError}
-			style={{ position: "absolute", inset: 0 }}
-			dragRotate={false}
-			touchPitch={false}
-			attributionControl={{ compact: true }}
-			locale={{
-				"NavigationControl.ZoomIn": t("atlas.zoomIn"),
-				"NavigationControl.ZoomOut": t("atlas.zoomOut"),
-			}}
 			interactiveLayerIds={trailHitLayerIds}
 			cursor={pointer ? "pointer" : "grab"}
 			onLoad={() => {

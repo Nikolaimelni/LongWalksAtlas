@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { hoverPlacement } from "~/features/map/hover-placement";
 import type { TrailContent } from "~/features/trails/content-schema";
+import { TrailDot } from "~/features/trails/trail-dot";
 import { TrailPreview } from "~/features/trails/trail-preview";
 import type { TrailPhoto, TrailSummary } from "~/features/trails/trail-schema";
 import { trailColor } from "~/features/trails/trail-style";
@@ -42,10 +43,7 @@ export function HoverCard({ x, y, trails, content, photos, titleOf }: Props) {
 					<ul className="flex flex-col gap-1.5 text-sm font-medium">
 						{trails.map((trail) => (
 							<li key={trail.slug} className="flex items-center gap-2">
-								<span
-									className="size-2.5 shrink-0 rounded-full"
-									style={{ background: trailColor(trail.type) }}
-								/>
+								<TrailDot color={trailColor(trail.type)} />
 								{titleOf(trail)}
 							</li>
 						))}

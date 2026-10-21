@@ -10,6 +10,7 @@ import { Link } from "react-router";
 import { HubLinks } from "~/features/hubs/hub-links";
 import { listHubs } from "~/features/hubs/hubs";
 import { useLang } from "~/features/i18n/use-lang";
+import { TrailDot } from "~/features/trails/trail-dot";
 import {
 	type TrailSummary,
 	trailRegions,
@@ -18,6 +19,8 @@ import {
 import { trailColor } from "~/features/trails/trail-style";
 import { useTrailFormat } from "~/features/trails/use-trail-format";
 import { canHover } from "~/shared/can-hover";
+import { CloseIcon } from "~/shared/close-icon";
+import { SiteLinks } from "~/shared/site-footer";
 import { SuggestTrail } from "~/shared/suggest-trail";
 import { useSwipe } from "~/shared/use-swipe";
 import {
@@ -50,20 +53,11 @@ function SelectBox(props: Omit<React.ComponentProps<"select">, "className">) {
 	return (
 		<span className="relative flex min-w-0 flex-1">
 			<select {...props} className={selectClass} />
-			<svg
-				aria-hidden="true"
-				viewBox="0 0 20 20"
+			<Chevron
+				up={false}
+				strokeWidth={2}
 				className="pointer-events-none absolute end-3 top-1/2 size-5 -translate-y-1/2 text-muted"
-			>
-				<path
-					d="m6 8 4 4 4-4"
-					fill="none"
-					stroke="currentColor"
-					strokeWidth="2"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-				/>
-			</svg>
+			/>
 		</span>
 	);
 }
@@ -148,9 +142,11 @@ function FiltersIcon() {
 function Chevron({
 	up,
 	className = "size-4",
+	strokeWidth = 2.25,
 }: {
 	up: boolean;
 	className?: string;
+	strokeWidth?: number;
 }) {
 	return (
 		<svg
@@ -162,7 +158,7 @@ function Chevron({
 				d="m6 8 4 4 4-4"
 				fill="none"
 				stroke="currentColor"
-				strokeWidth="2.25"
+				strokeWidth={strokeWidth}
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
@@ -215,12 +211,7 @@ function Chip({ pressed, color, dot, onToggle, children }: ChipProps) {
 			className={`flex h-11 shrink-0 cursor-pointer items-center gap-2 rounded-full border px-3 text-sm whitespace-nowrap transition-colors md:h-9 ${chipLook(pressed, dot)}`}
 			style={{ "--chip": color } as React.CSSProperties}
 		>
-			{dot && (
-				<span
-					className="inline-block size-2.5 rounded-full"
-					style={{ background: color }}
-				/>
-			)}
+			{dot && <TrailDot color={color} />}
 			{children}
 		</button>
 	);
@@ -396,9 +387,9 @@ export function TrailPanel({
 								searchRef.current?.focus();
 							}}
 							aria-label={t("filters.clearSearch")}
-							className="absolute end-0 top-0 grid size-11 cursor-pointer place-items-center rounded-full text-xl text-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-brand"
+							className="absolute end-0 top-0 grid size-11 cursor-pointer place-items-center rounded-full text-muted transition-colors hover:bg-soft hover:text-ink focus-visible:outline-2 focus-visible:outline-brand"
 						>
-							<span aria-hidden="true">×</span>
+							<CloseIcon className="size-5" />
 						</button>
 					)}
 				</div>
@@ -424,19 +415,7 @@ export function TrailPanel({
 				/>
 			</div>
 			<p className="-mt-1 px-4 pb-2 text-xs leading-snug text-muted">
-				{t("disclaimer.short")}{" "}
-				<Link to={`/${lang}/privacy/`} viewTransition className="underline">
-					{t("legal.link")}
-				</Link>
-				{" · "}
-				<a
-					href="https://nikolaidev.online"
-					target="_blank"
-					rel="noopener author"
-					className="underline"
-				>
-					nikolaidev.online
-				</a>
+				{t("disclaimer.short")} <SiteLinks />
 			</p>
 
 			<div
