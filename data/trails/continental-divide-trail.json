@@ -19,10 +19,7 @@
 	"bestSeason": [],
 	"badges": [],
 	"officialUrl": "https://cdtcoalition.org/",
-	"sources": [
-		"https://cdtcoalition.org/",
-		"https://pnts.org/new/continental-divide-national-scenic-trail/"
-	],
+	"sources": ["https://cdtcoalition.org/"],
 	"photo": {
 		"commons": "File:Continental divide trail in Weminuche Wilderness.jpg"
 	},

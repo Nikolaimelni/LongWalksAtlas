@@ -18,8 +18,10 @@
 	"days": null,
 	"bestSeason": [],
 	"badges": [],
-	"officialUrl": "https://www.env.go.jp/nature/nats/shizenhodo/kanto/",
-	"sources": ["https://www.env.go.jp/nature/nats/shizenhodo/kanto/"],
+	"officialUrl": "https://www.env.go.jp/nature/nationalparks/pick-up/long-trail/kanto/",
+	"sources": [
+		"https://www.env.go.jp/nature/nationalparks/pick-up/long-trail/kanto/"
+	],
 	"photo": {
 		"commons": "File:Nusuttogari - Miura 03 盗人狩.jpg"
 	},

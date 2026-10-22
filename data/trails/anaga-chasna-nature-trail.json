@@ -18,10 +18,9 @@
 	"days": null,
 	"bestSeason": [],
 	"badges": ["unesco"],
-	"officialUrl": "https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/anaga-chasna/default.aspx",
+	"officialUrl": "https://caminosnaturales.es/en/red-de-caminos-naturales/camino-detalle/sector-canario/anaga-chasna",
 	"sources": [
-		"https://www.mapa.gob.es/en/desarrollo-rural/temas/caminos-naturales/caminos-naturales/sector-canario/anaga-chasna/default.aspx",
-		"https://servicio.mapama.gob.es/en/desarrollo-rural/temas/caminos-naturales/canarias_en_web_tcm38-420330.pdf"
+		"https://caminosnaturales.es/en/red-de-caminos-naturales/camino-detalle/sector-canario/anaga-chasna"
 	],
 	"photo": {
 		"commons": "File:Tenerife.jpg"
