@@ -151,6 +151,23 @@ test("a trail with more photos shows them in a carousel", async ({
 	await expect(second).toHaveAttribute("aria-current", "true");
 });
 
+test("the carousel starts over on the next trail", async ({ page }) => {
+	await page.goto("/en/trail/inca-trail/");
+	const carousel = page.getByRole("region", { name: "Photos" });
+	const last = carousel.getByRole("button", { name: "Photo 3 of 3" });
+	await last.click();
+	await expect(last).toHaveAttribute("aria-current", "true");
+
+	await page.getByRole("link", { name: /Choquequirao Trek/ }).click();
+	await expect(page).toHaveURL(/\/choquequirao-trek\/$/);
+	await expect(
+		carousel.getByRole("button", { name: "Photo 1 of 2" }),
+	).toHaveAttribute("aria-current", "true");
+	const second = carousel.getByRole("button", { name: "Photo 2 of 2" });
+	await second.click();
+	await expect(second).toHaveAttribute("aria-current", "true");
+});
+
 test("a trail with one photo shows it without a carousel", async ({ page }) => {
 	await page.goto("/en/trail/botev-trail/");
 	await expect(page.getByRole("img", { name: /^On the Botev/ })).toHaveCount(1);

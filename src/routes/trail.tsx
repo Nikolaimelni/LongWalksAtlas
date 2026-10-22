@@ -154,7 +154,10 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 	// One column on a phone, in reading order. On a wide screen the map, the disclaimer
 	// and the way to the official site stay in view beside the text.
 	return (
-		<main className="mx-auto max-w-6xl px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-10">
+		<main
+			key={summary.slug}
+			className="mx-auto max-w-6xl px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-10"
+		>
 			<SiteNav />
 
 			<div className="mt-4 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:gap-x-12">
@@ -223,7 +226,7 @@ export default function Trail({ loaderData }: Route.ComponentProps) {
 					style={{ "--text-rows": textRows } as React.CSSProperties}
 				>
 					<div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-soft lg:aspect-[4/5]">
-						<MapSlot key={summary.slug}>
+						<MapSlot>
 							<TrailMap
 								trail={summary}
 								start={file.start.coords}
