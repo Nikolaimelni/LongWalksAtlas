@@ -26,6 +26,7 @@
 	"wikidata": null,
 	"geometry": {
 		"source": "osm",
-		"relationIds": [13653655]
+		"relationIds": [13653655],
+		"mode": "all-ways"
 	}
 }
