@@ -74,6 +74,7 @@ async function buildOne(trail: TrailFile, refresh: boolean) {
 		ways: segments.length,
 		mode,
 		pieces: lines.length,
+		dashedKm: Math.round(built.gapKm),
 	};
 	if (gap !== null && Math.abs(gap) > lengthWarnRatio) {
 		log.warn(report, "mapped length is far from the official one");
@@ -98,11 +99,14 @@ async function main() {
 		try {
 			const built = await buildOne(trail, values.refresh);
 			summaries.push(built.summary);
-			atlas.push(built.atlas);
+			atlas.push(built.atlas, ...built.atlasGaps);
 			details.push(built.detail);
 			await writeFile(
 				join(publicDir, "trails", `${trail.slug}.geojson`),
-				JSON.stringify(built.detail),
+				JSON.stringify({
+					type: "FeatureCollection",
+					features: [built.detail, ...built.detailGaps],
+				}),
 			);
 		} catch (error) {
 			if (!(error instanceof DataError)) throw error;

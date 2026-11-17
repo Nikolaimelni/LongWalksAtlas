@@ -48,10 +48,22 @@ export function TrailMap({ trail, start, end, startLabel, endLabel }: Props) {
 					<Layer
 						id="trail-line"
 						type="line"
+						filter={["!", ["has", "gap"]]}
 						layout={{ "line-cap": "round", "line-join": "round" }}
 						paint={{
 							"line-color": trailPalettes[scheme][trail.type],
 							"line-width": 4,
+						}}
+					/>
+					<Layer
+						id="trail-gaps"
+						type="line"
+						filter={["has", "gap"]}
+						layout={{ "line-cap": "butt", "line-join": "round" }}
+						paint={{
+							"line-color": trailPalettes[scheme][trail.type],
+							"line-width": 3,
+							"line-dasharray": [2, 1.5],
 						}}
 					/>
 				</Source>

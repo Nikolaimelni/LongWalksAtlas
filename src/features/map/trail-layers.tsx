@@ -27,6 +27,8 @@ const active: ExpressionSpecification = [
 	false,
 ];
 
+const solid: ExpressionSpecification = ["!", ["has", "gap"]];
+
 function colorBy(palette: TrailPalette): ExpressionSpecification {
 	// why: MapLibre types "match" as a tuple with its pairs spelled out, which a list
 	// built from trailTypes cannot satisfy; built this way a new type is never missed.
@@ -143,7 +145,7 @@ export function TrailLayers({
 				<Layer
 					id="trails-casing"
 					type="line"
-					filter={only(["boolean", true])}
+					filter={only(solid)}
 					layout={layout}
 					paint={{
 						"line-color": halo,
@@ -154,9 +156,20 @@ export function TrailLayers({
 				<Layer
 					id="trails-solid"
 					type="line"
-					filter={only(["boolean", true])}
+					filter={only(solid)}
 					layout={layout}
 					paint={{ ...paint, "line-width": width(2 * weight) }}
+				/>
+				<Layer
+					id="trails-gaps"
+					type="line"
+					filter={only(["has", "gap"])}
+					layout={{ "line-cap": "butt", "line-join": "round" }}
+					paint={{
+						...paint,
+						"line-width": width(1.5 * weight),
+						"line-dasharray": [2, 2],
+					}}
 				/>
 				<Layer
 					id="trails-hit"
